@@ -1,0 +1,11 @@
+objectTypes = {
+	
+	##########################
+	#### ELVEN JUGGERNAUT ####
+	##########################
+
+	pdxmesh = {
+		name = "elven_01_juggernaut_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_juggernaut.mesh"
+	}	
+}

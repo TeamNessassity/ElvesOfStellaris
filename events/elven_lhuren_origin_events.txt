@@ -1,0 +1,706 @@
+# Everything related to Lhuren origin story goes here
+
+namespace = elven_lhuren_origin_events
+
+###################################################
+# Main Story: The Day You Vanished with the Stars #
+###################################################
+
+# Story: Lhuren used to be interstellar nomads who found the Dragon Cluster and the Dirac Sea Serpents that could manifest only within the nebula. They made a pact with them, gaining immortality and prosperity for as long as they protected Lhumar (a world quantum-entangled across dimensions with the serpents' homeworld).
+# Objectives: Eternal Array malfunctions, game begins. Excavate two sites in the system for clues. Then, decide whether to remove the faulty shield module and repurpose the array, stabilise the module with limited resources or fully repair.
+
+# Stage 0 (Gatekeeper Event)
+# Start the event OR show an error message if cannot
+country_event = {
+	id = elven_lhuren_origin_events.100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_elven_celestial_throne
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { is_same_value = event_target:lhuren_capital_owner_of_@event_target:lhuren_lhumar }
+			}
+			country_event = {
+				id = elven_lhuren_origin_events.0001
+			}
+		}
+		else = {
+			country_event = {
+				id = elven_lhuren_origin_events.101
+			}
+		}
+	}
+}
+
+# Stage 1 (My Luck Brushes Against the Rainy Skies)
+# Intro. Introduce and explain the situation.
+country_event = {
+	id = elven_lhuren_origin_events.101
+	title = "elven_lhuren_origin_events.101.name"
+	desc = "elven_lhuren_origin_events.101.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_elven_celestial_throne
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = { id = elven_lhuren_origin_events.102 }
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.101.a
+	}
+}
+
+# Stage 2 (And Cuts Through the Barren World)
+# Spawn the dig sites.
+country_event = {
+	id = elven_lhuren_origin_events.102
+	title = "elven_lhuren_origin_events.102.name"
+	desc = "elven_lhuren_origin_events.102.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		begin_event_chain = {
+			event_chain = elven_lhuren_eternal_array_chain
+			target = event_target:lhuren_lhumar
+		}
+		create_point_of_interest = {
+			id = elven_lhuren_origin_gilgezu_poi
+			name = "elven_lhuren_origin_gilgezu_poi"
+			desc = elven_lhuren_origin_gilgezu_poi_desc
+			event_chain = elven_lhuren_eternal_array_chain
+			location = event_target:lhuren_gilgezu
+		}
+		create_point_of_interest = {
+			id = elven_lhuren_origin_helemar_poi
+			name = "elven_lhuren_origin_helemar_poi"
+			desc = elven_lhuren_origin_helemar_poi_desc
+			event_chain = elven_lhuren_eternal_array_chain
+			location = event_target:lhuren_helemar
+		}
+		event_target:lhuren_gilgezu = {
+			create_archaeological_site = elven_lhuren_site_gilgezu
+		}
+		event_target:lhuren_helemar = {
+			create_archaeological_site = elven_lhuren_site_helemar
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.102.a
+	}
+}
+
+# Stage 3 (As the Lights are Shining Strong)
+# Summarise the dig site results.
+country_event = {
+	id = elven_lhuren_origin_events.103
+	title = "elven_lhuren_origin_events.103.name"
+	desc = "elven_lhuren_origin_events.103.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = { id = elven_lhuren_origin_events.104 }
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.103.a
+	}
+}
+
+# Stage 4 (To Forget You and All the Stars Above)
+# Present the branching dilemma.
+country_event = {
+	id = elven_lhuren_origin_events.104
+	title = "elven_lhuren_origin_events.104.name"
+	desc = "elven_lhuren_origin_events.104.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.104.a
+		ai_chance = {
+			factor = 30
+		}
+		custom_tooltip = elven_lhuren_origin_events.104.a.tooltip
+		add_tech_option_or_research_effect = {
+			TECH = tech_starbase_4
+			PROGRESS = 0.25
+			CATEGORY = engineering_research
+		}
+		hidden_effect = {
+			country_event = { id = elven_lhuren_origin_events.105 }
+		}
+		default_hide_option = yes
+	}
+	option = {
+		allow = {
+			has_overlord_dlc = yes
+		}
+		name = elven_lhuren_origin_events.104.b
+		ai_chance = {
+			factor = 65
+		}
+		custom_tooltip = elven_lhuren_origin_events.104.b.tooltip
+		add_tech_option_or_research_effect = {
+			TECH = tech_orbital_ring_tier_1
+			PROGRESS = 0.25
+			CATEGORY = engineering_research
+		}
+		hidden_effect = {
+			country_event = { id = elven_lhuren_origin_events.106 }
+		}
+	}
+	option = {
+		name = elven_lhuren_origin_events.104.c
+		ai_chance = {
+			factor = 5
+		}
+		custom_tooltip = elven_lhuren_origin_events.104.c.tooltip
+		add_tech_option_or_research_effect = {
+			TECH = tech_shield_rechargers_1
+			PROGRESS = 0.25
+			CATEGORY = physics_research
+		}
+		add_tech_option_or_research_effect = {
+			TECH = tech_shield_hardeners_1
+			PROGRESS = 0.25
+			CATEGORY = physics_research
+		}
+		hidden_effect = {
+			country_event = { id = elven_lhuren_origin_events.107 }
+		}
+	}
+}
+
+# Route A-1 (I Cry Out "Please Answer Me", My Voice Drying Out)
+# Start Project: Repurpose the Eternal Array
+country_event = {
+	id = elven_lhuren_origin_events.105
+	title = "elven_lhuren_origin_events.105.name"
+	desc = "elven_lhuren_origin_events.105.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		set_country_flag = elven_lhuren_origin_route_A
+		create_point_of_interest = {
+			id = elven_lhuren_origin_route_A_poi
+			name = "elven_lhuren_origin_route_A_poi"
+			desc = elven_lhuren_origin_route_A_poi_desc
+			event_chain = elven_lhuren_eternal_array_chain
+			location = event_target:lhuren_lhumar
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.105.a
+	}
+}
+
+# Ending A (And All of My Feelings Disappear)
+# Remove the shield, offer to remove Inwards Perfection, turn Eternal Array into Eternal Foundry
+country_event = {
+	id = elven_lhuren_origin_events.1051
+	title = "elven_lhuren_origin_events.1051.name"
+	desc = "elven_lhuren_origin_events.1051.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		end_event_chain = elven_lhuren_eternal_array_chain
+		set_country_flag = elven_lhuren_origin_ending_A
+		add_modifier = {
+			modifier = elven_lhuren_origin_ending_A_modifier
+		}
+
+		event_target:lhuren_lhumar = {
+			remove_modifier = elven_eternal_array_broken_modifier
+			add_modifier = {
+				modifier = elven_eternal_array_repurposed_modifier
+				days = -1
+			}
+
+			hidden_effect = {
+				eos_lhuren_shield_state = { VALUE = 0 }
+			}
+		}
+
+		# Anyone can use this megastructure, but the builders get a head-start on the scaling effect
+		hidden_effect = {
+			create_variable_if_not_exists = {
+				VARIABLE = eos_lhu_var_mega_count
+				VALUE_IF_CREATED = 0
+			}
+			change_variable = {
+				which = eos_lhu_var_mega_count
+				value = 5
+			}
+		}
+	}
+	
+	option = {
+		allow = {
+			has_civic = civic_inwards_perfection
+		}
+		name = elven_lhuren_origin_events.1051.a
+		if = {
+			limit = { has_civic = civic_inwards_perfection }
+			force_remove_civic = civic_inwards_perfection
+			force_add_civic = civic_efficient_bureaucracy
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.1051.b
+		ai_chance = {
+			factor = 25
+		}
+		default_hide_option = yes
+	}
+}
+
+# Route B-1 (Just Like the Countless Stars Washed with Blood)
+# Start Project: Stabilize the Eternal Array
+country_event = {
+	id = elven_lhuren_origin_events.106
+	title = "elven_lhuren_origin_events.106.name"
+	desc = "elven_lhuren_origin_events.106.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		set_country_flag = elven_lhuren_origin_route_B
+		create_point_of_interest = {
+			id = elven_lhuren_origin_route_B_poi
+			name = "elven_lhuren_origin_route_B_poi"
+			desc = elven_lhuren_origin_route_B_poi_desc
+			event_chain = elven_lhuren_eternal_array_chain
+			location = event_target:lhuren_lhumar
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.106.a
+	}
+}
+
+# Ending B (Back on the Day You Disappeared)
+# Give access to special Orbital Ring building, offer to remove Inwards Perfection, buff Celestial Office jobs
+country_event = {
+	id = elven_lhuren_origin_events.1061
+	title = "elven_lhuren_origin_events.1061.name"
+	desc = "elven_lhuren_origin_events.1061.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		end_event_chain = elven_lhuren_eternal_array_chain
+		set_country_flag = elven_lhuren_origin_ending_B
+		add_modifier = {
+			modifier = elven_lhuren_origin_ending_B_modifier
+		}
+
+		event_target:lhuren_lhumar = {
+			remove_modifier = elven_eternal_array_broken_modifier
+			add_modifier = {
+				modifier = elven_eternal_array_modifier
+				days = -1
+			}
+
+			hidden_effect = {
+				eos_lhuren_shield_state = { VALUE = 2 }
+			}
+		}
+	}
+	
+	option = {
+		allow = {
+			has_civic = civic_inwards_perfection
+		}
+		name = elven_lhuren_origin_events.1061.a
+		if = {
+			limit = { has_civic = civic_inwards_perfection }
+			force_remove_civic = civic_inwards_perfection
+			force_add_civic = civic_efficient_bureaucracy
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.1061.b
+		ai_chance = {
+			factor = 50
+		}
+		default_hide_option = yes
+	}
+}
+
+# Route C-1 (And It Engulfs Everything Into the Light)
+# Start Project: Restore the Eternal Array
+country_event = {
+	id = elven_lhuren_origin_events.107
+	title = "elven_lhuren_origin_events.107.name"
+	desc = "elven_lhuren_origin_events.107.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		set_country_flag = elven_lhuren_origin_route_C
+		create_point_of_interest = {
+			id = elven_lhuren_origin_route_C_poi
+			name = "elven_lhuren_origin_route_C_poi"
+			desc = elven_lhuren_origin_route_C_poi_desc
+			event_chain = elven_lhuren_eternal_array_chain
+			location = event_target:lhuren_lhumar
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.107.a
+	}
+}
+
+# Ending C (Letting All of My Feelings Disappear)
+# Remove Lhumar, Eternal Array, Flaming Pearl and Ruler. Offer to remove Inwards Perfection. Enhance the Timeless Trait.
+country_event = {
+	id = elven_lhuren_origin_events.1071
+	title = "elven_lhuren_origin_events.1071.name"
+	desc = "elven_lhuren_origin_events.1071.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+		end_event_chain = elven_lhuren_eternal_array_chain
+		set_country_flag = elven_lhuren_origin_ending_C
+		add_modifier = {
+			modifier = elven_lhuren_origin_ending_C_modifier
+		}
+
+		set_global_flag = elven_lhuren_pact_enhanced
+
+		event_target:lhuren_lhumar = {
+			hidden_effect = {
+				# The initial Nirvana counter is based on the number of pops present on planet when shield goes up
+				# It ticks up by 1 every month after that
+				export_trigger_value_to_variable = {
+					trigger = count_owned_pop_amount
+					parameters = {
+						limit = {
+							has_trait = trait_elven_lhuren_immortality
+						}
+					}
+					variable = eos_lhu_var_nirvana
+				}
+			}
+
+			hidden_effect = {
+				if = {
+					limit = { exists = orbital_defence }
+					delete_fleet = orbital_defence
+				}
+			}
+
+			change_pc = pc_shielded
+			set_planet_entity = {
+				entity = elven_ocean_2_lhumar
+			}
+			set_planet_flag = lhuren_capital_encased
+			clear_planet_modifiers = yes
+
+			remove_modifier = elven_eternal_array_broken_modifier
+			add_modifier = {
+				modifier = elven_eternal_array_encased_modifier
+			}
+
+			hidden_effect = {
+				eos_lhuren_shield_state = { VALUE = 3 }
+			}
+		}
+		ruler = {
+			kill_leader = {
+				show_notification = no
+			}
+		}
+		remove_relic = r_elven_flaming_pearl
+	}
+	
+	option = {
+		allow = {
+			has_civic = civic_inwards_perfection
+		}
+		name = elven_lhuren_origin_events.1071.a
+		if = {
+			limit = { has_civic = civic_inwards_perfection }
+			force_remove_civic = civic_inwards_perfection
+			force_add_civic = civic_efficient_bureaucracy
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.1071.b
+		ai_chance = {
+			factor = 20
+		}
+		default_hide_option = yes
+	}
+}
+
+#########################################################################################
+# Events related to the state of Lhumar and triggers for the loss of Lhuren immortality #
+#########################################################################################
+
+# Planet glassed/changed to something uninhabitable other than shielded
+planet_event = {
+	id = elven_lhuren_origin_events.201
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		exists = event_target:lhuren_lhumar
+		is_same_value = event_target:lhuren_lhumar
+		OR = {
+			is_planet_class = pc_nuked
+			is_planet_class = pc_machine
+			AND = {
+				NOT = { is_planet_class = pc_shielded }
+				habitable_planet = no
+			}
+		}
+	}
+
+	immediate = {
+		eos_lhuren_immortality_remove = yes
+	}
+}
+
+# Planet destroyed by Planet Cracker or similar (can also use this event to debug)
+planet_event = {
+	id = elven_lhuren_origin_events.202
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_same_value = event_target:lhuren_lhumar
+	}
+
+	immediate = {
+		eos_lhuren_immortality_remove = yes
+	}
+}
+
+# Planet reached 100% devastation
+# This = Planet
+# From = Bombarder
+planet_event = {
+	id = elven_lhuren_origin_events.203
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_same_value = event_target:lhuren_lhumar
+		planet_devastation >= 100
+	}
+
+	immediate = {
+		eos_lhuren_immortality_remove = yes
+	}
+}
+
+# I'm die thank you forever
+country_event = {
+	id = elven_lhuren_origin_events.301
+	title = "elven_lhuren_origin_events.301.name"
+	desc = "elven_lhuren_origin_events.301.desc"
+	picture = GFX_evt_space_funeral
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.301.a
+		custom_tooltip = elven_lhuren_origin_events_tooltip.301.a
+	}
+}
+
+###############################
+# Miscellaneous Origin Events #
+###############################
+
+# Ending A Perk: When building or upgrading Megastructures, give a random planet a boost for a year
+
+country_event = {
+	id = elven_lhuren_origin_events.501
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		# Since it's now tied to a megastructure, which can change hands, the variable should be tracked by all countries just in case
+	}
+
+	immediate = {
+		create_variable_if_not_exists = {
+			VARIABLE = eos_lhu_var_mega_count
+			VALUE_IF_CREATED = 0
+		}
+		change_variable = {
+			which = eos_lhu_var_mega_count
+			value = 1
+		}
+
+		if = {
+			limit = { has_country_flag = elven_lhuren_origin_ending_A }
+			random_owned_planet = {
+				limit = {
+					is_colony = yes
+					NOT = { has_modifier = elven_lhuren_planet_boost }
+				}
+				add_modifier = {
+					modifier = elven_lhuren_planet_boost
+					years = 1
+				}
+			}
+		}
+	}
+}
+
+# Ending C Mechanics: After encasing Lhumar, the Nirvana counter continues to increase slowly over time.
+
+event = {
+	id = elven_lhuren_origin_events.511
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:lhuren_lhumar
+		event_target:lhuren_lhumar = {
+			is_variable_set = eos_lhu_var_nirvana
+		}
+	}
+
+	immediate = {
+		event_target:lhuren_lhumar = {
+			create_variable_if_not_exists = {
+				VARIABLE = eos_lhu_var_nirvana
+				VALUE_IF_CREATED = 0
+			}
+			change_variable = {
+				which = eos_lhu_var_nirvana
+				value = 1
+			}
+		}
+	}
+}
+
+###############################
+#       Error Messages        #
+###############################
+
+# Shown if the event cannot start properly due to..
+# Duplicate Origin Error
+country_event = {
+	id = elven_lhuren_origin_events.0001
+	title = "elven_lhuren_origin_events.0001.name"
+	desc = "elven_lhuren_origin_events.0001.desc"
+	picture = GFX_evt_news_room
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = elven_lhuren_origin_events.0001.a
+	}
+}

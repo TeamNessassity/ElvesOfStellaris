@@ -1,0 +1,2233 @@
+namespace = elven_accident_events
+
+# Drow (Tekartas) accidents
+event = {
+	id = elven_accident_events.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	
+
+	immediate = {
+		every_playable_country = {
+			limit = {
+				has_civic = civic_drow_warriors
+				NOT = {
+					has_country_flag = drow_accident_happened
+				}
+			}
+			country_event = { id = elven_accident_events.11 random = 200 }
+		}
+	}
+}
+
+country_event = {
+	id = elven_accident_events.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			420 = {
+			}
+			2 = { # Ruler (1 participant)
+				if = {
+					limit = {
+						any_owned_leader = {
+							is_ruler = yes
+							is_organic_species = yes
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							is_ruler = yes
+							is_organic_species = yes
+						}
+
+						random_list = {
+							75 = { # Nothing happens
+							}
+							25 = { # Dead
+								# Common traits
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_arrested_development
+								}
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_stubborn
+								}
+								modifier = {
+									factor = 1.5
+									has_trait = leader_trait_substance_abuser
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_resilient
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_adaptable
+								}
+
+								# Ruler traits
+								modifier = {
+									factor = 1.25
+									has_trait = leader_trait_reformer
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = trait_ruler_deep_connections
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_psionic
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_cyborg
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_synthetic
+								}
+								modifier = {
+									factor = 0
+									has_trait = leader_trait_chosen
+								}
+
+								modifier = {
+									factor = 0.5
+									has_trait = leader_trait_drow_vigilant
+								}
+
+								save_event_target_as = assassinated_leader
+								root = {
+									country_event = { id = elven_accident_events.210 }
+								}
+							}
+						}
+					}
+				}
+			}
+			2 = { # Ruler (2 participants)
+				if = {
+					limit = {
+						count_owned_leader = {
+							count = 1
+							limit = {
+								is_ruler = no
+								NOT = { exists = fleet }
+								is_organic_species = yes
+							}
+						}
+						count_owned_leader = {
+							count = 1
+							limit = {
+								is_ruler = yes
+								is_organic_species = yes
+							}
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							is_ruler = no
+							NOT = { exists = fleet }
+							is_organic_species = yes
+						}
+						save_event_target_as = assassin_leader
+					}
+					random_owned_leader = {
+						limit = {
+							is_ruler = yes
+							is_organic_species = yes
+						}
+						save_event_target_as = surviving_leader
+					}
+
+					random_list = {
+						75 = { # Nothing happens
+							# Common traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_arrested_development
+								}
+							}
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_stubborn
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_substance_abuser
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_resilient
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_adaptable
+								}
+							}
+
+							# Governor traits
+							modifier = {
+								factor = 1.25
+								event_target:assassin_leader = {
+									has_trait = leader_trait_righteous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_corrupt
+								}
+							}
+
+							# Scientist traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_carefree
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_custom_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_sapient_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_paranoid
+								}
+							}
+
+							# Admiral traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_lethargic
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_nervous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cautious
+								}
+							}
+
+							# General traits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_armchair_commander
+								}
+							}
+
+							# Megatraits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_psionic
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cyborg
+								}	
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_synthetic
+								}
+							}
+							modifier = {
+								factor = 0
+								event_target:assassin_leader = {
+									has_trait = leader_trait_chosen
+								}
+							}
+
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_drow_vigilant
+								}
+							}
+						}
+						25 = { # Decisions, decisions
+							root = {
+								country_event = { id = elven_accident_events.211 }
+							}
+						}
+					}
+				}
+			}
+			3 = { # Governor (1 participant)
+				if = {
+					limit = {
+						any_owned_leader = {
+							leader_class = official
+							is_organic_species = yes
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							leader_class = official
+							is_organic_species = yes
+						}
+
+						random_list = {
+							50 = { # Nothing happens
+							}
+							20 = { # Survived
+								save_event_target_as = surviving_leader
+								root = {
+									random_list = {
+										10 = {
+											country_event = { id = elven_accident_events.247 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.248 }
+										}
+									}
+								}
+							}
+							30 = { # Dead
+								# Common traits
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_arrested_development
+								}
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_stubborn
+								}
+								modifier = {
+									factor = 1.5
+									has_trait = leader_trait_substance_abuser
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_resilient
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_adaptable
+								}
+
+								# Governor traits
+								modifier = {
+									factor = 1.25
+									has_trait = leader_trait_righteous
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_corrupt
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_psionic
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_cyborg
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_synthetic
+								}
+								modifier = {
+									factor = 0
+									has_trait = leader_trait_chosen
+								}
+
+								modifier = {
+									factor = 0.5
+									has_trait = leader_trait_drow_vigilant
+								}
+
+								save_event_target_as = assassinated_leader
+								root = {
+									random_list = {
+										10 = {
+											country_event = { id = elven_accident_events.220 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.240 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.241 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.242 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.243 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.244 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.245 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.246 }
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			1 = { # Governor (2 participants)
+				if = {
+					limit = {
+						count_owned_leader = {
+							count = 1
+							limit = {
+								is_ruler = no
+								NOT = { exists = fleet }
+								is_organic_species = yes
+							}
+						}
+						count_owned_leader = {
+							count = 1
+							limit = {
+								leader_class = official
+								is_organic_species = yes
+							}
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							is_ruler = no
+							NOT = { exists = fleet }
+							is_organic_species = yes
+						}
+						save_event_target_as = assassin_leader
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = official
+							is_organic_species = yes
+							NOT = { is_same_value = event_target:assassin_leader } # Can't kill himself.
+						}
+						save_event_target_as = assassinated_leader
+					}
+
+					random_list = {
+						50 = { # Nothing happens
+						}
+						25 = { # Assailant dead
+							# Common traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_arrested_development
+								}
+							}
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_stubborn
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_substance_abuser
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_resilient
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_adaptable
+								}
+							}
+
+							# Governor traits
+							modifier = {
+								factor = 1.25
+								event_target:assassin_leader = {
+									has_trait = leader_trait_righteous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_corrupt
+								}
+							}
+
+							# Scientist traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_carefree
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_custom_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_sapient_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_paranoid
+								}
+							}
+
+							# Admiral traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_lethargic
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_nervous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cautious
+								}
+							}
+
+							# General traits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_armchair_commander
+								}
+							}
+
+							# Megatraits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_psionic
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cyborg
+								}	
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_synthetic
+								}
+							}
+							modifier = {
+								factor = 0
+								event_target:assassin_leader = {
+									has_trait = leader_trait_chosen
+								}
+							}
+
+							root = {
+								random_list = {
+									10 = {
+										country_event = { id = elven_accident_events.221 }
+									}
+									10 = {
+										country_event = { id = elven_accident_events.249 }
+									}
+								}
+							}
+						}
+						25 = { # Both dead
+							# Common traits
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_arrested_development
+								}
+							}
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_stubborn
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_substance_abuser
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_resilient
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_adaptable
+								}
+							}
+
+							# Governor traits
+							modifier = {
+								factor = 1.25
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_righteous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_corrupt
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_psionic
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_cyborg
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_synthetic
+								}
+							}
+							modifier = {
+								factor = 0
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_chosen
+								}
+							}
+
+							modifier = {
+								factor = 0.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_drow_vigilant
+								}
+							}
+
+							root = {
+								country_event = { id = elven_accident_events.222 }
+							}
+						}
+					}
+				}
+			}
+			8 = { # Scientist (1 participant)
+				if = {
+					limit = {
+						any_owned_leader = {
+							leader_class = scientist
+							is_organic_species = yes
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							is_organic_species = yes
+						}
+
+						random_list = {
+							50 = { # Nothing happens
+							}
+							20 = { #Survives
+								save_event_target_as = surviving_leader
+								root = {
+									random_list = {
+										10 = {
+											country_event = { id = elven_accident_events.247 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.248 }
+										}
+									}
+								}
+							}
+							30 = { # Dead
+								# Common traits
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_arrested_development
+								}
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_stubborn
+								}
+								modifier = {
+									factor = 1.5
+									has_trait = leader_trait_substance_abuser
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_resilient
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_adaptable
+								}
+
+								# Scientist traits
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_carefree
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_custom_AI_assistant
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_sapient_AI_assistant
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_psionic
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_cyborg
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_synthetic
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_paranoid
+								}
+								modifier = {
+									factor = 0
+									has_trait = leader_trait_chosen
+								}
+
+								modifier = {
+									factor = 0.5
+									has_trait = leader_trait_drow_vigilant
+								}
+
+								save_event_target_as = assassinated_leader
+								root = {
+									random_list = {
+										10 = {
+											country_event = { id = elven_accident_events.230 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.231 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.240 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.241 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.242 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.243 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.244 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.245 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.246 }
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			4 = { # Scientist (2 participants, feud)
+				if = {
+					limit = {
+						count_owned_leader = {
+							count = 2
+							limit = {
+								leader_class = scientist
+								is_organic_species = yes
+								NOT = { exists = fleet }
+							}
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							is_organic_species = yes
+							NOT = { exists = fleet }
+						}
+						save_event_target_as = assassin_leader
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							is_organic_species = yes
+							NOT = { exists = fleet }
+							NOT = { is_same_value = event_target:assassin_leader } # Can't kill himself.
+						}
+						save_event_target_as = assassinated_leader
+					}
+
+					random_list = {
+						50 = { # Nothing happens
+						}
+						50 = { # Decisions, decisions
+							root = {
+								country_event = { id = elven_accident_events.222 }
+							}
+						}
+					}
+
+				}
+			}
+			4 = { # Scientist (2 participants)
+				if = {
+					limit = {
+						count_owned_leader = {
+							count = 1
+							limit = {
+								is_ruler = no
+								NOT = { exists = fleet }
+								is_organic_species = yes
+							}
+						}
+						count_owned_leader = {
+							count = 1
+							limit = {
+								leader_class = scientist
+								is_organic_species = yes
+							}
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							is_ruler = no
+							NOT = { exists = fleet }
+							is_organic_species = yes
+						}
+						save_event_target_as = assassin_leader
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = scientist
+							is_organic_species = yes
+							NOT = { is_same_value = event_target:assassin_leader } # Can't kill himself.
+						}
+						save_event_target_as = assassinated_leader
+					}
+
+					random_list = {
+						50 = { # Nothing happens
+						}
+						25 = { # Assailant dead
+							# Common traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_arrested_development
+								}
+							}
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_stubborn
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_substance_abuser
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_resilient
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_adaptable
+								}
+							}
+
+							# Governor traits
+							modifier = {
+								factor = 1.25
+								event_target:assassin_leader = {
+									has_trait = leader_trait_righteous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_corrupt
+								}
+							}
+
+							# Scientist traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_carefree
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_custom_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_sapient_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_paranoid
+								}
+							}
+
+							# Admiral traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_lethargic
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_nervous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cautious
+								}
+							}
+
+							# General traits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_armchair_commander
+								}
+							}
+
+							# Megatraits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_psionic
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cyborg
+								}	
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_synthetic
+								}
+							}
+							modifier = {
+								factor = 0
+								event_target:assassin_leader = {
+									has_trait = leader_trait_chosen
+								}
+							}
+
+							root = {
+								random_list = {
+									10 = {
+										country_event = { id = elven_accident_events.221 }
+									}
+									10 = {
+										country_event = { id = elven_accident_events.249 }
+									}
+								}
+							}
+						}
+						25 = { # Both dead
+							# Common traits
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_arrested_development
+								}
+							}
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_stubborn
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_substance_abuser
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_resilient
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_adaptable
+								}
+							}
+
+							# Scientist traits
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_carefree
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_custom_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_sapient_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_psionic
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_cyborg
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_synthetic
+								}
+							}
+							modifier = {
+								factor = 0.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_paranoid
+								}
+							}
+							modifier = {
+								factor = 0
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_chosen
+								}
+							}
+
+							modifier = {
+								factor = 0.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_drow_vigilant
+								}
+							}
+
+							modifier = {
+								factor = 0.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_drow_vigilant
+								}
+							}
+
+							root = {
+								country_event = { id = elven_accident_events.222 }
+							}
+						}
+					}
+				}
+			}
+			3 = { # Admiral/general (1 participant)
+				if = {
+					limit = {
+						any_owned_leader = {
+							leader_class = commander
+							is_organic_species = yes
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							leader_class = commander
+							is_organic_species = yes
+						}
+
+						random_list = {
+							50 = { # Nothing happens
+							}
+							25 = { #Survives
+								save_event_target_as = surviving_leader
+								root = {
+									random_list = {
+										10 = {
+											country_event = { id = elven_accident_events.252 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													leader_class = commander
+												}
+											}
+											country_event = { id = elven_accident_events.253 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.247 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.248 }
+										}
+									}
+								}
+							}
+							25 = { # Dead
+								# Common traits
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_arrested_development
+								}
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_stubborn
+								}
+								modifier = {
+									factor = 1.5
+									has_trait = leader_trait_substance_abuser
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_resilient
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_adaptable
+								}
+
+								# Admiral/general traits
+								modifier = {
+									factor = 2
+									has_trait = leader_trait_lethargic
+								}
+								modifier = {
+									factor = 1.25
+									has_trait = leader_trait_nervous
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_cautious
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_armchair_commander
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_psionic
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_cyborg
+								}
+								modifier = {
+									factor = 0.75
+									has_trait = leader_trait_synthetic
+								}
+								modifier = {
+									factor = 0
+									has_trait = leader_trait_chosen
+								}
+
+								modifier = {
+									factor = 0.5
+									has_trait = leader_trait_drow_vigilant
+								}
+
+								save_event_target_as = assassinated_leader
+								root = {
+									random_list = {
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													leader_class = commander
+												}
+											}
+											country_event = { id = elven_accident_events.250 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													leader_class = commander
+												}
+											}
+											country_event = { id = elven_accident_events.251 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.230 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.231 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.240 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.241 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.242 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.243 }
+										}
+										10 = {
+											modifier = {
+												factor = 0
+												event_target:assassinated_leader = {
+													exists = fleet
+												}
+											}
+											country_event = { id = elven_accident_events.244 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.245 }
+										}
+										10 = {
+											country_event = { id = elven_accident_events.246 }
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			1 = { # Admiral/general (2 participants)
+				if = {
+					limit = {
+						count_owned_leader = {
+							count = 1
+							limit = {
+								is_ruler = no
+								NOT = { exists = fleet }
+								is_organic_species = yes
+							}
+						}
+						count_owned_leader = {
+							count = 1
+							limit = {
+								leader_class = commander
+								is_organic_species = yes
+							}
+						}
+					}
+
+					random_owned_leader = {
+						limit = {
+							is_ruler = no
+							NOT = { exists = fleet }
+							is_organic_species = yes
+						}
+						save_event_target_as = assassin_leader
+					}
+					random_owned_leader = {
+						limit = {
+							leader_class = commander
+							is_organic_species = yes
+							NOT = { is_same_value = event_target:assassin_leader } # Can't kill himself.
+						}
+						save_event_target_as = assassinated_leader
+					}
+
+					random_list = {
+						50 = { # Nothing happens
+						}
+						25 = { # Assailant dead
+							# Common traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_arrested_development
+								}
+							}
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_stubborn
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_substance_abuser
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_resilient
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_adaptable
+								}
+							}
+
+							# Governor traits
+							modifier = {
+								factor = 1.25
+								event_target:assassin_leader = {
+									has_trait = leader_trait_righteous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_corrupt
+								}
+							}
+
+							# Scientist traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_carefree
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_custom_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_sapient_AI_assistant
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_paranoid
+								}
+							}
+
+							# Admiral traits
+							modifier = {
+								factor = 2
+								event_target:assassin_leader = {
+									has_trait = leader_trait_lethargic
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassin_leader = {
+									has_trait = leader_trait_nervous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cautious
+								}
+							}
+
+							# General traits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_armchair_commander
+								}
+							}
+
+							# Megatraits
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_psionic
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_cyborg
+								}	
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassin_leader = {
+									has_trait = leader_trait_synthetic
+								}
+							}
+							modifier = {
+								factor = 0
+								event_target:assassin_leader = {
+									has_trait = leader_trait_chosen
+								}
+							}
+
+							root = {
+								random_list = {
+									10 = {
+										country_event = { id = elven_accident_events.221 }
+									}
+									10 = {
+										country_event = { id = elven_accident_events.249 }
+									}
+								}
+							}
+						}
+						25 = { # Both dead
+							# Common traits
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_arrested_development
+								}
+							}
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_stubborn
+								}
+							}
+							modifier = {
+								factor = 1.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_substance_abuser
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_resilient
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_adaptable
+								}
+							}
+
+							# Governor traits
+							modifier = {
+								factor = 2
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_lethargic
+								}
+							}
+							modifier = {
+								factor = 1.25
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_nervous
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_cautious
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_psionic
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_cyborg
+								}
+							}
+							modifier = {
+								factor = 0.75
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_synthetic
+								}
+							}
+							modifier = {
+								factor = 0
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_chosen
+								}
+							}
+
+							modifier = {
+								factor = 0.5
+								event_target:assassinated_leader = {
+									has_trait = leader_trait_drow_vigilant
+								}
+							}
+
+							root = {
+								country_event = { id = elven_accident_events.222 }
+							}
+						}
+					}
+				}
+			}
+			# End list
+		}
+	}
+}
+
+country_event = {
+	id = elven_accident_events.210
+	title = elven_accident_events.210.name
+	desc = elven_accident_events.210.desc
+	picture = GFX_evt_coronation
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.211
+	title = elven_accident_events.211.name
+	desc = elven_accident_events.211.desc
+	picture = GFX_evt_announcement
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+	}
+
+	option = {
+		name = elven_accident_events.211.a
+
+		if = {
+			limit = {
+				event_target:surviving_leader = {
+					NOT = { has_trait = leader_trait_drow_vigilant }
+				}
+			}
+
+			event_target:surviving_leader = {
+				add_trait = {
+					trait = leader_trait_drow_vigilant
+				}
+			}
+		}
+
+		event_target:assassin_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = elven_accident_events.211.b
+
+		add_resource = { influence = -100 }
+		if = {
+			limit = {
+				event_target:surviving_leader = {
+					NOT = { has_trait = leader_trait_drow_vigilant }
+				}
+			}
+
+			event_target:surviving_leader = {
+				add_trait = {
+					trait = leader_trait_drow_vigilant
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = elven_accident_events.220
+	title = elven_accident_events.220.name
+	desc = elven_accident_events.220.desc
+	picture = GFX_evt_announcement
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.221
+	title = elven_accident_events.221.name
+	desc = elven_accident_events.221.desc
+	picture = GFX_evt_operative_chase
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassin_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = elven_accident_events.222
+	title = elven_accident_events.222.name
+	desc = elven_accident_events.222.desc
+	picture = GFX_evt_operative_chase
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+	    event_target:assassin_leader = {
+            kill_leader = { show_notification = no }
+        }
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.230
+	title = elven_accident_events.230.name
+	desc = elven_accident_events.230.desc
+	picture = GFX_evt_dark_alley
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.231
+	title = elven_accident_events.231.name
+	desc = elven_accident_events.231.desc
+	picture = GFX_evt_exploding_ship
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+
+		create_leader = {
+			class = scientist
+			species = owner_main_species
+			name = random
+			skill = 1
+		}
+	}
+}
+
+country_event = {
+	id = elven_accident_events.232
+	title = elven_accident_events.232.name
+	desc = elven_accident_events.232.desc
+	picture = GFX_evt_face_off_in_space
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+	}
+
+	option = {
+		name = elven_accident_events.232.a
+
+		event_target:assassin_leader = {
+            kill_leader = { show_notification = no }
+        }
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = elven_accident_events.232.b
+
+		add_resource = { influence = -50 }
+	}
+}
+
+country_event = {
+	id = elven_accident_events.240
+	title = elven_accident_events.240.name
+	desc = elven_accident_events.240.desc
+	picture = GFX_evt_hive_mind
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.241
+	title = elven_accident_events.241.name
+	desc = elven_accident_events.241.desc
+	picture = GFX_evt_dark_alley
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.242
+	title = elven_accident_events.242.name
+	desc = elven_accident_events.242.desc
+	picture = GFX_evt_hive_mind
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.243
+	title = elven_accident_events.243.name
+	desc = elven_accident_events.243.desc
+	picture = GFX_evt_in_the_dark
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.244
+	title = elven_accident_events.244.name
+	desc = elven_accident_events.244.desc
+	picture = GFX_evt_in_the_dark
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.245
+	title = elven_accident_events.245.name
+	desc = elven_accident_events.245.desc
+	picture = GFX_evt_hive_mind
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = elven_accident_events.246
+	title = elven_accident_events.246.name
+	desc = elven_accident_events.246.desc
+	picture = GFX_evt_dark_alley
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.247
+	title = elven_accident_events.247.name
+	desc = elven_accident_events.247.desc
+	picture = GFX_evt_cover_blown
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+	}
+
+	option = {
+		name = UNFORTUNATE
+
+		event_target:surviving_leader = {
+			if = {
+				limit = {
+					leader_class = official
+				}
+
+				add_trait = {
+					trait = leader_trait_substance_abuser
+				}
+			}
+			else_if = {
+				limit = {
+					leader_class = scientist
+				}
+
+				add_trait = {
+					trait = leader_trait_paranoid
+				}
+			}
+			else_if = {
+				limit = {
+					leader_class = commander
+				}
+
+				random_list = {
+					50 = {
+						add_trait = {
+							trait = leader_trait_nervous
+						}
+					}
+					50 = {
+						add_trait = {
+							trait = leader_trait_armchair_commander
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = elven_accident_events.248
+	title = elven_accident_events.248.name
+	desc = elven_accident_events.248.desc
+	picture = GFX_evt_cover_blown
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+	}
+
+	option = {
+		name = EXCELLENT
+
+		if = {
+			limit = {
+				event_target:surviving_leader = {
+					NOT = { has_trait = leader_trait_drow_vigilant }
+				}
+			}
+
+			event_target:surviving_leader = {
+				add_trait = {
+					trait = leader_trait_drow_vigilant
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = elven_accident_events.249
+	title = elven_accident_events.249.name
+	desc = elven_accident_events.249.desc
+	picture = GFX_evt_gladiators
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassin_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+country_event = {
+	id = elven_accident_events.250
+	title = elven_accident_events.250.name
+	desc = elven_accident_events.250.desc
+	picture = GFX_evt_ship_in_orbit_2
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.251
+	title = elven_accident_events.251.name
+	desc = elven_accident_events.251.desc
+	picture = GFX_evt_interior_battle
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+
+		event_target:assassinated_leader = {
+			kill_leader = { show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+country_event = {
+	id = elven_accident_events.252
+	title = elven_accident_events.252.name
+	desc = elven_accident_events.252.desc
+	picture = GFX_evt_hangar_bay
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+	}
+
+	option = {
+		name = EXCELLENT
+
+		if = {
+			limit = {
+				event_target:surviving_leader = {
+					NOT = { has_trait = leader_trait_drow_vigilant }
+				}
+			}
+
+			event_target:surviving_leader = {
+				add_trait = {
+					trait = leader_trait_drow_vigilant
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = elven_accident_events.253
+	title = elven_accident_events.253.name
+	desc = elven_accident_events.253.desc
+	picture = GFX_evt_salute
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_accident_cooldown = yes
+	}
+
+	option = {
+		name = EXCELLENT
+
+		if = {
+			limit = {
+				event_target:surviving_leader = {
+					NOT = { has_trait = leader_trait_drow_vigilant }
+				}
+			}
+
+			event_target:surviving_leader = {
+				add_trait = {
+					trait = leader_trait_drow_vigilant
+				}
+			}
+		}
+	}
+}

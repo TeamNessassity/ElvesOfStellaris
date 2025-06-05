@@ -1,0 +1,75 @@
+####################
+## MEGASTRUCTURES ##
+####################
+
+objectTypes = {
+
+	#############
+	## HABITAT ##
+	#############
+	
+	
+	## CENTRAL FRAME (Includes Anims!!) ##
+	pdxmesh = {
+		name = "elven_01_habitat_frame_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_habitat_frame.mesh"
+		scale = 2.4
+		
+		animation = { id = "idle" type = "elven_01_habitat_frame_idle_animation" }
+		animation = { id = "construction" type = "elven_01_habitat_frame_construction_animation" }
+	}
+	
+	## HABITAT SPIRE ##
+	pdxmesh = {
+		name = "elven_01_habitat_spire_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_habitat_spire.mesh"				
+		scale = 2.4
+	}
+
+	## HABITAT TOP ##
+	pdxmesh = {
+		name = "elven_01_habitat_top_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_habitat_top.mesh"				
+		scale = 2.4
+	}
+
+	## HABITAT MIDDLE ##
+	pdxmesh = {
+		name = "elven_01_habitat_middle_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_habitat_middle.mesh"				
+		scale = 2.4
+	}
+
+	## HABITAT BOTTOM ##
+	pdxmesh = {
+		name = "elven_01_habitat_bottom_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_habitat_bottom.mesh"				
+		scale = 2.4
+	}
+
+	## HABITAT LARGE ORBITAL ##
+	pdxmesh = {
+		name = "elven_01_habitat_orbital_large_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_habitat_large_orbital.mesh"				
+		scale = 1.0
+	}
+
+	## HABITAT SMALL ORBITAL ##
+	pdxmesh = {
+		name = "elven_01_habitat_orbital_small_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_habitat_small_orbital.mesh"				
+		scale = 1.0
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

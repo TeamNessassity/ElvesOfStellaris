@@ -1,0 +1,108 @@
+@primary = 0.80
+@secondary = 0.60
+@tertiary = 0.20
+@drowy = 0.50
+@gaia_habitability = 0.50
+
+## NONE RETURN FROM VALSHAQUELLAR.... ALIVE :-) ##
+trait_pc_drow_valshaquellar_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	
+	species_potential_add = {
+		always = no
+	}
+
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+
+	bound_to_planet_classes = {
+		pc_drow_valshaquellar
+		pc_drow_speleoterrestrial
+	}
+	
+	#NOTE: can't define allowed_archetypes in the planet class now. Switch to this?
+	#Non-allowed species classes have 0% habitability
+	#allowed_archetypes = { DROW ROBOT MACHINE }
+	
+	sorting_priority = 30
+	modifier = {
+		pc_drow_speleoterrestrial_habitability = 1.0
+		pc_drow_valshaquellar_habitability = 1.0
+
+		habitability_floor_add = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_pc_drow_valshaquellar_dead_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+
+	species_potential_add = {
+		always = no
+	}
+
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	
+	#NOTE: can't define allowed_archetypes in the planet class now. Switch to this?
+	#Non-allowed species classes have 0% habitability
+	#allowed_archetypes = { DROW ROBOT MACHINE }
+	
+	sorting_priority = 30
+	modifier = {
+		pc_drow_valshaquellar_dead_habitability = 1.0
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_pc_drow_speleoterrestrial_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_drow_speleoterrestrial_preference.dds"
+
+	species_potential_add = {
+		always = no
+	}
+
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+
+	bound_to_planet_classes = {
+		pc_drow_speleoterrestrial
+		pc_drow_valshaquellar
+	}
+	
+	sorting_priority = 30
+	modifier = {
+		pc_drow_speleoterrestrial_habitability = 1.0
+		pc_drow_valshaquellar_habitability = 1.0
+
+		habitability_floor_add = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+trait_machine_pc_drow_speleoterrestrial_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_drow_speleoterrestrial_preference.dds"
+
+	species_potential_add = {
+		always = no
+	}
+
+	allowed_archetypes = { MACHINE }
+
+	bound_to_planet_classes = {
+		pc_drow_speleoterrestrial
+		pc_drow_valshaquellar
+	}
+	
+	sorting_priority = 30
+	modifier = {
+		pc_drow_speleoterrestrial_habitability = 1.0
+		pc_drow_valshaquellar_habitability = 1.0
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

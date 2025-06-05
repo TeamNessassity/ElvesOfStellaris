@@ -1,0 +1,417 @@
+﻿l_spanish:
+
+####################################
+# System Initializers
+####################################
+
+elven_system_lhuren_initializer_NAME:0 "Aurlûnor Cluster"
+elven_system_lhuren_initializer_DESC:0 "§LYour homeworld is hidden within an eldritch nebula at the crossroads of realities.§!\n\n$system_initializer_DESC$"
+
+NAME_LHU_ETERNAL_ARRAY:0 "The Eternal Array"
+NAME_LHU_ETERNAL_FOUNDRY:0 "The Eternal Foundry"
+
+####################################
+# Traits
+####################################
+
+# Lhuren immortality trait
+trait_elven_lhuren_immortality:0 "Timeless"
+trait_elven_lhuren_immortality_desc:0 "The members of this species are partially subject to laws borrowed from a reality of pure Form, over which entropy as we know it holds no sway."
+
+# Celestial Favor
+trait_elven_lhuren_celestial_grace:0 "[triggered_trait_elven_lhuren_celestial_grace]"
+trait_elven_lhuren_celestial_grace_ruler:0 "Celestial Favor: Yellow Silk"
+trait_elven_lhuren_celestial_grace_heir:0 "Celestial Favor: Yellow Silk"
+trait_elven_lhuren_celestial_grace_councilor_official:0 "Celestial Favor: Crimson Quill"
+trait_elven_lhuren_celestial_grace_councilor_scientist:0 "Celestial Favor: Jade Pavilion"
+trait_elven_lhuren_celestial_grace_councilor_commander:0 "Celestial Favor: Azure Waters"
+trait_elven_lhuren_celestial_grace_desc:0 "[triggered_trait_elven_lhuren_celestial_grace_desc]"
+trait_elven_lhuren_celestial_grace_ruler_desc:0 "Those who don the Yellow Silk must renounce personal passions and aimless ambitions, for they are the curtain between the earth's desires and the heavens' will, and thus both shall be their responsibility to fulfill."
+trait_elven_lhuren_celestial_grace_heir_desc:0 "Those who are born in Yellow Silk are held up as the exemplars of virtue, sharing in the earhtly duty and heavenly mandate bestowed upon the royal bloodline."
+trait_elven_lhuren_celestial_grace_councilor_official_desc:0 "Those who have a strong sense of justice and desire for order are said to hold the Crimson Quill. They are expected to uphold justice, administrate territories and devise policy with impartial wisdom, experienced foresight and measured compassion."
+trait_elven_lhuren_celestial_grace_councilor_scientist_desc:0 "Those who dedicate themselves to the exploration of mind and spirit form the Jade Pavillion. Intellectual enlightment and spiritual cultivation are one and the same to the physicist-philosophers, doctor-mystics and inventor-artists who seek the unfettered truth."
+trait_elven_lhuren_celestial_grace_councilor_commander_desc:0 "Those who endlessly refine themselves through diligence, dedication and discipline are the Azure Waters that sustain the Empire. The masses of artisans, merchants, laborers and soldiers tend to the earth so that others may reach for the heavens."
+trait_elven_lhuren_celestial_grace_subtitle:0 "§cCelestial Grace Trait§!"
+
+# Former Emperor
+trait_elven_lhuren_taishanghuang:0 "[triggered_trait_elven_lhuren_taishanghuang]"
+trait_elven_lhuren_taishanghuang_default:0 "Former Emperor"
+trait_elven_lhuren_taishanghuang_female:0 "Fallen Phoenix"
+trait_elven_lhuren_taishanghuang_male:0 "Fallen Dragon"
+trait_elven_lhuren_taishanghuang_desc:0 "[triggered_trait_elven_lhuren_taishanghuang_desc]"
+trait_elven_lhuren_taishanghuang_default_desc:0 "Whether by choice or by force, this ruler has relinquished the Celestial Grace."
+trait_elven_lhuren_taishanghuang_female_desc:0 "The Phoenix Crown weighs much heavier than it appears, and few can bear the burden forever. Rather than be crushed, relinquishing it is the more dignified choice."
+trait_elven_lhuren_taishanghuang_male_desc:0 "The Dragon Crown weighs much heavier than it appears, and few can bear the burden forever. Rather than be crushed, relinquishing it is the more dignified choice."
+
+trait_elven_lhuren_taishanghuang_tooltip:0 "Cannot become Ruler again under §HCelestial Grace§!"
+
+# Clan Concessions
+trait_elven_lhuren_concessions:0 "Clan Concessions"
+trait_elven_lhuren_concessions_desc:0 "Though still clinging to power may be against tradition, potential challengers have been convinced to respect the status quo... for now."
+
+# Immortality Lost notification 
+elven_lhuren_origin_events.301.name:0 "Answer Me... Look for Me..."
+elven_lhuren_origin_events.301.desc:0 "A withering roar reverberated silently throughout the Dragon Nebula as reality collapsed into its natural state.\n\nViolently deprived of our Celestial Grace from Beyond, the gentle current of life turned into a torrent, washing us away as if we were naught but sand fighting helplessly against the oncoming tsunami..."
+elven_lhuren_origin_events.301.a:0 "'Twas a grand, glorious dream we shared..."
+elven_lhuren_origin_events_tooltip.301.a:0 "We return into the comfortless embrace of mortality."
+
+####################################
+# Origins 
+####################################
+
+origin_elven_celestial_throne:0 "Celestial Throne"
+origin_elven_celestial_throne_desc:0 "Many millennia have passed since this civilisation found everlasting peace and eternal life at the end of a long journey, and the start of an even longer exile.\nLong enough to forget that no dream truly lasts forever."
+origin_tooltip_elven_celestial_throne_effects: "- Story Event Chain: ['concept_eos_elven_lhuren_eternal_array_chain']\n- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_storm_half']\n- $HOMEWORLD$$TABBED_NEW_LINE$- Has ['concept_eos_elven_lhuren_eternal_array_ruined']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_gardens_of_heaven']$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_forbidden_arcology']$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_sentient_dragons']\n- §RNo§! ['concept_guaranteed_colonies'] §Rnearby§!\n- Start with ['concept_eos_flaming_pearl'] relic\n"
+
+####################################
+# CIVICS
+####################################
+
+civic_elven_celestial_grace:0 "Celestial Grace"
+civic_elven_celestial_grace_desc:0 "In this society, the concept of filial piety is held in the highest regard. Service to family, clan and homeland is inextricable from individual identity. Those who shame themselves bring disfavor upon their kin, and those who achieve greatness are expected to repay all who have guided them along the way."
+civic_tooltip_celestial_grace_effects:0 "['concept_council'] members create §YCelestial Offices§! on their §YHome Planets§!, whose numbers scale with effective §YLeader Skill§!:$TABBED_NEW_LINE$- ['concept_commanders'] provide ['concept_eos_elven_dragon_strategists']$TABBED_NEW_LINE$- ['concept_scientists'] provide ['concept_eos_elven_dragon_researchers']$TABBED_NEW_LINE$- ['concept_officials'] provide ['concept_eos_elven_dragon_priests']$TABBED_NEW_LINE$- ['concept_council'] members from foreign worlds provide ['concept_envoys'] and ['concept_diplomatic_weight'] instead$TABBED_NEW_LINE$- ['concept_council'] members without a valid §YHome Planet§! cause §R-10%§! ['concept_stability']$TABBED_NEW_LINE$- Unsuitable Rulers may choose to §YAbdicate§! via the §Y$edict_eos_lhu_edict_celestial_mandate$§! Edict\n"
+
+####################################
+# Nations 
+####################################
+
+EMPIRE_DESIGN_elven_civ3:0 "Aurlûnor Velande"
+EMPIRE_DESIGN_elven_civ3_desc:0 "Hidden away amongst the dense stars of the Dragon Cluster, the Aurlûnor believed that they would live in idyllic isolation for all eternity, cradled by a shell that could outlast all the stars in the cosmos.\n\nOn the day the beautiful bubble burst, no language could encapsulate the new depths of dread and wonder experienced by billions of ancient souls.\n\nAs they beheld the galaxy they had long forgotten, so did the galaxy that had long forgotten them stare back.§!\n"
+ELVEN_civ3_empire_adjective: "Aurlûnoren"
+ELVEN_civ3_species_name: "Lhûren"
+ELVEN_civ3_species_plural: "Lhûren"
+ELVEN_civ3_species_adjective: "Lhûren"
+ELVEN_civ3_ruler_title: "Velaran"
+ELVEN_civ3_ruler_title_female: "Velereth"
+ELVEN_civ3_heir_title: "Aranon"
+ELVEN_civ3_heir_title_female: "Aranel"
+ELVEN_civ3_ruler_name: "Sareariel Lelya-Earcala"
+ELVEN_civ3_homeworld_name: "Lhûmar"
+ELVEN_civ3_home_system_name: "Aurlûnor"
+
+####################################
+# Governments
+####################################
+
+gov_elven_celestial_grace_empire:0 "Celestial Dynasty"
+gov_elven_celestial_grace_empire_desc:0 "This government is a dynastic monarchy, where countless clans, bloodlines and households seek harmony in the balance between earthly attachments and spiritual cultivation."
+RT_EOS_CELESTIAL_GRACE_EMPEROR:0 "Dragon Emperor"
+RT_EOS_CELESTIAL_GRACE_EMPRESS:0 "Phoenix Empress"
+HT_EOS_CELESTIAL_GRACE_CROWN_PRINCE:0 "Dragon Prince"
+HT_EOS_CELESTIAL_GRACE_CROWN_PRINCESS:0 "Phoenix Princess"
+
+####################################
+# Factions
+####################################
+
+EOS_FACTION_NINE_SCREENS:0 "Nine Screens"
+EOS_FACTION_WILD_CRANE_TRIET:0 "Wild Crane Triet"
+EOS_FACTION_AZURE_DRAGON:0 "Azure Dragon"
+EOS_FACTION_STILL_LOTUS_LAKE:0 "Still Lotus Lake"
+EOS_FACTION_SILK_STRING_ZITHER:0 "Silk String Zither"
+EOS_FACTION_CLOUD_PIERCING_MOUNTAIN:0 "Cloud-Piercing Mountain"
+EOS_FACTION_WHITE_FEATHERED_FAN:0 "White Feathered Fan"
+EOS_FACTION_BLACK_PINE_FOREST:0 "Black Pine Forest"
+EOS_FACTION_PLUM_BLOSSOM_GARDEN:0 "Peach Blossom Garden"
+
+########################
+# MODIFIERS
+########################
+
+elven_eternal_array_modifier:0 "Eternal Array (Sheltered)"
+elven_eternal_array_modifier_desc:0 "This world is protected by an enigmatic megastructure that encases it within an immense shield."
+elven_eternal_array_broken_modifier:0 "Eternal Array (Dissonant)"
+elven_eternal_array_broken_modifier_desc:0 "The megastructure that used to project an impenetrable shield around this world has become unstable, much like the terrified populace on the surface."
+elven_eternal_array_repurposed_modifier:0 "Eternal Array (Harmonious)"
+elven_eternal_array_repurposed_modifier_desc:0 "This world is being sustained by an orbital ring which draws energy from the Dragon Nebula's anomalous environment."
+elven_eternal_array_encased_modifier:0 "Eternal Array (Encased)"
+elven_eternal_array_encased_modifier_desc:0 "Embraced within the ethereal evermore, an everlasting elysium exists outside of existence."
+
+elven_lhuren_planet_boost:0 "Negentropy"
+elven_lhuren_planet_boost_desc:0 "A 'moment' is a paradox that lies at the intersection of experience and abstraction; it exists only in memory. But if memories form the proof total of all observable existence detached from time and space, is it possible that universal decay fuels its own opposing force?"
+
+# Ending Effect Summaries
+elven_lhuren_origin_ending_A_modifier:0 "Path: Anatta"
+elven_lhuren_origin_ending_A_modifier_desc:0 ""
+elven_lhuren_origin_ending_A_modifier_tooltip:0 "§WCompleting Plan: Anatta has brought the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_strategist£ §Y$job_elven_dragon_strategist_plural$§! additionally provide £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!$TABBED_NEW_LINE$- Upon building or upgrading a §YMegastructure§!, accelerate the development of a random planet$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_FOUNDRY$§! produces £alloys£ §Y$alloys$§! and £influence£ §Y$influence$§!$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_FOUNDRY$§!'s output increases with §YAnatta§!\n\n$elven_lhuren_anatta_tooltip$"
+elven_lhuren_origin_ending_B_modifier:0 "Path: Samsara"
+elven_lhuren_origin_ending_B_modifier_desc:0 ""
+elven_lhuren_origin_ending_B_modifier_tooltip:0 "§WCompleting Plan: Samsara has brought the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_researcher£ §Y$job_elven_dragon_researcher_plural$§! additionally provide £mod_country_all_tech_research_speed£ §Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§!$TABBED_NEW_LINE$- Gain access to the §Y$sm_lhu_array_eternity_shield_amp$§! Orbital Ring Building$TABBED_NEW_LINE$- §Y$sm_lhu_array_eternity_shield_amp$§! reduces §Y$mod_planet_buildings_upkeep_mult$§!, §Y$mod_planet_districts_upkeep_mult$§! and increases station §Y$MOD_SHIP_SHIELD_ADD$§!, scaling with §YSamsara§!\n\n$elven_lhuren_samsara_tooltip$"
+elven_lhuren_origin_ending_C_modifier:0 "Path: Parinirvana"
+elven_lhuren_origin_ending_C_modifier_desc:0 ""
+elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana has brought the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_priest£ §Y$job_elven_dragon_priest_plural$§! additionally provide £mod_country_edict_fund_add£ §Y$MOD_COUNTRY_EDICT_FUND_ADD$§!$TABBED_NEW_LINE$- Unlock additional features of the §Y$trait_elven_lhuren_immortality$§! Trait$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_ARRAY$§! produces £energy£ §Y$energy$§! and §YNirvana§!\n\n$elven_lhuren_nirvana_tooltip$"
+
+##############
+### EVENTS ###
+##############
+
+# Helemar Arc Site
+ elven_lhuren_site_helemar:0 "Cosmic Caprice"
+ elven_lhuren_site_helemar_intro:0 "Many centuries after settling on Lhûmar, further exploration of the cluster revealed a small world in the depths of the Dragon Nebula, concealed by background emissions. At first, surveys reported it to be nothing more than an icy rock with no traces of life. Some half a millennium later, however, a second investigation revealed a wealth of resources and a thriving ecosystem hidden just beneath the surface of the all-encompassing ocean.\n\nOf course, we did not get to witness the Gilgezu-led colonization project that was supposed to take place, as Lhûmar was preparing to bid farewell to the rest of the galaxy around the same time.\n\nIt is readily apparent, nonetheless, that the fate of Helemar has taken... an interesting turn since we last recorded it. For one, no amount of follow-up surveys can classify it as life-bearing in its current state, and yet, disturbingly...\n\nWhy are orbital scans still trying to convince us otherwise?"
+ elven_lhuren_site.101.name:0 "I Wished Upon A Star"
+ elven_lhuren_site.101.desc:0 "The Helemar investigation has been inundated with disruptive delays, unwelcome surprises and unforeseen complications from the moment the first plans were drafted. However, none of the bureaucratic and technical incidents could begin to stand up to the barrage of unfortunate events that nearly cost the survey crew their lives in action.\n\nAfter we realised that we could not trust any of our remote instruments to get accurate readings, an attempt was made to instead to procure samples we could investigate in the lab.\n\nIt was a terrible mistake.\n\nFortunately, our well-justified paranoia paid off and the excessive safety measures put in place were... just barely enough to preserve the lives of the researchers. Unfortunately, neither the samples nor the lab survived, setting our progress back significantly.\n\nThe one silver lining is perhaps that the sheer scope of the failure was a humiliation to all ministries involved. The singular twitch of §Y[Root.Owner.GetRulerTitle] [Root.GetRulerName]'s§! heavenly brow upon reading the shameful report did not go unnoticed by the bureaucrats, propelling them to higher standards with the realisation that their heads, too, were on the line."
+ elven_lhuren_site.101.a:0 "A most auspicious beginning. Truly."
+ elven_lhuren_site.102.name:0 "Thunder Took My Voice"
+ elven_lhuren_site.102.desc:0 "After returning with better tools, more resources, and even one of §Y[Root.Owner.GetRulerTitle] [Root.GetRulerName]'s§! daughters with the §YFlaming Pearl§! in tow to personally oversee (and guarantee) further progress, no one should ever again underestimate the importance of this project.\n\nInitially, the presence of the §YFlaming Pearl§! and the reason for its assignment to this survey had not been disclosed to most researchers; it was for §YPrincess Linquiel§! and her entourage alone to know.\n\nHaving read the reports and noticed signs that only the Imperial Family would be familiar with, §Y[ruler.GetHerHisCap] Evershining Celestial Radiance§! came to suspect that the strange occurrences surrounding the investigation of Helemar had been far from mere bad luck. Otherworldly traces of interference clung to the disturbed strings of fate; something our history had up to this point only associated with the manifestations of §YDirac Sea Serpents§!, our incomprehensible and subtle yet ever-present benefactors. It is them that we owe our immortality to, and with their guidance that we had constructed the Eternal Array to safeguard their beloved garden of Lhûmar.\n\nThat suspicion was soon proven to be perfectly warranted... but for one detail that would have been impossible to foresee. The draconic Serpents were not the only eldritch creatures our people had encountered within the Dragon Nebula, but until today, they had been the only ones who were inclined to communicate with us. This time it was not a Dragon that the §YFlaming Pearl§! attracted, but... a §YPhoenix§!! The majestic avian form which had only been sighted a handful of times over the countless millennia of our history, and had always treated us with aloofness indistinguishable from unawareness.\n\nAs momentous as that encounter was, however, its attention lingered on the §YFlaming Pearl§! for only the briefest of moments. The §YPrincess§! immediately attempted to ask it a question, but the audience had ended before she could even utter the first word. Further attempts to make contact have thus far yielded no results, but emboldened by the auspicious event, everyone aboard has redoubled their efforts to solve whatever groundbreaking mysteries Helemar must hold."
+ elven_lhuren_site.102.a:0 "Sometimes, the answer arises from the existence of a question."
+ elven_lhuren_site.103.name:0 "Clouds Drowned The Sky"
+ elven_lhuren_site.103.desc:0 "The Phoenix never again revealed itself, having vanished as unexpectedly as it had appeared. But it seems that our questions had not gone ignored after all; we simply could not understand the answers at the time.\n\nFollowing the fateful encounter, §YPrincess Linquiel§! began to exhibit strange behavior. At first, she was merely prone to bouts of absent-mindedness during meetings - understandable, considering how much she had to ponder - but over the following weeks, she would attempt to contact individuals who did not exist, mention events that had never happened, and even seemed confused about the details of her very own mission. From then on, it accelerated, her cognition deteriorating at a pace too rapid for any hope of recovery to remain. By the end, she was left a husk of her former self, an overactive mind trapped in an unresponsive body, whispering gibberish as she stared wide-eyed at the ceiling. The imperial entourage had no choice but to return her home to receive the best of medical care, but thus far, all treatments have failed and prognoses are grim as her condition continues to baffle the empire's brightest neurologists.\n\nThe writings she had left behind, however, were the furthest thing from the ravings of an addled mind. As her outward symptoms worsened, her journal entries and reports would launch into comprehensive tangents on quantum mechanics, in particular the concepts of imaginary time and imaginary energy. Compelling theories that posited the existence of missing variables in our understanding of the universe, alongside attempts to extrapolate their formulae. The magnum opus she had finished just before the last vestiges of awareness had slipped away was... some sort of code. Composed of over seven million lines written in an internally consistent language and syntax, yet completely incompatible with any computing system we have ever developed. We do not know its purpose yet, but one thing is clear: it is far too precise and deliberate, so a purpose it definitely serves. For §YPrincess Linquiel's§! sacrifice to mean something, it must.\n\nPerhaps... this is why Phoenixes never speak to us. As much as the enigmatic riddles of the Dragons frustrate us, at least their meaning unfolds naturally as our civilization matures enough to know the answer. But if a Phoenix may only communicate its thoughts as an explosion of all possibilities uncollapsible by a feebler observer, maybe it is out of mercy that they choose to withhold their wisdom?"
+ elven_lhuren_site.103.a:0 "Today, the empire celebrates and... mourns the birth of a genius."
+ elven_lhuren_site.104.name:0 "Rain Fell Without Mercy"
+ elven_lhuren_site.104.desc:0 "While the enigmatic code written by §YPrincess Linquiel§! still awaits the development of an environment that can execute it, other avenues of inquiry have continued to be pursued, and at last, have yielded some results of their own.\nSamples brought up from the deadly planet that used to be known as Helemar have revealed vestigial fragments of the past, too faded to paint the full picture, yet nevertheless enough to create a rough sketch. Among the findings are metal alloys that have survived the harsh environment and passage of time, which when gathered, reconstructed and reassembled into larger components, began to resemble something uncannily familiar to us.\n\nAfter eliminating all the possible impossibilities, however unlikely the remaining theory appeared, it seemed as though the civilization of Gilgezu once attempted to build the Eternal Array on their own. It differed significantly from ours, but in many ways, the complexity of even its most basic components suggests that the design may have been even more advanced than that of Lhûmar's; a sturdier shield to withstand an even stronger storm.\nHowever... seeing the state of Helemar today, we can deduce that their efforts had met with failure. We do not know exactly what they so desperately sought refuge from, but the near-total annihilation of this world can only be attributed to a disaster of cosmic proportions...\n\nStill, although consigned to oblivion, the fate of our divergent twins is not devoid of meaning. We now have reason to believe that the key to saving ourselves, to retaining our eternity, lies in writing the continuation to their story. If we can retrace their development and reconstruct their technology, the wisdom passed down by the Phoenix's oracle shall reveal the way to salvation.\n\nIn superposition, Lhûmar and Gilgezu were to find infinite routes to salvation, yet our fates collapsed merely into disparate eigenstates of ruin. Though unable to avert theirs, our doom is yet to come, and before it does, we still stand a chance to form path integral - become one people once more, and together create a future neither could have achieved alone."
+ elven_lhuren_site.104.a:0 "Across time and space, life and death, real and imaginary, we shall reunite."
+
+# Gilgezu Arc Site
+ elven_lhuren_site_gilgezu:0 "Hollow Hope"
+ elven_lhuren_site_gilgezu_intro:0 "Tradition claims that when our arks first drifted into this system amidst otherworldly storms, this planet, a rare unspoiled life-bearing world, became our salvation; its humble gift of solid ground, a miracle.\n\nThe exhausted galactic wanderers decided to briefly halt their quest here, settling for some time to rest and recuperate for the journey ahead, but some would remain behind for good.\n\nEven after Lhûmar was discovered and our people proclaimed it the promised paradise, Gilgezu continued to thrive, blossoming from a mere outpost into a prosperous partner; though not as abundant in beauty and resources, no lesser in its own unique culture and innovation.\n\nThose who did not choose to join us as the Eternal Array's embrace was about to envelop Lhûmar, instead returned to Gilgezu, which had chosen a different path: to bring enlightenment to the rest of the galaxy."
+ elven_lhuren_site.201.name:0 "Wayward Children"
+ elven_lhuren_site.201.desc:0 "For the first few millennia, the fate of Gilgezu used to spark our imagination in idle musings and popular fiction. Would our astray brothers and sisters go on to flourish?  Would they conquer the galaxy and rule over it with an iron fist in the image of our materialistic forebears? Would they return to the stars and seek their own eternal paradise elsewhere? Would they regret not joining us?\n\nAs eternity passed, our people's interest dwindled, and their memories followed not far behind. By now, revisiting Gilgezu brings us no sense of familiarity at all... No traces of life, let alone civilization, remain on its barren husk. The few visible scars that appear too deliberate to be natural geological formations are the only... suggestions that sentient life had once touched the surface of this world. Still, it is too early to deduce the full story. Indeed, amidst the sparse evidence, a 'story' may well be all we can muster in lieu of answers."
+ elven_lhuren_site.201.a:0 "Even memories fade away with time."
+ elven_lhuren_site.202.name:0 "Forgotten Grave"
+ elven_lhuren_site.202.desc:0 "At last, a breakthrough! Even though surface excavations continue to yield little information, something of interest was encountered deep within what remains of the planet's lithosphere. Upon closer inspection, we managed to uncover pockets of crystallized formations underneath what used to be the bottom of the ocean. The chemical composition of those country-sized deposits includes compounds that are not known to occur in nature. In other words: synthetic substances.\n\nWhile it still tells us little of Gilgezu's history, we do finally have a substantial trail of clues to follow. Although this theory remains within the realm of speculation still, it would appear that destruction was not the sole aim of the apocalypse visited upon Gilgezu. More so, whoever undertook it may have sought to remove all visible signs that a civilization had ever inhabited the world at all.\n\nHad we not known for a fact that our people once lived here, no doubt even we would have been fooled. Few others would spare this empty rock a second glance, let alone a systematic excavation effort."
+ elven_lhuren_site.202.a:0 "What could be concealed here? And more alarmingly, why?"
+ elven_lhuren_site.203.name:0 "Dark Forest"
+ elven_lhuren_site.203.desc:0 "Following our latest findings, we no longer hoped to find any recoverable records that could verify our many hypotheses. Our surprise was thus of earth-shattering proportions when not one, but two ancient devices were somehow unearthed, one even sporting a mostly-intact data drive to boot.\n\nHowever, it quickly became apparent that the devices' origins were alien: survey probes sent from far away. One of them was only a pile of debris that had not survived the elements and solar radiation. But the second one, dated about five centuries younger than the first, was a far more sophisticated machine. We managed to reverse-engineer some parts to an extent sufficient to access the databank, but the rest remains far more advanced than anything our civilization has produced so far.\n\nThe even more chilling discoveries yet awaited us, however, within the probe's logs. According to what we could decipher, the probe used to be equipped with an AI system designed to search for specific lifesigns and send back a neutrino pulse once a match was made. And the search parameters in question? DNA sequences that match... us. Details of architecture divergent yet unmistakably rooted in our traditions. Comprehensive blueprints of grand starships and space structures that we have never constructed... yet perhaps, had our development taken a different path, we would. The last log entry made before the onboard AI self-terminated was something that could be interpreted as 'all clear'.\n\nMany questions remain, but perhaps some contain answers within themselves. Was this civilization responsible for Gilgezu's destruction? Doubtful, because mere destruction would not necessitate going to such lengths. The more likely, and more terrifying possibility, is that Gilgezu's people feared something among the stars so much that erasing the grandeur of their homeworld from the pages of history was preferable to being found by it..."
+ elven_lhuren_site.203.a:0 "Let us... defer sleepless nights until after our work is done."
+
+# Origin Event Chain: The Day You Vanished with the Stars
+ START_SCREEN_ELVEN_CELESTIAL_THRONE:0 "Once upon a time, an age not even the Venerable Elders recall after tens of thousands of years of eroding memories, our people used to wander the cosmos. Disillusioned with the hollow decadence of the homeworld they had left behind, they sought a more meaningful existence among the stars.\n\nMuddled recollections speak of the final destination of their long exile. Much diminished in numbers by then, the ascetic nomads stumbled - some would claim by chance, others by fate - upon a turbulent nebula, and found their ships stranded amidst violent storms. Their retreat cut off, they resolved to push onwards in search of a temporary refuge to shield them from the cosmic anomalies. And thus they found the abundant system that we now know as our home. There, they found enlightement and transcended mortality itself.\n\nThat quaint origin myth, albeit inspiring, has always read like the vagaries of an addled imagination to the billions of us, born and grown within the cradle of the unbreakable shell enveloping our world - the only world. After all, the only 'stars' we have ever seen with our eyes were those beautiful ornaments looking down on us from the hard-light sky overhead, as mythical and metaphorical as the inky dragons and phoenixes streaking across the very same liquid mural.\n\nIf only that could have lasted forever as promised..."
+
+ elven_lhuren_eternal_array_chain_title:0 "The Day You Vanished with the Stars"
+ elven_lhuren_eternal_array_chain_desc:0 "If the promise of eternity can shatter in an instant, have we perhaps misled ourselves into treading the wrong path?\n\nEven as chaos grips our society and an incomprehensible disaster threatens our very existence, the coolest of heads must prevail and correct the course of fate. Until the crisis is averted, ancient dogma and populist rhetoric alike must be set aside in pursuit of the sole immutable truth, for all other routes lead to doom.\n\nThe process will be unimaginably complex and fraught with unknown variables, but the core philosophy is quite simple: Retrace the past to understand the present. Seize the present to shape the future."
+
+ elven_lhuren_origin_gilgezu_poi:0 "Traces of the Past: Gilgezu"
+ elven_lhuren_origin_gilgezu_poi_desc:0 "The barren husk of a once abundant world. Hereto leads the path unchosen, the validation of all fears, and yet... was our fate any kinder?"
+ elven_lhuren_origin_helemar_poi:0 "Traces of the Past: Helemar"
+ elven_lhuren_origin_helemar_poi_desc:0 "A once-young garden world turned hostile to any and all life. When even the universe rejects such a hopeful existence, do we accept that annihilation is the natural end to all things?"
+ elven_lhuren_origin_route_A_poi:0 "Path to the Future: Anatta"
+ elven_lhuren_origin_route_A_poi_desc:0 "To escape a certain doom, we must brave a path of uncertainty. Dismantling the Eternal Array's barrier module will thrust us into a future we cannot foresee, but we shall become strong enough to face whatever lies ahead.\n\nUpgrade the Megastructure: §Y$NAME_LHU_ETERNAL_ARRAY$§!"
+ elven_lhuren_origin_route_B_poi:0 "Path to the Future: Samsara"
+ elven_lhuren_origin_route_B_poi_desc:0 "Knowing now that the fabric of our reality is not immutable, only fools would remain static in the face of inevitable change. Reconstructing the §Y$NAME_LHU_ETERNAL_ARRAY$§ with a new design shall put our adaptability to the test; the first of many on a long and winding journey without a destination.\n\nUpgrade the Megastructure: §Y$NAME_LHU_ETERNAL_ARRAY$§!"
+ elven_lhuren_origin_route_C_poi:0 "Path to the Future: Parinirvana"
+ elven_lhuren_origin_route_C_poi_desc:0 "We once chose to end our tale with the 'happily ever after', yet another chapter was written against our will. Now, we shall take up the phoenix quill to rewrite destiny's tragic script, and attain the happy ending we were promised once and for all.\n\nUpgrade the Megastructure: §Y$NAME_LHU_ETERNAL_ARRAY$§!"
+
+# Origin Event Text
+ elven_lhuren_origin_events.101.name:0 "My Luck Brushes Against the Rainy Skies"
+ elven_lhuren_origin_events.101.desc:0 "We were... woefully unfit to face the day the heavens fell and the searing light of unknowable stars spilled over our delusions of eternal tranquility.\n\nAs the darkness spread its tendrils across our sky, we had lost more than its reassuring immutability; we had lost our future. Millennia of certainty became naught but a bitter realisation that the one promise we trusted unconditionally had never been made, for tomorrow was no longer predestined."
+ elven_lhuren_origin_events.101.a:0 "And it only got worse..."
+
+ elven_lhuren_origin_events.102.name:0 "And Cuts Through the Barren World"
+ elven_lhuren_origin_events.102.desc:0 "The Eternal Array, the titanic buttress that used to hold up the firmanent of our universe, was suspected to be malfunctioning, but such an obvious conclusion quickly made fools of us. Indeed, to the consternation of all, the Array remains immaculate, unchanged, as perfect as the day it had come to life...\n\nA crucial variable had changed, but as desperate to deny it as we are, we must delude ourselves no longer. The harsh truth may be that not only does it lie outside our bubble... but perhaps it lies outside even our control.\n\nWe set out, nonetheless, in search of answers, whatever they may be. For the first time in ages, long-fossilized archives turned into gardens of vital knowledge and wilted blueprints bloomed into spacecraft once more.\n\nThe next destination of our quest leads upstream of the river of time - to the places where the fates of our people had diverged, decisions were made, and, perhaps, so were mistakes."
+ elven_lhuren_origin_events.102.a:0 "Let the past guide us towards a new future."
+
+ elven_lhuren_origin_events.103.name:0 "As the Lights are Shining Strong"
+ elven_lhuren_origin_events.103.desc:0 "The husks of Gilgezu and Helemar continue to hold mysteries that will take time and dedicated research to fully appreciate. Despite its great intellectual value, however, most of that knowledge is immaterial to the pressing concerns of our people.\n\nThe uncomfortable truth is that the Eternal Array was built with the guidance of beings who had no concept of 'entropy', making us, too, willfully oblivious of its inevitability in the universe we inhabit. Indeed, the only unchanging truth amidst the chaos we call reality is change itself.\n\nHow frustrating... although we have found answers, they do not present us with a solution.\n\nBut perhaps... such a conclusion could also be seen as liberating? For even though the path ahead of us is no more certain than the hesitant footprints we have left behind, move forward we must, into a future unknown; the sole comfort being that it is one of our own choosing."
+ elven_lhuren_origin_events.103.a:0 "But this time, we understand the choice before us."
+
+ elven_lhuren_origin_events.104.name:0 "To Forget You and All the Stars Above"
+ elven_lhuren_origin_events.104.desc:0 "Not even the eldest and wisest among us can reach a consensus, but out of the countless proposals, three paths emerged as the final lifelines.\n\nThe proponents of §BAnatta§! are critical of our absolute dependency on factors we can neither control nor understand; this crisis exposing the folly of our ignorance. They suggest that we should scrap the barrier shielding our world and instead repurpose the Eternal Array towards tempering our civilization into one that can withstand entropy through its own strength.\n\nThe lobby of §GSamsara§! agrees that there is no going back to the status quo, but recommends more caution. The faction believes that the Eternal Array's shield can be stabilized via conventional means, while the Dragon Nebula's exotic properties shall be made to serve auxiliary rather than critical functions. This would offer us stable foundations as well as emergency resorts as we proceed onwards.\n\nLastly, the path of §RParinirvana§! posits that such a pivotal decision cannot be made rashly. The proponents argue that our civilization has survived for tens of thousands of years within the Eternal Array's peaceful embrace. Thus a crisis lasting a mere few years should not completely invalidate the option of continuing to do so. While aware that we can only restore the Eternal Array's full functionality for a few brief millennia at most before the transdimensional deviation becomes untenable, they are confident that we will eventually solve the underlying issue, provided that enough time and resources are dedicated to the research."
+ elven_lhuren_origin_events.104.a:0 "§BDenial can no longer safeguard our eternity.§!"
+ elven_lhuren_origin_events.104.a.tooltip:0 "Projected Outcome:\n- $elven_lhuren_origin_ending_A_modifier_tooltip$"
+ elven_lhuren_origin_events.104.b:0 "§GWe must learn from our past failures, but not repeat them.§!"
+ elven_lhuren_origin_events.104.b.tooltip:0 "Projected Outcome:\n- $elven_lhuren_origin_ending_B_modifier_tooltip$"
+ elven_lhuren_origin_events.104.c:0 "§RWith time, we can solve the problem of universal entropy at its core.§!"
+ elven_lhuren_origin_events.104.c.tooltip:0 "Projected Outcome:\n- Lose control of §YLhûmar§!\n- Make §YLhûmar§! indestructible\n- Lose control of the §YFlaming Pearl§!\n- Lose control of the §YCurrent Ruler§!\n- $elven_lhuren_origin_ending_C_modifier_tooltip$"
+
+ elven_lhuren_origin_events.105.name:0 "I Cry Out 'Please Answer Me', My Voice Drying Out"
+ elven_lhuren_origin_events.105.desc:0 "We shall proceed with the §BAnatta§! proposal. For too long have we languished in the refuge of solipsism, staring at shadows dancing across the wall of a tiny cave, unaware of the flames burning around us; objects of a most humiliating cosmic joke.\n\nIn order to tread the new path, however, we must first determine which of our aspects shall propel us forward, and which constitute merely dead weight. The Eternal Array, being the chronicle of our past glories and the summary proof of our ingenuity, provides us with the perfect test of this new philosophy.\n\nWe shall no longer need its shield to insulate us from the universe we now desire to master. Rather, a hammer and anvil would serve us better, that we may forge the many tools of conquest and cultivation we shall no doubt require in the coming eons."
+ elven_lhuren_origin_events.105.a:0 "§BLet fear of the unknown burden us no longer!§!"
+ elven_lhuren_origin_events.1051.name:0 "And All My Feelings Disappear"
+ elven_lhuren_origin_events.1051.desc:0 "As was decreed by §Y[Root.Owner.GetRulerTitle] [Root.GetRulerName]§!, the painted firmament that had brought us warm comfort for millennia... was shattered - yet not by a whim of fate, as we had always feared, but by our very own hand.\n\nIn a brilliant yet disheartening display, the intricate weave of inky clouds made way for indistinct smears across a vast dark void. But let us not indulge in an excess of mourning, for in time, even richer beauty shall decorate this new canvas. The people of Lhûmar will soon be able to admire all the new stars painted in our image.\n\nBy the Celestial Mandate, we rule all that is made of stardust."
+ elven_lhuren_origin_events.1051.a:0 "§BLet them kowtow or tremble; it matters not which.§!"
+ elven_lhuren_origin_events.1051.b:0 "§BWe shall forge our new paradise among the stars.§!"
+
+ elven_lhuren_origin_events.106.name:0 "Just Like the Countless Stars Washed with Blood"
+ elven_lhuren_origin_events.106.desc:0 "The §GSamsara§! offers a slow but steady strategy for de-escalating the current crisis while adapting to new circumstances. As we are swept away by the violent rapids of change, the answer is neither to struggle against the current, nor to heedlessly let it carry us whither it runs.\n\nHaving already experienced the consequences of committing to a drastic course without due foresight, the decision has been made to secure a better vantage point from which we may plan our next set of moves.\nThe Eternal Array has proven too unreliable to deserve unconditional trust again, but we now know enough about the underlying principles behind its power to harness it in a more practical manner.\nBy discarding the wondrous machine's more exotic functions in favour of conventional solutions to the same problems, our capacity for reality-defying feats of physics shall be greatly diminished, yes, but the potential of selfsame 'magic' as an alternative power source cannot be understated."
+ elven_lhuren_origin_events.106.a:0 "§GLet us exploit it to the fullest while we still can.§!"
+ elven_lhuren_origin_events.1061.name:0 "Back on the Day You Disappeared"
+ elven_lhuren_origin_events.1061.desc:0 "In the cosmic game of Go, the board is boundless and each move radiates infinite possibilities. Yet, when victory is physically impossible, to some, the game becomes all the more interesting.\n\nIf, or when, one day, Form and Substance drift far enough apart to disentangle, and existence as we know it shatters into primordial chaos, nevertheless the ripples we have made will continue to reverberate through 'space' and 'time' even as those concepts lose meaning and collapse into a singularity, at which point the sole remaining eigenstate will contain... the sum total of all. And so, as the 'universe' experiences its last distinct 'moment', it will remember us..."
+ elven_lhuren_origin_events.1061.a:0 "§GAnd understand the meaning of our struggle.§!"
+ elven_lhuren_origin_events.1061.b:0 "§GRemember that we once lived.§!"
+
+ elven_lhuren_origin_events.107.name:0 "And It Engulfs Everything Into the Light"
+ elven_lhuren_origin_events.107.desc:0 "While some of us have found wonder and beauty outside of the Eternal Array's peaceful refuge, it is true that the §RParinirvana§! plan echoes the sentiments of many more. Even amongst the Venerable Elders who used to roam this galaxy before Lhûmar retreated into its shell, few remember those times, and fewer yet find any familiarity in the galaxy that greeted us upon emergence.\n\nWith all we have learned over the course of the crisis, we now possess the means and knowledge to restore the Eternal Array's shielding module to its full capacity by developing an adaptive solution to the Imaginary Drift responsible for the barrier collapsing. Unfortunately... this method is merely treating the symptoms and not the disease at the core of transdimensional deviation - the natural force of entropy itself. As such, while we can return to the way things were, researchers predict that we will be facing the same problem again in another couple of millennia. That... brief reprieve, however, must be enough for us to discover a more permanent solution. Yes, the brightest minds of our species must overcome the one thing universally accepted to be inevitable. Only then will we be able to reclaim our serene eternity and consign these few years of darkness to oblivion."
+ elven_lhuren_origin_events.107.a:0 "§RFor the first time in a very long time, the time is scarce.§!"
+ elven_lhuren_origin_events.1071.name:0 "Letting All My Feelings Disappear"
+ elven_lhuren_origin_events.1071.desc:0 "Tearful partings and last-minute changes of heart are unavoidable whenever the day of departure arrives. More so when the departees must hope, for all our sakes, that we shall never see each other again. Because should the day of reunion ever come... it would also be the day our paradise is lost.\n\nAs our people on both sides of the Eternal Array resolve to either begin a new journey, or return home, neither can truly resent the other's choice. Even as we part, we all understand, on some level, that we still rally in unison against our common enemy - the laws of an imperfect universe designed to end."
+ elven_lhuren_origin_events.1071.a:0 "§RIt is time to say our final goodbye. With a smile.§!"
+ elven_lhuren_origin_events.1071.b:0 "§RThough our paths diverge, purpose unites us.§!"
+
+# Special Projects
+ elven_lhuren_origin_project_repurpose:0 "Plan: Anatta"
+ elven_lhuren_origin_project_repurpose_TITLE:0 "Eternal Array: Anatta"
+ elven_lhuren_origin_project_repurpose_DESC:0 "The Eternal Array can no longer serve the purpose it was built for, but it can still serve a purpose. As we reach for the sky, we shall have to become proficient in building many more celestial structures like this."
+
+ elven_lhuren_origin_project_restore:0 "Plan: Parinirvana"
+ elven_lhuren_origin_project_restore_TITLE:0 "Eternal Array: Parinirvana"
+ elven_lhuren_origin_project_restore_DESC:0 "We were never meant to emerge from the Eternal Array's embrace. It is only due to the universe's fundamental errors that fate had failed to unfold along its intended course. No matter. We shall adapt to the error and, in time, find a way to correct it. Though we care little for the rest of the universe, perhaps its denizens, too, will one day thank us for freeing them from the withering predations of entropy."
+
+ # Event Buildings
+ sm_lhu_array_eternity_shield_amp:0 "Rhizomator of Imaginary Metaforms"
+ sm_lhu_array_eternity_shield_amp_desc:0 "Although the Eternal Array seemingly cannot be replicated outside of its specific environment, Zro-induced anomalous phenomena sometimes resonate with the same technology and can be harnessed on a small scale."
+
+# Event Megastructures
+
+ elven_lhuren_eternal_array_ruined:0 "$NAME_LHU_ETERNAL_ARRAY$"
+ elven_lhuren_eternal_array_ruined_DESC:0 "The heavenly ring once charted the boundary between the elysian realm and the profane wasteland. Now, all it divides are the minds of disillusioned celestials who once trusted in its promise of everlasting hermitage."
+ elven_lhuren_eternal_array_ruined_MEGASTRUCTURE_DETAILS:0 ""
+ elven_lhuren_eternal_array_requires_immortality_pass:0 "$TRIGGER_PASS$[lhuren_lhumar.GetName]'s serenity must be protected from defilement"
+ elven_lhuren_eternal_array_requires_immortality_fail:0 "$TRIGGER_FAIL$[lhuren_lhumar.GetName]'s serenity must be protected from defilement"
+
+ elven_lhuren_eternal_array_repurposed:0 "$NAME_LHU_ETERNAL_FOUNDRY$"
+ elven_lhuren_eternal_array_repurposed_DESC:0 "The heavenly ring once weaved a protective cocoon with the fabric of fate. Now, it is the loom upon which the threads of fate itself shall be spun."
+ elven_lhuren_eternal_array_repurposed_MEGASTRUCTURE_DETAILS:0 ""
+
+ elven_lhuren_eternal_array_restored:0 "$NAME_LHU_ETERNAL_ARRAY$"
+ elven_lhuren_eternal_array_restored_DESC:0 "The heavenly ring that once stood at the impassable border between two worlds has reincarnated as the guardian of infinite crossroads."
+ elven_lhuren_eternal_array_restored_MEGASTRUCTURE_DETAILS:0 ""
+
+ elven_lhuren_eternal_array_static:0 "$NAME_LHU_ETERNAL_ARRAY$"
+ elven_lhuren_eternal_array_static_DESC:0 "The heavenly ring encircles the planet protectively, promising a lonely eternity within the embrace of its unbreakable shell."
+ elven_lhuren_eternal_array_static_MEGASTRUCTURE_DETAILS:0 ""
+
+# Event Reward Summary
+ elven_lhuren_nirvana_tooltip:0 "§YNirvana§! is increased by £pop£ pops protected by §Y$NAME_LHU_ETERNAL_ARRAY$§!$TABBED_NEW_LINE$- Current Nirvana: §Y[EOSNirvanaCounter]§!$TABBED_NEW_LINE$- Monthly Nirvana: §G+1§!"
+ elven_lhuren_anatta_tooltip:0 "§YAnatta§! is increased by building and upgrading §YMegastructures§!$TABBED_NEW_LINE$- Current Anatta: §Y[ROOT.EOSAnattaCounter]§!"
+ elven_lhuren_samsara_tooltip:0 "§YSamsara§! is increased by researching §YTechnologies§!$TABBED_NEW_LINE$- Current Samsara: §Y[ROOT.EOSSamsaraCounter]§!"
+
+# Origin Errors
+ elven_lhuren_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"
+ elven_lhuren_origin_events.0001.desc:0 "The §Y$origin_elven_celestial_throne$§! Origin could not be set up correctly for this player!\n\nReason: §RGlobal Event Target Mismatch§!\nDetails: §H[this.GetName]§! is NOT same value as §H[lhuren_lhumar.owner.GetName]§!\nOR: §H[lhuren_lhumar.GetName]§! does NOT have a valid owner\nOR: §H[lhuren_lhumar.GetName]§! does NOT exist\n\n§RPlease Note:§! This Origin can only support one player. Duplicate players will not be able to interact with its mechanics.\nPlease start a New Game and make sure that only one Empire with the §Y$origin_elven_celestial_throne$§! Origin is allowed to spawn."
+ elven_lhuren_origin_events.0001.a:0 "Oops!"
+
+# Celestial Grace: Preserve the Celestial Grace
+ elven_celestial_grace_events.301.name:0 "Preserve the Celestial Grace"
+ elven_celestial_grace_events.301.desc:0 "In the tradition of our Empire, the mandate that grants dominion over all cosmos is not given unconditionally. An incompetent, unvirtuous or simply weary [Root.GetRulerTitle] will eventually lose the heavens' favor and face ceaceless opposition from discontent subjects as well.\n\nLikewise, rulers who have no ties to the land and the people they govern are doomed to become puppets to their own ego. After all, history has no shortage of solipstic autocrats whose vortex of self-destruction swept up entire civilizations.\n\nIf [Root.GetRulerName] is believed to have lost the Celestial Grace, for the good of the Empire, [Root.Ruler.GetSheHeCap] must..."
+ elven_celestial_grace_events.301.a:0 "Appease the noble clans."
+ elven_celestial_grace_events.301.b:0 "Prepare [Ruler.GetHerHisCap] heir for accession."
+ elven_celestial_grace_events.301.c:0 "Yield the throne to a new dynasty."
+ elven_celestial_grace_events.301.d:0 "$TRIGGER_FAIL$Think about it a little longer..."
+
+# Edict
+ edict_eos_lhu_edict_celestial_mandate:0 "Preserve the Celestial Grace"
+ edict_eos_lhu_edict_celestial_mandate_desc:0 "When the regime's legitimacy is in question, difficult choices may need to be made lest the unworthy lead us all unto doom."
+
+############
+### JOBS ###
+############
+
+planet_eos_celestials:0 "Celestial Offices"
+mod_planet_eos_celestials_produces_add:2 "£job_elven_dragon_researcher£ Celestial Offices Output"
+mod_planet_eos_celestials_produces_mult:2 "£job_elven_dragon_researcher£ Celestial Offices Output"
+mod_planet_eos_celestials_upkeep_add:1 "£job_elven_dragon_researcher£ Celestial Offices Upkeep"
+mod_planet_eos_celestials_upkeep_mult:1 "£job_elven_dragon_researcher£ Celestial Offices Upkeep"
+
+job_elven_dragon_researcher:0 "Celestial Scholar"
+job_elven_dragon_researcher_plural:0 "Celestial Scholars"
+job_elven_dragon_researcher_desc:0 "The high officials of the Dragon Court must be well-versed in both the laws of the heavens and the laws of the earth. Only those who comprehend the core concept of 'law' in all aspects may preside over the Empire's complex bureaucracy."
+job_elven_dragon_researcher_effect_desc:0 "£job_elven_dragon_researcher£ $job_elven_dragon_researcher_plural$ turn £trade£ §Y$trade$§! into £physics£ §YResearch Points§!, £unity£ §Y$unity$§! and £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!"
+mod_job_elven_dragon_researcher_add:0 "$job_elven_dragon_researcher$ Jobs"
+mod_job_elven_dragon_researcher_per_pop:0 "§G+1§! $job_elven_dragon_researcher$ Job per $VALUE$ Pops"
+mod_job_elven_dragon_researcher_per_pop_short:0 "\n§G+1§! £mod_elven_dragon_researcher_add£ per $VALUE$ £pop£"
+mod_pop_elven_dragon_researcher_workforce_mult:0 "Job Efficiency for $job_elven_dragon_researcher_plural$"
+mod_pop_elven_dragon_researcher_bonus_workforce_mult: "Job Efficiency for $job_elven_dragon_researcher_plural$"
+
+job_elven_dragon_priest:0 "Celestial Philosopher"
+job_elven_dragon_priest_plural:0 "Celestial Philosophers"
+job_elven_dragon_priest_desc:0 "The high officials of the Dragon Court must be well-versed in both the nature of the universe and the nature of the mind. Only those who question the core concept of 'nature' in all aspects may advise the Dragon Throne."
+job_elven_dragon_priest_effect_desc:0 "£job_elven_dragon_priest£ $job_elven_dragon_priest_plural$ turn £trade£ §Y$trade$§! into £society£ §YResearch Points§!, £influence£ §Y$influence$§! and £mod_planet_jobs_ruler_produces_mult£ §Y$mod_planet_jobs_ruler_produces_mult$§!"
+mod_job_elven_dragon_priest_add:0 "$job_elven_dragon_priest$ Jobs"
+mod_job_elven_dragon_priest_per_pop:0 "§G+1§! $job_elven_dragon_priest$ Job per $VALUE$ Pops"
+mod_job_elven_dragon_priest_per_pop_short:0 "\n§G+1§! £mod_elven_dragon_priest_add£ per $VALUE$ £pop£"
+mod_pop_elven_dragon_priest_workforce_mult:0 "Job Efficiency for $job_elven_dragon_priest_plural$"
+mod_pop_elven_dragon_priest_bonus_workforce_mult: "Job Efficiency for $job_elven_dragon_priest_plural$"
+
+job_elven_dragon_strategist:0 "Celestial Strategist"
+job_elven_dragon_strategist_plural:0 "Celestial Strategists"
+job_elven_dragon_strategist_desc:0 "The high officials of the Dragon Court must be well-versed in both the art of cultivation and the art of war. Only those who meticulously lay the foundations of today may design the form of tomorrow."
+job_elven_dragon_strategist_effect_desc:0 "£job_elven_dragon_strategist£ $job_elven_dragon_strategist_plural$ turn £trade£ §Y$trade$§! into £engineering£ §YResearch Points§!, £consumer_goods£ §Y$consumer_goods$§! and £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!"
+mod_job_elven_dragon_strategist_add:0 "$job_elven_dragon_strategist$ Jobs"
+mod_job_elven_dragon_strategist_per_pop:0 "§G+1§! $job_elven_dragon_strategist$ Job per $VALUE$ Pops"
+mod_job_elven_dragon_strategist_per_pop_short:0 "\n§G+1§! £mod_elven_dragon_strategist_add£ per $VALUE$ £pop£"
+mod_pop_elven_dragon_strategist_workforce_mult:0 "Job Efficiency for $job_elven_dragon_strategist_plural$"
+mod_pop_elven_dragon_strategist_bonus_workforce_mult: "Job Efficiency for $job_elven_dragon_strategist_plural$"
+
+#######################
+### PLANET FEATURES ###
+#######################
+
+d_elven_planetary_sentient_dragons:0 "Sentient Dragons"
+d_elven_planetary_sentient_dragons_desc:0 "Enigmatic entities manifest on this world of their own accord. Scarce instances of communication are always initiated by them, and tend to be one-sided; the true meaning of each interaction invariably eluding the recipients until the consequences are already upon them. Their exact nature, taxonomy, origins or what drives their interest in us, have thus far utterly baffled even the most experienced experts. The only observable fact is that they exist.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
+
+d_elven_planetary_sentient_dragons_blocker:0 "£blocker£ Sentient Dragons"
+d_elven_planetary_sentient_dragons_blocker_desc:0 "$d_elven_planetary_sentient_dragons_desc$"
+
+d_elven_planetary_gardens_of_heaven:0 "Gardens of Heaven"
+d_elven_planetary_gardens_of_heaven_desc:0 "Many fantastic legends, with equally dubious evidence, speak of how the gardens came to be. Some say divine beings directed the construction. Others claim it was a matter of one ruler after another contributing to their splendor. Whatever their origins, the gardens now cover an area so large that they can easily be identified without aid from orbit. Typically the site of important events, the gardens have become a symbol of our ingenuity.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
+
+d_elven_planetary_gardens_of_heaven_blocker:0 "£blocker£ Gardens of Heaven"
+d_elven_planetary_gardens_of_heaven_blocker_desc:0 "$d_elven_planetary_gardens_of_heaven_desc$"
+
+d_elven_planetary_forbidden_arcology:0 "Forbidden Arcology"
+d_elven_planetary_forbidden_arcology_desc:0 "The legend goes that it began with a suggestion to live 'apart from the common citizenry'. It ended with the construction of something that taxed the minds of the greatest scientists and engineers alike. An enormous building so tall it almost pierces the atmosphere. Completely self sufficient, this city-sized structure houses the elite of society. Penalties for attempting to gain unauthorized access are harsh.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
+
+# Space Deposits
+d_elven_lhuren_helemar:0 "Imaginary Verge"
+d_elven_lhuren_gilgezu:0 "Crystalline Necropolis"
+
+#######################
+###     RELICS      ###
+#######################
+
+r_elven_flaming_pearl:0 "Flaming Pearl"
+r_elven_flaming_pearl_desc:0 "A strange object of unknown origin and unidentified material composition, whose properties defy many commonly accepted laws of science.\n\nBut even more curious is the fact that, when set alight, the unnatural incense seems to attract enigmatic draconic creatures whose provenance and behavior mystify even the most esoteric minds.\n\nLegends claim that should the dragons find the bearer of the Pearl worthy, some might be inclined to grant their wishes. Might."
+elven_relic_flaming_pearl_active:0 "Seek audience with the Dragons and...\n§Ywho knows?§!"
+elven_relic_events.0101.name:0 "The Dragon's Nest"
+elven_relic_events.0101.desc:0 "Nine unsually personable dragons responded to the beacon, seeking nothing more than a stimulating conversation. Taking advantage of the opportunity, §Y[Root.GetRulerTitle] [Root.GetRulerName]§! managed to persuade them to shed light on the greatest mystery surrounding their kind: where do they come from?\n\nThe dragons were more than happy to enlighten [Root.Ruler.GetHimHer]. All of them, each with a different answer, stranger, more abstract and more contradictory than the last, and yet all nine seemed to be in perfect agreement that it was the whole truth and no detail was omitted.\n\nIn the end, the [Root.GetRulerTitle] found it impossible to discern the true answer. Nevertheless, some scholars believe that the dragons were indeed honest, but rather than take us directly to the answer, they showed us a path to reach it ourselves... one day."
+elven_relic_events.0101.a:0 "Could we have expected any different?"
+elven_relic_events.0102.name:0 "Ridiculous Riddles"
+elven_relic_events.0102.desc:0 "A lone dragon chanced upon the site of the summoning, offering a peculiar trade: something of 'infinite value' for merely a riddle that she could not answer in one attempt.\n\nThe price proved more difficult to meet than §Y[Root.GetRulerTitle] [Root.GetRulerName]§! initially expected, exhausting dozens of ideas before [Root.Ruler.GetSheHe] finally found one witty enough to give the dragon pause. Impressed, the dragon held up her own end of the bargain: giving us a riddle to solve in exchange.\n\nThe brigthest erudites of [Root.GetName] are already losing sleep trying to solve it, but in doing so their minds have become more awake than ever."
+elven_relic_events.0102.a:0 "It's at the tip of my tongue, I almost have it!"
+elven_relic_events.0103.name:0 "Counting the Scales"
+elven_relic_events.0103.desc:0 "A vain dragon answered the call, claiming that [Root.GetSpeciesName] could divine all secrets of the universe simply by admiring her polished scales. In fact, she readily promised §Y[Root.GetRulerTitle] [Root.GetRulerName]§! that great breakthroughs awaited [Root.Ruler.GetHimHer] people if [Root.Ruler.GetSheHe] could personally count all of the beautiful scales on her body.\n\nThe final count turned out to be one-hundred and sixteen, but in the process the [Root.GetRulerTitle] had spotted an uneven gap. Rather than courting the vain dragon's wrath by pointing out the imperfection, [Root.Ruler.GetSheHe] lied that there were exactly one-hundred and seventeen scales.\n\nPleased with the answer, the dragon complimented [Root.GetRulerName]'s diligence and left.\n\nA single scale remained after her departure and scientists cannot wait to examine it."
+elven_relic_events.0103.a:0 "The things we do for science..."
+elven_relic_events.0104.name:0 "Wisdom of Aeons"
+elven_relic_events.0104.desc:0 "A wise elder dragon came by the beacon this time, graciously accepting the offerings and deciding to repay by regaling §Y[Root.GetRulerTitle] [Root.GetRulerName]§! with the wisdom of millennia past, tales of civilizations long gone and stars so old and alien that [Root.Ruler.GetSheHe] was unsure if they could even be found in this galaxy, or this universe.\n\nThe [Root.GetRulerTitle] had many questions, but just as [Root.Ruler.GetSheHe] was about to start asking, another dragon joined them and started spinning its own story, and then another, and another.\nNew guests kept coming and going, and as it went on, started conversing amongst themselves as if [Root.GetRulerName] was not even there. Not a single opportunity to interject presented itself for the rest of the gathering, but [Root.Ruler.GetSheHe] was content to just listen and learn.\n\nThe [Root.GetRulerTitle]'s recollections of that meeting have inspired creative souls across [Root.GetName] to try and depict those fantastical tales in art."
+elven_relic_events.0104.a:0 "But were any of those stories actualy true?"
+elven_relic_events.0105.name:0 "Lesson in Humility"
+elven_relic_events.0105.desc:0 "§Y[Root.GetRulerTitle] [Root.GetRulerName]§! lit the Pearl and awaited the coming of dragons, first for hours, then days, until eventually the flames faltered and fizzled out.\n\nIt seems that despite following the ritual to letter and preparing enticing offerings, [Root.GetRulerName]'s summons were summarily ignored. But maybe that should come as no surprise; the Pearl grants [Root.Ruler.GetHimHer] no power over them, it merely draws their attention. Perhaps none simply had the whim to approach this time.\n\nIf nothing else, the experience gave the [Root.GetRulerTitle] much to ponder and a healthy dose of humility to come to terms with."
+elven_relic_events.0105.a:0 "Unpredictable creatures."
+elven_relic_events.0106.name:0 "Generous Rainfall"
+elven_relic_events.0106.desc:0 "A diminitive and sorry-looking dragon approached the site of the ritual, asking to be fed for he was hungry.\n\n§Y[Root.GetRulerTitle] [Root.GetRulerName]§! was willing to induldge the creature and ordered some food to be prepared. When offered, the dragon asked the chef to explain in detail what it was and how it had been prepared, after which he refused and requested a different dish. The situation repeated no less than eight more times, at which point the dragon finally declared that his curiosity had been sated.\n\nIn exchange, he promised that he would bring life-giving rain to all [Root.GetAdj] worlds so that we might come up with even more plentiful and diverse cuisine."
+elven_relic_events.0106.a:0 "Everyone's a gourmand these days..."
+elven_relic_flaming_pearl_rainfall:0 "Flaming Pearl: Generous Rainfall"
+elven_relic_events.0107.name:0 "Inspired Artifice"
+elven_relic_events.0107.desc:0 "Several dragons were attracted to the Pearl this time, yet all but one of them lingered only for a moment before departing. The last one to arrive stayed a little longer and was persuaded to explain the others' strange behaviour. As it turned out, they had simply found [Root.GetSpeciesNamePlural] boring and their offerings unworthy of attention. They judged us so by beholding our craftsmanship, which had apparently 'lost its novelty' and stagnated.\n\nSuffice to say, artisans across [Root.GetName] took the harsh judgement as a challenge and impetus to innovate."
+elven_relic_events.0107.a:0 "The dragons will eat their words."
+elven_relic_flaming_pearl_artifice:0 "Flaming Pearl: Inspired Artifice"
+elven_relic_events.0108.name:0 "Jade Rush"
+elven_relic_events.0108.desc:0 "A jade-scaled dragon answered the summons but would not speak, and rather than take any of the presented offerings, left us a gift instead and vanished promptly thereafter. The unexpected memento was a small piece of jadeite ore, a rare sight in this day and age given that its natural deposits had been mined out since ancient times, yet hardly valuable thanks to modern synthesis technology.\n\nHowever, further examination of the sample revealed physical properties that the gem should not possess - this 'draconic jade' is an excellent energy conductor, is harder than duranium and clearer than most synthetic lens crystals!\n\nMoreover, mining facilies across [Root.GetName] report that deposits of this baffling mineral have sprung up overnight as far as the eye can see!"
+elven_relic_events.0108.a:0 "Green is back in vogue!"
+elven_relic_flaming_pearl_jade:0 "Flaming Pearl: Jade Rush"
+elven_relic_events.0109.name:0 "Heavenly Authority"
+elven_relic_events.0109.desc:0 "Two dragons were attracted by the Flaming Pearl, both claiming to be its sole rightful owner and demanding it to be returned at once.\nIt did not take long before their attention shifted away from us and onto one another. Neither willing to back down from their claim, they began to fight. Although incredibly fascinating to watch at first, the duel dragged on for days and the collateral damage of it was beginning to take its toll on planetary and orbital infrastructure.\n\nIn an attempt to put a stop to it, §Y[Root.GetRulerTitle] [Root.GetRulerName]§! proposed a truce between the two. Since it was clear that neither could defeat the other in combat, [Root.Ruler.GetSheHe] proposed that [Root.GetName] would serve as impartial safekeepers of the Pearl until such a time that either of them could convince the other of the validity of their claim. Much to the [Root.GetRulerTitle]'s relief and no small amount of surprise, the rival dragons accepted the terms without question and went their separate ways."
+elven_relic_events.0109.a:0 "What... just happened?"
+elven_relic_flaming_pearl_authority:0 "Flaming Pearl: Heavenly Authority"
+elven_relic_events.0110.name:0 "Celestial Guardian"
+elven_relic_events.0110.desc:0 "A young dragon with a taste for adventure approached §Y[Root.GetRulerTitle] [Root.GetRulerName]§! and expressed interest in exploring the stars alongside [Root.GetSpeciesNamePlural]. In exchange, he offered to act as the empire's protector for a limited time. He would accompany our fleets and keep them out of danger as well as safeguard the peace and safety of our planets.\n\nExactly how he means to back that bold claim remains to be seen, but the [Root.GetRulerTitle] saw no reason to refuse him."
+elven_relic_events.0110.a:0 "And he was so adorable!"
+elven_relic_flaming_pearl_guardian:0 "Flaming Pearl: Celestial Guardian"
+
+##########################
+###      War Goals      ##
+##########################
+
+war_goal_wg_elven_imperial_tributary:0 "Secure Border"
+war_goal_wg_elven_imperial_tributary_desc:0 "Peacekeeping efforts are made in order to ensure that our borders are being respected and no threat is festering beyond them. A token Tribute shall suffice as proof of our neighbor's friendly intent.\n\nIn the event of a Status Quo peace, systems we occupy will be released as a new Tributary if they include at least one planet."
+cb_elven_celestial_tribute:0 "Heavenly Authority"
+casus_belli_cb_elven_celestial_tribute:0 "Heavenly Authority"
+elven_celestial_tribute_favor_fail:0 "£trigger_no£ We must have 5 §YCelestial Favor§!"
+elven_celestial_tribute_favor:0 "£trigger_yes£ We must have 5 §YCelestial Favor§!"
+
+########################
+###      COUNCIL      ##
+########################
+
+elven_councilor_celestial_grace:0 "Commandant of Heavenly Affairs"
+elven_councilor_celestial_grace_desc:0 "The duty of the Commandant of Heavenly Affairs is to appoint, reward and discipline high officials according to their merits and missteps."

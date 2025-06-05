@@ -1,0 +1,230 @@
+elven_avari_ring_modifier = {
+	planet_housing_add = 5
+	planet_jobs_produces_mult = 0.05
+	planet_buildings_cost_mult = -0.2
+	planet_building_build_speed_mult = 0.2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_avari_ring.dds"
+	icon_frame = 0
+}
+
+# The pre-rework Lhumar shield modifier. Currently unused.
+elven_avari_shield_modifier = {
+	planet_orbital_bombardment_damage = -0.4
+	pop_government_ethic_attraction = 0.25
+	planet_crime_mult = -0.25
+	planet_resettlement_unemployed_mult = -0.5
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_great_firewall.dds"
+	icon_frame = 0
+}
+
+# This one is a duplicate of the original Mineral Poor modifier.
+# It is used to make a shitty tomb world for the imperial start.
+elven_mineral_poor = {
+	planet_jobs_minerals_produces_mult = -0.25
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_mineral_poor.dds"
+	icon_frame = 3
+}
+
+# More duplicates
+elven_irradiated_planet = {
+	pop_environment_tolerance = -0.10
+	biological_pop_happiness = -0.20
+	lithoid_pop_happiness = -0.20
+	planet_jobs_food_produces_mult = -0.50
+	district_farming_max = -6
+	district_mining_max = 2
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
+	icon_frame = 3
+}
+
+elven_natural_beauty = {
+	pop_happiness = 0.05
+	planet_resettlement_unemployed_destination_mult = 0.25
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
+	icon_frame = 1
+}
+
+## LHUREN STORM WEIRDO WORLD
+elven_storm_world_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_metal_world.dds"
+	icon_frame = 3
+}
+
+# LUNARI SECTION
+
+lunari_dark_planet = {
+	pop_environment_tolerance = -0.3
+	icon = "gfx/interface/icons/planet_modifiers/pm_lunari_dark_planet.dds"
+	icon_frame = 3
+}
+
+lunari_thunderstorms = {
+	district_generator_max = 2
+	planet_jobs_energy_produces_mult = 0.4
+	planet_jobs_physics_research_produces_mult = 0.2
+	planet_buildings_cost_mult = 0.25
+	planet_districts_cost_mult = 0.25
+	planet_building_build_speed_mult = -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_lunari_ecological_retaliation.dds"
+	icon_frame = 2
+}
+
+lunari_ultra_rich = {
+	district_mining_max = 4
+	planet_jobs_minerals_produces_mult = 0.35
+	planet_jobs_engineering_research_produces_mult = 0.1
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_lunari_crystalline_ruins.dds"
+	icon_frame = 1
+}
+
+lunari_auroras = {
+	pop_happiness = 0.05
+	planet_resettlement_unemployed_destination_mult = 0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_lunari_auroras.dds"
+	icon_frame = 1
+}
+
+lunari_stable_weather = {
+	pop_environment_tolerance = -0.2
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_arctic_planet.dds"
+	icon_frame = 3
+}
+
+lunari_ecological_retaliation = {
+	pop_amenities_usage_mult = 0.5
+	planet_pops_upkeep_mult = 0.5
+	planet_jobs_produces_mult = -0.25
+	logistic_growth_mult = -0.25
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_lunari_ecological_retaliation.dds"
+	icon_frame = 3
+}
+
+# TREANT HABITABILITY SECTION
+
+elven_treant_harmony = {
+	pop_environment_tolerance = 0.01
+	planet_amenities_mult = 0.01
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_phytovitalization.dds"
+	icon_frame = 1
+}
+
+# UNITY TO RESEARCH
+
+elven_unity_to_research_conversion = {
+	country_base_unity_produces_add = -1
+
+	icon = "gfx/interface/icons/modifiers/mod_unity_loss_mult.dds"
+	icon_frame = 1
+}
+elven_unity_to_research_conversion_research = {
+	country_base_physics_research_produces_add = 0.5
+	country_base_society_research_produces_add = 0.5
+	country_base_engineering_research_produces_add = 0.5
+
+	icon = "gfx/interface/icons/modifiers/mod_job_low_tech_researcher_add.dds"
+	icon_frame = 1
+}
+
+# LHUREN ORIGIN EFFECTS
+
+elven_eternal_array_modifier = {
+	planet_orbital_bombardment_damage = -0.4
+	planet_storm_devastation_mult = -0.4
+	pop_housing_usage_mult = -0.2
+	planet_eos_celestials_produces_mult = 0.2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_great_firewall.dds"
+	icon_frame = 0
+}
+elven_eternal_array_broken_modifier = {
+	planet_orbital_bombardment_damage = -0.2
+	planet_storm_devastation_mult = -0.2
+	pop_citizen_happiness = -0.1
+	pop_government_ethic_attraction = -0.4
+	logistic_growth_mult = -0.2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_great_firewall.dds"
+	icon_frame = 0
+}
+elven_eternal_array_repurposed_modifier = {
+	army_defense_health_mult = 0.3
+	army_defense_morale_mult = 0.3
+	pop_government_ethic_attraction = -0.2
+	planet_eos_celestials_upkeep_mult = -0.2
+	
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_great_firewall.dds"
+	icon_frame = 0
+}
+elven_eternal_array_encased_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_elven_great_firewall.dds"
+	icon_frame = 0
+}
+
+elven_lhuren_origin_ending_A_modifier = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_border_mult.dds"
+	show_only_custom_tooltip = no
+	custom_tooltip = elven_lhuren_origin_ending_A_modifier_tooltip
+}
+elven_lhuren_origin_ending_B_modifier = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_border_mult.dds"
+	show_only_custom_tooltip = no
+	custom_tooltip = elven_lhuren_origin_ending_B_modifier_tooltip
+}
+elven_lhuren_origin_ending_C_modifier = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_border_mult.dds"
+	show_only_custom_tooltip = no
+	custom_tooltip = elven_lhuren_origin_ending_C_modifier_tooltip
+}
+
+elven_lhuren_planet_boost = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
+	planet_pop_assembly_mult = 1.0
+	logistic_growth_mult = 1.0
+	planet_building_build_speed_mult = 0.50
+}
+
+# LHUREN RELIC EFFECTS
+
+elven_relic_flaming_pearl_rainfall = {
+	planet_jobs_food_produces_mult = 0.20
+	pop_environment_tolerance = 0.10
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_artifice = {
+	planet_jobs_consumer_goods_produces_mult = 0.10
+	planet_jobs_alloys_produces_mult = 0.10
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_jade = {
+	planet_jobs_minerals_produces_mult = 0.20
+	planet_miners_rare_crystals_produces_add = 0.1
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_authority = {
+	planet_jobs_ruler_produces_mult = 0.20
+	pop_government_ethic_attraction = 0.20
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_guardian = {
+	planet_stability_add = 10
+	ship_evasion_mult = 0.20
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}

@@ -1,0 +1,93 @@
+objectTypes = {
+	###########################
+	### ELVEN ORBITAL RINGS ###
+	###########################
+	
+	## DESTROYED RING ##
+	pdxmesh = {
+		name = "elven_01_orbital_ring_destroyed_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_ring_destroyed.mesh"
+	}
+
+	## ORBITAL FRAME ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_tier_01_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_tier_01.mesh"
+			animation = { id = "idle"			type = "elven_01_orbital_tier_01_idle_animation" }
+
+	}
+
+	## ORBITAL SECTION ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_section_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_ring_section.mesh"
+	}
+
+	## BASIC HUB ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_hub_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_ring_hub.mesh"
+	}
+	
+	## GRAND HUB ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_hub_grand_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_ring_hub_grand.mesh"
+	}
+
+	### ORBITAL RING MODULES ###
+
+	## NOTE: Since the anims are all exactly the same, opted to use one animation for all modules to avoid clutter!
+
+	## ANCHORAGE ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_anchorage_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_ring_anchorage.mesh"
+			animation = { id = "idle"			type = "elven_01_orbital_ring_module_idle_animation" }
+	}
+	
+	## HANGAR BAYS ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_hangar_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_ring_hangar.mesh"
+			animation = { id = "idle"			type = "elven_01_orbital_ring_module_idle_animation" }
+	}
+
+	## GUN/MISSILE ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_gun_missile_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_ring_gun_missile.mesh"
+			animation = { id = "idle"			type = "elven_01_orbital_ring_module_idle_animation" }
+	}
+
+	## HABITAT ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_habitat_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_habitat.mesh"
+			animation = { id = "idle"			type = "elven_01_orbital_ring_module_idle_animation" }
+	}
+
+	## LUNARI HABITAT ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_habitat_lunar_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_habitat_lunari.mesh"
+			animation = { id = "idle"			type = "elven_01_orbital_ring_module_idle_animation" }
+	}
+
+	## SHIPYARD ##
+
+	pdxmesh = {
+		name = "elven_01_orbital_ring_shipyard_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_orbital_shipyard.mesh"
+			animation = { id = "idle"			type = "elven_01_orbital_ring_module_idle_animation" }
+	}
+}

@@ -1,0 +1,78 @@
+﻿l_braz_por:
+  # Ruler
+  elven_accident_events.210.name:0 "§RParricide§!"
+  elven_accident_events.210.desc:0 "§R[assassinated_leader.GetName]§! has been murdered at the hands of [assassinated_leader.GetHerHis] [Root.GetSpeciesSpawnNamePlural]. The general populace have reacted to the news with expressions of alarm over what else §R[assassinated_leader.GetName]§! might have failed at during life."
+
+  elven_accident_events.211.name:0 "§RAssassination Attempt§!"
+  elven_accident_events.211.desc:0 "A plot by §R[assassin_leader.GetName]§! to assassinate §R[surviving_leader.GetName]§! has just been foiled! The plot was intricate and would have been successful if not for the quick thinking of §R[surviving_leader.GetName]§!."
+  elven_accident_events.211.a:0 "Failed planning is the mark of a poor leader. Put [assassin_leader.GetHerHim] to death!"
+  elven_accident_events.211.b:0 "Plan better next time."
+
+  # Governor
+  elven_accident_events.220.name:0 "§RMurder§!"
+  elven_accident_events.220.desc:0 "§R[assassinated_leader.GetName]§!'s mangled body has been found lying in a pool of blood in [assassinated_leader.GetHerHis] mansion. A variety of possible motives exist. It is known [assassinated_leader.GetName] was in a disagreement with [assassinated_leader.GetHerHis] children as well as with several council members regarding recent policies."
+
+  elven_accident_events.221.name:0 "§RAttempted Murder§!"
+  elven_accident_events.221.desc:0 "Urgent news! §R[assassin_leader.GetName]§! has been caught red-handed in the assassination attempt of [assassinated_leader.GetName]. [assassin_leader.GetName] was executed for having the poor sense to be caught!"
+
+  elven_accident_events.222.name:0 "§RAssassination Attempt§!"
+  elven_accident_events.222.desc:0 "Urgent news! §R[assassin_leader.GetName]§! has been caught red-handed in the assassination attempt of §R[assassinated_leader.GetName]§!. Given the sloppiness of the attempt, the council decided to execute §R[assassin_leader.GetName]§! in order to promote better planning. Unfortunately [assassinated_leader.GetName] succumbed to [assassinated_leader.GetHerHis] wounds a few hours after the incident."
+
+  # Scientist
+
+  elven_accident_events.230.name:0 "§RMurdered§!"
+  elven_accident_events.230.desc:0 "§R[assassinated_leader.GetName]§! Has been murdered by one of [assassinated_leader.GetHisHer] subordinates! Which one might be impossible to ascertain given that every one seemed to have a potential motive as well as opportunity to kill [assassinated_leader.GetHerHim]."
+
+  elven_accident_events.231.name:0 "§RExperiment Gone Awry§!"
+  elven_accident_events.231.desc:0 "§R[assassinated_leader.GetName]§! has just died due to an unfortunate laboratory accident. One of [assassinated_leader.GetHisHer] assistants was instrumental in mitigating further damage and the science council assures us this individual is a well suited replacement. We are assured that rumors of this assistant being involved in the accident are pure fiction."
+
+  elven_accident_events.232.name:0 "§RFeud§!"
+  elven_accident_events.232.desc:0 "It has come to our attention that §R[assassinated_leader.GetName]§! and §R[assassin_leader.GetName]§! have been in an ongoing feud. The culmination of which almost resulted in both of their deaths accidentally as they were each trying to sabotage the others research. The council has requested advice on how to handle the situation."
+  elven_accident_events.232.a:0 "Donate both of their bodies to science!"
+  elven_accident_events.232.b:0 "Let them fight."
+
+  # Generic
+
+  elven_accident_events.240.name:0 "§REnraged Priestess§!"
+  elven_accident_events.240.desc:0 "Unfortunately for [assassinated_leader.GetHerHim], §R[assassinated_leader.GetName]§! has accidentally stumbled upon a furious priestess. But [assassinated_leader.GetSheHe] did not die in vain - [assassinated_leader.GetHerHis] death has fortunately assuaged the anger of the priestess and no further deaths have been reported."
+
+  elven_accident_events.241.name:0 "§RCarelessness§!"
+  elven_accident_events.241.desc:0 "§R[assassinated_leader.GetName]§! was casually walking down the narrow street when [assassinated_leader.GetSheHe] suddenly realized there was a dagger sticking out of [assassinated_leader.GetHerHis] back! A teachable moment for us all. Never let your guard down!"
+
+  elven_accident_events.242.name:0 "§RWhims of a Priestess§!"
+  elven_accident_events.242.desc:0 "§R[assassinated_leader.GetName]§! has been eaten alive by spiders at the whim of a priestess! On the positive side, the Goddess' favorite arthropods will now be well fed for some time."
+
+  elven_accident_events.243.name:0 "§RDisappearance§!"
+  elven_accident_events.243.desc:0 "§R[assassinated_leader.GetName]§! has suddenly disappeared! No sign of  [assassinated_leader.GetHerHis] body or any message of vengeance has been found. This indicates [assassinated_leader.GetSheHe] is dead or has vanished like a coward. In either case [assassinated_leader.GetSheHe] is no longer relevant and further investigation is not required."
+
+  elven_accident_events.244.name:0 "§RDisappearance§!"
+  elven_accident_events.244.desc:0 "§R[assassinated_leader.GetName]§! has suddenly disappeared! No sign of  [assassinated_leader.GetHerHis] body has been found. There appears to be rumors that [assassinated_leader.GetName] fell into an acid lake. Curiously there are no known acid lakes in the nearby vicinity."
+
+  elven_accident_events.245.name:0 "§RWhims of the Goddess§!"
+  elven_accident_events.245.desc:0 "The Goddess has demanded a worthy sacrifice and our [Root.GetRulerTitle] is willing to do anything for her favor. Who could be more worthy than §R[assassinated_leader.GetName]§!? Besides, it's about time [assassinated_leader.GetSheHe] is replaced with a more loyal and useful individual. Praise the Goddess!"
+
+  elven_accident_events.246.name:0 "§RSuicide Surely§!"
+  elven_accident_events.246.desc:0 "§R[assassinated_leader.GetName]§! has been found to have committed suicide! [assassinated_leader.GetSheHeCap] somehow managed to simultaneously jump to [assassinated_leader.GetHerHis] death as well as inflict multiple fatal stabbing wounds on [assassinated_leader.GetHerHis] person. The lead investigator is quoted as saying it was likely the best planned suicide ever conceived."
+
+  elven_accident_events.247.name:0 "§RAssassination Narrowly Avoided§!"
+  elven_accident_events.247.desc:0 "§R[surviving_leader.GetName]§! barely managed to avoid an attempt on [surviving_leader.GetHerHis] life! The culprits have already been dealt with as their plot was not sufficient to hide their identities. The experience however as left §R[surviving_leader.GetName]§! changed for the worse."
+
+  elven_accident_events.248.name:0 "§RAssassination Narrowly Avoided§!"
+  elven_accident_events.248.desc:0 "§R[surviving_leader.GetName]§! barely managed to avoid an attempt on [surviving_leader.GetHerHis] life! The culprits have already been dealt with as their plot was not sufficient to hide their identities. The experience has apparently rejuvenated §R[surviving_leader.GetName]§!. [surviving_leader.GetSheHeCap] is even more productive than previously!"
+
+  elven_accident_events.249.name:0 "§RMurder They Said§!"
+  elven_accident_events.249.desc:0 "We have just heard that §R[assassin_leader.GetName]§! has been killed by §R[assassinated_leader.GetName]§!! It turns out that §R[assassin_leader.GetName]§! was directly involved in a botched assassination attempt of §R[assassinated_leader.GetName]§!. In order to save us all the trouble of dealing with an inept leader, §R[assassinated_leader.GetName]§! dealt with the problem for us by fatally stabbing §R[assassin_leader.GetName]§!. The kill was quick and investigators have noted was at an exceptionally difficult angle. Clearly §R[assassinated_leader.GetName]§! is an expert with a blade!"
+
+  # Admiral/General
+
+  elven_accident_events.250.name:0 "§RUnfortunate Accident§!"
+  elven_accident_events.250.desc:0 "Regrettably, admiral §R[assassinated_leader.GetName]§! has tragically died during a planned drill. [assassinated_leader.GetHerHisCap] neck broke after a bad fall during a collision. More importantly, the ship is perfectly fine and undamaged."
+
+  elven_accident_events.251.name:0 "§RTraining Accident?§!"
+  elven_accident_events.251.desc:0 "During a recent training exercise, general §R[assassinated_leader.GetName]§! was somehow fatally hit by actual live fire. Investigators note that all weapons in the exercise were non-lethal by design and that no eye witnesses to the event have been found. Further inquiry has therefore been deemed pointless and the matter has officially been declared an accident."
+
+  elven_accident_events.252.name:0 "§RAssassination Avoided§!"
+  elven_accident_events.252.desc:0 "§R[surviving_leader.GetName]§! recently fought off an attack by a would-be assassin! The assassin was regrettably eviscerated by [surviving_leader.GetName] and as such could provide no information on potential perpetrators. Reports of the disappearance of several high ranking officers shortly after the incident could indicate [surviving_leader.GetName] has already dealt with the problem."
+
+  elven_accident_events.253.name:0 "§RAssassination Avoided§!"
+  elven_accident_events.253.desc:0 "During a recent training exercise, an assassination attempt was made against general §R[assassinated_leader.GetName]§!. Fortunately [assassinated_leader.GetSheHe] managed to not only evade the attempt but also kill the assassin! We are told the culprits have already been dealt with and that the army suffered no reduction in readiness."

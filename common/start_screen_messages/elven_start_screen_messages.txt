@@ -1,0 +1,17 @@
+part = {
+	location = 0
+	localization = "START_SCREEN_SUBTERRANEAN_INCEPTION"
+
+	trigger = {
+		has_origin = origin_drow_subterranean_inception
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_ELVEN_CELESTIAL_THRONE"
+
+	trigger = {
+		has_origin = origin_elven_celestial_throne
+	}
+}

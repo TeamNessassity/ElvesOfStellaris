@@ -1,0 +1,237 @@
+#################
+## LHUREN JOBS ##
+#################
+
+elven_dragon_researcher = {
+	category = ruler
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_eos_celestials
+		produces = {
+			unity = 5
+			physics_research = 10
+		}
+		upkeep = {
+			trade = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_jobs_specialist_produces_mult = 0.1
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			owner = {
+				has_country_flag = elven_lhuren_origin_ending_B
+			}
+		}
+		modifier = {
+			all_technology_research_speed = 0.1
+		}
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|elven_dragon_researcher|RESOURCE|physics_research|
+		modifier = {
+			factor = 2
+			has_trait = trait_elven_lhuren_immortality
+		}
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = ruler
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+elven_dragon_priest = {
+	category = ruler
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_eos_celestials
+		produces = {
+			influence = 0.25
+			society_research = 10
+		}
+		upkeep = {
+			trade = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_jobs_ruler_produces_mult = 0.1
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			owner = {
+				has_country_flag = elven_lhuren_origin_ending_C
+			}
+		}
+		modifier = {
+			country_edict_fund_add = 10
+		}
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|elven_dragon_priest|RESOURCE|society_research|
+		modifier = {
+			factor = 2
+			has_trait = trait_elven_lhuren_immortality
+		}
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = ruler
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
+elven_dragon_strategist = {
+	category = ruler
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_eos_celestials
+		produces = {
+			consumer_goods = 5
+			engineering_research = 10
+		}
+		upkeep = {
+			trade = 10
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_jobs_worker_produces_mult = 0.1
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			owner = {
+				has_country_flag = elven_lhuren_origin_ending_A
+			}
+		}
+		modifier = {
+			country_naval_cap_add = 20
+		}
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		mult = value:job_weights_modifier|JOB|elven_dragon_priest|RESOURCE|engineering_research|
+		modifier = {
+			factor = 2
+			has_trait = trait_elven_lhuren_immortality
+		}
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+		}
+	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = ruler
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+objectTypes = {
+
+	#######################
+	## ELVEN HYPER RELAY ##
+	#######################
+
+	pdxmesh = {
+		name = "elven_01_hyper_relay_01_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_hyper_relay.mesh"
+		animation = { id = "idle"			type = "elven_01_hyper_relay_idle_animation" }
+		animation = { id = "death"			type = "elven_01_hyper_relay_death_animation" }
+	}
+
+	#########################
+	## ELVEN PORTAL COLORS ##
+	#########################
+
+	pdxmesh = {
+		name = "elven_01_hyper_relay_01_portal_mesh"
+		file = "gfx/models/ships/megastructures/hyper_relay/hyper_relay_01_portal.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "elven_01_hyper_relay_01_portal.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"	
+			shader = "PdxMeshAlphaAnimateUVErosion"
+		}
+	}
+
+	pdxmesh = {
+		name = "elven_01_hyper_relay_01_portal_spin_mesh"
+		file = "gfx/models/ships/megastructures/hyper_relay/hyper_relay_01_portal_spin.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "elven_01_hyper_relay_01_portal_spin.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"	
+			shader = "PdxMeshAlphaAnimateUVErosion"
+		}
+	}
+}

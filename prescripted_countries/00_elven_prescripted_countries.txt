@@ -1,0 +1,578 @@
+# Kingdom of Senalata
+elven_civ1_both_dlc = {
+	name="EMPIRE_DESIGN_elven_civ1"
+	adjective="ELVEN_civ1_empire_adjective"
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ1_species_name"
+		plural="ELVEN_civ1_species_plural"
+		adjective="ELVEN_civ1_species_adjective"
+		name_list="ELVEN1"
+		trait="trait_elven_true"
+		trait="trait_charismatic"
+		trait="trait_talented"
+		trait="trait_wasteful"
+	}
+	
+	room="personality_spiritual_seekers_room"
+	
+	authority="auth_imperial"
+	
+	civics={
+		"civic_heroic_tales"
+		"civic_ascensionists"
+	}
+	government="gov_theocratic_monarchy"
+	
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ1_homeworld_name"
+	planet_class="pc_tropical"
+	origin = "origin_elven_foundations"
+	initializer="elven_system_imperial_initializer"
+	system_name="ELVEN_civ1_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_xenophile"
+
+	flags={ ayleid_personality_flag }
+	
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_ayleid.dds"
+		}
+		background={
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors={
+			"dark_teal"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=female
+		name="ELVEN_civ1_ruler_name"
+		portrait="elven_female_08"
+		texture=3
+		attachment=42
+		clothes=45
+		ruler_title="ELVEN_civ1_ruler_title"
+		ruler_title_female="ELVEN_civ1_ruler_title_female"
+		heir_title="ELVEN_civ1_heir_title"
+		heir_title_female="ELVEN_civ1_heir_title_female"
+		trait = trait_ruler_logistic_understanding
+		leader_class = official
+	}
+}
+
+elven_civ1_utopia_astral_planes = {
+	name="EMPIRE_DESIGN_elven_civ1"
+	adjective="ELVEN_civ1_empire_adjective"
+
+	playable = elven_no_galactic_paragons_dlc
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ1_species_name"
+		plural="ELVEN_civ1_species_plural"
+		adjective="ELVEN_civ1_species_adjective"
+		name_list="ELVEN1"
+		trait="trait_elven_true"
+		trait="trait_charismatic"
+		trait="trait_talented"
+		trait="trait_wasteful"
+	}
+	
+	room="personality_spiritual_seekers_room"
+	
+	authority="auth_imperial"
+	
+	civics={
+		"civic_aristocratic_elite"
+		"civic_ascensionists"
+	}
+	government="gov_theocratic_monarchy"
+	
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ1_homeworld_name"
+	planet_class="pc_tropical"
+	origin = "origin_elven_foundations"
+	initializer="elven_system_imperial_initializer"
+	system_name="ELVEN_civ1_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_xenophile"
+
+	flags={ ayleid_personality_flag }
+	
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_ayleid.dds"
+		}
+		background={
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors={
+			"dark_teal"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=female
+		name="ELVEN_civ1_ruler_name"
+		portrait="elven_female_08"
+		texture=3
+		attachment=42
+		clothes=45
+		ruler_title="ELVEN_civ1_ruler_title"
+		ruler_title_female="ELVEN_civ1_ruler_title_female"
+		heir_title="ELVEN_civ1_heir_title"
+		heir_title_female="ELVEN_civ1_heir_title_female"
+		trait = trait_ruler_logistic_understanding
+		leader_class = official
+	}
+}
+
+elven_civ1_galactic_paragons_dlc = {
+	name="EMPIRE_DESIGN_elven_civ1"
+	adjective="ELVEN_civ1_empire_adjective"
+
+	playable = elven_no_astral_planes_or_utopia_dlc
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ1_species_name"
+		plural="ELVEN_civ1_species_plural"
+		adjective="ELVEN_civ1_species_adjective"
+		name_list="ELVEN1"
+		trait="trait_elven_true"
+		trait="trait_charismatic"
+		trait="trait_talented"
+		trait="trait_wasteful"
+	}
+	
+	room="personality_spiritual_seekers_room"
+	
+	authority="auth_imperial"
+	
+	civics={
+		"civic_heroic_tales"
+		"civic_aristocratic_elite"
+	}
+	government="gov_theocratic_monarchy"
+	
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ1_homeworld_name"
+	planet_class="pc_tropical"
+	origin = "origin_elven_foundations"
+	initializer="elven_system_imperial_initializer"
+	system_name="ELVEN_civ1_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_xenophile"
+
+	flags={ ayleid_personality_flag }
+	
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_ayleid.dds"
+		}
+		background={
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors={
+			"dark_teal"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=female
+		name="ELVEN_civ1_ruler_name"
+		portrait="elven_female_08"
+		texture=3
+		attachment=42
+		clothes=45
+		ruler_title="ELVEN_civ1_ruler_title"
+		ruler_title_female="ELVEN_civ1_ruler_title_female"
+		heir_title="ELVEN_civ1_heir_title"
+		heir_title_female="ELVEN_civ1_heir_title_female"
+		trait = trait_ruler_logistic_understanding
+		leader_class = official
+	}
+}
+
+elven_civ1 = {
+	name="EMPIRE_DESIGN_elven_civ1"
+	adjective="ELVEN_civ1_empire_adjective"
+
+	playable = elven_im_broke
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ1_species_name"
+		plural="ELVEN_civ1_species_plural"
+		adjective="ELVEN_civ1_species_adjective"
+		name_list="ELVEN1"
+		trait="trait_elven_true"
+		trait="trait_charismatic"
+		trait="trait_talented"
+		trait="trait_wasteful"
+	}
+	
+	room="personality_spiritual_seekers_room"
+	
+	authority="auth_imperial"
+	
+	civics={
+		"civic_aristocratic_elite"
+		"civic_feudal_realm"
+	}
+	government="gov_theocratic_monarchy"
+	
+	ethic="ethic_fanatic_militarist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ1_homeworld_name"
+	planet_class="pc_tropical"
+	origin = "origin_elven_foundations"
+	initializer="elven_system_imperial_initializer"
+	system_name="ELVEN_civ1_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_xenophile"
+
+	flags={ ayleid_personality_flag }
+	
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_ayleid.dds"
+		}
+		background={
+			category="backgrounds"
+			file="vertical.dds"
+		}
+		colors={
+			"dark_teal"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=female
+		name="ELVEN_civ1_ruler_name"
+		portrait="elven_female_08"
+		texture=3
+		attachment=42
+		clothes=45
+		ruler_title="ELVEN_civ1_ruler_title"
+		ruler_title_female="ELVEN_civ1_ruler_title_female"
+		heir_title="ELVEN_civ1_heir_title"
+		heir_title_female="ELVEN_civ1_heir_title_female"
+		trait = trait_ruler_logistic_understanding
+		leader_class = official
+	}
+}
+
+# Gauls
+elven_civ2_dlc = {
+	name="EMPIRE_DESIGN_elven_civ2"
+	adjective="ELVEN_civ2_empire_adjective"
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ2_species_name"
+		plural="ELVEN_civ2_species_plural"
+		adjective="ELVEN_civ2_species_adjective"
+		name_list="ELVEN4"
+		trait="trait_elven_true"
+		trait="trait_elven_sidh_immortality"
+		trait="trait_traditional"
+		trait="trait_communal"
+		trait="trait_resilient"
+		trait="trait_sedentary"
+	}
+	
+	room="personality_spiritual_seekers_room"
+	
+	authority="auth_oligarchic"
+	civics={
+		"civic_sovereign_guardianship"
+		"civic_exalted_priesthood"
+	}
+	government="gov_elven_druid_circle"
+	
+	ethic="ethic_egalitarian"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ2_homeworld_name"
+	planet_class="pc_continental"
+	origin = "origin_elven_arcadian_symbiosis"
+	initializer="elven_system_gaul_initializer"
+	system_name="ELVEN_civ2_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="plantoid_01"
+	advisor_voice_type="l_the_diplomat"
+
+	flags={ gaul_personality_flag }
+
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_aenari.dds"
+		}
+		background={
+			category="backgrounds"
+			file="gaul_pattern1.dds"
+		}
+		colors={
+			"dark_green"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="ELVEN_civ2_ruler_name"
+		portrait="elven_female_01"
+		texture=2
+		attachment=35
+		clothes=62
+		ruler_title="ELVEN_civ2_ruler_title"
+		ruler_title_female="ELVEN_civ2_ruler_title_female"
+		leader_class=official
+		trait = trait_ruler_charismatic
+	}
+}
+
+elven_civ2 = {
+	name="EMPIRE_DESIGN_elven_civ2"
+	adjective="ELVEN_civ2_empire_adjective"
+
+	playable = elven_no_astral_planes_dlc
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ2_species_name"
+		plural="ELVEN_civ2_species_plural"
+		adjective="ELVEN_civ2_species_adjective"
+		name_list="ELVEN4"
+		trait="trait_elven_true"
+		trait="trait_elven_sidh_immortality"
+		trait="trait_traditional"
+		trait="trait_communal"
+		trait="trait_resilient"
+		trait="trait_sedentary"
+	}
+	
+	room="personality_spiritual_seekers_room"
+	
+	authority="auth_oligarchic"
+	civics={
+		"civic_exalted_priesthood"
+		"civic_environmentalist"
+	}
+	government="gov_elven_druid_circle"
+	
+	ethic="ethic_egalitarian"
+	ethic="ethic_pacifist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ2_homeworld_name"
+	planet_class="pc_continental"
+	origin = "origin_elven_arcadian_symbiosis"
+	initializer="elven_system_gaul_initializer"
+	system_name="ELVEN_civ2_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="plantoid_01"
+	advisor_voice_type="l_the_diplomat"
+
+	flags={ gaul_personality_flag }
+
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_aenari.dds"
+		}
+		background={
+			category="backgrounds"
+			file="gaul_pattern1.dds"
+		}
+		colors={
+			"dark_green"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="ELVEN_civ2_ruler_name"
+		portrait="elven_female_01"
+		texture=2
+		attachment=35
+		clothes=62
+		ruler_title="ELVEN_civ2_ruler_title"
+		ruler_title_female="ELVEN_civ2_ruler_title_female"
+		leader_class=official
+		trait = trait_ruler_charismatic
+	}
+}
+
+# LHUREN!!
+elven_civ3 ={
+	name="EMPIRE_DESIGN_elven_civ3"
+	adjective="ELVEN_civ3_empire_adjective"
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="lhuren"
+		name="ELVEN_civ3_species_name"
+		plural="ELVEN_civ3_species_plural"
+		adjective="ELVEN_civ3_species_adjective"
+		name_list="ELVEN2"
+		trait="trait_elven_true"
+		trait="trait_elven_lhuren_immortality"
+		trait="trait_traditional"
+		trait="trait_talented"
+	}
+	
+	room="personality_decadent_hierarchy_room"
+	
+	authority="auth_imperial"
+	
+	civics={
+		"civic_elven_celestial_grace"
+		"civic_inwards_perfection"
+	}
+	government="gov_elven_celestial_grace_empire"
+	
+	ethic="ethic_xenophobe"
+	ethic="ethic_pacifist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ3_homeworld_name"
+	planet_class="pc_ocean"
+	origin = "origin_elven_celestial_throne"
+	initializer="elven_system_lhuren_initializer"
+	system_name="ELVEN_civ3_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_the_soldier"
+
+	flags={ lhuren_personality_flag }
+	
+	empire_flag={
+		icon={
+			category="elven"
+			file="elven_aurlunor.dds"
+		}
+		background={
+			category="backgrounds"
+			file="new_dawn.dds"
+		}
+		colors={
+			"black"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=female
+		name="ELVEN_civ3_ruler_name"
+		portrait="lhuren_female_02"
+		texture=1
+		attachment=12
+		clothes=24
+		ruler_title="ELVEN_civ3_ruler_title"
+		heir_title="ELVEN_civ3_heir_title"
+		ruler_title_female="ELVEN_civ3_ruler_title_female"
+		heir_title_female="ELVEN_civ3_heir_title_female"
+		
+		trait = leader_trait_principled
+
+		leader_class = official
+	}
+}

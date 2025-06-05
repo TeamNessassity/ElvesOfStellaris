@@ -1,0 +1,330 @@
+namespace = elven_colony_events
+
+# I don't want AI renaming my planets after they colonize.
+planet_event = {
+	id = elven_colony_events.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_owner = yes
+				owner = {
+					is_ai = yes
+				}
+				has_planet_flag = planet_polydora
+			}
+			
+			set_name = "Halidrel'dár"
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				owner = {
+					is_ai = yes
+				}
+				has_planet_flag = planet_narenwyn
+			}
+			
+			set_name = "Narenwýn"
+		}
+		else_if = {
+			limit = {
+				has_owner = yes
+				owner = {
+					is_ai = yes
+				}
+				has_planet_flag = planet_morelyn
+			}
+			
+			set_name = "Morelýn"
+		}
+	}
+}
+
+# Okay, so the previous event does not work for advanced empires obviously.
+# Have to call this on game start.
+event = {
+	id = elven_colony_events.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_galaxy_planet = {
+			if = {
+				limit = {
+					has_owner = yes
+					owner = {
+						is_ai = yes
+					}
+					has_planet_flag = planet_polydora
+				}
+				
+				set_name = "Halidrel'dár"
+			}
+			else_if = {
+				limit = {
+					has_owner = yes
+					owner = {
+						is_ai = yes
+					}
+					has_planet_flag = planet_narenwyn
+				}
+				
+				set_name = "Narenwýn"
+			}
+			else_if = {
+				limit = {
+					has_owner = yes
+					owner = {
+						is_ai = yes
+					}
+					has_planet_flag = planet_morelyn
+				}
+				
+				set_name = "Morelýn"
+			}
+		}
+	}
+}
+
+# Valshaquellar Homeworld Repair
+country_event = {
+	id = elven_colony_events.21
+	title = "drow_special.1.name"
+	desc = "drow_special.1.desc"
+	picture = GFX_evt_colony_settlement
+	show_sound = event_air_raid_siren
+	location = event_target:drow_valshaquellar
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			last_increased_tech = tech_climate_restoration
+		}
+		any_planet_within_border = {
+			has_planet_flag = drow_valshaquellar_project
+			NOT = { has_planet_flag = drow_valshaquellar_repaired }
+		}
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = drow_special.1.a
+	}
+}
+
+# Special Project Completed
+planet_event = {
+	id = elven_colony_events.22
+	title = "drow_special.2.name"
+	desc = "drow_special.2.desc"
+	picture = GFX_evt_colony_settlement
+	show_sound = event_activating_unknown_technology
+	location = ROOT
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_planet_flag = drow_valshaquellar_repaired
+
+			clear_deposits = yes
+			clear_planet_modifiers = yes # Does not work?
+			clear_blockers = yes
+
+			remove_modifier = drow_defunct_lifesupport
+			remove_modifier = drow_decimated_infrastructure
+
+			change_pc = pc_drow_valshaquellar
+
+			add_deposit = d_drow_planetary_zhevalshath
+
+			solar_system = {
+				random_system_ambient_object = {
+					limit = { has_ambient_object_flag = drow_valshaquellar_debris }
+					destroy_ambient_object = this
+				}
+
+				space_owner = {
+					end_event_chain = elven_valshaquellar_chain
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = drow_special.2.a
+	}
+}
+
+# Arcology project switches various unique deposits on elven planets
+planet_event = {
+	id = elven_colony_events.31
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_city
+		OR = {
+			has_planet_flag = lunari_planet_flag
+			has_planet_flag = eilistraeean_capital
+			has_planet_flag = lhuren_capital
+			has_planet_flag = ayleid_capital
+		}
+	}
+
+	immediate = {
+		# Delayed event that changes planet entity.
+		# Arcology project immediately overwrites anything we do here, so we have to delay.
+		planet_event = { id = elven_colony_events.32 days = 1 }
+
+		if = {
+			limit = {
+				has_planet_flag = lunari_capital
+				NOT = { has_planet_flag = removed_ice_blossoms }
+			}
+	
+			add_deposit = d_lunari_planetary_cp_ice_blossoms
+		}
+
+		if = {
+			limit = {
+				has_planet_flag = eilistraeean_capital
+			}
+	
+			add_deposit = d_drow_planetary_cheel_krezust
+
+			if = {
+				limit = { NOT = { has_planet_flag = removed_feral_fairies } }
+
+				add_deposit = d_drow_planetary_cp_klepto_fairies
+			}
+		}
+		
+		if = {
+			limit = {
+				has_planet_flag = lhuren_capital
+			}
+	
+			add_deposit = d_elven_planetary_forbidden_arcology
+
+			if = {
+				limit = { NOT = { has_planet_flag = removed_sentient_dragons } }
+
+				add_deposit = d_elven_planetary_sentient_dragons
+			}
+
+			if = {
+				limit = { NOT = { has_planet_flag = removed_gardens_of_heaven } }
+
+				add_deposit = d_elven_planetary_gardens_of_heaven
+			}
+		}
+
+		if = {
+			limit = {
+				has_planet_flag = ayleid_capital
+			}
+	
+			add_deposit = d_elven_planetary_frensca_tol
+
+			if = {
+				limit = { NOT = { has_planet_flag = removed_tir_aranad } }
+
+				add_deposit = d_elven_planetary_tir_aranad
+			}
+		}
+	}
+}
+
+# Delayed event that changes planet entity.
+planet_event = {
+	id = elven_colony_events.32
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_city
+		has_planet_flag = lunari_planet_flag
+	}
+
+	immediate = {
+		change_pc = pc_lunari_city
+		set_planet_entity = {
+			entity = "elven_01_city_planet_sr_entity"
+		}
+	}
+}
+
+# Warn the player that using the Baol relic on a Permafrost world is a bad idea
+country_event = {
+	id = elven_colony_events.41
+	title = "elven_colony_events.41.name"
+	desc = "elven_colony_events.41.desc"
+	picture = GFX_evt_analyzing_artifacts
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_country_flag = permafrost_baol_warning_issued }
+		has_relic = r_the_last_baol
+		any_owned_planet = {
+			has_planet_flag = lunari_planet_flag
+		}
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+	immediate = {
+		set_country_flag = permafrost_baol_warning_issued
+	}
+
+	option = {
+		name = elven_colony_events.41.a
+	}
+}
+
+# Terraformed Permafrost worlds are reverted back to Permafrost after some time
+planet_event = {
+	id = elven_colony_events.42
+	title = "elven_colony_events.42.name"
+	desc = "elven_colony_events.42.desc"
+	picture = GFX_evt_cold_barren
+	show_sound = event_air_raid_siren
+	location = ROOT
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = lunari_planet_flag
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_lunari_city
+			is_planet_class = pc_lunari_arctic
+		}
+    }
+
+	immediate = {
+		revert_planet_to_permafrost = yes
+
+		# Nasty modifier as a bonus.
+		# What, you thought you could break origin rules and get a Gaia world?
+		add_modifier = {
+			modifier = "lunari_ecological_retaliation"
+			days = 7200
+		}
+	}
+
+	option = {
+		name = elven_colony_events.42.a
+	}
+}

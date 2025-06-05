@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_elven_lhuren_eternal_array_ruined_outliner_icon"
+		texturefile = "gfx/interface/icons/megastructures/elven_lhuren_eternal_array_ruined.dds"
+	}
+	spriteType = {
+		name = "GFX_elven_lhuren_eternal_array_repurposed_outliner_icon"
+		texturefile = "gfx/interface/icons/megastructures/elven_lhuren_eternal_array_repurposed.dds"
+	}
+	spriteType = {
+		name = "GFX_elven_lhuren_eternal_array_restored_outliner_icon"
+		texturefile = "gfx/interface/icons/megastructures/elven_lhuren_eternal_array_restored.dds"
+	}
+	spriteType = {
+		name = "GFX_elven_lhuren_eternal_array_static_outliner_icon"
+		texturefile = "gfx/interface/icons/megastructures/elven_lhuren_eternal_array_static.dds"
+	}
+}

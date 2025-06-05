@@ -1,0 +1,35 @@
+objectTypes = {
+
+
+	########################
+	## ELVEN CITY PLANETS ##
+	########################
+
+	############################
+	## BASE CITY PLANET STYLE ##
+	############################
+	pdxmesh = {
+		name = "elven_01_city_planet_mesh"
+
+		file = "gfx/models/ships/elven_01/elven_01_city_planet.mesh"
+		animation = { id = "idle"	type = "planet_clouded_idle" }
+		
+		scale = 1 # increases size of planet in the center
+		cull_distance = 99999999.0f
+	}
+
+	#########################
+	## LUNARI PLANET STYLE ##
+	#########################
+
+	## NOTE: SR == Sunless Realms
+	pdxmesh = {
+		name = "elven_01_city_planet_sr_mesh"
+
+		file = "gfx/models/ships/elven_01/elven_01_city_planet_sr.mesh"
+		animation = { id = "idle"	type = "planet_clouded_idle" }
+		
+		scale = 1 # increases size of planet in the center
+		cull_distance = 99999999.0f
+	}
+}

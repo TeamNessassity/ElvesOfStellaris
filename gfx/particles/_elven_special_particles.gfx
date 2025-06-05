@@ -1,0 +1,55 @@
+##############################
+### ELVEN SPECIAL EMITTERS ###
+##############################
+	
+objectTypes = {
+	
+	################
+	## ION CANNON ##
+	################
+	pdxparticle = {
+		name = "elven_01_ion_cannon_core_effect"
+		type = "elven_01_ion_cannon_core_effect"
+		
+		scale = 1.0
+	}
+
+	####################
+	## MINING STATION ##
+	####################
+	pdxparticle = {
+		name = "elven_01_new_mining_beam_effect"
+		type = "elven_01_new_mining_beam_effect"
+		
+		scale = 1.0
+	}
+
+	######################
+	## ELVEN HYPERLANES ##
+	######################
+	pdxparticle = {
+		name = "elven_01_hyper_relay_portal_effect"
+		type = "elven_01_hyper_relay_portal_file"
+		
+		scale = 1.0
+	}
+
+	#########################
+	## ELVEN ORBITAL RINGS ##
+	#########################
+	pdxparticle = {
+		name = "elven_01_orbital_ring_effect"
+		type = "elven_01_orbital_ring_effect_file"
+		
+		scale = 1.0
+	}
+
+
+
+	
+
+
+
+
+
+}

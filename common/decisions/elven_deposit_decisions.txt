@@ -1,0 +1,446 @@
+decision_elven_remove_tir_aranad = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_tir_aranad
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_elven_planetary_tir_aranad
+		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+		
+	}
+
+	effect = {
+		remove_deposit = d_elven_planetary_tir_aranad
+		set_planet_flag = removed_tir_aranad
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_elven_remove_sentient_dragons = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_sentient_dragons
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_elven_planetary_sentient_dragons
+		owner = {
+			OR = {
+				is_gestalt = yes 
+				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+	}
+
+	allow = {
+		owner = { has_technology = tech_dangerous_wildlife }
+	}
+
+	effect = {
+		remove_deposit = d_elven_planetary_sentient_dragons
+
+		owner = {
+			if = {
+				limit = { 
+					OR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_machine_terminator
+					}
+				}
+
+				add_resource = { unity = 1000 }
+			}
+
+			if = {
+				limit = { has_valid_civic = civic_hive_devouring_swarm }
+
+				add_resource = { 
+					food = 500
+					society_research = 500
+				}
+			}
+		}
+
+		set_planet_flag = removed_sentient_dragons
+		eos_lhuren_immortality_remove = yes
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_elven_remove_gardens_of_heaven = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_gardens_of_heaven
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_elven_planetary_gardens_of_heaven
+		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+
+	}
+
+	effect = {
+		remove_deposit = d_elven_planetary_gardens_of_heaven
+		set_planet_flag = removed_gardens_of_heaven
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_elven_remove_malevolent_groves = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_malevolent_groves
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_lunari_planetary_trees
+		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+		owner = { has_technology = tech_dense_jungle }
+	}
+
+	effect = {
+		remove_deposit = d_lunari_planetary_trees
+		set_planet_flag = removed_malevolent_groves
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_elven_remove_ice_spires = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_ice_spires
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_lunari_planetary_ice_spires
+		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+		owner = { has_technology = tech_mountain_range }
+	}
+
+	effect = {
+		remove_deposit = d_lunari_planetary_ice_spires
+		set_planet_flag = removed_ice_spires
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_elven_remove_ice_blossoms = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_ice_blossoms
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		OR = {
+			has_deposit = d_lunari_planetary_ice_blossoms
+			has_deposit = d_lunari_planetary_cp_ice_blossoms
+		}
+		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+
+	}
+
+	effect = {
+		if = {
+			limit = { has_deposit = d_lunari_planetary_ice_blossoms }
+
+			remove_deposit = d_lunari_planetary_ice_blossoms
+		}
+
+		if = {
+			limit = { has_deposit = d_lunari_planetary_cp_ice_blossoms }
+
+			remove_deposit = d_lunari_planetary_cp_ice_blossoms
+		}
+		
+		set_planet_flag = removed_ice_blossoms
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_elven_remove_murrpau_sanguine = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_murrpau_sanguine
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_drow_planetary_murrpau_sanguine
+		owner = { 
+			OR = {
+				is_gestalt = yes 
+				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+	}
+
+	allow = {
+		owner = { has_technology = tech_dangerous_wildlife }
+	}
+
+	effect = {
+		remove_deposit = d_drow_planetary_murrpau_sanguine
+
+		owner = {
+			if = {
+				limit = { 
+					OR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_machine_terminator
+					}
+				}
+
+				add_resource = { unity = 1000 }
+			}
+
+			if = {
+				limit = { has_valid_civic = civic_hive_devouring_swarm }
+
+				add_resource = { 
+					food = 500
+					society_research = 500
+				}
+			}
+		}
+
+		set_planet_flag = removed_murrpau_sanguine
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_elven_remove_feral_fairies = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_feral_fairies
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_drow_planetary_feral_fairies
+		owner = { 
+			OR = {
+				is_gestalt = yes 
+				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+	}
+
+	allow = {
+		owner = { has_technology = tech_dangerous_wildlife }
+	}
+
+	effect = {
+		remove_deposit = d_drow_planetary_feral_fairies
+
+		owner = {
+			if = {
+				limit = { 
+					OR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_machine_terminator
+					}
+				}
+
+				add_resource = { unity = 1000 }
+			}
+
+			if = {
+				limit = { has_valid_civic = civic_hive_devouring_swarm }
+
+				add_resource = { 
+					food = 500
+					society_research = 500
+				}
+			}
+		}
+
+		set_planet_flag = removed_feral_fairies
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_elven_remove_klepto_fairies = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_klepto_fairies
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_drow_planetary_cp_klepto_fairies
+		owner = { 
+			OR = {
+				is_gestalt = yes 
+				has_valid_civic = civic_fanatic_purifiers
+			}
+		}
+	}
+
+	allow = {
+		owner = { has_technology = tech_dangerous_wildlife }
+	}
+
+	effect = {
+		remove_deposit = d_drow_planetary_cp_klepto_fairies
+
+		owner = {
+			if = {
+				limit = { 
+					OR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_machine_terminator
+					}
+				}
+
+				add_resource = { unity = 1000 }
+			}
+
+			if = {
+				limit = { has_valid_civic = civic_hive_devouring_swarm }
+
+				add_resource = { 
+					food = 500
+					society_research = 500
+				}
+			}
+		}
+
+		set_planet_flag = removed_feral_fairies
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+decision_elven_remove_glowing_forests = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = elven_remove_glowing_forests
+	enactment_time = 720
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+	potential = {
+		has_deposit = d_drow_planetary_glowing_forests
+		owner = { is_gestalt = yes }
+	}
+
+	allow = {
+		owner = { has_technology = tech_dense_jungle }
+	}
+
+	effect = {
+		remove_deposit = d_drow_planetary_glowing_forests
+		set_planet_flag = removed_glowing_forests
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}

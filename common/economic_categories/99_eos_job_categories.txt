@@ -1,0 +1,13 @@
+planet_eos_celestials = {
+	icon = "job_elven_dragon_researcher"
+	parent = planet_jobs_ruler
+	#generate_add_modifiers = {
+	#	produces
+	#	upkeep
+	#}
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop_job
+}

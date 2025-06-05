@@ -1,0 +1,195 @@
+##################
+# Specific Traits
+##################
+
+## Actually the Drow trait. Holdover from previous split mods. ##
+
+## NOTE: Added BIOLOGICAL archetype since the archetype system is broken as of 2.2.
+trait_drow = {
+	cost = 0
+	sorting_priority = 20
+
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+
+    randomized = no
+    initial = no
+	immortal_leaders = no
+
+	icon = "gfx/interface/icons/traits/trait_drow.dds"
+	
+	leader_age_min = 100
+    leader_age_max = 400
+	
+	tags = { organic positive species leader }
+	
+	modifier = {
+		leader_lifespan_mult = 9.0				# Assuming that it costs 4 points, like Venerable.
+		species_leader_exp_gain = 0.1			# +1 points
+		planet_jobs_unity_produces_mult = -0.1  # -1 points
+		species_empire_size_mult = 0.1			# -2 points
+												# Effective trait cost is 2, but what the hell.
+	}
+	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" }
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	slave_cost = {
+		energy = 1500
+	}
+}
+
+trait_drow_xenocidal = {
+	cost = 1
+	
+	species_possible_add = { always = no }
+	species_possible_remove = { always = no }
+
+    initial = no
+	randomized = no
+	icon = "gfx/interface/icons/traits/trait_drow_xenocidal.dds"
+	modifier = { 
+		army_attack_damage_mult = 0.15
+		army_attack_morale_mult = 0.25
+		# Suggested but... even other xenophobes would get wiped out right? ;-)
+		#pop_ethic_xenophobe_attraction_mult = 0.15
+	}
+	opposites = { "trait_charismatic" }
+
+	ai_weight = {
+		weight = 0
+	}
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	slave_cost = {
+		energy = -1000
+	}
+}
+
+
+##################
+# Special Traits
+##################
+
+trait_drow_savage = {
+    cost = 0
+
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+
+	randomized = no
+	initial = no
+	immortal_leaders = yes
+
+	icon = "gfx/interface/icons/traits/trait_primitive.dds"
+
+	leader_age_min = 100
+    leader_age_max = 400
+	
+	tags = { organic positive species leader }
+	
+	modifier = {
+		leader_lifespan_mult = 9.0
+		army_damage_mult = 0.5
+		logistic_growth_mult = 0.25
+        planet_jobs_produces_mult = -0.5
+	}
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	slave_cost = {
+		energy = 1500
+	}
+}
+
+##################
+# Leader Traits
+##################
+
+leader_trait_drow_vigilant = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "gfx/interface/icons/traits/leader_traits/leader_trait_drow_vigilant.dds"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_class = { commander scientist official }
+
+	initial = no
+	randomized = no
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+##################
+# Moravar Traits
+##################
+
+trait_drow_moravar_immortality = {
+	cost = 0
+	sorting_priority = 20
+
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+
+	randomized = no
+	initial = no
+	immortal_leaders = yes
+
+	icon = "gfx/interface/icons/traits/trait_elven_bella.dds"
+	
+	tags = { organic positive species leader special }
+
+	# Since it's added after game-start, keep base age
+	#modifier = {
+	#	leader_starting_age_mult = 10.0
+	#	heir_starting_age_mult = -10.0
+	#}
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	slave_cost = {
+		energy = 500
+	}
+}
+
+##################
+# Anorim Traits
+##################
+
+trait_drow_anorim_immortality = {
+	cost = 0
+	sorting_priority = 20
+
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+
+	randomized = no
+	initial = no
+	immortal_leaders = yes
+
+	icon = "gfx/interface/icons/traits/trait_elven_bella.dds"
+	
+	tags = { organic positive species leader special }
+
+	# Since it's added after game-start, keep base age
+	#modifier = {
+	#	leader_starting_age_mult = 10.0
+	#	heir_starting_age_mult = -10.0
+	#}
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	slave_cost = {
+		energy = 500
+	}
+}

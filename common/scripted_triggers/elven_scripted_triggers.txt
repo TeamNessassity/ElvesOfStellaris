@@ -1,0 +1,250 @@
+elven_is_ps_humongous = {
+	OR = {
+		AND = {
+			planet_size > 41
+			is_moon = yes
+		}
+		AND = {
+			planet_size > 30
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_28_30 = {
+	OR = {
+		AND = {
+			planet_size >= 38
+			planet_size <= 41
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 28
+			planet_size <= 30
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_25_27 = {
+	OR = {
+		AND = {
+			planet_size >= 34
+			planet_size <= 37
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 25
+			planet_size <= 27
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_22_24 = {
+	OR = {
+		AND = {
+			planet_size >= 30
+			planet_size <= 33
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 22
+			planet_size <= 24
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_19_21 = {
+	OR = {
+		AND = {
+			planet_size >= 26
+			planet_size <= 29
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 19
+			planet_size <= 21
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_16_18 = {
+	OR = {
+		AND = {
+			planet_size >= 22
+			planet_size <= 25
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 16
+			planet_size <= 18
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_13_15 = {
+	OR = {
+		AND = {
+			planet_size >= 18
+			planet_size <= 21
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 13
+			planet_size <= 15
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_10_12 = {
+	OR = {
+		AND = {
+			planet_size >= 14
+			planet_size <= 17
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 10
+			planet_size <= 12
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_7_9 = {
+	OR = {
+		AND = {
+			planet_size >= 9
+			planet_size <= 13
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 7
+			planet_size <= 9
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_4_6 = {
+	OR = {
+		AND = {
+			planet_size >= 6
+			planet_size <= 8
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 4
+			planet_size <= 6
+			is_moon = no
+		}
+	}
+}
+
+elven_is_ps_1_3 = {
+	OR = {
+		AND = {
+			planet_size < 6
+			is_moon = yes
+		}
+		AND = {
+			planet_size >= 1
+			planet_size <= 3
+			is_moon = no
+		}
+	}
+}
+
+# Xenocidal
+
+drow_events_is_xenocidal = {
+	is_species_class = DROW
+	pop_has_trait = trait_drow_xenocidal
+	NOT = {
+		is_enslaved = yes
+		is_being_purged = yes
+	}
+}
+
+drow_events_is_xenocidable = {
+	is_enslaved = no
+	is_robot_pop = no
+	is_being_purged = no
+	NOT = {
+		pop_has_trait = trait_drow_xenocidal
+		pop_has_trait = trait_presapient_proles		
+	}
+}
+
+drow_events_has_xenocidable_ethic = {
+	OR = {
+		pop_has_ethic = ethic_xenophile
+		pop_has_ethic = ethic_pacifist
+		pop_has_ethic = ethic_egalitarian
+	}
+}
+
+# Celestial Grace
+
+# this = leader
+eos_lhu_valid_new_dynasty_ruler = {
+	is_heir = no
+	is_ruler = no
+	NOT = { has_trait = trait_elven_lhuren_taishanghuang }
+	exists = background_planet
+	background_planet = {
+		is_colony = yes
+	}
+}
+
+# DLC Restrictions
+
+# For Heroic Past civic.
+elven_no_galactic_paragons_dlc = { 
+	# Yeah, Galactic Paragons DLC doesn't have a dedicated trigger...
+	NOT = {
+		host_has_dlc = "Galactic Paragons"
+	}
+}
+
+# For Ascensionists civic.
+elven_no_astral_planes_or_utopia_dlc = { 
+	NOR = {
+		host_has_dlc = "Utopia"
+		has_astral_planes_dlc = yes
+	}
+}
+
+# If all three of them are missing.
+elven_im_broke = {
+	elven_no_galactic_paragons_dlc = yes
+	elven_no_astral_planes_or_utopia_dlc = yes
+}
+
+# For Masterful Crafters civic.
+elven_no_humanoids_dlc = {
+	has_humanoids = no
+}
+
+# For Sovereign Guardianship civic.
+elven_no_astral_planes_dlc = { #
+	has_astral_planes_dlc = no
+}
+
+
+
+
+
+# nebula_cloaking_effect = {
+# 	if = {
+# 		limit = {
+# 			has_first_contact_dlc = yes
+# 		}
+# 		add_modifier = { modifier = nebula_cloaking }
+# 	}
+# }

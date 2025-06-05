@@ -1,0 +1,216 @@
+@cull_radius = 100
+
+###########################
+### ELVEN ORBITAL RINGS ###
+###########################
+
+#####################
+## BASE RING PARTS ##
+#####################
+
+entity = {
+	name = "elven_01_orbital_ring_section_entity"
+	pdxmesh = "elven_01_orbital_ring_section_mesh"
+}
+
+entity = {
+	name = "elven_01_orbital_ring_hub_entity"
+	pdxmesh = "elven_01_orbital_ring_hub_mesh"
+}
+
+entity = {
+	name = "elven_01_orbital_ring_hub_tier_01_entity"
+	pdxmesh = "elven_01_orbital_ring_hub_grand_mesh"
+
+	default_state = "idle"
+	
+	## Planet Beam Effect ##
+	state = { 
+				name = "idle" state_time = 5
+				event = { time = 0.0 node = "beamnode" particle = "elven_01_orbital_ring_effect" keep_particle = yes trigger_once = yes }
+	}
+}
+
+###################
+## ORBITAL TIERS ##
+###################
+
+## CONSTRUCTION ENTITY ##
+
+entity = {
+	name = "elven_01_orbital_ring_construction_entity"
+	pdxmesh = "elven_01_orbital_tier_01_mesh"
+	
+		default_state = "idle"
+		state = { name = "idle" state_time = 5 animation = "idle"
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+		attach = { "part1" 			= "elven_01_orbital_ring_section_entity" }
+		attach = { "part2" 			= "elven_01_orbital_ring_section_entity" }
+		attach = { "part3" 			= "elven_01_orbital_ring_section_entity" }
+		attach = { "part4" 			= "elven_01_orbital_ring_section_entity" }
+		attach = { "hub1" 			= "elven_01_orbital_ring_hub_entity" }
+		attach = { "hub2" 			= "elven_01_orbital_ring_hub_entity" }
+		attach = { "hub3" 			= "elven_01_orbital_ring_hub_entity" }
+		attach = { "hub4" 			= "elven_01_orbital_ring_hub_entity" }
+
+		cull_radius = 10000000
+}
+
+## NOTE:  This is where they are built!!!
+## NOTE2: We don't use the incomplete sections, nor a giant hub!
+## NOTE3: Due to some oddities in the anims and such (producing gaps) we're using our own frame mesh here.
+## NOTE4: Using the same mesh for all 3 tiers because... why wouldn't we?
+## NOTE5: Elven rings do not make use of an elevator mesh so we have none at all. That is the job of an emitter attached to grand hubs.
+
+## TIER I ##
+
+entity = {
+	name = "elven_01_orbital_ring_tier_1_section_entity"
+	pdxmesh = "elven_01_orbital_tier_01_mesh" 
+
+	attach = { "part1" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part2" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part3" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part4" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "hub1" 			= "elven_01_orbital_ring_hub_tier_01_entity" }
+	attach = { "hub2" 			= "elven_01_orbital_ring_hub_entity" }
+	attach = { "hub3" 			= "elven_01_orbital_ring_hub_entity" }
+	attach = { "hub4" 			= "elven_01_orbital_ring_hub_entity" }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_orbital_ring_01_idle" } }
+	}
+}
+
+## TIER II ##
+
+entity = {
+	name = "elven_01_orbital_ring_tier_2_section_entity"
+	pdxmesh = "elven_01_orbital_tier_01_mesh"
+
+	attach = { "part1" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part2" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part3" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part4" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "hub1" 			= "elven_01_orbital_ring_hub_tier_01_entity" }
+	attach = { "hub2" 			= "elven_01_orbital_ring_hub_tier_01_entity" }
+	attach = { "hub3" 			= "elven_01_orbital_ring_hub_entity" }
+	attach = { "hub4" 			= "elven_01_orbital_ring_hub_entity" }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_orbital_ring_02_idle" } }
+	}
+}
+
+## TIER III ##
+
+entity = {
+	name = "elven_01_orbital_ring_tier_3_section_entity"
+	pdxmesh = "elven_01_orbital_tier_01_mesh"
+
+	attach = { "part1" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part2" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part3" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "part4" 			= "elven_01_orbital_ring_section_entity" }
+	attach = { "hub1" 			= "elven_01_orbital_ring_hub_tier_01_entity" }
+	attach = { "hub2" 			= "elven_01_orbital_ring_hub_tier_01_entity" }
+	attach = { "hub3" 			= "elven_01_orbital_ring_hub_tier_01_entity" }
+	attach = { "hub4" 			= "elven_01_orbital_ring_hub_tier_01_entity" }
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_orbital_ring_03_idle" } }
+	}
+}
+
+#######################
+### ORBITAL MODULES ###
+#######################
+
+## HABITAT ##
+
+entity = {
+	name = "elven_01_orbital_ring_habitat_section_entity"
+	pdxmesh = "elven_01_orbital_ring_habitat_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
+}
+
+## LUNARI HABITAT ##
+
+entity = {
+	name = "elven_01_orbital_ring_habitat_lunari_section_entity"
+	pdxmesh = "elven_01_orbital_ring_habitat_lunar_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
+}
+
+## SHIPYARD ##
+
+entity = {
+	name = "elven_01_orbital_ring_shipyard_section_entity"
+	pdxmesh = "elven_01_orbital_ring_shipyard_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
+}
+
+## ANCHORAGE ##
+
+entity = {
+	name = "elven_01_orbital_ring_anchorage_section_entity"
+	pdxmesh = "elven_01_orbital_ring_anchorage_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
+}
+
+## HANGAR BAYS ##
+
+entity = {
+	name = "elven_01_orbital_ring_hangarbay_section_entity"
+	pdxmesh = "elven_01_orbital_ring_hangar_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
+}
+
+## MISSILE ##
+
+## NOTE: Guns and missile modules use the same mesh!
+
+entity = {
+	name = "elven_01_orbital_ring_gun_section_entity"
+	pdxmesh = "elven_01_orbital_ring_gun_missile_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
+}
+
+## GUNS ##
+
+## NOTE: Guns and missile modules use the same mesh!
+
+## NOTE: Making use of the clone thingy here. Seems to work great!
+
+entity = {
+	name = "elven_01_orbital_ring_missile_section_entity"
+	clone = "elven_01_orbital_ring_gun_section_entity"
+}
+
+####################
+## DESTROYED RING ##
+####################
+
+entity = {
+	name = "elven_01_orbital_ring_01_destroyed_entity"
+	pdxmesh = "elven_01_orbital_ring_destroyed_mesh"
+}
+
+

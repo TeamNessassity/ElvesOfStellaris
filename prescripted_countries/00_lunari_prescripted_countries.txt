@@ -1,0 +1,161 @@
+lunariciv_dlc = {
+	name="EMPIRE_DESIGN_lunariciv"
+	adjective="ELVEN_lunari_empire_adjective"
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+
+	ship_prefix="LNS"
+
+	species={
+		class="ELVEN"
+		portrait="lunari"
+		name="ELVEN_lunari_species_name"
+		plural="ELVEN_lunari_species_plural"
+		adjective="ELVEN_lunari_species_adjective"
+		name_list="ELVEN3"
+		trait="trait_elven_true"
+		trait="trait_elven_lunari_immortality"
+		trait="trait_intelligent"
+		trait="trait_talented"
+		trait="trait_sedentary"
+	}
+
+	room="lunari_silvermoon_room"
+
+	ethic="ethic_fanatic_spiritualist"
+	ethic="ethic_militarist"
+		authority="auth_dictatorial"
+	civics={
+		"civic_dimensional_worship"
+		"civic_elven_arcane_minded"
+	}
+	government="gov_dimensional_covenant"
+
+	planet_name="ELVEN_lunari_homeworld_name"
+	planet_class="pc_lunari_arctic"
+	initializer="elven_system_lunari_initializer"
+	origin = "origin_elven_sunless_realms"
+	system_name="ELVEN_lunari_home_system_name"
+
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_necroid_vir" # Will fall back to default if no DLC. Tested.
+
+	flags={ lunari_personality_flag }
+
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_lunari_1.dds"
+		}
+		background={
+			category="backgrounds"
+			file="lunari_pattern1.dds"
+		}
+		colors={
+			"blue"
+			"grey"
+			"null"
+			"null"
+		}
+	}
+
+	ruler={
+		gender=female
+		name="ELVEN_lunari_ruler_name"
+		portrait="lunari_female_03"
+		texture=2
+		attachment=24
+		clothes=33
+		ruler_title="ELVEN_lunari_ruler_title"
+		heir_title="ELVEN_lunari_heir_title"
+		ruler_title_female="ELVEN_lunari_ruler_title_female"
+		heir_title_female="ELVEN_lunari_heir_title_female"
+		trait = trait_ruler_eye_for_talent
+		leader_class = official
+	}
+}
+
+lunariciv = {
+	name="EMPIRE_DESIGN_lunariciv"
+	adjective="ELVEN_lunari_empire_adjective"
+
+	playable = elven_no_astral_planes_dlc
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+
+	ship_prefix="LNS"
+
+	species={
+		class="ELVEN"
+		portrait="lunari"
+		name="ELVEN_lunari_species_name"
+		plural="ELVEN_lunari_species_plural"
+		adjective="ELVEN_lunari_species_adjective"
+		name_list="ELVEN3"
+		trait="trait_elven_true"
+		trait="trait_elven_lunari_immortality"
+		trait="trait_intelligent"
+		trait="trait_talented"
+		trait="trait_sedentary"
+	}
+
+	room="lunari_silvermoon_room"
+
+	ethic="ethic_fanatic_spiritualist"
+	ethic="ethic_militarist"
+		authority="auth_dictatorial"
+	civics={
+		"civic_exalted_priesthood"
+		"civic_elven_arcane_minded"
+	}
+	government="gov_theocratic_dictatorship"
+
+	planet_name="ELVEN_lunari_homeworld_name"
+	planet_class="pc_lunari_arctic"
+	initializer="elven_system_lunari_initializer"
+	origin = "origin_elven_sunless_realms"
+	system_name="ELVEN_lunari_home_system_name"
+
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_necroid_vir" # Will fall back to default if no DLC. Tested.
+
+	flags={ lunari_personality_flag }
+
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_lunari_1.dds"
+		}
+		background={
+			category="backgrounds"
+			file="lunari_pattern1.dds"
+		}
+		colors={
+			"blue"
+			"grey"
+			"null"
+			"null"
+		}
+	}
+
+	ruler={
+		gender=female
+		name="ELVEN_lunari_ruler_name"
+		portrait="lunari_female_03"
+		texture=2
+		attachment=24
+		clothes=33
+		ruler_title="ELVEN_lunari_ruler_title"
+		heir_title="ELVEN_lunari_heir_title"
+		ruler_title_female="ELVEN_lunari_ruler_title_female"
+		heir_title_female="ELVEN_lunari_heir_title_female"
+		trait = trait_ruler_eye_for_talent
+		leader_class = official
+	}
+}

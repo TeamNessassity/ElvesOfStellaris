@@ -1,0 +1,130 @@
+###############
+#Reference
+###############
+
+entity = {
+	name = "lunari_moon_01_entity"
+	pdxmesh = "lunari_moon_mesh"
+	
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "luna_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "luna_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "luna_shield_clouds.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "luna_shield_clouds.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 } animation_speed = 0.1
+
+		## STARLIGHT COMPATIBILITY
+		start_event = { node = "planet" light = "lunari_moon_light_core" }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+	
+	#scale = 10
+}
+
+entity = {
+	name = "lunari_arctic_planet_01_entity"
+	pdxmesh = "planet_clouded_mesh"
+	default_state = "idle"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "lunari_arctic_01_diffuse.dds"
+	texture_normal = "lunari_arctic_01_normals.dds"
+	texture_specular = "lunari_arctic_01_spec.dds"
+	}
+	
+		state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
+entity = {
+	name = "lunari_arctic_planet_02_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "lunari_arctic_02_diffuse.dds"
+	texture_normal = "lunari_arctic_02_normals.dds"
+	texture_specular = "lunari_arctic_02_spec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
+entity = {
+	name = "lunari_arctic_planet_03_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "lunari_arctic_03_diffuse.dds"
+	texture_normal = "lunari_arctic_03_normals.dds"
+	texture_specular = "lunari_arctic_03_spec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
+entity = {
+	name = "lunari_black_hole_entity"
+	pdxmesh = "black_hole_new_mesh"
+	
+	scale = 1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		## STARLIGHT COMPATIBILITY
+		start_event = { node = "planet" light = "lunari_black_hole_light_core" }
+
+		event = { time = 0 particle = "black_hole_particle" trigger_once = yes keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+	locator = { name = "planet" }
+	attach = { "planet" = "black_hole_rings_entity" }
+	attach = { "planet" = "black_hole_grav_lens_entity" }
+	attach = { "planet" = "black_hole_grav_animation_entity" }
+	
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+	cull_radius = 700
+}

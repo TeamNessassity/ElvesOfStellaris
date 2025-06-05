@@ -1,0 +1,137 @@
+###########################
+### ELVEN AVARI SHIELDS ###
+###########################
+
+@Planet_Offset = -150.00
+
+###########################
+## FINAL SCALED ENTITIES ##
+###########################
+
+# Eternal Array Shields
+
+entity = {
+	name = "lhu_array_eternity_shield_entity_full"
+	pdxmesh = "elven_01_empty_mesh"
+	cull_radius = 250.00
+
+	locator = { name = "center"	position = { 0 0 0 } }
+	attach = { "center" = "lhu_array_eternity_shield_primary_entity_full" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "lhu_array_eternity_shield_entity_partial"
+	pdxmesh = "elven_01_empty_mesh"
+	cull_radius = 250.00
+
+	locator = { name = "center"	position = { 0 0 0 } }
+	attach = { "center" = "lhu_array_eternity_shield_primary_entity_partial" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "lhu_array_eternity_shield_entity_broken"
+	pdxmesh = "elven_01_empty_mesh"
+	cull_radius = 250.00
+
+	locator = { name = "center"	position = { 0 0 0 } }
+	attach = { "center" = "lhu_array_eternity_shield_primary_entity_broken" }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "lhu_array_eternity_shield_entity_weak"
+	pdxmesh = "elven_01_empty_mesh"
+	cull_radius = 250.00
+
+	locator = { name = "center"	position = { 0 0 0 } }
+	attach = { "center" = "lhu_array_eternity_shield_primary_entity_weak" }
+
+	scale = 1.0
+}
+
+#####################
+## SCALED ENTITIES ##
+#####################
+
+entity = {
+	name = "lhu_array_eternity_shield_primary_entity_full"
+	pdxmesh = "elven_great_firewall_full_mesh"
+	cull_radius = 250.0
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { node = root particle = "planet_shield_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	# BLOOM FACTOR adjusts how bright the shield is in game!
+
+	game_data = { 
+		bloom_factor = 0.6 
+		uv_animation_speed 		= 1
+		uv_animation_direction 	= { -0.02 0.00 }
+	}
+	
+	scale = 0.22
+}
+
+entity = {
+	name = "lhu_array_eternity_shield_primary_entity_partial"
+	pdxmesh = "elven_great_firewall_partial_mesh"
+	cull_radius = 250.0
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { node = root particle = "planet_shield_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	game_data = { 
+		bloom_factor = 1.2 
+		uv_animation_speed 		= 2
+		uv_animation_direction 	= { 0.0 -0.02 }
+	}
+	
+	scale = 0.22
+}
+
+entity = {
+	name = "lhu_array_eternity_shield_primary_entity_broken"
+	pdxmesh = "elven_great_firewall_broken_mesh"
+	cull_radius = 250.0
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { node = root particle = "planet_shield_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	game_data = { 
+		bloom_factor = 1.2 
+		uv_animation_speed 		= 1
+		uv_animation_direction 	= { 0.0 -0.02 }
+	}
+	
+	scale = 0.22
+}
+
+entity = {
+	name = "lhu_array_eternity_shield_primary_entity_weak"
+	pdxmesh = "elven_great_firewall_weak_mesh"
+	cull_radius = 250.0
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { node = root particle = "planet_shield_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	game_data = { 
+		bloom_factor = 1.2 
+		uv_animation_speed 		= 1
+		uv_animation_direction 	= { 0.0 -0.02 }
+	}
+	
+	scale = 0.22
+}
