@@ -170,6 +170,7 @@ d_elven_lunari_moon = {
 }
 
 d_elven_lhuren_gilgezu = {
+	icon = d_infestation
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
@@ -184,6 +185,7 @@ d_elven_lhuren_gilgezu = {
 }
 
 d_elven_lhuren_helemar = {
+	icon = d_fractal_seed
 	resources = {
 		category = orbital_research_deposits
 		produces = {

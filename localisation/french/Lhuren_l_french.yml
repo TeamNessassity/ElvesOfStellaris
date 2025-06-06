@@ -187,7 +187,7 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  elven_lhuren_origin_route_A_poi:0 "Path to the Future: Anatta"
  elven_lhuren_origin_route_A_poi_desc:0 "To escape a certain doom, we must brave a path of uncertainty. Dismantling the Eternal Array's barrier module will thrust us into a future we cannot foresee, but we shall become strong enough to face whatever lies ahead.\n\nUpgrade the Megastructure: §Y$NAME_LHU_ETERNAL_ARRAY$§!"
  elven_lhuren_origin_route_B_poi:0 "Path to the Future: Samsara"
- elven_lhuren_origin_route_B_poi_desc:0 "Knowing now that the fabric of our reality is not immutable, only fools would remain static in the face of inevitable change. Reconstructing the §Y$NAME_LHU_ETERNAL_ARRAY$§ with a new design shall put our adaptability to the test; the first of many on a long and winding journey without a destination.\n\nUpgrade the Megastructure: §Y$NAME_LHU_ETERNAL_ARRAY$§!"
+ elven_lhuren_origin_route_B_poi_desc:0 "Knowing now that the fabric of our reality is not immutable, only fools would remain static in the face of inevitable change. Reconstructing the §Y$NAME_LHU_ETERNAL_ARRAY$§! with a new design shall put our adaptability to the test; the first of many on a long and winding journey without a destination.\n\nUpgrade the Megastructure: §Y$NAME_LHU_ETERNAL_ARRAY$§!"
  elven_lhuren_origin_route_C_poi:0 "Path to the Future: Parinirvana"
  elven_lhuren_origin_route_C_poi_desc:0 "We once chose to end our tale with the 'happily ever after', yet another chapter was written against our will. Now, we shall take up the phoenix quill to rewrite destiny's tragic script, and attain the happy ending we were promised once and for all.\n\nUpgrade the Megastructure: §Y$NAME_LHU_ETERNAL_ARRAY$§!"
 
@@ -353,7 +353,9 @@ d_elven_planetary_forbidden_arcology_desc:0 "The legend goes that it began with 
 
 # Space Deposits
 d_elven_lhuren_helemar:0 "Imaginary Verge"
+d_elven_lhuren_helemar_desc:0 "Perhaps cosmic insignificance goes both ways. Just as there is a limit to how small a subatomic element can be before its existence becomes unmeasurable to us, is it possible that we ourselves are too little to measure scopes of existence much larger than our universe?"
 d_elven_lhuren_gilgezu:0 "Crystalline Necropolis"
+d_elven_lhuren_gilgezu_desc:0 "If the crossroads of infinite possibilities is merely an illusion of choice leading to one endings, why is life innately compelled to explore each path regardless?"
 
 #######################
 ###     RELICS      ###
