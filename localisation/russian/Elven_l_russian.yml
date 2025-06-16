@@ -391,18 +391,41 @@ d_elven_planetary_elenyas_gate_desc:0 "<UNUSED: former Sidh feature, probably ne
 ###     ORBITAL DEPOSITS     ###
 ################################
 
-d_elven_energy_1_physics_1:0 "Â£ЭнергияÂ£ +1 Â£ФизикаÂ£ +1"
-d_elven_energy_3_minerals_3:0 "Â£ЭнергияÂ£ +3 Â£МинералыÂ£ +3"
-d_elven_energy_2_physics_1:0 "Â£ЭнергияÂ£ +2 Â£ФизикаÂ£ +1"
-d_elven_energy_1_physics_2:0 "Â£ЭнергияÂ£ +1 Â£ФизикаÂ£ +2"
-d_elven_energy_3_physics_2:0 "Â£ЭнергияÂ£ +3 Â£ФизикаÂ£ +2"
-d_elven_energy_3_physics_3:0 "Â£ЭнергияÂ£ +3 Â£ФизикаÂ£ +3"
-d_elven_physics_6:0 "Â£ФизикаÂ£ +6"
-d_elven_physics_1_society_1_engineering_1:0 "Â£ФизикаÂ£ +1 Â£ОбществоÂ£ +1 Â£ИнженерияÂ£ +1"
-d_elven_physics_2_society_2:0 "Â£ФизикаÂ£ +2 Â£ОбществоÂ£ +2"
-d_elven_physics_4_society_4:0 "Â£ФизикаÂ£ +4 Â£ОбществоÂ£ +4"
-d_elven_unity_1:0 "£Единство£ +1\n"
-d_elven_lunari_moon:0 "Â£ЭнергияÂ£ +10"
+d_elven_energy_1_physics_1:0 "£energy£ +1 £physics£ +1"
+d_elven_energy_1_physics_1_desc:0 "$d_elven_energy_1_physics_1$"
+
+d_elven_energy_3_minerals_3:0 "£energy£ +3 £minerals£ +3"
+d_elven_energy_3_minerals_3_desc:0 "$d_elven_energy_3_minerals_3$"
+
+d_elven_energy_2_physics_1:0 "£energy£ +2 £physics£ +1"
+d_elven_energy_2_physics_1_desc:0 "$d_elven_energy_2_physics_1$"
+
+d_elven_energy_1_physics_2:0 "£energy£ +1 £physics£ +2"
+d_elven_energy_1_physics_2_desc:0 "$d_elven_energy_1_physics_2$"
+
+d_elven_energy_3_physics_2:0 "£energy£ +3 £physics£ +2"
+d_elven_energy_3_physics_2_desc:0 "$d_elven_energy_3_physics_2$"
+
+d_elven_energy_3_physics_3:0 "£energy£ +3 £physics£ +3"
+d_elven_energy_3_physics_3_desc:0 "$d_elven_energy_3_physics_3$"
+
+d_elven_physics_6:0 "£physics£ +6"
+d_elven_physics_6_desc:0 "$d_elven_physics_6$"
+
+d_elven_physics_1_society_1_engineering_1:0 "£physics£ +1 £society£ +1 £engineering£ +1"
+d_elven_physics_1_society_1_engineering_1_desc:0 "$d_elven_physics_1_society_1_engineering_1$"
+
+d_elven_physics_2_society_2:0 "£physics£ +2 £society£ +2"
+d_elven_physics_2_society_2_desc:0 "$d_elven_physics_2_society_2$"
+
+d_elven_physics_4_society_4:0 "£physics£ +4 £society£ +4"
+d_elven_physics_4_society_4_desc:0 "$d_elven_physics_4_society_4$"
+
+d_elven_unity_1:0 "£unity£ +1\n"
+d_elven_unity_1_desc:0 "$d_elven_unity_1$"
+
+d_elven_lunari_moon:0 "£energy£ +10"
+d_elven_lunari_moon_desc:0 "$d_elven_lunari_moon$"
 
 #############################
 ###      Custom stuff      ##
