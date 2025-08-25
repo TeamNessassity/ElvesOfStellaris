@@ -1,0 +1,37 @@
+spriteTypes = {
+
+## ELVEN SPECIES BACKGROUNDS ##
+
+	spriteType = {
+		name = "GFX_species_selected_background_trait_pc_lunari_arctic_preference"
+		texturefile = "gfx/portraits/species_preview_backgrounds/eos_species_preview_bg_lunari_arctic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_species_selected_background_trait_pc_lunari_city_preference"
+		texturefile = "gfx/portraits/species_preview_backgrounds/eos_species_preview_bg_lunari_city.dds"
+	}
+
+	spriteType = {
+		name = "GFX_species_selected_background_trait_pc_elven_sanctuary_preference"
+		texturefile = "gfx/portraits/species_preview_backgrounds/eos_species_preview_bg_elven_sanctuary.dds"
+	}
+
+	## DROW SPECIES BACKGROUNDS ##
+
+	spriteType = {
+		name = "GFX_species_selected_background_trait_pc_drow_speleoterrestrial_preference"
+		texturefile = "gfx/portraits/species_preview_backgrounds/eos_species_preview_bg_drow_speleoterrestrial.dds"
+	}
+
+	spriteType = {
+		name = "GFX_species_selected_background_trait_pc_drow_valshaquellar_preference"
+		texturefile = "gfx/portraits/species_preview_backgrounds/eos_species_preview_bg_drow_valshaquellar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_species_selected_background_trait_pc_pc_drow_valshaquellar_dead_preference"
+		texturefile = "gfx/portraits/species_preview_backgrounds/eos_species_preview_bg_valshaquellar_dead.dds"
+	}
+
+}
