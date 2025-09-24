@@ -8,14 +8,25 @@
 trait_drow = {
 	cost = 0
 	sorting_priority = 20
+	portrait_override = { drow drow_true drow_lhuren dunmer dunmer_true dunmer_lhuren }
 
-	species_potential_add = { always = no }
-	species_possible_remove = { always = no }
-	species_possible_merge_add = { always = no }
+	sorting_priority = 20
 
-    randomized = no
-    initial = no
+	randomized = no
 	immortal_leaders = no
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	species_possible_merge_remove = {
+		always = no
+	}
 
 	icon = "gfx/interface/icons/traits/trait_drow.dds"
 	
@@ -31,9 +42,10 @@ trait_drow = {
 		species_empire_size_mult = 0.1			# -2 points
 												# Effective trait cost is 2, but what the hell.
 	}
-	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" }
 	
 	allowed_archetypes = { BIOLOGICAL }
+	species_class = { DROW }
+	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" "trait_elven_true" }
 
 	slave_cost = {
 		energy = 1500
