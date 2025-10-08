@@ -17,6 +17,7 @@ lunariciv_dlc = {
 		name_list="ELVEN3"
 		trait="trait_elven_true"
 		trait="trait_elven_lunari_immortality"
+		trait="trait_organic"
 		trait="trait_intelligent"
 		trait="trait_talented"
 		trait="trait_sedentary"
@@ -43,7 +44,7 @@ lunariciv_dlc = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_necroid_vir" # Will fall back to default if no DLC. Tested.
 
-	flags={ lunari_personality_flag }
+	flag = lunari_personality_flag
 
 	empire_flag={
 		icon={
@@ -99,6 +100,7 @@ lunariciv = {
 		name_list="ELVEN3"
 		trait="trait_elven_true"
 		trait="trait_elven_lunari_immortality"
+		trait="trait_organic"
 		trait="trait_intelligent"
 		trait="trait_talented"
 		trait="trait_sedentary"
@@ -125,7 +127,7 @@ lunariciv = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_necroid_vir" # Will fall back to default if no DLC. Tested.
 
-	flags={ lunari_personality_flag }
+	flag = lunari_personality_flag
 
 	empire_flag={
 		icon={

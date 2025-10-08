@@ -19,6 +19,7 @@ drow_tulshar_civ = {
 		adjective="ELVEN_tulshar_species_adjective"
 		name_list="DROW1"
 		trait="trait_drow"
+		trait="trait_organic"
 		trait="trait_talented"
 		trait="trait_quick_learners"
 		trait="trait_natural_sociologists"
@@ -49,7 +50,7 @@ drow_tulshar_civ = {
 	city_graphical_culture="drow_01"
 	advisor_voice_type="l_machine"
 
-	flags={ tulshar_personality_flag }
+	flag = tulshar_personality_flag 
 
 	empire_flag={
 		icon={
@@ -105,6 +106,7 @@ drow_civ1 = {
 		adjective="ELVEN_drow1_species_adjective"
 		name_list="DROW3"
 		trait="trait_drow"
+		trait="trait_organic"
 		trait="trait_docile"
 		trait="trait_nomadic"
 		trait="trait_resilient"
@@ -136,7 +138,7 @@ drow_civ1 = {
 	city_graphical_culture="ilythiiri_01"
 	advisor_voice_type="l_spiritualist"
 
-	flags={ eilistraeean_personality_flag }
+	flags = eilistraeean_personality_flag 
 	
 	empire_flag={
 		icon={
