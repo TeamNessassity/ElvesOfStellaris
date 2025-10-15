@@ -47,7 +47,8 @@ d_elven_planetary_tir_aranad = {
 
 	planet_modifier = { 
 		planet_max_districts_add = -1
-		planet_housing_add = 2
+		planet_housing_add = 1000
+		planet_amenities_add = 1000
 	}
 
 	triggered_planet_modifier = {
@@ -58,7 +59,8 @@ d_elven_planetary_tir_aranad = {
 			}					
 		}
 		modifier = {
-			planet_housing_add = 1
+			planet_housing_add = 500
+			planet_amenities_add = 500
 		}
 	}
 
