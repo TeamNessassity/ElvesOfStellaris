@@ -15,6 +15,7 @@ lunariciv_dlc = {
 		plural="ELVEN_lunari_species_plural"
 		adjective="ELVEN_lunari_species_adjective"
 		name_list="ELVEN3"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_lunari_immortality"
 		trait="trait_organic"
@@ -44,7 +45,11 @@ lunariciv_dlc = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_necroid_vir" # Will fall back to default if no DLC. Tested.
 
+<<<<<<< HEAD
 	flag = lunari_personality_flag
+=======
+	flag=elven_empire_lunari
+>>>>>>> f4417d4b20f819469b568215be6510e039d8e606
 
 	empire_flag={
 		icon={
@@ -98,6 +103,7 @@ lunariciv = {
 		plural="ELVEN_lunari_species_plural"
 		adjective="ELVEN_lunari_species_adjective"
 		name_list="ELVEN3"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_lunari_immortality"
 		trait="trait_organic"
@@ -127,7 +133,11 @@ lunariciv = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_necroid_vir" # Will fall back to default if no DLC. Tested.
 
+<<<<<<< HEAD
 	flag = lunari_personality_flag
+=======
+	flag=elven_empire_lunari
+>>>>>>> f4417d4b20f819469b568215be6510e039d8e606
 
 	empire_flag={
 		icon={

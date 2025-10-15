@@ -96,7 +96,8 @@ d_drow_planetary_zhevalshath = {
 	category = deposit_cat_rare
 
 	planet_modifier = { 
-		planet_housing_add = 6
+		planet_housing_add = 1000
+		planet_amenities_add = 1000
 	}
 	
 	triggered_planet_modifier = {
@@ -107,7 +108,8 @@ d_drow_planetary_zhevalshath = {
 			}					
 		}
 		modifier = {
-			planet_housing_add = 1
+			planet_housing_add = 500
+			planet_amenities_add = 500
 		}
 	}
 	
@@ -116,8 +118,8 @@ d_drow_planetary_zhevalshath = {
 			exists = owner
 			owner = { is_gestalt = yes }
 		}
-		job_patrol_drone_add = 300
-		job_warrior_drone_add = 300
+		job_patrol_drone_add = @building_static_jobs
+		job_warrior_drone_add = @building_static_jobs_low
 	}
 	
 	triggered_planet_modifier = {
@@ -132,9 +134,9 @@ d_drow_planetary_zhevalshath = {
 			}					
 		}
 		modifier = {
-			job_politician_add = 100
-			job_enforcer_add = 200
-			job_soldier_add = 300
+			job_politician_add = @building_static_jobs_low
+			job_enforcer_add = @building_static_jobs_low
+			job_soldier_add = @building_static_jobs_low
 		}
 	}
 	
@@ -144,9 +146,9 @@ d_drow_planetary_zhevalshath = {
 			owner = { has_authority = auth_corporate }
 		}
 		modifier = {
-			job_executive_add = 100
-			job_enforcer_add = 200
-			job_soldier_add = 300
+			job_executive_add = @building_static_jobs_low
+			job_enforcer_add = @building_static_jobs_low
+			job_soldier_add = @building_static_jobs_low
 		}
 	}	
 	
@@ -161,9 +163,9 @@ d_drow_planetary_zhevalshath = {
 			}
 		}
 		modifier = {
-			job_noble_add = 100
-			job_enforcer_add = 200
-			job_soldier_add = 300
+			job_noble_add = @building_static_jobs_low
+			job_enforcer_add = @building_static_jobs_low
+			job_soldier_add = @building_static_jobs_low
 		} 
 	}
 
@@ -428,7 +430,7 @@ d_drow_planetary_glowing_forests = {
 		}
 		modifier = {
 			job_artisan_per_pop = 0.04
-			job_trader_add = 0.025
+			job_trader_per_pop = 0.025
 		}
 	}
 	

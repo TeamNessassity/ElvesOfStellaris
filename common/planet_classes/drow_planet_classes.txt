@@ -63,8 +63,10 @@ pc_drow_valshaquellar = {
 
 	modifier = {
 		planet_jobs_produces_mult = 0.20
-		logistic_growth_mult = 0.50
-		planet_max_buildings_add = 12
+		logistic_growth_mult = 0.15
+		planet_pop_assembly_mult = 0.15
+		bonus_pop_growth_mult = 0.15
+		planet_resettlement_unemployed_destination_mult = 0.5
 	}
 	
 	spawn_odds = 0
@@ -72,13 +74,14 @@ pc_drow_valshaquellar = {
 	extra_planet_count = 0
 	chance_of_ring = 0.0
 	planet_size = 15
+
+	fixed_city_level = 6
 	 
 	moon_size = 1
 	
 	colonizable = yes							# gains surface with tiles of tile_set
 	starting_planet = no						# can be a starting planet @ NO IT CANNOT! This flag means a random NPC idiot may start on this planet. We don't need that, do we?
 	orbit_lines = no							# gives orbit lines
-	has_colonization_influence_cost = no		# applies when within own borders
 	district_set = city_world
 
 	carry_cap_per_free_district = @carry_cap_high

@@ -43,6 +43,7 @@ ayleid_personality = {
 		propagator = no
 		multispecies = no
 		crisis_fighter = yes
+		sneak_attacker = no
 	}
 	
 	allow = {
@@ -58,7 +59,7 @@ gaul_personality = {
 	aggressiveness = 1.0
 	trade_willingness = 1.0
 	bravery = 1.2
-	combat_bravery = 1.0
+	combat_bravery = 1.1
 	
 	military_spending = 1.0
 	colony_spending = 1.0
@@ -99,6 +100,7 @@ gaul_personality = {
 		propagator = no
 		multispecies = no
 		crisis_fighter = yes
+		sneak_attacker = no
 	}
 	
 	allow = {

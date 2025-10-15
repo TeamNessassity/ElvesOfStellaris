@@ -19,41 +19,22 @@ d_drow_collapsed_spire = {
 
 	use_weights_for_blocker_swap_types = no
 
-	blocker_swap_types = {
-		d_drow_central_spire
+	on_cleared = {
+		custom_tooltip = add_zone_central_spire_tt
+		hidden_effect = {
+			add_zone = {
+				district = 0
+				zone = zone_central_spire
+				zone_slot = 1
+				replace = yes
+			}
+		}
 	}
 
 	resources = {
 		category = deposit_blockers
 		cost = {
 			energy = 2000
-		}
-	}
-}
-
-d_drow_shattered_solar_array = {
-	icon = d_drow_solar_array
-	time = 270
-	
-	is_for_colonizable = yes
-	category = deposit_cat_rare_blocker	
-	
-	potential = { always = no }
-	
-	planet_modifier = { 
-		planet_max_districts_add = -1
-	}
-
-	use_weights_for_blocker_swap_types = no
-
-	blocker_swap_types = {
-		d_drow_immense_solar_array
-	}
-
-	resources = {
-		category = deposit_blockers
-		cost = {
-			energy = 1000
 		}
 	}
 }
@@ -75,6 +56,33 @@ d_drow_massive_crevice = {
 
 	blocker_swap_types = {
 		d_drow_industrial_sector
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+}
+
+d_drow_shattered_solar_array = {
+	icon = d_drow_solar_array
+	time = 270
+	
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker	
+	
+	potential = { always = no }
+	
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		d_drow_immense_solar_array
 	}
 
 	resources = {
@@ -112,6 +120,33 @@ d_drow_flooded_reactor_pits = {
 	}
 }
 
+d_drow_crumbling_mining_tunnels = {
+	icon = d_drow_mining_tunnels
+	time = 270
+
+	is_for_colonizable = yes
+	category = deposit_cat_rare_blocker
+
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		d_drow_abandoned_mining_tunnels
+	}
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+}
+
 d_drow_ancient_reactor_pits = {
 	is_for_colonizable = yes
 	icon = d_drow_reactor
@@ -134,6 +169,28 @@ d_drow_immense_solar_array = {
 	}
 }
 
+d_drow_abandoned_mining_tunnels = {
+	is_for_colonizable = yes
+	icon = d_drow_mining_tunnels
+
+	potential = { always = no }
+
+	planet_modifier = {
+		district_mining_max_add = 6
+	}
+}
+
+d_drow_relic_metal_boneyard = {
+	is_for_colonizable = yes
+	icon = d_drow_metal_boneyard
+
+	potential = { always = no }
+
+	planet_modifier = {
+		district_mining_max_add = 3
+	}
+}
+
 d_drow_central_spire = {
 	is_for_colonizable = yes
 	icon = d_drow_central_spire
@@ -145,9 +202,42 @@ d_drow_central_spire = {
 		planet_jobs_society_research_produces_mult = 0.15
 		planet_jobs_engineering_research_produces_mult = 0.15
 		planet_jobs_physics_research_produces_mult = 0.15
-		job_physicist_add = 240
-		job_biologist_add = 240
-		job_engineer_add = 240
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_physicist_add = 800
+			job_biologist_add = 800
+			job_engineer_add = 800
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_calculator_physicist_add = 800
+			job_calculator_biologist_add = 800
+			job_calculator_engineer_add = 800
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_calculator_physicist_add = 800
+			job_calculator_biologist_add = 800
+			job_calculator_engineer_add = 800
+		}
 	}
 }
 
@@ -157,39 +247,12 @@ d_drow_industrial_sector = {
 	category = deposit_cat_rare
 
 	potential = { always = no }
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_mine_volatile_motes
-			}
-		}
-		planet_miners_volatile_motes_produces_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_mine_exotic_gases
-			}
-		}
-		planet_miners_exotic_gases_produces_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_mine_rare_crystals
-			}
-		}
-		planet_miners_rare_crystals_produces_add = 2
-	}
 
 	planet_modifier = {
-		district_mining_max_add = 4
+		planet_miners_rare_crystals_produces_add = 0.25
+		planet_farmers_exotic_gases_produces_add = 0.25
+		planet_technician_volatile_motes_produces_add = 0.25
+		district_farming_max_add = 6
 	}
 }
 
@@ -201,7 +264,7 @@ d_drow_relic_dense_ruins = {
 	potential = { always = no }
 	
 	planet_modifier = {
-		planet_max_districts_add = -6
+		planet_max_districts_mult = -0.25
 		planet_jobs_society_research_produces_mult = 0.15
 		planet_jobs_engineering_research_produces_mult = 0.15
 		planet_jobs_physics_research_produces_mult = 0.15
