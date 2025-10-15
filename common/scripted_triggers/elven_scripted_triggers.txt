@@ -215,7 +215,7 @@ elven_no_galactic_paragons_dlc = {
 # For Ascensionists civic.
 elven_no_astral_planes_or_utopia_dlc = { 
 	NOR = {
-		host_has_dlc = "Utopia"
+		has_utopia = yes
 		has_astral_planes_dlc = yes
 	}
 }
@@ -236,7 +236,15 @@ elven_no_astral_planes_dlc = { #
 	has_astral_planes_dlc = no
 }
 
+# For solarpunk city.
+elven_no_first_contact_dlc = {
+	has_first_contact_dlc = no
+}
 
+elven_no_astral_planes_no_first_contact_dlc = {
+	elven_no_astral_planes_dlc = yes
+	elven_no_first_contact_dlc = yes
+}
 
 
 

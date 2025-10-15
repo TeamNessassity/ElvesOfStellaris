@@ -21,9 +21,9 @@ d_elven_planetary_elenyas_gate = {
 
 	planet_modifier = { 
 		planet_jobs_physics_research_produces_mult = 0.1
-		job_physicist_add = 60
-		job_biologist_add = 60
-		job_engineer_add = 60
+		job_physicist_add = @building_static_jobs_3
+		job_biologist_add = @building_static_jobs_3
+		job_engineer_add = @building_static_jobs_3
 	}
 
 	drop_weight = {
@@ -70,7 +70,7 @@ d_elven_planetary_tir_aranad = {
 			}
 		}
 		modifier = {
-			job_noble_add = 100
+			job_noble_add = @building_static_jobs_low
 		}
 	}
 
@@ -82,7 +82,7 @@ d_elven_planetary_tir_aranad = {
 			}
 		}
 		modifier = {
-			job_executive_add = 100
+			job_executive_add = @building_static_jobs_low
 		}
 	}
 	
@@ -98,7 +98,7 @@ d_elven_planetary_tir_aranad = {
 			}
 		}
 		modifier = {
-			job_politician_add = 100
+			job_politician_add = @building_static_jobs_low
 		}
 	}
 
@@ -145,9 +145,9 @@ d_elven_planetary_frensca_tol = {
 
 	planet_modifier = { 
 		planet_max_districts_add = 2
-		job_physicist_add = 60
-		job_biologist_add = 60
-		job_engineer_add = 60
+		job_physicist_add = @building_static_jobs_3
+		job_biologist_add = @building_static_jobs_3
+		job_engineer_add = @building_static_jobs_3
 	}
 
 	potential = {
@@ -380,8 +380,8 @@ d_elven_planetary_daerlas_mina = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 200
-			job_merchant_add = 100
+			job_entertainer_add = @building_static_jobs
+			job_merchant_add = @building_static_jobs_low
 		}
 	}
 

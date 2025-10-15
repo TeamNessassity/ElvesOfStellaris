@@ -43,6 +43,7 @@ tulshar_personality = {
 		propagator = no
 		multispecies = no
 		crisis_fighter = no
+		sneak_attacker = yes
 	}
 	
 	allow = {
@@ -58,7 +59,7 @@ eilistraeean_personality = {
 	aggressiveness = 1.25
 	trade_willingness = 1.1
 	bravery = 1.25
-	combat_bravery = 1.0
+	combat_bravery = 1.1
 	
 	military_spending = 1.1
 	colony_spending = 1.0
@@ -99,6 +100,7 @@ eilistraeean_personality = {
 		propagator = no
 		multispecies = yes
 		crisis_fighter = yes
+		sneak_attacker = no
 	}
 	
 	allow = {

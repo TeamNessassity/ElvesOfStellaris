@@ -19,8 +19,8 @@ lunari_personality = {
 	
 	weapon_preferences = weapon_type_energy
 	hull_ratio = 0.0
-	armor_ratio = 0.3
-	shields_ratio = 0.7
+	armor_ratio = 0.4
+	shields_ratio = 0.6
 	
 	threat_modifier = 1.0
 	threat_others_modifier = 0.75
@@ -43,6 +43,7 @@ lunari_personality = {
 		propagator = no
 		multispecies = no
 		crisis_fighter = yes
+		sneak_attacker = yes
 	}
 	
 	allow = {

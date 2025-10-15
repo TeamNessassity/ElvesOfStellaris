@@ -16,6 +16,7 @@ elven_civ1_both_dlc = {
 		plural="ELVEN_civ1_species_plural"
 		adjective="ELVEN_civ1_species_adjective"
 		name_list="ELVEN1"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_charismatic"
 		trait="trait_talented"
@@ -45,7 +46,7 @@ elven_civ1_both_dlc = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-	flags={ ayleid_personality_flag }
+	flag=elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -99,6 +100,7 @@ elven_civ1_utopia_astral_planes = {
 		plural="ELVEN_civ1_species_plural"
 		adjective="ELVEN_civ1_species_adjective"
 		name_list="ELVEN1"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_charismatic"
 		trait="trait_talented"
@@ -128,7 +130,7 @@ elven_civ1_utopia_astral_planes = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-	flags={ ayleid_personality_flag }
+	flag=elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -182,6 +184,7 @@ elven_civ1_galactic_paragons_dlc = {
 		plural="ELVEN_civ1_species_plural"
 		adjective="ELVEN_civ1_species_adjective"
 		name_list="ELVEN1"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_charismatic"
 		trait="trait_talented"
@@ -211,7 +214,7 @@ elven_civ1_galactic_paragons_dlc = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-	flags={ ayleid_personality_flag }
+	flag=elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -265,6 +268,7 @@ elven_civ1 = {
 		plural="ELVEN_civ1_species_plural"
 		adjective="ELVEN_civ1_species_adjective"
 		name_list="ELVEN1"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_charismatic"
 		trait="trait_talented"
@@ -294,7 +298,7 @@ elven_civ1 = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-	flags={ ayleid_personality_flag }
+	flag=elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -330,7 +334,7 @@ elven_civ1 = {
 }
 
 # Gauls
-elven_civ2_dlc = {
+elven_civ2_both_dlc = {
 	name="EMPIRE_DESIGN_elven_civ2"
 	adjective="ELVEN_civ2_empire_adjective"
 
@@ -347,6 +351,7 @@ elven_civ2_dlc = {
 		plural="ELVEN_civ2_species_plural"
 		adjective="ELVEN_civ2_species_adjective"
 		name_list="ELVEN4"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_sidh_immortality"
 		trait="trait_traditional"
@@ -355,7 +360,7 @@ elven_civ2_dlc = {
 		trait="trait_sedentary"
 	}
 	
-	room="personality_spiritual_seekers_room"
+	room="solarpunk_room"
 	
 	authority="auth_oligarchic"
 	civics={
@@ -375,10 +380,10 @@ elven_civ2_dlc = {
 	system_name="ELVEN_civ2_home_system_name"
 	
 	graphical_culture="elven_01"
-	city_graphical_culture="plantoid_01"
+	city_graphical_culture="solarpunk_01"
 	advisor_voice_type="l_the_diplomat"
 
-	flags={ gaul_personality_flag }
+	flag=elven_empire_gaul
 
 	empire_flag={
 		icon={
@@ -399,9 +404,9 @@ elven_civ2_dlc = {
 	ruler={
 		gender=female
 		name="ELVEN_civ2_ruler_name"
-		portrait="elven_female_01"
+		portrait="elven_female_06"
 		texture=2
-		attachment=35
+		attachment=31
 		clothes=62
 		ruler_title="ELVEN_civ2_ruler_title"
 		ruler_title_female="ELVEN_civ2_ruler_title_female"
@@ -410,7 +415,7 @@ elven_civ2_dlc = {
 	}
 }
 
-elven_civ2 = {
+elven_civ2_no_astral_planes = {
 	name="EMPIRE_DESIGN_elven_civ2"
 	adjective="ELVEN_civ2_empire_adjective"
 
@@ -429,6 +434,7 @@ elven_civ2 = {
 		plural="ELVEN_civ2_species_plural"
 		adjective="ELVEN_civ2_species_adjective"
 		name_list="ELVEN4"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_sidh_immortality"
 		trait="trait_traditional"
@@ -437,7 +443,7 @@ elven_civ2 = {
 		trait="trait_sedentary"
 	}
 	
-	room="personality_spiritual_seekers_room"
+	room="solarpunk_room"
 	
 	authority="auth_oligarchic"
 	civics={
@@ -457,10 +463,10 @@ elven_civ2 = {
 	system_name="ELVEN_civ2_home_system_name"
 	
 	graphical_culture="elven_01"
-	city_graphical_culture="plantoid_01"
+	city_graphical_culture="elven_solarpunk_01"
 	advisor_voice_type="l_the_diplomat"
 
-	flags={ gaul_personality_flag }
+	flag=elven_empire_gaul
 
 	empire_flag={
 		icon={
@@ -481,9 +487,175 @@ elven_civ2 = {
 	ruler={
 		gender=female
 		name="ELVEN_civ2_ruler_name"
-		portrait="elven_female_01"
+		portrait="elven_female_06"
 		texture=2
-		attachment=35
+		attachment=31
+		clothes=62
+		ruler_title="ELVEN_civ2_ruler_title"
+		ruler_title_female="ELVEN_civ2_ruler_title_female"
+		leader_class=official
+		trait = trait_ruler_charismatic
+	}
+}
+
+elven_civ2_no_first_contact = {
+	name="EMPIRE_DESIGN_elven_civ2"
+	adjective="ELVEN_civ2_empire_adjective"
+
+	playable = elven_no_first_contact_dlc
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ2_species_name"
+		plural="ELVEN_civ2_species_plural"
+		adjective="ELVEN_civ2_species_adjective"
+		name_list="ELVEN4"
+		trait="trait_organic"
+		trait="trait_elven_true"
+		trait="trait_elven_sidh_immortality"
+		trait="trait_traditional"
+		trait="trait_communal"
+		trait="trait_resilient"
+		trait="trait_sedentary"
+	}
+	
+	room="solarpunk_room"
+	
+	authority="auth_oligarchic"
+	civics={
+		"civic_sovereign_guardianship"
+		"civic_exalted_priesthood"
+	}
+	government="gov_elven_druid_circle"
+	
+	ethic="ethic_egalitarian"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ2_homeworld_name"
+	planet_class="pc_continental"
+	origin = "origin_elven_arcadian_symbiosis"
+	initializer="elven_system_gaul_initializer"
+	system_name="ELVEN_civ2_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_the_diplomat"
+
+	flag=elven_empire_gaul
+
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_aenari.dds"
+		}
+		background={
+			category="backgrounds"
+			file="gaul_pattern1.dds"
+		}
+		colors={
+			"dark_green"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="ELVEN_civ2_ruler_name"
+		portrait="elven_female_06"
+		texture=2
+		attachment=31
+		clothes=62
+		ruler_title="ELVEN_civ2_ruler_title"
+		ruler_title_female="ELVEN_civ2_ruler_title_female"
+		leader_class=official
+		trait = trait_ruler_charismatic
+	}
+}
+
+elven_civ2 = {
+	name="EMPIRE_DESIGN_elven_civ2"
+	adjective="ELVEN_civ2_empire_adjective"
+
+	playable = elven_no_astral_planes_no_first_contact_dlc
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+	
+	ship_prefix=""
+	
+	species={
+		class="ELVEN"
+		portrait="elven"
+		name="ELVEN_civ2_species_name"
+		plural="ELVEN_civ2_species_plural"
+		adjective="ELVEN_civ2_species_adjective"
+		name_list="ELVEN4"
+		trait="trait_organic"
+		trait="trait_elven_true"
+		trait="trait_elven_sidh_immortality"
+		trait="trait_traditional"
+		trait="trait_communal"
+		trait="trait_resilient"
+		trait="trait_sedentary"
+	}
+	
+	room="solarpunk_room"
+	
+	authority="auth_oligarchic"
+	civics={
+		"civic_exalted_priesthood"
+		"civic_environmentalist"
+	}
+	government="gov_elven_druid_circle"
+	
+	ethic="ethic_egalitarian"
+	ethic="ethic_pacifist"
+	ethic="ethic_spiritualist"
+	
+	planet_name="ELVEN_civ2_homeworld_name"
+	planet_class="pc_continental"
+	origin = "origin_elven_arcadian_symbiosis"
+	initializer="elven_system_gaul_initializer"
+	system_name="ELVEN_civ2_home_system_name"
+	
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_the_diplomat"
+
+	flag=elven_empire_gaul
+
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_aenari.dds"
+		}
+		background={
+			category="backgrounds"
+			file="gaul_pattern1.dds"
+		}
+		colors={
+			"dark_green"
+			"yellow"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="ELVEN_civ2_ruler_name"
+		portrait="elven_female_06"
+		texture=2
+		attachment=31
 		clothes=62
 		ruler_title="ELVEN_civ2_ruler_title"
 		ruler_title_female="ELVEN_civ2_ruler_title_female"
@@ -510,6 +682,7 @@ elven_civ3 ={
 		plural="ELVEN_civ3_species_plural"
 		adjective="ELVEN_civ3_species_adjective"
 		name_list="ELVEN2"
+		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_lhuren_immortality"
 		trait="trait_traditional"
@@ -540,7 +713,7 @@ elven_civ3 ={
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_the_soldier"
 
-	flags={ lhuren_personality_flag }
+	flag=elven_empire_lhuren
 	
 	empire_flag={
 		icon={

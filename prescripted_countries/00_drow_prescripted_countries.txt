@@ -18,6 +18,7 @@ drow_tulshar_civ = {
 		plural="ELVEN_tulshar_species_plural"
 		adjective="ELVEN_tulshar_species_adjective"
 		name_list="DROW1"
+		trait="trait_organic"
 		trait="trait_drow"
 		trait="trait_talented"
 		trait="trait_quick_learners"
@@ -49,7 +50,7 @@ drow_tulshar_civ = {
 	city_graphical_culture="drow_01"
 	advisor_voice_type="l_machine"
 
-	flags={ tulshar_personality_flag }
+	flag=elven_empire_tulshar
 
 	empire_flag={
 		icon={
@@ -104,6 +105,7 @@ drow_civ1 = {
 		plural="ELVEN_drow1_species_plural"
 		adjective="ELVEN_drow1_species_adjective"
 		name_list="DROW3"
+		trait="trait_organic"
 		trait="trait_drow"
 		trait="trait_docile"
 		trait="trait_nomadic"
@@ -136,7 +138,7 @@ drow_civ1 = {
 	city_graphical_culture="ilythiiri_01"
 	advisor_voice_type="l_spiritualist"
 
-	flags={ eilistraeean_personality_flag }
+	flag=elven_empire_eilistraeean
 	
 	empire_flag={
 		icon={
