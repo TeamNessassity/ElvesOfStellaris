@@ -51,6 +51,18 @@ lunari = {
 	}
 }
 
+lunari_wildhunt = {
+	species_class = ELVEN
+
+	portraits = {
+		"lunari_wildhunt"
+	}
+
+	non_randomized_portraits = {
+		"lunari_wildhunt"
+	}
+}
+
 lhuren = {
 	species_class = ELVEN
 

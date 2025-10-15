@@ -35,3 +35,18 @@ gov_elven_celestial_grace_empire = {
 		base = 7500
 	}
 }
+
+# Wild Hunt
+gov_elven_wild_hunt = {
+	ruler_title = RT_SUPREME_COMMANDER
+	ruler_title_female = RT_SUPREME_COMMANDER
+
+	possible = {
+		has_authority = auth_dictatorial
+		has_origin = origin_elven_wild_hunt
+	}
+
+	weight = {
+		base = 50000
+	}
+}

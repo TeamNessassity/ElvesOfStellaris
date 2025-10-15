@@ -159,3 +159,80 @@ lunariciv = {
 		leader_class = official
 	}
 }
+
+wildhuntciv_dlc = {
+	name="EMPIRE_DESIGN_wildhuntciv"
+	adjective="ELVEN_wildhunt_empire_adjective"
+
+	spawn_enabled=no
+	spawn_as_fallen=no
+	ignore_portrait_duplication=yes
+
+	species={
+		class="ELVEN"
+		portrait="lunari_wildhunt"
+		name="ELVEN_wildhunt_species_name"
+		plural="ELVEN_wildhunt_species_plural"
+		adjective="ELVEN_wildhunt_species_adjective"
+		name_list="ELVEN8"
+		trait="trait_elven_true"
+		trait="trait_very_strong"
+		trait="trait_natural_physicists"
+		trait="trait_decadent"
+		trait="trait_wasteful"
+	}
+
+	room="government_communist_room"
+
+	ethic="ethic_authoritarian"
+	ethic="ethic_militarist"
+	ethic="ethic_spiritualist"
+	authority="auth_dictatorial"
+	civics={
+		"civic_barbaric_despoilers"
+		"civic_hyperspace_specialty"
+	}
+	government="gov_elven_wild_hunt"
+
+	planet_name="ELVEN_wildhunt_homeworld_name"
+	planet_class="pc_arctic"
+	initializer="elven_system_wildhunt_initializer"
+	origin = "origin_elven_wild_hunt"
+	system_name="ELVEN_wildhunt_home_system_name"
+
+	graphical_culture="elven_01"
+	city_graphical_culture="elven_01"
+	advisor_voice_type="l_necroid_vir" # Will fall back to default if no DLC. Tested.
+
+	flags={ wildhunt_personality_flag }
+
+	empire_flag={
+		icon={
+			category="elven"
+			file="eos_flag_imperial_silver.dds"
+		}
+		background={
+			category="backgrounds"
+			file="lunari_pattern1.dds"
+		}
+		colors={
+			"black"
+			"red"
+			"null"
+			"null"
+		}
+	}
+
+	ruler={
+		gender=male
+		name="ELVEN_wildhunt_ruler_name"
+		portrait="lunari_male_01"
+		texture=0
+		attachment=0
+		clothes=58
+		ruler_title="ELVEN_wildhunt_ruler_title"
+		ruler_title_female="ELVEN_wildhunt_ruler_title"
+		trait = leader_trait_fleet_organizer
+		leader_class = commander
+	}
+}

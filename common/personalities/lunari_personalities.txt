@@ -53,3 +53,64 @@ lunari_personality = {
 		weight = 20000			
 	}
 }
+
+wildhunt_personality = { 
+	aggressiveness = 1.5
+	trade_willingness = 0.5
+	bravery = 0.5
+	combat_bravery = 1.0
+	
+	military_spending = 1.2
+	colony_spending = 0.9
+	
+	federation_acceptance = -20
+	nap_acceptance = -100
+	commercial_pact_acceptance = -20
+	research_agreement_acceptance = -20
+	defensive_pact_acceptance = -20
+	migration_pact_acceptance = -100
+	loyalty_acceptance = 0.25
+	
+	advanced_start_chance = 100
+	
+	weapon_preferences = weapon_type_explosive
+	hull_ratio = 0.3
+	armor_ratio = 0.6
+	shields_ratio = 0.2
+	
+	threat_modifier = 1.0
+	threat_others_modifier = 0.5
+	friction_modifier = 1.5
+	claims_modifier = 2.0
+	
+	behaviour = {
+		conqueror = no
+		subjugator = no
+		liberator = no
+		opportunist = yes
+		slaver = yes
+		uplifter = no
+		purger = no
+		displacer = no
+		infiltrator = yes
+		dominator = yes
+		robot_exploiter = no
+		robot_liberator = no
+		propagator = no
+		multispecies = no
+		crisis_fighter = no
+		sneak_attacker = yes
+	}
+
+	ship_roles = {
+		frigate = explosive_stealth
+	}
+	
+	allow = {
+		has_country_flag = wildhunt_personality_flag
+	}
+	
+	weight_modifier = {
+		weight = 20000			
+	}
+}

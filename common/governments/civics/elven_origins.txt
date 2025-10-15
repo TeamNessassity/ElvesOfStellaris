@@ -126,3 +126,27 @@ origin_elven_celestial_throne = {
 	# 	base = 0
 	# }
 }
+
+origin_elven_wild_hunt = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_elven_sunless_realms.dds"
+	picture = GFX_origins_elven_sunless_realms
+
+	initializers = { elven_system_wildhunt_initializer }
+	max_once_global = yes
+
+	possible = {
+		#species_archetype = { value = ELVEN }
+		authority = { NOT = { value = auth_machine_intelligence } }
+		species_archetype = { NOT = { value = MACHINE } }
+	}
+
+	description = "origin_tooltip_elven_sunless_realms_effects"
+
+	advanced_start = yes
+
+	# NOTE: Somehow AI is still picking our stuff even with base = 0. Commenting out in the hopes that ends it.
+	# random_weight = {
+	# 	base = 0
+	# }
+}

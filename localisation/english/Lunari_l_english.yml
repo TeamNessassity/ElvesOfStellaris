@@ -69,6 +69,12 @@ lunari_ecological_retaliation_desc:0 "An attempt to forcefully terraform this wo
 personality_lunari_personality:0 "Lunar Warriors"
 personality_lunari_personality_desc:0 "Maéniesh Lyn, "People of the Moon" in Naerelýn, are highly spiritual, proud and ruthless people. They're remarkably skilled in warfare and won't hesitate to torture or execute their enemies should the need arise. Still, Moon Elves are willing to cooperate with others if shown respect. They may become a truly valuable ally."
 
+personality_wildhunt_personality:0 "Wild Hunt"
+personality_wildhunt_personality_desc:0 "Any last words?"
+
+gov_elven_wild_hunt:0 "Wild Hunt"
+gov_elven_wild_hunt_desc:0 "This government is a militaristic autocracy in which the strongest warrior assumes leadership and steers the course of the state. Neighboring nations are regarded as little more than targets for raiding. Civic affairs are delegated to local governors, who are subordinate to the military and reliant on captured slaves."
+
 LUN_HOSTILE_GREETING_01:0 "You are not welcome here, [From.GetSpeciesName]. If you stop bothering us now, we may still spare your insignificant lives."
 LUN_HOSTILE_GREETING_02:0 "You try our patience, [From.GetSpeciesName]. Is it death you seek?"
 LUN_HOSTILE_GREETING_03:0 "[Root.GetRulerTitle] [Root.GetRulerName] is displeased with you. We have nothing to talk about."
@@ -126,12 +132,30 @@ ELVEN_lunari_ruler_name: "Gwendolýn"
 ELVEN_lunari_homeworld_name: "Sielýn"
 ELVEN_lunari_home_system_name: "Sunless Realms"
 
+EMPIRE_DESIGN_wildhuntciv:0 "Wild Hunt"
+EMPIRE_DESIGN_wildhuntciv_dlc_desc:0 "The turning point for the Énn Rínne civilization was the discovery of a functioning dimensional gate in the frozen wastes of Halidrel'dár, no doubt an ancient piece of precursor technology. The secrets of the gateway have since been uncovered, leading to the formation of two distinct castes:\n\nThe secretive order of Navigators, who learned to operate the gateway and paved the way into realms populated by weak fools, ripe for the taking.\n\nAnd the mighty Wild Hunt, an elite army of ruthless plunderers who rode through the portal into the unknown, later returning with peculiar aliens who were promptly put to work for the benefit of the Énn Rínne. The unique stardust of the Halidrél nebula was used by the crafty Wild Hunt to obscure their movements, bestowing them with an ethereal, wraith-like appearance.\n\nThanks to the never-ending surplus of fresh slaves, the Énn Rínne were spared from hard labor, instead devoting their lives to art and research. While the day-to-day life of the common Énn Rínne is governed by a conventional bureaucratic apparatus, the real power lies in the hands of the Wild Hunt. Ultimately, it is they who decide on strategic objectives and set the political direction of the state.\n\nBy the time FTL travel was discovered, the gateway had fallen into disrepair and was no longer functional. But this is of no concern, as a new domain now stretches before the Énn Rínne: space itself. By utilizing the same lightning-strike tactics, concealment, and the element of surprise, the Wild Hunt can usher in a new era of abundance and prosperity for the Énn Rínne.\n\nLet us show the weaklings that the galaxy is cold and full of horrors.\n"
+
+ELVEN_wildhunt_empire_adjective: "Wild Hunt"
+ELVEN_wildhunt_species_name: "Énn Rínne"
+ELVEN_wildhunt_species_plural: "Énn Rínne"
+ELVEN_wildhunt_species_adjective: "Énn Rínne"
+ELVEN_wildhunt_ruler_title: "Supreme Commander"
+ELVEN_wildhunt_ruler_name: "Corshár the Specter"
+ELVEN_wildhunt_homeworld_name: "Halidrel'dár"
+ELVEN_wildhunt_home_system_name: "Halidrél"
+
+RT_SUPREME_COMMANDER:0 "Supreme Commander"
+
 ####################################
 # Origin
 ####################################
 
 origin_elven_sunless_realms:0 "Sunless Realms"
 origin_elven_sunless_realms_desc:0 "Miraculously blossoming in a system with binary black holes, your civilization's only light has been that of the divine Moon."
+origin_tooltip_elven_sunless_realms_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_lunari_arctic']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_lunari_auroras_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_lunari_planetary_ice_blossoms']\n- ['concept_guaranteed_colonies']: Two smaller ['concept_pc_lunari_arctic', Permafrost Worlds] will spawn as satellites of your homeworld planet\n- $SPECIES_TRAITS$ ['concept_lunari_arctic_preference']\n- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_hydroponics', £society_research£ $tech_hydroponics$]"
+
+origin_elven_wild_hunt:0 "Black Spot of the Galaxy"
+origin_elven_wild_hunt_desc:0 "Your civilization has a precursor dimensional gateway on their homeworld which it had used to raid countless realms and bring back slaves. To aid them in this task, your people have used star dust of their system's nebula for its obscuring properties. The gateway has recently became inactive, but the nebula still provides infinite opportunities for research and development of stealth technology."
 origin_tooltip_elven_sunless_realms_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_lunari_arctic']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_lunari_auroras_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_lunari_planetary_ice_blossoms']\n- ['concept_guaranteed_colonies']: Two smaller ['concept_pc_lunari_arctic', Permafrost Worlds] will spawn as satellites of your homeworld planet\n- $SPECIES_TRAITS$ ['concept_lunari_arctic_preference']\n- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_hydroponics', £society_research£ $tech_hydroponics$]"
 
 

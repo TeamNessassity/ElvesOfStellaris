@@ -995,6 +995,71 @@ d_lunari_planetary_cp_ice_blossoms = {
 	}
 }
 
+d_lunari_tir_na_lia = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_rare
+
+	planet_modifier = { 
+		
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			planet_stability_add = 5
+			pop_happiness = 0.05
+			planet_resettlement_unemployed_destination_mult = 0.5
+		}
+	}
+
+	potential = { 
+
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_lunari_dimensional_gate = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_rare
+
+	planet_modifier = { 
+		
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			planet_jobs_unity_produces_mult = 0.1
+			planet_jobs_physics_research_produces_mult = 0.1
+		}
+	}
+
+	potential = { 
+
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
 #######################
 ## STARTING BLOCKERS ##
 #######################

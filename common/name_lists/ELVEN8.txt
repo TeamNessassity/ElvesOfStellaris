@@ -1,0 +1,215 @@
+#########################
+## WILD HUNT ELF NAMES ##
+#########################
+
+ELVEN8 = {
+	randomized = no
+
+	ship_names = {
+		generic = {
+			Aebaethren Loc'hvaelith Brenvaedh Gvaernollis Ceádraennor Zuirvellienn Aen'dravaeth Muireglynth Rhonvareth Torc'haedh Lunedhraem Veythloc'henn Daernvidhonn Gwenndhaethir Scoivaernach Zvaerthuin Bleiddhraenn Aenyollthir Glysvaelric Varaennmor Drelchaenric Rhounscaedh Nollavaethir Caernmorric Evonnraegh Gláeddhraeth Belennthirric Lorvaedhenn Aelthraennor Dhuinnvarric Ceasraevorn Pavrennlochh Ruadhvaernic Gwenthorric Modraennir Aevornlaech Gwenlloc'hirn Sorcaennmor Myrkvaedhron Thaesslochenn Caedhvarric Torvaenricc Blaethraennor Erynnvaeldh Zaevelthirric Ymladhrune Veynaedhonn Dhuinmarwic Varaethloc'h Cynvaedhron Faedhrelloc Rhunedhmarc Veloc'haenn Glaedhravorn Zuiraethric Oiachrundel Ceannvorric Drellaethun Evonnthuir Coramvydric Vhóelthraenn Gwennelricc Bleiddmorric Pavraedhenn Aenvarlochh Foilaethric Crevonnath Glyswennair Daetrelochirn Beleanthuirric Zvaerloc'henn Mirevandraegh Caermorricc Aenyethrelle Savaedhronn Aevorraenn Ruadhrelloch Vrenmorric Haelvaenric Cinereathirn Zirelloc'hin Taedhvarric Woechindraem Loc'hvrennir Deireadhrun Ninnaurochh Caelthyrnae Yghernaethir Muireloc'henn Treisevornic Aecaemmraeth Modronvrelch Sh'aenthorric Enidhaerloc Gwendhaeghor Torc'haevryn Myrcaelvorric
+		}
+		
+		corvette = {
+		}
+		
+		constructor = {
+		}
+		
+		colonizer = {
+		}
+		
+		science = {
+		}
+		
+		destroyer = {
+		}
+		
+		cruiser = {
+		}
+		
+		battleship = {
+		}
+		
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+		
+		transport = { }
+
+		military_station_small = { }
+
+		ion_cannon = { }
+
+		titan = { }
+
+		colossus = { }
+	}
+
+	fleet_names = {
+		sequential_name = EOS_NAMELIST_ELVEN7_FLEET_ORD
+	}
+	
+	army_names = {
+	
+		machine_defense = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_MACHINE_DEFENSE_ORD
+		}
+		
+		machine_assault_1 = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_MACHINE_ASSUALT1_ORD
+		}
+		
+		machine_assault_2 = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_MACHINE_ASSUALT2_ORD
+		}
+		
+		machine_assault_3 = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_MACHINE_ASSUALT3_ORD
+		}
+
+		defense_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_DEFENSE_ORD
+		}
+
+		fanatic_guardian = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_DEFENSE_ORD
+		}
+
+		machine_fanatic_guardian = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_MACHINE_DEFENSE_ORD
+		}
+
+		assault_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_ASSAULT_ORD
+		}
+		
+		slave_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_SLAVE_ORD
+		}
+		
+		clone_army = { 
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_CLONE_ORD
+		}
+		
+		undead_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_UNDEAD_ORD
+		}
+
+		robotic_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_ROBOTIC_ORD
+		}
+		
+		robotic_defense_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_ROBOTIC_DEFENSE_ORD
+		}
+		
+		psionic_army = { 
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_PSIONIC_ORD
+		}
+		
+		xenomorph_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_XENO_ORD
+		}
+		
+		gene_warrior_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_GENE_ORD
+		}
+		
+		occupation_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_OCCUPATION_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_ROBOT_OCCUPATION_ORD
+		}
+
+		primitive_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_PRIMITIVE_ORD
+		}
+		
+		industrial_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_INDUSTRIAL_ORD
+		}
+		
+		postatomic_army = {
+			sequential_name = EOS_NAMELIST_ELVEN7_ARMY_POSTATOMIC_ORD
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				"Tir ná Vael" "Crael an Vyn" "Laeth á Dran" "Rhun en Dhael" "Vaedr aen Lor" "Loch aen Vair" "Myrc ná Elith" "Drelch ná Vaen" "Gwen aen Lyeth" "Ealin ná Thrae" "Thyv an Glau" "Velda á Tairn" "Mira ná Crael" "Bleim ná Ael" "Vael en Gwyn" "Nath ná Eira" "Tir an Drelch" "Aenv an Velth" "Creth ná Glyn" "Laeth ná Soryn" "Vaedr en Lirae" "Crael aen Dhuin" "Thae en Vaell" "Zaevel an Rhun"
+			}
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+	}
+
+
+	### CHARACTERS
+
+	character_names = {
+
+		default = {
+			first_names_male = {
+				Abaethor Carnwyn Dushár Taedhmon Daevarn Bleiddan Aefganor Vorthael Cerbion Thaevenn "Loc'haern" Arskonn Caerik Dradhael Sharaethor Moighrenn Sleddor Conynhael Myrkvel Treisen Aenroth Atephean Caerwald "D'yaebren" Vaerghen Brogann Cáemmric Messár Corshár Hollvarn "Torc'han" Vondric Sparvenn Gwenrik Enshár Agwethor Ceannic Inisgár Rhonvaegh Zaeledin Haelenric Vattorn Bloedreth Eidevyn Loa'tharin Ardecael Stronvár Va'enric Thuairon Darganthor Gwynthon Glegolir Rasár Faery'ár Cenfir Moidár Aerdoch Blaevric Cennovár Maerloch Corranth Veilloc Brendhár Vaemric Lorcáedh Raedhoc Morvric Tuenric Caelthirn Vhorlach Aedhroc Blaethric Daemrach Torvaedh Loegvár Vharric Maethorn Crelach Odrannic Gvaerdric Branweth Cynroth Droenric Veidhran Thevorn Molrach
+			}
+			first_names_female = {
+				Aevaelle Maellille Laraeneth Aépira Scaenae Ell'eara Muireatha Deireadhae Gwenllecha Minnevael Aethwynne Aineveth Glamaryaeth Sh'aenvelle Tearwena Zaeleira Colenara Beannoria Ysgaelle Gloryneth Voeleira Vaineira Creasari Breieneth Fáillenneth Rhenwynna Glysiel Sidhevea Anlloene Eathaelle Meáthwen Blathaniel Mirthevia Lanfeire Naevlira Torchaelle Rinaeveth Adalathra Easnadhra Ainyssa Zvairelith Uiwenna Ellyraeth Evelleira Laithwynne Aynavael Savaedae Dhuenara Shaentirae Phoenae Maenae Aerwynne Caellira Vynora Brialeth Faelira Thalwynn Liraevin Morrivae Aenyaeth Veilith Rhiswenna Loerith Serenvae Orlinne Caevira Daelithra Mirellaeth Eliraeth Ruivelle Taerwynne Ovelith Saevirae Fenwyra Vhoenna Aevrinne Lunivae Moiraethen Seryndra Thirvella Lyssarae Odhraenn Thalindrae
+			}
+			second_names = {
+				Macraenneth A'vaelric Gwynnarchor Thornvaennic Lochthaegh Lochthuirn Cairnvornach Cairnvryth Rhuindraeth Glasvaernach Fyrdaemric Brynscaern Drellochairn Craelisvenn Veythirael Morrindhaen Laethwyrnnael Toraevach Torvaelric Veyloc'henn Veyloc'hirn Caernethir Caernethyll Druiscaern Fenraedric Rudhaennir Stonvairnich Brychlachar Dharcwynnir Graethornach Gwynnvraen Ascaedhel Gaeldrethir Blachennor Bleidhsgaern Havcairneth Staghmaernic Berrthuin Craewdaenric Borrachiln Daerwynnor Othairlochhenn Fochraennir Adraefenn Muinvaelric Saenthaerich Sylvaraedh Haeloc'hinn Craewnraich Elddraewynnael Svaerdainric Sceildrethir 
+			}
+			regnal_first_names_male = {
+				Abaethor Carnwyn Dushár Taedhmon Daevarn Bleiddan Aefganor Vorthael Cerbion Thaevenn "Loc'haern" Arskonn Caerik Dradhael Sharaethor Moighrenn Sleddor Conynhael Myrkvel Treisen Aenroth Atephean Caerwald "D'yaebren" Vaerghen Brogann Cáemmric Messár Corshár Hollvarn "Torc'han" Vondric Sparvenn Gwenrik Enshár Agwethor Ceannic Inisgár Rhonvaegh Zaeledin Haelenric Vattorn Bloedreth Eidevyn Loa'tharin Ardecael Stronvár Va'enric Thuairon Darganthor Gwynthon Glegolir Rasár Faery'ár Cenfir Moidár Aerdoch Blaevric Cennovár Maerloch Corranth Veilloc Brendhár Vaemric Lorcáedh Raedhoc Morvric Tuenric Caelthirn Vhorlach Aedhroc Blaethric Daemrach Torvaedh Loegvár Vharric Maethorn Crelach Odrannic Gvaerdric Branweth Cynroth Droenric Veidhran Thevorn Molrach
+			}
+			regnal_first_names_female = {
+				Aevaelle Maellille Laraeneth Aépira Scaenae Ell'eara Muireatha Deireadhae Gwenllecha Minnevael Aethwynne Aineveth Glamaryaeth Sh'aenvelle Tearwena Zaeleira Colenara Beannoria Ysgaelle Gloryneth Voeleira Vaineira Creasari Breieneth Fáillenneth Rhenwynna Glysiel Sidhevea Anlloene Eathaelle Meáthwen Blathaniel Mirthevia Lanfeire Naevlira Torchaelle Rinaeveth Adalathra Easnadhra Ainyssa Zvairelith Uiwenna Ellyraeth Evelleira Laithwynne Aynavael Savaedae Dhuenara Shaentirae Phoenae Maenae Aerwynne Caellira Vynora Brialeth Faelira Thalwynn Liraevin Morrivae Aenyaeth Veilith Rhiswenna Loerith Serenvae Orlinne Caevira Daelithra Mirellaeth Eliraeth Ruivelle Taerwynne Ovelith Saevirae Fenwyra Vhoenna Aevrinne Lunivae Moiraethen Seryndra Thirvella Lyssarae Odhraenn Thalindrae
+			}
+			regnal_second_names = {
+				"á Tir" "á Rhun" "á Sorv" "á Mira" "á Vael" "á Nath" "á Bleim" "á Gwen" "á Drelch" "á Laeth" "á Crael" "á Thae" "á Creth"
+			}
+		}
+	}
+}
