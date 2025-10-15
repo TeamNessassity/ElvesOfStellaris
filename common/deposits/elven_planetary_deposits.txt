@@ -401,7 +401,7 @@ d_elven_planetary_aerostat_plantations = {
 	category = deposit_cat_rare
 
 	planet_modifier = { 
-		district_farming_max = 3
+		district_farming_max_add = 3
 	}
 
 	potential = {
@@ -450,7 +450,7 @@ d_lunari_planetary_energy_1 = {
 	}	
 
 	planet_modifier = { 
-		district_generator_max = 1
+		district_generator_max_add = 1
 	}
 
 	potential = { 
@@ -480,7 +480,7 @@ d_lunari_planetary_energy_1b = {
 	}	
 
 	planet_modifier = { 
-		district_generator_max = 1
+		district_generator_max_add = 1
 	}
 
 	potential = { 
@@ -511,7 +511,7 @@ d_lunari_planetary_energy_2 = {
 	}
 
 	planet_modifier = { 
-		district_generator_max = 2
+		district_generator_max_add = 2
 	}
 
 	potential = { 
@@ -542,7 +542,7 @@ d_lunari_planetary_energy_2b = {
 	}
 
 	planet_modifier = { 
-		district_generator_max = 2
+		district_generator_max_add = 2
 	}
 
 	potential = { 
@@ -572,7 +572,7 @@ d_lunari_planetary_energy_3 = {
 	}
 
 	planet_modifier = { 
-		district_generator_max = 3
+		district_generator_max_add = 3
 	}
 
 	potential = { 
@@ -602,7 +602,7 @@ d_lunari_planetary_minerals_1 = {
 	}
 
 	planet_modifier = { 
-		district_mining_max = 1
+		district_mining_max_add = 1
 	}
 
 	potential = { 
@@ -632,7 +632,7 @@ d_lunari_planetary_minerals_2 = {
 	}
 
 	planet_modifier = { 
-		district_mining_max = 2
+		district_mining_max_add = 2
 	}
 
 	potential = { 
@@ -662,7 +662,7 @@ d_lunari_planetary_minerals_2b = {
 	}
 
 	planet_modifier = { 
-		district_mining_max = 2
+		district_mining_max_add = 2
 	}
 
 	potential = { 
@@ -692,7 +692,7 @@ d_lunari_planetary_minerals_3 = {
 	}
 
 	planet_modifier = { 
-		district_mining_max = 3
+		district_mining_max_add = 3
 	}
 
 	potential = { 
@@ -722,7 +722,7 @@ d_lunari_planetary_minerals_3b = {
 	}
 
 	planet_modifier = {
-		district_mining_max = 3
+		district_mining_max_add = 3
 	}
 
 	potential = {
@@ -757,7 +757,7 @@ d_lunari_planetary_food_1 = {
 	}	
 
 	planet_modifier = { 
-		district_farming_max = 1
+		district_farming_max_add = 1
 	}
 
 	potential = { always = no } # Do not drop this randomly even on permafrost worlds.
@@ -786,7 +786,7 @@ d_lunari_planetary_food_1b = {
 	}	
 
 	planet_modifier = { 
-		district_farming_max = 1
+		district_farming_max_add = 1
 	}
 
 	potential = { always = no } # Do not drop this randomly even on permafrost worlds.
@@ -812,7 +812,7 @@ d_lunari_planetary_food_2 = {
 	}	
 
 	planet_modifier = { 
-		district_farming_max = 2
+		district_farming_max_add = 2
 	}
 
 	potential = { always = no } # Do not drop this randomly even on permafrost worlds.
@@ -838,7 +838,7 @@ d_lunari_planetary_food_2b = {
 	}	
 
 	planet_modifier = { 
-		district_farming_max = 2
+		district_farming_max_add = 2
 	}
 
 	potential = { always = no } # Do not drop this randomly even on permafrost worlds.
@@ -865,7 +865,7 @@ d_lunari_planetary_food_3 = {
 	}	
 
 	planet_modifier = { 
-		district_farming_max = 3
+		district_farming_max_add = 3
 	}
 
 	potential = { always = no } # Do not drop this randomly even on permafrost worlds.

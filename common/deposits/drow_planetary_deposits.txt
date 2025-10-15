@@ -181,7 +181,7 @@ d_drow_planetary_buried_sea = {
 	category = deposit_cat_food
 
 	planet_modifier = { 		
-		district_farming_max = 3
+		district_farming_max_add = 3
 	}
 
 	potential = { 
@@ -200,7 +200,7 @@ d_drow_planetary_subterranean_hydroponics = {
 	category = deposit_cat_food
 
 	planet_modifier = { 		
-		district_farming_max = 2
+		district_farming_max_add = 2
 	}
 
 	potential = { 
@@ -219,7 +219,7 @@ d_drow_planetary_happy_lizard_farms = {
 	category = deposit_cat_food
 
 	planet_modifier = { 		
-		district_farming_max = 2
+		district_farming_max_add = 2
 	}
 
 	potential = { 
@@ -238,7 +238,7 @@ d_drow_planetary_shroom_flats = {
 	category = deposit_cat_food
 
 	planet_modifier = { 		
-		district_farming_max = 1
+		district_farming_max_add = 1
 	}
 
 	potential = { 
@@ -257,7 +257,7 @@ d_drow_planetary_luminous_lichen = {
 	category = deposit_cat_food
 
 	planet_modifier = { 		
-		district_farming_max = 1
+		district_farming_max_add = 1
 	}
 
 	potential = { 
@@ -278,7 +278,7 @@ d_drow_planetary_ancient_dynamos = {
 	category = deposit_cat_energy
 	
 	planet_modifier = { 
-		district_generator_max = 3
+		district_generator_max_add = 3
 	}
 
 	potential = { 
@@ -297,7 +297,7 @@ d_drow_planetary_sunken_geysers = {
 	category = deposit_cat_energy
 	
 	planet_modifier = { 
-		district_generator_max = 2
+		district_generator_max_add = 2
 	}
 
 	potential = { 
@@ -316,7 +316,7 @@ d_drow_planetary_serpentine_trench = {
 	category = deposit_cat_energy
 	
 	planet_modifier = { 
-		district_generator_max = 1
+		district_generator_max_add = 1
 	}
 
 	potential = { 
@@ -337,7 +337,7 @@ d_drow_planetary_metal_wastefields = {
 	category = deposit_cat_minerals
 	
 	planet_modifier = { 
-		district_mining_max = 3
+		district_mining_max_add = 3
 	}
 
 	potential = { 
@@ -356,7 +356,7 @@ d_drow_planetary_aurous_fissures = {
 	category = deposit_cat_minerals
 	
 	planet_modifier = { 
-		district_mining_max = 2
+		district_mining_max_add = 2
 	}
 
 	potential = { 
@@ -375,7 +375,7 @@ d_drow_planetary_carbon_subterrane = {
 	category = deposit_cat_minerals
 	
 	planet_modifier = { 
-		district_mining_max = 1
+		district_mining_max_add = 1
 	}
 
 	potential = { 

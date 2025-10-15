@@ -22,7 +22,8 @@ DROW = {
 
 	randomized = yes
 
-	trait = "trait_drow"
+	trait = "trait_organic"
+	#trait = "trait_drow"
 	resources = {}
 }
 

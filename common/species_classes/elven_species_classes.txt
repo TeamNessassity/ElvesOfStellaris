@@ -22,6 +22,7 @@ ELVEN = {
 
 	randomized = yes
 
-	trait = "trait_elven_true"
+	trait = "trait_organic"
+	#trait = "trait_elven_true"
 	resources = {}
 }

@@ -14,14 +14,25 @@
 trait_elven_true = {
 	cost = 0
 	sorting_priority = 20
+	portrait_override = { elven sidh lunari lhuren }
 
-	species_potential_add = { always = no }
-	species_possible_remove = { always = no }
-	species_possible_merge_add = { always = no }
+	sorting_priority = 20
 
 	randomized = no
-	initial = no
 	immortal_leaders = no
+
+	species_potential_add = {
+		always = no
+	}
+	species_possible_remove = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	}
+	species_possible_merge_remove = {
+		always = no
+	}
 
 	icon = "gfx/interface/icons/traits/trait_elven_true.dds"
 	
@@ -42,7 +53,8 @@ trait_elven_true = {
 	}
 	
 	allowed_archetypes = { BIOLOGICAL }
-	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" }
+	species_class = { ELVEN }
+	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" "trait_drow" }
 
 	slave_cost = {
 		energy = 1500
