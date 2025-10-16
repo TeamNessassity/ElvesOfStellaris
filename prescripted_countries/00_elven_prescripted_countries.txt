@@ -18,7 +18,6 @@ elven_civ1_both_dlc = {
 		name_list="ELVEN1"
 		trait="trait_organic"
 		trait="trait_elven_true"
-		trait="trait_organic"
 		trait="trait_charismatic"
 		trait="trait_talented"
 		trait="trait_wasteful"
@@ -47,11 +46,7 @@ elven_civ1_both_dlc = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-<<<<<<< HEAD
-	flags = ayleid_personality_flag
-=======
-	flag=elven_empire_ayleid
->>>>>>> f4417d4b20f819469b568215be6510e039d8e606
+	flag = elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -107,7 +102,6 @@ elven_civ1_utopia_astral_planes = {
 		name_list="ELVEN1"
 		trait="trait_organic"
 		trait="trait_elven_true"
-		trait="trait_organic"
 		trait="trait_charismatic"
 		trait="trait_talented"
 		trait="trait_wasteful"
@@ -136,11 +130,7 @@ elven_civ1_utopia_astral_planes = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-<<<<<<< HEAD
-	flags = ayleid_personality_flag
-=======
-	flag=elven_empire_ayleid
->>>>>>> f4417d4b20f819469b568215be6510e039d8e606
+	flag = elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -196,7 +186,6 @@ elven_civ1_galactic_paragons_dlc = {
 		name_list="ELVEN1"
 		trait="trait_organic"
 		trait="trait_elven_true"
-		trait="trait_organic"
 		trait="trait_charismatic"
 		trait="trait_talented"
 		trait="trait_wasteful"
@@ -225,11 +214,7 @@ elven_civ1_galactic_paragons_dlc = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-<<<<<<< HEAD
-	flag = ayleid_personality_flag
-=======
-	flag=elven_empire_ayleid
->>>>>>> f4417d4b20f819469b568215be6510e039d8e606
+	flag = elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -285,7 +270,6 @@ elven_civ1 = {
 		name_list="ELVEN1"
 		trait="trait_organic"
 		trait="trait_elven_true"
-		trait="trait_organic"
 		trait="trait_charismatic"
 		trait="trait_talented"
 		trait="trait_wasteful"
@@ -314,11 +298,7 @@ elven_civ1 = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_xenophile"
 
-<<<<<<< HEAD
-	flag = ayleid_personality_flag
-=======
-	flag=elven_empire_ayleid
->>>>>>> f4417d4b20f819469b568215be6510e039d8e606
+	flag = elven_empire_ayleid
 	
 	empire_flag={
 		icon={
@@ -374,7 +354,6 @@ elven_civ2_both_dlc = {
 		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_sidh_immortality"
-		trait="trait_organic"
 		trait="trait_traditional"
 		trait="trait_communal"
 		trait="trait_resilient"
@@ -404,11 +383,7 @@ elven_civ2_both_dlc = {
 	city_graphical_culture="solarpunk_01"
 	advisor_voice_type="l_the_diplomat"
 
-<<<<<<< HEAD
-	flag = gaul_personality_flag
-=======
-	flag=elven_empire_gaul
->>>>>>> f4417d4b20f819469b568215be6510e039d8e606
+	flag = elven_empire_gaul
 
 	empire_flag={
 		icon={
@@ -462,7 +437,6 @@ elven_civ2_no_astral_planes = {
 		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_sidh_immortality"
-		trait="trait_organic"
 		trait="trait_traditional"
 		trait="trait_communal"
 		trait="trait_resilient"
@@ -492,11 +466,7 @@ elven_civ2_no_astral_planes = {
 	city_graphical_culture="elven_solarpunk_01"
 	advisor_voice_type="l_the_diplomat"
 
-<<<<<<< HEAD
-	flag = gaul_personality_flag
-=======
-	flag=elven_empire_gaul
->>>>>>> f4417d4b20f819469b568215be6510e039d8e606
+	flag = elven_empire_gaul
 
 	empire_flag={
 		icon={
@@ -579,7 +549,7 @@ elven_civ2_no_first_contact = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_the_diplomat"
 
-	flag=elven_empire_gaul
+	flag = elven_empire_gaul
 
 	empire_flag={
 		icon={
@@ -662,7 +632,7 @@ elven_civ2 = {
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_the_diplomat"
 
-	flag=elven_empire_gaul
+	flag = elven_empire_gaul
 
 	empire_flag={
 		icon={
@@ -715,7 +685,6 @@ elven_civ3 ={
 		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_elven_lhuren_immortality"
-		trait="trait_organic"
 		trait="trait_traditional"
 		trait="trait_talented"
 	}
@@ -744,11 +713,7 @@ elven_civ3 ={
 	city_graphical_culture="elven_01"
 	advisor_voice_type="l_the_soldier"
 
-<<<<<<< HEAD
-	flag = lhuren_personality_flag
-=======
-	flag=elven_empire_lhuren
->>>>>>> f4417d4b20f819469b568215be6510e039d8e606
+	flag = elven_empire_lhuren
 	
 	empire_flag={
 		icon={
