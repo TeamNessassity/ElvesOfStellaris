@@ -33,7 +33,7 @@ trait_drow = {
 	leader_age_min = 100
     leader_age_max = 400
 	
-	tags = { organic positive species leader }
+	tags = { organic positive species leader special }
 	
 	modifier = {
 		leader_lifespan_mult = 9.0				# Assuming that it costs 4 points, like Venerable.
@@ -73,6 +73,8 @@ trait_drow_xenocidal = {
 		weight = 0
 	}
 	
+	tags = { special }
+
 	allowed_archetypes = { BIOLOGICAL }
 
 	slave_cost = {
@@ -87,6 +89,7 @@ trait_drow_xenocidal = {
 
 trait_drow_savage = {
     cost = 0
+	sorting_priority = 20
 
 	species_potential_add = { always = no }
 	species_possible_remove = { always = no }
@@ -101,9 +104,11 @@ trait_drow_savage = {
 	leader_age_min = 100
     leader_age_max = 400
 	
-	tags = { organic positive species leader }
+	tags = { organic positive species leader special }
 	
 	modifier = {
+		leader_lifespan_mult = 9.0				# Assuming that it costs 4 points, like Venerable.
+		species_leader_exp_gain = 0.1			# +1 points
 		leader_lifespan_mult = 9.0
 		army_damage_mult = 0.5
 		logistic_growth_mult = 0.25
