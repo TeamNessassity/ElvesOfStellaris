@@ -1,129 +1,315 @@
 ELVEN = {
-	elven_name_1 = {
-		name = "Moriche"
-		plural = "Moriches"
-		home_planet = "Garlas Agea"
-		home_system = "Garlas Agea"
+
+	##################
+	## ELVEN1 Names ##
+	##################
+
+	eos_elven1_species_name_1 = {
+		name = eos_spec_elven1_species1_name
+		plural = eos_spec_elven1_species1_name_plural
+		home_planet = eos_spec_elven1_species1_planet
+		home_system = eos_spec_elven1_species1_system
 		name_list = "ELVEN1"
 	}
-	
-	elven_name_2 = {
-		name = "Altmer"
-		plural = "Altmeri"
-		home_planet = "Alinor"
-		home_system = "Eton Nir"
-		name_list = "ELVEN5"
-	}
-	
-	elven_name_3 = {
-		name = "Brannil"
-		plural = "Brannili"
-		home_planet = "Areth"
-		home_system = "Arethor"
-		name_list = "ELVEN6"
-	}
-	
-	elven_name_4 = {
-		name = "Ianis"
-		plural = "Ianis"
-		home_planet = "Inwen Aloria"
-		home_system = "Inwen"
-		name_list = "ELVEN2"
-	}
-	
-	elven_name_5 = {
-		name = "Boiche"
-		plural = "Boiches"
-		home_planet = "Arenthia"
-		home_system = "Y'ffre"
-		name_list = "ELVEN5"
-	}
-	
-	elven_name_6 = {
-		name = "Salache"
-		plural = "Salaches"
-		home_planet = "Artaeum"
-		home_system = "Ceporah"
-		name_list = "ELVEN5"
+
+	eos_elven1_species_name_2 = {
+		name = eos_spec_elven1_species2_name
+		plural = eos_spec_elven1_species2_name_plural
+		home_planet = eos_spec_elven1_species2_planet
+		home_system = eos_spec_elven1_species2_system
+		name_list = "ELVEN1"
 	}
 
-	elven_name_7 = {
-		name = "Lomelas"
-		plural = "Lomelassi"
-		home_planet = "Celania"
-		home_system = "Tiorith"
+	eos_elven1_species_name_3 = {
+		name = eos_spec_elven1_species3_name
+		plural = eos_spec_elven1_species3_name_plural
+		home_planet = eos_spec_elven1_species3_planet
+		home_system = eos_spec_elven1_species3_system
+		name_list = "ELVEN1"
+	}
+
+	eos_elven1_species_name_4 = {
+		name = eos_spec_elven1_species4_name
+		plural = eos_spec_elven1_species4_name_plural
+		home_planet = eos_spec_elven1_species4_planet
+		home_system = eos_spec_elven1_species4_system
+		name_list = "ELVEN1"
+	}
+
+	eos_elven1_species_name_5 = {
+		name = eos_spec_elven1_species5_name
+		plural = eos_spec_elven1_species5_name_plural
+		home_planet = eos_spec_elven1_species5_planet
+		home_system = eos_spec_elven1_species5_system
+		name_list = "ELVEN1"
+	}
+
+	##################
+	## ELVEN2 Names ##
+	##################
+
+	eos_elven2_species_name_1 = {
+		name = eos_spec_elven2_species1_name
+		plural = eos_spec_elven2_species1_name_plural
+		home_planet = eos_spec_elven2_species1_planet
+		home_system = eos_spec_elven2_species1_system
 		name_list = "ELVEN2"
 	}
-	
-	elven_name_8 = {
-		name = "Sithrandir"
-		plural = "Sithrandiri"
-		home_planet = "Eldridia"
-		home_system = "Anil Gal"
+
+	eos_elven2_species_name_2 = {
+		name = eos_spec_elven2_species2_name
+		plural = eos_spec_elven2_species2_name_plural
+		home_planet = eos_spec_elven2_species2_planet
+		home_system = eos_spec_elven2_species2_system
+		name_list = "ELVEN2"
+	}
+
+	eos_elven2_species_name_3 = {
+		name = eos_spec_elven2_species3_name
+		plural = eos_spec_elven2_species3_name_plural
+		home_planet = eos_spec_elven2_species3_planet
+		home_system = eos_spec_elven2_species3_system
+		name_list = "ELVEN2"
+	}
+
+	eos_elven2_species_name_4 = {
+		name = eos_spec_elven2_species4_name
+		plural = eos_spec_elven2_species4_name_plural
+		home_planet = eos_spec_elven2_species4_planet
+		home_system = eos_spec_elven2_species4_system
+		name_list = "ELVEN2"
+	}
+
+	eos_elven2_species_name_5 = {
+		name = eos_spec_elven2_species5_name
+		plural = eos_spec_elven2_species5_name_plural
+		home_planet = eos_spec_elven2_species5_planet
+		home_system = eos_spec_elven2_species5_system
+		name_list = "ELVEN2"
+	}
+
+	##################
+	## ELVEN3 Names ##
+	##################
+
+	eos_elven3_species_name_1 = {
+		name = eos_spec_elven3_species1_name
+		plural = eos_spec_elven3_species1_name_plural
+		home_planet = eos_spec_elven3_species1_planet
+		home_system = eos_spec_elven3_species1_system
+		name_list = "ELVEN3"
+	}
+
+	eos_elven3_species_name_2 = {
+		name = eos_spec_elven3_species2_name
+		plural = eos_spec_elven3_species2_name_plural
+		home_planet = eos_spec_elven3_species2_planet
+		home_system = eos_spec_elven3_species2_system
+		name_list = "ELVEN3"
+	}
+
+	eos_elven3_species_name_3 = {
+		name = eos_spec_elven3_species3_name
+		plural = eos_spec_elven3_species3_name_plural
+		home_planet = eos_spec_elven3_species3_planet
+		home_system = eos_spec_elven3_species3_system
+		name_list = "ELVEN3"
+	}
+
+	eos_elven3_species_name_4 = {
+		name = eos_spec_elven3_species4_name
+		plural = eos_spec_elven3_species4_name_plural
+		home_planet = eos_spec_elven3_species4_planet
+		home_system = eos_spec_elven3_species4_system
+		name_list = "ELVEN3"
+	}
+
+	eos_elven3_species_name_5 = {
+		name = eos_spec_elven3_species5_name
+		plural = eos_spec_elven3_species5_name_plural
+		home_planet = eos_spec_elven3_species5_planet
+		home_system = eos_spec_elven3_species5_system
+		name_list = "ELVEN3"
+	}
+
+	##################
+	## ELVEN4 Names ##
+	##################
+
+	eos_elven4_species_name_1 = {
+		name = eos_spec_elven4_species1_name
+		plural = eos_spec_elven4_species1_name_plural
+		home_planet = eos_spec_elven4_species1_planet
+		home_system = eos_spec_elven4_species1_system
 		name_list = "ELVEN4"
 	}
-	
-	elven_name_9 = {
-		name = "Sarand"
-		plural = "Sarand"
-		home_planet = "Saras Lir"
-		home_system = "Tor Galinde"
-		name_list = "ELVEN1"
+
+	eos_elven4_species_name_2 = {
+		name = eos_spec_elven4_species2_name
+		plural = eos_spec_elven4_species2_name_plural
+		home_planet = eos_spec_elven4_species2_planet
+		home_system = eos_spec_elven4_species2_system
+		name_list = "ELVEN4"
+	}
+
+	eos_elven4_species_name_3 = {
+		name = eos_spec_elven4_species3_name
+		plural = eos_spec_elven4_species3_name_plural
+		home_planet = eos_spec_elven4_species3_planet
+		home_system = eos_spec_elven4_species3_system
+		name_list = "ELVEN4"
+	}
+
+	eos_elven4_species_name_4 = {
+		name = eos_spec_elven4_species4_name
+		plural = eos_spec_elven4_species4_name_plural
+		home_planet = eos_spec_elven4_species4_planet
+		home_system = eos_spec_elven4_species4_system
+		name_list = "ELVEN4"
+	}
+
+	eos_elven4_species_name_5 = {
+		name = eos_spec_elven4_species5_name
+		plural = eos_spec_elven4_species5_name_plural
+		home_planet = eos_spec_elven4_species5_planet
+		home_system = eos_spec_elven4_species5_system
+		name_list = "ELVEN4"
+	}
+
+
+	##################
+	## ELVEN5 Names ##
+	##################
+
+	eos_elven5_species_name_1 = {
+		name = eos_spec_elven5_species1_name
+		plural = eos_spec_elven5_species1_name_plural
+		home_planet = eos_spec_elven5_species1_planet
+		home_system = eos_spec_elven5_species1_system
+		name_list = "ELVEN5"
 	}
 	
-	elven_name_10 = {
-		name = "Gaerath"
-		plural = "Gaerathen"
-		home_planet = "Faladris"
-		home_system = "Elindor"
+	eos_elven5_species_name_2 = {
+		name = eos_spec_elven5_species2_name
+		plural = eos_spec_elven5_species2_name_plural
+		home_planet = eos_spec_elven5_species2_planet
+		home_system = eos_spec_elven5_species2_system
+		name_list = "ELVEN5"
+	}
+
+	eos_elven5_species_name_3 = {
+		name = eos_spec_elven5_species3_name
+		plural = eos_spec_elven5_species3_name_plural
+		home_planet = eos_spec_elven5_species3_planet
+		home_system = eos_spec_elven5_species3_system
+		name_list = "ELVEN5"
+	}
+
+	eos_elven5_species_name_4 = {
+		name = eos_spec_elven5_species4_name
+		plural = eos_spec_elven5_species4_name_plural
+		home_planet = eos_spec_elven5_species4_planet
+		home_system = eos_spec_elven5_species4_system
+		name_list = "ELVEN5"
+	}
+
+	eos_elven5_species_name_5 = {
+		name = eos_spec_elven5_species5_name
+		plural = eos_spec_elven5_species5_name_plural
+		home_planet = eos_spec_elven5_species5_planet
+		home_system = eos_spec_elven5_species5_system
+		name_list = "ELVEN5"
+	}
+
+	##################
+	## ELVEN6 Names ##
+	##################
+
+	eos_elven6_species_name_1 = {
+		name = eos_spec_elven6_species1_name
+		plural = eos_spec_elven6_species1_name_plural
+		home_planet = eos_spec_elven6_species1_planet
+		home_system = eos_spec_elven6_species1_system
 		name_list = "ELVEN6"
 	}
 	
-	elven_name_11 = {
-		name = "Thoronaith"
-		plural = "Thoronaith"
-		home_planet = "Esgadris"
-		home_system = "Imrathas"
+	eos_elven6_species_name_2 = {
+		name = eos_spec_elven6_species2_name
+		plural = eos_spec_elven6_species2_name_plural
+		home_planet = eos_spec_elven6_species2_planet
+		home_system = eos_spec_elven6_species2_system
+		name_list = "ELVEN6"
+	}
+	
+	eos_elven6_species_name_3 = {
+		name = eos_spec_elven6_species3_name
+		plural = eos_spec_elven6_species3_name_plural
+		home_planet = eos_spec_elven6_species3_planet
+		home_system = eos_spec_elven6_species3_system
+		name_list = "ELVEN6"
+	}
+
+	eos_elven6_species_name_4 = {
+		name = eos_spec_elven6_species4_name
+		plural = eos_spec_elven6_species4_name_plural
+		home_planet = eos_spec_elven6_species4_planet
+		home_system = eos_spec_elven6_species4_system
+		name_list = "ELVEN6"
+	}
+
+	eos_elven6_species_name_5 = {
+		name = eos_spec_elven6_species5_name
+		plural = eos_spec_elven6_species5_name_plural
+		home_planet = eos_spec_elven6_species5_planet
+		home_system = eos_spec_elven6_species5_system
+		name_list = "ELVEN6"
+	}
+	
+	##################
+	## ELVEN7 Names ##
+	##################
+
+	eos_elven7_species_name_1 = {
+		name = eos_spec_elven7_species1_name
+		plural = eos_spec_elven7_species1_name_plural
+		home_planet = eos_spec_elven7_species1_planet
+		home_system = eos_spec_elven7_species1_system
 		name_list = "ELVEN7"
 	}
 	
-	elven_name_12 = {
-		name = "Noldor"
-		plural = "Noldor"
-		home_planet = "Imladris"
-		home_system = "Eriador"
+	eos_elven7_species_name_2 = {
+		name = eos_spec_elven7_species2_name
+		plural = eos_spec_elven7_species2_name_plural
+		home_planet = eos_spec_elven7_species2_planet
+		home_system = eos_spec_elven7_species2_system
 		name_list = "ELVEN7"
 	}
 
-	elven_name_13 = {
-		name = "Seirí"
-		plural = "Seirií"
-		home_planet = "Venaesia"
-		home_system = "Verubri"
-		name_list = "ELVEN2"
-	}
-
-	elven_name_14 = {
-		name = "Cetarí"
-		plural = "Cetarií"
-		home_planet = "Carantiana"
-		home_system = "Cistonia"
+	eos_elven7_species_name_3 = {
+		name = eos_spec_elven7_species3_name
+		plural = eos_spec_elven7_species3_name_plural
+		home_planet = eos_spec_elven7_species3_planet
+		home_system = eos_spec_elven7_species3_system
 		name_list = "ELVEN7"
 	}
 
-	elven_name_15 = {
-		name = "Andorí"
-		plural = "Andorií"
-		home_planet = "Atreba"
-		home_system = "Navia"
+	eos_elven7_species_name_4 = {
+		name = eos_spec_elven7_species4_name
+		plural = eos_spec_elven7_species4_name_plural
+		home_planet = eos_spec_elven7_species4_planet
+		home_system = eos_spec_elven7_species4_system
 		name_list = "ELVEN7"
 	}
 
-	elven_name_16 = {
-		name = "Ellirí"
-		plural = "Ellirií"
-		home_planet = "Danissa"
-		home_system = "Iria"
-		name_list = "ELVEN6"
+	eos_elven7_species_name_5 = {
+		name = eos_spec_elven7_species5_name
+		plural = eos_spec_elven7_species5_name_plural
+		home_planet = eos_spec_elven7_species5_planet
+		home_system = eos_spec_elven7_species5_system
+		name_list = "ELVEN7"
 	}
+
+	
+
+	
 }
