@@ -360,7 +360,7 @@ elven_civ2_both_dlc = {
 		trait="trait_sedentary"
 	}
 	
-	room="solarpunk_room"
+	room="eos_bosmer_room"
 	
 	authority="auth_oligarchic"
 	civics={
@@ -443,7 +443,7 @@ elven_civ2_no_astral_planes = {
 		trait="trait_sedentary"
 	}
 	
-	room="solarpunk_room"
+	room="eos_bosmer_room"
 	
 	authority="auth_oligarchic"
 	civics={
@@ -526,7 +526,7 @@ elven_civ2_no_first_contact = {
 		trait="trait_sedentary"
 	}
 	
-	room="solarpunk_room"
+	room="eos_bosmer_room"
 	
 	authority="auth_oligarchic"
 	civics={
@@ -609,7 +609,7 @@ elven_civ2 = {
 		trait="trait_sedentary"
 	}
 	
-	room="solarpunk_room"
+	room="eos_bosmer_room"
 	
 	authority="auth_oligarchic"
 	civics={
@@ -689,7 +689,7 @@ elven_civ3 ={
 		trait="trait_talented"
 	}
 	
-	room="personality_decadent_hierarchy_room"
+	room="eos_lhuren_room"
 	
 	authority="auth_imperial"
 	

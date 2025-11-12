@@ -5,7 +5,9 @@
 pc_drow_speleoterrestrial = {
 	entity = "drow_01_valshaquellar_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_shrouded				
+			
+	icon = EOS_GFX_planet_type_drow_speleoterrestrial
+	icon_large = EOS_GFX_planet_type_drow_speleoterrestrial_big
 
 	#Doesn't work anyway.
 	#ringworld = yes
@@ -45,6 +47,10 @@ pc_drow_speleoterrestrial = {
 pc_drow_valshaquellar = {
 	habitat = yes
 	entity = "drow_01_valshaquellar_alive"
+
+	icon = EOS_GFX_planet_type_valshaquellar
+	icon_large = EOS_GFX_planet_type_valshaquellar_big
+
 	entity_scale = 1.0		
 	fixed_entity_scale = yes	
 	entity_face_object = no 					#disable rotation towards sun or planet we orbit around			
@@ -94,6 +100,10 @@ pc_drow_valshaquellar = {
 pc_drow_valshaquellar_dead = {
 	habitat = yes
 	entity = "drow_01_valshaquellar_dead_totally"
+
+	icon = EOS_GFX_planet_type_valshaquellar
+	icon_large = EOS_GFX_planet_type_valshaquellar_big
+
 	entity_scale = 1.0		
 	fixed_entity_scale = yes	
 	entity_face_object = no 					#disable rotation towards sun or planet we orbit around			

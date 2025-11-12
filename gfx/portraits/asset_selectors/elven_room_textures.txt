@@ -6,6 +6,9 @@ room_selector = {
 	game_setup = {	
 		"drow_tulshar_room" = { always = yes }
 		"lunari_silvermoon_room" = { always = yes }
+		"eos_sidh_room" = { always = yes }
+		"eos_lhuren_room" = { always = yes }
+		"eos_bosmer_room" = { always = yes }
 	}
 
 	ruler = {

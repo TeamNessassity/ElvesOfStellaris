@@ -5,8 +5,9 @@
 pc_lunari_arctic = {
 	entity = "lunari_arctic_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_frozen
-	
+	icon = EOS_GFX_planet_type_permafrost
+	icon_large = EOS_GFX_planet_type_permafrost_big
+
 	climate = "cold"
 	
 	atmosphere_color 		= hsv { 0.1 0.4 0.8 } #hsv { 0.48 0.15 0.8 }		
@@ -45,7 +46,8 @@ pc_lunari_arctic = {
 pc_lunari_city = {
 	entity = "city_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_city
+	icon = EOS_GFX_planet_type_lunari_city
+	icon_large = EOS_GFX_planet_type_lunari_city_big
 
 	climate = "cold"
 
@@ -88,7 +90,8 @@ pc_lunari_city = {
 
 pc_lunari_shielded = {
 	entity = "lunari_moon"
-	icon = GFX_planet_type_desert # Uses custom logic
+	icon = EOS_GFX_planet_type_lunari_shielded
+	icon_large = EOS_GFX_planet_type_lunari_shielded_big
 	
 	entity_scale = @planet_standard_scale
 	
@@ -122,6 +125,9 @@ pc_lunari_shielded = {
 
 pc_elven_sanctuary = {
 	entity = "elven_01_orbital_sanctuary"	#LINKS TO: elven_01_orbital_sanctuary_01_entity
+	icon = EOS_GFX_planet_type_sanctuary
+	icon_large = EOS_GFX_planet_type_sanctuary_big
+	
 	entity_scale = 1.0							
 	fixed_entity_scale = yes
 
@@ -164,6 +170,10 @@ pc_elven_sanctuary = {
 ##########################
 pc_elven_prismatic_star = {
 	entity = "elven_prismatic_star_entity"	#LINKS TO: elven_prismatic_star_entity
+
+	icon = EOS_GFX_planet_type_prismatic_star
+	icon_large = EOS_GFX_planet_type_prismatic_star_big
+
 	entity_scale = 20.0							
 	picture = "pc_elven_prismatic_star"
 	icon = GFX_planet_type_a_b_star

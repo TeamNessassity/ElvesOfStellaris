@@ -1,0 +1,139 @@
+spriteTypes = {	
+	#Sprite sheets
+	spriteType = {
+		name = "EOS_GFX_planet_type"
+		texturefile = "gfx/interface/icons/eos_planet_type_icons.dds"
+		noOfFrames = 10
+	}
+
+	spriteType = {
+		name = "EOS_GFX_planet_type_big_icons"
+		texturefile = "gfx/interface/icons/eos_planet_type_big_icons.dds"
+		noOfFrames = 10
+	}
+
+	#####################
+	# EOS PLANET ICONS ##
+	#####################
+
+	# ELVEN CITY #
+	spriteType = { 
+		name = "EOS_GFX_planet_type_elven_city"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 3
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_elven_city_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 3
+	}
+
+	# LUNARI CITY #
+	spriteType = { 
+		name = "EOS_GFX_planet_type_lunari_city"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 4
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_lunari_city_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 4
+	}
+
+	# PERMAFROST #
+	spriteType = { 
+		name = "EOS_GFX_planet_type_permafrost"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 5
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_permafrost_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 5
+	}
+
+	# VALSHAQUELLAR #
+	spriteType = { 
+		name = "EOS_GFX_planet_type_valshaquellar"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 6
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_valshaquellar_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 6
+	}
+
+	# SEPLEOTERRESTRIAL #
+	spriteType = { 
+		name = "EOS_GFX_planet_type_drow_speleoterrestrial"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 7
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_drow_speleoterrestrial_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 7
+	}
+
+	# SANCTUARY #
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_sanctuary"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 8
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_sanctuary_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 8
+	}
+
+	#############
+	# EOS STARS #
+	#############
+
+	# PRISMATIC STAR #
+	spriteType = { 
+		name = "EOS_GFX_planet_type_prismatic_star"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 1
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_prismatic_star_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 1
+	}
+
+	# LUNARI MOON #
+	spriteType = { 
+		name = "EOS_GFX_planet_type_lunari_shielded"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type"
+		default_frame = 2
+	}
+
+	spriteType = { 
+		name = "EOS_GFX_planet_type_lunari_shielded_big"
+		sprite_sheet_sprite_type = "EOS_GFX_planet_type_big_icons"
+		default_frame = 2
+	}
+
+}
+
+## PLANET TYPES ##
+
+# pc_lunari_arctic
+# pc_lunari_city
+# pc_lunari_shielded
+# pc_elven_sanctuary
+# pc_elven_prismatic_star
+# pc_drow_speleoterrestrial
+# pc_drow_valshaquellar
+# pc_drow_valshaquellar_dead <-- Uses the same icon as the live one!
