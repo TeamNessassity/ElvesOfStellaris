@@ -119,6 +119,8 @@ trait_elven_ayleid_immortality_desc:0 "The divine spark of everlasting life is o
 trait_elven_sidh_immortality:0 "Everbloom"
 trait_elven_sidh_immortality_desc:0 "For as long as the balance of nature is preserved, the caretakers shall partake of its bounty."
 
+trait_elven_true_portrait_override_tt: "Requires elven species"
+
 ####################################
 # OPINION MODIFIERS
 ####################################
