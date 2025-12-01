@@ -177,6 +177,7 @@ pc_drow_valshaquellar_adj:0 "искусственный"
 pc_drow_valshaquellar_desc:0 "Колоссальных размеров искусственный мир, который, как считается, предназначен только для определенных форм жизни."
 mod_pc_drow_valshaquellar_habitability:0 "Приспособленность к Вальшаквеллару"
 trait_pc_drow_valshaquellar_preference:0 "Предпочтение - Вальшаквеллар"
+trait_pc_drow_valshaquellar_preference_short:0 "Вальшаквеллар"
 trait_pc_drow_valshaquellar_preference_desc:0 "§LКлиматические предпочтения определяются на генетическом уровне при создании или умелом манипулировании.§!"
 
 pc_drow_valshaquellar_dead:0 "Вальшаквеллар"
@@ -192,8 +193,10 @@ pc_drow_speleoterrestrial_desc:0 "Скалистый мир, образован�
 pc_drow_speleoterrestrial_habitability:0 "Предпочтение - пещерный мир"
 mod_pc_drow_speleoterrestrial_habitability:0 "Приспособленность к пещерному миру"
 trait_pc_drow_speleoterrestrial_preference:0 "Предпочтение - пещерный мир"
+trait_pc_drow_speleoterrestrial_preference_short:0 "пещерный мир"
 trait_pc_drow_speleoterrestrial_preference_desc:1 "§LКлиматические предпочтения определяются на генетическом уровне при создании или умелом манипулировании.§!"
 trait_machine_pc_drow_speleoterrestrial_preference:0 "Предпочтение - пещерный мир"
+trait_machine_pc_drow_speleoterrestrial_preference_short:0 "пещерный мир"
 trait_machine_pc_drow_speleoterrestrial_preference_desc:1 "§LКлиматические предпочтения определяются при создании.§!"
 
 pc_drow_valshaquellar_tile:0 "Земля Вальшаквеллара"

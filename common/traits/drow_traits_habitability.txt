@@ -7,6 +7,7 @@
 ## NONE RETURN FROM VALSHAQUELLAR.... ALIVE :-) ##
 trait_pc_drow_valshaquellar_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	short_name = "trait_pc_drow_valshaquellar_preference_short"
 	
 	species_potential_add = {
 		always = no
@@ -42,7 +43,7 @@ trait_pc_drow_valshaquellar_dead_preference = {
 		always = no
 	}
 
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	
 	#NOTE: can't define allowed_archetypes in the planet class now. Switch to this?
 	#Non-allowed species classes have 0% habitability
@@ -59,12 +60,13 @@ trait_pc_drow_valshaquellar_dead_preference = {
 
 trait_pc_drow_speleoterrestrial_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_drow_speleoterrestrial_preference.dds"
+	short_name = "trait_pc_drow_speleoterrestrial_preference_short"
 
 	species_potential_add = {
 		always = no
 	}
 
-	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 
 	bound_to_planet_classes = {
 		pc_drow_speleoterrestrial
@@ -83,8 +85,35 @@ trait_pc_drow_speleoterrestrial_preference = {
 	}
 }
 
+trait_auto_pc_drow_speleoterrestrial_preference = {
+	inline_script = {
+		script = traits/auto_preference_planet_class
+		PLANET_CLASS = pc_drow_speleoterrestrial
+	}
+	modifier = {
+		# Dry
+		pc_desert_habitability 			= @auto_penalty
+		pc_arid_habitability 			= @auto_penalty
+		pc_savannah_habitability 		= @auto_penalty
+		# Wet
+		pc_tropical_habitability 		= @auto_penalty
+		pc_continental_habitability 	= @auto_penalty
+		pc_ocean_habitability 			= @auto_penalty
+		# Cold
+		pc_tundra_habitability 			= @auto_penalty
+		pc_arctic_habitability 			= @auto_penalty
+		pc_alpine_habitability 			= @auto_penalty
+		# Special
+		pc_nuked_habitability 			= @auto_penalty
+		pc_volcanic_habitability 		= @auto_penalty
+		pc_drow_speleoterrestrial_habitability 		= @auto_ideal_bonus
+		pc_drow_valshaquellar_habitability 			= @auto_ideal_bonus
+	}
+}
+
 trait_machine_pc_drow_speleoterrestrial_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_drow_speleoterrestrial_preference.dds"
+	short_name = "trait_pc_drow_speleoterrestrial_preference_short"
 
 	species_potential_add = {
 		always = no

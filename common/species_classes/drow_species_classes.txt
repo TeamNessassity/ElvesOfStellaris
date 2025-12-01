@@ -25,6 +25,16 @@ DROW = {
 	trait = "trait_organic"
 	#trait = "trait_drow"
 	resources = {}
+
+	## NOTE: The below will remove planet class labels which you can then replace with a different lable. Requires vanilla file ediing however.
+	# removed_climate_labels = {TYPE_HEADER_03}
+	# added_climate_labels = {TYPE_EOS_HEADER_DROW}
+
+	## NOTE: This will remove planet types totally from species creation which is not ideal.
+	# removed_planet_types = {pc_arctic pc_alpine pc_tundra}
+
+	## Added so the prescripteds can use speleo worlds! 
+	#added_planet_types = {pc_drow_speleoterrestrial}
 }
 
 ILYTHIIRI = {

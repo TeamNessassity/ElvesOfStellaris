@@ -5,7 +5,7 @@
 pc_drow_speleoterrestrial = {
 	entity = "drow_01_valshaquellar_planet"
 	entity_scale = @planet_standard_scale
-			
+	
 	icon = EOS_GFX_planet_type_drow_speleoterrestrial
 	icon_large = EOS_GFX_planet_type_drow_speleoterrestrial_big
 
@@ -13,6 +13,12 @@ pc_drow_speleoterrestrial = {
 	#ringworld = yes
 	
 	climate = "dry"
+
+	initial = yes
+
+	auto_trait_prio = {
+		trait_auto_pc_drow_speleoterrestrial_preference
+	}
 
 	atmosphere_color 		= hsv { 0.718 0.4 0.8 } #hsv { 0.1 0.4 0.8 }	
 	atmosphere_intensity 	= 1.0
@@ -33,9 +39,12 @@ pc_drow_speleoterrestrial = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	
 	colonizable = yes							# gains surface with tiles of tile_set
-	initial = yes
+	
 	starting_planet = no						# can be a starting planet @ NO IT CANNOT! This flag means a random NPC idiot may start on this planet. We don't need that, do we?
 	district_set = standard
+
+	uses_alternative_skies_for_moons = no
+	uses_alternative_skies_if_has_orbital_ring = no
 
 	carry_cap_per_free_district = @carry_cap_normal
 }

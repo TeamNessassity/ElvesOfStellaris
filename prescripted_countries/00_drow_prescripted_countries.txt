@@ -41,7 +41,7 @@ drow_tulshar_civ = {
 	ethic="ethic_spiritualist"
 	
 	planet_name="ELVEN_tulshar_homeworld_name"
-	planet_class="pc_drow_speleoterrestrial"
+	planet_class= "pc_tropical"
 	origin = "origin_drow_subterranean_inception"
 	initializer="drow_system_tulshar_initializer"
 	system_name="ELVEN_tulshar_home_system_name"

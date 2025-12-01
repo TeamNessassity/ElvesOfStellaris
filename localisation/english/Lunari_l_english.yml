@@ -9,6 +9,7 @@ civic_elven_shields:0 "Shield Power Relays"
 civic_elven_shields_desc:0 "Shield technology is prioritized over other forms of defense. New shield relays and resistance amplifiers are quick to be implemented. This requires extra care to ensure new ships are properly outfitted to handle ever improving shield technology."
 
 trait_pc_lunari_arctic_preference:0 "Permafrost Preference"
+trait_pc_lunari_arctic_preference_short:0 "Permafrost"
 trait_pc_lunari_arctic_preference_desc:1 "§LClimate preference is determined at the genetic level, by eons of evolution or skillful manipulation.§!"
 
 ####################################

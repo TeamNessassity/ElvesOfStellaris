@@ -25,4 +25,7 @@ ELVEN = {
 	trait = "trait_organic"
 	#trait = "trait_elven_true"
 	resources = {}
+
+	## Added so Lunari prescripteds work! ##
+	#added_planet_types = {pc_lunari_arctic}
 }
