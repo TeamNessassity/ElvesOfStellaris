@@ -3,8 +3,8 @@ elven_system_imperial_neighbor1_initializer = {
 	
 	class = "sc_elven_trinary_1"
 
-	flags = { custom_system }
-	
+	flags = { custom_system conduit_excluded }
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster

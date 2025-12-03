@@ -3,7 +3,7 @@ drow_system_tulshar_neighbor2_initializer = {
 	name = "Quarthas"
 	class = "sc_drow_quaternary_1"
 
-	flags = { custom_system }
+	flags = { custom_system conduit_excluded }
 	
 	init_effect = {
 		every_neighbor_system = {

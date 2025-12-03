@@ -2,8 +2,8 @@ eilistraee_neighbor2_initializer = {
 	name = "Hûnnaur"
 	class = "sc_drow_binary_2"
 
-	flags = { custom_system }
-	
+	flags = { custom_system conduit_excluded }
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster

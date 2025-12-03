@@ -26,6 +26,6 @@ ELVEN = {
 	#trait = "trait_elven_true"
 	resources = {}
 
-	## Added so Lunari prescripteds work! ##
+	## NOTE: Turns out we'd still need to alter the GUI to use the below. So for now just changing prescripteds to vanilla planets.
 	#added_planet_types = {pc_lunari_arctic}
 }

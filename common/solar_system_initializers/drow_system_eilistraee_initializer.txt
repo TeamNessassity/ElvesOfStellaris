@@ -3,6 +3,8 @@ drow_system_eilistraee_initializer = {
 	name = "Anoriel"
 	
 	class = "sc_elven_binary_prismatic_black_hole"
+	
+	flags = { conduit_excluded }
 
 	init_effect = {
 		every_neighbor_system = {

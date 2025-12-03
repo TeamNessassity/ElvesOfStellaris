@@ -2,7 +2,7 @@ elven_system_gaul_neighbor2_initializer = {
 	name = "Tondonara"
 	class = "sc_elven_trinary_2"
 	
-	flags = { custom_system }
+	flags = { custom_system conduit_excluded }
 
 	init_effect = {
 		every_neighbor_system = {

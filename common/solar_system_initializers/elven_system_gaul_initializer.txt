@@ -2,7 +2,8 @@ elven_system_gaul_initializer = {
 	name = "Adarenon"
 	
 	class = "sc_elven_gaul"
-
+	flags = { conduit_excluded }
+	
 	init_effect = {
 
 		every_neighbor_system = {

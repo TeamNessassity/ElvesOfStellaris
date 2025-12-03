@@ -9,8 +9,8 @@ elven_system_lunari_neighbor1_initializer = {
 	name = "Halidrél"
 	class = "sc_elven_polydora"
 	
-	flags = { custom_system lunari_nebula_blue }
-	
+	flags = { custom_system lunari_nebula_blue conduit_excluded }
+
 	asteroid_belt = {
 		type = icy_asteroid_belt
 		radius = 65

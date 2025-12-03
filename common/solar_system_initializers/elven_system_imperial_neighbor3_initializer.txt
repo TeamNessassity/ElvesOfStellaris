@@ -2,8 +2,8 @@ elven_system_imperial_neighbor3_initializer = {
 	name = "Sammarad"
 	class = "sc_elven_binary_4"
 	
-	flags = { custom_system }
-	
+	flags = { custom_system conduit_excluded }
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster

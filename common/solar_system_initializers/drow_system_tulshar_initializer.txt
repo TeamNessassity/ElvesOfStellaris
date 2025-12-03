@@ -2,6 +2,7 @@ drow_system_tulshar_initializer = {
 	name = "Ilithor"
 	class = "sc_drow_tulshar"
 	usage = origin
+	flags = { conduit_excluded }
 
 	init_effect = {
 		every_neighbor_system = {

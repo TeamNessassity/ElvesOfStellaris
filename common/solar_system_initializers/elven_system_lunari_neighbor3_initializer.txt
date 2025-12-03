@@ -9,8 +9,8 @@ elven_system_lunari_neighbor3_initializer = {
 	name = "Shayol Ghul"
 	class = "sc_m_giant"
 
-	flags = { custom_system }
-	
+	flags = { custom_system conduit_excluded }
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster

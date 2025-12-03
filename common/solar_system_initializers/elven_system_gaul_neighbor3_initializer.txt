@@ -2,7 +2,7 @@ elven_system_gaul_neighbor3_initializer = {
 	name = "Arionncisses"
 	class = "sc_f"
 	
-	flags = { custom_system }
+	flags = { custom_system conduit_excluded }
 
 	init_effect = {
 		every_neighbor_system = {

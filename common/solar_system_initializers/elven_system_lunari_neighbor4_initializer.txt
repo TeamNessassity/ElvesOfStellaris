@@ -9,8 +9,8 @@
 elven_system_lunari_neighbor4_initializer = {
 	class = sc_black_hole
 	
-	flags = { custom_system }
-	
+	flags = { custom_system conduit_excluded }
+
 	planet = {
 		class = star
 		orbit_distance = 0

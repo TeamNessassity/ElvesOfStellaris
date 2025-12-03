@@ -9,8 +9,8 @@ elven_system_lunari_neighbor2_initializer = {
 	name = "Tar Valon"
 	class = "sc_pulsar"
 
-	flags = { custom_system }
-	
+	flags = { custom_system conduit_excluded }
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster

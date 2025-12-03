@@ -10,6 +10,8 @@ elven_system_lunari_initializer = {
 	
 	class = "sc_elven_binary_2"
 
+	flags = { conduit_excluded }
+
 	asteroid_belt = {
 		type = elven_crystal_asteroid_belt_white
 		radius = 125

@@ -2,7 +2,7 @@ eilistraee_neighbor3_initializer = {
 	name = "Slyndar"
 	class = "sc_drow_binary_1"
 
-	flags = { custom_system }
+	flags = { custom_system conduit_excluded }
 	
 	init_effect = {
 		every_neighbor_system = {
@@ -12,7 +12,7 @@ eilistraee_neighbor3_initializer = {
 			}
 		}
 	}
-		
+
 	planet = {
 		class = "pc_a_star"
 		name = "Slyndar"

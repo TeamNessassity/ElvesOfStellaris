@@ -2,7 +2,7 @@ elven_system_imperial_initializer = {
 	name = "Anoralas"
 	
 	class = "sc_elven_imperial"
-	
+	flags = { conduit_excluded }
 	asteroid_belt = {
 		type = elven_crystal_asteroid_belt_teal
 		radius = 90

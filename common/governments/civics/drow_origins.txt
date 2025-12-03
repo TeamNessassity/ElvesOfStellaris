@@ -31,9 +31,9 @@ origin_drow_subterranean_inception = {
 
 	advanced_start = yes
 
-	# random_weight = {
-	# 	base = 0
-	# }
+	random_weight = {
+		base = 0
+	}
 }
 
 origin_drow_prismatic_refuge = {
@@ -59,7 +59,7 @@ origin_drow_prismatic_refuge = {
 
 	advanced_start = yes
 
-	# random_weight = {
-	# 	base = 0
-	# }
+	random_weight = {
+		base = 0
+	}
 }

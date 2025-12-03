@@ -33,7 +33,7 @@ DROW = {
 	## NOTE: This will remove planet types totally from species creation which is not ideal.
 	# removed_planet_types = {pc_arctic pc_alpine pc_tundra}
 
-	## Added so the prescripteds can use speleo worlds! 
+	## NOTE: Turns out we'd still need to alter the GUI to use the below. So for now just changing prescripteds to vanilla planets.
 	#added_planet_types = {pc_drow_speleoterrestrial}
 }
 

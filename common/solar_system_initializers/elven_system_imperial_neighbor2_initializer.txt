@@ -2,8 +2,8 @@ elven_system_imperial_neighbor2_initializer = {
 	name = "Gorthanur"
 	class = "sc_elven_binary_3"
 	
-	flags = { custom_system }
-	
+	flags = { custom_system conduit_excluded }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 205

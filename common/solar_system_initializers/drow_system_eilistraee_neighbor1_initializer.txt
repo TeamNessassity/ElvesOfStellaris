@@ -3,8 +3,8 @@ eilistraee_neighbor1_initializer = {
 	name = "Ayer"
 	class = "sc_drow_trinary_1"
 
-	flags = { custom_system eos_nebula_anoriel }
-	
+	flags = { custom_system eos_nebula_anoriel conduit_excluded }
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster

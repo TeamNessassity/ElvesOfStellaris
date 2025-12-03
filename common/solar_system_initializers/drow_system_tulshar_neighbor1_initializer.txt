@@ -20,6 +20,7 @@ drow_system_tulshar_neighbor1_initializer = {
 		orbit_distance = 40
 		orbit_angle = 0
 		size = 20
+		flags = { conduit_excluded }
 
 		init_effect = {
 			clear_deposits = yes 
@@ -35,7 +36,8 @@ drow_system_tulshar_neighbor1_initializer = {
 		orbit_angle = 135
 		size = 25
 		has_ring = no
-		
+		flags = { conduit_excluded }
+
 		init_effect = {
 			clear_deposits = yes 
 			add_deposit = d_engineering_3
@@ -49,7 +51,8 @@ drow_system_tulshar_neighbor1_initializer = {
 		orbit_angle = 90
 		size = 30
 		has_ring = no
-		
+		flags = { conduit_excluded }
+
 		init_effect = {
 			clear_deposits = yes 
 		}
