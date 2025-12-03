@@ -23,9 +23,9 @@ origin_elven_sunless_realms = {
 	advanced_start = yes
 
 	# NOTE: Somehow AI is still picking our stuff even with base = 0. Commenting out in the hopes that ends it.
-	# random_weight = {
-	# 	base = 0
-	# }
+	random_weight = {
+		base = 0
+	}
 }
 
 origin_elven_foundations = {
@@ -49,9 +49,9 @@ origin_elven_foundations = {
 
 	advanced_start = yes
 
-	# random_weight = {
-	# 	base = 0
-	# }
+	random_weight = {
+		base = 0
+	}
 }
 
 origin_elven_arcadian_symbiosis = {
@@ -88,9 +88,9 @@ origin_elven_arcadian_symbiosis = {
 
 	modifier = { planet_pops_consumer_goods_upkeep_mult = -0.10 }
 
-	# random_weight = {
-	# 	base = 0
-	# }
+	random_weight = {
+		base = 0
+	}
 }
 
 origin_elven_celestial_throne = {
@@ -122,7 +122,7 @@ origin_elven_celestial_throne = {
 
 	advanced_start = yes
 
-	# random_weight = {
-	# 	base = 0
-	# }
+	random_weight = {
+		base = 0
+	}
 }
