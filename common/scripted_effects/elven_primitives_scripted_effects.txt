@@ -3,14 +3,12 @@
 ######################
 
 generate_elven_primitives_on_planet = {
-
 	optimize_memory
 	select_pre_ftl_origin = yes
 	create_elven_pre_ftl_species = yes
 	create_elven_pre_ftl_empire = yes
 	setup_pre_ftl_planet = yes
 	pre_ftl_clean_up_effect = yes
-
 }
 
 create_elven_pre_ftl_species = {
@@ -26,7 +24,7 @@ create_elven_pre_ftl_species = {
 			homeworld = THIS
 			traits = {
 				trait = trait_aquatic
-				#trait = "trait_elven_savage"
+				trait = trait_elven_true
 				trait = random_traits
 			}
 		}
@@ -42,7 +40,7 @@ create_elven_pre_ftl_species = {
 			homeworld = THIS
 			traits = {
 				trait = trait_cave_dweller
-				#trait = "trait_elven_savage"
+				trait = trait_elven_true
 				trait = random_traits
 			}
 		}
@@ -58,7 +56,7 @@ create_elven_pre_ftl_species = {
 			homeworld = THIS
 			traits = {
 				trait = trait_void_dweller_1
-				#trait = "trait_elven_savage"
+				trait = trait_elven_true
 				trait = random_traits
 			}
 		}
@@ -70,7 +68,7 @@ create_elven_pre_ftl_species = {
 			portrait = elven
 			homeworld = THIS
 			traits = {
-				#trait = "trait_elven_savage"
+				trait = trait_elven_true
 				trait = random_traits
 			}
 		}
@@ -367,14 +365,12 @@ create_late_elven_primitive_empire = {
 ###################
 
 generate_drow_primitives_on_planet = {
-
 	optimize_memory
 	select_pre_ftl_origin = yes
 	create_drow_pre_ftl_species = yes
 	create_drow_pre_ftl_empire = yes
 	setup_pre_ftl_planet = yes
 	pre_ftl_clean_up_effect = yes
-
 }
 
 create_drow_pre_ftl_species = {
@@ -390,7 +386,7 @@ create_drow_pre_ftl_species = {
 			homeworld = THIS
 			traits = {
 				trait = trait_aquatic
-				#trait = "trait_drow_savage"
+				trait = trait_drow
 				trait = random_traits
 			}
 		}
@@ -406,8 +402,7 @@ create_drow_pre_ftl_species = {
 			homeworld = THIS
 			traits = {
 				trait = trait_cave_dweller
-				#trait = "trait_drow_savage"
-				trait = "trait_drow_xenocidal"
+				trait = trait_drow
 				trait = random_traits
 			}
 		}
@@ -423,7 +418,7 @@ create_drow_pre_ftl_species = {
 			homeworld = THIS
 			traits = {
 				trait = trait_void_dweller_1
-				#trait = "trait_drow_savage"
+				trait = trait_drow
 				trait = random_traits
 			}
 		}
@@ -435,7 +430,7 @@ create_drow_pre_ftl_species = {
 			portrait = drow
 			homeworld = THIS
 			traits = {
-				#trait = "trait_drow_savage"
+				trait = trait_drow
 				trait = random_traits
 			}
 		}

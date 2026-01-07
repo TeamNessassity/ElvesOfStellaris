@@ -18,48 +18,64 @@
 elven = {
 	species_class = ELVEN
 
-	portraits = {
-		"elven"
-	}
-
-	non_randomized_portraits = {
-		"elven"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"elven"
+		}
 	}
 }
 
 sidh = {
 	species_class = ELVEN
 
-	portraits = {
-		"sidh"
-	}
-
-	non_randomized_portraits = {
-		"sidh"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"sidh"
+		}
 	}
 }
 
 lunari = {
 	species_class = ELVEN
 
-	portraits = {
-		"lunari"
-	}
-
-	non_randomized_portraits = {
-		"lunari"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"lunari"
+		}
 	}
 }
 
 lhuren = {
 	species_class = ELVEN
 
-	portraits = {
-		"lhuren"
-	}
-
-	non_randomized_portraits = {
-		"lhuren"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"lhuren"
+		}
 	}
 }
 
@@ -68,71 +84,95 @@ lhuren = {
 drow = {
 	species_class = DROW
 
-	portraits = {
-		"drow"
-	}
-
-	non_randomized_portraits = {
-		"drow"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"drow"
+		}
 	}
 }
 
 drow_true = {
 	species_class = DROW
 
-	portraits = {
-		"drow_true"
-	}
-
-	non_randomized_portraits = {
-		"drow_true"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"drow_true"
+		}
 	}
 }
 
 drow_lhuren = {
 	species_class = DROW
 
-	portraits = {
-		"drow_lhuren"
-	}
-
-	non_randomized_portraits = {
-		"drow_lhuren"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"drow_lhuren"
+		}
 	}
 }
 
 dunmer = {
 	species_class = DROW
 
-	portraits = {
-		"dunmer"
-	}
-
-	non_randomized_portraits = {
-		"dunmer"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"dunmer"
+		}
 	}
 }
 
 dunmer_true = {
 	species_class = DROW
 
-	portraits = {
-		"dunmer_true"
-	}
-
-	non_randomized_portraits = {
-		"dunmer_true"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"dunmer_true"
+		}
 	}
 }
 
 dunmer_lhuren = {
 	species_class = DROW
 
-	portraits = {
-		"dunmer_lhuren"
-	}
-
-	non_randomized_portraits = {
-		"dunmer_lhuren"
+	conditional_portraits = {
+		randomizable = {
+			always = no
+		}
+		playable = {
+			always = yes
+		}
+		portraits = {
+			"dunmer_lhuren"
+		}
 	}
 }
