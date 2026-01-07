@@ -153,3 +153,17 @@ soundeffect = {
 	max_audible = 1
 	max_audible_behaviour = fail	
 }
+
+soundeffect = {
+	name = pc_elven_prismatic_star
+	volume = 0.2
+	loop = no
+	sounds = {
+		sound = elven_planet_01
+		sound = elven_planet_02
+		sound = elven_planet_03
+	} 
+	playbackrate_random_offset = { -10 20.0 }
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
