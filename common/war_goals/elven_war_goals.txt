@@ -158,32 +158,7 @@ wg_elven_imperial_tributary = {
 					last_created_country = { is_megacorp = yes }
 				}
 				last_created_country = {
-					if = {
-						limit = {
-							has_technology = tech_galactic_administration
-						}
-						change_government = {
-							authority = auth_oligarchic
-							cooldown = no
-							remove_invalid_civics = yes
-							civics = {
-								civic = civic_merchant_guilds
-								civic = random
-								civic = random
-							}
-						}
-					}
-					else = {
-						change_government = {
-							authority = auth_oligarchic
-							cooldown = no
-							remove_invalid_civics = yes
-							civics = {
-								civic = civic_merchant_guilds
-								civic = random
-							}
-						}
-					}
+					set_merchant_government_effect = yes
 				}
 			}
 		}

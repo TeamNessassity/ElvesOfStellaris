@@ -27,7 +27,7 @@ origin_tooltip_drow_subterranean_inception_effects:0 "- Custom Star Cluster\n- $
 
 origin_drow_prismatic_refuge:0 "Prismatic Refuge"
 origin_drow_prismatic_refuge_desc:0 "Fleeing your home system due to persecution, your primitive colony vessel miraculously happened upon a paradise world. Having now mastered this world your civilization turns its attention to the stars once again."
-origin_tooltip_drow_prismatic_refuge_effects:0 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']$TABBED_NEW_LINE$- Contains a ['concept_eos_dangerous_wormhole']\n$HOMEWORLD$$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_feral_fairies']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_cheel_krezust']\n- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_wormhole_stabilization', £physics_research£ $tech_wormhole_stabilization$]"
+origin_tooltip_drow_prismatic_refuge_effects:0 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']$TABBED_NEW_LINE$- Contains a ['concept_eos_dangerous_wormhole']\n$HOMEWORLD$$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_feral_fairies']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_cheel_krezust']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_wormhole_stabilization', £physics_research£ $tech_wormhole_stabilization$]"
 
 ########################
 ### PLANET MODIFIERS ###
@@ -371,7 +371,7 @@ d_drow_planetary_feral_fairies_blocker:0 "£blocker£ Omophagous Faeries"
 d_drow_planetary_feral_fairies_blocker_desc:0 "$d_drow_planetary_feral_fairies_desc$"
 
 d_drow_planetary_glowing_forests:0 "Bioluminescent Forests"
-d_drow_planetary_glowing_forests_desc:0 "Forests with a high degree of plantlife that give off chemical based light. While attractive they are also dangerous as the bioluminescent plant forms are generally carnivorous. Some plant species have even been known to eat large animals or even foolish citizens. If done safely, the plants can be harvested to produce compounds with a variety of unique properties."
+d_drow_planetary_glowing_forests_desc:0 "Forests with a high degree of plantlife that give off chemical based light. While attractive they are also dangerous as the bioluminescent plant forms are generally carnivorous. Some plant species have even been known to feed on large animals or even foolish citizens. If done safely, the plants can be harvested to produce compounds with a variety of unique properties."
 
 d_drow_planetary_glowing_forests_blocker:0 "£blocker£ Bioluminescent Forests"
 d_drow_planetary_glowing_forests_blocker_desc:0 "$d_drow_planetary_glowing_forests_desc$"
