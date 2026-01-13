@@ -28,5 +28,23 @@ soundeffect = {
 	max_audible_behaviour = fail	
 }
 
+soundeffect = {
+	name = pc_drow_speleoterrestrial
+	volume = 0.2
+	loop = no
+	sounds = {
+		sound = pc_drow_speleo_01
+		sound = pc_drow_speleo_02
+		sound = pc_drow_speleo_03
+	} 
+	playbackrate_random_offset = { -10 20.0 }
+	max_audible = 1
+	max_audible_behaviour = fail	
+}
+
+
+
+
+
 
 

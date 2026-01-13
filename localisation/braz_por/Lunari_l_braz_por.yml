@@ -9,6 +9,7 @@ civic_elven_shields:0 "Shield Power Relays"
 civic_elven_shields_desc:0 "Shield technology is prioritized over other forms of defense. New shield relays and resistance amplifiers are quick to be implemented. This requires extra care to ensure new ships are properly outfitted to handle ever improving shield technology."
 
 trait_pc_lunari_arctic_preference:0 "Permafrost Preference"
+trait_pc_lunari_arctic_preference_short:0 "Permafrost"
 trait_pc_lunari_arctic_preference_desc:1 "§LClimate preference is determined at the genetic level, by eons of evolution or skillful manipulation.§!"
 
 ####################################
@@ -109,7 +110,7 @@ elven_colony_events.42.a:0 "This is a disaster."
 
 EMPIRE_DESIGN_lunariciv:0 "Silvermoon Hierocracy"
 EMPIRE_DESIGN_lunariciv_desc:0 "Nothing confounds a xenobiologist more than bringing up the subject of Naerelýn, the Children of the Moon. This mysterious species originates from a nearly dead world with freezing surface temperatures. Said world orbits a pair of black holes; the only light in its system is emitted by a strange glowing moon that somehow repels all physical matter. The system is considered to be one of its kind, perhaps rightfully so. By all accounts the Naerelýn shouldn't exist at all.\n\nThe Moon Elves themselves worship the anomalous moon as their Goddess. Their religion is a curious blend of science and faith, as they believe that the Moon is a benevolent sentient being of immense power and an ability to bend reality and weave fates, but further technological advances are needed to better understand Her and harness Her energy for the greater good.\n\nRelative newcomers to the galactic scene, the Naerelýn seem generally approachable, though they rarely move away from home or engage in diplomacy. Their pride and ruthlessness should not be underestimated: there are whispers that they eradicate, in ways most agonizing, anyone that dares disrespect their customs or double cross them. Such talk however is likely the result of idle minds as there have never been any formal accusations. Or at least, no one survived long enough to lodge any.\n"
-EMPIRE_DESIGN_lunariciv_dlc_desc:0 "Nothing confounds a xenobiologist more than bringing up the subject of Naerelýn, the Children of the Moon. This mysterious species originates from a nearly dead world with freezing surface temperatures. Said world orbits a pair of black holes; the only light in its system is emitted by a strange glowing moon that somehow repels all physical matter. The system is considered to be one of its kind, perhaps rightfully so. By all accounts the Naerelýn shouldn't exist at all.\n\nThe Moon Elves themselves worship the anomalous moon as their Goddess. Their religion is a curious blend of science and faith, as they believe that the Moon is a benevolent sentient being of immense power and an ability to bend reality and weave fates, but further technological advances are needed to better understand Her and harness Her energy for the greater good.\n\nRelative newcomers to the galactic scene, the Naerelýn seem generally approachable, though they rarely move away from home or engage in diplomacy. Their pride and ruthlessness should not be underestimated: there are whispers that they eradicate, in ways most agonizing, anyone that dares disrespect their customs or double cross them. Such talk however is likely the result of idle minds as there have never been any formal accusations. Or at least, no one survived long enough to lodge any.\n"
+EMPIRE_DESIGN_lunariciv_dlc_desc:0 "$EMPIRE_DESIGN_lunariciv_desc$"
 
 elven_system_lunari_initializer_NAME:0 "Sunless Realms"
 elven_system_lunari_initializer_DESC:0 "A cold binary black hole system. The only light source being a strange nearby moon.\n\n$system_initializer_DESC$"
@@ -132,7 +133,7 @@ ELVEN_lunari_home_system_name: "Sunless Realms"
 
 origin_elven_sunless_realms:0 "Sunless Realms"
 origin_elven_sunless_realms_desc:0 "Miraculously blossoming in a system with binary black holes, your civilization's only light has been that of the divine Moon."
-origin_tooltip_elven_sunless_realms_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_lunari_arctic']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_lunari_auroras_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_lunari_planetary_ice_blossoms']\n- ['concept_guaranteed_colonies']: Two smaller ['concept_pc_lunari_arctic', Permafrost Worlds] will spawn as satellites of your homeworld planet\n- $SPECIES_TRAITS$ ['concept_lunari_arctic_preference']\n- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_hydroponics', £society_research£ $tech_hydroponics$]"
+origin_tooltip_elven_sunless_realms_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_lunari_arctic']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_lunari_auroras_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_lunari_planetary_ice_blossoms']\n- ['concept_guaranteed_colonies']: Two smaller ['concept_pc_lunari_arctic', Permafrost Worlds] will spawn as satellites of your homeworld planet\n- $SPECIES_TRAITS$ ['concept_lunari_arctic_preference']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_hydroponics', £society_research£ $tech_hydroponics$]"
 
 
 ################
@@ -167,14 +168,14 @@ d_lunari_dangerous_wildlife_blocker:0 "$d_dangerous_wildlife_blocker$"
 d_lunari_dangerous_wildlife_blocker_desc:0 "$d_dangerous_wildlife_blocker_desc$"
 
 d_lunari_planetary_energy_1:0 "Charged Atmosphere"
-d_lunari_planetary_energy_1b:0 "Charged Atmosphere"
+d_lunari_planetary_energy_1b:0 "$d_lunari_planetary_energy_1$"
 d_lunari_planetary_energy_1_desc:0 "Lunar radiation colliding with the atmosphere produces a unique plasma that is both harmless to life and easily harnessed for energy."
-d_lunari_planetary_energy_1b_desc:0 "Lunar radiation colliding with the atmosphere produces a unique plasma that is both harmless to life and easily harnessed for energy."
+d_lunari_planetary_energy_1b_desc:0 "$d_lunari_planetary_energy_1_desc$"
 
 d_lunari_planetary_energy_2:0 "Natural Conductive Grounds"
-d_lunari_planetary_energy_2b:0 "Natural Conductive Grounds"
+d_lunari_planetary_energy_2b:0 "$d_lunari_planetary_energy_2$"
 d_lunari_planetary_energy_2_desc:0 "Naturally occurring metals have produced areas where lightning strikes can be predicted with exactness allowing them to be effortlessly harnessed."
-d_lunari_planetary_energy_2b_desc:0 "Naturally occurring metals have produced areas where lightning strikes can be predicted with exactness allowing them to be effortlessly harnessed."
+d_lunari_planetary_energy_2b_desc:0 "$d_lunari_planetary_energy_2_desc$"
 
 d_lunari_planetary_energy_3:0 "Megastorms"
 d_lunari_planetary_energy_3_desc:0 "Certain regions harbor the conditions perfect for creating nearly constant storms. Often these storms will last years or more with only brief periods of calm."
@@ -183,19 +184,19 @@ d_lunari_planetary_minerals_1:0 "Crystal Rain"
 d_lunari_planetary_minerals_1_desc:0 "The chemical gases covering the entire region's surface provoke an elemental shock reaction whenever precipitation hits the ground. This has turned the surface into a razor sharp, foggy but mineral rich landscape."
 
 d_lunari_planetary_minerals_2:0 "Rich Mountain"
-d_lunari_planetary_minerals_2b:0 "Rich Mountain"
+d_lunari_planetary_minerals_2b:0 "$d_lunari_planetary_minerals_2$"
 d_lunari_planetary_minerals_2_desc:0 "These mountainsides glint with rich ore resources and precious stones."
-d_lunari_planetary_minerals_2b_desc:0 "These mountainsides glint with rich ore resources and precious stones."
+d_lunari_planetary_minerals_2b_desc:0 "$d_lunari_planetary_minerals_2_desc$"
 
 d_lunari_planetary_minerals_3:0 "Ore-Rich Caverns"
-d_lunari_planetary_minerals_3b:0 "Ore-Rich Caverns"
+d_lunari_planetary_minerals_3b:0 "$d_lunari_planetary_minerals_3$"
 d_lunari_planetary_minerals_3_desc:0 "These deep caverns are rife with metallic and mineral ore deposits."
-d_lunari_planetary_minerals_3b_desc:0 "These deep caverns are rife with metallic and mineral ore deposits."
+d_lunari_planetary_minerals_3b_desc:0 "$d_lunari_planetary_minerals_3_desc$"
 
 d_lunari_planetary_food_1:0 "Frozen Wasteland"
-d_lunari_planetary_food_1b:0 "Frozen Wasteland"
+d_lunari_planetary_food_1b:0 "$d_lunari_planetary_food_1$"
 d_lunari_planetary_food_1_desc:0 "This region suffers from extreme weather conditions that result in harsh conditions for most forms of life."
-d_lunari_planetary_food_1b_desc:0 "This region suffers from extreme weather conditions that result in harsh conditions for most forms of life."
+d_lunari_planetary_food_1b_desc:0 "$d_lunari_planetary_food_1_desc$"
 
 d_lunari_planetary_food_2:0 "Moon Algae Paradise"
 d_lunari_planetary_food_2_desc:0 "The lakes in this region contain a large amount of edible algae that grow under a thin layer of ice. It is thought the algae grows exclusively from the light of the Moon."

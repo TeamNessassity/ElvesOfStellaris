@@ -135,7 +135,7 @@ trait_elven_true_portrait_override_tt: "Requires elven species"
 
 civic_elven_arcane_minded:0 "Arcane Societies"
 civic_elven_arcane_minded_desc:0 "Studying the metaphysical is a national pastime. The vagaries of the arcane are commonly discussed at all levels of society. This rich environment of ideas spurs the imagination of researchers."
-civic_tooltip_arcane_minded_effects:0 "Slightly increased chance of discovering an §Yarchaeological site§!\n§Y20%§! of £unity£ income is converted to £physics£ £society£ £engineering£ at §Y50%§! efficiency"
+civic_tooltip_arcane_minded_effects:0 "§Y20%§! of £unity£ income is converted to £physics£ £society£ £engineering£ at §Y50%§! efficiency\nSlightly increased chance of discovering an §Yarchaeological site§!"
 #civic_tooltip_arcane_minded_effects:0 "$mod_category_psionics_research_speed_mult$: §G+15%§!\n$MOD_SHIP_ANOMALY_GENERATION_CHANCE$: §G+15%§!\nSlightly increased chance of discovering an §Yarchaeological site§!\n"
 
 civic_elven_craft:0 "Elegant Artistry"
@@ -199,9 +199,9 @@ gov_elven_druid_circle_desc:0 "This government is a spiritualistic form of oliga
 
 EMPIRE_DESIGN_elven_civ1:0 "Serene Kingdom of Senalata"
 EMPIRE_DESIGN_elven_civ1_desc:0 "Xeno historians grudgingly admit the Ayleids appear to have always existed on their world. The prevailing hypothesis, whether encouraged by Ayleids or not, is that they were part of a massive interstellar empire at some distant point in pre-history. What it was called or how far it extended have long since been lost.\n\nRegardless of origins, they now seek to have a more active role outside their system. Their calm and disinterested demeanor is best not underestimated however as they have been known to be quite lethal when provoked to violence.§!\n"
-EMPIRE_DESIGN_elven_civ1_both_dlc_desc:0 "Xeno historians grudgingly admit the Ayleids appear to have always existed on their world. The prevailing hypothesis, whether encouraged by Ayleids or not, is that they were part of a massive interstellar empire at some distant point in pre-history. What it was called or how far it extended have long since been lost.\n\nRegardless of origins, they now seek to have a more active role outside their system. Their calm and disinterested demeanor is best not underestimated however as they have been known to be quite lethal when provoked to violence.§!\n"
-EMPIRE_DESIGN_elven_civ1_utopia_astral_planes_desc:0 "Xeno historians grudgingly admit the Ayleids appear to have always existed on their world. The prevailing hypothesis, whether encouraged by Ayleids or not, is that they were part of a massive interstellar empire at some distant point in pre-history. What it was called or how far it extended have long since been lost.\n\nRegardless of origins, they now seek to have a more active role outside their system. Their calm and disinterested demeanor is best not underestimated however as they have been known to be quite lethal when provoked to violence.§!\n"
-EMPIRE_DESIGN_elven_civ1_galactic_paragons_dlc_desc:0 "Xeno historians grudgingly admit the Ayleids appear to have always existed on their world. The prevailing hypothesis, whether encouraged by Ayleids or not, is that they were part of a massive interstellar empire at some distant point in pre-history. What it was called or how far it extended have long since been lost.\n\nRegardless of origins, they now seek to have a more active role outside their system. Their calm and disinterested demeanor is best not underestimated however as they have been known to be quite lethal when provoked to violence.§!\n"
+EMPIRE_DESIGN_elven_civ1_both_dlc_desc:0 "$EMPIRE_DESIGN_elven_civ1_desc$"
+EMPIRE_DESIGN_elven_civ1_utopia_astral_planes_desc:0 "$EMPIRE_DESIGN_elven_civ1_desc$"
+EMPIRE_DESIGN_elven_civ1_galactic_paragons_dlc_desc:0 "$EMPIRE_DESIGN_elven_civ1_desc$"
 
 ELVEN_civ1_empire_adjective: "Ayleian"
 ELVEN_civ1_species_name: "Ayleid"
@@ -217,7 +217,9 @@ ELVEN_civ1_home_system_name: "Anoralas"
 
 EMPIRE_DESIGN_elven_civ2:0 "Aenarí Circle"
 EMPIRE_DESIGN_elven_civ2_desc:0 "The ancient Aenarí were comprised of distinct tribes often fighting for territory or resources. One of those resources being the strong but slow Treants. Very powerful but incredibly subservient, they were and still are used mostly as laborers.\n\nLife went on as usual until a major threat appeared. The specifics have been lost to time but it was an extinction level threat. The tribes united and were victorious.\n\nSince that time the Aenarí have gradually expanded along with their dutiful servants to claim their entire world. They kept their tribal nature but have forgone the petty infighting of their ancestors.\n\nRecent technological advancements have allowed the Aenarí the ability to consider life beyond their homeworld. While generally friendly, it should be noted they have not lost their tendency to unite as one against threats.§!\n"
-EMPIRE_DESIGN_elven_civ2_dlc_desc:0 "The ancient Aenarí were comprised of distinct tribes often fighting for territory or resources. One of those resources being the strong but slow Treants. Very powerful but incredibly subservient, they were and still are used mostly as laborers.\n\nLife went on as usual until a major threat appeared. The specifics have been lost to time but it was an extinction level threat. The tribes united and were victorious.\n\nSince that time the Aenarí have gradually expanded along with their dutiful servants to claim their entire world. They kept their tribal nature but have forgone the petty infighting of their ancestors.\n\nRecent technological advancements have allowed the Aenarí the ability to consider life beyond their homeworld. While generally friendly, it should be noted they have not lost their tendency to unite as one against threats.§!\n"
+EMPIRE_DESIGN_elven_civ2_both_dlc_desc:0 "$EMPIRE_DESIGN_elven_civ2_desc$"
+EMPIRE_DESIGN_elven_civ2_no_astral_planes_desc:0 "$EMPIRE_DESIGN_elven_civ2_desc$"
+EMPIRE_DESIGN_elven_civ2_no_first_contact_desc:0 "$EMPIRE_DESIGN_elven_civ2_desc$"
 
 ELVEN_civ2_empire_adjective: "Aenarí"
 ELVEN_civ2_species_name: "Aenari"

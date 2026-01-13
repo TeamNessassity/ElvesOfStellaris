@@ -23,3 +23,29 @@ sound =
 	always_load = no
 	volume = 1.1
 }
+
+########### SPELEOTERRESTRIAL #########
+
+sound =
+{
+	name = "pc_drow_speleo_01"
+	file = "pc_drow_speleo_01.wav"
+	always_load = no
+	volume = 1.3
+}
+
+sound =
+{
+	name = "pc_drow_speleo_02"
+	file = "pc_drow_speleo_02.wav"
+	always_load = no
+	volume = 1.3
+}
+
+sound =
+{
+	name = "pc_drow_speleo_03"
+	file = "pc_drow_speleo_03.wav"
+	always_load = no
+	volume = 1.3
+}

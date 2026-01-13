@@ -9,7 +9,7 @@
  concept_lunari_arctic_preference: "$trait_pc_lunari_arctic_preference$"
  concept_lunari_arctic_preference_desc: "- Permafrost World Habitability: §G+100%§!\n- Arctic World Habitability: §G+30%§!\n- §RWarmer planets are undesirable!§!\n\n§L$trait_pc_lunari_arctic_preference_desc$§!"
  concept_eos_hydroponics: "$tech_hydroponics$"
- concept_eos_hydroponics_desc: "\n§HUnlocks Building:§! $building_hydroponics_farm$\n§HUnlocks Starbase Building:§! $sm_hydroponics_bay$\n\n§L$tech_hydroponics_desc$§!"
+ concept_eos_hydroponics_desc: "§HUnlocks Building:§! $building_hydroponics_farm$\n§HUnlocks Starbase Building:§! $sm_hydroponics_bay$\n\n§L$tech_hydroponics_desc$§!"
  concept_eos_hazard_black_hole: "Environmental Hazard"
  concept_eos_hazard_black_hole_desc: "- $MOD_SHIP_DISENGAGE_CHANCE_REDUCTION$: §R50%§!\n- $MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_MULT$: §R+50%§!\n\n$ENVIRONMENTAL_EFFECTS_DELAYED$"
 
@@ -41,7 +41,7 @@
  concept_drow_planetary_cheel_krezust: "$d_drow_planetary_cheel_krezust$"
  concept_drow_planetary_cheel_krezust_desc: "- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R-1§!\n- §G+1§! $job_elven_archaeologist$ Job per §Y40§! Pops\n\n§L$d_drow_planetary_cheel_krezust_desc$§!"
  concept_eos_wormhole_stabilization: "$tech_wormhole_stabilization$"
- concept_eos_wormhole_stabilization_desc: "\n§HUnlocks Feature:§! $feature_wormhole_stabilization$\n\n§L$tech_wormhole_stabilization_desc$§!"
+ concept_eos_wormhole_stabilization_desc: "§HUnlocks Feature:§! $feature_wormhole_stabilization$\n\n§L$tech_wormhole_stabilization_desc$§!"
 
  concept_eos_hazard_pulsar: "Environmental Hazard"
  concept_eos_hazard_pulsar_desc: "- $MOD_SHIP_SHIELD_REDUCTION$: §R100%§!\n\n$ENVIRONMENTAL_EFFECTS_DELAYED$"
