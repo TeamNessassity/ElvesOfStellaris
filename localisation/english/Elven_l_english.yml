@@ -18,7 +18,7 @@ name_list_ELVEN7:0 "Elves: Wild"
 ####################################
 elven_01_shipset_desc:0 "Recognised for their signature sleek contours and distinctive silhouettes, Elven vessels embody effortless elegance. Functional - Powerful - Beautiful."
 
-elven_02_shipset_desc:0 "Recognised for their signature sleek contours and distinctive silhouettes, Elven vessels embody effortless elegance. Functional - Powerful - Beautiful."
+elven_02_shipset_desc:0 "$elven_01_shipset_desc$"
 
 ####################################
 # System Initializers
@@ -154,27 +154,27 @@ agenda_elven_isolationism:0 "Focus Inward"
 policy_elven_gender_policy:0 "Gender Policy"
 policy_elven_gender_policy_desc:0 "These policies affect which genders are allowed for certain leadership positions.\n\n§RNote: policy changes have no affect on current leaders or heirs!§!\n"
 
-elven_gender_default_name:0 "Equality"
 elven_gender_default:0 "Equality"
+elven_gender_default_name:0 "$elven_gender_default$"
 elven_gender_default_desc:0 "Males and females can both fulfill the same leadership positions. Which makes things terribly boring. And unfashionable."
 
-elven_gender_matriarchy_full_name:0 "Absolute Matriarchy"
 elven_gender_matriarchy_full:0 "Absolute Matriarchy"
+elven_gender_matriarchy_full_name:0 "$elven_gender_matriarchy_full$"
 elven_gender_matriarchy_full_desc:0 "This policy pretends that males do not exist and tries to hide them from outsiders for fear that their limited fashion sense may be discovered."
 #"Males are prone to emotionality and clouded judgement. It therefore follows that only females should be leaders at all levels of society."
 
-elven_gender_matriarchy_governor_name: "Matrilinear Leadership"
 elven_gender_matriarchy_governor:0 "Matrilinear Leadership"
+elven_gender_matriarchy_governor_name: "$elven_gender_matriarchy_governor$"
 elven_gender_matriarchy_governor_desc:0 "Men look good in a suit. But not so much in a gown. Hence, women fulfill all leadership positions where gowns are absolutely required."
 #"Females are more suited for ruling and top tier management. All rulers and governors are female."
 
-elven_gender_patriarchy_military_name:0 "Chivalry"
 elven_gender_patriarchy_military:0 "Chivalry"
+elven_gender_patriarchy_military_name:0 "$elven_gender_patriarchy_military$"
 elven_gender_patriarchy_military_desc:0 "Everyone knows males look better when involved in hurting things. Therefore males fill all military leadership roles."
 #"It is the sacred duty of males to defend the weak and defensless. As such, only males are involved in combat oriented positions."
 
-elven_gender_patriarchy_full_name:0 "Absolute Patriarchy"
 elven_gender_patriarchy_full:0 "Absolute Patriarchy"
+elven_gender_patriarchy_full_name:0 "$elven_gender_patriarchy_full$"
 elven_gender_patriarchy_full_desc:0 "Why should females have to bother with boring leadership positions? Males should fulfill those roles so females have more time to manage new fashion.... and plot murders."
 
 ####################################

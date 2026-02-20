@@ -118,7 +118,7 @@ lunariciv = {
 	government="gov_theocratic_dictatorship"
 
 	planet_name="ELVEN_lunari_homeworld_name"
-	planet_class="pc_lunari_arctic"
+	planet_class="pc_arctic"
 	initializer="elven_system_lunari_initializer"
 	origin = "origin_elven_sunless_realms"
 	system_name="ELVEN_lunari_home_system_name"

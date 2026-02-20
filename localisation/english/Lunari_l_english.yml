@@ -22,7 +22,7 @@ tech_lunari_shield_power_relays_desc:0 "Several types of exotic particles emitte
 # Planets
 ####################################
 
-pc_lunari_shielded:0 "Unidentifiable stellar object"
+pc_lunari_shielded:0 "Unidentifiable Stellar Object"
 pc_lunari_shielded_desc:0 "This moon is the only significant source of light in the system, emitting electromagnetic radiation while repulsing all incoming physical matter. All scans have proven unsuccessful as outgoing particles are reflected back and dispersed before they reach the surface, if one exists.\n\nSome consider this odd stellar object to be an instance of a white hole or a one-way portal exit from another universe. Others believe that the moon is sentient and possesses an ability to telepathically influence its surroundings."
 
 pc_lunari_arctic:0 "Permafrost World"
