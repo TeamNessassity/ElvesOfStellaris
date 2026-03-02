@@ -134,7 +134,7 @@ elven_system_lunari_initializer = {
 		home_planet = yes
 		starting_planet = yes
 		has_ring = no
-		flags = { lunari_planet_flag lunari_capital }
+		flags = { lunari_planet_flag lunari_capital special_start_planet }
 		
 		init_effect = {
 			if = {

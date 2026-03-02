@@ -3,6 +3,8 @@
 ###########################
 
 generate_elven_capital_deposits_and_blockers = {
+	optimize_memory
+	
 	############
 	## LUNARI ##
 	############
@@ -44,6 +46,10 @@ generate_elven_capital_deposits_and_blockers = {
 
 		add_deposit = d_lunari_planetary_food_3
 		add_deposit = d_lunari_planetary_food_1b
+
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		generate_home_planet_final_pass = yes
 	}
 	#############
 	## TULSHAR ##
@@ -76,6 +82,10 @@ generate_elven_capital_deposits_and_blockers = {
 		add_deposit = d_drow_planetary_aurous_fissures
 		add_deposit = d_drow_planetary_aurous_fissures
 		add_deposit = d_drow_planetary_carbon_subterrane
+
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		generate_home_planet_final_pass = yes
 
 		event_target:drow_valshaquellar = {
 			begin_event_chain = {
@@ -324,6 +334,54 @@ create_sidh_rings = {
 ## ARCADIAN SYMBIOSIS TREANT STUFF ##
 #####################################
 
+eos_create_treants = {
+	optimize_memory
+
+	create_species = {
+		name = "Treant"
+		plural = "Treants"
+		class = PLANT
+		portrait = pla14
+		namelist = PLANT4
+		homeworld = THIS
+
+		traits = {
+			trait = "trait_syncretic_proles"
+			trait = "trait_very_strong"
+			trait = "trait_resilient"
+			trait = "trait_slow_breeders"
+			trait = "trait_sedentary"
+		}
+
+		effect = {
+			set_species_flag = elven_arcadian_symbiosis_treants
+
+			save_global_event_target_as = elven_treant_species
+		}
+	}
+
+	random_owned_pop_group = {
+		limit = {
+			pop_group_size >= 800
+			is_pop_category = worker
+		}
+		kill_pop_group = {
+			pop_group = this
+			amount = 800
+		}
+	}
+
+	while = {
+		count = 8
+		create_pop_group = {
+			species = event_target:elven_treant_species
+			category = worker
+		}
+	}
+
+	recalculate_treant_habitability_bonus = yes
+}
+
 recalculate_treant_habitability_bonus = {
 	remove_modifier = elven_treant_harmony
 
@@ -414,7 +472,38 @@ recalculate_unity_to_research_conversion = {
 ## PRISMATIC REFUGE - WORMHOLE GENERATION ##
 ############################################
 
+eos_create_prismatic_refuge_wormhole = {
+	optimize_memory
+	
+	set_country_flag = encountered_first_wormhole
+	add_seen_bypass_type = wormhole
+	#add_research_option = tech_wormhole_stabilization
+	give_technology = { message = no tech = tech_wormhole_stabilization }
+
+	find_a_suitable_wormhole_candidate_system = yes
+
+	capital_scope = {
+		solar_system = {
+			event_target:drow_prismatic_refuge_escape_system = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = no
+					orbit_angle = 360
+				}
+			}
+			spawn_natural_wormhole = {
+				bypass_type = wormhole
+				random_pos = no
+				orbit_angle = 270
+			}
+			link_wormholes = event_target:drow_prismatic_refuge_escape_system
+		}
+	}
+}
+
 find_a_suitable_wormhole_candidate_system = {
+	optimize_memory
+
 	if = {
 		limit = { any_country = { has_country_flag = drow_fe_flag } }
 
@@ -517,8 +606,6 @@ convert_elven_ecumenopolis_deposits = {
 		add_deposit = d_elven_planetary_frensca_tol
 		add_deposit = d_elven_planetary_tir_aranad
 	}
-
-
 }
 
 revert_planet_to_permafrost = {

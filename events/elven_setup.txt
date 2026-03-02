@@ -29,19 +29,13 @@ event = {
 # OVERRIDE VANILLA CAPITAL PLANET RESOURCES #
 #############################################
 
-country_event = {
+planet_event = {
 	id = elven_setup.2
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = {
-		is_country_type = default
-	}
-
 	immediate = {
-		capital_scope = {
-			generate_elven_capital_deposits_and_blockers = yes
-		}
+		generate_elven_capital_deposits_and_blockers = yes
 	}
 }
 
@@ -50,61 +44,17 @@ country_event = {
 #######################
 
 ## ARCADIAN SYMBIOSIS ##
-country_event = {
+planet_event = {
 	id = elven_setup.31
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		owner = { has_origin = origin_elven_arcadian_symbiosis }
+	}
+
 	immediate = {
-		if = {
-			limit = { has_origin = origin_elven_arcadian_symbiosis }
-
-			capital_scope = {
-				create_species = {
-					name = "Treant"
-					plural = "Treants"
-					class = PLANT
-					portrait = pla14
-					namelist = PLANT4
-					homeworld = THIS
-
-					traits = {
-						trait = "trait_syncretic_proles"
-						trait = "trait_very_strong"
-						trait = "trait_resilient"
-						trait = "trait_slow_breeders"
-						trait = "trait_sedentary"
-					}
-
-					effect = {
-						set_species_flag = elven_arcadian_symbiosis_treants
-
-						save_global_event_target_as = elven_treant_species
-					}
-				}
-
-				random_owned_pop_group = {
-					limit = {
-						pop_group_size >= 800
-						is_pop_category = worker
-					}
-					kill_pop_group = {
-						pop_group = this
-						amount = 800
-					}
-				}
-
-				while = {
-					count = 8
-					create_pop_group = {
-						species = event_target:elven_treant_species
-						category = worker
-					}
-				}
-
-				recalculate_treant_habitability_bonus = yes
-			}
-		}
+		eos_create_treants = yes
 	}
 }
 
@@ -114,35 +64,12 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = {
+		has_origin = origin_drow_prismatic_refuge
+	}
+
 	immediate = {
-		if = {
-			limit = { has_origin = origin_drow_prismatic_refuge }
-
-			set_country_flag = encountered_first_wormhole
-			add_seen_bypass_type = wormhole
-			#add_research_option = tech_wormhole_stabilization
-			give_technology = { message = no tech = tech_wormhole_stabilization }
-
-			find_a_suitable_wormhole_candidate_system = yes
-
-			capital_scope = {
-				solar_system = {
-					event_target:drow_prismatic_refuge_escape_system = {
-						spawn_natural_wormhole = {
-							bypass_type = wormhole
-							random_pos = no
-							orbit_angle = 360
-						}
-					}
-					spawn_natural_wormhole = {
-						bypass_type = wormhole
-						random_pos = no
-						orbit_angle = 270
-					}
-					link_wormholes = event_target:drow_prismatic_refuge_escape_system
-				}
-			}
-		}
+		eos_create_prismatic_refuge_wormhole = yes
 	}
 }
 
