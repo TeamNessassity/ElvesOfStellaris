@@ -1,30 +1,5 @@
 namespace = elven_setup
 
-#################################
-# ELVEN STARTING MEGASTRUCTURES #
-#################################
-
-event = {
-	id = elven_setup.13
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		every_galaxy_planet = {
-			limit = {
-				has_planet_flag = elven_sidh_rings_start
-				owner = {
-					#is_species_class = ELVEN
-				}
-			}
-			
-			create_sidh_rings = yes
-			
-			remove_planet_flag = elven_sidh_rings_start
-		}
-	}
-}
-
 #############################################
 # OVERRIDE VANILLA CAPITAL PLANET RESOURCES #
 #############################################
@@ -131,27 +106,6 @@ event = {
 					cooldown = no
 				}
 			}
-		}
-	}
-}
-
-########################################
-# ELVES START WITH MORE CONSUMER GOODS #
-########################################
-
-event = {
-	id = elven_setup.71
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		every_country = {
-			limit = {
-				country_uses_consumer_goods = yes
-				has_trait = trait_elven_true
-			}
-			
-			add_resource = { consumer_goods = 150 }
 		}
 	}
 }
@@ -341,81 +295,6 @@ event = {
 						}
 						create_turbulent_nebula_2 = yes
 					}
-				}
-			}
-		}
-	}
-}
-
-
-## NOTE ##
-## This was originally used to set up nebulae on the galaxy map but it appears to no longer function. Doing it initializers now!!
-## This event was deactived. Keeping it here for reference.
-event = {
-	id = elven_setup.82
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		every_system = {
-			limit = {
-				is_inside_nebula = no
-				OR = {
-					has_star_flag = elven_nebula_green_purple
-					has_star_flag = drow_tulshar_nebula
-					has_star_flag = elven_nebula_blue
-					has_star_flag = eilistraee_system
-					has_star_flag = lhuren_capital_system
-					has_star_flag = lunari_nebula_blue
-				}
-			}
-
-			if = {
-				limit = { has_star_flag = elven_nebula_green_purple }
-
-				create_nebula = {
-					name = "ELVEN_Coiled_Serpent"
-					radius = 10 #5
-				}
-			}
-			else_if = {
-				limit = { has_star_flag = drow_tulshar_nebula }
-
-				create_nebula = {
-					name = "ELVEN_Dark_Web"
-					radius = 55 #35
-				}
-			}
-			else_if = {
-				limit = { has_star_flag = elven_nebula_blue }
-
-				create_nebula = {
-					name = "ELVEN_Shattered_Rose"
-					radius = 50 #30
-				}
-			}
-			else_if = {
-				limit = { has_star_flag = eilistraee_system }
-
-				create_nebula = {
-					name = "ELVEN_Fractured_Rainbow"
-					radius = 10 #5
-				}
-			}
-			else_if = {
-				limit = { has_star_flag = lhuren_capital_system }
-
-				create_nebula = {
-					name = "ELVEN_Dragon_Refuge"
-					radius = 50 #30
-				}
-			}
-			else_if = {
-				limit = { has_star_flag = lunari_nebula_blue }
-
-				create_nebula = {
-					name = "ELVEN_Frozen_Shard"
-					radius = 10 #5
 				}
 			}
 		}

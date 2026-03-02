@@ -327,8 +327,7 @@ elven_system_lhuren_initializer = {
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
-				add_deposit = d_minerals_3
-				add_deposit = d_engineering_3
+				add_deposit = d_elven_lhuren_carag_gur
 			}
 		}
 	}

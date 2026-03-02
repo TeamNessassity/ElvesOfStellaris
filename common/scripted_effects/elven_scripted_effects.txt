@@ -294,42 +294,6 @@ generate_elven_capital_deposits_and_blockers = {
 	}
 }
 
-##################################
-## AVARI MEGASTRUCTURE CREATION ##
-##################################
-
-create_avari_ring = {
-	planet_event = {
-		id = elven_megastructure_events.11
-		days = -1
-	}
-	
-	add_modifier = {
-		modifier = "elven_avari_ring_modifier"
-		days = -1
-	}
-
-	set_planet_flag = has_avari_ring
-}
-
-##############################
-## SIDH RINGS MEGASTRUCTURE ##
-##############################
-
-create_sidh_rings = {
-	planet_event = {
-		id = elven_megastructure_events.13
-		days = -1
-	}
-
-	#add_modifier = {
-		#modifier = "elven_avari_shield_modifier"
-		#days = -1
-	#}
-	
-	set_planet_flag = has_sidh_rings
-}
-
 #####################################
 ## ARCADIAN SYMBIOSIS TREANT STUFF ##
 #####################################

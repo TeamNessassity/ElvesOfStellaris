@@ -328,3 +328,24 @@ planet_event = {
 		name = elven_colony_events.42.a
 	}
 }
+
+# Terraformed Permafrost worlds are reverted back to Permafrost after some time (delayed event)
+planet_event = {
+	id = elven_colony_events.43
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = lunari_planet_flag
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_lunari_city
+			is_planet_class = pc_lunari_arctic
+		}
+    }
+
+	immediate = {
+		planet_event = { id = elven_colony_events.42 days = 30 random = 10 }
+	}
+}
