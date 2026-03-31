@@ -897,9 +897,7 @@ d_lunari_planetary_trees = {
 		planet_jobs_society_research_produces_mult = 0.2
 	}
 
-	potential = { 
-
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -924,9 +922,7 @@ d_lunari_planetary_ice_spires = {
 		planet_jobs_engineering_research_produces_mult = 0.1
 	}
 
-	potential = { 
-
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -956,9 +952,7 @@ d_lunari_planetary_ice_blossoms = {
 		}
 	}
 
-	potential = { 
-
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -988,9 +982,7 @@ d_lunari_planetary_cp_ice_blossoms = {
 		}
 	}
 
-	potential = { 
-
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
