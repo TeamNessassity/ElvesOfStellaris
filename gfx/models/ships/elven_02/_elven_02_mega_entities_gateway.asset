@@ -8,10 +8,10 @@ entity = {
 	
 	default_state = "idle"
 	state = { 
-				name = "idle" animation = "idle" animation_speed = 0.08
+				name = "idle" animation = "idle" animation_speed = -0.08
 				start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_hum" stop_on_state_change = yes } }
 				start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" stop_on_state_change = yes } }
-				event = { time = 0.0 node = "EmitterNode" particle = "elven_01_gateway_portal_effect" keep_particle = yes trigger_once = yes }
+				start_event = { trigger_once = yes node = "root" particle = "elven_01_gateway_portal_effect" keep_particle = yes }
 	}
 	
 	state = { 
@@ -33,4 +33,3 @@ entity = {
 		size = 1.0
 	}
 }
-

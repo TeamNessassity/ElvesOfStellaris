@@ -269,19 +269,19 @@ drow_system_eilistraee_initializer = {
 			}
 		}
 	}
-	
+		
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 3 }
+		distance = { min = 10 max = 40 }
 		initializer = "eilistraee_neighbor1_initializer"
 	}
 	
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 3 }
+		distance = { min = 10 max = 40 }
 		initializer = "eilistraee_neighbor2_initializer"
 	}
 	
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 3 }
+		distance = { min = 10 max = 40 }
 		initializer = "eilistraee_neighbor3_initializer"
 	}
 	mandatory_neighbors = yes
