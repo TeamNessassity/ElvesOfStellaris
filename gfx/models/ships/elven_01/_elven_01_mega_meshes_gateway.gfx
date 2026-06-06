@@ -8,10 +8,30 @@ objectTypes = {
 	## GATEWAY ##
 	#############
 	
+	pdxmesh = {
+		name = "elven_01_gateway_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_gateway.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle" type = "elven_01_gateway_idle_animation" }
+		animation = { id = "death" type = "elven_01_gateway_death_animation" }
+	}
+
+	# CONSTRUCTION MESH WITH NO ANIMS #
+	# pdxmesh = {
+	# 	name = "elven_01_gateway_construction_mesh"
+	# 	file = "gfx/models/ships/elven_01/elven_01_gateway.mesh"
+	# 	scale = 1.0
+
+	# 	animation = { id = "construction" type = "elven_01_gateway_construction_animation" }
+	# }
+
 	##############################
 	## WORMHOLE/GATEWAY STATION ##
 	##############################
 	
+	## NOTE: This was the old starfish design that was originally the wormhole station!
+
 	pdxmesh = {
 		name = "elven_01_wormhole_station_mesh"
 		file = "gfx/models/ships/elven_01/elven_01_wormhole_station.mesh"

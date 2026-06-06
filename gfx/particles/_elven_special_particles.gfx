@@ -44,8 +44,16 @@ objectTypes = {
 		scale = 1.0
 	}
 
+	####################
+	## ELVEN GATEWAYS ##
+	####################
 
-
+	pdxparticle = {
+		name = "elven_01_gateway_portal_effect"
+		type = "elven_01_gateway_portal_file"
+		
+		scale = 2.5
+	}
 	
 
 
