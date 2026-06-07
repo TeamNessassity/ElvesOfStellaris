@@ -35,7 +35,7 @@ on_game_start_country = {
 	}
 }
 
-empire_init_capital_planet = {
+empire_init_capital_colony = {
 	events = {
 		# Setup custom capital worlds and deposits.
 		elven_setup.2
