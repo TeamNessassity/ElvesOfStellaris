@@ -92,8 +92,8 @@ drow_system_tulshar_neighbor2_initializer = {
 				}
 
 				change_pc = pc_ocean
-				set_planet_flag = abandoned_terraforming_planet
-				set_planet_flag = forbid_guillis_planet_modifiers
+				set_carrier_flag = abandoned_terraforming_planet
+				set_carrier_flag = forbid_guillis_planet_modifiers
 				set_planet_entity = { entity = "drow_01_ocean_xendlyn" }
 
 				clear_deposits = yes

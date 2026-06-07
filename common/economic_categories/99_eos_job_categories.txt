@@ -9,5 +9,5 @@ planet_eos_celestials = {
 		produces
 		upkeep
 	}
-	modifier_category = pop_job
+	modifier_category = colony
 }

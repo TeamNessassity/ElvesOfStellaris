@@ -97,8 +97,8 @@ elven_system_gaul_neighbor2_initializer = {
 				change_pc = pc_barren
 			}
 			else = {
-				set_planet_flag = abandoned_terraforming_planet
-				set_planet_flag = forbid_guillis_planet_modifiers
+				set_carrier_flag = abandoned_terraforming_planet
+				set_carrier_flag = forbid_guillis_planet_modifiers
 
 				clear_deposits = yes
 				clear_planet_modifiers = yes

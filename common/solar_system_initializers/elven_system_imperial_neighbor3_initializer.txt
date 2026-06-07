@@ -112,8 +112,8 @@ elven_system_imperial_neighbor3_initializer = {
 				}
 
 				change_pc = pc_tropical
-				set_planet_flag = abandoned_terraforming_planet
-				set_planet_flag = forbid_guillis_planet_modifiers
+				set_carrier_flag = abandoned_terraforming_planet
+				set_carrier_flag = forbid_guillis_planet_modifiers
 				set_planet_entity = { entity = "elven_01_tropical_enerisia" }
 
 				clear_deposits = yes

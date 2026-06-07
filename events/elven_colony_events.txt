@@ -1,7 +1,7 @@
 namespace = elven_colony_events
 
 # I don't want AI renaming my planets after they colonize.
-planet_event = {
+carrier_event = {
 	id = elven_colony_events.11
 	hide_window = yes
 	is_triggered_only = yes
@@ -13,7 +13,7 @@ planet_event = {
 				owner = {
 					is_ai = yes
 				}
-				has_planet_flag = planet_polydora
+				has_carrier_flag = planet_polydora
 			}
 			
 			set_name = "Halidrel'dár"
@@ -24,7 +24,7 @@ planet_event = {
 				owner = {
 					is_ai = yes
 				}
-				has_planet_flag = planet_narenwyn
+				has_carrier_flag = planet_narenwyn
 			}
 			
 			set_name = "Narenwýn"
@@ -35,7 +35,7 @@ planet_event = {
 				owner = {
 					is_ai = yes
 				}
-				has_planet_flag = planet_morelyn
+				has_carrier_flag = planet_morelyn
 			}
 			
 			set_name = "Morelýn"
@@ -58,7 +58,7 @@ event = {
 					owner = {
 						is_ai = yes
 					}
-					has_planet_flag = planet_polydora
+					has_carrier_flag = planet_polydora
 				}
 				
 				set_name = "Halidrel'dár"
@@ -69,7 +69,7 @@ event = {
 					owner = {
 						is_ai = yes
 					}
-					has_planet_flag = planet_narenwyn
+					has_carrier_flag = planet_narenwyn
 				}
 				
 				set_name = "Narenwýn"
@@ -80,7 +80,7 @@ event = {
 					owner = {
 						is_ai = yes
 					}
-					has_planet_flag = planet_morelyn
+					has_carrier_flag = planet_morelyn
 				}
 				
 				set_name = "Morelýn"
@@ -105,8 +105,8 @@ country_event = {
 			last_increased_tech = tech_climate_restoration
 		}
 		any_planet_within_border = {
-			has_planet_flag = drow_valshaquellar_project
-			NOT = { has_planet_flag = drow_valshaquellar_repaired }
+			has_carrier_flag = drow_valshaquellar_project
+			NOT = { has_carrier_flag = drow_valshaquellar_repaired }
 		}
 	}
 
@@ -119,7 +119,7 @@ country_event = {
 }
 
 # Special Project Completed
-planet_event = {
+carrier_event = {
 	id = elven_colony_events.22
 	title = "drow_special.2.name"
 	desc = "drow_special.2.desc"
@@ -131,7 +131,7 @@ planet_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_planet_flag = drow_valshaquellar_repaired
+			set_carrier_flag = drow_valshaquellar_repaired
 
 			clear_deposits = yes
 			clear_planet_modifiers = yes # Does not work?
@@ -163,7 +163,7 @@ planet_event = {
 }
 
 # Arcology project switches various unique deposits on elven planets
-planet_event = {
+carrier_event = {
 	id = elven_colony_events.31
 
 	hide_window = yes
@@ -172,22 +172,22 @@ planet_event = {
 	trigger = {
 		is_planet_class = pc_city
 		OR = {
-			has_planet_flag = lunari_planet_flag
-			has_planet_flag = eilistraeean_capital
-			has_planet_flag = lhuren_capital
-			has_planet_flag = ayleid_capital
+			has_carrier_flag = lunari_carrier_flag
+			has_carrier_flag = eilistraeean_capital
+			has_carrier_flag = lhuren_capital
+			has_carrier_flag = ayleid_capital
 		}
 	}
 
 	immediate = {
 		# Delayed event that changes planet entity.
 		# Arcology project immediately overwrites anything we do here, so we have to delay.
-		planet_event = { id = elven_colony_events.32 days = 1 }
+		carrier_event = { id = elven_colony_events.32 days = 1 }
 
 		if = {
 			limit = {
-				has_planet_flag = lunari_capital
-				NOT = { has_planet_flag = removed_ice_blossoms }
+				has_carrier_flag = lunari_capital
+				NOT = { has_carrier_flag = removed_ice_blossoms }
 			}
 	
 			add_deposit = d_lunari_planetary_cp_ice_blossoms
@@ -195,13 +195,13 @@ planet_event = {
 
 		if = {
 			limit = {
-				has_planet_flag = eilistraeean_capital
+				has_carrier_flag = eilistraeean_capital
 			}
 	
 			add_deposit = d_drow_planetary_cheel_krezust
 
 			if = {
-				limit = { NOT = { has_planet_flag = removed_feral_fairies } }
+				limit = { NOT = { has_carrier_flag = removed_feral_fairies } }
 
 				add_deposit = d_drow_planetary_cp_klepto_fairies
 			}
@@ -209,19 +209,19 @@ planet_event = {
 		
 		if = {
 			limit = {
-				has_planet_flag = lhuren_capital
+				has_carrier_flag = lhuren_capital
 			}
 	
 			add_deposit = d_elven_planetary_forbidden_arcology
 
 			if = {
-				limit = { NOT = { has_planet_flag = removed_sentient_dragons } }
+				limit = { NOT = { has_carrier_flag = removed_sentient_dragons } }
 
 				add_deposit = d_elven_planetary_sentient_dragons
 			}
 
 			if = {
-				limit = { NOT = { has_planet_flag = removed_gardens_of_heaven } }
+				limit = { NOT = { has_carrier_flag = removed_gardens_of_heaven } }
 
 				add_deposit = d_elven_planetary_gardens_of_heaven
 			}
@@ -229,13 +229,13 @@ planet_event = {
 
 		if = {
 			limit = {
-				has_planet_flag = ayleid_capital
+				has_carrier_flag = ayleid_capital
 			}
 	
 			add_deposit = d_elven_planetary_frensca_tol
 
 			if = {
-				limit = { NOT = { has_planet_flag = removed_tir_aranad } }
+				limit = { NOT = { has_carrier_flag = removed_tir_aranad } }
 
 				add_deposit = d_elven_planetary_tir_aranad
 			}
@@ -244,7 +244,7 @@ planet_event = {
 }
 
 # Delayed event that changes planet entity.
-planet_event = {
+carrier_event = {
 	id = elven_colony_events.32
 
 	hide_window = yes
@@ -252,7 +252,7 @@ planet_event = {
 
 	trigger = {
 		is_planet_class = pc_city
-		has_planet_flag = lunari_planet_flag
+		has_carrier_flag = lunari_carrier_flag
 	}
 
 	immediate = {
@@ -276,7 +276,7 @@ country_event = {
 		NOT = { has_country_flag = permafrost_baol_warning_issued }
 		has_relic = r_the_last_baol
 		any_owned_planet = {
-			has_planet_flag = lunari_planet_flag
+			has_carrier_flag = lunari_carrier_flag
 		}
     }
 
@@ -294,7 +294,7 @@ country_event = {
 }
 
 # Terraformed Permafrost worlds are reverted back to Permafrost after some time
-planet_event = {
+carrier_event = {
 	id = elven_colony_events.42
 	title = "elven_colony_events.42.name"
 	desc = "elven_colony_events.42.desc"
@@ -305,7 +305,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = lunari_planet_flag
+		has_carrier_flag = lunari_carrier_flag
 		NOR = {
 			is_planet_class = pc_city
 			is_planet_class = pc_lunari_city
@@ -330,14 +330,14 @@ planet_event = {
 }
 
 # Terraformed Permafrost worlds are reverted back to Permafrost after some time (delayed event)
-planet_event = {
+carrier_event = {
 	id = elven_colony_events.43
 
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = lunari_planet_flag
+		has_carrier_flag = lunari_carrier_flag
 		NOR = {
 			is_planet_class = pc_city
 			is_planet_class = pc_lunari_city
@@ -346,6 +346,6 @@ planet_event = {
     }
 
 	immediate = {
-		planet_event = { id = elven_colony_events.42 days = 30 random = 10 }
+		carrier_event = { id = elven_colony_events.42 days = 30 random = 10 }
 	}
 }

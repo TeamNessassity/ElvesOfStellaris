@@ -15,6 +15,8 @@ elven_dragon_researcher = {
 
 	possible_precalc = can_fill_ruler_job
 
+	tags = { unity research }
+
 	resources = {
 		category = planet_eos_celestials
 		produces = {
@@ -43,7 +45,6 @@ elven_dragon_researcher = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|elven_dragon_researcher|RESOURCE|physics_research|
 		modifier = {
 			factor = 2
 			has_trait = trait_elven_lhuren_immortality
@@ -68,16 +69,6 @@ elven_dragon_researcher = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = ruler
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 elven_dragon_priest = {
@@ -92,6 +83,8 @@ elven_dragon_priest = {
 	}
 
 	possible_precalc = can_fill_ruler_job
+
+	tags = { unity research }
 
 	resources = {
 		category = planet_eos_celestials
@@ -121,7 +114,6 @@ elven_dragon_priest = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|elven_dragon_priest|RESOURCE|society_research|
 		modifier = {
 			factor = 2
 			has_trait = trait_elven_lhuren_immortality
@@ -146,16 +138,6 @@ elven_dragon_priest = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = ruler
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 elven_dragon_strategist = {
@@ -170,6 +152,8 @@ elven_dragon_strategist = {
 	}
 
 	possible_precalc = can_fill_ruler_job
+
+	tags = { unity research }
 
 	resources = {
 		category = planet_eos_celestials
@@ -199,7 +183,6 @@ elven_dragon_strategist = {
 
 	weight = {
 		weight = @ruler_job_weight
-		mult = value:job_weights_modifier|JOB|elven_dragon_priest|RESOURCE|engineering_research|
 		modifier = {
 			factor = 2
 			has_trait = trait_elven_lhuren_immortality
@@ -224,14 +207,4 @@ elven_dragon_strategist = {
 	}
 
 	inline_script = "jobs/automodding_priority_research"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = ruler
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }

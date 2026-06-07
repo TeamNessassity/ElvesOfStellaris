@@ -80,7 +80,7 @@ lhu_array_eternity_shield_amp = {
 		planet = {
 			if = {
 				limit = {
-					NOT = { has_planet_flag = lhuren_capital }
+					NOT = { has_carrier_flag = lhuren_capital }
 				}
 				eos_lhuren_shield_state = { VALUE = -1 }
 			}
@@ -91,7 +91,7 @@ lhu_array_eternity_shield_amp = {
 		planet = {
 			if = {
 				limit = {
-					NOT = { has_planet_flag = lhuren_capital }
+					NOT = { has_carrier_flag = lhuren_capital }
 				}
 				eos_lhuren_shield_state = { VALUE = 0 }
 			}

@@ -18,8 +18,8 @@ drow_decision_valshaquellar_repair = {
 	potential = {
 		exists = space_owner
 		space_owner = { is_same_value = FROM }
-		has_planet_flag = drow_valshaquellar_project
-		NOT = { has_planet_flag = drow_valshaquellar_repaired }
+		has_carrier_flag = drow_valshaquellar_project
+		NOT = { has_carrier_flag = drow_valshaquellar_repaired }
 	}
 	
 	allow = {
@@ -32,7 +32,7 @@ drow_decision_valshaquellar_repair = {
 		# Restoration Complete!
 		custom_tooltip = drow_decision_valshaquellar_repair_tooltip
 		hidden_effect = {
-			planet_event = { id = elven_colony_events.22 }
+			carrier_event = { id = elven_colony_events.22 }
 		}
 	}
 	

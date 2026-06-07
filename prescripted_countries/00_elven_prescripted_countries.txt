@@ -1,176 +1,8 @@
 # Kingdom of Senalata
-elven_civ1_both_dlc = {
-	name="EMPIRE_DESIGN_elven_civ1"
-	adjective="ELVEN_civ1_empire_adjective"
-
-	spawn_enabled=no
-	spawn_as_fallen=no
-	ignore_portrait_duplication=yes
-	
-	ship_prefix=""
-	
-	species={
-		class="ELVEN"
-		portrait="elven"
-		name="ELVEN_civ1_species_name"
-		plural="ELVEN_civ1_species_plural"
-		adjective="ELVEN_civ1_species_adjective"
-		name_list="ELVEN1"
-		trait="trait_organic"
-		trait="trait_elven_true"
-		trait="trait_charismatic"
-		trait="trait_talented"
-		trait="trait_wasteful"
-	}
-	
-	room="personality_spiritual_seekers_room"
-	
-	authority="auth_imperial"
-	
-	civics={
-		"civic_heroic_tales"
-		"civic_ascensionists"
-	}
-	government="gov_theocratic_monarchy"
-	
-	ethic="ethic_fanatic_militarist"
-	ethic="ethic_spiritualist"
-	
-	planet_name="ELVEN_civ1_homeworld_name"
-	planet_class="pc_tropical"
-	origin = "origin_elven_foundations"
-	initializer="elven_system_imperial_initializer"
-	system_name="ELVEN_civ1_home_system_name"
-	
-	graphical_culture="elven_01"
-	city_graphical_culture="elven_01"
-	advisor_voice_type="l_xenophile"
-
-	flag = elven_empire_ayleid
-	
-	empire_flag={
-		icon={
-			category="elven"
-			file="eos_flag_ayleid.dds"
-		}
-		background={
-			category="backgrounds"
-			file="vertical.dds"
-		}
-		colors={
-			"dark_teal"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	
-	ruler={
-		gender=female
-		name="ELVEN_civ1_ruler_name"
-		portrait="elven_female_08"
-		texture=3
-		attachment=42
-		clothes=45
-		ruler_title="ELVEN_civ1_ruler_title"
-		ruler_title_female="ELVEN_civ1_ruler_title_female"
-		heir_title="ELVEN_civ1_heir_title"
-		heir_title_female="ELVEN_civ1_heir_title_female"
-		trait = trait_ruler_logistic_understanding
-		leader_class = official
-	}
-}
-
-elven_civ1_utopia_astral_planes = {
-	name="EMPIRE_DESIGN_elven_civ1"
-	adjective="ELVEN_civ1_empire_adjective"
-
-	playable = elven_no_galactic_paragons_dlc
-
-	spawn_enabled=no
-	spawn_as_fallen=no
-	ignore_portrait_duplication=yes
-	
-	ship_prefix=""
-	
-	species={
-		class="ELVEN"
-		portrait="elven"
-		name="ELVEN_civ1_species_name"
-		plural="ELVEN_civ1_species_plural"
-		adjective="ELVEN_civ1_species_adjective"
-		name_list="ELVEN1"
-		trait="trait_organic"
-		trait="trait_elven_true"
-		trait="trait_charismatic"
-		trait="trait_talented"
-		trait="trait_wasteful"
-	}
-	
-	room="personality_spiritual_seekers_room"
-	
-	authority="auth_imperial"
-	
-	civics={
-		"civic_aristocratic_elite"
-		"civic_ascensionists"
-	}
-	government="gov_theocratic_monarchy"
-	
-	ethic="ethic_fanatic_militarist"
-	ethic="ethic_spiritualist"
-	
-	planet_name="ELVEN_civ1_homeworld_name"
-	planet_class="pc_tropical"
-	origin = "origin_elven_foundations"
-	initializer="elven_system_imperial_initializer"
-	system_name="ELVEN_civ1_home_system_name"
-	
-	graphical_culture="elven_01"
-	city_graphical_culture="elven_01"
-	advisor_voice_type="l_xenophile"
-
-	flag = elven_empire_ayleid
-	
-	empire_flag={
-		icon={
-			category="elven"
-			file="eos_flag_ayleid.dds"
-		}
-		background={
-			category="backgrounds"
-			file="vertical.dds"
-		}
-		colors={
-			"dark_teal"
-			"black"
-			"null"
-			"null"
-		}
-	}
-	
-	ruler={
-		gender=female
-		name="ELVEN_civ1_ruler_name"
-		portrait="elven_female_08"
-		texture=3
-		attachment=42
-		clothes=45
-		ruler_title="ELVEN_civ1_ruler_title"
-		ruler_title_female="ELVEN_civ1_ruler_title_female"
-		heir_title="ELVEN_civ1_heir_title"
-		heir_title_female="ELVEN_civ1_heir_title_female"
-		trait = trait_ruler_logistic_understanding
-		leader_class = official
-	}
-}
-
 elven_civ1_galactic_paragons_dlc = {
 	name="EMPIRE_DESIGN_elven_civ1"
 	adjective="ELVEN_civ1_empire_adjective"
 
-	playable = elven_no_astral_planes_or_utopia_dlc
-
 	spawn_enabled=no
 	spawn_as_fallen=no
 	ignore_portrait_duplication=yes
@@ -197,7 +29,7 @@ elven_civ1_galactic_paragons_dlc = {
 	
 	civics={
 		"civic_heroic_tales"
-		"civic_aristocratic_elite"
+		"civic_ascensionists"
 	}
 	government="gov_theocratic_monarchy"
 	
@@ -253,7 +85,7 @@ elven_civ1 = {
 	name="EMPIRE_DESIGN_elven_civ1"
 	adjective="ELVEN_civ1_empire_adjective"
 
-	playable = elven_im_broke
+	playable = elven_no_galactic_paragons_dlc
 
 	spawn_enabled=no
 	spawn_as_fallen=no
@@ -281,7 +113,7 @@ elven_civ1 = {
 	
 	civics={
 		"civic_aristocratic_elite"
-		"civic_feudal_realm"
+		"civic_ascensionists"
 	}
 	government="gov_theocratic_monarchy"
 	

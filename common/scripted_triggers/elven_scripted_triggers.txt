@@ -212,25 +212,6 @@ elven_no_galactic_paragons_dlc = {
 	}
 }
 
-# For Ascensionists civic.
-elven_no_astral_planes_or_utopia_dlc = { 
-	NOR = {
-		has_utopia = yes
-		has_astral_planes_dlc = yes
-	}
-}
-
-# If all three of them are missing.
-elven_im_broke = {
-	elven_no_galactic_paragons_dlc = yes
-	elven_no_astral_planes_or_utopia_dlc = yes
-}
-
-# For Masterful Crafters civic.
-elven_no_humanoids_dlc = {
-	has_humanoids = no
-}
-
 # For Sovereign Guardianship civic.
 elven_no_astral_planes_dlc = { #
 	has_astral_planes_dlc = no

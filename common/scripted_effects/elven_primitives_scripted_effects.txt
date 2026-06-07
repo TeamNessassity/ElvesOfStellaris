@@ -15,7 +15,7 @@ create_elven_pre_ftl_species = {
 
 	if = {
 		limit = {
-			has_planet_flag = pre_ftl_ocean_paradise
+			has_carrier_flag = pre_ftl_ocean_paradise
 		}
 		create_species = {
 			name = random
@@ -31,7 +31,7 @@ create_elven_pre_ftl_species = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = pre_ftl_subterranean
+			has_carrier_flag = pre_ftl_subterranean
 		}
 		create_species = {
 			name = random
@@ -47,7 +47,7 @@ create_elven_pre_ftl_species = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = pre_ftl_void_dwellers
+			has_carrier_flag = pre_ftl_void_dwellers
 		}
 		create_species = {
 			name = random
@@ -377,7 +377,7 @@ create_drow_pre_ftl_species = {
 	
 	if = {
 		limit = {
-			has_planet_flag = pre_ftl_ocean_paradise
+			has_carrier_flag = pre_ftl_ocean_paradise
 		}
 		create_species = {
 			name = random
@@ -393,7 +393,7 @@ create_drow_pre_ftl_species = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = pre_ftl_subterranean
+			has_carrier_flag = pre_ftl_subterranean
 		}
 		create_species = {
 			name = random
@@ -409,7 +409,7 @@ create_drow_pre_ftl_species = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = pre_ftl_void_dwellers
+			has_carrier_flag = pre_ftl_void_dwellers
 		}
 		create_species = {
 			name = random

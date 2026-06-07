@@ -4,7 +4,7 @@ namespace = elven_setup
 # OVERRIDE VANILLA CAPITAL PLANET RESOURCES #
 #############################################
 
-planet_event = {
+carrier_event = {
 	id = elven_setup.2
 	hide_window = yes
 	is_triggered_only = yes
@@ -19,7 +19,7 @@ planet_event = {
 #######################
 
 ## ARCADIAN SYMBIOSIS ##
-planet_event = {
+carrier_event = {
 	id = elven_setup.31
 	hide_window = yes
 	is_triggered_only = yes

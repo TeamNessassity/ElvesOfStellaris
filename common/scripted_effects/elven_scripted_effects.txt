@@ -10,7 +10,7 @@ generate_elven_capital_deposits_and_blockers = {
 	############
 	if = {
 		limit = { 
-			has_planet_flag = lunari_capital
+			has_carrier_flag = lunari_capital
 		}
 
 		owner = {
@@ -56,7 +56,7 @@ generate_elven_capital_deposits_and_blockers = {
 	#############
 	else_if = {
 		limit = { 
-			has_planet_flag = tulshar_capital
+			has_carrier_flag = tulshar_capital
 		}
 
 		clear_deposits = yes
@@ -99,7 +99,7 @@ generate_elven_capital_deposits_and_blockers = {
 	##########
 	else_if = {
 		limit = { 
-			has_planet_flag = gaul_capital
+			has_carrier_flag = gaul_capital
 		}
 
 		clear_deposits = yes
@@ -147,7 +147,7 @@ generate_elven_capital_deposits_and_blockers = {
 	############
 	else_if = {
 		limit = { 
-			has_planet_flag = ayleid_capital
+			has_carrier_flag = ayleid_capital
 		}
 
 		remove_deposit = d_failing_infrastructure
@@ -159,7 +159,7 @@ generate_elven_capital_deposits_and_blockers = {
 		add_deposit = d_elven_planetary_tir_aranad
 		add_deposit = d_elven_planetary_frensca_tol_blocker
 
-		set_planet_flag = ruined_orbital_ring_planet
+		set_carrier_flag = ruined_orbital_ring_planet
 		save_event_target_as = ruined_orbital_ring_planet
 		solar_system = {
 			spawn_megastructure = {
@@ -210,7 +210,7 @@ generate_elven_capital_deposits_and_blockers = {
 			exists = event_target:lhuren_lhumar
 			is_same_value = event_target:lhuren_lhumar
 		}
-		set_planet_flag = lhuren_capital_owned_by_@this.owner
+		set_carrier_flag = lhuren_capital_owned_by_@this.owner
 		save_global_event_target_as = lhuren_capital_owned_by_@this.owner
 
 		owner = {
@@ -230,7 +230,7 @@ generate_elven_capital_deposits_and_blockers = {
 		add_deposit = d_elven_planetary_gardens_of_heaven
 		add_deposit = d_elven_planetary_forbidden_arcology
 
-		set_planet_flag = lhuren_ring_planet
+		set_carrier_flag = lhuren_ring_planet
 		save_event_target_as = lhuren_ring_planet
 
 		add_modifier = {
@@ -258,7 +258,7 @@ generate_elven_capital_deposits_and_blockers = {
 				}
 			}
 			event_target:lhuren_gilgezu = {
-				set_planet_flag = lhuren_colony_gilgezu_owned_by_@prev.owner
+				set_carrier_flag = lhuren_colony_gilgezu_owned_by_@prev.owner
 				save_global_event_target_as = lhuren_colony_gilgezu_owned_by_@prev.owner
 				prev.owner = {
 					set_country_flag = lhuren_colony_gilgezu_owner_of_@prev
@@ -266,7 +266,7 @@ generate_elven_capital_deposits_and_blockers = {
 				}
 			}
 			event_target:lhuren_helemar = {
-				set_planet_flag = lhuren_colony_helemar_owned_by_@prev.owner
+				set_carrier_flag = lhuren_colony_helemar_owned_by_@prev.owner
 				save_global_event_target_as = lhuren_colony_helemar_owned_by_@prev.owner
 				prev.owner = {
 					set_country_flag = lhuren_colony_helemar_owner_of_@prev
@@ -280,7 +280,7 @@ generate_elven_capital_deposits_and_blockers = {
 	################
 	else_if = {
 		limit = { 
-			has_planet_flag = eilistraeean_capital
+			has_carrier_flag = eilistraeean_capital
 		}
 
 		remove_deposit = d_failing_infrastructure
@@ -535,14 +535,14 @@ find_a_suitable_wormhole_candidate_system = {
 convert_elven_ecumenopolis_deposits = {
 	if = {
 		limit = {
-			has_planet_flag = lunari_capital
+			has_carrier_flag = lunari_capital
 		}
 
 		add_deposit = d_lunari_planetary_cp_ice_blossoms
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = eilistraeean_capital
+			has_carrier_flag = eilistraeean_capital
 		}
 
 		add_deposit = d_drow_planetary_cp_klepto_fairies
@@ -550,7 +550,7 @@ convert_elven_ecumenopolis_deposits = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = lhuren_capital
+			has_carrier_flag = lhuren_capital
 		}
 
 		if = {
@@ -564,7 +564,7 @@ convert_elven_ecumenopolis_deposits = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = ayleid_capital
+			has_carrier_flag = ayleid_capital
 		}
 
 		add_deposit = d_elven_planetary_frensca_tol
@@ -575,7 +575,7 @@ convert_elven_ecumenopolis_deposits = {
 revert_planet_to_permafrost = {
 	if = {
 		limit = {
-			has_planet_flag = lunari_capital
+			has_carrier_flag = lunari_capital
 		}
 
 		change_pc = "pc_lunari_arctic"
@@ -599,7 +599,7 @@ revert_planet_to_permafrost = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = planet_narenwyn
+			has_carrier_flag = planet_narenwyn
 		}
 
 		change_pc = "pc_lunari_arctic"
@@ -624,7 +624,7 @@ revert_planet_to_permafrost = {
 	}
 	else_if = {
 		limit = {
-			has_planet_flag = planet_morelyn
+			has_carrier_flag = planet_morelyn
 		}
 
 		change_pc = "pc_lunari_arctic"

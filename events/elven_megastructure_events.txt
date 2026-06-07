@@ -1,6 +1,6 @@
 namespace = elven_megastructure_events
 
-planet_event = {
+carrier_event = {
 	id = elven_megastructure_events.11
 	hide_window = yes
 
@@ -118,7 +118,7 @@ planet_event = {
 ################
 ## SIDH RINGS ##
 ################
-planet_event = {
+carrier_event = {
 	id = elven_megastructure_events.13
 	hide_window = yes
 
