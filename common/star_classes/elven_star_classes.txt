@@ -14,6 +14,9 @@ sc_elven_prismatic = {
 	modifier = {
 		## NO IDEA PRESENTLY
 	}
+
+    arkship_picture = "arkship_eos_class_prismatic"
+
 }
 
 ## EILISTRAEE HOME SYSTEM
@@ -36,6 +39,8 @@ sc_elven_binary_prismatic_black_hole = {
 		ship_disengage_chance_reduction = 0.5
 		ship_emergency_ftl_min_days_mult = 0.5
 	}
+
+    arkship_picture = "arkship_eos_class_prismatic_black_hole"
 }
 
 ##########################
@@ -60,6 +65,8 @@ sc_elven_prismatic_black_hole = {
 		ship_disengage_chance_reduction = 0.5
 		ship_emergency_ftl_min_days_mult = 0.5
 	}
+
+    arkship_picture = "arkship_eos_class_rainbow_black_hole"
 }
 
 ###############
@@ -78,6 +85,8 @@ sc_drow_tulshar = {
         ship_speed_reduction = 0.5
         ship_evasion_mult = 0.3
 	}
+
+    arkship_picture = "arkship_eos_class_tulshar"
 }
 
 ################
@@ -90,6 +99,8 @@ sc_elven_polydora = {
     
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_polydora"
 }
 
 #####################
@@ -116,6 +127,8 @@ sc_elven_binary_1 = {
 		ship_disengage_chance_reduction = 0.25
         ship_emergency_ftl_min_days_mult = 0.25
 	}
+
+    arkship_picture = "arkship_eos_class_binary_1"
 }
 
 #########################
@@ -143,6 +156,8 @@ sc_elven_binary_2 = {
 		ship_disengage_chance_reduction = 0.5
 		ship_emergency_ftl_min_days_mult = 0.5
 	}
+
+    arkship_picture = "arkship_eos_class_binary_2"
 }
 
 #################
@@ -164,6 +179,8 @@ sc_elven_binary_3 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_binary_3"
 }
 
 #################
@@ -185,6 +202,8 @@ sc_elven_binary_4 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_binary_4"
 }
 
 #######################
@@ -206,6 +225,8 @@ sc_elven_binary_5 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_binary_5"
 }
 
 ######################
@@ -232,6 +253,8 @@ sc_elven_imperial = {
     modifier = {
         ship_shield_reduction = 1.0
     }
+
+    arkship_picture = "arkship_eos_class_imperial"
 }
 
 #################
@@ -257,6 +280,8 @@ sc_elven_gaul = {
     is_environmental_hazard = yes
     modifier = {
     }
+
+    arkship_picture = "arkship_eos_class_gaul"
 }
 
 #####################
@@ -284,6 +309,8 @@ sc_drow_binary_1 = {
 		ship_disengage_chance_reduction = 0.5
 		ship_emergency_ftl_min_days_mult = 0.5
 	}
+
+    arkship_picture = "arkship_eos_class_drow_binary_1"
 }
 
 
@@ -306,6 +333,8 @@ sc_drow_binary_2 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_drow_binary_2"
 }
 
 ####################
@@ -331,6 +360,8 @@ sc_elven_trinary_1 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_trinary_1"
 }
 
 ####################
@@ -356,6 +387,8 @@ sc_elven_trinary_2 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_trinary_2"
 }
 
 
@@ -378,6 +411,8 @@ sc_drow_binary_3 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_drow_binary_3"
 }
 
 ####################
@@ -403,6 +438,8 @@ sc_drow_trinary_1 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_drow_trinary_1"
 }
 
 ########################
@@ -428,6 +465,8 @@ sc_drow_trinary_2 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_drow_trinary_2"
 }
 
 #########################
@@ -457,6 +496,8 @@ sc_drow_quaternary_1 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_quaternary_1"
 }
 
 ##################################
@@ -486,6 +527,8 @@ sc_drow_quaternary_2 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_quaternary_2"
 }
 
 ###########################
@@ -527,6 +570,8 @@ sc_elven_sexenary_1 = {
         ship_speed_reduction = 0.25
         ship_evasion_mult = 0.15
 	}
+
+    arkship_picture = "arkship_eos_class_sexenary_1"
 }
 
 #######################################
@@ -566,6 +611,8 @@ sc_elven_septenary_1 = {
     
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_septenary_1"
 }
 
 #######################################
@@ -605,6 +652,8 @@ sc_elven_septenary_2 = {
     
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_septenary_2"
 }
 
 ################
@@ -678,4 +727,6 @@ sc_elven_super_1 = {
                     }
     spawn_odds         = 0
     num_planets     = { min = 4 max = 10 }
+
+    arkship_picture = "arkship_eos_class_super_1"
 }
