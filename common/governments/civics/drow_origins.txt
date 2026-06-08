@@ -41,6 +41,9 @@ origin_drow_prismatic_refuge = {
 	icon = "gfx/interface/icons/origins/origins_drow_prismatic_refuge.dds"
 	picture = GFX_origin_drow_prismatic_refuge
 
+	starting_colony = pc_gaia
+	habitability_preference = pc_ark
+
 	initializers = { drow_system_eilistraee_initializer }
 	max_once_global = yes
 
@@ -51,11 +54,31 @@ origin_drow_prismatic_refuge = {
 
 	description = "origin_tooltip_drow_prismatic_refuge_effects"
 
-	traits = {
+	swap_type = {
+		name = "origin_drow_prismatic_refuge"
+		description = "origin_tooltip_drow_prismatic_refuge_effects"
 
+		trigger = {
+			is_nomadic = no
+		}
+
+		modifier = {
+			planet_non_artificial_max_districts_add = 1
+		}
 	}
 
-	modifier = { colony_start_urban_districts_add = 1 }
+	swap_type = {
+		name = "origin_drow_prismatic_refuge_nomadic"
+		description = "origin_tooltip_drow_prismatic_refuge_nomadic_effects"
+
+		trigger = {
+			is_nomadic = yes
+		}
+
+		modifier = {
+			planet_artificial_max_districts_add = 1
+		}
+	}
 
 	advanced_start = yes
 

@@ -186,7 +186,7 @@ drow_system_eilistraee_initializer = {
 		
 		moon = {
 			name = "Dalharil"
-			class = ideal_design_class #ideal_planet_class
+			class = pc_gaia #ideal_planet_class
 			orbit_distance = 20
 			size = 14
 
@@ -203,7 +203,7 @@ drow_system_eilistraee_initializer = {
 		
 		moon = {
 			name = "Sokoya"
-			class = ideal_design_class #"pc_continental"
+			class = pc_gaia #ideal_planet_class
 			orbit_distance = 20
 			size = 20
 			home_planet = yes
