@@ -55,8 +55,7 @@ origin_drow_prismatic_refuge = {
 	description = "origin_tooltip_drow_prismatic_refuge_effects"
 
 	swap_type = {
-		name = "origin_drow_prismatic_refuge"
-		description = "origin_tooltip_drow_prismatic_refuge_effects"
+		description = "origin_tooltip_drow_prismatic_refuge_settled_effects"
 
 		trigger = {
 			is_nomadic = no
@@ -68,7 +67,6 @@ origin_drow_prismatic_refuge = {
 	}
 
 	swap_type = {
-		name = "origin_drow_prismatic_refuge_nomadic"
 		description = "origin_tooltip_drow_prismatic_refuge_nomadic_effects"
 
 		trigger = {
@@ -79,6 +77,8 @@ origin_drow_prismatic_refuge = {
 			planet_artificial_max_districts_add = 1
 		}
 	}
+
+	flags = { custom_start_screen }
 
 	advanced_start = yes
 

@@ -209,7 +209,7 @@ drow_system_eilistraee_initializer = {
 			home_planet = yes
 			starting_planet = yes
 			has_ring = yes
-			flags = { eilistraeean_capital }
+			flags = { eilistraeean_capital special_start_planet }
 			
 			init_effect = {
 			}

@@ -400,8 +400,9 @@ d_drow_planetary_feral_fairies = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		planet_jobs_food_produces_mult = -0.15
-		planet_jobs_society_research_produces_mult = 0.15
+		district_farming_max_add = 3
+		planet_farmers_society_research_produces_add = 0.25
+		planet_farmers_food_produces_add = -0.25
 	}
 
 	potential = {
@@ -420,55 +421,15 @@ d_drow_planetary_glowing_forests = {
 	category = deposit_cat_rare
 
 	planet_modifier = { 
-		planet_max_districts_add = -1
-	}
-		
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_artisan_per_pop = 0.04
-			job_trader_per_pop = 0.025
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		modifier = {
-			job_artisan_drone_per_pop = 0.02
-		}
+		district_mining_max_add = 3
+		planet_miners_engineering_research_produces_add = 0.25
+		planet_miners_minerals_produces_add = -0.25
 	}
 
 	potential = {
 	
 	}
 
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_drow_planetary_cheel_krezust = {
-	is_for_colonizable = yes
-	icon = d_drow_planetary_cheel_krezust
-
-	category = deposit_cat_rare
-
-	planet_modifier = { 
-		planet_max_districts_add = -1
-		job_engineer_per_pop = 0.015
-		job_biologist_per_pop = 0.015
-	}
-
-	potential = {
-	
-	}
-	
 	drop_weight = {
 		weight = 0
 	}
@@ -481,19 +442,31 @@ d_drow_planetary_glowing_oceans = {
 	category = deposit_cat_rare
 
 	planet_modifier = { 
-		planet_jobs_physics_research_produces_mult = 0.05
+		district_generator_max_add = 3
+		planet_technician_physics_research_produces_add = 0.25
+		planet_technician_energy_produces_add = -0.25
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			planet_amenities_add = 1000
-		}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+# Deprecated. Cheel Krezust is now a proper Arkship.
+d_drow_planetary_cheel_krezust = {
+	is_for_colonizable = yes
+	icon = d_drow_planetary_cheel_krezust
+
+	category = deposit_cat_rare
+
+	planet_modifier = { 
+		planet_max_districts_add = -1
 	}
 
+	potential = {
+	
+	}
+	
 	drop_weight = {
 		weight = 0
 	}

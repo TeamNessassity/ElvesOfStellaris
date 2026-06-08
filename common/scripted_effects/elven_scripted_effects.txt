@@ -278,20 +278,74 @@ generate_elven_capital_deposits_and_blockers = {
 	################
 	## EILISTRAEE ##
 	################
+	# If Children of Anoriel start settled, skip the initial event chain and just spawn the rewards on Sokoya
 	else_if = {
-		limit = { 
+		limit = {
 			has_carrier_flag = eilistraeean_capital
+			owner = {
+				has_origin = origin_drow_prismatic_refuge
+			}
 		}
+		eos_eilistraeean_origin_planet_setup = yes
 
-		remove_deposit = d_failing_infrastructure
-		remove_deposit = d_failing_infrastructure
-		add_deposit = d_elven_start_ruins
-		add_deposit = d_elven_start_ruins
+		generate_start_buildings_and_districts = yes
+		generate_start_pops = yes
+		generate_home_planet_final_pass = yes
 
-		add_deposit = d_drow_planetary_glowing_forests
-		add_deposit = d_drow_planetary_feral_fairies
-		add_deposit = d_drow_planetary_cheel_krezust
+		add_modifier = {
+			modifier = arkship_parts
+		}
 	}
+
+	# If Children of Anoriel start Nomadic, don't spawn special features until the Origin event chain is done, but un-barren Sokoya
+	else_if = {
+		limit = {
+			NOT = { has_carrier_flag = eilistraeean_capital }
+			owner = {
+				has_origin = origin_drow_prismatic_refuge
+			}
+		}
+		solar_system = {
+			random_system_planet = {
+				limit = {
+					has_carrier_flag = eilistraeean_capital
+				}
+				change_pc = pc_gaia
+				eos_eilistraeean_origin_planet_setup = yes
+			}
+		}
+	}
+}
+
+###################
+## NOMADIC SWAPS ##
+###################
+
+# this = carrier/planet
+eos_eilistraeean_origin_planet_setup = {
+	clear_planet_modifiers = yes
+	clear_deposits = yes
+	clear_blockers = yes
+
+	# SPECIAL
+	add_deposit = d_drow_planetary_glowing_forests
+	add_deposit = d_drow_planetary_feral_fairies
+	add_deposit = d_drow_planetary_glowing_oceans
+
+	# ENERGY - 5
+	add_deposit = d_underwater_vent #3
+	add_deposit = d_buzzing_plains #1
+	add_deposit = d_buzzing_plains #1
+
+	# MINERALS - 5
+	add_deposit = d_rich_mountain #3
+	add_deposit = d_mineral_striations #1
+	add_deposit = d_mineral_striations #1
+
+	#FOOD - 5
+	add_deposit = d_black_soil #3
+	add_deposit = d_natural_farmland #1
+	add_deposit = d_natural_farmland #1
 }
 
 #####################################

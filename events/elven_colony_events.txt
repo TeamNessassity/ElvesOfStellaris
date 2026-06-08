@@ -172,7 +172,7 @@ carrier_event = {
 	trigger = {
 		is_planet_class = pc_city
 		OR = {
-			has_carrier_flag = lunari_carrier_flag
+			has_carrier_flag = lunari_planet_flag
 			has_carrier_flag = eilistraeean_capital
 			has_carrier_flag = lhuren_capital
 			has_carrier_flag = ayleid_capital
@@ -252,7 +252,7 @@ carrier_event = {
 
 	trigger = {
 		is_planet_class = pc_city
-		has_carrier_flag = lunari_carrier_flag
+		has_carrier_flag = lunari_planet_flag
 	}
 
 	immediate = {
@@ -276,7 +276,7 @@ country_event = {
 		NOT = { has_country_flag = permafrost_baol_warning_issued }
 		has_relic = r_the_last_baol
 		any_owned_planet = {
-			has_carrier_flag = lunari_carrier_flag
+			has_carrier_flag = lunari_planet_flag
 		}
     }
 
@@ -305,7 +305,7 @@ carrier_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_carrier_flag = lunari_carrier_flag
+		has_carrier_flag = lunari_planet_flag
 		NOR = {
 			is_planet_class = pc_city
 			is_planet_class = pc_lunari_city
@@ -337,7 +337,7 @@ carrier_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_carrier_flag = lunari_carrier_flag
+		has_carrier_flag = lunari_planet_flag
 		NOR = {
 			is_planet_class = pc_city
 			is_planet_class = pc_lunari_city

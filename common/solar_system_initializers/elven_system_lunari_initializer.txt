@@ -134,7 +134,7 @@ elven_system_lunari_initializer = {
 		home_planet = yes
 		starting_planet = yes
 		has_ring = no
-		flags = { lunari_carrier_flag lunari_capital special_start_planet }
+		flags = { lunari_planet_flag lunari_capital special_start_planet }
 		
 		init_effect = {
 			if = {
@@ -153,7 +153,7 @@ elven_system_lunari_initializer = {
 			has_ring = no
 			deposit_blockers = none
 			modifiers = none
-			flags = { lunari_carrier_flag planet_narenwyn colony_event }
+			flags = { lunari_planet_flag planet_narenwyn colony_event }
 
 			init_effect = {
 				change_pc = "pc_lunari_arctic"
@@ -217,7 +217,7 @@ elven_system_lunari_initializer = {
 			has_ring = yes
 			deposit_blockers = none
 			modifiers = none
-			flags = { lunari_carrier_flag planet_morelyn colony_event }
+			flags = { lunari_planet_flag planet_morelyn colony_event }
 
 			init_effect = {
 				change_pc = "pc_lunari_arctic"
