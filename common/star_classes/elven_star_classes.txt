@@ -534,6 +534,9 @@ sc_drow_quaternary_2 = {
 ###########################
 ## SEXENARY: F-A-G-K-B-M ##
 ###########################
+
+## LHUREN!!! ##
+
 sc_elven_sexenary_1 = {
     class             = f_star
     icon              = elven_a_sexenary_star
