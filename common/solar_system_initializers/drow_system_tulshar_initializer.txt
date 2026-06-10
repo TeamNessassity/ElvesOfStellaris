@@ -229,19 +229,23 @@ drow_system_tulshar_initializer = {
 	
 	change_orbit = 35
 	
+	# Must always include both hyperlane_jumps and distance.
+	# hyperlane_jumps is for actual cluster integrity.
+	# distance is required for the log to not whine. Min must not be less than 10, otherwise things will break spectacularly.
+	mandatory_neighbors = yes
 	neighbor_system = {
-		distance = { min = 10 max = 40 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		distance = { min = 10 max = 100 }
 		initializer = "drow_system_tulshar_neighbor1_initializer"
 	}
-	
 	neighbor_system = {
-		distance = { min = 10 max = 40 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		distance = { min = 10 max = 100 }
 		initializer = "drow_system_tulshar_neighbor2_initializer"
 	}
-	
 	neighbor_system = {
-		distance = { min = 10 max = 40 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		distance = { min = 10 max = 100 }
 		initializer = "drow_system_tulshar_neighbor3_initializer"
 	}
-	mandatory_neighbors = yes
 }
