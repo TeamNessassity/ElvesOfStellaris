@@ -278,7 +278,7 @@ generate_elven_capital_deposits_and_blockers = {
 	################
 	## EILISTRAEE ##
 	################
-	# If Children of Anoriel start settled, skip the initial event chain and just spawn the rewards on Sokoya
+	# If Children of Anoriel start settled, skip the initial event chain and apply nomadic settlement modifier on Sokoya
 	else_if = {
 		limit = {
 			has_carrier_flag = eilistraeean_capital
@@ -297,7 +297,7 @@ generate_elven_capital_deposits_and_blockers = {
 		}
 	}
 
-	# If Children of Anoriel start Nomadic, don't spawn special features until the Origin event chain is done, but un-barren Sokoya
+	# If Children of Anoriel start Nomadic, un-barren Sokoya, but don't spawn any infrastructure
 	else_if = {
 		limit = {
 			NOT = { has_carrier_flag = eilistraeean_capital }
@@ -334,16 +334,21 @@ eos_eilistraeean_origin_planet_setup = {
 
 	# ENERGY - 5
 	add_deposit = d_underwater_vent #3
+	add_deposit = d_searing_desert #2
 	add_deposit = d_buzzing_plains #1
 	add_deposit = d_buzzing_plains #1
+	add_deposit = d_hot_springs #1
 
 	# MINERALS - 5
 	add_deposit = d_rich_mountain #3
+	add_deposit = d_ore_rich_caverns #2
+	add_deposit = d_mineral_striations #1
 	add_deposit = d_mineral_striations #1
 	add_deposit = d_mineral_striations #1
 
 	#FOOD - 5
 	add_deposit = d_black_soil #3
+	add_deposit = d_teeming_reef #3
 	add_deposit = d_natural_farmland #1
 	add_deposit = d_natural_farmland #1
 }
