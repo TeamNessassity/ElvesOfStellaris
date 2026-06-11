@@ -1,0 +1,23 @@
+eilistraee_event1_initializer = {
+	name = "Ruinous Release"
+	class = sc_black_hole
+
+	flags = { custom_system conduit_excluded }
+	
+	init_effect = {
+	}
+
+	planet = {
+		class = pc_black_hole
+		name = "Ruinous Release"
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 40
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_physics_6
+		}
+	}
+
+}

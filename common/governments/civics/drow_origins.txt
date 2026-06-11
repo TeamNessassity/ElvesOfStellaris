@@ -62,6 +62,7 @@ origin_drow_prismatic_refuge = {
 		}
 
 		modifier = {
+			# PLACEHOLDER: Will change it to something more thematic later
 			planet_non_artificial_max_districts_add = 1
 		}
 	}
@@ -74,6 +75,7 @@ origin_drow_prismatic_refuge = {
 		}
 
 		modifier = {
+			# PLACEHOLDER: Will change it to something more thematic later
 			planet_artificial_max_districts_add = 1
 		}
 	}
