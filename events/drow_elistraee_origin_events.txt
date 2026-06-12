@@ -54,6 +54,11 @@ country_event = {
 	}
 	
 	immediate = {
+		set_patron_first_contact_state = {
+			patron = eos_anoriel
+			state = completed
+		}
+		set_country_flag = eos_anoriel_accord
 	}
 
 	after = {
@@ -61,6 +66,41 @@ country_event = {
 	
 	option = {
 		name = drow_elistraee_origin_events.101.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = drow_elistraee_origin_events.101.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 2 Stage 1 ()
+# Begin the second part of the event chain.
+country_event = {
+	id = drow_elistraee_origin_events.201
+	title = "drow_elistraee_origin_events.201.name"
+	desc = "drow_elistraee_origin_events.201.desc"
+	picture = GFX_evt_eos_lhuren_lhumar
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_drow_prismatic_refuge
+	}
+	
+	immediate = {
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = drow_elistraee_origin_events.201.a
 	}
 }
 
