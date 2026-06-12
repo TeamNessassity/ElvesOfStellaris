@@ -680,7 +680,7 @@ event = {
 #       Error Messages        #
 ###############################
 
-# Shown if the event cannot start properly due to..
+# Shown if the event cannot start properly due to...
 # Duplicate Origin Error
 country_event = {
 	id = elven_lhuren_origin_events.0001

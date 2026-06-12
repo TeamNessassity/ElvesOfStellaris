@@ -19,6 +19,9 @@ on_press_begin = {
 
 		# Start the Lhuren Origin Event Chain
 		elven_lhuren_origin_events.100
+		
+		# Start the Anorim Origin Event Chain
+		drow_elistraee_origin_events.100
 	}
 }
 

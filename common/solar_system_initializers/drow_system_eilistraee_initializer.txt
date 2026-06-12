@@ -7,6 +7,13 @@ drow_system_eilistraee_initializer = {
 	flags = { conduit_excluded }
 
 	init_effect = {
+		if = {
+			limit = {
+				NOT = { exists = event_target:anorim_anoriel }
+			}
+			save_global_event_target_as = anorim_anoriel
+		}
+
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
 			every_neighbor_system = {
