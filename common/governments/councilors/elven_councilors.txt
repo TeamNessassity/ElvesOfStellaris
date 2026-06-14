@@ -31,7 +31,7 @@ elven_councilor_celestial_grace = {
 		#pop_elven_dragon_strategist_bonus_workforce_mult = 0.1
 		#pop_elven_dragon_researcher_bonus_workforce_mult = 0.1
 		#pop_elven_dragon_priest_bonus_workforce_mult = 0.1
-		planet_eos_celestials_produces_mult = 0.10
+		planet_eos_celestials_produces_mult = 0.05
 		planet_eos_celestials_upkeep_mult = -0.05
 	}
 }

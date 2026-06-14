@@ -33,7 +33,7 @@ carrier_event = {
 	}
 }
 
-## PRISMATIC REFUGE WORMHOLE ##
+## PRISMATIC REFUGE ##
 country_event = {
 	id = elven_setup.32
 	hide_window = yes
@@ -44,7 +44,9 @@ country_event = {
 	}
 
 	immediate = {
-		eos_create_prismatic_refuge_wormhole = yes
+		# Since the origin is now very Shroud-centric, we should make sure that they're locked into Psionic Ascension
+		add_ascension_perk = ap_mind_over_matter
+		#eos_create_prismatic_refuge_wormhole = yes
 	}
 }
 

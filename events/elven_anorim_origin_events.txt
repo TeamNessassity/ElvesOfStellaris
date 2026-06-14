@@ -1,6 +1,6 @@
 # Everything related to Lhuren origin story goes here
 
-namespace = drow_elistraee_origin_events
+namespace = elven_anorim_origin_events
 
 ###########################################
 # Main Story: Through the Shattered Glass #
@@ -12,7 +12,7 @@ namespace = drow_elistraee_origin_events
 # Stage 0 (Gatekeeper Event)
 # Start the event OR show an error message if cannot
 country_event = {
-	id = drow_elistraee_origin_events.100
+	id = elven_anorim_origin_events.100
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -22,18 +22,17 @@ country_event = {
 	}
 	
 	immediate = {
-		add_ascension_perk = ap_mind_over_matter
 		if = {
 			limit = {
 				NOT = { is_same_value = event_target:anorim_star_owner_of_@event_target:anorim_anoriel }
 			}
 			country_event = {
-				id = drow_elistraee_origin_events.0001
+				id = elven_anorim_origin_events.0001
 			}
 		}
 		else = {
 			country_event = {
-				id = drow_elistraee_origin_events.101
+				id = elven_anorim_origin_events.101
 			}
 		}
 	}
@@ -42,9 +41,9 @@ country_event = {
 # Stage 1 ()
 # Intro. Introduce and explain the situation.
 country_event = {
-	id = drow_elistraee_origin_events.101
-	title = "drow_elistraee_origin_events.101.name"
-	desc = "drow_elistraee_origin_events.101.desc"
+	id = elven_anorim_origin_events.101
+	title = "elven_anorim_origin_events.101.name"
+	desc = "elven_anorim_origin_events.101.desc"
 	picture = GFX_evt_eos_lhuren_lhumar
 	show_sound = event_mystic_reveal
 
@@ -61,13 +60,13 @@ country_event = {
 	}
 	
 	option = {
-		name = drow_elistraee_origin_events.101.a
+		name = elven_anorim_origin_events.101.a
 		trigger = {
 			is_nomadic = yes
 		}
 	}
 	option = {
-		name = drow_elistraee_origin_events.101.b
+		name = elven_anorim_origin_events.101.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -77,9 +76,9 @@ country_event = {
 # Part 2 Stage 1 ()
 # Begin the second part of the event chain. Create the old home cluster and start spawning the Fated Tithe.
 country_event = {
-	id = drow_elistraee_origin_events.201
-	title = "drow_elistraee_origin_events.201.name"
-	desc = "drow_elistraee_origin_events.201.desc"
+	id = elven_anorim_origin_events.201
+	title = "elven_anorim_origin_events.201.name"
+	desc = "elven_anorim_origin_events.201.desc"
 	picture = GFX_evt_eos_lhuren_lhumar
 	show_sound = event_mystic_reveal
 
@@ -200,7 +199,7 @@ country_event = {
 	}
 	
 	option = {
-		name = drow_elistraee_origin_events.201.a
+		name = elven_anorim_origin_events.201.a
 	}
 }
 
@@ -210,7 +209,7 @@ country_event = {
 
 # Children of Anoriel should get Anoriel's Accord as soon as they're able to access the Shroud
 country_event = {
-	id = drow_elistraee_origin_events.901
+	id = elven_anorim_origin_events.901
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -229,7 +228,7 @@ country_event = {
 
 # Dummy first contact event. It's technically not needed, since other empires cannot randomly meet her, but log will complain if we don't have one.
 country_event = {
-	id = drow_elistraee_origin_events.910
+	id = elven_anorim_origin_events.910
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -248,9 +247,9 @@ country_event = {
 # Shown if the event cannot start properly due to...
 # Duplicate Origin Error
 country_event = {
-	id = drow_elistraee_origin_events.0001
-	title = "drow_elistraee_origin_events.0001.name"
-	desc = "drow_elistraee_origin_events.0001.desc"
+	id = elven_anorim_origin_events.0001
+	title = "elven_anorim_origin_events.0001.name"
+	desc = "elven_anorim_origin_events.0001.desc"
 	picture = GFX_evt_news_room
 	show_sound = event_mystic_reveal
 
@@ -266,6 +265,6 @@ country_event = {
 	}
 	
 	option = {
-		name = drow_elistraee_origin_events.0001.a
+		name = elven_anorim_origin_events.0001.a
 	}
 }

@@ -21,7 +21,7 @@ on_press_begin = {
 		elven_lhuren_origin_events.100
 
 		# Start the Anorim Origin Event Chain
-		drow_elistraee_origin_events.100
+		elven_anorim_origin_events.100
 	}
 }
 
@@ -212,6 +212,6 @@ on_ruler_set = {
 # This = Country
 on_shroud_breached = {
 	events = {
-		drow_elistraee_origin_events.901
+		elven_anorim_origin_events.901
 	}
 }
