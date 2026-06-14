@@ -159,6 +159,11 @@ elven_lhuren_eternal_array_repurposed = {
 	on_build_complete = {
 		fromfrom = { save_global_event_target_as = lhuren_eternal_array }
 
+		random_system_planet = {
+			limit = { has_carrier_flag = lhuren_capital }
+			set_carrier_flag = has_megastructure
+		}
+
 		from = {
 			country_event = { id = elven_lhuren_origin_events.1051 }
 		}
@@ -231,6 +236,11 @@ elven_lhuren_eternal_array_restored = {
 			success_text = "elven_lhuren_eternal_array_requires_immortality_pass"
 			NOT = { has_global_flag = eos_lhuren_immortality_lost }
 		}
+		custom_tooltip = {
+			fail_text = "elven_lhuren_eternal_array_requires_orbital_fail"
+			success_text = "elven_lhuren_eternal_array_requires_orbital_pass"
+			NOT = { exists = event_target:lhuren_eternal_array_starbase }
+		}
 	}
 
 	on_build_start = {}
@@ -260,6 +270,14 @@ elven_lhuren_eternal_array_restored = {
 					save_global_event_target_as = lhuren_eternal_array_starbase
 				}
 			}
+
+			remove_modifier = elven_eternal_array_broken_modifier
+			add_modifier = {
+				modifier = elven_eternal_array_modifier
+				days = -1
+			}
+
+			eos_lhuren_shield_state = { VALUE = 2 }
 		}
 
 		#remove_megastructure = fromfrom
@@ -350,6 +368,11 @@ elven_lhuren_eternal_array_static = {
 
 	on_build_complete = {
 		fromfrom = { save_global_event_target_as = lhuren_eternal_array }
+
+		random_system_planet = {
+			limit = { has_carrier_flag = lhuren_capital }
+			set_carrier_flag = has_megastructure
+		}
 
 		from = {
 			country_event = { id = elven_lhuren_origin_events.1071 }

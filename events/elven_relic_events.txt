@@ -56,6 +56,10 @@ country_event = {
 			value = 36
 			min = 360
 		}
+		add_modifier = {
+			modifier = elven_relic_flaming_pearl_nest
+			years = 10
+		}
 	}
 }
 
@@ -75,6 +79,10 @@ country_event = {
 			resource = society_research
 			value = 36
 			min = 360
+		}
+		add_modifier = {
+			modifier = elven_relic_flaming_pearl_riddles
+			years = 10
 		}
 	}
 }
@@ -96,6 +104,10 @@ country_event = {
 			value = 36
 			min = 360
 		}
+		add_modifier = {
+			modifier = elven_relic_flaming_pearl_scales
+			years = 10
+		}
 	}
 }
 
@@ -116,6 +128,10 @@ country_event = {
 			value = 36
 			min = 360
 		}
+		add_modifier = {
+			modifier = elven_relic_flaming_pearl_wisdom
+			years = 10
+		}
 	}
 }
 
@@ -131,9 +147,12 @@ country_event = {
 	option = {
 		name = elven_relic_events.0105.a
 		
-		add_resource = { influence = 300 }
 		ruler = {
 			add_skill = 1
+		}
+		add_modifier = {
+			modifier = elven_relic_flaming_pearl_humility
+			years = 10
 		}
 	}
 }

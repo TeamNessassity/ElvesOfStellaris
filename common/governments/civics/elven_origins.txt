@@ -110,6 +110,7 @@ origin_elven_celestial_throne = {
 			}
 		}
 		civics = { value = civic_elven_celestial_grace }
+		is_nomadic = no
 	}
 
 	description = "origin_tooltip_elven_celestial_throne_effects"

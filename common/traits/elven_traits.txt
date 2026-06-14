@@ -368,7 +368,9 @@ trait_elven_lhuren_celestial_grace = {
 		diplo_weight_economy_mult = 0.01
 		mult = root.trigger:has_total_skill
 	}
-	# Councilors give Celestial Offices to their home planets
+	# Councilors give Celestial Offices to their home planets, 100 per seat
+	# Their Effective Leader Skill (important distinction: it is NOT the same as Effective Councilor Skill) additionally increases Celestials' Job Efficiency
+	# Commanders host Celestial Strategists
 	triggered_background_planet_modifier = {
 		potential = {
 			exists = owner
@@ -392,8 +394,59 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_strategist_add = 10
+		job_elven_dragon_strategist_add = 100
+	}
+	triggered_background_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_elven_celestial_grace
+			}
+
+			leader_class = commander
+
+			exists = owner
+			exists = from
+			OR = {
+				from.owner = {
+					is_same_value = root.owner
+				}
+				root.owner = {
+					is_overlord_to = from.owner
+				}
+				root.owner = {
+					is_in_federation_with = from.owner
+				}
+			}
+		}
+		pop_elven_dragon_strategist_bonus_workforce_mult = 0.1
 		mult = root.trigger:has_total_skill
+	}
+	# Scientists host Celestial Scholars
+	triggered_background_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_elven_celestial_grace
+			}
+
+			leader_class = scientist
+			
+			exists = owner
+			exists = from
+			OR = {
+				from.owner = {
+					is_same_value = root.owner
+				}
+				root.owner = {
+					is_overlord_to = from.owner
+				}
+				root.owner = {
+					is_in_federation_with = from.owner
+				}
+			}
+		}
+		job_elven_dragon_researcher_add = 100
 	}
 	triggered_background_planet_modifier = {
 		potential = {
@@ -418,8 +471,34 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_researcher_add = 10
+		pop_elven_dragon_researcher_bonus_workforce_mult = 0.1
 		mult = root.trigger:has_total_skill
+	}
+	# Officials host Celestial Philosophers
+	triggered_background_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_elven_celestial_grace
+			}
+
+			leader_class = official
+			
+			exists = owner
+			exists = from
+			OR = {
+				from.owner = {
+					is_same_value = root.owner
+				}
+				root.owner = {
+					is_overlord_to = from.owner
+				}
+				root.owner = {
+					is_in_federation_with = from.owner
+				}
+			}
+		}
+		job_elven_dragon_priest_add = 100
 	}
 	triggered_background_planet_modifier = {
 		potential = {
@@ -444,10 +523,10 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_priest_add = 10
+		pop_elven_dragon_priest_bonus_workforce_mult = 0.1
 		mult = root.trigger:has_total_skill
 	}
-	# Ruler gives flat +5 offices
+	# Ruler gives flat +50% efficiency on top of scaling bonuses
 	triggered_background_planet_modifier = {
 		potential = {
 			exists = owner
@@ -472,7 +551,7 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_strategist_add = 50
+		pop_elven_dragon_strategist_bonus_workforce_mult = 0.5
 	}
 	triggered_background_planet_modifier = {
 		potential = {
@@ -498,7 +577,7 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_researcher_add = 50
+		pop_elven_dragon_researcher_bonus_workforce_mult = 0.5
 	}
 	triggered_background_planet_modifier = {
 		potential = {
@@ -524,9 +603,9 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_priest_add = 50
+		pop_elven_dragon_priest_bonus_workforce_mult = 0.5
 	}
-	# Heir gives flat +2 offices
+	# Heir gives flat +25% efficiency on top of scaling bonuses
 	triggered_background_planet_modifier = {
 		potential = {
 			exists = owner
@@ -551,7 +630,7 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_strategist_add = 20
+		pop_elven_dragon_strategist_bonus_workforce_mult = 0.25
 	}
 	triggered_background_planet_modifier = {
 		potential = {
@@ -577,7 +656,7 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_researcher_add = 20
+		pop_elven_dragon_researcher_bonus_workforce_mult = 0.25
 	}
 	triggered_background_planet_modifier = {
 		potential = {
@@ -603,7 +682,7 @@ trait_elven_lhuren_celestial_grace = {
 				}
 			}
 		}
-		job_elven_dragon_priest_add = 20
+		pop_elven_dragon_priest_bonus_workforce_mult = 0.25
 	}
 
 	on_gained_effect = {
@@ -659,7 +738,9 @@ trait_elven_lhuren_concessions = {
 			
 			is_ruler = yes
 		}
-		planet_eos_celestials_produces_mult = 0.05
+		pop_elven_dragon_strategist_bonus_workforce_mult = 0.05
+		pop_elven_dragon_researcher_bonus_workforce_mult = 0.05
+		pop_elven_dragon_priest_bonus_workforce_mult = 0.05
 		mult = root.trigger:has_total_skill
 	}
 	triggered_councilor_modifier = {

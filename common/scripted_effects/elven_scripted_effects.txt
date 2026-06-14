@@ -230,6 +230,7 @@ generate_elven_capital_deposits_and_blockers = {
 		add_deposit = d_elven_planetary_gardens_of_heaven
 		add_deposit = d_elven_planetary_forbidden_arcology
 
+		set_carrier_flag = has_megastructure
 		set_carrier_flag = lhuren_ring_planet
 		save_event_target_as = lhuren_ring_planet
 

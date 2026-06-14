@@ -50,6 +50,17 @@ origin_drow_prismatic_refuge = {
 	possible = {
 		#species_archetype = { value = DROW }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		civics = {
+			NOR = {
+				value = civic_natural_design
+				value = civic_augmentation_bazaars
+			}
+		}
+	}
+
+	modifier = {
+		add_attunement_the_eater_of_worlds = 50
+		add_attunement_the_composer_of_strands = 50
 	}
 
 	description = "origin_tooltip_drow_prismatic_refuge_effects"

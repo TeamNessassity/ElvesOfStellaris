@@ -251,6 +251,11 @@ country_event = {
 	show_sound = event_mystic_reveal
 
 	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = elven_lhuren_origin_route_A
+		NOT = { has_country_flag = elven_lhuren_origin_ending_A }
+	}
 	
 	immediate = {
 	}
@@ -351,6 +356,11 @@ country_event = {
 	show_sound = event_mystic_reveal
 
 	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = elven_lhuren_origin_route_B
+		NOT = { has_country_flag = elven_lhuren_origin_ending_B }
+	}
 	
 	immediate = {
 	}
@@ -360,18 +370,6 @@ country_event = {
 		set_country_flag = elven_lhuren_origin_ending_B
 		add_modifier = {
 			modifier = elven_lhuren_origin_ending_B_modifier
-		}
-
-		event_target:lhuren_lhumar = {
-			remove_modifier = elven_eternal_array_broken_modifier
-			add_modifier = {
-				modifier = elven_eternal_array_modifier
-				days = -1
-			}
-
-			hidden_effect = {
-				eos_lhuren_shield_state = { VALUE = 2 }
-			}
 		}
 	}
 	
@@ -439,6 +437,11 @@ country_event = {
 	show_sound = event_mystic_reveal
 
 	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = elven_lhuren_origin_route_C
+		NOT = { has_country_flag = elven_lhuren_origin_ending_C }
+	}
 	
 	immediate = {
 	}
@@ -647,10 +650,53 @@ country_event = {
 	}
 }
 
-# Ending C Mechanics: After encasing Lhumar, the Nirvana counter continues to increase slowly over time.
+# Ending B Mechanics: If the Orbital Ring is somehow destroyed/dismantled, break the shield again.
 
 event = {
 	id = elven_lhuren_origin_events.511
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:lhuren_lhumar
+		exists = event_target:lhuren_eternal_array
+		event_target:lhuren_eternal_array = {
+			is_megastructure_type = elven_lhuren_eternal_array_restored
+		}
+		NOT = { exists = event_target:lhuren_eternal_array_starbase }
+	}
+
+	immediate = {
+		event_target:lhuren_lhumar = {
+			remove_modifier = elven_eternal_array_modifier
+			add_modifier = {
+				modifier = elven_eternal_array_broken_modifier
+				days = -1
+			}
+
+			eos_lhuren_shield_state = { VALUE = 1 }
+
+			solar_system = {
+				delete_megastructure = event_target:lhuren_eternal_array
+				spawn_megastructure = {
+					type = elven_lhuren_eternal_array_ruined
+					planet = event_target:lhuren_lhumar
+					graphical_culture = elven_02
+
+					init_effect = {
+						save_global_event_target_as = lhuren_eternal_array
+					}
+				}
+			}
+		}
+	}
+}
+
+# Ending C Mechanics: After encasing Lhumar, the Nirvana counter continues to increase slowly over time.
+
+event = {
+	id = elven_lhuren_origin_events.521
 	hide_window = yes
 
 	is_triggered_only = yes

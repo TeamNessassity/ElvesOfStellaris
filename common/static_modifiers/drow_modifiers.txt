@@ -43,3 +43,15 @@ drow_strong_magnetic_field = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
 	icon_frame = 1
 }
+
+############################
+## DROW WEATHER MODIFIERS ##
+############################
+
+eos_nebula_evergloom = {
+	ship_speed_reduction = 0.5
+	ship_disengage_opportunities_add = -2
+	ship_windup_mult = 1.0
+	ship_cloaking_strength_add = 3
+	ship_weapon_range_mult = -0.25
+}

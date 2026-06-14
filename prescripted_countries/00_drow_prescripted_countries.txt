@@ -118,8 +118,7 @@ drow_civ1 = {
 	authority="auth_dictatorial"
 	
 	civics={
-		"civic_chosen"
-		#"civic_philosopher_king"
+		"civic_philosopher_king"
 		"civic_drow_eilistraee"
 	}
 	
@@ -205,8 +204,7 @@ drow_civ1_nomads_dlc = {
 	authority="auth_dictatorial"
 	
 	civics={
-		"civic_chosen"
-		#"civic_philosopher_king"
+		"civic_philosopher_king"
 		"civic_drow_eilistraee"
 	}
 	

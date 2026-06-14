@@ -19,7 +19,7 @@ on_press_begin = {
 
 		# Start the Lhuren Origin Event Chain
 		elven_lhuren_origin_events.100
-		
+
 		# Start the Anorim Origin Event Chain
 		drow_elistraee_origin_events.100
 	}
@@ -54,8 +54,11 @@ on_monthly_pulse = {
 		# Not used for now.
         # elven_accident_events.10
 
-		# Increment the global Nirvana Counter (Celestial Throne Ending C)
+		# Manage Eternal Array if something happens to its Orbital Ring (Celestial Throne Ending B)
 		elven_lhuren_origin_events.511
+
+		# Increment the global Nirvana Counter (Celestial Throne Ending C)
+		elven_lhuren_origin_events.521
 	}
 }
 
@@ -202,5 +205,13 @@ on_ruler_created = {
 on_ruler_set = {
 	events = {
 		elven_celestial_grace_events.203
+	}
+}
+
+# Fired by breach_shroud = yes
+# This = Country
+on_shroud_breached = {
+	events = {
+		drow_elistraee_origin_events.901
 	}
 }

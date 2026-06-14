@@ -106,7 +106,7 @@ eos_anoriel = {
 	category = minor_patron
 	color = { 0 0 0 1 }
 	text_color_code = "P"
-	#first_contact_event = shroud.4060
+	first_contact_event = drow_elistraee_origin_events.910
 
 	pre_communications_name_format = "{$code_name_eos_anoriel$}"
 

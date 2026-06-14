@@ -342,3 +342,35 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+#####################
+## EVERGLOOM RUINS ##
+#####################
+
+ambient_object = {
+	name = "eos_evergloom_ruins_dyson_sphere"
+	entity = "dyson_sphere_destroyed_entity"
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "eos_evergloom_ruins_dyson_gun"
+	entity = "dyson_gun_01_destroyed_entity"
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "eos_evergloom_ruins_neural_calculator"
+	entity = "neural_calculator_destroyed_entity"
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "eos_evergloom_ruins_orbital_ring"
+	entity = "orbital_ring_01_destroyed_entity"
+	selectable = no
+	show_name = no
+}

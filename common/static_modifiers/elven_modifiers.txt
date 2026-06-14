@@ -194,9 +194,44 @@ elven_lhuren_planet_boost = {
 
 # LHUREN RELIC EFFECTS
 
+elven_relic_flaming_pearl_nest = {
+	scientist_skill_add = 3
+	official_skill_add = 3
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_riddles = {
+	official_skill_add = 3
+	commander_skill_add = 3
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_scales = {
+	scientist_skill_add = 3
+	commander_skill_add = 3
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_wisdom = {
+	leader_skill_add = 3
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
+elven_relic_flaming_pearl_humility = {
+	leader_skill_add = 2
+	council_agenda_progress_speed = 0.1
+
+	icon = "gfx/interface/icons/modifiers/mod_star.dds"
+}
+
 elven_relic_flaming_pearl_rainfall = {
 	planet_jobs_food_produces_mult = 0.20
 	pop_environment_tolerance = 0.10
+	official_skill_add = 4
 
 	icon = "gfx/interface/icons/modifiers/mod_star.dds"
 }
@@ -204,6 +239,7 @@ elven_relic_flaming_pearl_rainfall = {
 elven_relic_flaming_pearl_artifice = {
 	planet_jobs_consumer_goods_produces_mult = 0.10
 	planet_jobs_alloys_produces_mult = 0.10
+	commander_skill_add = 4
 
 	icon = "gfx/interface/icons/modifiers/mod_star.dds"
 }
@@ -211,6 +247,7 @@ elven_relic_flaming_pearl_artifice = {
 elven_relic_flaming_pearl_jade = {
 	planet_jobs_minerals_produces_mult = 0.20
 	planet_miners_rare_crystals_produces_add = 0.1
+	scientist_skill_add = 4
 
 	icon = "gfx/interface/icons/modifiers/mod_star.dds"
 }
@@ -218,13 +255,15 @@ elven_relic_flaming_pearl_jade = {
 elven_relic_flaming_pearl_authority = {
 	planet_jobs_ruler_produces_mult = 0.20
 	pop_government_ethic_attraction = 0.20
+	ruler_skill_add = 6
 
 	icon = "gfx/interface/icons/modifiers/mod_star.dds"
 }
 
 elven_relic_flaming_pearl_guardian = {
 	planet_stability_add = 10
-	ship_evasion_mult = 0.20
+	ship_damage_reduction_add = 10
+	ruler_skill_add = 4
 
 	icon = "gfx/interface/icons/modifiers/mod_star.dds"
 }

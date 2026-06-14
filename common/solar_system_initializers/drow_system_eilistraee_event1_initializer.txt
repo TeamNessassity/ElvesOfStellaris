@@ -1,23 +1,1072 @@
-eilistraee_event1_initializer = {
+eilistraee_event1_01_initializer = {
 	name = "Ruinous Release"
 	class = sc_black_hole
 
-	flags = { custom_system conduit_excluded }
+	flags = { custom_system conduit_excluded eos_anorim_event_system }
 	
 	init_effect = {
 	}
 
 	planet = {
 		class = pc_black_hole
-		name = "Ruinous Release"
+		name = "Cil Mawr"
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 24
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_dark_matter_deposit_2
+
+			# Lathe Debris
+			create_ambient_object = {
+				type = "eos_evergloom_ruins_dyson_gun"
+				location = this
+			}
+		}
+	}
+
+}
+
+eilistraee_event1_02_initializer = {
+	name = "Sinking Solitude"
+	class = sc_drow_trinary_1
+
+	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	
+	init_effect = {
+	}
+
+	planet = {
+		class = "pc_f_star"
+		name = "Ayercár"
+		orbit_distance = 30
+		orbit_angle = 0
+		size = 20
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_energy_2
+		}
+	}
+	
+	planet = {
+		class = "pc_f_star"
+		name = "Ayerhón"
+		orbit_angle = 120
+		orbit_distance = 0
+		size = 30
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_energy_2
+		}
+	}
+	
+	planet = {
+		class = "pc_b_star"
+		name = "Ayermá"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 25
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_energy_3
+		}
+	}
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
+	
+	planet = {
+		name = "Menelondo Tol"
+		class = "pc_asteroid"
+		orbit_distance = 70
+		orbit_angle = 90
+		size = 5
+	}
+	
+	planet = {
+		name = "Menelondo Izanari"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 12
+		
+		moon = {
+			name = "B'vecko"
+			class = pc_shattered
+			orbit_distance = 25
+			size = 11
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Sáramorna"
+		class = "pc_molten"
+		#entity = "drow_01_toxic_elgcahlir"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+		modifiers = none
+		
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_engineering_2
+		}
+		
+		moon = {
+			name = "Lissëninquë"
+			class = "pc_frozen"
+			orbit_distance = 20
+			size = 12
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Elg'cahlir"
+		class = "pc_toxic"
+		entity = "drow_01_toxic_elgcahlir"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+		modifiers = none
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_society_2
+		}
+		
+		moon = {
+			name = "Myrxle"
+			class = random_non_colonizable
+			orbit_distance = 20
+			orbit_angle = random
+			size = 16
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Na'eroth"
+			class = random_non_colonizable
+			orbit_distance = 15
+			orbit_angle = { min = 90 max = 270 }
+			size = 12
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Hiran"
+		class = random_non_colonizable
+		orbit_distance = 70
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 20 max = 40 }
+	}
+
+}
+
+eilistraee_event1_03_initializer = {
+	name = "Harrowing Hope"
+	class = sc_drow_binary_2
+
+	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	
+	init_effect = {
+	}
+	
+	planet = {
+		class = "pc_k_star"
+		name = "Hûnnaur-minë"
+		orbit_distance = 14
+		orbit_angle = 0
+		size = 30
+	}
+	
+	planet = {
+		class = "pc_m_star"
+		name = "Hûnnaur-atta"
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 15
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		name = "Quáco"
+		entity = "drow_01_gas_giant_quaco"
+		orbit_distance = 35
+		orbit_angle = random
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = random_non_colonizable
+		name = "Doghiona"
+		orbit_distance = 30
+		orbit_angle = 135
+		size = 25
+		
+		moon = {
+			class = "pc_barren"
+			name = "Draversa"
+			orbit_distance = 15
+			size = 16
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+		name = "Toron"
+		orbit_distance = 35
+		orbit_angle = 135
+		size = 25
+	}
+	
+	planet = {
+		class = "pc_toxic"
+		name = "Dol'medri"
+		entity = "drow_01_toxic_dolmedri"
+		orbit_distance = 30
+		orbit_angle = 135
+		size = 30
+		has_ring = no
+		modifiers = none
+		
+		init_effect = {
+			prevent_anomaly = yes
+			add_modifier = {
+				modifier = "ancient_factory"
+				days = -1
+			}
+			
+			clear_deposits = yes
+			add_deposit = d_society_2
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		name = "Ilharfir"
+		entity = "drow_01_gas_giant_ilharfir"
+		orbit_distance = 45
+		orbit_angle = 135
+		size = 40
+		modifiers = none
+		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_exotic_gases_1
+		}
+		
+		moon = {
+			class = random_non_colonizable
+			name = "Drath'inthuul"
+			orbit_distance = 30
+			orbit_angle = random
+			size = 12
+		}
+		
+		moon = {
+			class = "pc_frozen"
+			name = "Drath'drejan"
+			orbit_distance = 0
+			orbit_angle = { min = 90 max = 270 }
+			size = 9
+		}
+	}
+	
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 249
+	}
+	
+	planet = {
+		name = "Menelhelcë Yasi"
+		class = "pc_ice_asteroid"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+	}
+	
+	planet = {
+		name = "Menelhelcë Drayda"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+	
+	planet = {
+		name = "Menelhelcë Larou"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+	
+	planet = {
+		class = none
+		orbit_distance = 30
+	}
+
+}
+
+eilistraee_event1_04_initializer = {
+	name = "Withering Wrath"
+	class = sc_drow_binary_1
+
+	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	
+	init_effect = {
+	}
+
+	planet = {
+		class = "pc_a_star"
+		name = "Slyndar"
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 40
 
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_physics_6
+			add_deposit = d_energy_3
 		}
+	}	
+	
+	planet = {
+		class = "pc_barren"
+		name = "Drayilar"
+		entity = "drow_01_barren_02_draxilar"
+		orbit_distance = 85
+		orbit_angle = 180
+		size = 40
+		
+		moon = {
+			class = pc_shrouded
+			name = "Meoiavale"
+			orbit_distance = 35
+			orbit_angle = random
+			size = 22
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_zro_deposit_2
+			}
+		}
+		
+		moon = {
+			class = "pc_toxic"
+			name = "Inthurosa"
+			orbit_distance = 8
+			orbit_angle = { min = 90 max = 270 }
+			size = 16
+		
+		}
+	}
+	
+	planet = {
+		class = "pc_black_hole"
+		name = "Renoriden"
+		orbit_distance = 60
+		orbit_angle = 180
+		size = 10
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_physics_2
+		}
+		
+		planet = {
+			class = "pc_shattered"
+			name = "In'loifrey"
+			orbit_distance = 30
+			orbit_angle = 90
+			size = 6
+		}
+		
+		planet = {
+			class = "pc_frozen"
+			name = "Yh'alhar"
+			orbit_angle = 180
+			orbit_distance = 15
+			size = 12
+		}			
+	}
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 205
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		name = "Menelondo Yica"
+		orbit_distance = 60
+		orbit_angle = 90
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		name = "Menelondo Drai"
+		orbit_distance = 0
+		orbit_angle = { min = 45 max = 90 }
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		name = "Menelondo Larya"
+		orbit_distance = 0
+		orbit_angle = { min = 45 max = 90 }
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		name = "Menelondo Queni"
+		orbit_distance = 0
+		orbit_angle = { min = 45 max = 90 }
+	}
+
+}
+
+eilistraee_event1_05_initializer = {
+	name = "Torturous Truth"
+	class = sc_black_hole
+
+	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	
+	init_effect = {
+	}
+
+	planet = {
+		class = pc_black_hole
+		name = "Galtaereth"
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 40
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+
+			# Dyson Sphere Debris
+			create_ambient_object = {
+				type = "eos_evergloom_ruins_dyson_sphere"
+				location = this
+				scale = 2.0
+				use_3d_location = yes
+			}
+
+			# Orbital Ring Debris
+			create_ambient_object = {
+				type = "eos_evergloom_ruins_orbital_ring"
+				location = this
+				use_3d_location = yes
+				scale = 50.0
+			}
+
+			# Generic Debris
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 35
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 32
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 41
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 37
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 33
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 36
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 38
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 32
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = 70
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 60
+					angle = 100
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 75
+					angle = 125
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 57
+					angle = 100
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 61
+					angle = 80
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 50
+					angle = 127
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 65
+					angle = 76
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 60
+					angle = 120
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = 270
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 60
+					angle = 300
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 75
+					angle = 325
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 57
+					angle = 300
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 61
+					angle = 280
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 50
+					angle = 327
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 65
+					angle = 276
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 60
+					angle = 320
+				}
+			}
+		}
+	}
+
+	planet = {
+		class = pc_city
+		name = "Zha'lora"
+		orbit_distance = 100
+		orbit_angle = 60
+		size = 30
+		has_ring = yes
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+
+			# Lathe Debris
+			create_ambient_object = {
+				type = "eos_evergloom_ruins_neural_calculator"
+				location = this
+			}
+
+			# Generic Debris
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+				entity_offset_height = { min = -0 max = -20 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 20
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+				entity_offset_height = { min = -10 max = -20 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 10
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+				entity_offset_height = { min = -0 max = -20 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 10
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				location = this
+				entity_offset_height = { min = -0 max = -20 }
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 15
+					angle = random
+				}
+			}
+		}
+	}
+
+	planet = {
+		class = pc_city
+		name = "K'zarrak"
+		orbit_distance = 60
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+
+			# Generic Debris
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+				entity_offset_height = { min = -10 max = -20 }
+				scale = 1.2
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 33
+					angle = 21
+				}
+			}
+			create_ambient_object = {
+				type = "ancient_battlefield_02_object"
+				location = this
+				entity_offset_height = { min = -0 max = -15 }
+				scale = 1.0
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 22
+					angle = 57
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+				entity_offset_height = { min = -15 max = -20 }
+				scale = 1.4
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 18
+					angle = 95
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+				entity_offset_height = { min = -18 max = -22 }
+				scale = 1.8
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 8
+					angle = 164
+				}
+			}
+		}
+		
+		moon = {
+			class = pc_shrouded
+			name = "Aerthor"
+			orbit_distance = 20
+			orbit_angle = random
+			size = 8
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+		
+		moon = {
+			class = pc_shrouded
+			name = "Gwedach"
+			orbit_distance = 0
+			orbit_angle = 120
+			size = 10
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+		
+		moon = {
+			class = pc_shrouded
+			name = "Eithauron"
+			orbit_distance = 0
+			orbit_angle = 120
+			size = 12
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_zro_deposit_1
+			}
+		}
+	}
+
+	planet = {
+		class = pc_city
+		name = "Xil'dras"
+		orbit_distance = 60
+		orbit_angle = 120
+		size = 24
+		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+
+			# Orbital Ring Debris
+			create_ambient_object = {
+				type = "eos_evergloom_ruins_orbital_ring"
+				location = this
+				use_3d_location = yes
+				scale = 10.0
+			}
+
+			# Generic Debris
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+				entity_offset_height = { min = -10 max = -20 }
+				scale = 2.0
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 10
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+				entity_offset_height = { min = -10 max = -20 }
+				scale = 2.0
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 15
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+				entity_offset_height = { min = -10 max = -20 }
+				scale = 2.0
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 12
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+				entity_offset_height = { min = -10 max = -20 }
+				scale = 2.0
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 20
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+				entity_offset_height = { min = -10 max = -20 }
+				scale = 2.0
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 32
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "abandoned_ship_2_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 56
+					angle = 270
+				}
+			}
+		}
+	}
+
+	change_orbit = 50
+
+	planet = {
+		class = pc_rare_crystal_asteroid
+		count = 7
+		orbit_distance = 7
+		orbit_angle = { min = 60 max = 120 }
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+	asteroid_belt = {
+		type = elven_crystal_asteroid_belt_red
+		radius = 275
+	}
+	
+	asteroid_belt = {
+		type = elven_crystal_asteroid_belt_red
+		radius = 285
+	}
+	
+	asteroid_belt = {
+		type = elven_crystal_asteroid_belt_red
+		radius = 290
+	}
+	
+	asteroid_belt = {
+		type = elven_crystal_asteroid_belt_red
+		radius = 295
+	}
+	
+	asteroid_belt = {
+		type = elven_crystal_asteroid_belt_red
+		radius = 315
 	}
 
 }

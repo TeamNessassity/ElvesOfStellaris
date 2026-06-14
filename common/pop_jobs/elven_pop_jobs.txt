@@ -20,11 +20,18 @@ elven_dragon_researcher = {
 	resources = {
 		category = planet_eos_celestials
 		produces = {
-			unity = 5
-			physics_research = 10
+			unity = 1
+			physics_research = 1
+			mult = trigger:capital_tier
+		}
+		produces = {
+			unity = 1
+			physics_research = 1
+			mult = trigger:has_planetary_ascension_tier
 		}
 		upkeep = {
-			trade = 10
+			trade = 2
+			mult = trigger:capital_tier
 		}
 	}
 
@@ -39,7 +46,7 @@ elven_dragon_researcher = {
 			}
 		}
 		modifier = {
-			all_technology_research_speed = 0.1
+			all_technology_research_speed = 0.10
 		}
 	}
 
@@ -89,11 +96,18 @@ elven_dragon_priest = {
 	resources = {
 		category = planet_eos_celestials
 		produces = {
-			influence = 0.25
-			society_research = 10
+			influence = 0.05
+			society_research = 1
+			mult = trigger:capital_tier
+		}
+		produces = {
+			influence = 0.05
+			society_research = 1
+			mult = trigger:has_planetary_ascension_tier
 		}
 		upkeep = {
-			trade = 10
+			trade = 2
+			mult = trigger:capital_tier
 		}
 	}
 
@@ -108,7 +122,7 @@ elven_dragon_priest = {
 			}
 		}
 		modifier = {
-			country_edict_fund_add = 10
+			country_edict_fund_add = 100
 		}
 	}
 
@@ -158,11 +172,18 @@ elven_dragon_strategist = {
 	resources = {
 		category = planet_eos_celestials
 		produces = {
-			consumer_goods = 5
-			engineering_research = 10
+			consumer_goods = 1
+			engineering_research = 1
+			mult = trigger:capital_tier
+		}
+		produces = {
+			consumer_goods = 1
+			engineering_research = 1
+			mult = trigger:has_planetary_ascension_tier
 		}
 		upkeep = {
-			trade = 10
+			trade = 2
+			mult = trigger:capital_tier
 		}
 	}
 
@@ -177,7 +198,7 @@ elven_dragon_strategist = {
 			}
 		}
 		modifier = {
-			country_naval_cap_add = 20
+			country_naval_cap_add = 200
 		}
 	}
 

@@ -1,5 +1,5 @@
 concept_pc_lunari_arctic = {
-	icon = "gfx/interface/icons/concepts/planet_classes/pc_lunari_arctic.tga"
+	#icon = "gfx/interface/icons/concepts/planet_classes/pc_lunari_arctic.tga"
 }
 
 concept_lunari_auroras_mod = {
@@ -35,7 +35,7 @@ concept_eos_climate_restoration = {
 }
 
 concept_pc_speleoterrestrial = {
-	icon = "gfx/interface/icons/concepts/planet_classes/pc_speleoterrestrial.tga"
+	#icon = "gfx/interface/icons/concepts/planet_classes/pc_speleoterrestrial.tga"
 }
 
 concept_drow_planetary_speleostructural_instability = {

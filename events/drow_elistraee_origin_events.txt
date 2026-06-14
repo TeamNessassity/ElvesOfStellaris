@@ -22,6 +22,7 @@ country_event = {
 	}
 	
 	immediate = {
+		add_ascension_perk = ap_mind_over_matter
 		if = {
 			limit = {
 				NOT = { is_same_value = event_target:anorim_star_owner_of_@event_target:anorim_anoriel }
@@ -54,11 +55,6 @@ country_event = {
 	}
 	
 	immediate = {
-		set_patron_first_contact_state = {
-			patron = eos_anoriel
-			state = completed
-		}
-		set_country_flag = eos_anoriel_accord
 	}
 
 	after = {
@@ -79,7 +75,7 @@ country_event = {
 }
 
 # Part 2 Stage 1 ()
-# Begin the second part of the event chain.
+# Begin the second part of the event chain. Create the old home cluster and start spawning the Fated Tithe.
 country_event = {
 	id = drow_elistraee_origin_events.201
 	title = "drow_elistraee_origin_events.201.name"
@@ -94,6 +90,110 @@ country_event = {
 	}
 	
 	immediate = {
+		if = {
+			limit = {
+				# Only one Cursed Cluster per galaxy!	
+				NOT = { exists = event_target:anorim_cursed_cluster_01 }
+			}
+			set_spawn_system_batch = begin
+
+			no_scope = {
+				# makes system positions originate from galactic core
+				spawn_system = {
+					min_distance >= 580
+					max_distance <= 590
+					min_orientation_angle = 137
+					max_orientation_angle = 146
+					initializer = eilistraee_event1_01_initializer
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = anorim_cursed_cluster_01
+						set_star_flag = sealed_system
+					}
+				}
+			}
+			event_target:anorim_cursed_cluster_01 = {
+				spawn_system = {
+					min_distance >= 20
+					max_distance <= 30
+					min_orientation_angle = 100
+					max_orientation_angle = 120
+					initializer = eilistraee_event1_02_initializer
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = anorim_cursed_cluster_02
+						set_star_flag = sealed_system
+					}
+				}
+			}
+			event_target:anorim_cursed_cluster_02 = {
+				spawn_system = {
+					min_distance >= 18
+					max_distance <= 26
+					min_orientation_angle = 50
+					max_orientation_angle = 60
+					initializer = eilistraee_event1_03_initializer
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = anorim_cursed_cluster_03
+						set_star_flag = sealed_system
+					}
+				}
+			}
+			event_target:anorim_cursed_cluster_03 = {
+				spawn_system = {
+					min_distance >= 15
+					max_distance <= 25
+					min_orientation_angle = 36
+					max_orientation_angle = 42
+					initializer = eilistraee_event1_04_initializer
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = anorim_cursed_cluster_04
+						set_star_flag = sealed_system
+					}
+				}
+			}
+			event_target:anorim_cursed_cluster_04 = {
+				spawn_system = {
+					min_distance >= 60
+					max_distance <= 64
+					min_orientation_angle = 20
+					max_orientation_angle = 30
+					initializer = eilistraee_event1_05_initializer
+					hyperlane = no
+					effect = {
+						save_global_event_target_as = anorim_cursed_cluster_05
+						set_star_flag = sealed_system
+					}
+				}
+			}
+
+			event_target:anorim_cursed_cluster_03 = {
+				create_nebula = {
+					name = "The Evergloom"
+					radius = 62
+					effect = {
+						create_elven_nebula_red_purple = yes
+						add_modifier = { modifier = eos_nebula_evergloom }
+					}
+				}
+			}
+
+			event_target:anorim_cursed_cluster_05 = {
+				create_nebula = {
+					name = "The Evergloom"
+					radius = 10
+					effect = {
+						create_elven_nebula_red_purple = yes
+						add_modifier = { modifier = eos_nebula_evergloom }
+					}
+				}
+			}
+
+			set_spawn_system_batch = end
+		}
+		
 	}
 
 	after = {
@@ -101,6 +201,43 @@ country_event = {
 	
 	option = {
 		name = drow_elistraee_origin_events.201.a
+	}
+}
+
+###############################
+#        Shroud Stuff         #
+###############################
+
+# Children of Anoriel should get Anoriel's Accord as soon as they're able to access the Shroud
+country_event = {
+	id = drow_elistraee_origin_events.901
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_drow_prismatic_refuge
+	}
+	
+	immediate = {
+		set_patron_first_contact_state = {
+			patron = eos_anoriel
+			state = completed
+		}
+	}
+}
+
+# Dummy first contact event. It's technically not needed, since other empires cannot randomly meet her, but log will complain if we don't have one.
+country_event = {
+	id = drow_elistraee_origin_events.910
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
 	}
 }
 
