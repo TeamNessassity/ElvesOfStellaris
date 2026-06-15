@@ -21,7 +21,7 @@ elven_system_gaul_neighbor3_initializer = {
 
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_energy_3
+			add_deposit = d_energy_2
 		}
 	}
 	

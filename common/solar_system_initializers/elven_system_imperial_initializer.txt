@@ -25,7 +25,7 @@ elven_system_imperial_initializer = {
 			33 = {
 				create_nebula = {
 					name = ELVEN_Shattered_Rose
-					radius = 50
+					radius = 1
 					effect = { nebula_cloaking_effect = yes }
 				}
 			}
@@ -33,7 +33,7 @@ elven_system_imperial_initializer = {
 			33 = {
 				create_nebula = {
 					name = ELVEN_Broken_Leaf
-					radius = 50
+					radius = 1
 					effect = { nebula_cloaking_effect = yes }
 				}
 			}
@@ -41,7 +41,7 @@ elven_system_imperial_initializer = {
 			33 = {
 				create_nebula = {
 					name = ELVEN_Riven_Vine
-					radius = 50
+					radius = 1
 					effect = { nebula_cloaking_effect = yes }
 				}
 			}
@@ -63,7 +63,7 @@ elven_system_imperial_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
-			set_deposit = d_energy_5
+			set_deposit = d_energy_10
 		}
 	}
 	
@@ -72,6 +72,8 @@ elven_system_imperial_initializer = {
 		class = "pc_pulsar"
 		orbit_distance = 18
 		size = 8
+
+		flags = { starting_research_target }
 
 		init_effect = {
 			clear_deposits = yes
@@ -105,6 +107,7 @@ elven_system_imperial_initializer = {
 
 		init_effect = {
 			clear_deposits = yes
+			add_deposit = d_minerals_3
 		}
 	}
 	
@@ -116,8 +119,11 @@ elven_system_imperial_initializer = {
 		orbit_angle = { min = 90 max = 120 }
 		size = { min = 6 max = 9 }
 
+		flags = { starting_mining_target }
+
 		init_effect = {
 			clear_deposits = yes
+			add_deposit = d_minerals_2
 		}
 	}
 
@@ -224,12 +230,10 @@ elven_system_imperial_initializer = {
 		size = 34
 		has_ring = yes
 		entity = "elven_01_gas_giant_cyan"
-
-		flags = { starting_mining_target }
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_energy_5
+			add_deposit = d_energy_3
 		}
 		
 		moon = {
@@ -243,7 +247,7 @@ elven_system_imperial_initializer = {
 
 			init_effect = {
 				clear_deposits = yes
-				add_deposit = d_minerals_5
+				add_deposit = d_minerals_3
 			}
 		}
 		

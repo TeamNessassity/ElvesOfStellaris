@@ -88,7 +88,7 @@ elven_system_gaul_neighbor1_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_energy_1
+			add_deposit = d_energy_2
 		}
 	
 		moon = {

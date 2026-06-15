@@ -20,7 +20,7 @@ drow_system_tulshar_initializer = {
 			33 = {
 				create_nebula = {
 					name = ELVEN_Dark_Web
-					radius = 55
+					radius = 1
 					effect = { nebula_cloaking_effect = yes }
 				}
 			}
@@ -28,7 +28,7 @@ drow_system_tulshar_initializer = {
 			33 = {
 				create_nebula = {
 					name = ELVEN_Shadow_Maze
-					radius = 55
+					radius = 1
 					effect = { nebula_cloaking_effect = yes }
 				}
 			}
@@ -36,7 +36,7 @@ drow_system_tulshar_initializer = {
 			33 = {
 				create_nebula = {
 					name = ELVEN_Gloom_Huntress
-					radius = 55
+					radius = 1
 					effect = { nebula_cloaking_effect = yes }
 				}
 			}
@@ -140,7 +140,7 @@ drow_system_tulshar_initializer = {
 		orbit_distance = 20
 		orbit_angle = { min = 45 max = 120 }
 
-		flags = { ignore_startup_effect }
+		flags = { starting_research_target ignore_startup_effect }
 
 		init_effect = {
 			clear_deposits = yes
@@ -205,7 +205,7 @@ drow_system_tulshar_initializer = {
 
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_engineering_3
+			add_deposit = d_engineering_2
 		}
 	}
 	
@@ -215,7 +215,7 @@ drow_system_tulshar_initializer = {
 		entity = "drow_01_gas_giant_yahdexus"
 		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 25 max = 35 }
+		size = { min = 22 max = 28 }
 		has_ring = yes
 
 		flags = { starting_mining_target }
@@ -224,6 +224,21 @@ drow_system_tulshar_initializer = {
 			prevent_anomaly = yes
 			clear_deposits = yes 
 			add_deposit = d_energy_5
+		}
+	}
+
+	planet = {
+		name = "Ilyssara"
+		class = "pc_gas_giant"
+		entity = "drow_01_gas_giant_ilyssara"
+		orbit_distance = 45
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 28 max = 35 }
+		
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes 
+			add_deposit = d_energy_3
 		}
 	}
 	

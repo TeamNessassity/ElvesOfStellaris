@@ -51,7 +51,7 @@ elven_system_lunari_initializer = {
 		size = 16
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_physics_2
+			add_deposit = d_physics_1
 		}
 	}
 
@@ -275,7 +275,7 @@ elven_system_lunari_initializer = {
 
 			init_effect = {
 				clear_deposits = yes
-				add_deposit = d_engineering_2
+				add_deposit = d_engineering_1
 			}
 		}
 

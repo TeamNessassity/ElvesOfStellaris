@@ -59,16 +59,8 @@ elven_system_lunari_neighbor1_initializer = {
 		size = { min = 2 max = 4 }
 
 		init_effect = {
-			random_list = {
-				60 = {
-					clear_deposits = yes
-					add_deposit = d_physics_2
-				}
-				40 = {
-					clear_deposits = yes
-					add_deposit = d_physics_3
-				}
-			}
+			clear_deposits = yes
+			add_deposit = d_engineering_2
 		}
 	}
 
@@ -89,13 +81,9 @@ elven_system_lunari_neighbor1_initializer = {
 
 		init_effect = {
 			random_list = {
-				40 = {
+				80 = {
 					clear_deposits = yes
 					add_deposit = d_engineering_2
-				}
-				40 = {
-					clear_deposits = yes
-					add_deposit = d_engineering_3
 				}
 				20 = {
 					clear_deposits = yes
@@ -171,16 +159,8 @@ elven_system_lunari_neighbor1_initializer = {
 		}
 
 		init_effect = {
-			random_list = {
-				60 = {
-					clear_deposits = yes
-					add_deposit = d_energy_3
-				}
-				40 = {
-					clear_deposits = yes
-					add_deposit = d_energy_2
-				}
-			}
+			clear_deposits = yes
+			add_deposit = d_energy_2
 		}
 	}
 
@@ -204,16 +184,8 @@ elven_system_lunari_neighbor1_initializer = {
 		size = { min = 2 max = 4 }
 
 		init_effect = {
-			random_list = {
-				25 = {
-					clear_deposits = yes
-					add_deposit = d_minerals_2
-				}
-				75 = {
-					clear_deposits = yes
-					add_deposit = d_minerals_3
-				}
-			}
+			clear_deposits = yes
+			add_deposit = d_minerals_2
 		}
 	}
 	
@@ -226,13 +198,9 @@ elven_system_lunari_neighbor1_initializer = {
 
 		init_effect = {
 			random_list = {
-				40 = {
+				80 = {
 					clear_deposits = yes
 					add_deposit = d_engineering_2
-				}
-				40 = {
-					clear_deposits = yes
-					add_deposit = d_engineering_3
 				}
 				20 = {
 					clear_deposits = yes

@@ -36,7 +36,7 @@ elven_system_imperial_neighbor1_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
-			set_deposit = d_elven_energy_1_physics_1
+			set_deposit = d_elven_energy_1_physics_2
 		}
 	}
 	
@@ -49,7 +49,7 @@ elven_system_imperial_neighbor1_initializer = {
 
 		init_effect = {
 			clear_deposits = yes
-			set_deposit = d_energy_3
+			set_deposit = d_elven_energy_2_physics_1
 		}
 	}
 	

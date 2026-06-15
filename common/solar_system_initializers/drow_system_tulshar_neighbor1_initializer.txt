@@ -24,7 +24,7 @@ drow_system_tulshar_neighbor1_initializer = {
 
 		init_effect = {
 			clear_deposits = yes 
-			add_deposit = d_engineering_3
+			add_deposit = d_engineering_2
 		}
 	}
 
@@ -40,7 +40,7 @@ drow_system_tulshar_neighbor1_initializer = {
 
 		init_effect = {
 			clear_deposits = yes 
-			add_deposit = d_engineering_3
+			add_deposit = d_engineering_2
 		}
 	}
 
@@ -54,7 +54,8 @@ drow_system_tulshar_neighbor1_initializer = {
 		flags = { conduit_excluded }
 
 		init_effect = {
-			clear_deposits = yes 
+			clear_deposits = yes
+			add_deposit = d_energy_2
 		}
 	}
 	

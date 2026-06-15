@@ -64,6 +64,10 @@ drow_system_tulshar_neighbor2_initializer = {
 		orbit_distance = 30
 		orbit_angle = random
 		size = { min = 12 max = 16 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -74,6 +78,11 @@ drow_system_tulshar_neighbor2_initializer = {
 		orbit_angle = 135
 		size = 35
 		has_ring = yes
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_society_2
+		}
 	}
 
 	planet = {
@@ -156,11 +165,11 @@ drow_system_tulshar_neighbor2_initializer = {
 			
 			init_effect = {
 				clear_deposits = yes 
-				add_deposit = d_engineering_2
+				add_deposit = d_minerals_2
 				
 				add_modifier = {
-						modifier = "ship_graveyard"
-						days = -1
+					modifier = "ship_graveyard"
+					days = -1
 				}
 			}		
 		}
@@ -172,6 +181,10 @@ drow_system_tulshar_neighbor2_initializer = {
 			orbit_distance = 25
 			orbit_angle = random
 			size = 30
+
+			init_effect = {
+				clear_deposits = yes
+			}
 		}
 	}
 	
@@ -202,6 +215,10 @@ drow_system_tulshar_neighbor2_initializer = {
 			orbit_distance = 8
 			orbit_angle = { min = 90 max = 270 }
 			size = 14
+
+			init_effect = {
+				clear_deposits = yes
+			}
 		}
 	}
 	
@@ -216,6 +233,10 @@ drow_system_tulshar_neighbor2_initializer = {
 		orbit_distance = 95
 		orbit_angle = random
 		size = { min = 9 max = 12 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -224,6 +245,10 @@ drow_system_tulshar_neighbor2_initializer = {
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 60 }
 		size = { min = 8 max = 14 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -232,6 +257,10 @@ drow_system_tulshar_neighbor2_initializer = {
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 60 }
 		size = { min = 6 max = 12 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -253,6 +282,10 @@ drow_system_tulshar_neighbor2_initializer = {
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 60 }
 		size = { min = 6 max = 12 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -261,6 +294,10 @@ drow_system_tulshar_neighbor2_initializer = {
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 60 }
 		size = { min = 5 max = 10 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	change_orbit = 35

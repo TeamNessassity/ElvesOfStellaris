@@ -22,6 +22,7 @@ drow_system_tulshar_neighbor3_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
+			add_deposit = d_energy_2
 		}
 	}
 	
@@ -31,6 +32,10 @@ drow_system_tulshar_neighbor3_initializer = {
 		orbit_distance = 50
 		orbit_angle = 90
 		size = 25
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	asteroid_belt = {
@@ -43,6 +48,11 @@ drow_system_tulshar_neighbor3_initializer = {
 		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = random
+
+		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_minerals_2
+		}
 	}
 	
 	planet = {
@@ -50,6 +60,10 @@ drow_system_tulshar_neighbor3_initializer = {
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 72 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -57,6 +71,10 @@ drow_system_tulshar_neighbor3_initializer = {
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 72 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -67,7 +85,7 @@ drow_system_tulshar_neighbor3_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes 
-			add_deposit = d_alloys_2
+			add_deposit = d_alloys_1
 		}
 	}
 	
@@ -76,6 +94,10 @@ drow_system_tulshar_neighbor3_initializer = {
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 72 }
+
+		init_effect = {
+			clear_deposits = yes
+		}
 	}
 	
 	planet = {
@@ -86,6 +108,10 @@ drow_system_tulshar_neighbor3_initializer = {
 		orbit_angle = 135
 		size = { min = 30 max = 40 }
 		anomaly = "storms_gasgiant_category"
+
+		init_effect = {
+			clear_deposits = yes
+		}
 		
 		moon = {
 			name = "Olpeldalie"	
@@ -125,6 +151,10 @@ drow_system_tulshar_neighbor3_initializer = {
 			orbit_distance = 8
 			orbit_angle = 135
 			size = 10
+
+			init_effect = {
+				clear_deposits = yes
+			}
 		}
 	}
 	
@@ -155,7 +185,7 @@ drow_system_tulshar_neighbor3_initializer = {
 			anomaly = "GEN_PLAYGROUND_CAT"
 			init_effect = {
 				clear_deposits = yes 
-				add_deposit = d_society_3
+				add_deposit = d_society_2
 			}
 		}
 			
@@ -165,6 +195,10 @@ drow_system_tulshar_neighbor3_initializer = {
 			orbit_distance = 8
 			orbit_angle = 180
 			size = { min = 8 max = 12 }
+
+			init_effect = {
+				clear_deposits = yes
+			}
 		}
 	}
 }

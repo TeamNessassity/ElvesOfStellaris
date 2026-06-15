@@ -85,7 +85,7 @@ elven_system_gaul_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_physics_3
+			add_deposit = d_society_3
 		}
 	}
 	
@@ -99,7 +99,7 @@ elven_system_gaul_initializer = {
 
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_minerals_2
+			add_deposit = d_minerals_3
 		}
 	}
 	

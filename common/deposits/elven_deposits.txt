@@ -2,20 +2,6 @@
 ## RESOURCES ##
 ###############
 
-d_elven_energy_1_physics_1 = {
-	resources = {
-		category = orbital_mining_deposits
-		produces = {
-			physics_research = 1
-			energy = 1
-		}
-	}
-	station = shipclass_mining_station
-	is_for_colonizable = no
-
-	drop_weight = { weight = 0 }
-}
-
 d_elven_energy_3_minerals_3 = {
 	resources = {
 		category = orbital_mining_deposits
@@ -159,7 +145,7 @@ d_elven_lunari_moon = {
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
-			physics_research = 5
+			physics_research = 3
 			energy = 10
 		}
 	}

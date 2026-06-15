@@ -521,6 +521,33 @@ entity = {
 	}
 }
 
+## ILYSSARA ##
+entity = {
+	name = "drow_01_gas_giant_ilyssara"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "drow_01_gas_giant_ilyssara.dds"
+	texture_normal = "gas_giant_01_normal.dds"
+	texture_specular = "gas_giant_01_specular.dds"
+	shader = PdxMeshGasGiant
+	}
+	
+	default_state = "idle"	
+
+	playback_rate = -2.5 # Rotation is reversed
+
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 } 
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+
+	game_data = {
+		uv_animation_speed = 0.1
+	}
+}
+
 ## SZANAS ##
 entity = {
 	name = "drow_01_gas_giant_szanas"
@@ -763,4 +790,3 @@ entity = {
 		uv_animation_speed = 0.1
 	}
 }
-

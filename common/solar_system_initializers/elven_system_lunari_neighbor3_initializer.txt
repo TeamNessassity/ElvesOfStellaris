@@ -41,7 +41,7 @@ elven_system_lunari_neighbor3_initializer = {
 
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_engineering_3
+			add_deposit = d_alloys_2
 		}
 	}
 
@@ -80,16 +80,8 @@ elven_system_lunari_neighbor3_initializer = {
 		has_ring = yes
 
 		init_effect = {
-			random_list = {
-				50 = {
-					clear_deposits = yes
-					add_deposit = d_minerals_2
-				}
-				50 = {
-					clear_deposits = yes
-					add_deposit = d_minerals_3
-				}
-			}
+			clear_deposits = yes
+			add_deposit = d_society_2
 		}
 	}
 	
@@ -116,16 +108,8 @@ elven_system_lunari_neighbor3_initializer = {
 			orbit_angle = { min = 90 max = 270 }
 
 			init_effect = {
-				random_list = {
-					75 = {
-						clear_deposits = yes
-						add_deposit = d_physics_2
-					}
-					25 = {
-						clear_deposits = yes
-						add_deposit = d_physics_3
-					}
-				}
+				clear_deposits = yes
+				add_deposit = d_physics_2
 			}
 		}
 	}
