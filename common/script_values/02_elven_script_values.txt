@@ -58,22 +58,65 @@
 # LHUREN #
 ##########
 
+# Count the total number of times The Eternal Foundry was upgraded
+eos_lhu_val_anatta = {
+	base = 0
+	modifier = {
+		add = eos_lhu_var_anatta
+		is_variable_set = eos_lhu_var_anatta
+	}
+	mult = 1
+}
+
+# Count the total number of times The Eternal Foundry was upgraded
+eos_lhu_val_samsara = {
+	base = 0
+	modifier = {
+		add = trigger:num_researched_techs
+		num_researched_techs > 0
+	}
+	modifier = {
+		divide = trigger:num_owned_planets
+		num_owned_planets > 0
+	}
+	modifier = {
+		mult = value:eos_lhu_val_cosmogenesis_level
+		has_crisis_level = crisis_cosmogenesis_level_1
+	}
+	mult = 1
+}
+
+eos_lhu_val_cosmogenesis_level = {
+	base = 0
+	modifier = {
+		add = 1
+		has_crisis_level = crisis_cosmogenesis_level_5
+	}
+	modifier = {
+		add = 1
+		has_crisis_level = crisis_cosmogenesis_level_4
+	}
+	modifier = {
+		add = 1
+		has_crisis_level = crisis_cosmogenesis_level_3
+	}
+	modifier = {
+		add = 1
+		has_crisis_level = crisis_cosmogenesis_level_2
+	}
+	modifier = {
+		add = 1
+		has_crisis_level = crisis_cosmogenesis_level_1
+	}
+	mult = 1
+}
+
 # Nirvana counter as value for scripted_loc purposes. This is supposed to be scope-neutral.
 eos_lhu_val_nirvana = {
 	base = 0
 	modifier = {
 		add = event_target:lhuren_lhumar.eos_lhu_var_nirvana
 		event_target:lhuren_lhumar = { is_variable_set = eos_lhu_var_nirvana }
-	}
-	mult = 1
-}
-
-# Count the total number of megas constructed and upgraded by this country
-eos_lhu_val_mega_count = {
-	base = 0
-	modifier = {
-		add = eos_lhu_var_mega_count
-		is_variable_set = eos_lhu_var_mega_count
 	}
 	mult = 1
 }

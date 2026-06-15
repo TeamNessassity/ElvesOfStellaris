@@ -39,7 +39,7 @@ defined_text = {
 # Researched Techs
 defined_text = {
 	name = EOSAnattaCounter
-	value = value:eos_lhu_val_mega_count
+	value = value:eos_lhu_val_anatta
 }
 
 # Researched Techs

@@ -79,7 +79,17 @@ elven_lhuren_eternal_array_ruined = {
 
 	potential = { always = no }
 
-	is_ruined_orbital_ring = yes
+	on_build_complete = {
+		fromfrom = { save_global_event_target_as = lhuren_eternal_array }
+
+		random_system_planet = {
+			limit = { has_carrier_flag = lhuren_capital }
+			set_carrier_flag = has_megastructure
+			
+			eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_broken_modifier }
+			eos_lhuren_shield_state = { VALUE = 1 }
+		}
+	}
 }
 
 elven_lhuren_eternal_array_repurposed = {
@@ -101,15 +111,13 @@ elven_lhuren_eternal_array_repurposed = {
 		cost = {
 			alloys = 5000
 		}
-
-		produces = {
-			influence = 0.1
-			alloys = 5
-			mult = owner.eos_lhu_var_mega_count
+		cost = {
+			alloys = 1000
+			mult = value:eos_lhu_val_anatta
 		}
 	}
 
-	upgrade_from = { elven_lhuren_eternal_array_ruined }
+	upgrade_from = { elven_lhuren_eternal_array_ruined elven_lhuren_eternal_array_repurposed }
 
 	construction_blocks_and_blocked_by = none
 
@@ -151,6 +159,16 @@ elven_lhuren_eternal_array_repurposed = {
 			success_text = "elven_lhuren_eternal_array_requires_immortality_pass"
 			NOT = { has_global_flag = eos_lhuren_immortality_lost }
 		}
+		custom_tooltip = {
+			fail_text = "elven_lhuren_eternal_array_max_anatta_fail"
+			success_text = "elven_lhuren_eternal_array_max_anatta_pass"
+			owner = {
+				check_variable = {
+					which = eos_lhu_var_anatta
+					value < 100
+				}
+			}
+		}
 	}
 
 	on_build_start = {}
@@ -159,12 +177,33 @@ elven_lhuren_eternal_array_repurposed = {
 	on_build_complete = {
 		fromfrom = { save_global_event_target_as = lhuren_eternal_array }
 
+		create_influence_field_if_needed = yes
+
 		random_system_planet = {
 			limit = { has_carrier_flag = lhuren_capital }
 			set_carrier_flag = has_megastructure
+			
+			eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_repurposed_modifier }
+			eos_lhuren_shield_state = { VALUE = 0 }
 		}
 
 		from = {
+			create_variable_if_not_exists = {
+				VARIABLE = eos_lhu_var_anatta
+				VALUE_IF_CREATED = 0
+			}
+			change_variable = {
+				which = eos_lhu_var_anatta
+				value = 1
+			}
+			
+			every_situation = {
+				limit = {
+					is_situation_type = eos_lhuren_situation_anatta
+				}
+				set_situation_progress = prev.value:eos_lhu_val_anatta
+			}
+			
 			country_event = { id = elven_lhuren_origin_events.1051 }
 		}
 	}
@@ -271,12 +310,7 @@ elven_lhuren_eternal_array_restored = {
 				}
 			}
 
-			remove_modifier = elven_eternal_array_broken_modifier
-			add_modifier = {
-				modifier = elven_eternal_array_modifier
-				days = -1
-			}
-
+			eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_modifier }
 			eos_lhuren_shield_state = { VALUE = 2 }
 		}
 
@@ -372,6 +406,11 @@ elven_lhuren_eternal_array_static = {
 		random_system_planet = {
 			limit = { has_carrier_flag = lhuren_capital }
 			set_carrier_flag = has_megastructure
+
+			clear_planet_modifiers = yes
+		
+			eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_encased_modifier }
+			eos_lhuren_shield_state = { VALUE = 3 }
 		}
 
 		from = {
@@ -379,6 +418,5 @@ elven_lhuren_eternal_array_static = {
 		}
 	}
 
-	is_ruined_orbital_ring = yes
 	use_planet_resource = yes
 }

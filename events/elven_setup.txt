@@ -46,7 +46,18 @@ country_event = {
 	immediate = {
 		# Since the origin is now very Shroud-centric, we should make sure that they're locked into Psionic Ascension
 		add_ascension_perk = ap_mind_over_matter
-		#eos_create_prismatic_refuge_wormhole = yes
+		if = {
+			limit = {
+				is_nomadic = yes
+			}
+			set_country_flag = eos_anorim_start_nomadic
+		}
+		else = {
+			set_country_flag = eos_anorim_start_settled
+		}
+
+		# The wormhole is no longer created at the start
+		# eos_create_prismatic_refuge_wormhole = yes
 	}
 }
 

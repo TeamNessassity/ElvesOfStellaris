@@ -234,18 +234,14 @@ generate_elven_capital_deposits_and_blockers = {
 		set_carrier_flag = lhuren_ring_planet
 		save_event_target_as = lhuren_ring_planet
 
-		add_modifier = {
-			modifier = "elven_eternal_array_broken_modifier"
-			days = -1
-		}
-
-		eos_lhuren_shield_state = { VALUE = 1 }
+		#eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_broken_modifier }
+		#eos_lhuren_shield_state = { VALUE = 1 }
 
 		solar_system = {
 			spawn_megastructure = {
 				type = elven_lhuren_eternal_array_ruined
-				planet = event_target:lhuren_ring_planet
-				#owner = this.owner
+				planet = event_target:lhuren_lhumar
+				owner = event_target:lhuren_lhumar.owner
 				## NOTE: GFX Culture seems to fail here, will wait for elven_02 to go live
 				graphical_culture = elven_02
 

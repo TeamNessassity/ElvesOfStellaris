@@ -133,13 +133,13 @@ elven_lhuren_planet_boost_desc:0 "A 'moment' is a paradox that lies at the inter
 # Ending Effect Summaries
 elven_lhuren_origin_ending_A_modifier:0 "Path: Anatta"
 elven_lhuren_origin_ending_A_modifier_desc:0 ""
-elven_lhuren_origin_ending_A_modifier_tooltip:0 "§WCompleting Plan: Anatta has brought the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_strategist£ §Y$job_elven_dragon_strategist_plural$§! additionally provide £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!$TABBED_NEW_LINE$- Upon building or upgrading a §YMegastructure§!, accelerate the development of a random planet$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_FOUNDRY$§! produces £alloys£ §Y$alloys$§! and £influence£ §Y$influence$§!$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_FOUNDRY$§!'s output increases with §YAnatta§!\n\n$elven_lhuren_anatta_tooltip$"
+elven_lhuren_origin_ending_A_modifier_tooltip:0 "§WCompleting Plan: Anatta confers the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_strategist£ §Y$job_elven_dragon_strategist_plural$§! additionally provide £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!$TABBED_NEW_LINE$- Upon building or upgrading a §YMegastructure§!, accelerate the development of a random planet$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_FOUNDRY$§! produces £alloys£ §Y$alloys$§! and £influence£ §Y$influence$§!$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_FOUNDRY$§!'s output increases with §YAnatta§!\n\n$elven_lhuren_anatta_tooltip$"
 elven_lhuren_origin_ending_B_modifier:0 "Path: Samsara"
 elven_lhuren_origin_ending_B_modifier_desc:0 ""
-elven_lhuren_origin_ending_B_modifier_tooltip:0 "§WCompleting Plan: Samsara has brought the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_researcher£ §Y$job_elven_dragon_researcher_plural$§! additionally provide £mod_country_all_tech_research_speed£ §Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§!$TABBED_NEW_LINE$- Gain access to the §Y$sm_lhu_array_eternity_shield_amp$§! Orbital Ring Building$TABBED_NEW_LINE$- §Y$sm_lhu_array_eternity_shield_amp$§! reduces §Y$mod_planet_buildings_upkeep_mult$§!, §Y$mod_planet_districts_upkeep_mult$§! and increases station §Y$MOD_SHIP_SHIELD_ADD$§!, scaling with §YSamsara§!\n\n$elven_lhuren_samsara_tooltip$"
+elven_lhuren_origin_ending_B_modifier_tooltip:0 "§WCompleting Plan: Samsara confers the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_researcher£ §Y$job_elven_dragon_researcher_plural$§! additionally provide £mod_country_all_tech_research_speed£ §Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§!$TABBED_NEW_LINE$- Gain access to the §Y$sm_lhu_array_eternity_shield_amp$§! Orbital Ring Building$TABBED_NEW_LINE$- §Y$sm_lhu_array_eternity_shield_amp$§! reduces §Y$mod_planet_buildings_upkeep_mult$§!, §Y$mod_planet_districts_upkeep_mult$§! and increases station §Y$MOD_SHIP_SHIELD_ADD$§!, scaling with §YSamsara§!\n\n$elven_lhuren_samsara_tooltip$"
 elven_lhuren_origin_ending_C_modifier:0 "Path: Parinirvana"
 elven_lhuren_origin_ending_C_modifier_desc:0 ""
-elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana has brought the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_priest£ §Y$job_elven_dragon_priest_plural$§! additionally provide £mod_country_edict_fund_add£ §Y$MOD_COUNTRY_EDICT_FUND_ADD$§!$TABBED_NEW_LINE$- Unlock additional features of the §Y$trait_elven_lhuren_immortality$§! Trait$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_ARRAY$§! produces £energy£ §Y$energy$§! and §YNirvana§!\n\n$elven_lhuren_nirvana_tooltip$"
+elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana confers the following benefits:§!$TABBED_NEW_LINE$- £job_elven_dragon_priest£ §Y$job_elven_dragon_priest_plural$§! additionally provide £mod_country_edict_fund_add£ §Y$MOD_COUNTRY_EDICT_FUND_ADD$§!$TABBED_NEW_LINE$- Unlock additional features of the §Y$trait_elven_lhuren_immortality$§! Trait$TABBED_NEW_LINE$- §Y$NAME_LHU_ETERNAL_ARRAY$§! produces £energy£ §Y$energy$§! and §YNirvana§!\n\n$elven_lhuren_nirvana_tooltip$"
 
 ##############
 ### EVENTS ###
@@ -259,6 +259,8 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  elven_lhuren_eternal_array_requires_immortality_fail:0 "$TRIGGER_FAIL$[lhuren_lhumar.GetName]'s serenity must be protected from defilement"
  elven_lhuren_eternal_array_requires_orbital_pass:0 "$TRIGGER_PASS$[lhuren_lhumar.GetName] has no Orbital Ring"
  elven_lhuren_eternal_array_requires_orbital_fail:0 "$TRIGGER_FAIL$[lhuren_lhumar.GetName] has no Orbital Ring"
+ elven_lhuren_eternal_array_max_anatta_pass:0 "$TRIGGER_PASS$Upgrades Available"
+ elven_lhuren_eternal_array_max_anatta_fail:0 "$TRIGGER_FAIL$Upgrades Available"
 
  elven_lhuren_eternal_array_repurposed:0 "$NAME_LHU_ETERNAL_FOUNDRY$"
  elven_lhuren_eternal_array_repurposed_DESC:0 "The heavenly ring once weaved a protective cocoon with the fabric of fate. Now, it is the loom upon which the threads of fate itself shall be spun."
@@ -276,6 +278,30 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  elven_lhuren_nirvana_tooltip:0 "§YNirvana§! is increased by £pop£ pops protected by §Y$NAME_LHU_ETERNAL_ARRAY$§!$TABBED_NEW_LINE$- Current Nirvana: §Y[EOSNirvanaCounter]§!$TABBED_NEW_LINE$- Monthly Nirvana: §G+1§!"
  elven_lhuren_anatta_tooltip:0 "§YAnatta§! is increased by building and upgrading §YMegastructures§!$TABBED_NEW_LINE$- Current Anatta: §Y[ROOT.EOSAnattaCounter]§!"
  elven_lhuren_samsara_tooltip:0 "§YSamsara§! is increased by researching §YTechnologies§!$TABBED_NEW_LINE$- Current Samsara: §Y[ROOT.EOSSamsaraCounter]§!"
+
+# Event Situations
+ eos_lhuren_situation_anatta:0 "Negentropy: Anatta"
+ eos_lhuren_situation_anatta_desc:0 "$NAME_LHU_ETERNAL_FOUNDRY$ collapses the Imaginary Metaforms we derive from Celestial Equations into stable quanta. Increasing output should have minimal impact on the local frame of reference. Concerns regarding the unobserved sectors of reality remain theoretical."
+ eos_lhuren_situation_anatta_type:0 "$eos_lhuren_situation_anatta$"
+ eos_lhuren_situation_anatta_monthly_change_tooltip:0 "Upgrade §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to increase the resource output. Up to §G100§! upgrades can be performed."
+ eos_lhuren_situation_anatta_approach_advanced:0 "Advanced"
+ eos_lhuren_situation_anatta_approach_advanced_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_alloys$ and $i_consumer_goods$"
+ eos_lhuren_situation_anatta_approach_rare:0 "Rare"
+ eos_lhuren_situation_anatta_approach_rare_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_rare_crystals$, $i_volatile_motes$ and $i_exotic_gases$"
+ eos_lhuren_situation_anatta_approach_exotic:0 "Exotic"
+ eos_lhuren_situation_anatta_approach_exotic_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_living_metal$, $i_dark_matter$ and $i_nanites$"
+ eos_lhuren_situation_anatta_approach_cosmogenesis:0 "§RINTERESTING§!"
+ eos_lhuren_situation_anatta_approach_cosmogenesis_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to calculate £advanced_logic£ $advanced_logic$"
+ eos_lhuren_situation_anatta_stage_1_effects:0 "Nothing Important: §GImplausible§!"
+ eos_lhuren_situation_anatta_stage_2_effects:0 "Nothing Important: §cDubious§!"
+ eos_lhuren_situation_anatta_stage_3_effects:0 "Nothing Important: §CNegligible§!"
+ eos_lhuren_situation_anatta_stage_4_effects:0 "Nothing Important: §EMariginal§!"
+ eos_lhuren_situation_anatta_stage_5_effects:0 "Nothing Important: §LInsignificant§!"
+ eos_lhuren_situation_anatta_stage_6_effects:0 "Nothing Important: §dImprobable§!"
+ eos_lhuren_situation_anatta_stage_7_effects:0 "Nothing Important: §YUnlikely§!"
+ eos_lhuren_situation_anatta_stage_8_effects:0 "Nothing Important: §HQuestionable§!"
+ eos_lhuren_situation_anatta_stage_9_effects:0 "Nothing Important: §SDebatable§!"
+ eos_lhuren_situation_anatta_stage_10_effects:0 "Nothing Important: §RUncertain§!"
 
 # Origin Errors
  elven_lhuren_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"

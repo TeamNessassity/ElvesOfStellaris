@@ -125,6 +125,18 @@ eos_lhuren_shield_clear_ambient_entity = {
 	}
 }
 
+# this = planet
+eos_lhuren_shield_state_modifier = {
+	remove_modifier = elven_eternal_array_modifier
+	remove_modifier = elven_eternal_array_broken_modifier
+	remove_modifier = elven_eternal_array_encased_modifier
+	remove_modifier = elven_eternal_array_repurposed_modifier
+	add_modifier = {
+		modifier = $MODIFIER$
+		days = -1
+	}
+}
+
 # Lhuren: Remove Immortality
 
 # this = planet

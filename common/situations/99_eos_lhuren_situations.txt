@@ -1,0 +1,348 @@
+#################################
+# Celestial Throne - Situations #
+#################################
+
+# Ending A allows to control the output of Eternal Foundry
+eos_lhuren_situation_anatta = {
+	picture = GFX_evt_eos_lhuren_lhumar
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon = GFX_situation_outcome_unknown
+	category = positive
+	initial_progress = 0
+
+	on_start = {
+		set_situation_progress = owner.value:eos_lhu_val_anatta
+	}
+
+	on_progress_complete = {
+	}
+
+	permanent = yes
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			color = white
+			end = 10
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.1
+				storm_attraction_field_modifier = 0.1
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_1_effects"
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_green
+			color = light_blue
+			end = 20
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.2
+				storm_attraction_field_modifier = 0.2
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_2_effects"
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_green
+			color = blue
+			end = 30
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.3
+				storm_attraction_field_modifier = 0.3
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_3_effects"
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_green
+			color = dark_blue
+			end = 40
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.4
+				storm_attraction_field_modifier = 0.4
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_4_effects"
+		}
+		stage_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_green
+			color = purple
+			end = 50
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.5
+				storm_attraction_field_modifier = 0.5
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_5_effects"
+		}
+		stage_6 = {
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_green
+			color = purple
+			end = 60
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.6
+				storm_attraction_field_modifier = 0.6
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_6_effects"
+		}
+		stage_7 = {
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_green
+			color = purple
+			end = 70
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.7
+				storm_attraction_field_modifier = 0.7
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_7_effects"
+		}
+		stage_8 = {
+			icon = GFX_situation_stage_8
+			icon_background = GFX_situation_stage_frame_green
+			color = purple
+			end = 80
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.8
+				storm_attraction_field_modifier = 0.8
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_8_effects"
+		}
+		stage_9 = {
+			icon = GFX_situation_stage_9
+			icon_background = GFX_situation_stage_frame_green
+			color = purple
+			end = 90
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 0.9
+				storm_attraction_field_modifier = 0.9
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_9_effects"
+		}
+		stage_10 = {
+			icon = GFX_situation_stage_10
+			icon_background = GFX_situation_stage_frame_green
+			color = purple
+			end = 100
+			triggered_modifier = {
+				potential = {
+					owner = {
+						has_megastructure = elven_lhuren_eternal_array_repurposed
+					}
+				}
+				megastructure_build_speed_mult = 1.0
+				storm_attraction_field_modifier = 1.0
+			}
+			custom_tooltip = "eos_lhuren_situation_anatta_stage_10_effects"
+		}
+	}
+
+	approach = {
+		name = eos_lhuren_situation_anatta_approach_advanced
+		icon = GFX_situation_approach_alloys
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_anatta_approach_advanced_tooltip
+		}
+		default = yes
+
+		allow = {
+			owner = {
+				has_megastructure = elven_lhuren_eternal_array_repurposed
+			}
+		}
+
+		resources = {
+			category = situations
+			produces = {
+				alloys = 30
+				consumer_goods = 30
+				mult = owner.value:eos_lhu_val_anatta
+			}
+			upkeep = {
+				unity = 10
+				mult = owner.value:eos_lhu_val_anatta
+			}
+		}
+
+		triggered_modifier = {
+			potential = {
+				owner = {
+					has_megastructure = elven_lhuren_eternal_array_repurposed
+				}
+			}
+			shipclass_military_build_speed_mult = 0.01
+			mult = owner.value:eos_lhu_val_anatta
+		}
+	}
+
+	approach = {
+		name = eos_lhuren_situation_anatta_approach_rare
+		icon = GFX_situation_approach_exotic
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_anatta_approach_rare_tooltip
+		}
+
+		allow = {
+			owner = {
+				has_megastructure = elven_lhuren_eternal_array_repurposed
+			}
+		}
+
+		resources = {
+			category = situations
+			produces = {
+				rare_crystals = 3
+				exotic_gases = 3
+				volatile_motes = 3
+				mult = owner.value:eos_lhu_val_anatta
+			}
+			upkeep = {
+				unity = 10
+				mult = owner.value:eos_lhu_val_anatta
+			}
+		}
+
+		triggered_modifier = {
+			potential = {
+				owner = {
+					has_megastructure = elven_lhuren_eternal_array_repurposed
+				}
+			}
+			pop_soldier_bonus_workforce_mult = 0.01
+			mult = owner.value:eos_lhu_val_anatta
+		}
+	}
+
+	approach = {
+		name = eos_lhuren_situation_anatta_approach_exotic
+		icon = GFX_situation_approach_dark_matter
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_anatta_approach_exotic_tooltip
+		}
+
+		allow = {
+			owner = {
+				has_megastructure = elven_lhuren_eternal_array_repurposed
+			}
+		}
+
+		resources = {
+			category = situations
+			produces = {
+				sr_living_metal = 1
+				sr_dark_matter = 1
+				nanites = 1
+				mult = owner.value:eos_lhu_val_anatta
+			}
+			upkeep = {
+				unity = 10
+				mult = owner.value:eos_lhu_val_anatta
+			}
+		}
+
+		triggered_modifier = {
+			potential = {
+				owner = {
+					has_megastructure = elven_lhuren_eternal_array_repurposed
+				}
+			}
+			shipclass_starbase_armor_mult = 0.01
+			shipclass_starbase_armor_hardening_add = 0.01
+			mult = owner.value:eos_lhu_val_anatta
+		}
+	}
+
+	approach = {
+		name = eos_lhuren_situation_anatta_approach_cosmogenesis
+		icon = GFX_situation_approach_radioactive
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_anatta_approach_cosmogenesis_tooltip
+		}
+
+		allow = {
+			owner = {
+				has_ascension_perk = ap_cosmogenesis
+				has_megastructure = elven_lhuren_eternal_array_repurposed
+			}
+		}
+
+		resources = {
+			category = situations
+			produces = {
+				advanced_logic = 1
+				mult = owner.value:eos_lhu_val_anatta
+			}
+			upkeep = {
+				unity = 10
+				mult = owner.value:eos_lhu_val_anatta
+			}
+		}
+
+		triggered_modifier = {
+			potential = {
+				owner = {
+					has_megastructure = elven_lhuren_eternal_array_repurposed
+				}
+			}
+			damage_vs_country_type_fallen_empire_mult = 0.01
+			damage_vs_country_type_awakened_fallen_empire_mult = 0.01
+			mult = owner.value:eos_lhu_val_anatta
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+	}
+
+	on_monthly = {
+	}
+}

@@ -267,27 +267,16 @@ country_event = {
 			modifier = elven_lhuren_origin_ending_A_modifier
 		}
 
-		event_target:lhuren_lhumar = {
-			remove_modifier = elven_eternal_array_broken_modifier
-			add_modifier = {
-				modifier = elven_eternal_array_repurposed_modifier
-				days = -1
+		if = {
+			limit = {
+				NOT = {
+					any_situation = {
+						is_situation_type = eos_lhuren_situation_anatta
+					}
+				}
 			}
-
-			hidden_effect = {
-				eos_lhuren_shield_state = { VALUE = 0 }
-			}
-		}
-
-		# Anyone can use this megastructure, but the builders get a head-start on the scaling effect
-		hidden_effect = {
-			create_variable_if_not_exists = {
-				VARIABLE = eos_lhu_var_mega_count
-				VALUE_IF_CREATED = 0
-			}
-			change_variable = {
-				which = eos_lhu_var_mega_count
-				value = 5
+			start_situation = {
+				type = eos_lhuren_situation_anatta
 			}
 		}
 	}
@@ -482,16 +471,6 @@ country_event = {
 				entity = elven_ocean_2_lhumar
 			}
 			set_carrier_flag = lhuren_capital_encased
-			clear_planet_modifiers = yes
-
-			remove_modifier = elven_eternal_array_broken_modifier
-			add_modifier = {
-				modifier = elven_eternal_array_encased_modifier
-			}
-
-			hidden_effect = {
-				eos_lhuren_shield_state = { VALUE = 3 }
-			}
 		}
 		ruler = {
 			kill_leader = {
@@ -612,45 +591,7 @@ country_event = {
 # Miscellaneous Origin Events #
 ###############################
 
-# Ending A Perk: When building or upgrading Megastructures, give a random planet a boost for a year
-
-country_event = {
-	id = elven_lhuren_origin_events.501
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		# Since it's now tied to a megastructure, which can change hands, the variable should be tracked by all countries just in case
-	}
-
-	immediate = {
-		create_variable_if_not_exists = {
-			VARIABLE = eos_lhu_var_mega_count
-			VALUE_IF_CREATED = 0
-		}
-		change_variable = {
-			which = eos_lhu_var_mega_count
-			value = 1
-		}
-
-		if = {
-			limit = { has_country_flag = elven_lhuren_origin_ending_A }
-			random_owned_planet = {
-				limit = {
-					is_colony = yes
-					NOT = { has_modifier = elven_lhuren_planet_boost }
-				}
-				add_modifier = {
-					modifier = elven_lhuren_planet_boost
-					years = 1
-				}
-			}
-		}
-	}
-}
-
-# Ending B Mechanics: If the Orbital Ring is somehow destroyed/dismantled, break the shield again.
+# Ending B Mechanics: If the Orbital Ring is somehow destroyed/dismantled, break the shield and downgrade the Array so it can be repaired again.
 
 event = {
 	id = elven_lhuren_origin_events.511
@@ -659,29 +600,41 @@ event = {
 	is_triggered_only = yes
 
 	trigger = {
-		exists = event_target:lhuren_lhumar
 		exists = event_target:lhuren_eternal_array
 		event_target:lhuren_eternal_array = {
 			is_megastructure_type = elven_lhuren_eternal_array_restored
+		}
+		exists = event_target:lhuren_lhumar
+		event_target:lhuren_lhumar = {
+			is_colony = yes
 		}
 		NOT = { exists = event_target:lhuren_eternal_array_starbase }
 	}
 
 	immediate = {
 		event_target:lhuren_lhumar = {
-			remove_modifier = elven_eternal_array_modifier
-			add_modifier = {
-				modifier = elven_eternal_array_broken_modifier
-				days = -1
-			}
-
-			eos_lhuren_shield_state = { VALUE = 1 }
+			#eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_broken_modifier }
+			#eos_lhuren_shield_state = { VALUE = 1 }
 
 			solar_system = {
+				event_target:lhuren_lhumar = {
+					if = {
+						limit = {
+							has_megastructure = orbital_ring_ruined
+						}
+						random_megastructure = {
+							limit = {
+								is_megastructure_type = orbital_ring_ruined
+							}
+							delete_megastructure = this
+						}
+					}
+				}
 				delete_megastructure = event_target:lhuren_eternal_array
 				spawn_megastructure = {
 					type = elven_lhuren_eternal_array_ruined
 					planet = event_target:lhuren_lhumar
+					owner = event_target:lhuren_lhumar.owner
 					graphical_culture = elven_02
 
 					init_effect = {
