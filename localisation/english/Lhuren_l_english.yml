@@ -71,6 +71,13 @@ civic_elven_celestial_grace:0 "Celestial Grace"
 civic_elven_celestial_grace_desc:0 "In this society, the concept of filial piety is held in the highest regard. Service to family, clan and homeland is inextricable from individual identity. Those who shame themselves bring disfavor upon their kin, and those who achieve greatness are expected to repay all who have guided them along the way."
 civic_tooltip_celestial_grace_effects:0 "['concept_council'] members create §YCelestial Offices§! on their §YHome Planets§!, whose §YJob Efficiency§! scales with the host's effective §YSkill Level§!:$TABBED_NEW_LINE$- ['concept_commanders'] provide ['concept_eos_elven_dragon_strategists']$TABBED_NEW_LINE$- ['concept_scientists'] provide ['concept_eos_elven_dragon_researchers']$TABBED_NEW_LINE$- ['concept_officials'] provide ['concept_eos_elven_dragon_priests']$TABBED_NEW_LINE$- ['concept_council'] members from foreign worlds provide ['concept_envoys'] and ['concept_diplomatic_weight'] instead$TABBED_NEW_LINE$- ['concept_council'] members without a valid §YHome Planet§! cause §R-10%§! ['concept_stability']$TABBED_NEW_LINE$- Unsuitable Rulers may choose to §YAbdicate§! via the §Y$edict_eos_lhu_edict_celestial_mandate$§! Edict$TABBED_NEW_LINE$- §YPlanetary Capital§! and ['concept_planetary_ascension'] Tiers dramatically increase the resource output of §YCelestial Offices§!\n"
 
+########################
+###      COUNCIL      ##
+########################
+
+elven_councilor_celestial_grace:0 "Commandant of Heavenly Affairs"
+elven_councilor_celestial_grace_desc:0 "The duty of the Commandant of Heavenly Affairs is to appoint, reward and discipline high officials according to their merits and missteps."
+
 ####################################
 # Nations 
 ####################################
@@ -443,10 +450,3 @@ cb_elven_celestial_tribute:0 "Heavenly Authority"
 casus_belli_cb_elven_celestial_tribute:0 "Heavenly Authority"
 elven_celestial_tribute_favor_fail:0 "£trigger_no£ We must have 5 §YCelestial Favor§!"
 elven_celestial_tribute_favor:0 "£trigger_yes£ We must have 5 §YCelestial Favor§!"
-
-########################
-###      COUNCIL      ##
-########################
-
-elven_councilor_celestial_grace:0 "Commandant of Heavenly Affairs"
-elven_councilor_celestial_grace_desc:0 "The duty of the Commandant of Heavenly Affairs is to appoint, reward and discipline high officials according to their merits and missteps."

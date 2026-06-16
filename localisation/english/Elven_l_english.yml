@@ -147,6 +147,13 @@ civic_elven_tooltip_not_materialistic:0 "Is not §YMaterialistic§!"
 
 agenda_elven_isolationism:0 "Focus Inward"
 
+########################
+###      COUNCIL      ##
+########################
+
+elven_councilor_arcane_minded:0 "Archmagister"
+elven_councilor_arcane_minded_desc:0 "The Archmagister is resposible for the research of everything that is arcane and bridging the differences between scientific and religious circles."
+
 ####################################
 # Policies 
 ####################################
@@ -449,16 +456,3 @@ mod_country_base_society_research_produces_add:0 "£society£ Monthly Society Re
 mod_country_base_engineering_research_produces_add:0 "£engineering£ Monthly Engineering Research"
 
 mod_planet_building_planetary_shield_generator_build_speed_mult:0 "Planetary Shield Generator Build Speed"
-
-########################
-###      COUNCIL      ##
-########################
-
-elven_councilor_arcane_minded:0 "Archmagister"
-elven_councilor_arcane_minded_desc:0 "The Archmagister is resposible for the research of everything that is arcane and bridging the differences between scientific and religious circles."
-
-elven_councilor_eilistraee:0 "Secretary General"
-elven_councilor_eilistraee_desc:0 "The Secretary General chairs the meetings of the peacekeeping council and acts as the state spokesperson."
-
-elven_councilor_drow_warriors:0 "Spymaster"
-elven_councilor_drow_warriors_desc:0 "The Spymaster is in charge of both foreign and domestic espionage networks."

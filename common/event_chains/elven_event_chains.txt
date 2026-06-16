@@ -15,9 +15,3 @@ elven_anorim_prismatic_refuge_chain = {
 	picture = GFX_evt_cosmic_storms_particle_storm
 	situation_log_category = empire_concerns
 }
-
-elven_anorim_evergloom_chain = {
-	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
-	picture = GFX_evt_cosmic_storms_nexus_storm
-	situation_log_category = empire_concerns
-}

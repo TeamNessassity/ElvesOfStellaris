@@ -44,7 +44,7 @@ country_event = {
 	id = elven_anorim_origin_events.101
 	title = "elven_anorim_origin_events.101.name"
 	desc = "elven_anorim_origin_events.101.desc"
-	picture = GFX_evt_eos_lhuren_lhumar
+	picture = GFX_evt_cosmic_storms_particle_storm
 	show_sound = event_mystic_reveal
 
 	is_triggered_only = yes
@@ -79,7 +79,7 @@ country_event = {
 	id = elven_anorim_origin_events.201
 	title = "elven_anorim_origin_events.201.name"
 	desc = "elven_anorim_origin_events.201.desc"
-	picture = GFX_evt_eos_lhuren_lhumar
+	picture = GFX_evt_cosmic_storms_nexus_storm
 	show_sound = event_mystic_reveal
 
 	is_triggered_only = yes
