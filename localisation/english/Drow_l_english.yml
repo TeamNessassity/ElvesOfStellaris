@@ -14,8 +14,6 @@ name_list_DROW3:0 "Dark Elf: Drow"
 ####################################
 drow_system_tulshar_initializer_NAME:0 "Subterranean Beginnings"
 drow_system_tulshar_initializer_DESC:0 "§LYour people began in vast subterranean cities. Now it's time to claim the stars.§!\n\n$system_initializer_DESC$"
-drow_system_eilistraee_initializer_NAME:0 "Prismatic Provenance"
-drow_system_eilistraee_initializer_DESC:0 "§LYour people live under the colorful skies of a prismatic star and its black hole companion.§!\n\n$system_initializer_DESC$"
 
 ####################################
 # Origins 
@@ -24,10 +22,6 @@ drow_system_eilistraee_initializer_DESC:0 "§LYour people live under the colorfu
 origin_drow_subterranean_inception:0 "Subterranean Inception"
 origin_drow_subterranean_inception_desc:0 "For millennia your civilization existed in the vast caverns of your homeworld. Eventually breaching the surface your people are now ready to break through another barrier: space itself."
 origin_tooltip_drow_subterranean_inception_effects:0 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_storm']$TABBED_NEW_LINE$- Contains ['concept_valshaquellar']\n$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_speleoterrestrial']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_speleostructural_instability']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_murrpau_sanguine']\n- $SPECIES_TRAITS$$TABBED_NEW_LINE$- ['concept_drow_speleoterrestrial_preference']"
-
-origin_drow_prismatic_refuge:0 "Prismatic Refuge"
-origin_drow_prismatic_refuge_desc:0 "Fleeing your home system due to persecution, your primitive colony vessel miraculously happened upon a paradise world. Having now mastered this world your civilization turns its attention to the stars once again."
-origin_tooltip_drow_prismatic_refuge_effects:0 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']$TABBED_NEW_LINE$- Contains a ['concept_eos_dangerous_wormhole']\n$HOMEWORLD$$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_feral_fairies']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_cheel_krezust']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_wormhole_stabilization', £physics_research£ $tech_wormhole_stabilization$]"
 
 ########################
 ### PLANET MODIFIERS ###
@@ -134,16 +128,10 @@ trait_drow_portrait_override_tt: "Requires dark elven species"
 # Immortality Traits
 trait_drow_moravar_immortality:0 "Deathless"
 trait_drow_moravar_immortality_desc:0 "Like beautiful and terrible butterflies, they emerge from their pupa upon gossamer wings. No longer fettered to the underworld, yet ready to act as its guides."
-trait_drow_anorim_immortality:0 "Everliving"
-trait_drow_anorim_immortality_desc:0 "Into the stars, they fled in fear, and therein found death. But among the stars, they lived in love, and therein death could not reach."
 
 ####################################
 # Civics 
 ####################################
-
-civic_drow_eilistraee:0 "Peacekeepers"
-civic_drow_eilistraee_desc:0 "Peace and order via persuasion is the goal. If that fails however, force is to be applied for the good of all. Unrestrained chaos must not be allowed to exist."
-civic_drow_eilistraee_tooltip_effects:0 ""
 civic_drow_warriors:0 "Tekartas"
 civic_drow_warriors_desc:0 "A philosophy that encourages success through the dual methods of strength and subterfuge. Where one fails, the other is employed. Leaders plot against each other constantly resulting in learning fast or dying. Society is divided into a class system not based on heredity, but rather psionic ability. The psionic meritocracy controls every major endeavor from public to private and is in a state of constant succession battle."
 civic_drow_arcane:0 "Faer Talthalra"
@@ -155,15 +143,19 @@ civic_tooltip_drow_warriors_effects:0 "Leaders and rulers are prone to §Yaccide
 # New restriction text not in vanilla
 civic_drow_tooltip_not_materialistic:0 "Is not §YMaterialistic§!"
 
+########################
+###      COUNCIL      ##
+########################
+
+elven_councilor_drow_warriors:0 "Spymaster"
+elven_councilor_drow_warriors_desc:0 "The Spymaster is in charge of both foreign and domestic espionage networks."
+
 ####################################
 # Diplomacy
 ####################################
 
 personality_tulshar_personality:0 "Moravari Valsharen"
 personality_tulshar_personality_desc:0 "Valsharen believe all alien life forms are only fit for subjugation. They are highly aggressive, expansionist, and will think nothing of eradicating anything in their path."
-
-personality_eilistraeean_personality:0 "Orthae d'Aronen"
-personality_eilistraeean_personality_desc:0 "Orthae d'Aronen, Holy Knights in Drowish, believe it is their sacred duty to bring order to the galaxy. Peacefully if possible but by force if necessary. They are known for being extremely loyal once friendship is established."
 
 gov_drow_matriarchal_council:0 "Matriarchal Council"
 gov_drow_matriarchal_council_desc:0 "This government is a spiritualistic form of oligarchy, where the absolute leadership lies in the hands of female leaders of various Houses. Ruthless competition for political influence between Houses and succession battles are encouraged, but open murder is outlawed."
@@ -219,20 +211,6 @@ drow_primitive_army:0 "Myrlochar d'Aron"
 ####################################
 # Nations 
 ####################################
-EMPIRE_DESIGN_drow_civ1:0 "Children of Anoriel"
-EMPIRE_DESIGN_drow_civ1_desc:0 "Tales say the Anorim left their original home to flee a "great evil". Guided by their Goddess Anoriel or just by sheer luck, their primitive vessel survived the traversal of a wormhole. On the other side they found a paradise world where they have remained content for many millennia.\n\nRecently their curiosity has been stirred and they are once again looking to the stars. This time to spread a message of peace and hope. By force if necessary.§!\n"
-ELVEN_drow1_empire_adjective: "Anorim"
-ELVEN_drow1_species_name: "Anorim"
-ELVEN_drow1_species_plural: "Anorim"
-ELVEN_drow1_species_adjective: "Anoran"
-ELVEN_drow1_ruler_title: "M'thallar"
-ELVEN_drow1_ruler_title_female: "Ulathtallar"
-ELVEN_drow1_heir_title: "M'thain"
-ELVEN_drow1_heir_title_female: "Yatharil"
-ELVEN_drow1_ruler_name: "Aundae Arwel"
-ELVEN_drow1_homeworld_name: "Sokoya"
-ELVEN_drow1_arkship_name: "Che'el K'rezust"
-ELVEN_drow1_home_system_name: "Anoriel"
 
 EMPIRE_DESIGN_drow_tulshar_civ:0 "Moravari Tulshar"
 EMPIRE_DESIGN_drow_tulshar_civ_desc:0 "Moravari history can be divided into two epochs: pre and post surfacing. For millennia, they dwelt underneath the surface of their world. They created vast underground cities and then promptly fought over them. Then one day, a tunneler broke into a new world: the Above. The shock of this discovery rocked every Moravari civilization to its core. Capitalizing on the social unrest following the discovery, one warlord managed to unite the entire underground in a single purpose: conquering the Above.\n\nLittle did they know how much Above there was to conquer. Having now tamed the surface of their world, they now look to tame everything else that lies beyond.§!\n"
@@ -360,7 +338,7 @@ d_drow_industrial_sector_desc:0 "This entire region once served as the industria
 d_drow_relic_dense_ruins:0 "Dense Ruins"
 d_drow_relic_dense_ruins_desc:0 "The study of the dense ruins that cover this world are a boon to science, but their presence also limits the amount of livable space."
 
-## EILISTRAEEN ##
+## GENERIC ##
 
 d_drow_planetary_feral_fairies:0 "Omophagous Faeries"
 d_drow_planetary_feral_fairies_desc:0 "A race of diminutive sentient creatures that fly in groups. It is known they possess language and rudimentary forms of technology. Any information beyond that tends to be hampered by the fact that they swarm and devour anyone foolish enough to attempt contact. In small numbers they frequently steal food and anything else they can manage to carry. They rarely outright attack settlements though there have been cases of swarms wiping out entire dwellings in the past.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
@@ -376,9 +354,6 @@ d_drow_planetary_glowing_forests_desc:0 "Forests with a high degree of plantlife
 
 d_drow_planetary_glowing_forests_blocker:0 "£blocker£ Bioluminescent Forests"
 d_drow_planetary_glowing_forests_blocker_desc:0 "$d_drow_planetary_glowing_forests_desc$"
-
-d_drow_planetary_cheel_krezust:0 "Che'el K'rezust"
-d_drow_planetary_cheel_krezust_desc:0 "The ancient site where the ark ship carrying our people to safety first landed and the our first city. Having been constantly expanded over the eons it is now a sprawling mega-city and is considered to be the capital of both the planet and of our culture.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
 
 d_drow_planetary_glowing_oceans:0 "Phosphorescent Oceans"
 d_drow_planetary_glowing_oceans_desc:0 "The plankton in the oceans give off slight electromagnetic radiation at night resulting in a pleasant glow."

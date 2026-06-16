@@ -8,6 +8,8 @@ eos_lhuren_situation_anatta = {
 	complete_icon_frame = GFX_situation_outcome_frame_blue
 	complete_icon = GFX_situation_outcome_unknown
 	category = positive
+	situation_log_category = empire_concerns
+	
 	initial_progress = 0
 
 	on_start = {

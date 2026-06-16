@@ -1,0 +1,117 @@
+﻿l_english:
+
+####################################
+# System Initializers
+####################################
+
+drow_system_eilistraee_initializer_NAME:0 "Prismatic Provenance"
+drow_system_eilistraee_initializer_DESC:0 "§LYour people live under the colorful skies of a prismatic star and its black hole companion.§!\n\n$system_initializer_DESC$"
+
+####################################
+# Traits
+####################################
+
+# Anorim immortality trait
+trait_drow_anorim_immortality:0 "Evergleam"
+trait_drow_anorim_immortality_desc:0 "Into the stars, they fled in fear, and therein found death. But among the stars, they lived in love, and therein death could not reach."
+
+####################################
+# Origins 
+####################################
+
+origin_drow_prismatic_refuge:0 "Prismatic Refuge"
+origin_drow_prismatic_refuge_desc:0 "Fleeing your home system due to persecution, your primitive colony vessel miraculously happened upon a paradise world. Having now mastered this world your civilization turns its attention to the stars once again."
+origin_tooltip_drow_prismatic_refuge_effects:0 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']$TABBED_NEW_LINE$- Contains a ['concept_eos_dangerous_wormhole']\n$HOMEWORLD$$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_feral_fairies']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_cheel_krezust']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_wormhole_stabilization', £physics_research£ $tech_wormhole_stabilization$]"
+
+ origin_tooltip_drow_prismatic_refuge_settled_effects:0 "REPLACE_ME"
+ origin_tooltip_drow_prismatic_refuge_nomadic_effects:0 "REPLACE_ME"
+
+####################################
+# CIVICS
+####################################
+
+civic_drow_eilistraee:0 "Peacekeepers"
+civic_drow_eilistraee_desc:0 "Peace and order via persuasion is the goal. If that fails however, force is to be applied for the good of all. Unrestrained chaos must not be allowed to exist."
+civic_drow_eilistraee_tooltip_effects:0 ""
+
+########################
+###      COUNCIL      ##
+########################
+
+elven_councilor_eilistraee:0 "Secretary General"
+elven_councilor_eilistraee_desc:0 "The Secretary General chairs the meetings of the peacekeeping council and acts as the state spokesperson."
+
+####################################
+# Diplomacy
+####################################
+
+personality_eilistraeean_personality:0 "Orthae d'Aronen"
+personality_eilistraeean_personality_desc:0 "Orthae d'Aronen, Holy Knights in Drowish, believe it is their sacred duty to bring order to the galaxy. Peacefully if possible but by force if necessary. They are known for being extremely loyal once friendship is established."
+
+
+####################################
+# Nations 
+####################################
+
+EMPIRE_DESIGN_drow_civ1:0 "Children of Anoriel"
+EMPIRE_DESIGN_drow_civ1_desc:0 "Tales say the Anorim left their original home to flee a "great evil". Guided by their Goddess Anoriel or just by sheer luck, their primitive vessel survived the traversal of a wormhole. On the other side they found a paradise world where they have remained content for many millennia.\n\nRecently their curiosity has been stirred and they are once again looking to the stars. This time to spread a message of peace and hope. By force if necessary.§!\n"
+ELVEN_drow1_empire_adjective: "Anorim"
+ELVEN_drow1_species_name: "Anorim"
+ELVEN_drow1_species_plural: "Anorim"
+ELVEN_drow1_species_adjective: "Anoran"
+ELVEN_drow1_ruler_title: "M'thallar"
+ELVEN_drow1_ruler_title_female: "Ulathtallar"
+ELVEN_drow1_heir_title: "M'thain"
+ELVEN_drow1_heir_title_female: "Yatharil"
+ELVEN_drow1_ruler_name: "Aundae Arwel"
+ELVEN_drow1_homeworld_name: "Sokoya"
+ELVEN_drow1_arkship_name: "Che'el K'rezust"
+ELVEN_drow1_home_system_name: "Anoriel"
+
+##############
+### EVENTS ###
+##############
+
+START_SCREEN_PRISMATIC_REFUGE:0 ""
+START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 ""
+
+# Event Chain
+ elven_anorim_prismatic_refuge_chain_title:0 "Through the Shattered Glass"
+ elven_anorim_prismatic_refuge_chain_desc:0 "REPLACE_ME"
+
+ elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Reflection"
+ elven_anorim_origin_events.101.desc:0 "Not all who embark on a journey are fated to greet its final harbor./n/nSentients across the universe seek, and often find, profound meaning in such musings on mortality."
+ elven_anorim_origin_events.101.a:0 "REPLACE_ME"
+ elven_anorim_origin_events.101.b:0 "REPLACE_ME"
+
+ elven_anorim_origin_events.201.name:0 "Through the Shattered Glass: Refraction"
+ elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
+ elven_anorim_origin_events.201.a:0 "REPLACE_ME"
+
+# Event Systems
+ eos_nebula_evergloom:0 "REPLACE_ME"
+
+# Error Messages
+
+ elven_anorim_origin_events.0001.name:0 "REPLACE_ME"
+ elven_anorim_origin_events.0001.desc:0 "REPLACE_ME"
+ elven_anorim_origin_events.0001.a:0 "REPLACE_ME"
+
+# Shroud
+ eos_anoriel: "Coronal Daughter"
+ eos_anoriel_alias: "Anoriel"
+ eos_anoriel_article: "the $eos_anoriel$"
+ eos_anoriel_article_cap: "The $eos_anoriel$"
+ eos_anoriel_color: "§L$eos_anoriel$§!"
+ eos_anoriel_color_article: "the §H$eos_anoriel$§!"
+ eos_anoriel_color_article_cap: "The §H$eos_anoriel$§!"
+ eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
+ code_name_eos_anoriel: "Sorrowed Entity"
+ eos_anoriel_accord_tt: "$accord_minor_patron_tt$ §G+999999%§! Something Stuff"
+
+#######################
+### PLANET FEATURES ###
+#######################
+
+d_drow_planetary_cheel_krezust:0 "Che'el K'rezust"
+d_drow_planetary_cheel_krezust_desc:0 "The ancient site where the ark ship carrying our people to safety first landed and the our first city. Having been constantly expanded over the eons it is now a sprawling mega-city and is considered to be the capital of both the planet and of our culture.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
