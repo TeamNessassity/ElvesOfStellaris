@@ -38,7 +38,7 @@ origin_tooltip_elven_foundations_effects:3 "- Custom Star Cluster\n- $HOME_SYSTE
 
 origin_elven_arcadian_symbiosis:0 "Arcadian Symbiosis"
 origin_elven_arcadian_symbiosis_desc:0 "Your civilization arose as a grouping of sparsely populated natural habitats coexisting with sentient plantlife."
-origin_tooltip_elven_arcadian_symbiosis_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_eos_pc_continental']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_elven_natural_beauty_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_oceans']$TABBED_NEW_LINE$$t$- ['concept_elven_healing_spring']\n- ['concept_guaranteed_colonies']: §RNot of your preferable type!§!\n- §Y8§! £pop£ Pops are ['concept_eos_treants']\n- ['concept_concept_phytovitalization_mod'] modifier on planets inhabited by ['concept_eos_treants']"
+origin_tooltip_elven_arcadian_symbiosis_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_eos_pc_continental']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_elven_natural_beauty_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_oceans']$TABBED_NEW_LINE$$t$- ['concept_elven_healing_spring']\n- ['concept_guaranteed_colonies']: §RNot of your preferable type!§!\n- §Y8§! £pop£ Pops are ['concept_eos_treants']\n- ['concept_concept_phytovitalization_mod'] modifier on planets inhabited by ['concept_eos_treants']"
 
 ####################################
 # Species Classes
@@ -377,6 +377,9 @@ d_elven_planetary_aerostat_plantations_desc:0 "A great Sidh farmer, who's name h
 
 d_elven_healing_spring:0 "Spring of Fertility"
 d_elven_healing_spring_desc:0 "Existing well before written history, this wellspring has been proven to provide a boost to fertility with a small sip. It is now customary for couples the world over to make a ritual pilgrimage to taste the waters."
+
+d_elven_planetary_glowing_forests:0 "$d_drow_planetary_glowing_forests$"
+d_elven_planetary_glowing_forests_desc:0 "$d_drow_planetary_glowing_forests_desc$"
 
 # ARCHEOLOGY RELATED #
 

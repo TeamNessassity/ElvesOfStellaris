@@ -6,7 +6,9 @@ gov_drow_matriarchal_council = {
 
 	possible = {
 		has_authority = auth_oligarchic
-		has_civic = civic_drow_warriors
+		has_valid_civic = civic_shadow_council
+		has_valid_civic = civic_cutthroat_politics
+		is_species_class = DROW
 	}
 
 	weight = {

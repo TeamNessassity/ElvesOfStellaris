@@ -50,6 +50,12 @@ generate_elven_capital_deposits_and_blockers = {
 		generate_start_buildings_and_districts = yes
 		generate_start_pops = yes
 		generate_home_planet_final_pass = yes
+
+		remove_district = district_farming
+		add_building = {
+			district = district_city
+			building = building_hydroponics_farm
+		}
 	}
 	#############
 	## TULSHAR ##
@@ -87,6 +93,30 @@ generate_elven_capital_deposits_and_blockers = {
 		generate_start_pops = yes
 		generate_home_planet_final_pass = yes
 
+		# A very dirty hack that enables us to build the zone_subterranean_urban.
+		# For some reason add_zone checks the "potential"/"unlock" conditions of the zone.
+		# The condition is hardcoded check for origin = "origin_subterranean"
+		# Hotswapping the origin for a moment reforms the government in the background, 
+		# but otherwise doesn't seem to break anything.
+		owner = {
+			if = {
+				limit = {
+					has_origin = origin_drow_subterranean_inception
+				}
+
+				set_origin = origin_subterranean
+
+				PREV = {
+					add_zone = {
+						district = district_mining
+						zone = zone_subterranean_urban
+					}
+				}
+
+				set_origin = origin_drow_subterranean_inception
+			}
+		}
+
 		event_target:drow_valshaquellar = {
 			begin_event_chain = {
 				event_chain = "elven_valshaquellar_chain"
@@ -117,7 +147,7 @@ generate_elven_capital_deposits_and_blockers = {
 		add_deposit = d_elven_start_ruins
 
 		# UNIQUE FEATURES
-		add_deposit = d_drow_planetary_glowing_forests
+		add_deposit = d_elven_planetary_glowing_forests
 		add_deposit = d_drow_planetary_glowing_oceans
 		add_deposit = d_elven_healing_spring
 

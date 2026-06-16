@@ -98,6 +98,10 @@ concept_elven_natural_beauty_mod = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
 }
 
+concept_elven_planetary_glowing_forests = {
+	icon = "gfx/interface/icons/deposits/d_drow_planetary_glowing_forests.dds"
+}
+
 concept_drow_planetary_glowing_oceans = {
 	icon = "gfx/interface/icons/deposits/d_drow_planetary_glowing_oceans.dds"
 }

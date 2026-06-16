@@ -26,6 +26,8 @@ d_elven_planetary_elenyas_gate = {
 		job_engineer_add = @building_static_jobs_3
 	}
 
+	potential = { always = no }
+
 	drop_weight = {
 		weight = 0
 	}
@@ -49,6 +51,7 @@ d_elven_planetary_tir_aranad = {
 		planet_max_districts_add = -1
 		planet_housing_add = 1000
 		planet_amenities_add = 1000
+		pop_cat_ruler_bonus_workforce_mult = 0.20
 	}
 
 	triggered_planet_modifier = {
@@ -64,49 +67,7 @@ d_elven_planetary_tir_aranad = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				has_valid_civic = civic_aristocratic_elite
-			}
-		}
-		modifier = {
-			job_noble_add = @building_static_jobs_low
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_megacorp = yes
-			}
-		}
-		modifier = {
-			job_executive_add = @building_static_jobs_low
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				is_gestalt = no
-				NOT = {
-					has_valid_civic = civic_aristocratic_elite
-				}
-				is_megacorp = no
-			}
-		}
-		modifier = {
-			job_politician_add = @building_static_jobs_low
-		}
-	}
-
-	potential = {
-	
-	}
+	potential = { always = no }
 	
 	drop_weight = {
 		weight = 0
@@ -128,7 +89,7 @@ d_elven_planetary_frensca_tol_blocker = {
 		}
 	}
 
-	potential = { }
+	potential = { always = no }
 	
 	on_cleared = {
 		add_deposit = d_elven_planetary_frensca_tol
@@ -152,9 +113,7 @@ d_elven_planetary_frensca_tol = {
 		job_engineer_add = @building_static_jobs_3
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -202,9 +161,7 @@ d_elven_planetary_sentient_dragons = {
 		}
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -245,9 +202,7 @@ d_elven_planetary_gardens_of_heaven = {
 		}
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -309,9 +264,7 @@ d_elven_planetary_forbidden_arcology = {
 		}
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -342,9 +295,7 @@ d_elven_planetary_light_of_altanis = {
 		}
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 	
 	drop_weight = {
 		weight = 0
@@ -387,9 +338,7 @@ d_elven_planetary_daerlas_mina = {
 		}
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 	
 	drop_weight = {
 		weight = 0
@@ -406,9 +355,7 @@ d_elven_planetary_aerostat_plantations = {
 		district_farming_max_add = 3
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -425,9 +372,26 @@ d_elven_healing_spring = {
 		biological_logistic_growth_mult = 0.05
 	}
 
-	potential = {
-	
+	potential = { always = no }
+
+	drop_weight = {
+		weight = 0
 	}
+}
+
+d_elven_planetary_glowing_forests = {
+	is_for_colonizable = yes
+	icon = d_drow_planetary_glowing_forests
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_farmers_consumer_goods_produces_add = 0.15
+		planet_farmers_trade_produces_add = 0.10
+		planet_farmers_food_produces_add = -0.25
+	}
+
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0

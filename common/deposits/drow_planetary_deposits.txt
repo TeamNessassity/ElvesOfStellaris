@@ -43,6 +43,8 @@ d_drow_planetary_cheel_xsaus = {
 		## Also clueless here for the moment.
 	}
 
+	potential = { always = no }
+
 	drop_weight = {
 		weight = 0
 	}
@@ -58,6 +60,8 @@ d_drow_planetary_murrpau_sanguine = {
 		biological_logistic_growth_mult = -0.1
 		planet_jobs_society_research_produces_mult = 0.2
 	}
+
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -83,6 +87,8 @@ d_drow_planetary_zhevalshath_blocker = {
 	on_cleared = {
 		add_deposit = d_drow_planetary_zhevalshath
 	}
+
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -168,6 +174,8 @@ d_drow_planetary_zhevalshath = {
 			job_soldier_add = @building_static_jobs_low
 		} 
 	}
+
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -404,9 +412,7 @@ d_drow_planetary_feral_fairies = {
 		planet_farmers_food_produces_add = -0.25
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -424,9 +430,7 @@ d_drow_planetary_glowing_forests = {
 		planet_miners_minerals_produces_add = -0.25
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -444,6 +448,8 @@ d_drow_planetary_glowing_oceans = {
 		planet_technician_energy_produces_add = -0.25
 	}
 
+	potential = { always = no }
+
 	drop_weight = {
 		weight = 0
 	}
@@ -460,9 +466,7 @@ d_drow_planetary_cheel_krezust = {
 		planet_max_districts_add = -1
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 	
 	drop_weight = {
 		weight = 0
@@ -486,9 +490,7 @@ d_drow_planetary_cp_klepto_fairies = {
 		planet_traders_consumer_goods_upkeep_mult = 0.1
 	}
 
-	potential = {
-	
-	}
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
@@ -520,7 +522,7 @@ d_drow_planetary_cheel_phalar_blocker = {
 		}
 	}
 
-	potential = { }
+	potential = { always = no }
 
 	on_cleared = {
 		add_deposit = d_drow_planetary_cheel_phalar_cursed
@@ -542,6 +544,8 @@ d_drow_planetary_cheel_phalar_cursed = {
 		pop_citizen_happiness = -0.10
 		planet_stability_add = -20
 	}
+
+	potential = { always = no }
 
 	drop_weight = {
 		weight = 0
