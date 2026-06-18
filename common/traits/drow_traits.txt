@@ -48,7 +48,7 @@ trait_drow = {
 	opposites = { "trait_enduring" "trait_venerable" "trait_fleeting" "trait_elven_true" }
 
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }
 
@@ -78,7 +78,7 @@ trait_drow_xenocidal = {
 	allowed_archetypes = { BIOLOGICAL }
 
 	slave_cost = {
-		energy = -1000
+		trade = -1000
 	}
 }
 
@@ -116,7 +116,7 @@ trait_drow_savage = {
 	allowed_archetypes = { BIOLOGICAL }
 
 	slave_cost = {
-		energy = 1500
+		trade = 1500
 	}
 }
 
@@ -149,7 +149,7 @@ trait_drow_paragon = {
 	allowed_archetypes = { BIOLOGICAL }
 
 	slave_cost = {
-		energy = 2500
+		trade = 2500
 	}
 }
 
@@ -205,7 +205,7 @@ trait_drow_moravar_immortality = {
 	allowed_archetypes = { BIOLOGICAL }
 
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }
 
@@ -238,6 +238,6 @@ trait_drow_anorim_immortality = {
 	allowed_archetypes = { BIOLOGICAL }
 
 	slave_cost = {
-		energy = 500
+		trade = 500
 	}
 }

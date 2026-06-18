@@ -207,7 +207,7 @@ eos_lhuren_situation_anatta = {
 				mult = owner.value:eos_lhu_val_anatta
 			}
 			upkeep = {
-				unity = 10
+				unity = 15
 				mult = owner.value:eos_lhu_val_anatta
 			}
 		}
@@ -246,7 +246,7 @@ eos_lhuren_situation_anatta = {
 				mult = owner.value:eos_lhu_val_anatta
 			}
 			upkeep = {
-				unity = 10
+				unity = 15
 				mult = owner.value:eos_lhu_val_anatta
 			}
 		}
@@ -285,7 +285,7 @@ eos_lhuren_situation_anatta = {
 				mult = owner.value:eos_lhu_val_anatta
 			}
 			upkeep = {
-				unity = 10
+				unity = 15
 				mult = owner.value:eos_lhu_val_anatta
 			}
 		}
@@ -324,7 +324,7 @@ eos_lhuren_situation_anatta = {
 				mult = owner.value:eos_lhu_val_anatta
 			}
 			upkeep = {
-				unity = 10
+				unity = 15
 				mult = owner.value:eos_lhu_val_anatta
 			}
 		}
