@@ -177,14 +177,14 @@ elven_lhuren_eternal_array_repurposed = {
 	on_build_complete = {
 		fromfrom = { save_global_event_target_as = lhuren_eternal_array }
 
-		create_influence_field_if_needed = yes
-
 		random_system_planet = {
 			limit = { has_carrier_flag = lhuren_capital }
 			set_carrier_flag = has_megastructure
 			
 			eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_repurposed_modifier }
 			eos_lhuren_shield_state = { VALUE = 0 }
+
+			create_influence_field_if_needed = yes
 		}
 
 		from = {
