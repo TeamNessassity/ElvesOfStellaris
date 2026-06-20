@@ -92,7 +92,6 @@ lhuren_female_hair_01 = {
 	## POP SCOPE ##
 	###############
 	pop = { #for a specific pop
-	
 		default = "gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
 		
 		###############################################################
@@ -101,151 +100,150 @@ lhuren_female_hair_01 = {
 		random = {
 			trigger = { always = no }
 			list = {
-					
-					## LHUREN STYLE ##
-					
-					## GOLD HAIR ##
-					
-					# COMMON STYLE 1 - Happy Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_blond.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_blue.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_brown.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_grey.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_pink.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_purple.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_red.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_verde.dds"
+				## LHUREN STYLE ##
+				
+				## GOLD HAIR ##
+				
+				# COMMON STYLE 1 - Happy Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_blond.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_blue.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_red.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_verde.dds"
 
-					# COMMON STYLE 2 - Serious Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_black.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_blond.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_blue.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_brown.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_grey.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_pink.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_purple.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_red.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_verde.dds"
-					
-					# COMMON STYLE 3 - Whipped Cream Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_black.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_blond.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_blue.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_brown.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_grey.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_pink.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_purple.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_red.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_verde.dds"
+				# COMMON STYLE 2 - Serious Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_blond.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_blue.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_red.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_verde.dds"
+				
+				# COMMON STYLE 3 - Whipped Cream Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_blond.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_blue.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_red.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_verde.dds"
 
-					## SILVER HAIR ##
-					
-					# COMMON STYLE 1S - Happy Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_black.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_blond.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_brown.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_grey.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_pink.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_purple.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_red.dds"
+				## SILVER HAIR ##
+				
+				# COMMON STYLE 1S - Happy Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_blond.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_red.dds"
 
 
-					# COMMON STYLE 2S - Serious Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_black.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_blond.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_brown.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_grey.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_pink.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_purple.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_red.dds"
+				# COMMON STYLE 2S - Serious Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_blond.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_red.dds"
 
-					
-					# COMMON STYLE 3S - Whipped Cream Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_black.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_blond.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_brown.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_grey.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_pink.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_purple.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_red.dds"
-					
-					# RULER STYLE 1
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_black.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_blond.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_brown.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_grey.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_pink.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_purple.dds"
-					#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_red.dds"
-					
-					# LHUREN RULER STYLE 2
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler2_white.dds"
+				
+				# COMMON STYLE 3S - Whipped Cream Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_blond.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_red.dds"
+				
+				# RULER STYLE 1
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_blond.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_red.dds"
+				
+				# LHUREN RULER STYLE 2
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler2_white.dds"
 
-					
-					## STANDARD ELF HAIR ##
-					
-					#Style 1 - Long
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_black.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blond.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blue.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_brown.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_pink.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_red.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_verde.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_viola.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_white.dds"
-					
-					#Style 3 - Bun
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
-					
-					#Style 6 - Short Bangs
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
-					
-					## WINTER HAIR ##
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_winter01_black.dds"
-					
-					## SPECIALTY HAIR ##
-					
-					# CAT EARS
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_black.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blond.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blue.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_brown.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_pink.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_red.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_verde.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_viola.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_white.dds"
-					
-					## SCIFI ##
-					
-					# SCIFI - Style 6 - Admiral
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_black.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_blond.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_blue.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_brown.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_pink.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_red.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_verde.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_viola.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_white.dds"
+				
+				## STANDARD ELF HAIR ##
+				
+				#Style 1 - Long
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_black.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_pink.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_white.dds"
+				
+				#Style 3 - Bun
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
+				
+				#Style 6 - Short Bangs
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
+				
+				## WINTER HAIR ##
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_winter01_black.dds"
+				
+				## SPECIALTY HAIR ##
+				
+				# CAT EARS
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_white.dds"
+				
+				## SCIFI ##
+				
+				# SCIFI - Style 6 - Admiral
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_white.dds"
 			}
 		}
 		
@@ -254,13 +252,11 @@ lhuren_female_hair_01 = {
 		######################
 		random = {
 			trigger = { 
-							nor = {
-									is_enslaved = yes
-									# Cold planets get HATS!
-									planet = { is_planet_class = pc_arctic }
-									planet = { is_planet_class = pc_tundra }
-									planet = { is_planet_class = pc_alpine }
-							}
+				nor = {
+					is_enslaved = yes
+					# Cold planets get HATS!
+					planet = { has_climate = cold }
+				}
 			}
 			list = {
 				# COMMON STYLE 1 - Happy Bun
@@ -300,13 +296,11 @@ lhuren_female_hair_01 = {
 		
 		random = {
 			trigger = { 
-							or = {
-									is_enslaved = no
-									# Cold planets get HATS!
-									planet = { is_planet_class = pc_arctic }
-									planet = { is_planet_class = pc_tundra }
-									planet = { is_planet_class = pc_alpine }
-							}
+				or = {
+					is_enslaved = no
+					# Cold planets get HATS!
+					planet = { has_climate = cold }
+				}
 			}
 			list = {
 				## WINTER HAIR ##
@@ -321,172 +315,145 @@ lhuren_female_hair_01 = {
 		# DOMESTIC
 		random = {
 			trigger = { 
-						AND = { 
-									is_enslaved = yes
-									has_slavery_type = { country = owner type = slavery_domestic }
-						}
+				AND = { 
+					is_enslaved = yes
+					has_slavery_type = { country = owner type = slavery_domestic }
+				}
 			}
 			list = {
-						# CAT EARS
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_black.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_pink.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_white.dds"
-						
-						#Style 1 - Long
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_black.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_pink.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_white.dds"
+				# CAT EARS
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_04_cat_white.dds"
+				
+				#Style 1 - Long
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_black.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_pink.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_01_white.dds"
 			}
 		}
 		
 		# Battle Thralls
 		random = {
 			trigger = { 
-						AND = {
-									is_enslaved = yes
-									has_slavery_type = { country = owner type = slavery_military }
-						}
+				AND = {
+					is_enslaved = yes
+					has_slavery_type = { country = owner type = slavery_military }
+				}
 			}
 			list = {
-						#Style 3 - Bun
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
-						
-						#Style 6 - Short Bangs
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
+				#Style 3 - Bun
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
+				
+				#Style 6 - Short Bangs
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
 			}
 		}
 		
 		# FOOD
 		random = {
 			trigger = { 
-						AND = {
-									is_enslaved = yes
-									has_slavery_type = { country = owner type = slavery_livestock }
-						}
+				AND = {
+					is_enslaved = yes
+					has_slavery_type = { country = owner type = slavery_livestock }
+				}
 			}
 			list = {
-						#Style 3 - Bun
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
-						
-						#Style 6 - Short Bangs
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
+				#Style 3 - Bun
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
+				
+				#Style 6 - Short Bangs
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
 			}
 		}
 		
 		# LABORERS
 		random = {
 			trigger = { 
-						AND = {
-									is_enslaved = yes
-									has_slavery_type = { country = owner type = slavery_normal }
-						}
+				AND = {
+					is_enslaved = yes
+				}
 			}
 			list = {
-						#Style 3 - Bun
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
-						
-						#Style 6 - Short Bangs
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
-						"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
-						#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
+				#Style 3 - Bun
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_03_white.dds"
+				
+				#Style 6 - Short Bangs
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_black.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blond.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_blue.dds"
+				"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_brown.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_pink.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_red.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_verde.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_viola.dds"
+				#"gfx/models/portraits/shared_hair/female/elven_female_hair_style_06_white.dds"
 			}
 		}
-		
 	}
 	
 	#############
 	## LEADERS ##
 	#############
-	leader = { 
-	
+	leader = {
 		default = "gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
-	
-		### TECHNOCRACIES ###
-		random = {
-			trigger = { 
-							AND = {
-										owner =  { has_civic = civic_technocracy }
-										leader_class = commander
-							}
-			}
-			list = {
-					# SCIFI - Style 6 - Admiral
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_black.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_blond.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_blue.dds"
-					"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_brown.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_pink.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_red.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_verde.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_viola.dds"
-					#"gfx/models/portraits/shared_hair/female/elven_female_hair_scifi_admiral_white.dds"
-			}
-		}
-		
-		### END TECHNOCRACIES ###
 	
 		random = {
 			trigger = {
 				leader_class = commander
-				has_trait = subclass_commander_general
+				leader_should_wear_general_uniform = yes
 			}
 			list = {
 				#Style 3 - Bun
@@ -554,7 +521,6 @@ lhuren_female_hair_01 = {
 		random = {
 			trigger = { leader_class = scientist }
 			list = {
-			
 				## SILVER HAIR ##
 			
 				# COMMON STYLE 1S - Happy Bun
@@ -625,6 +591,44 @@ lhuren_female_hair_01 = {
 				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_verde.dds"
 			}
 		}
+		
+		random = {
+			trigger = { leader_class = envoy }
+			list = {
+				# COMMON STYLE 1 - Happy Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_blond.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_blue.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_red.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_verde.dds"
+
+				# COMMON STYLE 2 - Serious Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_blond.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_blue.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_red.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_verde.dds"
+				
+				# COMMON STYLE 3 - Whipped Cream Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_black.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_blond.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_blue.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_brown.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_grey.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_pink.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_purple.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_red.dds"
+				#"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_verde.dds"
+			}
+		}
 	}
 	
 	##############
@@ -632,50 +636,7 @@ lhuren_female_hair_01 = {
 	##############
 	
 	ruler = { 
-		
 		default = "gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_ruler1_black.dds"
-		
-		################################
-		## SPECIAL CASE - TECHNOCRACY ##
-		################################
-		random = {
-			trigger = { 
-				OR = {
-							owner =  { has_civic = civic_technocracy }
-				}
-			}
-			
-			list = {
-					## GOLD HAIR ##
-					
-					# COMMON STYLE 1 - Happy Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_brown.dds"
-
-					# COMMON STYLE 2 - Serious Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_brown.dds"
-					
-					# COMMON STYLE 3 - Whipped Cream Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_brown.dds"
-
-					## SILVER HAIR ##
-					
-					# COMMON STYLE 1S - Happy Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_brown.dds"
-
-
-					# COMMON STYLE 2S - Serious Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_brown.dds"
-					
-					# COMMON STYLE 3S - Whipped Cream Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_brown.dds"
-			}
-		}
 		
 		###############################
 		## SPECIAL CASE - THEOCRATIC ##
@@ -683,13 +644,13 @@ lhuren_female_hair_01 = {
 		random = {
 			trigger = { 
 				OR = {
-							owner = { has_government = gov_theocratic_monarchy }
-							owner = { has_government = gov_theocratic_dictatorship }
-							owner = { has_government = gov_theocratic_oligarchy }
-							owner = { has_government = gov_theocratic_republic }
-							owner = { has_government = gov_divine_empire }
-							owner = { has_government = gov_holy_tribunal }
-							owner = { has_government = gov_megachurch }
+					owner = { has_government = gov_theocratic_monarchy }
+					owner = { has_government = gov_theocratic_dictatorship }
+					owner = { has_government = gov_theocratic_oligarchy }
+					owner = { has_government = gov_theocratic_republic }
+					owner = { has_government = gov_divine_empire }
+					owner = { has_government = gov_holy_tribunal }
+					owner = { has_government = gov_megachurch }
 				}
 			}
 			
@@ -705,7 +666,7 @@ lhuren_female_hair_01 = {
 		random = {
 			trigger = { 
 				OR = {
-							owner = { has_authority = auth_imperial }
+					owner = { has_authority = auth_imperial }
 				}
 			}
 		
@@ -720,38 +681,36 @@ lhuren_female_hair_01 = {
 		## ALL OTHER CASES ##
 		#####################
 		random = {
-			
 			list = {
-					## GOLD HAIR ##
-					
-					# COMMON STYLE 1 - Happy Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_brown.dds"
+				## GOLD HAIR ##
+				
+				# COMMON STYLE 1 - Happy Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_black.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01_brown.dds"
 
-					# COMMON STYLE 2 - Serious Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_brown.dds"
-					
-					# COMMON STYLE 3 - Whipped Cream Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_brown.dds"
+				# COMMON STYLE 2 - Serious Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_black.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02_brown.dds"
+				
+				# COMMON STYLE 3 - Whipped Cream Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_black.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03_brown.dds"
 
-					## SILVER HAIR ##
-					
-					# COMMON STYLE 1S - Happy Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_brown.dds"
+				## SILVER HAIR ##
+				
+				# COMMON STYLE 1S - Happy Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_black.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style01s_brown.dds"
 
 
-					# COMMON STYLE 2S - Serious Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_brown.dds"
-					
-					# COMMON STYLE 3S - Whipped Cream Bun
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_black.dds"
-					"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_brown.dds"
+				# COMMON STYLE 2S - Serious Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_black.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style02s_brown.dds"
+				
+				# COMMON STYLE 3S - Whipped Cream Bun
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_black.dds"
+				"gfx/models/portraits/lhuren_hair/female/elven_female_hair_lhuren_style03s_brown.dds"
 			}
-		
 		}
 	}
 }

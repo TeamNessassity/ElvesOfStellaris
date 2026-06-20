@@ -12,37 +12,40 @@ lhuren_male_clothes_01 = {
 	#############
 	species = { #generic portrait for a species
 		default = "gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_black.dds"
-			
-			# EVERYONE #
-			random = {
-				list = {
-						# ADMIRAL 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_brown.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_white.dds"
 
-						
-						# GOVERNOR 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
-					
-						# SCIENTIST 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_lavender.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_powder.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_white.dds"
-				}
-			}
+		# EVERYONE #
+		random = {
+			list = {
+				#####################
+				## LHUREN CLOTHING ##
+				#####################
+
+				# ADMIRAL 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_brown.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_white.dds"
+
 				
+				# GOVERNOR 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
+			
+				# SCIENTIST 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_lavender.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_powder.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_white.dds"
+			}
+		}
 	}
 	
 	#########
@@ -51,422 +54,472 @@ lhuren_male_clothes_01 = {
 	pop = { #for a specific pop
 		default = "gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_black.dds"
 		
-		#####################################################################
+		#######################################################################
 		# clothing LIST: Used to line up clothing in the ruler design window! #
-		#####################################################################
+		#######################################################################
 		random = {
 			trigger = { always = no }
 			list = {
-						#####################
-						## LHUREN CLOTHING ##
-						#####################
+				#####################
+				## LHUREN CLOTHING ##
+				#####################
+	
+				############
+				## COMMON ##
+				############
 			
+				# COMMON 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_green.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_yellow.dds"
+				
+				############
+				## WINTER ##
+				############
+				
+				# WINTER 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_green.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_yellow.dds"
+				
+				#############
+				## LEADERS ##
+				#############
+				
+				# RULER 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_brown.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_yellow.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_white.dds"
 			
-						############
-						## COMMON ##
-						############
-					
-						# COMMON 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_green.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_yellow.dds"
-						
-						############
-						## WINTER ##
-						############
-						
-						# WINTER 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_green.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_yellow.dds"
-						
-						#############
-						## LEADERS ##
-						#############
-						
-						# RULER 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_brown.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_yellow.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_white.dds"
-					
-						# ADMIRAL 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_brown.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_white.dds"
-						
-						# GOVERNOR 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
-						
-						# GENERAL 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_gold.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_green.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_silver.dds"
-					
-						# SCIENTIST 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_lavender.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_powder.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_white.dds"
-						
-						###############
-						## SPECIALTY ##
-						###############
-						
-						# BLISS 1
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackred.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackviolet.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_white.dds"
-						
-						#############
-						# HIVE MIND #
-						#############
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
-						
-						## BUTLER ##
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
-						
-						###########################
-						## STANDARD ELF CLOTHING ##
-						###########################
-						
-						#########
-						# SCIFI #
-						#########
-						
-						# SUIT 1
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_white.dds"
-						
-						# SUIT 2
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_silver.dds"
-						
-						# ADMIRAL
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_navy.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_red.dds"
-						
-						# GENERAL
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_silver.dds"
-						
-						# SCIENTIST
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_white.dds"
-						
-						##########
-						# Savage #
-						##########
-						
-						# Savage Gear
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
-						
-						#########
-						# Slave #
-						#########
-						
-						# PURGE #
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_purge_brown.dds"
-						
-						# Domestic Slaves
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_collar1_gold.dds"
-						
-						# Battle Thralls
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_2.dds"
-						
-						# Laborers
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_rags_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_collar_1.dds"
-						
-						# Food
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_chains_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_rags_1.dds"
-						
-						##############
-						# GENERIC WA #
-						##############
-						
-						"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
+				# ADMIRAL 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_brown.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_white.dds"
+				
+				# GOVERNOR 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
+				
+				# GENERAL 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_gold.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_green.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_silver.dds"
+			
+				# SCIENTIST 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_lavender.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_powder.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_white.dds"
+				
+				###############
+				## SPECIALTY ##
+				###############
+				
+				# BLISS 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackred.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackviolet.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_white.dds"
+				
+				#############
+				# HIVE MIND #
+				#############
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
+				
+				## BUTLER ##
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
+				
+				###########################
+				## STANDARD ELF CLOTHING ##
+				###########################
+				
+				#########
+				# SCIFI #
+				#########
+				
+				# SUIT 1
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit1_white.dds"
+				
+				# SUIT 2
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_silver.dds"
+				
+				# ADMIRAL
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_navy.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_red.dds"
+				
+				# GENERAL
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_silver.dds"
+				
+				# SCIENTIST
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_white.dds"
+				
+				##########
+				# Savage #
+				##########
+				
+				# Savage Gear
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
+				
+				#########
+				# Slave #
+				#########
+				
+				# PURGE #
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_purge_brown.dds"
+				
+				# Domestic Slaves
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_collar1_gold.dds"
+				
+				# Battle Thralls
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_2.dds"
+				
+				# Laborers
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_rags_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_collar_1.dds"
+				
+				# Food
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_chains_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_rags_1.dds"
+				
+				##############
+				# GENERIC WA #
+				##############
+				
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
 			}
 		}
+
 		####################
 		# END clothing LIST #
 		####################
+
+		# To avoid all the confusing redundant triggers again, we use load order to do the heavy lifting.
+		# The first valid trigger applies, so we list the most specific/thematic/rare cases first.
 		
-		## PRESAPIENT ##
+		##############
+		## OVERRIDE ##
+		##############
+
+		# Highest priority! Always override all the other categories!
+		# Temporary or very distinct states should generally go in here
+		
+		## PRE-SAPIENT ##
 		random = {
 			trigger = { is_pop_category = pre_sapients }
 			list = {
-						"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"	
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
+			}
+		}
+
+		## PURGE ##
+		random = {
+			trigger = { is_pop_category = purge }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_purge_brown.dds"
+			}
+		}
+
+		## ASSIMILATION ##
+		random = {
+			trigger = { is_pop_category = assimilation }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_chains_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_rags_1.dds"
+			}
+		}
+
+		#############
+		## SPECIAL ##
+		#############
+
+		# Special treatment for civics, origins, traits, empire types, etc.
+		# These will override all the generic categories
+
+		## WILDERNESS ##
+		# What are those "clothes" you speak of?
+		random = {
+			trigger = {
+				owner = { is_wilderness_empire = yes }
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
+			}
+		}
+
+		## FOREVER CRUISE ##
+		# The Passengers are rich needy demandy hedonists, and the Crew are all basically slaves as far as they're concerned
+
+		# Passengers
+		random = {
+			trigger = {
+				OR = {
+					is_pop_category = cruise_passenger_display
+					is_pop_category = cruise_passenger
+					is_pop_category = cruise_passenger_unemployment
+				}
+			}
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
+			}
+		}
+
+		# Crew: Specialists
+		random = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_origin = origin_forever_cruise
+					NOT = { has_country_flag = forever_cruise_over }
+				}
+				OR = {
+					is_pop_category = specialist
+				}
+			}
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackred.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackviolet.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_white.dds"
+			}
+		}
+
+		# Crew: Workers
+		random = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_origin = origin_forever_cruise
+					NOT = { has_country_flag = forever_cruise_over }
+				}
+				OR = {
+					is_pop_category = worker
+				}
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
 			}
 		}
 		
 		###########
 		# SLAVERY #
 		###########
-		
-		## DOMESETIC ##
-		# random = {
-		# 	trigger = { has_job = slave_toiler }
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_purple.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_red.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_blue.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_green.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_collar1_gold.dds"
-		# 	}
-		# }
-		
-		## FOOD ##
+
+		# Slave outfits, if any, will override Strata outfits
+		# Only the generic usage of basic slavery types should go here
+		# For more specific cases, use the Special section instead
+
+		## Butler ##
 		random = {
 			trigger = {
-							OR = {
-								is_pop_category = purge
-								is_pop_category = assimilation
-							}
+				is_enslaved = yes
+				is_pop_category = civilian
 			}
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_chains_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_rags_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
 			}
 		}
 
-		## GENERIC SLAVE ##
+		## Slave ##
 		random = {
 			trigger = {
-							OR = {
-								is_pop_category = slave
-								is_enslaved = yes
-							}
+				is_enslaved = yes
 			}
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_rags_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_collar_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_green.dds"
 			}
 		}
 		
-		#############
-		## WORKERS ##
-		#############
+		#####################
+		## STRATA: GESTALT ##
+		#####################
+
+		# Gestalt Drone Strata
+		# There should be no additional triggers here beyond is_pop_category
+		# To handle exceptions or variants, do it in Special
+
+		# Complex Drone #
+		random = {
+			trigger = { is_pop_category = complex_drone }
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
+			}
+		}
+
+		# Basic Drone #
+		random = {
+			trigger = { is_pop_category = simple_drone }
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
+			}
+		}
+
+		# Maintenance Drone #
+		random = {
+			trigger = { is_pop_category = maintenance_drone }
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
+			}
+		}
+
+		# Corrupt Drone #
+		random = {
+			trigger = {
+				OR = {
+					is_pop_category = corrupt_drone
+					is_pop_category = deviant_drone
+				}	
+			}
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
+			}
+		}
 		
-		## MAIDS ##
-		# random = {
-		# 	trigger = { has_job = servant }
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
-		# 	}
-		# }
-		
-		## SAVAGES ##
-		# random = {
-		# 	trigger = {
-		# 					OR = {
-		# 						has_job = hunter_gatherer
-		# 						has_job = peasant
-		# 					}
-		# 	}
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
-		# 	}
-		# }
-		
-		## COMMON WORKERS ##
+		######################
+		## STRATA: STANDARD ##
+		######################
+
+		# Individualist Strata
+		# There should be no additional triggers here beyond is_pop_category
+		# To handle exceptions or variants, do it in Special
+
+		## CRIMSON QUILL ##
+		random = {
+			trigger = {
+				OR = {
+					is_pop_category = ruler
+					is_pop_category = bio_trophy
+					is_pop_category = bio_trophy_unemployment
+					is_pop_category = precursor
+					is_pop_category = xeno_ward
+				}
+			}
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
+			}
+		}
+
+		## JADE PAVILION ##
+		random = {
+			trigger = {
+				is_pop_category = specialist
+			}
+			list = {
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_lavender.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_powder.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_white.dds"
+			}
+		}
+
+		## AZURE WATERS ##
 		random = {
 			trigger = { is_pop_category = worker }
 			list = {
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_green.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_yellow.dds"
-						
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_green.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_yellow.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_green.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_winter1_white.dds"
 			}
 		}
-		
-		## DANCER/ENTERTAINERS ##
-		# random = {
-		# 	trigger = {
-		# 					OR = {
-		# 						has_job = fe_hedonist
-		# 						has_job = entertainer
-		# 						has_job = culture_worker
-		# 					}
-		# 	}
-		# 	list = {
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackred.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blackviolet.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_blue.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_cyan.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_purple.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_red.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_bliss1_white.dds"
-		# 	}
-		# }
-		
-		## POLICE/ENFORCERES ##
-		# random = {
-		# 	trigger = {
-		# 					OR = {
-		# 						has_job = enforcer
-		# 						has_job = soldier
-		# 						has_job = slave_overseer
-		# 						has_job = fe_protector
-		# 						has_job = fe_xeno_keeper
-		# 						has_job = primitive_warrior
-		# 						has_job = primitive_warrior_2
-		# 					}
-		# 	}
-		# 	list = {
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_gold.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_green.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_purple.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_red.dds"
-		# 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_silver.dds"
-		# 	}
-		# }
-		
-		## SPECIALISTS ##
+
+		## CIVILIANS ##
 		random = {
-			trigger = {
-							OR = {
-								# has_job = fe_xeno_ward
-								is_pop_category = specialist
-							}
-			}
+			trigger = { is_pop_category = civilian }
 			list = {
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_lavender.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_powder.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_scientist1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_black.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_green.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_purple.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_white.dds"
 			}
 		}
-		
-		## NOBILITY ##
-		random = {
-			trigger = {
-							OR = {
-								is_pop_category = ruler
-								is_pop_category = bio_trophy
-							}
-			}
-			list = {
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_brown.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_white.dds"
-						
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
-			}
-		}
-		
+
 		## CRIMINALS ##
 		random = {
 			trigger = { is_pop_category = criminal }
 			list = {
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
 			}
 		}
-		
-		## PURGE ##
-		random = {
-			trigger = { is_pop_category = purge }
-			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_purge_brown.dds"
-			}
-		}
-		
-		## PRECURSOR ##
-		random = {
-			trigger = { is_pop_category = precursor }
-			list = {
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
-						
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_black.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_brown.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_purple.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_red.dds"
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_white.dds"
-			}
-		}
-		
 	}
 	
 	#############
@@ -474,121 +527,35 @@ lhuren_male_clothes_01 = {
 	#############
 	leader = { #scientists, generals, admirals, governor
 		
+		# Wilderness be wildin'
+		random = {
+			trigger = {
+				exists = owner
+				owner =  { is_wilderness_empire = yes }
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
+			}
+		}
+		
 		# Hive Minds are all BORG
 		random = {
-			trigger = { owner =  { has_authority = auth_hive_mind } }
-			list = {
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
-			}
-		}
-		
-		## TECHNOCRACIES ##
-		
-		## TECHNO GENERALS ##
-		random = {
 			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = commander
-									has_trait = subclass_commander_general
-							}
+				exists = owner
+				owner =  { is_gestalt = yes }
 			}
 			list = {
-						# GENERAL
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_silver.dds"
-			}
-		}
-		
-		## TECHNO ADMIRALS ##
-		random = {
-			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = commander
-							}
-			}
-			list = {
-						# ADMIRAL
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_navy.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_red.dds"
-			}
-		}
-		
-		## TECHNO GOVERNORS ##
-		random = {
-			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = official
-							}
-			}
-			list = {
-						# SUIT 2
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_silver.dds"
-			}
-		}
-		
-		## TECHNO SCIENTISTS ##
-		random = {
-			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = scientist
-							}
-			}
-			list = {
-						# SCIENTIST
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_white.dds"
-			}
-		}
-		
-		## END TECHNOCRACIES ##
-		
-		
-		#Savages get their own clothing
-		random = {
-			trigger = { owner = { has_trait = trait_elven_savage } }
-			list = {
-					# Savage Gear
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"	
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
 			}
 		}
 		
 		## GENERALS ###
 		random = {
-			trigger = { 
-						and = {
-							leader_class = commander
-							has_trait = subclass_commander_general
-							nor = {
-									
-									owner = { has_trait = trait_elven_savage }
-									
-							}
-						}
+			trigger = {
+				leader_class = commander
+				leader_should_wear_general_uniform = yes
 			}
 			list = {
-			
 				# GENERAL 1
 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_gold.dds"
 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_green.dds"
@@ -601,20 +568,10 @@ lhuren_male_clothes_01 = {
 		
 		## ADMIRALS ##
 		random = {
-			
-			trigger = { 
-							and = {
-								leader_class = commander
-								nor = {
-										
-										owner = { has_trait = trait_elven_savage }
-										owner = { has_trait = trait_drow_savage }
-										
-								}
-							}
-						}
+			trigger = {
+				leader_class = commander
+			}
 			list = {
-			
 					# ADMIRAL 1
 					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_black.dds"
 					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_admiral_brown.dds"
@@ -626,17 +583,9 @@ lhuren_male_clothes_01 = {
 		
 		## SCIENTISTS ##
 		random = {
-			trigger = { 
-							and = {
-								leader_class = scientist
-								nor = {
-										
-											owner = { has_trait = trait_elven_savage }
-											owner = { has_trait = trait_drow_savage }
-										
-								}
-							}
-						}
+			trigger = {
+				leader_class = scientist
+			}
 			list = {
 				
 				# SCIENTIST 1
@@ -651,18 +600,27 @@ lhuren_male_clothes_01 = {
 		
 		## GOVERNORS
 		random = {
-			trigger = { 
-							and = {
-								leader_class = official
-								nor = {
-									
-										owner = { has_trait = trait_elven_savage }
-										
-								}
-							}
-						}
+			trigger = {
+				leader_class = official
+			}
 			list = {
-				
+				# GOVERNOR 1
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
+			}
+		}
+		
+		## EVNOY
+		random = {
+			trigger = {
+				leader_class = envoy
+			}
+			list = {
 				# GOVERNOR 1
 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
@@ -681,52 +639,25 @@ lhuren_male_clothes_01 = {
 	ruler = {
 		default = "gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_purple.dds"
 		
-		################
-		## HIVE MINDS ##
-		################
-		random = {
-			trigger = { owner =  { has_authority = auth_hive_mind } }
-			list = {
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_hivemind1.dds"
-			}
-		}
-		
-		#################
-		## TECHNOCRACY ##
-		#################
-		random = {
-			trigger = { owner =  { has_civic = civic_technocracy } }
-			list = {
-						# SCIENTIST
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_white.dds"
-			}
-		}
-		
 		###############################
 		## SPECIAL CASE - THEOCRATIC ##
 		###############################
 		random = {
 			trigger = { 
 				OR = {
-							owner = { has_government = gov_theocratic_monarchy }
-							owner = { has_government = gov_theocratic_dictatorship }
-							owner = { has_government = gov_theocratic_oligarchy }
-							owner = { has_government = gov_theocratic_republic }
-							owner = { has_government = gov_divine_empire }
-							owner = { has_government = gov_holy_tribunal }
-							owner = { has_government = gov_megachurch }
+					owner = { has_government = gov_theocratic_monarchy }
+					owner = { has_government = gov_theocratic_dictatorship }
+					owner = { has_government = gov_theocratic_oligarchy }
+					owner = { has_government = gov_theocratic_republic }
+					owner = { has_government = gov_divine_empire }
+					owner = { has_government = gov_holy_tribunal }
+					owner = { has_government = gov_megachurch }
 				}
 			}
 			
 			list = {
-					## LHUREN EMPEROR ##
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_white.dds"
+				## LHUREN EMPEROR ##
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_white.dds"
 			}
 		}
 		
@@ -736,8 +667,8 @@ lhuren_male_clothes_01 = {
 		random = {
 			trigger = { owner =  { has_authority = auth_democratic } }
 			list = {
-						## LHUREN EMPEROR ##
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_brown.dds"
+				## LHUREN EMPEROR ##
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_brown.dds"
 			}
 		}
 		 
@@ -747,8 +678,8 @@ lhuren_male_clothes_01 = {
 		random = {
 			trigger = { owner =  { has_authority = auth_oligarchic } }
 			list = {
-						## LHUREN EMPEROR ##
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_red.dds"
+				## LHUREN EMPEROR ##
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_red.dds"
 			}
 		} 
 		
@@ -758,8 +689,8 @@ lhuren_male_clothes_01 = {
 		random = {
 			trigger = { owner =  { has_authority = auth_dictatorial } }
 			list = {
-						## LHUREN EMPEROR ##
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_black.dds"
+				## LHUREN EMPEROR ##
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_black.dds"
 			}
 		}
 		
@@ -769,63 +700,8 @@ lhuren_male_clothes_01 = {
 		random = {
 			trigger = { owner =  { has_authority = auth_imperial } }
 			list = {
-						## LHUREN EMPEROR ##
-						"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_yellow.dds"
-			}
-		}
-		  	  
-		################
-		## PRIMITIVES ##
-		################
-		random = {
-			trigger = { 
-						or = {
-							owner = { has_government = gov_tribal_society }
-						}
-			}
-			list = {
-					# Savage Gear
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
-			}
-		}
-
-		#########################
-		## ADVANCED PRIMITIVES ##
-		#########################
-		random = {
-			trigger = { 
-						or = {
-							owner = { has_government = gov_feudal_realms }
-							owner = { has_government = gov_fragmented_nation_states }
-						}
-			}
-			list = {
-					# GOVERNOR 1
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackred.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blackviolet.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_blue.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_cyan.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_red.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_white.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_governor1_violet.dds"
-			}
-		}
-
-		###############
-		## SENTINELS ##
-		###############
-		random = {
-			trigger = { 
-						owner = { has_government = gov_military_order  }
-			}
-			list = {
-					# GENERAL 1
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_gold.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_green.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_purple.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_red.dds"
-					"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_general1_silver.dds"
+				## LHUREN EMPEROR ##
+				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_ruler1_yellow.dds"
 			}
 		}
 		
@@ -833,13 +709,6 @@ lhuren_male_clothes_01 = {
 		## MISCELLANEOUS ##
 		###################
 		random = {
-			trigger = { 
-						or = {
-								owner = { has_government = gov_curator_enclave }
-								owner = { has_government = gov_trader_enclave }
-								owner = { has_government = gov_artist_enclave } 
-						}
-			}
 			list = {
 				# COMMON 1
 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_black.dds"
@@ -850,7 +719,7 @@ lhuren_male_clothes_01 = {
 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_white.dds"
 				"gfx/models/portraits/lhuren_clothing/male/elven_male_clothing_lhuren_common1_yellow.dds"
 			}
-		}	
+		}
 	}
 }
 
