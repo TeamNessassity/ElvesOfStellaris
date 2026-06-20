@@ -13,58 +13,58 @@ elven_male_clothes_01 = {
 	species = { #generic portrait for a species
 		default = "gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_black.dds"
 			
-			# EVERYONE #
-			random = {
-				list = {
-						# Common Suit 1
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_silver.dds"
-						
-						# Common Suit 2
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_silver.dds"
+		# EVERYONE #
+		random = {
+			list = {
+				# Common Suit 1
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_silver.dds"
+				
+				# Common Suit 2
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_silver.dds"
 
-						# Wealthy Suit 1
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_silver.dds"
-						
-						# Wealthy Suit 2
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_red.dds"
-						
-						# Wealthy Suit 3
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_teal.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_white.dds"
-						
-						# Wealthy Suit 4
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
-				}
+				# Wealthy Suit 1
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_silver.dds"
+				
+				# Wealthy Suit 2
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_red.dds"
+				
+				# Wealthy Suit 3
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_teal.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_white.dds"
+				
+				# Wealthy Suit 4
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
 			}
+		}
 	}
 	
 	#########
@@ -274,276 +274,252 @@ elven_male_clothes_01 = {
 			}
 		}
 		
-		####################
+		#####################
 		# END clothing LIST #
-		####################
+		#####################
+
+		# To avoid all the confusing redundant triggers again, we use load order to do the heavy lifting.
+		# The first valid trigger applies, so we list the most specific/thematic/rare cases first.
 		
-		## PRESAPIENT ##
+		##############
+		## OVERRIDE ##
+		##############
+
+		# Highest priority! Always override all the other categories!
+		# Temporary or very distinct states should generally go in here
+		
+		## PRE-SAPIENT ##
 		random = {
 			trigger = { is_pop_category = pre_sapients }
 			list = {
-						"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"	
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
+			}
+		}
+
+		## PURGE ##
+		random = {
+			trigger = { is_pop_category = purge }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_purge_brown.dds"
+			}
+		}
+
+		## ASSIMILATION ##
+		random = {
+			trigger = { is_pop_category = assimilation }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_chains_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_rags_1.dds"
+			}
+		}
+
+		#############
+		## SPECIAL ##
+		#############
+
+		# Special treatment for civics, origins, traits, empire types, etc.
+		# These will override all the generic categories
+
+		## WILDERNESS ##
+		# What are those "clothes" you speak of?
+		random = {
+			trigger = {
+				owner = { is_wilderness_empire = yes }
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
 			}
 		}
 		
 		###########
 		# SLAVERY #
 		###########
-		
-		## DOMESETIC ##
-		# random = {
-		# 	trigger = { has_job = slave_toiler }
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_purple.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_red.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_blue.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_green.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_collar1_gold.dds"
-		# 	}
-		# }
-		
-		## FOOD ##
+
+		# Slave outfits, if any, will override Strata outfits
+		# Only the generic usage of basic slavery types should go here
+		# For more specific cases, use the Special section instead
+
+		## Butler ##
 		random = {
 			trigger = {
-							OR = {
-								is_pop_category = purge
-								is_pop_category = assimilation
-							}
+				is_enslaved = yes
+				is_pop_category = civilian
 			}
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_chains_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_cat_rags_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
+			}
+		}
+		
+		## Slave ##
+		random = {
+			trigger = {
+				is_enslaved = yes
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_bowtie_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_collar1_gold.dds"
+			}
+		}
+		
+		#####################
+		## STRATA: GESTALT ##
+		#####################
+
+		# Gestalt Drone Strata
+		# There should be no additional triggers here beyond is_pop_category
+		# To handle exceptions or variants, do it in Special
+
+		# Complex Drone #
+		random = {
+			trigger = { is_pop_category = complex_drone }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
 			}
 		}
 
-		## GENERIC SLAVE ##
+		# Basic Drone #
 		random = {
-			trigger = {
-							OR = {
-								is_pop_category = slave
-								is_enslaved = yes
-							}
-			}
+			trigger = { is_pop_category = simple_drone }
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_rags_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_collar_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
 			}
 		}
-		
-		#############
-		## WORKERS ##
-		#############
-		
-		## MAIDS ##
-		# random = {
-		# 	trigger = { has_job = servant }
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
-		# 	}
-		# }
-		
-		## SAVAGES ##
-		# random = {
-		# 	trigger = {
-		# 					OR = {
-		# 						has_job = hunter_gatherer
-		# 						has_job = peasant
-		# 					}
-		# 	}
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
-		# 	}
-		# }
-		
-		## COMMON WORKERS ##
-		random = {
-			trigger = { is_pop_category = worker }
-			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_silver.dds"
-						
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_silver.dds"
-			}
-		}
-		
-		## DANCER/ENTERTAINERS ##
-		# random = {
-		# 	trigger = {
-		# 					OR = {
-		# 						has_job = fe_hedonist
-		# 						has_job = entertainer
-		# 						has_job = culture_worker
-		# 					}
-		# 	}
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_slave_dom_butler.dds"
-		# 	}
-		# }
-		
-		## POLICE/ENFORCERES ##
-		# random = {
-		# 	trigger = {
-		# 					OR = {
-		# 						has_job = enforcer
-		# 						has_job = soldier
-		# 						has_job = slave_overseer
-		# 						has_job = fe_protector
-		# 						has_job = fe_xeno_keeper
-		# 						has_job = primitive_warrior
-		# 						has_job = primitive_warrior_2
-		# 					}
-		# 	}
-		# 	list = {
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_black.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_blue.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_green.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_purple.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_red.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_gold.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_silver.dds"
-						
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven2_ivory.dds"
-						
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_black.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_blue.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_brown.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_green.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_purple.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_red.dds"
-						
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_black.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_gold.dds"
-		# 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_silver.dds"
-		# 	}
-		# }
-		
-		## SPECIALISTS ##
-		random = {
-			trigger = {
-							OR = {
-								#has_job = fe_xeno_ward
-								is_pop_category = specialist
-							}
-			}
-			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_teal.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_white.dds"
-						
 
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_teal.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_white.dds"
+		# Maintenance Drone #
+		random = {
+			trigger = { is_pop_category = maintenance_drone }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
+			}
+		}
+
+		# Corrupt Drone #
+		random = {
+			trigger = {
+				OR = {
+					is_pop_category = corrupt_drone
+					is_pop_category = deviant_drone
+				}	
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
 			}
 		}
 		
+		######################
+		## STRATA: STANDARD ##
+		######################
+
+		# Individualist Strata
+		# There should be no additional triggers here beyond is_pop_category
+		# To handle exceptions or variants, do it in Special
+
 		## NOBILITY ##
 		random = {
 			trigger = {
-							OR = {
-								is_pop_category = ruler
-								is_pop_category = bio_trophy
-							}
+				OR = {
+					is_pop_category = ruler
+					is_pop_category = bio_trophy
+					is_pop_category = bio_trophy_unemployment
+					is_pop_category = precursor
+					is_pop_category = xeno_ward
+				}
 			}
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_silver.dds"
-						
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_red.dds"
-						
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_teal.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_white.dds"
-						
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_silver.dds"
+				
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_red.dds"
+				
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_teal.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_white.dds"
+				
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
 			}
 		}
-		
+
+		## SPECIALISTS ##
+		random = {
+			trigger = {
+				is_pop_category = specialist
+			}
+			list = {
+				# Governer Robe 1 - Gold
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_teal.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_white.dds"
+				
+				# Governer Robe 2 - Silver
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_black.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_blue.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_green.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_purple.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_red.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_teal.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_white.dds"
+			}
+		}
+
+		## WORKERS ##
+		random = {
+			trigger = { is_pop_category = worker }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_silver.dds"
+			}
+		}
+
+		## CIVILIANS ##
+		random = {
+			trigger = { is_pop_category = civilian }
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_silver.dds"
+			}
+		}
+
 		## CRIMINALS ##
 		random = {
 			trigger = { is_pop_category = criminal }
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_1.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_2.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_1.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_slave_bat_armor_2.dds"
 			}
-		}
-		
-		## PURGE ##
-		random = {
-			trigger = { is_pop_category = purge }
-			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_purge_brown.dds"
-			}
-		}
-		
-		## PRECURSOR ##
-		random = {
-			trigger = { is_pop_category = precursor }
-			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_silver.dds"
-						
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_red.dds"
-						
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_teal.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit3_white.dds"
-						
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
-			}
-		}
-		
+		}	
 	}
 	
 	#############
@@ -551,13 +527,25 @@ elven_male_clothes_01 = {
 	#############
 	leader = { #scientists, generals, admirals, governor
 		
+		# Wilderness be wildin'
+		random = {
+			trigger = {
+				exists = owner
+				owner =  { is_wilderness_empire = yes }
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
+			}
+		}
+		
 		# Hive Minds are all BORG
 		random = {
-			trigger = { owner =  { has_authority = auth_hive_mind } }
+			trigger = {
+				exists = owner
+				owner =  { is_gestalt = yes }
+			}
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive_drow.dds"
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive_lunari.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
 			}
 		}
 		
@@ -566,122 +554,98 @@ elven_male_clothes_01 = {
 		## TECHNO GENERALS ##
 		random = {
 			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = commander
-									has_trait = subclass_commander_general
-							}
+				exists = owner
+				owner =  {
+					has_civic = civic_technocracy
+				}
+				leader_class = commander
+				leader_should_wear_general_uniform = yes
 			}
 			list = {
-						# GENERAL
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_silver.dds"
+				# GENERAL
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_general_silver.dds"
 			}
 		}
 		
 		## TECHNO ADMIRALS ##
 		random = {
 			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = commander
-							}
+				exists = owner
+				owner =  {
+					has_civic = civic_technocracy
+				}
+				leader_class = commander
 			}
 			list = {
-						# ADMIRAL
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_navy.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_red.dds"
-			}
-		}
-		
-		## TECHNO GOVERNORS ##
-		random = {
-			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = official
-							}
-			}
-			list = {
-						# NOTE: SUIT2 for now. Replace with some new outfit later.
-						# SUIT 2
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_black.dds"
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_green.dds"
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_blue.dds"
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_silver.dds"
+				# ADMIRAL
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_navy.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_admiral_red.dds"
 			}
 		}
 		
 		## TECHNO SCIENTISTS ##
 		random = {
 			trigger = {
-							and = {
-									owner =  { has_civic = civic_technocracy }
-									leader_class = scientist
-							}
+				exists = owner
+				owner =  {
+					has_civic = civic_technocracy
+				}
+				leader_class = scientist
 			}
 			list = {
-						# SCIENTIST
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_cyan.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_red.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_white.dds"
+				# SCIENTIST
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_scientist_white.dds"
+			}
+		}
+		
+		## TECHNO GOVERNORS ##
+		random = {
+			trigger = {
+				exists = owner
+				owner =  {
+					has_civic = civic_technocracy
+				}
+				leader_class = official
+			}
+			list = {
+				# NOTE: SUIT2 for now. Replace with some new outfit later.
+				# SUIT 2
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_black.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_green.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_blue.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_silver.dds"
 			}
 		}
 		
 		## END TECHNOCRACIES ##
 		
-		
-		
 		#Savages get their own clothing
 		random = {
-			trigger = { owner = { has_trait = trait_elven_savage } }
-			list = {
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
+			trigger = {
+				OR = {
+					has_trait = trait_elven_savage
+					has_trait = trait_drow_savage
+				}
 			}
-		}
-		
-		# Eilistraeens are more martial
-		random = {
-			trigger = { owner =  { has_civic = civic_drow_eilistraee } }
 			list = {
-				# Elven Armor 1
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_green.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_purple.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_red.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_gold.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_silver.dds"
-				
-				# Elven Armor 2
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven2_ivory.dds"
-				
-				# Elven Armor 3
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_brown.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_green.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_purple.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_red.dds"
-				
-				# Knight
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_gold.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_silver.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
 			}
 		}
 		
@@ -692,76 +656,75 @@ elven_male_clothes_01 = {
 		
 		random = {
 			trigger = {
-				leader_class = commander
-				has_trait = subclass_commander_general
-				or = {
-					owner = { has_government = gov_awakened_ascendancy }
-					owner = { has_government = gov_stagnant_ascendancy }
+				exists = owner
+				owner = {
+					is_fallen_empire = yes
 				}
+				leader_class = commander
+				leader_should_wear_general_uniform = yes
 			}
 			list = {
-						# Elven Armor 3
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_brown.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_green.dds"
+				# Elven Armor 3
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_black.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_blue.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_brown.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_green.dds"
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_purple.dds"
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_red.dds"
 			}
 		}
 
 		random = {
 			trigger = {
-				leader_class = commander
-				or = {
-					owner = { has_government = gov_awakened_ascendancy }
-					owner = { has_government = gov_stagnant_ascendancy }
+				exists = owner
+				owner = {
+					is_fallen_empire = yes
 				}
+				leader_class = commander
 			}
 			list = {	
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
 			}
 		}
 		
 		random = {
 			trigger = {
-				leader_class = scientist
-				or = {
-					owner = { has_government = gov_awakened_ascendancy }
-					owner = { has_government = gov_stagnant_ascendancy }
+				exists = owner
+				owner = {
+					is_fallen_empire = yes
 				}
+				leader_class = scientist
 			}
 			list = {
 						# Governer Robe 2 - Silver
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_black.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_blue.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_green.dds"
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_purple.dds"
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_red.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_teal.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_white.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_red.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_teal.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor2_white.dds"
 			}
 		}
 		
 		random = {
 			trigger = {
-				leader_class = official
-				or = {
-					owner = { has_government = gov_awakened_ascendancy }
-					owner = { has_government = gov_stagnant_ascendancy }
+				exists = owner
+				owner = {
+					is_fallen_empire = yes
 				}
+				leader_class = official
 			}
 			list = {
 				# Governer Robe 1 - Gold
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_black.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_blue.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_green.dds"
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_purple.dds"
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_red.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_teal.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_white.dds"
-			
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_red.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_teal.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_governor1_white.dds"
 			}
 		}
 		# **********************
@@ -769,17 +732,9 @@ elven_male_clothes_01 = {
 		# **********************
 		
 		random = {
-			#trigger = { leader_class = general }
-			trigger = { 
-						and = {
-							leader_class = commander
-							has_trait = subclass_commander_general
-							nor = {
-									
-									owner = { has_trait = trait_elven_savage }
-									
-							}
-						}
+			trigger = {
+				leader_class = commander
+				leader_should_wear_general_uniform = yes
 			}
 			list = {
 				# Elven Armor 1
@@ -805,16 +760,9 @@ elven_male_clothes_01 = {
 		}
 		
 		random = {
-			#trigger = { leader_class = admiral }
-			trigger = { 
-							and = {
-								leader_class = commander
-								nor = {
-										owner = { has_trait = trait_elven_savage }
-										owner = { has_trait = trait_drow_savage }
-									  }
-							}
-						}
+			trigger = {
+				leader_class = commander
+			}
 			list = {
 			
 				# Admiral
@@ -829,17 +777,9 @@ elven_male_clothes_01 = {
 		}
 		
 		random = {
-			#trigger = { leader_class = scientist }
-			trigger = { 
-							and = {
-								leader_class = scientist
-								nor = {
-										
-											owner = { has_trait = trait_elven_savage }
-										
-									  }
-							}
-						}
+			trigger = {
+				leader_class = scientist
+			}
 			list = {
 				# Common Suit 2
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit2_black.dds"
@@ -852,17 +792,9 @@ elven_male_clothes_01 = {
 		}
 		
 		random = {
-			#trigger = { leader_class = governor }
-			trigger = { 
-							and = {
-								leader_class = official
-								nor = {
-									
-										owner = { has_trait = trait_elven_savage }
-										
-									  }
-							}
-						}
+			trigger = {
+				leader_class = official
+			}
 			list = {
 				# Wealthy Suit 1
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
@@ -883,68 +815,121 @@ elven_male_clothes_01 = {
 	ruler = { #for rulers
 		default = "gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
 		
+		# Wilderness be wildin'
+		random = {
+			trigger = {
+				exists = owner
+				owner =  { is_wilderness_empire = yes }
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/elven_nude_suit.dds"
+			}
+		}
+		
 		# Hive Minds are all BORG
 		random = {
-			trigger = { owner =  { has_authority = auth_hive_mind } }
+			trigger = {
+				exists = owner
+				owner =  { is_gestalt = yes }
+			}
 			list = {
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive_drow.dds"
-						#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive_lunari.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_hive.dds"
+			}
+		}
+		  
+		# Primitives
+		random = {
+			trigger = {
+				exists = owner
+				owner = {
+					pre_ftl_ancient_era = yes
+				}
+			}
+			list = {
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
 			}
 		}
 		
-		# Technocracies get scifi clothing!
+		# More advanced primitives
 		random = {
-			trigger = { owner =  { has_civic = civic_technocracy } }
-			list = {
-						# SUIT 2
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_black.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_gold.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_green.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_blue.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_purple.dds"
-						"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_silver.dds"
+			trigger = {
+				exists = owner
+				owner = {
+					pre_ftl_ancient_era = no
+				}
 			}
-		}
-		
-		# Eilistraeens are martial!
-		random = {
-			trigger = { owner =  { has_civic = civic_drow_eilistraee } }
 			list = {
-				# Elven Armor 1
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_green.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_purple.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_red.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_gold.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven1_silver.dds"
-				
 				# Elven Armor 2
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven2_ivory.dds"
-				
-				# Elven Armor 3
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_brown.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_green.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_purple.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven3_red.dds"
-				
+			
 				# Knight
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_black.dds"
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_gold.dds"
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_silver.dds"
 			}
 		}
+
+		# Fallen Empire
+		random = {
+			trigger = { 
+				exists = owner
+				owner = {
+					is_fallen_empire = yes
+				}
+			}
+			list = {
+			
+				# Elves: No Red/Black
+				# Drow: Red/Black/Purple
+				# Lunari: All silver!
+			
+				# Wealthy Suit 1
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_cyan.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_red.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_silver.dds"
+			
+				# Wealthy Suit 2
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_purple.dds"
+				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_red.dds"
+			}
+		}
 		
-		
-		
+		# Technocracies get scifi clothing!
+		random = {
+			trigger = {
+				exists = owner
+				owner =  { has_civic = civic_technocracy }
+			}
+			list = {
+				# SUIT 2
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_black.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_gold.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_green.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_blue.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_purple.dds"
+				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_scifi_suit2_silver.dds"
+			}
+		}
 		
 		# Democratic Idiots
 		random = {
-			trigger = { 
-						owner = { has_authority = auth_democratic }
+			trigger = {
+				exists = owner
+				owner = {
+					OR = {
+						has_authority = auth_democratic
+						is_country_type = enclave
+					}
+				}
 			}
 			list = {
 				# Common Suit 1
@@ -967,17 +952,9 @@ elven_male_clothes_01 = {
 			}
 		}
 		
-		# The real enlightened ;-)
+		# All the rest
 		random = {
-			trigger = { 
-						or = {
-							owner = { has_authority = auth_oligarchic }
-							owner = { has_authority = auth_imperial }
-							owner = { has_authority = auth_dictatorial }
-						}
-			}
 			list = {
-				
 				## ELVES/DROW: GOLD
 				## LUNARI: SILVER
 				
@@ -1012,111 +989,9 @@ elven_male_clothes_01 = {
 				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit4_silver.dds"
 			}
 		}
-		
-		
-		  
-		# Primitives
-		random = {
-			trigger = { 
-						or = {
-							owner = { has_government = gov_tribal_society }
-						}
-			}
-			list = {
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_necklace.dds"
-					"gfx/models/portraits/shared_clothing/male/elven_male_clothing_savage_armor_1.dds"
-			}
-		}
-		
-		# More advanced primitives
-		random = {
-			trigger = { 
-						or = {
-							owner = { has_government = gov_feudal_realms }
-							owner = { has_government = gov_fragmented_nation_states }
-						}
-			}
-			list = {
-				# Elven Armor 2
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_elven2_ivory.dds"
-			
-				# Knight
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_gold.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_silver.dds"
-			}
-		}
-
-		# Fallen Empire
-		random = {
-			trigger = { 
-						or = {
-								owner = { has_government = gov_awakened_ascendancy }
-								owner = { has_government = gov_stagnant_ascendancy }
-						}
-			}
-			list = {
-			
-				# Elves: No Red/Black
-				# Drow: Red/Black/Purple
-				# Lunari: All silver!
-			
-				# Wealthy Suit 1
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_cyan.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_gold.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_green.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_purple.dds"
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_red.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit1_silver.dds"
-			
-				# Wealthy Suit 2
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_green.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_purple.dds"
-				#"gfx/models/portraits/shared_clothing/male/elven_male_clothing_wealthy_suit2_red.dds"
-			}
-		}
-
-		# Sentinels
-		random = {
-			trigger = { owner = { has_government = gov_military_order }	}
-			list = {
-				# Knight
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_gold.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_armor_knight_silver.dds"
-			}
-		}
-		
-		# MISC GROUPS
-		random = {
-			trigger = { 
-						or = {
-								owner = { has_government = gov_curator_enclave }
-								owner = { has_government = gov_trader_enclave }
-								owner = { has_government = gov_artist_enclave } 
-						}
-			}
-			list = {
-				# Common Suit 1
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_black.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_blue.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_cyan.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_gold.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_green.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_purple.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_red.dds"
-				"gfx/models/portraits/shared_clothing/male/elven_male_clothing_common_suit1_silver.dds"
-			}
-		}
 	}
 }
 
 elven_male_hair_1 = { 
 	default = "gfx/models/portraits/shared_hair/male/elven_male_hair_style_02_black.dds"
 }
-
-
