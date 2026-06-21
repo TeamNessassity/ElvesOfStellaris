@@ -23,7 +23,8 @@ message_type = {
 	icon = "GFX_message_other_alert"
 	icon_frame = 1
 
+	sound = "notification"
 	ping = "ping_notification_green"
 
-	category = other
+	category = planets
 }

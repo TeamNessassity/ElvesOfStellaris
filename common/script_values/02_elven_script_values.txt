@@ -76,10 +76,6 @@ eos_lhu_val_samsara = {
 		num_researched_techs > 0
 	}
 	modifier = {
-		divide = trigger:num_owned_planets
-		num_owned_planets > 0
-	}
-	modifier = {
 		mult = value:eos_lhu_val_cosmogenesis_level
 		has_crisis_level = crisis_cosmogenesis_level_1
 	}
@@ -89,23 +85,23 @@ eos_lhu_val_samsara = {
 eos_lhu_val_cosmogenesis_level = {
 	base = 0
 	modifier = {
-		add = 1
+		add = 0.2
 		has_crisis_level = crisis_cosmogenesis_level_5
 	}
 	modifier = {
-		add = 1
+		add = 0.2
 		has_crisis_level = crisis_cosmogenesis_level_4
 	}
 	modifier = {
-		add = 1
+		add = 0.2
 		has_crisis_level = crisis_cosmogenesis_level_3
 	}
 	modifier = {
-		add = 1
+		add = 0.2
 		has_crisis_level = crisis_cosmogenesis_level_2
 	}
 	modifier = {
-		add = 1
+		add = 0.2
 		has_crisis_level = crisis_cosmogenesis_level_1
 	}
 	mult = 1
@@ -119,6 +115,38 @@ eos_lhu_val_samsara_level = {
 		is_variable_set = eos_lhu_var_samsara_level
 	}
 	mult = 1
+}
+
+# Calculate % of resource income
+eos_lhu_val_samsara_upkeep_mult = {
+	base = 1
+	complex_trigger_modifier = {
+		trigger = resource_revenue_compare
+		parameters = {
+			resource = $RESOURCE$
+		}
+		mode = mult
+	}
+	mult = $MULT$
+	min = 0
+}
+
+# Calculate % of resource income divided by colonies
+eos_lhu_val_samsara_progress_mult = {
+	base = 1
+	complex_trigger_modifier = {
+		trigger = resource_revenue_compare
+		parameters = {
+			resource = $RESOURCE$
+		}
+		mode = mult
+	}
+	modifier = {
+		divide = trigger:num_owned_planets
+		num_owned_planets > 0
+	}
+	mult = $MULT$
+	min = 0
 }
 
 # Nirvana counter as value for scripted_loc purposes. This is supposed to be scope-neutral.

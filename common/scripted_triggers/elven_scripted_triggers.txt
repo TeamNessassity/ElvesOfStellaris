@@ -204,9 +204,29 @@ eos_lhu_valid_new_dynasty_ruler = {
 
 # Celestial Throne: Situations
 
-# this = country
+# this = situation
+# root = situation
+# owner = country
+# target = planet
+eos_lhu_valid_situation_anatta = {
+	owner = {
+		has_megastructure = elven_lhuren_eternal_array_repurposed
+	}
+	root.target = {
+		is_colony = yes
+		exists = owner
+		owner = { is_same_value = root.owner }
+	}
+}
+
+# this = situation
+# root = situation
+# owner = country
+# target = planet
 eos_lhu_valid_situation_samsara = {
-	has_megastructure = elven_lhuren_eternal_array_restored
+	owner = {
+		has_megastructure = elven_lhuren_eternal_array_restored
+	}
 	root.target = {
 		is_colony = yes
 		exists = owner

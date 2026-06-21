@@ -287,6 +287,8 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  elven_lhuren_samsara_tooltip:0 "§YSamsara§! is increased by researching §YTechnologies§!$TABBED_NEW_LINE$- Current Samsara: §Y[ROOT.EOSSamsaraCounter]§!"
 
 # Event Situations
+
+# Ending A: Anatta
  eos_lhuren_situation_anatta:0 "Negentropy: Anatta"
  eos_lhuren_situation_anatta_desc:0 "$NAME_LHU_ETERNAL_FOUNDRY$ collapses the Imaginary Metaforms we derive from Celestial Equations into stable quanta. Increasing output should have minimal impact on the local frame of reference. Concerns regarding the unobserved sectors of reality remain theoretical."
  eos_lhuren_situation_anatta_type:0 "$eos_lhuren_situation_anatta$"
@@ -309,6 +311,35 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_anatta_stage_8_effects:0 "Nothing Important: §YQuestionable§!"
  eos_lhuren_situation_anatta_stage_9_effects:0 "Nothing Important: §HDebatable§!"
  eos_lhuren_situation_anatta_stage_10_effects:0 "Nothing Important: §RUncertain§!"
+
+# Ending B: Samsara
+ eos_lhuren_situation_samsara:0 "Negentropy: Samsara"
+ eos_lhuren_situation_samsara_desc:0 "Within $NAME_LHU_ETERNAL_ARRAY$'s embrace, the continuity of existence cannot be measured in yesterdays and tomorrows. Our eternity is a lustrous net of mirrors; each scale beholding and beholden by all; in each reflection, a universe is born."
+ eos_lhuren_situation_samsara_type:0 "$eos_lhuren_situation_samsara$"
+
+ eos_lhuren_situation_samsara_outcome:0 "§H[target.GetName]§! will undergo §YSamsara§!, dispersing the ripples of entropy.\n§H[target.GetName]§! will gain $MOD_PLANET_MAX_DISTRICTS_ADD$: §G+1§!"
+
+ eos_lhuren_situation_samsara_tooltip_colonies:0 "Additional progress from consuming $i_unity$ is §Rdivided§! by the number of §HColonies§!"
+
+ eos_lhuren_situation_samsara_approach_passive:0 "Observation"
+ eos_lhuren_situation_samsara_approach_passive_tooltip:0 "Minimize interference to observe the natural course of causality.\nBase §YMonthly Progress§! is determined by the number of known §YTechnologies§! and §Y$ap_cosmogenesis$§! Level"
+ eos_lhuren_situation_samsara_approach_active:0 "Reflection"
+ eos_lhuren_situation_samsara_approach_active_tooltip:0 "Selectively record observations to steer away from undesirable eigenstates.\nConsume §R50%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+ eos_lhuren_situation_samsara_approach_controlled:0 "Refraction"
+ eos_lhuren_situation_samsara_approach_controlled_tooltip:0 "Introduce new variables to influence the causal process.\nConsume §R100%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+ eos_lhuren_situation_samsara_approach_cosmogenesis:0 "§RDistortion§!"
+ eos_lhuren_situation_samsara_approach_cosmogenesis_tooltip:0 "Modify universal constants to directly collapse the desired outcome.\nConsume §R200%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+
+ eos_lhuren_situation_samsara_monthly_change_tooltip:0 "Research new §YTechnologies§! and progress through §Y$ap_cosmogenesis$§! to increase monthly progress.\nProgress can be further accelerated by spending a portion of $i_unity$ production via the active §YSituation Approach§! options.\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+ eos_lhuren_situation_samsara_progress_tech:0 "Researched §YTechnologies§!"
+ eos_lhuren_situation_samsara_progress_unity:0 "Consumed $i_unity$ divided by §HColonies§!"
+
+ eos_lhuren_situation_samsara_stage_1: "Cradle of Rebirth"
+ eos_lhuren_situation_samsara_stage_2: "Crucible of Growth"
+ eos_lhuren_situation_samsara_stage_3: "Curtain of Repose"
+
+ MESSAGE_EOS_LHU_SAMSARA_UP_TITLE:0 "Samsara"
+ EOS_LHU_SAMSARA_UP_DESC:0 "$PLANET|H$ has undergone §YSamsara§!. Eternity branches out into new possibilities."
 
 # Origin Errors
  elven_lhuren_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"

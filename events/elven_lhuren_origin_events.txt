@@ -277,6 +277,7 @@ country_event = {
 			}
 			start_situation = {
 				type = eos_lhuren_situation_anatta
+				target = event_target:lhuren_lhumar
 				effect = {
 					save_event_target_as = eos_lhuren_situation_anatta
 				}
@@ -541,7 +542,7 @@ situation_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		situation_progress >= 1000
+		situation_progress >= 99999
 	}
 
 	immediate = {
@@ -551,13 +552,18 @@ situation_event = {
 				value = 1
 			}
 		}
-		add_situation_progress = -1000
+		set_situation_progress = 0
 
 		create_message = {
 			type = EOS_LHU_SAMSARA_UP
 			localization = EOS_LHU_SAMSARA_UP_DESC
 			days = 30
 			target = target
+			variable = {
+				type = name
+				localization = PLANET
+				scope = target
+			}
 		}
 	}
 

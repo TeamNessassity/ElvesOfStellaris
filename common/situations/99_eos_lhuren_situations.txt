@@ -24,14 +24,12 @@ eos_lhuren_situation_anatta = {
 	stages = {
 		stage_1 = {
 			icon = GFX_situation_stage_1
-			icon_background = GFX_situation_stage_frame_green
-			color = white
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 10
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.1
 				storm_attraction_field_modifier = 0.1
@@ -40,14 +38,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_2 = {
 			icon = GFX_situation_stage_2
-			icon_background = GFX_situation_stage_frame_green
-			color = light_blue
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 20
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.2
 				storm_attraction_field_modifier = 0.2
@@ -56,14 +52,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_3 = {
 			icon = GFX_situation_stage_3
-			icon_background = GFX_situation_stage_frame_green
+			icon_background = GFX_situation_stage_frame_blue
 			color = blue
 			end = 30
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.3
 				storm_attraction_field_modifier = 0.3
@@ -72,14 +66,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_4 = {
 			icon = GFX_situation_stage_4
-			icon_background = GFX_situation_stage_frame_green
-			color = dark_blue
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 40
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.4
 				storm_attraction_field_modifier = 0.4
@@ -88,14 +80,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_5 = {
 			icon = GFX_situation_stage_5
-			icon_background = GFX_situation_stage_frame_green
-			color = purple
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 50
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.5
 				storm_attraction_field_modifier = 0.5
@@ -104,14 +94,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_6 = {
 			icon = GFX_situation_stage_6
-			icon_background = GFX_situation_stage_frame_green
-			color = purple
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 60
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.6
 				storm_attraction_field_modifier = 0.6
@@ -120,14 +108,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_7 = {
 			icon = GFX_situation_stage_7
-			icon_background = GFX_situation_stage_frame_green
-			color = purple
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 70
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.7
 				storm_attraction_field_modifier = 0.7
@@ -136,14 +122,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_8 = {
 			icon = GFX_situation_stage_8
-			icon_background = GFX_situation_stage_frame_green
-			color = purple
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 80
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.8
 				storm_attraction_field_modifier = 0.8
@@ -152,14 +136,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_9 = {
 			icon = GFX_situation_stage_9
-			icon_background = GFX_situation_stage_frame_green
-			color = purple
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 90
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 0.9
 				storm_attraction_field_modifier = 0.9
@@ -168,14 +150,12 @@ eos_lhuren_situation_anatta = {
 		}
 		stage_10 = {
 			icon = GFX_situation_stage_10
-			icon_background = GFX_situation_stage_frame_green
-			color = purple
+			icon_background = GFX_situation_stage_frame_blue
+			color = blue
 			end = 100
 			triggered_modifier = {
 				potential = {
-					owner = {
-						has_megastructure = elven_lhuren_eternal_array_repurposed
-					}
+					eos_lhu_valid_situation_anatta = yes
 				}
 				megastructure_build_speed_mult = 1.0
 				storm_attraction_field_modifier = 1.0
@@ -194,9 +174,7 @@ eos_lhuren_situation_anatta = {
 		default = yes
 
 		allow = {
-			owner = {
-				has_megastructure = elven_lhuren_eternal_array_repurposed
-			}
+			eos_lhu_valid_situation_anatta = yes
 		}
 
 		resources = {
@@ -227,9 +205,7 @@ eos_lhuren_situation_anatta = {
 		}
 
 		allow = {
-			owner = {
-				has_megastructure = elven_lhuren_eternal_array_repurposed
-			}
+			eos_lhu_valid_situation_anatta = yes
 		}
 
 		resources = {
@@ -261,9 +237,7 @@ eos_lhuren_situation_anatta = {
 		}
 
 		allow = {
-			owner = {
-				has_megastructure = elven_lhuren_eternal_array_repurposed
-			}
+			eos_lhu_valid_situation_anatta = yes
 		}
 
 		resources = {
@@ -296,9 +270,9 @@ eos_lhuren_situation_anatta = {
 		}
 
 		allow = {
+			eos_lhu_valid_situation_anatta = yes
 			owner = {
 				has_ascension_perk = ap_cosmogenesis
-				has_megastructure = elven_lhuren_eternal_array_repurposed
 			}
 		}
 
@@ -330,9 +304,7 @@ eos_lhuren_situation_anatta = {
 
 	triggered_blocked_desc = {
 		trigger = {
-			owner = {
-				NOT = { has_megastructure = elven_lhuren_eternal_array_repurposed }
-			}
+			eos_lhu_valid_situation_anatta = no
 		}
 		text = eos_lhuren_situation_anatta_blocked_desc
 	}
@@ -373,12 +345,46 @@ eos_lhuren_situation_samsara = {
 	}
 
 	stages = {
-		stage_1 = {
+		eos_lhuren_situation_samsara_stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_green
 			color = white
-			end = 1000 #00
-			custom_tooltip = "eos_lhuren_situation_samsara_stage_1_effects"
+			end = 33333
+
+			triggered_target_modifier = {
+				potential = {
+					eos_lhu_valid_situation_samsara = yes
+				}
+				logistic_growth_mult = 0.15
+				planet_pops_upkeep_mult = -0.15
+			}
+		}
+		eos_lhuren_situation_samsara_stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_green
+			color = white
+			end = 66666
+
+			triggered_target_modifier = {
+				potential = {
+					eos_lhu_valid_situation_samsara = yes
+				}
+				planet_researchers_produces_mult = 0.30
+			}
+		}
+		eos_lhuren_situation_samsara_stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_green
+			color = white
+			end = 99999
+
+			triggered_target_modifier = {
+				potential = {
+					eos_lhu_valid_situation_samsara = yes
+				}
+				planet_bureaucrats_produces_mult = 0.15
+				planet_jobs_upkeep_mult = -0.15
+			}
 		}
 	}
 
@@ -397,53 +403,63 @@ eos_lhuren_situation_samsara = {
 		}
 	}
 
-	# Consumes some Unity, scaling with Empire Size, to speed up progress
+	# Consumes 50% Unity to speed up progress
 	approach = {
-		name = eos_lhuren_situation_samsara_approach_devoted
+		name = eos_lhuren_situation_samsara_approach_active
 		icon = GFX_situation_approach_unity
 		icon_background = GFX_situation_approach_bg_green
 		on_select = {
-			custom_tooltip = eos_lhuren_situation_samsara_approach_devoted_tooltip
+			custom_tooltip = eos_lhuren_situation_samsara_approach_active_tooltip
 		}
 
 		allow = {
+			eos_lhu_valid_situation_samsara = yes
 			owner = {
-				eos_lhu_valid_situation_samsara = yes
+				resource_stockpile_compare = {
+					resource = unity
+					value > 0
+				}
 			}
 		}
 		resources = {
 			category = situations
 			upkeep = {
-				unity = 100
+				unity = 1
 				#mult = PLACEHOLDER
+				mult = owner.value:eos_lhu_val_samsara_upkeep_mult|RESOURCE|unity|MULT|0.5|
 			}
 		}
 	}
 
-	# Consumes a lot of Unity, scaling with Empire Size, to speed up progress
+	# Consumes 100% Unity to speed up progress
 	approach = {
-		name = eos_lhuren_situation_samsara_approach_obsessive
+		name = eos_lhuren_situation_samsara_approach_controlled
 		icon = GFX_situation_approach_unity
 		icon_background = GFX_situation_approach_bg_yellow
 		on_select = {
-			custom_tooltip = eos_lhuren_situation_samsara_approach_obsessive_tooltip
+			custom_tooltip = eos_lhuren_situation_samsara_approach_controlled_tooltip
 		}
 
 		allow = {
+			eos_lhu_valid_situation_samsara = yes
 			owner = {
-				eos_lhu_valid_situation_samsara = yes
+				resource_stockpile_compare = {
+					resource = unity
+					value > 0
+				}
 			}
 		}
 		resources = {
 			category = situations
 			upkeep = {
-				unity = 1000
+				unity = 1
 				#mult = PLACEHOLDER
+				mult = owner.value:eos_lhu_val_samsara_upkeep_mult|RESOURCE|unity|MULT|1.0|
 			}
 		}
 	}
 
-	# Consumes ALL your Unity income, but conversion rate is unaffected by Empire Size
+	# Consumes 200% Unity to speed up progress and generate Advanced Logic
 	approach = {
 		name = eos_lhuren_situation_samsara_approach_cosmogenesis
 		icon = GFX_situation_approach_unity
@@ -453,16 +469,26 @@ eos_lhuren_situation_samsara = {
 		}
 
 		allow = {
+			eos_lhu_valid_situation_samsara = yes
 			owner = {
-				eos_lhu_valid_situation_samsara = yes
+				has_ascension_perk = ap_cosmogenesis
+				resource_stockpile_compare = {
+					resource = unity
+					value > 0
+				}
 			}
 		}
 
 		resources = {
 			category = situations
+			produces = {
+				advanced_logic = 1
+				mult = owner.value:eos_lhu_val_samsara_upkeep_mult|RESOURCE|unity|MULT|0.02|
+			}
 			upkeep = {
 				unity = 1
 				#mult = PLACEHOLDER
+				mult = owner.value:eos_lhu_val_samsara_upkeep_mult|RESOURCE|unity|MULT|2.0|
 			}
 		}
 	}
@@ -471,14 +497,27 @@ eos_lhuren_situation_samsara = {
 		base = 0
 		modifier = {
 			add = owner.value:eos_lhu_val_samsara
-			desc = "eos_lhuren_situation_samsara_progress_samsara"
+			desc = "eos_lhuren_situation_samsara_progress_tech"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_samsara_progress_mult|RESOURCE|unity|MULT|0.5|
+			desc = "eos_lhuren_situation_samsara_progress_unity"
+			current_situation_approach = eos_lhuren_situation_samsara_approach_active
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_samsara_progress_mult|RESOURCE|unity|MULT|1.0|
+			desc = "eos_lhuren_situation_samsara_progress_unity"
+			current_situation_approach = eos_lhuren_situation_samsara_approach_controlled
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_samsara_progress_mult|RESOURCE|unity|MULT|2.0|
+			desc = "eos_lhuren_situation_samsara_progress_unity"
+			current_situation_approach = eos_lhuren_situation_samsara_approach_cosmogenesis
 		}
 		modifier = {
 			mult = 0
 			desc = "situation_identity_complex_needed_desc"
-			owner = {
-				eos_lhu_valid_situation_samsara = no
-			}
+			eos_lhu_valid_situation_samsara = no
 		}
 	}
 
@@ -490,9 +529,7 @@ eos_lhuren_situation_samsara = {
 
 	triggered_blocked_desc = {
 		trigger = {
-			owner = {
-				eos_lhu_valid_situation_samsara = no
-			}
+			eos_lhu_valid_situation_samsara = no
 		}
 		text = eos_lhuren_situation_samsara_blocked_desc
 	}
