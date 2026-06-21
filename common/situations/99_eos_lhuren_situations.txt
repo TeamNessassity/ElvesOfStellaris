@@ -14,9 +14,6 @@ eos_lhuren_situation_anatta = {
 
 	on_start = {
 		set_situation_progress = owner.value:eos_lhu_val_anatta
-		owner = {
-			save_event_target_as = eos_lhuren_situation_anatta_owner
-		}
 	}
 
 	on_progress_complete = {
@@ -359,9 +356,6 @@ eos_lhuren_situation_samsara = {
 				VALUE_IF_CREATED = 1
 			}
 		}
-		owner = {
-			save_event_target_as = eos_lhuren_situation_samsara_owner
-		}
 	}
 
 	on_progress_complete = {
@@ -391,8 +385,8 @@ eos_lhuren_situation_samsara = {
 	# Flat speed based on the number of researched techs and Cosmogenesis tier
 	approach = {
 		name = eos_lhuren_situation_samsara_approach_passive
-		icon = GFX_situation_approach_alloys
-		icon_background = GFX_situation_approach_bg_yellow
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_green
 		on_select = {
 			custom_tooltip = eos_lhuren_situation_samsara_approach_passive_tooltip
 		}
@@ -406,7 +400,7 @@ eos_lhuren_situation_samsara = {
 	# Consumes some Unity, scaling with Empire Size, to speed up progress
 	approach = {
 		name = eos_lhuren_situation_samsara_approach_devoted
-		icon = GFX_situation_approach_alloys
+		icon = GFX_situation_approach_unity
 		icon_background = GFX_situation_approach_bg_green
 		on_select = {
 			custom_tooltip = eos_lhuren_situation_samsara_approach_devoted_tooltip
@@ -429,8 +423,8 @@ eos_lhuren_situation_samsara = {
 	# Consumes a lot of Unity, scaling with Empire Size, to speed up progress
 	approach = {
 		name = eos_lhuren_situation_samsara_approach_obsessive
-		icon = GFX_situation_approach_alloys
-		icon_background = GFX_situation_approach_bg_green
+		icon = GFX_situation_approach_unity
+		icon_background = GFX_situation_approach_bg_yellow
 		on_select = {
 			custom_tooltip = eos_lhuren_situation_samsara_approach_obsessive_tooltip
 		}
@@ -452,8 +446,8 @@ eos_lhuren_situation_samsara = {
 	# Consumes ALL your Unity income, but conversion rate is unaffected by Empire Size
 	approach = {
 		name = eos_lhuren_situation_samsara_approach_cosmogenesis
-		icon = GFX_situation_approach_alloys
-		icon_background = GFX_situation_approach_bg_green
+		icon = GFX_situation_approach_unity
+		icon_background = GFX_situation_approach_bg_red
 		on_select = {
 			custom_tooltip = eos_lhuren_situation_samsara_approach_cosmogenesis_tooltip
 		}

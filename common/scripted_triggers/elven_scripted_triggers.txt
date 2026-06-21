@@ -207,10 +207,10 @@ eos_lhu_valid_new_dynasty_ruler = {
 # this = country
 eos_lhu_valid_situation_samsara = {
 	has_megastructure = elven_lhuren_eternal_array_restored
-	event_target:lhuren_lhumar = {
-		exists = owner
-		owner = { is_same_value = event_target:eos_lhuren_situation_samsara_owner }
+	root.target = {
 		is_colony = yes
+		exists = owner
+		owner = { is_same_value = root.owner }
 	}
 }
 
