@@ -277,6 +277,9 @@ country_event = {
 			}
 			start_situation = {
 				type = eos_lhuren_situation_anatta
+				effect = {
+					save_event_target_as = eos_lhuren_situation_anatta
+				}
 			}
 		}
 	}
@@ -359,6 +362,23 @@ country_event = {
 		set_country_flag = elven_lhuren_origin_ending_B
 		add_modifier = {
 			modifier = elven_lhuren_origin_ending_B_modifier
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					any_situation = {
+						is_situation_type = eos_lhuren_situation_samsara
+					}
+				}
+			}
+			start_situation = {
+				type = eos_lhuren_situation_samsara
+				target = event_target:lhuren_lhumar
+				effect = {
+					save_event_target_as = eos_lhuren_situation_samsara
+				}
+			}
 		}
 	}
 	
@@ -504,6 +524,128 @@ country_event = {
 	}
 }
 
+###############################
+# Post-Story Situation Events #
+###############################
+
+# Lhumar has undergone Samsara
+situation_event = {
+	id = elven_lhuren_origin_events.10600
+	#title = elven_lhuren_origin_events.10600.name
+	#desc = elven_lhuren_origin_events.10600.desc
+	#picture = GFX_evt_eos_lhuren_lhumar
+	location = target
+	situation = this
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		situation_progress >= 1000
+	}
+
+	immediate = {
+		target = {
+			change_variable = {
+				which = eos_lhu_var_samsara_level
+				value = 1
+			}
+		}
+		add_situation_progress = -1000
+
+		create_message = {
+			type = EOS_LHU_SAMSARA_UP
+			localization = EOS_LHU_SAMSARA_UP_DESC
+			days = 30
+			target = target
+		}
+	}
+
+	after = {
+	}
+}
+
+###############################
+# Miscellaneous Origin Events #
+###############################
+
+# Ending B Mechanics: If the Orbital Ring is somehow destroyed/dismantled, break the shield and downgrade the Array so it can be repaired again.
+
+event = {
+	id = elven_lhuren_origin_events.511
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:lhuren_eternal_array
+		event_target:lhuren_eternal_array = {
+			is_megastructure_type = elven_lhuren_eternal_array_restored
+		}
+		exists = event_target:lhuren_lhumar
+		NOT = { exists = event_target:lhuren_eternal_array_starbase }
+	}
+
+	immediate = {
+		event_target:lhuren_lhumar = {
+			solar_system = {
+				# Vanilla forcibly spawns a ruined ring if the system is abandoned while an orbital ring exists
+				# One scenario where it can happen is if player embarks from Lhumar with their whole empire
+				# Anyways, UGLY! let's get rid of it!
+				every_megastructure = {
+					limit = {
+						is_megastructure_type = orbital_ring_ruined
+					}
+					delete_megastructure = this
+				}
+
+				# Now, switch the Array back to its ruined state
+				# After Ending B, Lhuren can repair it anytime
+				delete_megastructure = event_target:lhuren_eternal_array
+				spawn_megastructure = {
+					type = elven_lhuren_eternal_array_ruined
+					planet = event_target:lhuren_lhumar
+					owner = event_target:lhuren_lhumar.owner
+					graphical_culture = elven_02
+
+					init_effect = {
+						save_global_event_target_as = lhuren_eternal_array
+					}
+				}
+			}
+		}
+	}
+}
+
+# Ending C Mechanics: After encasing Lhumar, the Nirvana counter continues to increase slowly over time.
+
+event = {
+	id = elven_lhuren_origin_events.521
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:lhuren_lhumar
+		event_target:lhuren_lhumar = {
+			is_variable_set = eos_lhu_var_nirvana
+		}
+	}
+
+	immediate = {
+		event_target:lhuren_lhumar = {
+			create_variable_if_not_exists = {
+				VARIABLE = eos_lhu_var_nirvana
+				VALUE_IF_CREATED = 0
+			}
+			change_variable = {
+				which = eos_lhu_var_nirvana
+				value = 1
+			}
+		}
+	}
+}
+
 #########################################################################################
 # Events related to the state of Lhumar and triggers for the loss of Lhuren immortality #
 #########################################################################################
@@ -584,94 +726,6 @@ country_event = {
 	option = {
 		name = elven_lhuren_origin_events.301.a
 		custom_tooltip = elven_lhuren_origin_events_tooltip.301.a
-	}
-}
-
-###############################
-# Miscellaneous Origin Events #
-###############################
-
-# Ending B Mechanics: If the Orbital Ring is somehow destroyed/dismantled, break the shield and downgrade the Array so it can be repaired again.
-
-event = {
-	id = elven_lhuren_origin_events.511
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		exists = event_target:lhuren_eternal_array
-		event_target:lhuren_eternal_array = {
-			is_megastructure_type = elven_lhuren_eternal_array_restored
-		}
-		exists = event_target:lhuren_lhumar
-		event_target:lhuren_lhumar = {
-			is_colony = yes
-		}
-		NOT = { exists = event_target:lhuren_eternal_array_starbase }
-	}
-
-	immediate = {
-		event_target:lhuren_lhumar = {
-			#eos_lhuren_shield_state_modifier = { MODIFIER = elven_eternal_array_broken_modifier }
-			#eos_lhuren_shield_state = { VALUE = 1 }
-
-			solar_system = {
-				event_target:lhuren_lhumar = {
-					if = {
-						limit = {
-							has_megastructure = orbital_ring_ruined
-						}
-						random_megastructure = {
-							limit = {
-								is_megastructure_type = orbital_ring_ruined
-							}
-							delete_megastructure = this
-						}
-					}
-				}
-				delete_megastructure = event_target:lhuren_eternal_array
-				spawn_megastructure = {
-					type = elven_lhuren_eternal_array_ruined
-					planet = event_target:lhuren_lhumar
-					owner = event_target:lhuren_lhumar.owner
-					graphical_culture = elven_02
-
-					init_effect = {
-						save_global_event_target_as = lhuren_eternal_array
-					}
-				}
-			}
-		}
-	}
-}
-
-# Ending C Mechanics: After encasing Lhumar, the Nirvana counter continues to increase slowly over time.
-
-event = {
-	id = elven_lhuren_origin_events.521
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		exists = event_target:lhuren_lhumar
-		event_target:lhuren_lhumar = {
-			is_variable_set = eos_lhu_var_nirvana
-		}
-	}
-
-	immediate = {
-		event_target:lhuren_lhumar = {
-			create_variable_if_not_exists = {
-				VARIABLE = eos_lhu_var_nirvana
-				VALUE_IF_CREATED = 0
-			}
-			change_variable = {
-				which = eos_lhu_var_nirvana
-				value = 1
-			}
-		}
 	}
 }
 

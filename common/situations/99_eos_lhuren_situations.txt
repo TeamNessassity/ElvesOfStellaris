@@ -5,8 +5,8 @@
 # Ending A allows to control the output of Eternal Foundry
 eos_lhuren_situation_anatta = {
 	picture = GFX_evt_eos_lhuren_lhumar
-	complete_icon_frame = GFX_situation_outcome_frame_blue
-	complete_icon = GFX_situation_outcome_unknown
+	#complete_icon_frame = GFX_situation_outcome_frame_blue
+	#complete_icon = GFX_situation_outcome_ascension
 	category = positive
 	situation_log_category = empire_concerns
 	
@@ -14,6 +14,9 @@ eos_lhuren_situation_anatta = {
 
 	on_start = {
 		set_situation_progress = owner.value:eos_lhu_val_anatta
+		owner = {
+			save_event_target_as = eos_lhuren_situation_anatta_owner
+		}
 	}
 
 	on_progress_complete = {
@@ -213,11 +216,6 @@ eos_lhuren_situation_anatta = {
 		}
 
 		triggered_modifier = {
-			potential = {
-				owner = {
-					has_megastructure = elven_lhuren_eternal_array_repurposed
-				}
-			}
 			shipclass_military_build_speed_mult = 0.01
 			mult = owner.value:eos_lhu_val_anatta
 		}
@@ -252,11 +250,6 @@ eos_lhuren_situation_anatta = {
 		}
 
 		triggered_modifier = {
-			potential = {
-				owner = {
-					has_megastructure = elven_lhuren_eternal_array_repurposed
-				}
-			}
 			pop_soldier_bonus_workforce_mult = 0.01
 			mult = owner.value:eos_lhu_val_anatta
 		}
@@ -291,11 +284,6 @@ eos_lhuren_situation_anatta = {
 		}
 
 		triggered_modifier = {
-			potential = {
-				owner = {
-					has_megastructure = elven_lhuren_eternal_array_repurposed
-				}
-			}
 			shipclass_starbase_armor_mult = 0.01
 			shipclass_starbase_armor_hardening_add = 0.01
 			mult = owner.value:eos_lhu_val_anatta
@@ -330,11 +318,6 @@ eos_lhuren_situation_anatta = {
 		}
 
 		triggered_modifier = {
-			potential = {
-				owner = {
-					has_megastructure = elven_lhuren_eternal_array_repurposed
-				}
-			}
 			damage_vs_country_type_fallen_empire_mult = 0.01
 			damage_vs_country_type_awakened_fallen_empire_mult = 0.01
 			mult = owner.value:eos_lhu_val_anatta
@@ -346,5 +329,177 @@ eos_lhuren_situation_anatta = {
 	}
 
 	on_monthly = {
+	}
+
+	triggered_blocked_desc = {
+		trigger = {
+			owner = {
+				NOT = { has_megastructure = elven_lhuren_eternal_array_repurposed }
+			}
+		}
+		text = eos_lhuren_situation_anatta_blocked_desc
+	}
+}
+
+
+# Ending B focuses on fortifying and improving Lhumar via the Eternal Array
+eos_lhuren_situation_samsara = {
+	picture = GFX_evt_eos_lhuren_lhumar
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon = GFX_situation_outcome_ascension
+	category = positive
+	situation_log_category = empire_concerns
+	
+	initial_progress = 0
+
+	on_start = {
+		target = {
+			create_variable_if_not_exists = {
+				VARIABLE = eos_lhu_var_samsara_level
+				VALUE_IF_CREATED = 1
+			}
+		}
+		owner = {
+			save_event_target_as = eos_lhuren_situation_samsara_owner
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = "eos_lhuren_situation_samsara_outcome"
+		hidden_effect = {
+			# This is here just to silence the error log
+		}
+	}
+
+	permanent = yes
+
+	triggered_target_modifier = {
+		planet_max_districts_add = 1
+		mult = target.value:eos_lhu_val_samsara_level
+	}
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			color = white
+			end = 1000 #00
+			custom_tooltip = "eos_lhuren_situation_samsara_stage_1_effects"
+		}
+	}
+
+	# Flat speed based on the number of researched techs and Cosmogenesis tier
+	approach = {
+		name = eos_lhuren_situation_samsara_approach_passive
+		icon = GFX_situation_approach_alloys
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_samsara_approach_passive_tooltip
+		}
+		default = yes
+
+		allow = {
+			always = yes
+		}
+	}
+
+	# Consumes some Unity, scaling with Empire Size, to speed up progress
+	approach = {
+		name = eos_lhuren_situation_samsara_approach_devoted
+		icon = GFX_situation_approach_alloys
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_samsara_approach_devoted_tooltip
+		}
+
+		allow = {
+			owner = {
+				eos_lhu_valid_situation_samsara = yes
+			}
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				unity = 100
+				#mult = PLACEHOLDER
+			}
+		}
+	}
+
+	# Consumes a lot of Unity, scaling with Empire Size, to speed up progress
+	approach = {
+		name = eos_lhuren_situation_samsara_approach_obsessive
+		icon = GFX_situation_approach_alloys
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_samsara_approach_obsessive_tooltip
+		}
+
+		allow = {
+			owner = {
+				eos_lhu_valid_situation_samsara = yes
+			}
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				unity = 1000
+				#mult = PLACEHOLDER
+			}
+		}
+	}
+
+	# Consumes ALL your Unity income, but conversion rate is unaffected by Empire Size
+	approach = {
+		name = eos_lhuren_situation_samsara_approach_cosmogenesis
+		icon = GFX_situation_approach_alloys
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = eos_lhuren_situation_samsara_approach_cosmogenesis_tooltip
+		}
+
+		allow = {
+			owner = {
+				eos_lhu_valid_situation_samsara = yes
+			}
+		}
+
+		resources = {
+			category = situations
+			upkeep = {
+				unity = 1
+				#mult = PLACEHOLDER
+			}
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = owner.value:eos_lhu_val_samsara
+			desc = "eos_lhuren_situation_samsara_progress_samsara"
+		}
+		modifier = {
+			mult = 0
+			desc = "situation_identity_complex_needed_desc"
+			owner = {
+				eos_lhu_valid_situation_samsara = no
+			}
+		}
+	}
+
+	on_monthly = {
+		events = {
+			elven_lhuren_origin_events.10600
+		}
+	}
+
+	triggered_blocked_desc = {
+		trigger = {
+			owner = {
+				eos_lhu_valid_situation_samsara = no
+			}
+		}
+		text = eos_lhuren_situation_samsara_blocked_desc
 	}
 }

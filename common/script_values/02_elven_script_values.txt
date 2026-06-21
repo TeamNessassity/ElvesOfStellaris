@@ -68,7 +68,7 @@ eos_lhu_val_anatta = {
 	mult = 1
 }
 
-# Count the total number of times The Eternal Foundry was upgraded
+# Base Samsara progress
 eos_lhu_val_samsara = {
 	base = 0
 	modifier = {
@@ -107,6 +107,16 @@ eos_lhu_val_cosmogenesis_level = {
 	modifier = {
 		add = 1
 		has_crisis_level = crisis_cosmogenesis_level_1
+	}
+	mult = 1
+}
+
+# Count the number of times Lhumar has undergone Samsara
+eos_lhu_val_samsara_level = {
+	base = 0
+	modifier = {
+		add = eos_lhu_var_samsara_level
+		is_variable_set = eos_lhu_var_samsara_level
 	}
 	mult = 1
 }
