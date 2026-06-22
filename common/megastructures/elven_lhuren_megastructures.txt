@@ -307,6 +307,9 @@ elven_lhuren_eternal_array_restored = {
 				#building = <starbase_building>
 				effect = {
 					save_global_event_target_as = lhuren_eternal_array_starbase
+					add_modifier = {
+						modifier = elven_lhuren_orbital_ring
+					}
 				}
 			}
 

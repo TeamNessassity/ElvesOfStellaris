@@ -155,13 +155,15 @@ d_elven_lunari_moon = {
 	drop_weight = { weight = 0 }
 }
 
+# Lhuren Event Deposits
+
 d_elven_lhuren_gilgezu = {
 	icon = d_infestation
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
-			alloys = 9
-			rare_crystals = 3
+			alloys = 6
+			rare_crystals = 1
 		}
 	}
 	station = shipclass_mining_station
@@ -176,7 +178,7 @@ d_elven_lhuren_helemar = {
 		category = orbital_research_deposits
 		produces = {
 			sr_dark_matter = 1
-			physics_research = 10
+			physics_research = 6
 		}
 	}
 	station = shipclass_research_station
@@ -186,14 +188,32 @@ d_elven_lhuren_helemar = {
 }
 
 d_elven_lhuren_carag_gur = {
+	icon = d_massive_crevice
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
 			minerals = 3
-			engineering_research = 3
+			volatile_motes = 1
 		}
 	}
 	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	drop_weight = { weight = 0 }
+}
+
+d_elven_lhuren_mixa = {
+	icon = d_ghostly_canyon
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			physics_research = 1
+			society_research = 1
+			engineering_research = 1
+			sr_zro = 1
+		}
+	}
+	station = shipclass_research_station
 	is_for_colonizable = no
 
 	drop_weight = { weight = 0 }

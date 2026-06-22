@@ -355,8 +355,8 @@ eos_lhuren_situation_samsara = {
 				potential = {
 					eos_lhu_valid_situation_samsara = yes
 				}
-				logistic_growth_mult = 0.15
-				planet_pops_upkeep_mult = -0.15
+				pop_healthcare_bonus_workforce_mult = 0.15
+				pop_roboticist_bonus_workforce_mult = 0.15
 			}
 		}
 		eos_lhuren_situation_samsara_stage_2 = {
@@ -382,7 +382,7 @@ eos_lhuren_situation_samsara = {
 				potential = {
 					eos_lhu_valid_situation_samsara = yes
 				}
-				planet_bureaucrats_produces_mult = 0.15
+				planet_pops_upkeep_mult = -0.15
 				planet_jobs_upkeep_mult = -0.15
 			}
 		}

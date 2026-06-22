@@ -652,6 +652,76 @@ event = {
 	}
 }
 
+# Aurlunor Mechanics: Mixa randomly changes its deposits while nobody's looking
+
+planet_event = {
+	id = elven_lhuren_origin_events.601
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_deposit = d_elven_lhuren_mixa
+	}
+
+	immediate = {
+		every_deposit = {
+			limit = {
+				NOT = {
+					is_deposit_type = d_elven_lhuren_mixa
+				}
+			}
+			remove_deposit = yes
+		}
+		random_list = {
+			30 = {
+				random_list = {
+					50 = { add_deposit = d_physics_1 }
+					40 = { add_deposit = d_physics_2 }
+					30 = { add_deposit = d_physics_3 }
+					20 = { add_deposit = d_physics_4 }
+					10 = { add_deposit = d_physics_5 }
+				}
+			}
+			30 = {
+				random_list = {
+					50 = { add_deposit = d_society_1 }
+					40 = { add_deposit = d_society_2 }
+					30 = { add_deposit = d_society_3 }
+					20 = { add_deposit = d_society_4 }
+					10 = { add_deposit = d_society_5 }
+				}
+			}
+			30 = {
+				random_list = {
+					50 = { add_deposit = d_engineering_1 }
+					40 = { add_deposit = d_engineering_2 }
+					30 = { add_deposit = d_engineering_3 }
+					20 = { add_deposit = d_engineering_4 }
+					10 = { add_deposit = d_engineering_5 }
+				}
+			}
+			10 = {
+				random_list = {
+					50 = { add_deposit = d_zro_deposit_1 }
+					40 = { add_deposit = d_zro_deposit_2 }
+					30 = { add_deposit = d_zro_deposit_3 }
+					20 = { add_deposit = d_zro_deposit_4 }
+					10 = { add_deposit = d_zro_deposit_5 }
+				}
+			}
+		}
+	}
+
+	after = {
+		planet_event = {
+			id = elven_lhuren_origin_events.601
+			days = 1800
+			random = 1620
+		}
+	}
+}
+
 #########################################################################################
 # Events related to the state of Lhumar and triggers for the loss of Lhuren immortality #
 #########################################################################################

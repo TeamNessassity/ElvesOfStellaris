@@ -36,18 +36,11 @@ elven_dragon_researcher = {
 	}
 
 	triggered_planet_modifier = {
-		planet_jobs_specialist_produces_mult = 0.1
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			owner = {
-				has_country_flag = elven_lhuren_origin_ending_B
-			}
-		}
-		modifier = {
-			all_technology_research_speed = 0.10
-		}
+		pop_biologist_bonus_workforce_mult = 0.1
+		pop_physicist_bonus_workforce_mult = 0.1
+		pop_engineer_bonus_workforce_mult = 0.1
+		pop_healthcare_bonus_workforce_mult = 0.1
+		pop_roboticist_bonus_workforce_mult = 0.1
 	}
 
 	weight = {
@@ -112,18 +105,9 @@ elven_dragon_priest = {
 	}
 
 	triggered_planet_modifier = {
-		planet_jobs_ruler_produces_mult = 0.1
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			owner = {
-				has_country_flag = elven_lhuren_origin_ending_C
-			}
-		}
-		modifier = {
-			country_edict_fund_add = 100
-		}
+		pop_politician_bonus_workforce_mult = 0.1
+		pop_enforcer_bonus_workforce_mult = 0.1
+		pop_bureaucrat_bonus_workforce_mult = 0.1
 	}
 
 	weight = {
@@ -188,18 +172,9 @@ elven_dragon_strategist = {
 	}
 
 	triggered_planet_modifier = {
-		planet_jobs_worker_produces_mult = 0.1
-	}
-
-	triggered_country_modifier = {
-		potential = {
-			owner = {
-				has_country_flag = elven_lhuren_origin_ending_A
-			}
-		}
-		modifier = {
-			country_naval_cap_add = 200
-		}
+		pop_soldier_bonus_workforce_mult = 0.1
+		pop_artisan_bonus_workforce_mult = 0.1
+		pop_fabricator_bonus_workforce_mult = 0.1
 	}
 
 	weight = {

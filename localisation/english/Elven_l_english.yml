@@ -277,12 +277,6 @@ elven_natural_beauty_desc:0 "The scenery on this planet is simply beautiful, any
 elven_irradiated_planet:0 "Irradiated"
 elven_irradiated_planet_desc:0 "Some long-ago calamity rendered this planet rather heavily irradiated."
 
-elven_storm_world_modifier:0 "Psionic Storm"
-elven_storm_world_modifier_desc:0 "The surface of this world is an amorphous metal with strange properties. Mountains, valleys and other typical geological features exist, yet probes landing on these features sink as if touching down in an ocean. Repeated scans show that entire mountain ranges have vanished while others have appeared from nowhere. Even light on this world reacts strangely. Surfaces that should be lit by the nearby star remain dark, while areas on the far side are as bright as day. Whatever phenomena, be it natural or otherwise, that has created this world is thoroughly beyond our understanding."
-
-elven_great_firewall_modifier:0 "Great Firewall"
-elven_great_firewall_modifier_desc:0 "The culmination of thousands of years of engineering, the Great Firewall protects this world both from extraterrestrial and terrestrial dissidents."
-
 elven_treant_harmony:0 "Phytovitalization"
 elven_treant_harmony_desc:0 "Each §YTreant§! increases habitability and amenities of this planet by §G1%§!"
 

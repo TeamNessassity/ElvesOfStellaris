@@ -143,7 +143,7 @@ elven_system_lhuren_initializer = {
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
-				add_deposit = d_volatile_motes_1
+				add_deposit = d_alloys_1
 			}
 		}
 	
@@ -171,12 +171,11 @@ elven_system_lhuren_initializer = {
 			init_effect = {
 				clear_deposits = yes
 				add_deposit = d_engineering_3
-				add_deposit = d_physics_3
 			}
 		}
 
 		planet = {
-			class = "pc_barren"
+			class = pc_shrouded
 			name = "Mixa"
 			entity = "elven_01_barren_01_mixa"
 			orbit_distance = 25
@@ -188,14 +187,12 @@ elven_system_lhuren_initializer = {
 				prevent_anomaly = yes
 				
 				clear_deposits = yes
-				add_deposit = d_physics_2
-				add_deposit = d_zro_deposit_1
-				
-				add_modifier = {
-					modifier = "elven_storm_world_modifier"
-					days = -1
+				add_deposit = d_elven_lhuren_mixa
+
+				planet_event = {
+					id = elven_lhuren_origin_events.601
+					days = 30
 				}
-				
 			}
 		}
 	}
@@ -374,7 +371,7 @@ elven_system_lhuren_initializer = {
 				prevent_anomaly = yes
 	
 				clear_deposits = yes
-				add_deposit = d_exotic_gases_2
+				add_deposit = d_exotic_gases_1
 			}
 			
 			moon = {
@@ -438,7 +435,7 @@ elven_system_lhuren_initializer = {
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
-				add_deposit = d_engineering_4
+				add_deposit = d_energy_3
 			}
 			
 			moon = {
