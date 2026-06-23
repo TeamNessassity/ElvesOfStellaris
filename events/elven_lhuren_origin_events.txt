@@ -454,6 +454,20 @@ country_event = {
 	}
 	
 	immediate = {
+		hidden_effect = {
+			create_embarking_arkship = {
+				NOMAD_COUNTRY = this
+				ARKSHIP_TYPE = science
+				EMBARKED_PLANET = event_target:lhuren_lhumar
+			}
+			embark_planet_effect = {
+				EMBARKING_PLANET = event_target:lhuren_lhumar
+				NEW_ARKSHIP = event_target:embarking_arkship
+			}
+			give_embarking_empire_logistic_ship = {
+				EMBARKING_PLANET = event_target:lhuren_lhumar
+			}
+		}
 	}
 
 	after = {
@@ -461,6 +475,23 @@ country_event = {
 		set_country_flag = elven_lhuren_origin_ending_C
 		add_modifier = {
 			modifier = elven_lhuren_origin_ending_C_modifier
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					any_situation = {
+						is_situation_type = eos_lhuren_situation_nirvana
+					}
+				}
+			}
+			start_situation = {
+				type = eos_lhuren_situation_nirvana
+				target = event_target:lhuren_lhumar
+				effect = {
+					save_event_target_as = eos_lhuren_situation_nirvana
+				}
+			}
 		}
 
 		set_global_flag = elven_lhuren_pact_enhanced

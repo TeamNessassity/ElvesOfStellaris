@@ -234,6 +234,14 @@ eos_lhu_valid_situation_samsara = {
 	}
 }
 
+# this = situation
+# root = situation
+# owner = country
+# target = planet
+eos_lhu_valid_situation_nirvana = {
+	always = yes
+}
+
 # DLC Restrictions
 
 # For Heroic Past civic.

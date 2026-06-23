@@ -7,7 +7,9 @@ eos_lhuren_situation_anatta = {
 	picture = GFX_evt_eos_lhuren_lhumar
 	#complete_icon_frame = GFX_situation_outcome_frame_blue
 	#complete_icon = GFX_situation_outcome_ascension
+
 	category = positive
+	permanent = yes
 	situation_log_category = empire_concerns
 	
 	initial_progress = 0
@@ -19,13 +21,10 @@ eos_lhuren_situation_anatta = {
 	on_progress_complete = {
 	}
 
-	permanent = yes
-
 	stages = {
 		stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 10
 			triggered_modifier = {
 				potential = {
@@ -39,7 +38,6 @@ eos_lhuren_situation_anatta = {
 		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 20
 			triggered_modifier = {
 				potential = {
@@ -53,7 +51,6 @@ eos_lhuren_situation_anatta = {
 		stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 30
 			triggered_modifier = {
 				potential = {
@@ -67,7 +64,6 @@ eos_lhuren_situation_anatta = {
 		stage_4 = {
 			icon = GFX_situation_stage_4
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 40
 			triggered_modifier = {
 				potential = {
@@ -81,7 +77,6 @@ eos_lhuren_situation_anatta = {
 		stage_5 = {
 			icon = GFX_situation_stage_5
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 50
 			triggered_modifier = {
 				potential = {
@@ -95,7 +90,6 @@ eos_lhuren_situation_anatta = {
 		stage_6 = {
 			icon = GFX_situation_stage_6
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 60
 			triggered_modifier = {
 				potential = {
@@ -109,7 +103,6 @@ eos_lhuren_situation_anatta = {
 		stage_7 = {
 			icon = GFX_situation_stage_7
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 70
 			triggered_modifier = {
 				potential = {
@@ -123,7 +116,6 @@ eos_lhuren_situation_anatta = {
 		stage_8 = {
 			icon = GFX_situation_stage_8
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 80
 			triggered_modifier = {
 				potential = {
@@ -137,7 +129,6 @@ eos_lhuren_situation_anatta = {
 		stage_9 = {
 			icon = GFX_situation_stage_9
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 90
 			triggered_modifier = {
 				potential = {
@@ -151,7 +142,6 @@ eos_lhuren_situation_anatta = {
 		stage_10 = {
 			icon = GFX_situation_stage_10
 			icon_background = GFX_situation_stage_frame_blue
-			color = blue
 			end = 100
 			triggered_modifier = {
 				potential = {
@@ -310,13 +300,14 @@ eos_lhuren_situation_anatta = {
 	}
 }
 
-
 # Ending B focuses on fortifying and improving Lhumar via the Eternal Array
 eos_lhuren_situation_samsara = {
 	picture = GFX_evt_eos_lhuren_lhumar
 	complete_icon_frame = GFX_situation_outcome_frame_blue
 	complete_icon = GFX_situation_outcome_ascension
+
 	category = positive
+	permanent = yes
 	situation_log_category = empire_concerns
 	
 	initial_progress = 0
@@ -337,8 +328,6 @@ eos_lhuren_situation_samsara = {
 		}
 	}
 
-	permanent = yes
-
 	triggered_target_modifier = {
 		planet_max_districts_add = 1
 		mult = target.value:eos_lhu_val_samsara_level
@@ -348,42 +337,38 @@ eos_lhuren_situation_samsara = {
 		eos_lhuren_situation_samsara_stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_green
-			color = white
 			end = 33333
 
 			triggered_target_modifier = {
 				potential = {
 					eos_lhu_valid_situation_samsara = yes
 				}
-				pop_healthcare_bonus_workforce_mult = 0.15
-				pop_roboticist_bonus_workforce_mult = 0.15
+				logistic_growth_mult = 0.20
 			}
 		}
 		eos_lhuren_situation_samsara_stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_green
-			color = white
 			end = 66666
 
 			triggered_target_modifier = {
 				potential = {
 					eos_lhu_valid_situation_samsara = yes
 				}
-				planet_researchers_produces_mult = 0.30
+				planet_researchers_produces_mult = 0.20
 			}
 		}
 		eos_lhuren_situation_samsara_stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_green
-			color = white
 			end = 99999
 
 			triggered_target_modifier = {
 				potential = {
 					eos_lhu_valid_situation_samsara = yes
 				}
-				planet_pops_upkeep_mult = -0.15
-				planet_jobs_upkeep_mult = -0.15
+				planet_pops_upkeep_mult = -0.10
+				planet_jobs_upkeep_mult = -0.10
 			}
 		}
 	}
@@ -516,7 +501,7 @@ eos_lhuren_situation_samsara = {
 		}
 		modifier = {
 			mult = 0
-			desc = "situation_identity_complex_needed_desc"
+			desc = "eos_lhuren_situation_samsara_blocked_desc"
 			eos_lhu_valid_situation_samsara = no
 		}
 	}
@@ -532,5 +517,190 @@ eos_lhuren_situation_samsara = {
 			eos_lhu_valid_situation_samsara = no
 		}
 		text = eos_lhuren_situation_samsara_blocked_desc
+	}
+}
+
+# Ending C leaves the Eternal Array behind and focuses on the species/pops instead
+eos_lhuren_situation_nirvana = {
+	picture = GFX_evt_eos_lhuren_lhumar
+	#complete_icon_frame = GFX_situation_outcome_frame_blue
+	#complete_icon = GFX_situation_outcome_ascension
+
+	category = positive
+	progress_direction = bidirectional
+	permanent = yes
+	situation_log_category = empire_concerns
+	
+	initial_progress = 42000
+
+	on_start = {
+	}
+
+	on_progress_complete = {
+		custom_tooltip = "eos_lhuren_situation_nirvana_outcome"
+		hidden_effect = {
+			# This is here just to silence the error log
+		}
+	}
+
+	stages = {
+		eos_lhuren_situation_nirvana_stage_neg_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 6000
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
+			}
+		}
+		eos_lhuren_situation_nirvana_stage_neg_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_orange
+			end = 36000
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
+			}
+		}
+		eos_lhuren_situation_nirvana_stage_mid_0 = {
+			icon = GFX_situation_stage_balanced
+			icon_background = GFX_situation_stage_frame_yellow
+			end = 48000
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
+			}
+		}
+		eos_lhuren_situation_nirvana_stage_pos_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_orange
+			end = 78000
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
+			}
+		}
+		eos_lhuren_situation_nirvana_stage_pos_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 84000
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
+			}
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = value:eos_lhu_val_nirvana_factor_equilibrium
+			desc = "eos_lhuren_situation_nirvana_factor_equilibrium_desc"
+		}
+		modifier = {
+			add = value:eos_lhu_val_nirvana_factor_equilibrium_years
+			desc = "eos_lhuren_situation_nirvana_factor_equilibrium_years_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_equilibrium_natural
+			desc = "eos_lhuren_situation_nirvana_factor_equilibrium_natural_desc"
+		}
+
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_ascension_path
+			desc = "eos_lhuren_situation_nirvana_factor_ascension_path_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_traditions
+			desc = "eos_lhuren_situation_nirvana_factor_traditions_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_ascension_perks
+			desc = "eos_lhuren_situation_nirvana_factor_ascension_perks_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_closed_borders
+			desc = "eos_lhuren_situation_nirvana_factor_closed_borders_desc"
+		}
+		modifier = {
+			add = value:eos_lhu_val_nirvana_factor_lhumar_pops
+			desc = "eos_lhuren_situation_nirvana_factor_lhumar_pops_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_unity_income
+			desc = "eos_lhuren_situation_nirvana_factor_unity_income_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_logic_stockpile
+			desc = "eos_lhuren_situation_nirvana_factor_logic_stockpile_desc"
+		}
+
+		
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_galcom
+			desc = "eos_lhuren_situation_nirvana_factor_galcom_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_federation
+			desc = "eos_lhuren_situation_nirvana_factor_federation_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_war
+			desc = "eos_lhuren_situation_nirvana_factor_war_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_diplomatic_agreements
+			desc = "eos_lhuren_situation_nirvana_factor_diplomatic_agreements_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_military_agreements
+			desc = "eos_lhuren_situation_nirvana_factor_military_agreements_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_rivals
+			desc = "eos_lhuren_situation_nirvana_factor_rivals_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_alien_species
+			desc = "eos_lhuren_situation_nirvana_factor_alien_species_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_vassals
+			desc = "eos_lhuren_situation_nirvana_factor_vassals_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_colonies
+			desc = "eos_lhuren_situation_nirvana_factor_colonies_desc"
+		}
+		modifier = {
+			add = owner.value:eos_lhu_val_nirvana_factor_valor_stockpile
+			desc = "eos_lhuren_situation_nirvana_factor_valor_stockpile_desc"
+		}
+
+		modifier = {
+			mult = 0
+			desc = "eos_lhuren_situation_nirvana_blocked_desc"
+			eos_lhu_valid_situation_nirvana = no
+		}
+	}
+
+	on_monthly = {
+	}
+
+	triggered_blocked_desc = {
+		trigger = {
+			eos_lhu_valid_situation_nirvana = no
+		}
+		text = eos_lhuren_situation_nirvana_blocked_desc
 	}
 }
