@@ -1,0 +1,36 @@
+spriteTypes = {
+	# NOTE: To be useable in locs, these icons MUST have GFX_text prefix
+	# In order to actually insert them into text, put the rest of the name between ££
+	# Example: GFX_text_smiley_face becomes £smiley_face£
+	# Vanilla icons are generally ~16x16, but as long as we keep the height around 16, the width is flexible
+
+	#####################
+	## DIRECTION ICONS ##
+	#####################
+
+	spriteType = {
+		name = "GFX_text_eos_arrow_up"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_eos_arrow_up.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_eos_arrow_down"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_eos_arrow_down.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_eos_arrow_left"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_eos_arrow_left.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_eos_arrow_right"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_eos_arrow_right.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_eos_balance"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_eos_balance.dds"
+	}
+
+}

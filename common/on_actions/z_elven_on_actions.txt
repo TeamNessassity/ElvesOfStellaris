@@ -56,9 +56,6 @@ on_monthly_pulse = {
 
 		# Manage Eternal Array if something happens to its Orbital Ring (Celestial Throne Ending B)
 		elven_lhuren_origin_events.511
-
-		# Increment the global Nirvana Counter (Celestial Throne Ending C)
-		elven_lhuren_origin_events.521
 	}
 }
 
@@ -82,6 +79,9 @@ on_yearly_pulse = {
 
 		# Substance abuser check
 		elven_leader_events.31
+
+		# Increment the global Nirvana Counter (Celestial Throne Ending C)
+		#elven_lhuren_origin_events.521
 	}
 }
 

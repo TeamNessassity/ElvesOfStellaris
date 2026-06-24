@@ -545,7 +545,7 @@ eos_lhuren_situation_nirvana = {
 
 	stages = {
 		eos_lhuren_situation_nirvana_stage_neg_2 = {
-			icon = GFX_situation_stage_2
+			icon = GFX_eos_situation_stage_left
 			icon_background = GFX_situation_stage_frame_red
 			end = 6000
 
@@ -556,7 +556,7 @@ eos_lhuren_situation_nirvana = {
 			}
 		}
 		eos_lhuren_situation_nirvana_stage_neg_1 = {
-			icon = GFX_situation_stage_1
+			icon = GFX_eos_situation_stage_left
 			icon_background = GFX_situation_stage_frame_orange
 			end = 36000
 
@@ -578,7 +578,7 @@ eos_lhuren_situation_nirvana = {
 			}
 		}
 		eos_lhuren_situation_nirvana_stage_pos_1 = {
-			icon = GFX_situation_stage_1
+			icon = GFX_eos_situation_stage_right
 			icon_background = GFX_situation_stage_frame_orange
 			end = 78000
 
@@ -589,7 +589,7 @@ eos_lhuren_situation_nirvana = {
 			}
 		}
 		eos_lhuren_situation_nirvana_stage_pos_2 = {
-			icon = GFX_situation_stage_2
+			icon = GFX_eos_situation_stage_right
 			icon_background = GFX_situation_stage_frame_red
 			end = 84000
 
@@ -604,87 +604,87 @@ eos_lhuren_situation_nirvana = {
 	monthly_progress = {
 		base = 0
 		modifier = {
-			add = value:eos_lhu_val_nirvana_factor_equilibrium
-			desc = "eos_lhuren_situation_nirvana_factor_equilibrium_desc"
+			add = value:eos_lhu_val_nirvana_progress_equilibrium
+			desc = "eos_lhuren_situation_nirvana_progress_equilibrium_desc"
 		}
 		modifier = {
-			add = value:eos_lhu_val_nirvana_factor_equilibrium_years
-			desc = "eos_lhuren_situation_nirvana_factor_equilibrium_years_desc"
+			add = value:eos_lhu_val_nirvana_progress_equilibrium_natural
+			desc = "eos_lhuren_situation_nirvana_progress_equilibrium_natural_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_equilibrium_natural
-			desc = "eos_lhuren_situation_nirvana_factor_equilibrium_natural_desc"
+			add = value:eos_lhu_val_nirvana_progress_equilibrium_lhumar_pops
+			desc = "eos_lhuren_situation_nirvana_progress_equilibrium_lhumar_pops_desc"
 		}
 
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_ascension_path
-			desc = "eos_lhuren_situation_nirvana_factor_ascension_path_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_traditions
+			desc = "eos_lhuren_situation_nirvana_progress_traditions_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_traditions
-			desc = "eos_lhuren_situation_nirvana_factor_traditions_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_ascension_perks
+			desc = "eos_lhuren_situation_nirvana_progress_ascension_perks_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_ascension_perks
-			desc = "eos_lhuren_situation_nirvana_factor_ascension_perks_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_ascension_path
+			desc = "eos_lhuren_situation_nirvana_progress_ascension_path_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_closed_borders
-			desc = "eos_lhuren_situation_nirvana_factor_closed_borders_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_isolationist
+			desc = "eos_lhuren_situation_nirvana_progress_isolationist_desc"
 		}
 		modifier = {
-			add = value:eos_lhu_val_nirvana_factor_lhumar_pops
-			desc = "eos_lhuren_situation_nirvana_factor_lhumar_pops_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_closed_borders
+			desc = "eos_lhuren_situation_nirvana_progress_closed_borders_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_unity_income
-			desc = "eos_lhuren_situation_nirvana_factor_unity_income_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_unity_income
+			desc = "eos_lhuren_situation_nirvana_progress_unity_income_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_logic_stockpile
-			desc = "eos_lhuren_situation_nirvana_factor_logic_stockpile_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_logic_stockpile
+			desc = "eos_lhuren_situation_nirvana_progress_logic_stockpile_desc"
 		}
 
 		
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_galcom
-			desc = "eos_lhuren_situation_nirvana_factor_galcom_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_galcom
+			desc = "eos_lhuren_situation_nirvana_progress_galcom_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_federation
-			desc = "eos_lhuren_situation_nirvana_factor_federation_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_federation
+			desc = "eos_lhuren_situation_nirvana_progress_federation_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_war
-			desc = "eos_lhuren_situation_nirvana_factor_war_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_war
+			desc = "eos_lhuren_situation_nirvana_progress_war_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_diplomatic_agreements
-			desc = "eos_lhuren_situation_nirvana_factor_diplomatic_agreements_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_diplomatic_agreements
+			desc = "eos_lhuren_situation_nirvana_progress_diplomatic_agreements_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_military_agreements
-			desc = "eos_lhuren_situation_nirvana_factor_military_agreements_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_military_agreements
+			desc = "eos_lhuren_situation_nirvana_progress_military_agreements_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_rivals
-			desc = "eos_lhuren_situation_nirvana_factor_rivals_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_rivals
+			desc = "eos_lhuren_situation_nirvana_progress_rivals_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_alien_species
-			desc = "eos_lhuren_situation_nirvana_factor_alien_species_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_alien_species
+			desc = "eos_lhuren_situation_nirvana_progress_alien_species_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_vassals
-			desc = "eos_lhuren_situation_nirvana_factor_vassals_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_vassals
+			desc = "eos_lhuren_situation_nirvana_progress_vassals_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_colonies
-			desc = "eos_lhuren_situation_nirvana_factor_colonies_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_colonies
+			desc = "eos_lhuren_situation_nirvana_progress_colonies_desc"
 		}
 		modifier = {
-			add = owner.value:eos_lhu_val_nirvana_factor_valor_stockpile
-			desc = "eos_lhuren_situation_nirvana_factor_valor_stockpile_desc"
+			add = owner.value:eos_lhu_val_nirvana_progress_valor_stockpile
+			desc = "eos_lhuren_situation_nirvana_progress_valor_stockpile_desc"
 		}
 
 		modifier = {

@@ -286,13 +286,32 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  elven_lhuren_anatta_tooltip:0 "§YAnatta§! is increased by building and upgrading §YMegastructures§!$TABBED_NEW_LINE$- Current Anatta: §Y[ROOT.EOSAnattaCounter]§!"
  elven_lhuren_samsara_tooltip:0 "§YSamsara§! is increased by researching §YTechnologies§!$TABBED_NEW_LINE$- Current Samsara: §Y[ROOT.EOSSamsaraCounter]§!"
 
-# Event Situations
+# Origin Errors
+ elven_lhuren_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"
+ elven_lhuren_origin_events.0001.desc:0 "The §Y$origin_elven_celestial_throne$§! Origin could not be set up correctly for this player!\n\nReason: §RGlobal Event Target Mismatch§!\nDetails: §H[this.GetName]§! is NOT same value as §H[lhuren_lhumar.owner.GetName]§!\nOR: §H[lhuren_lhumar.GetName]§! does NOT have a valid owner\nOR: §H[lhuren_lhumar.GetName]§! does NOT exist\n\n§RPlease Note:§! This Origin can only support one player. Duplicate players will not be able to interact with its mechanics.\nPlease start a New Game and make sure that only one Empire with the §Y$origin_elven_celestial_throne$§! Origin is allowed to spawn."
+ elven_lhuren_origin_events.0001.a:0 "Oops!"
+
+# Celestial Grace: Preserve the Celestial Grace
+ elven_celestial_grace_events.301.name:0 "Preserve the Celestial Grace"
+ elven_celestial_grace_events.301.desc:0 "In the tradition of our Empire, the mandate that grants dominion over all cosmos is not given unconditionally. An incompetent, unvirtuous or simply weary [Root.GetRulerTitle] will eventually lose the heavens' favor and face ceaceless opposition from discontent subjects as well.\n\nLikewise, rulers who have no ties to the land and the people they govern are doomed to become puppets to their own ego. After all, history has no shortage of solipstic autocrats whose vortex of self-destruction swept up entire civilizations.\n\nIf [Root.GetRulerName] is believed to have lost the Celestial Grace, for the good of the Empire, [Root.Ruler.GetSheHeCap] must..."
+ elven_celestial_grace_events.301.a:0 "Appease the noble clans."
+ elven_celestial_grace_events.301.b:0 "Prepare [Ruler.GetHerHisCap] heir for accession."
+ elven_celestial_grace_events.301.c:0 "Yield the throne to a new dynasty."
+ elven_celestial_grace_events.301.d:0 "$TRIGGER_FAIL$Think about it a little longer..."
+
+# Edict
+ edict_eos_lhu_edict_celestial_mandate:0 "Preserve the Celestial Grace"
+ edict_eos_lhu_edict_celestial_mandate_desc:0 "When the regime's legitimacy is in question, difficult choices may need to be made lest the unworthy lead us all unto doom."
+
+####################################
+# Situations
+####################################
 
 # Ending A: Anatta
  eos_lhuren_situation_anatta:0 "Negentropy: Anatta"
  eos_lhuren_situation_anatta_desc:0 "$NAME_LHU_ETERNAL_FOUNDRY$ collapses the Imaginary Metaforms we derive from Celestial Equations into stable quanta. Increasing output should have minimal impact on the local frame of reference. Concerns regarding the unobserved sectors of reality remain theoretical."
  eos_lhuren_situation_anatta_type:0 "$eos_lhuren_situation_anatta$"
- eos_lhuren_situation_anatta_monthly_change_tooltip:0 "Upgrade §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to increase the resource output. Up to §G100§! upgrades can be performed."
+
  eos_lhuren_situation_anatta_approach_advanced:0 "Advanced"
  eos_lhuren_situation_anatta_approach_advanced_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_alloys$ and $i_consumer_goods$"
  eos_lhuren_situation_anatta_approach_rare:0 "Rare"
@@ -301,6 +320,9 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_anatta_approach_exotic_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_living_metal$, $i_dark_matter$ and $i_nanites$"
  eos_lhuren_situation_anatta_approach_cosmogenesis:0 "§RINTERESTING§!"
  eos_lhuren_situation_anatta_approach_cosmogenesis_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to calculate £advanced_logic£ $advanced_logic$"
+
+ eos_lhuren_situation_anatta_monthly_change_tooltip:0 "Upgrade §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to increase the resource output. Up to §G100§! upgrades can be performed."
+
  eos_lhuren_situation_anatta_stage_1_effects:0 "Nothing Important: §GImplausible§!"
  eos_lhuren_situation_anatta_stage_2_effects:0 "Nothing Important: §IDubious§!"
  eos_lhuren_situation_anatta_stage_3_effects:0 "Nothing Important: §cNegligible§!"
@@ -311,6 +333,8 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_anatta_stage_8_effects:0 "Nothing Important: §YQuestionable§!"
  eos_lhuren_situation_anatta_stage_9_effects:0 "Nothing Important: §HDebatable§!"
  eos_lhuren_situation_anatta_stage_10_effects:0 "Nothing Important: §RUncertain§!"
+
+ eos_lhuren_situation_anatta_blocked_desc:0 "REPLACE_ME"
 
 # Ending B: Samsara
  eos_lhuren_situation_samsara:0 "Negentropy: Samsara"
@@ -331,6 +355,7 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_samsara_approach_cosmogenesis_tooltip:0 "Modify universal constants to directly collapse the desired outcome.\nConsume §R200%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount\n$eos_lhuren_situation_samsara_tooltip_colonies$"
 
  eos_lhuren_situation_samsara_monthly_change_tooltip:0 "Research new §YTechnologies§! and progress through §Y$ap_cosmogenesis$§! to increase monthly progress.\nProgress can be further accelerated by spending a portion of $i_unity$ production via the active §YSituation Approach§! options.\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+
  eos_lhuren_situation_samsara_progress_tech:0 "Researched §YTechnologies§!"
  eos_lhuren_situation_samsara_progress_unity:0 "Consumed $i_unity$ divided by §HColonies§!"
 
@@ -338,25 +363,48 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_samsara_stage_2: "Crucible of Growth"
  eos_lhuren_situation_samsara_stage_3: "Curtain of Repose"
 
+ eos_lhuren_situation_samsara_blocked_desc:0 "REPLACE_ME"
+
  MESSAGE_EOS_LHU_SAMSARA_UP_TITLE:0 "Samsara"
  EOS_LHU_SAMSARA_UP_DESC:0 "$PLANET|H$ has undergone §YSamsara§!. Eternity branches out into new possibilities."
 
-# Origin Errors
- elven_lhuren_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"
- elven_lhuren_origin_events.0001.desc:0 "The §Y$origin_elven_celestial_throne$§! Origin could not be set up correctly for this player!\n\nReason: §RGlobal Event Target Mismatch§!\nDetails: §H[this.GetName]§! is NOT same value as §H[lhuren_lhumar.owner.GetName]§!\nOR: §H[lhuren_lhumar.GetName]§! does NOT have a valid owner\nOR: §H[lhuren_lhumar.GetName]§! does NOT exist\n\n§RPlease Note:§! This Origin can only support one player. Duplicate players will not be able to interact with its mechanics.\nPlease start a New Game and make sure that only one Empire with the §Y$origin_elven_celestial_throne$§! Origin is allowed to spawn."
- elven_lhuren_origin_events.0001.a:0 "Oops!"
+# Ending C: Parinirvana
+ eos_lhuren_situation_nirvana:0 "Negentropy: Parinirvana"
+ eos_lhuren_situation_nirvana_desc:0 "Across 84000 paths to eternity, not a single shortcut may be found. Having removed the constant of [target.GetName] from our Karmic Calculus, we seek no longer to collapse the perfect future, but to embrace infinite eigenstates amidst the stars."
+ eos_lhuren_situation_nirvana_type:0 "$eos_lhuren_situation_nirvana$"
 
-# Celestial Grace: Preserve the Celestial Grace
- elven_celestial_grace_events.301.name:0 "Preserve the Celestial Grace"
- elven_celestial_grace_events.301.desc:0 "In the tradition of our Empire, the mandate that grants dominion over all cosmos is not given unconditionally. An incompetent, unvirtuous or simply weary [Root.GetRulerTitle] will eventually lose the heavens' favor and face ceaceless opposition from discontent subjects as well.\n\nLikewise, rulers who have no ties to the land and the people they govern are doomed to become puppets to their own ego. After all, history has no shortage of solipstic autocrats whose vortex of self-destruction swept up entire civilizations.\n\nIf [Root.GetRulerName] is believed to have lost the Celestial Grace, for the good of the Empire, [Root.Ruler.GetSheHeCap] must..."
- elven_celestial_grace_events.301.a:0 "Appease the noble clans."
- elven_celestial_grace_events.301.b:0 "Prepare [Ruler.GetHerHisCap] heir for accession."
- elven_celestial_grace_events.301.c:0 "Yield the throne to a new dynasty."
- elven_celestial_grace_events.301.d:0 "$TRIGGER_FAIL$Think about it a little longer..."
+ eos_lhuren_situation_nirvana_outcome:0 "Destiny Not Found"
 
-# Edict
- edict_eos_lhu_edict_celestial_mandate:0 "Preserve the Celestial Grace"
- edict_eos_lhu_edict_celestial_mandate_desc:0 "When the regime's legitimacy is in question, difficult choices may need to be made lest the unworthy lead us all unto doom."
+ eos_lhuren_situation_nirvana_monthly_change_tooltip:0 "To push §HKarma§! towards £eos_arrow_left£ §REntanglement§!:\n- Engage in §YExpansion§!, §YConflict§! and §YDiplomacy§!\nTo push §HKarma§! towards £eos_arrow_right£ §RSuperposition§!:\n- Cultivate §YIsolation§!, §YAscension§! and §YUnity§!"
+
+ eos_lhuren_situation_nirvana_progress_equilibrium_desc:0 "£eos_balance£ Universal Balance"
+ eos_lhuren_situation_nirvana_progress_equilibrium_natural_desc:0 "£eos_balance£ Natural Design"
+ eos_lhuren_situation_nirvana_progress_equilibrium_lhumar_pops_desc:0 "£eos_balance£ Pops Encased on [target.GetName]"
+ eos_lhuren_situation_nirvana_progress_traditions_desc:0 "£eos_arrow_right£ Adopted Traditions"
+ eos_lhuren_situation_nirvana_progress_ascension_perks_desc:0 "£eos_arrow_right£ Ascension Perks"
+ eos_lhuren_situation_nirvana_progress_ascension_path_desc:0 "£eos_arrow_right£ Ascension Path"
+ eos_lhuren_situation_nirvana_progress_isolationist_desc:0 "£eos_arrow_right£ Isolationist Stance"
+ eos_lhuren_situation_nirvana_progress_closed_borders_desc:0 "£eos_arrow_right£ Closed Borders"
+ eos_lhuren_situation_nirvana_progress_unity_income_desc:0 "£eos_arrow_right£ Unity Income"
+ eos_lhuren_situation_nirvana_progress_logic_stockpile_desc:0 "£eos_arrow_right£ Cosmogenesis"
+ eos_lhuren_situation_nirvana_progress_galcom_desc:0 "£eos_arrow_left£ GalCom Involvement"
+ eos_lhuren_situation_nirvana_progress_federation_desc:0 "£eos_arrow_left£ Federation Involvement"
+ eos_lhuren_situation_nirvana_progress_war_desc:0 "£eos_arrow_left£ Direct Conflict"
+ eos_lhuren_situation_nirvana_progress_diplomatic_agreements_desc:0 "£eos_arrow_left£ Diplomatic Agreements"
+ eos_lhuren_situation_nirvana_progress_military_agreements_desc:0 "£eos_arrow_left£ Military Agreements"
+ eos_lhuren_situation_nirvana_progress_rivals_desc:0 "£eos_arrow_left£ Rivalries"
+ eos_lhuren_situation_nirvana_progress_alien_species_desc:0 "£eos_arrow_left£ Species Diversity"
+ eos_lhuren_situation_nirvana_progress_vassals_desc:0 "£eos_arrow_left£ Oaths of Fealty"
+ eos_lhuren_situation_nirvana_progress_colonies_desc:0 "£eos_arrow_left£ Colonies"
+ eos_lhuren_situation_nirvana_progress_valor_stockpile_desc:0 "£eos_arrow_left£ Defender of the Galaxy"
+
+ eos_lhuren_situation_nirvana_stage_mid_0: "Equilibrium"
+ eos_lhuren_situation_nirvana_stage_neg_1: "Symmetry"
+ eos_lhuren_situation_nirvana_stage_neg_2: "Entanglement"
+ eos_lhuren_situation_nirvana_stage_pos_1: "Singularity"
+ eos_lhuren_situation_nirvana_stage_pos_2: "Superposition"
+
+ eos_lhuren_situation_nirvana_blocked_desc:0 "REPLACE_ME"
 
 ############
 ### JOBS ###

@@ -165,34 +165,52 @@ eos_lhu_val_nirvana = {
 # Equilibrium slows down progress in either direction
 
 # Equilibrium
-eos_lhu_val_nirvana_factor_equilibrium = {
+eos_lhu_val_nirvana_progress_equilibrium = {
 	base = 42000
 	modifier = {
 		subtract = trigger:situation_progress
 	}
 	mult = 0.1
 }
-# Years Passed
-eos_lhu_val_nirvana_factor_equilibrium_years = {
-	base = 0
-	modifier = {
-		add = trigger:years_passed
-	}
-	mult = 0.001
-	mult = value:eos_lhu_val_nirvana_factor_equilibrium
-}
 # Natural Design
-eos_lhu_val_nirvana_factor_equilibrium_natural = {
+eos_lhu_val_nirvana_progress_equilibrium_natural = {
 	base = 0
 	modifier = {
 		add = 0.5
-		is_natural_design_empire = yes
+		owner = { is_natural_design_empire = yes }
 	}
-	mult = value:eos_lhu_val_nirvana_factor_equilibrium
+	mult = value:eos_lhu_val_nirvana_progress_equilibrium
+}
+# Per Pop left on Lhumar
+eos_lhu_val_nirvana_progress_equilibrium_lhumar_pops = {
+	base = 0
+	modifier = {
+		add = value:eos_lhu_val_nirvana
+	}
+	modifier = {
+		mult = value:eos_lhu_val_nirvana_progress_equilibrium
+	}
+	mult = 0.0001
 }
 
+# Per Tradition
+eos_lhu_val_nirvana_progress_traditions = {
+	base = 0
+	modifier = {
+		add = trigger:num_tradition_categories
+	}
+	mult = 200
+}
+# Per Ascension Perk
+eos_lhu_val_nirvana_progress_ascension_perks = {
+	base = 0
+	modifier = {
+		add = trigger:num_ascension_perks
+	}
+	mult = 300
+}
 # Ascension Path
-eos_lhu_val_nirvana_factor_ascension_path = {
+eos_lhu_val_nirvana_progress_ascension_path = {
 	base = 0
 	modifier = {
 		add = 1000
@@ -243,38 +261,33 @@ eos_lhu_val_nirvana_factor_ascension_path = {
 		has_tradition = tr_modularity_finish
 	}
 }
-# Per Tradition
-eos_lhu_val_nirvana_factor_traditions = {
+# Isolationist
+eos_lhu_val_nirvana_progress_isolationist = {
 	base = 0
 	modifier = {
-		add = trigger:num_tradition_categories
+		add = 2000
+		has_valid_civic = civic_inwards_perfection
 	}
-	mult = 100
-}
-# Per Ascension Perk
-eos_lhu_val_nirvana_factor_ascension_perks = {
-	base = 0
 	modifier = {
-		add = trigger:num_ascension_perks
+		add = 1000
+		has_valid_civic = civic_pompous_purists
 	}
-	mult = 200
+	modifier = {
+		add = 1000
+		has_policy_flag = diplo_stance_isolationist
+	}
+	mult = 1
 }
 # Per Closed Borders
-eos_lhu_val_nirvana_factor_closed_borders = {
+eos_lhu_val_nirvana_progress_closed_borders = {
 	base = 0
 	modifier = {
 		add = trigger:num_closed_borders
 	}
 	mult = 100
 }
-# Per Pop left on Lhumar
-eos_lhu_val_nirvana_factor_lhumar_pops = {
-	base = 0
-	add = value:eos_lhu_val_nirvana
-	mult = 1
-}
 # Per Unity Income
-eos_lhu_val_nirvana_factor_unity_income = {
+eos_lhu_val_nirvana_progress_unity_income = {
 	base = 0
 	complex_trigger_modifier = {
 		trigger = resource_income_compare
@@ -286,7 +299,7 @@ eos_lhu_val_nirvana_factor_unity_income = {
 	mult = 1
 }
 # Per Advanced Logic Stockpile
-eos_lhu_val_nirvana_factor_logic_stockpile = {
+eos_lhu_val_nirvana_progress_logic_stockpile = {
 	base = 0
 	complex_trigger_modifier = {
 		trigger = resource_stockpile_compare
@@ -299,7 +312,7 @@ eos_lhu_val_nirvana_factor_logic_stockpile = {
 }
 
 # Galactic Community Involvement
-eos_lhu_val_nirvana_factor_galcom = {
+eos_lhu_val_nirvana_progress_galcom = {
 	base = 0
 	modifier = {
 		add = 1000
@@ -320,7 +333,7 @@ eos_lhu_val_nirvana_factor_galcom = {
 	mult = -1
 }
 # Federation Involvement
-eos_lhu_val_nirvana_factor_federation = {
+eos_lhu_val_nirvana_progress_federation = {
 	base = 0
 	modifier = {
 		add = 1000
@@ -333,7 +346,7 @@ eos_lhu_val_nirvana_factor_federation = {
 	mult = -1
 }
 # At War
-eos_lhu_val_nirvana_factor_war = {
+eos_lhu_val_nirvana_progress_war = {
 	base = 0
 	modifier = {
 		add = 1000
@@ -342,7 +355,7 @@ eos_lhu_val_nirvana_factor_war = {
 	mult = -1
 }
 # Per Migration Treaty, Research Agreement or Commercial Pact
-eos_lhu_val_nirvana_factor_diplomatic_agreements = {
+eos_lhu_val_nirvana_progress_diplomatic_agreements = {
 	base = 0
 	modifier = {
 		add = trigger:num_commercial_pacts
@@ -356,7 +369,7 @@ eos_lhu_val_nirvana_factor_diplomatic_agreements = {
 	mult = -100
 }
 # Per Defensive Pact or Guaranteed Independence
-eos_lhu_val_nirvana_factor_military_agreements = {
+eos_lhu_val_nirvana_progress_military_agreements = {
 	base = 0
 	modifier = {
 		add = trigger:num_defensive_pacts
@@ -367,7 +380,7 @@ eos_lhu_val_nirvana_factor_military_agreements = {
 	mult = -200
 }
 # Per Rival
-eos_lhu_val_nirvana_factor_rivals = {
+eos_lhu_val_nirvana_progress_rivals = {
 	base = 0
 	modifier = {
 		add = trigger:num_rivals
@@ -375,15 +388,19 @@ eos_lhu_val_nirvana_factor_rivals = {
 	mult = -300
 }
 # Per owned Alien Species
-eos_lhu_val_nirvana_factor_alien_species = {
+eos_lhu_val_nirvana_progress_alien_species = {
 	base = -1
 	modifier = {
 		add = trigger:num_species
 	}
+	modifier = {
+		add = 10
+		has_ascension_perk = ap_xeno_compatibility
+	}
 	mult = -100
 }
 # Per Vassal or Overlord
-eos_lhu_val_nirvana_factor_vassals = {
+eos_lhu_val_nirvana_progress_vassals = {
 	base = 0
 	modifier = {
 		add = trigger:subjects
@@ -395,7 +412,7 @@ eos_lhu_val_nirvana_factor_vassals = {
 	mult = -500
 }
 # Per Colony
-eos_lhu_val_nirvana_factor_colonies = {
+eos_lhu_val_nirvana_progress_colonies = {
 	base = 0
 	modifier = {
 		add = trigger:num_owned_colonies
@@ -403,7 +420,7 @@ eos_lhu_val_nirvana_factor_colonies = {
 	mult = -300
 }
 # Per Valor Stockpile
-eos_lhu_val_nirvana_factor_valor_stockpile = {
+eos_lhu_val_nirvana_progress_valor_stockpile = {
 	base = 0
 	complex_trigger_modifier = {
 		trigger = resource_stockpile_compare

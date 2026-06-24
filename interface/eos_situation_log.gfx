@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	# Situation Stage Icons
+	# These go on the little pins under the progress bar
+	# Vanilla seems to keep the base dimensions at 20x20, and scales it down when not in focus
+
+	spriteType = {
+		name = "GFX_eos_situation_stage_left"
+		texturefile = "gfx/interface/icons/situation_log/situations/stages/eos_situation_stage_left.dds"
+	}
+	spriteType = {
+		name = "GFX_eos_situation_stage_right"
+		texturefile = "gfx/interface/icons/situation_log/situations/stages/eos_situation_stage_right.dds"
+	}
+
+}
