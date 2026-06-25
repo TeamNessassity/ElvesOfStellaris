@@ -454,20 +454,6 @@ country_event = {
 	}
 	
 	immediate = {
-		hidden_effect = {
-			create_embarking_arkship = {
-				NOMAD_COUNTRY = this
-				ARKSHIP_TYPE = science
-				EMBARKED_PLANET = event_target:lhuren_lhumar
-			}
-			embark_planet_effect = {
-				EMBARKING_PLANET = event_target:lhuren_lhumar
-				NEW_ARKSHIP = event_target:embarking_arkship
-			}
-			give_embarking_empire_logistic_ship = {
-				EMBARKING_PLANET = event_target:lhuren_lhumar
-			}
-		}
 	}
 
 	after = {

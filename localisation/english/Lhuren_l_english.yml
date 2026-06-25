@@ -307,24 +307,30 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
 # Situations
 ####################################
 
+ eos_lhu_valid_situation_target_owned_or_subject:0 "Must be a §YColony§! or §YSubject§! of §H[owner.GetName]§!"
+ eos_lhu_valid_situation_target_owned_or_subject_pass:0 "$TRIGGER_PASS$[target.GetName]:$TABBED_NEW_LINE$$TRIGGER_PASS$$eos_lhu_valid_situation_target_owned_or_subject$"
+ eos_lhu_valid_situation_target_owned_or_subject_fail:0 "$TRIGGER_FAIL$[target.GetName]:$TABBED_NEW_LINE$$TRIGGER_FAIL$$eos_lhu_valid_situation_target_owned_or_subject$"
+
 # Ending A: Anatta
  eos_lhuren_situation_anatta:0 "Negentropy: Anatta"
  eos_lhuren_situation_anatta_desc:0 "$NAME_LHU_ETERNAL_FOUNDRY$ collapses the Imaginary Metaforms we derive from Celestial Equations into stable quanta. Increasing output should have minimal impact on the local frame of reference. Concerns regarding the unobserved sectors of reality remain theoretical."
  eos_lhuren_situation_anatta_type:0 "$eos_lhuren_situation_anatta$"
 
+ eos_lhuren_situation_anatta_outcome:0 "Conventional laws of physics should allow §H$NAME_LHU_ETERNAL_FOUNDRY$§!'s efficiency to be increased at most a §Yhundredfold§!.\n\nPlease handle reality with care."
+
  eos_lhuren_situation_anatta_approach_advanced:0 "Advanced"
  eos_lhuren_situation_anatta_approach_advanced_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_alloys$ and $i_consumer_goods$"
  eos_lhuren_situation_anatta_approach_rare:0 "Rare"
- eos_lhuren_situation_anatta_approach_rare_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_rare_crystals$, $i_volatile_motes$ and $i_exotic_gases$"
+ eos_lhuren_situation_anatta_approach_rare_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_rare_crystals$, $i_volatile_motes$ and $i_exotic_gases$\nResearching related £research£§YTechnologies§! increases output by §G+100%§!"
  eos_lhuren_situation_anatta_approach_exotic:0 "Exotic"
- eos_lhuren_situation_anatta_approach_exotic_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_living_metal$, $i_dark_matter$ and $i_nanites$"
+ eos_lhuren_situation_anatta_approach_exotic_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to fabricate $i_living_metal$, $i_dark_matter$ and $i_nanites$\nResearching related £research£§YTechnologies§! increases output by §G+100%§!"
  eos_lhuren_situation_anatta_approach_cosmogenesis:0 "§RINTERESTING§!"
- eos_lhuren_situation_anatta_approach_cosmogenesis_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to calculate £advanced_logic£ $advanced_logic$"
+ eos_lhuren_situation_anatta_approach_cosmogenesis_tooltip:0 "Set §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to calculate £advanced_logic£ §Y$advanced_logic$§!"
 
  eos_lhuren_situation_anatta_monthly_change_tooltip:0 "Upgrade §Y$NAME_LHU_ETERNAL_FOUNDRY$§! to increase the resource output. Up to §G100§! upgrades can be performed."
 
  eos_lhuren_situation_anatta_stage_1_effects:0 "Nothing Important: §GImplausible§!"
- eos_lhuren_situation_anatta_stage_2_effects:0 "Nothing Important: §IDubious§!"
+ eos_lhuren_situation_anatta_stage_2_effects:0 "Nothing Important: §lDubious§!"
  eos_lhuren_situation_anatta_stage_3_effects:0 "Nothing Important: §cNegligible§!"
  eos_lhuren_situation_anatta_stage_4_effects:0 "Nothing Important: §EMariginal§!"
  eos_lhuren_situation_anatta_stage_5_effects:0 "Nothing Important: §WInsignificant§!"
@@ -334,7 +340,7 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_anatta_stage_9_effects:0 "Nothing Important: §HDebatable§!"
  eos_lhuren_situation_anatta_stage_10_effects:0 "Nothing Important: §RUncertain§!"
 
- eos_lhuren_situation_anatta_blocked_desc:0 "REPLACE_ME"
+ eos_lhuren_situation_anatta_blocked_desc:0 "In order to operate §H$NAME_LHU_ETERNAL_FOUNDRY$§!, it must be intact, and §H[target.GetName]§! must be a §YColony§! or §YSubject§! of §H[owner.GetName]§!."
 
 # Ending B: Samsara
  eos_lhuren_situation_samsara:0 "Negentropy: Samsara"
@@ -363,7 +369,7 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_samsara_stage_2: "Crucible of Growth"
  eos_lhuren_situation_samsara_stage_3: "Curtain of Repose"
 
- eos_lhuren_situation_samsara_blocked_desc:0 "REPLACE_ME"
+ eos_lhuren_situation_samsara_blocked_desc:0 "In order to operate §H$NAME_LHU_ETERNAL_ARRAY$§!, it must be intact, and §H[target.GetName]§! must be a §YColony§! or §YSubject§! of §H[owner.GetName]§!."
 
  MESSAGE_EOS_LHU_SAMSARA_UP_TITLE:0 "Samsara"
  EOS_LHU_SAMSARA_UP_DESC:0 "$PLANET|H$ has undergone §YSamsara§!. Eternity branches out into new possibilities."
@@ -373,7 +379,9 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_nirvana_desc:0 "Across 84000 paths to eternity, not a single shortcut may be found. Having removed the constant of [target.GetName] from our Karmic Calculus, we seek no longer to collapse the perfect future, but to embrace infinite eigenstates amidst the stars."
  eos_lhuren_situation_nirvana_type:0 "$eos_lhuren_situation_nirvana$"
 
- eos_lhuren_situation_nirvana_outcome:0 "Destiny Not Found"
+ eos_lhuren_situation_nirvana_outcome:0 "All things converge unto zero-sum"
+ eos_lhuren_situation_nirvana_outcome_neg:0 "Infinite crossroads, one direction"
+ eos_lhuren_situation_nirvana_outcome_pos:0 "One path, infinite possibilities"
 
  eos_lhuren_situation_nirvana_monthly_change_tooltip:0 "To push §HKarma§! towards £eos_arrow_left£ §REntanglement§!:\n- Engage in §YExpansion§!, §YConflict§! and §YDiplomacy§!\nTo push §HKarma§! towards £eos_arrow_right£ §RSuperposition§!:\n- Cultivate §YIsolation§!, §YAscension§! and §YUnity§!"
 
@@ -404,7 +412,7 @@ elven_lhuren_origin_ending_C_modifier_tooltip:0 "§WCompleting Plan: Parinirvana
  eos_lhuren_situation_nirvana_stage_pos_1: "Singularity"
  eos_lhuren_situation_nirvana_stage_pos_2: "Superposition"
 
- eos_lhuren_situation_nirvana_blocked_desc:0 "REPLACE_ME"
+ eos_lhuren_situation_nirvana_blocked_desc:0 "§RThe path to enlightment has been severed.§!"
 
 ############
 ### JOBS ###

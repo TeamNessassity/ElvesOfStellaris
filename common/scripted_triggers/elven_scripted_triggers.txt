@@ -208,14 +208,28 @@ eos_lhu_valid_new_dynasty_ruler = {
 # root = situation
 # owner = country
 # target = planet
-eos_lhu_valid_situation_anatta = {
-	owner = {
-		has_megastructure = elven_lhuren_eternal_array_repurposed
+eos_lhu_valid_situation_target_owned_or_subject = {
+	custom_tooltip = {
+		fail_text = eos_lhu_valid_situation_target_owned_or_subject_fail
+		success_text = eos_lhu_valid_situation_target_owned_or_subject_pass
+		exists = root.target
+		exists = root.target.colony
+		exists = root.target.owner
+		OR = {
+			root.target.owner = { is_same_value = root.owner }
+			root.owner = { is_overlord_to = root.target.owner }
+		}
 	}
-	root.target = {
-		is_colony = yes
-		exists = owner
-		owner = { is_same_value = root.owner }
+}
+
+# this = situation
+# root = situation
+# owner = country
+# target = planet
+eos_lhu_valid_situation_anatta = {
+	eos_lhu_valid_situation_target_owned_or_subject = yes
+	target.solar_system = {
+		has_megastructure = elven_lhuren_eternal_array_repurposed
 	}
 }
 
@@ -224,13 +238,9 @@ eos_lhu_valid_situation_anatta = {
 # owner = country
 # target = planet
 eos_lhu_valid_situation_samsara = {
-	owner = {
+	eos_lhu_valid_situation_target_owned_or_subject = yes
+	target.solar_system = {
 		has_megastructure = elven_lhuren_eternal_array_restored
-	}
-	root.target = {
-		is_colony = yes
-		exists = owner
-		owner = { is_same_value = root.owner }
 	}
 }
 
@@ -239,7 +249,9 @@ eos_lhu_valid_situation_samsara = {
 # owner = country
 # target = planet
 eos_lhu_valid_situation_nirvana = {
-	always = yes
+	target.solar_system = {
+		has_megastructure = elven_lhuren_eternal_array_static
+	}
 }
 
 # DLC Restrictions

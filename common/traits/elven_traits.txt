@@ -45,7 +45,7 @@ trait_elven_true = {
 		leader_lifespan_mult = 9.0			# Assuming that it costs 4 points, like Venerable.
 		species_leader_exp_gain = -0.25 	# -2.5 points
 		negative_leader_traits_species = -1 # +0.5 points
-		leaders_upkeep_mult = 0.2 			# -1 points 
+		leaders_upkeep_mult = 0.25 			# -1 points 
 											# Effective trait cost is 1.
 		
 		#planet_pops_consumer_goods_upkeep_mult = 0.15
@@ -233,18 +233,6 @@ trait_elven_lhuren_immortality = {
 		leader_starting_age_mult = 10.0
 		# Okay, let's maybe exclude heirs from this...
 		heir_starting_age_mult = -10.0
-	}
-	triggered_species_modifier = {
-		potential = {
-			exists = event_target:lhuren_lhumar
-			event_target:lhuren_lhumar = {
-				is_variable_set = eos_lhu_var_nirvana
-			}
-			has_global_flag = elven_lhuren_pact_enhanced
-		}
-		pop_bonus_workforce_mult = 0.00003
-		logistic_growth_mult = 0.00003
-		mult = event_target:lhuren_lhumar.eos_lhu_var_nirvana
 	}
 	
 	allowed_archetypes = { BIOLOGICAL }
