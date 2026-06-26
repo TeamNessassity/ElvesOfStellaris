@@ -219,10 +219,6 @@ country_event = {
 	}
 	
 	immediate = {
-		set_patron_first_contact_state = {
-			patron = eos_anoriel
-			state = completed
-		}
 	}
 }
 

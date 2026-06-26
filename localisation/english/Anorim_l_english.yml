@@ -106,8 +106,6 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 ""
  eos_anoriel_color_article: "the §H$eos_anoriel$§!"
  eos_anoriel_color_article_cap: "The §H$eos_anoriel$§!"
  eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
- code_name_eos_anoriel: "Sorrowed Entity"
- eos_anoriel_accord_tt: "$accord_minor_patron_tt$ §G+999999%§! Something Stuff"
 
 #######################
 ### PLANET FEATURES ###

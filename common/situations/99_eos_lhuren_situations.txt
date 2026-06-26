@@ -38,7 +38,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.025
 				storm_attraction_field_modifier = 0.1
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_1_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_1_effects"
 		}
 		stage_2 = {
 			icon = GFX_situation_stage_2
@@ -52,7 +52,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.050
 				storm_attraction_field_modifier = 0.2
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_2_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_2_effects"
 		}
 		stage_3 = {
 			icon = GFX_situation_stage_3
@@ -66,7 +66,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.075
 				storm_attraction_field_modifier = 0.3
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_3_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_3_effects"
 		}
 		stage_4 = {
 			icon = GFX_situation_stage_4
@@ -80,7 +80,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.100
 				storm_attraction_field_modifier = 0.4
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_4_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_4_effects"
 		}
 		stage_5 = {
 			icon = GFX_situation_stage_5
@@ -94,7 +94,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.125
 				storm_attraction_field_modifier = 0.5
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_5_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_5_effects"
 		}
 		stage_6 = {
 			icon = GFX_situation_stage_6
@@ -108,7 +108,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.150
 				storm_attraction_field_modifier = 0.6
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_6_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_6_effects"
 		}
 		stage_7 = {
 			icon = GFX_situation_stage_7
@@ -122,7 +122,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.175
 				storm_attraction_field_modifier = 0.7
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_7_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_7_effects"
 		}
 		stage_8 = {
 			icon = GFX_situation_stage_8
@@ -136,7 +136,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.200
 				storm_attraction_field_modifier = 0.8
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_8_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_8_effects"
 		}
 		stage_9 = {
 			icon = GFX_situation_stage_9
@@ -150,7 +150,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.225
 				storm_attraction_field_modifier = 0.9
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_9_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_9_effects"
 		}
 		stage_10 = {
 			icon = GFX_situation_stage_10
@@ -164,7 +164,7 @@ eos_lhuren_situation_anatta = {
 				pop_environment_tolerance = -0.250
 				storm_attraction_field_modifier = 1.0
 			}
-			custom_tooltip = "eos_lhuren_situation_anatta_stage_10_effects"
+			#custom_tooltip = "eos_lhuren_situation_anatta_stage_10_effects"
 		}
 	}
 
@@ -388,6 +388,10 @@ eos_lhuren_situation_samsara = {
 	situation_log_category = empire_concerns
 	
 	initial_progress = 0
+	total_progress = {
+		base = 0
+		add = value:eos_lhu_val_samsara_target_total
+	}
 
 	on_start = {
 		target = {
@@ -414,7 +418,7 @@ eos_lhuren_situation_samsara = {
 		eos_lhuren_situation_samsara_stage_1 = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_green
-			end = 33333
+			section_weight = 33
 
 			triggered_target_modifier = {
 				potential = {
@@ -426,7 +430,7 @@ eos_lhuren_situation_samsara = {
 		eos_lhuren_situation_samsara_stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_green
-			end = 66666
+			section_weight = 33
 
 			triggered_target_modifier = {
 				potential = {
@@ -438,7 +442,7 @@ eos_lhuren_situation_samsara = {
 		eos_lhuren_situation_samsara_stage_3 = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_green
-			end = 99999
+			section_weight = 33
 
 			triggered_target_modifier = {
 				potential = {
@@ -663,22 +667,6 @@ eos_lhuren_situation_nirvana = {
 				species_leader_exp_gain = -0.20
 				pop_amenities_usage_add = 0.5
 			}
-
-			triggered_modifier = {
-				potential = {
-					eos_lhu_valid_situation_nirvana = yes
-				}
-				diplo_weight_mult = 0.05
-				mult = owner.trigger:subjects
-			}
-
-			triggered_modifier = {
-				potential = {
-					eos_lhu_valid_situation_nirvana = yes
-				}
-				country_base_influence_produces_add = 0.05
-				mult = owner.trigger:num_owned_colonies
-			}
 		}
 		eos_lhuren_situation_nirvana_stage_neg_1 = {
 			icon = GFX_eos_situation_stage_left
@@ -729,8 +717,8 @@ eos_lhuren_situation_nirvana = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
 				pc_ark_habitability = 0.30
-				country_edict_fund_mult = 0.15
-				council_agenda_progress_speed = 0.15
+				country_edict_fund_mult = 0.20
+				council_agenda_progress_speed = 0.20
 				mult = owner.value:eos_val_nomadic_mult|MULT|2.0|NOMADIC|yes|
 			}
 		}
@@ -796,14 +784,6 @@ eos_lhuren_situation_nirvana = {
 				}
 				logistic_growth_mult = -0.20
 				empire_size_penalty_mult = 1.0
-			}
-
-			triggered_modifier = {
-				potential = {
-					eos_lhu_valid_situation_nirvana = yes
-				}
-				country_unity_produces_mult = 0.05
-				mult = owner.ruler.trigger:has_total_skill
 			}
 		}
 	}

@@ -559,7 +559,7 @@ situation_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		situation_progress >= 99999
+		situation_progress >= value:eos_lhu_val_samsara_target_total
 	}
 
 	immediate = {

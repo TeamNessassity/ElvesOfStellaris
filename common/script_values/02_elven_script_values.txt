@@ -158,12 +158,59 @@ eos_lhu_val_samsara_progress_mult = {
 		}
 		mode = mult
 	}
-	modifier = {
-		divide = trigger:num_owned_planets
-		num_owned_planets > 0
-	}
+	#modifier = {
+	#	divide = trigger:num_owned_planets
+	#	num_owned_planets > 0
+	#}
 	mult = $MULT$
 	min = 0
+}
+
+# Samsara progress bar length
+
+# Base value is a constant
+eos_lhu_val_samsara_target_base = {
+	base = 30000
+}
+# Each Colony increases Base by 50%
+eos_lhu_val_samsara_target_base_colonies = {
+	base = 0
+	modifier = {
+		add = owner.trigger:num_owned_colonies
+	}
+	modifier = {
+		mult = value:eos_lhu_val_samsara_target_base
+	}
+	mult = 0.5
+	min = 0
+}
+# Each Samsara increases the next target by 10%
+eos_lhu_val_samsara_target_add_samsara = {
+	base = 0
+	modifier = {
+		add = value:eos_lhu_val_samsara_target_base
+	}
+	modifier = {
+		add = value:eos_lhu_val_samsara_target_base_colonies
+	}
+	modifier = {
+		mult = target.value:eos_lhu_val_samsara_level
+	}
+	mult = 0.1
+}
+# Total progress bar is the sum of base + add factors
+eos_lhu_val_samsara_target_total = {
+	base = 0
+	modifier = {
+		add = value:eos_lhu_val_samsara_target_base
+	}
+	modifier = {
+		add = value:eos_lhu_val_samsara_target_base_colonies
+	}
+	modifier = {
+		add = value:eos_lhu_val_samsara_target_add_samsara
+	}
+	mult = 1
 }
 
 # Nirvana counter as value for scripted_loc purposes. This is supposed to be scope-neutral.
@@ -172,6 +219,38 @@ eos_lhu_val_nirvana = {
 	modifier = {
 		add = event_target:lhuren_lhumar.eos_lhu_var_nirvana
 		event_target:lhuren_lhumar = { is_variable_set = eos_lhu_var_nirvana }
+	}
+	mult = 1
+}
+
+# Multiplier to the passive resource production of Negentropy: Paranirvana
+# Base value is determined by the number of pops left on Lhumar
+# Additional value increases yearly
+
+# Time
+eos_lhu_val_nirvana_mult_time = {
+	base = 0
+	modifier = {
+		add = trigger:years_passed
+	}
+	mult = 10
+}
+# Pops + Time
+eos_lhu_val_nirvana_mult_add = {
+	base = 0
+	modifier = {
+		add = value:eos_lhu_val_nirvana
+	}
+	modifier = {
+		add = value:eos_lhu_val_nirvana_mult_time
+	}
+	mult = 0.001
+}
+# 1 + Pops + Time
+eos_lhu_val_nirvana_mult_total = {
+	base = 1
+	modifier = {
+		add = value:eos_lhu_val_nirvana_mult_add
 	}
 	mult = 1
 }

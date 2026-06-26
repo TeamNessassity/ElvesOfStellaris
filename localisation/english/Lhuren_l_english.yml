@@ -359,16 +359,16 @@ eos_lhuren_situation_samsara_type:0 "$eos_lhuren_situation_samsara$"
 
 eos_lhuren_situation_samsara_outcome:0 "§H[target.GetName]§! will undergo §YSamsara§!, dispersing the ripples of entropy\n§H[target.GetName]§! will gain $MOD_PLANET_MAX_DISTRICTS_ADD$: §G+1§!"
 
-eos_lhuren_situation_samsara_tooltip_colonies:0 "Additional progress from consuming $i_unity$ is §Rdivided§! by the number of §HColonies§!"
+eos_lhuren_situation_samsara_tooltip_colonies:0 "The base threshold required to reach §YSamsara§! is increased by §R+50%§! per §HColony§!./nThe total threshold is further increased by §R+10%§! per completed §YSamsara§!."
 
 eos_lhuren_situation_samsara_approach_passive:0 "Observation"
 eos_lhuren_situation_samsara_approach_passive_tooltip:0 "Minimize interference to observe the natural course of causality.\nBase §YMonthly Progress§! is determined by the number of known §YTechnologies§! and §Y$ap_cosmogenesis$§! Level"
 eos_lhuren_situation_samsara_approach_active:0 "Reflection"
-eos_lhuren_situation_samsara_approach_active_tooltip:0 "Selectively record observations to steer away from undesirable eigenstates.\nConsume §R50%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+eos_lhuren_situation_samsara_approach_active_tooltip:0 "Selectively record observations to steer away from undesirable eigenstates.\nConsume §R50%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount"
 eos_lhuren_situation_samsara_approach_controlled:0 "Refraction"
-eos_lhuren_situation_samsara_approach_controlled_tooltip:0 "Introduce new variables to influence the causal process.\nConsume §R100%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+eos_lhuren_situation_samsara_approach_controlled_tooltip:0 "Introduce new variables to influence the causal process.\nConsume §R100%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount"
 eos_lhuren_situation_samsara_approach_cosmogenesis:0 "§RDistortion§!"
-eos_lhuren_situation_samsara_approach_cosmogenesis_tooltip:0 "Modify universal constants to directly collapse the desired outcome.\nConsume §R200%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount\n$eos_lhuren_situation_samsara_tooltip_colonies$"
+eos_lhuren_situation_samsara_approach_cosmogenesis_tooltip:0 "Modify universal constants to directly collapse the desired outcome.\nConsume §R200%§! of all produced $i_unity$ and increase §YMonthly Progress§! by the same amount"
 
 eos_lhuren_situation_samsara_monthly_change_tooltip:0 "Research new §YTechnologies§! and progress through §Y$ap_cosmogenesis$§! to increase monthly progress.\nProgress can be further accelerated by spending a portion of $i_unity$ production via the active §YSituation Approach§! options.\n$eos_lhuren_situation_samsara_tooltip_colonies$"
 
