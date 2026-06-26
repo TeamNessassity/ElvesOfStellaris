@@ -477,10 +477,7 @@ eos_lhuren_situation_samsara = {
 		allow = {
 			eos_lhu_valid_situation_samsara = yes
 			owner = {
-				resource_stockpile_compare = {
-					resource = unity
-					value > 0
-				}
+				NOT = { has_deficit = unity }
 			}
 		}
 		resources = {
@@ -505,10 +502,7 @@ eos_lhuren_situation_samsara = {
 		allow = {
 			eos_lhu_valid_situation_samsara = yes
 			owner = {
-				resource_stockpile_compare = {
-					resource = unity
-					value > 0
-				}
+				NOT = { has_deficit = unity }
 			}
 		}
 		resources = {
@@ -534,10 +528,7 @@ eos_lhuren_situation_samsara = {
 			eos_lhu_valid_situation_samsara = yes
 			owner = {
 				has_ascension_perk = ap_cosmogenesis
-				resource_stockpile_compare = {
-					resource = unity
-					value > 0
-				}
+				NOT = { has_deficit = unity }
 			}
 		}
 
@@ -652,9 +643,23 @@ eos_lhuren_situation_nirvana = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
 				planet_politicians_trade_produces_add = 1.0
+				pop_environment_tolerance = 0.30
+				logistic_growth_mult = 0.30
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
 				pc_ark_habitability = 0.10
-				pop_environment_tolerance = 0.20
-				logistic_growth_mult = 0.20
+				country_edict_fund_mult = 0.05
+				mult = owner.value:eos_val_nomadic_mult|MULT|2.0|NOMADIC|yes|
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
 				species_leader_exp_gain = -0.20
 				pop_amenities_usage_add = 0.5
 			}
@@ -685,9 +690,23 @@ eos_lhuren_situation_nirvana = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
 				planet_politicians_trade_produces_add = 0.5
-				pc_ark_habitability = 0.20
 				pop_environment_tolerance = 0.10
 				logistic_growth_mult = 0.10
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
+				pc_ark_habitability = 0.20
+				country_edict_fund_mult = 0.10
+				mult = owner.value:eos_val_nomadic_mult|MULT|2.0|NOMADIC|yes|
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
 				species_leader_exp_gain = -0.10
 				pop_amenities_usage_add = 0.25
 			}
@@ -703,7 +722,16 @@ eos_lhuren_situation_nirvana = {
 				}
 				planet_politicians_unity_produces_add = 0.25
 				planet_politicians_trade_produces_add = 0.25
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
 				pc_ark_habitability = 0.30
+				country_edict_fund_mult = 0.15
+				council_agenda_progress_speed = 0.15
+				mult = owner.value:eos_val_nomadic_mult|MULT|2.0|NOMADIC|yes|
 			}
 		}
 		eos_lhuren_situation_nirvana_stage_pos_1 = {
@@ -716,10 +744,24 @@ eos_lhuren_situation_nirvana = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
 				planet_politicians_unity_produces_add = 0.5
-				pc_ark_habitability = 0.20
 				leader_skill_add = 1
-				ruler_skill_add = 1
+				leader_trait_selection_options_add = 1
 				species_leader_exp_gain = 0.10
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
+				pc_ark_habitability = 0.20
+				council_agenda_progress_speed = 0.10
+				mult = owner.value:eos_val_nomadic_mult|MULT|2.0|NOMADIC|yes|
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
 				logistic_growth_mult = -0.10
 				empire_size_penalty_mult = 0.5
 			}
@@ -734,10 +776,24 @@ eos_lhuren_situation_nirvana = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
 				planet_politicians_unity_produces_add = 1.0
+				leader_skill_add = 3
+				leader_trait_selection_options_add = 3
+				species_leader_exp_gain = 0.30
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
 				pc_ark_habitability = 0.10
-				leader_skill_add = 2
-				ruler_skill_add = 3
-				species_leader_exp_gain = 0.20
+				council_agenda_progress_speed = 0.05
+				mult = owner.value:eos_val_nomadic_mult|MULT|2.0|NOMADIC|yes|
+			}
+
+			triggered_modifier = {
+				potential = {
+					eos_lhu_valid_situation_nirvana = yes
+				}
 				logistic_growth_mult = -0.20
 				empire_size_penalty_mult = 1.0
 			}

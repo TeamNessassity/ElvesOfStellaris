@@ -181,8 +181,8 @@ elven_lhuren_origin_ending_C_modifier = {
 }
 
 # Restored Eternal Array functiones as the Final Boss of Orbital Rings
-# At Tier 3, it should take a Titan to crack it
-# Defence Platforms still get damage reduction and hardening, but not the main buffs (being outside the bubble and all)
+# At Tier 3, it should take a Titan to crack it, however, its ability to fight back is still largely relegated to platforms
+# Defence Platforms still get damage reduction and hardening, but not the crazy shield buffs (being outside the bubble and all)
 elven_lhuren_orbital_ring = {
 	#icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
 	shipsize_orbital_ring_tier_1_hull_mult = 0.5
@@ -191,9 +191,9 @@ elven_lhuren_orbital_ring = {
 	shipsize_orbital_ring_tier_1_armor_mult = 0.5
 	shipsize_orbital_ring_tier_2_armor_mult = 1.0
 	shipsize_orbital_ring_tier_3_armor_mult = 2.0
-	shipsize_orbital_ring_tier_1_shield_mult = 3.0
-	shipsize_orbital_ring_tier_2_shield_mult = 6.0
-	shipsize_orbital_ring_tier_3_shield_mult = 12.0
+	shipsize_orbital_ring_tier_1_shield_mult = 5.0
+	shipsize_orbital_ring_tier_2_shield_mult = 10.0
+	shipsize_orbital_ring_tier_3_shield_mult = 20.0
 	ship_shield_reduction = -1.0
 	ship_shield_hardening_add = 0.5
 	ship_damage_reduction_add = 20
