@@ -7,4 +7,15 @@ objectTypes = {
 		scale = 1.0
 	}
 
+	## PRISMATIC BLACK HOLE EFFECTS ##
+	pdxparticle = {
+		name = "elven_prismatic_black_hole_particle"
+		type = "elven_prismatic_black_hole_event_horizon"
+		scale = 1.0
+	}
+
 }
+
+
+
+

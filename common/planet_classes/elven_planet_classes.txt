@@ -241,3 +241,73 @@ random_list = {
 		"pc_alpine"
 	}
 }
+
+
+######################################
+### DUMBY ENTRIES FOR INFO WINDOWS ###
+######################################
+
+## NOTE: These exist only so we can alter some specific objects with new flavor images when clicking on them!
+##       They are not actually used as viable planets anywhere! This is so the objects retain vanilla functionality without a hassle!
+
+## RED & VIOLET BLACK HOLE ##
+
+pc_elven_red_purple_black_hole = {
+	entity = "black_hole_entity"
+	entity_scale = 20.0
+	picture = "pc_elven_red_purple_black_hole"
+	icon = GFX_planet_type_black_hole
+	icon_large = GFX_planet_type_black_hole_big
+
+	atmosphere_color		= hsv { 0.075 0.13 1.5 }
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 1.0
+
+	climate = "luminosity_0"
+	star = yes
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0
+
+	planet_size = { min = 20 max = 35 }
+
+	colonizable = no
+}
+
+## PRISMATIC BLACK HOLE ##
+
+pc_elven_prismatic_black_hole = {
+	entity = "black_hole_entity"
+	entity_scale = 20.0
+	picture = "pc_elven_prismatic_black_hole"
+	icon = GFX_planet_type_black_hole
+	icon_large = GFX_planet_type_black_hole_big
+
+	atmosphere_color		= hsv { 0.075 0.13 1.5 }
+	atmosphere_intensity	= 1.0
+	atmosphere_width		= 1.0
+
+	climate = "luminosity_0"
+	star = yes
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0
+
+	planet_size = { min = 20 max = 35 }
+
+	colonizable = no
+}
