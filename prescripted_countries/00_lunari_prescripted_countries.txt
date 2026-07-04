@@ -19,7 +19,6 @@ lunariciv_dlc = {
 		trait="trait_elven_true"
 		trait="trait_elven_lunari_immortality"
 		trait="trait_intelligent"
-		trait="trait_talented"
 		trait="trait_sedentary"
 	}
 
@@ -102,7 +101,6 @@ lunariciv = {
 		trait="trait_elven_true"
 		trait="trait_elven_lunari_immortality"
 		trait="trait_intelligent"
-		trait="trait_talented"
 		trait="trait_sedentary"
 	}
 

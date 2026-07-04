@@ -19,11 +19,6 @@ eilistraee_event1_01_initializer = {
 			clear_deposits = yes
 			add_deposit = d_dark_matter_deposit_2
 
-			set_planet_entity = {
-				entity = elven_red_purple_black_hole_entity
-                picture = pc_elven_red_purple_black_hole
-            }
-
 			# Lathe Debris
 			create_ambient_object = {
 				type = "eos_evergloom_ruins_dyson_gun"
@@ -463,6 +458,11 @@ eilistraee_event1_05_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
+
+			set_planet_entity = {
+				entity = elven_red_purple_black_hole_entity
+                picture = pc_elven_red_purple_black_hole
+            }
 
 			# Dyson Sphere Debris
 			create_ambient_object = {

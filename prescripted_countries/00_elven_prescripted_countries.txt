@@ -19,7 +19,6 @@ elven_civ1_galactic_paragons_dlc = {
 		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_charismatic"
-		trait="trait_talented"
 		trait="trait_wasteful"
 	}
 	
@@ -103,7 +102,6 @@ elven_civ1 = {
 		trait="trait_organic"
 		trait="trait_elven_true"
 		trait="trait_charismatic"
-		trait="trait_talented"
 		trait="trait_wasteful"
 	}
 	
@@ -188,7 +186,6 @@ elven_civ2_both_dlc = {
 		trait="trait_elven_sidh_immortality"
 		trait="trait_traditional"
 		trait="trait_communal"
-		trait="trait_resilient"
 		trait="trait_sedentary"
 	}
 	
@@ -271,7 +268,6 @@ elven_civ2_no_astral_planes = {
 		trait="trait_elven_sidh_immortality"
 		trait="trait_traditional"
 		trait="trait_communal"
-		trait="trait_resilient"
 		trait="trait_sedentary"
 	}
 	
@@ -354,7 +350,6 @@ elven_civ2_no_first_contact = {
 		trait="trait_elven_sidh_immortality"
 		trait="trait_traditional"
 		trait="trait_communal"
-		trait="trait_resilient"
 		trait="trait_sedentary"
 	}
 	
@@ -437,7 +432,6 @@ elven_civ2 = {
 		trait="trait_elven_sidh_immortality"
 		trait="trait_traditional"
 		trait="trait_communal"
-		trait="trait_resilient"
 		trait="trait_sedentary"
 	}
 	
@@ -518,7 +512,6 @@ elven_civ3 ={
 		trait="trait_elven_true"
 		trait="trait_elven_lhuren_immortality"
 		trait="trait_traditional"
-		trait="trait_talented"
 	}
 	
 	room="eos_lhuren_room"

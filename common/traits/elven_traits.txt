@@ -12,7 +12,7 @@
 ##################
 
 trait_elven_true = {
-	cost = 0
+	cost = 1
 	sorting_priority = 20
 	portrait_override = { elven sidh lunari lhuren }
 
@@ -47,9 +47,6 @@ trait_elven_true = {
 		negative_leader_traits_species = -1 # +0.5 points
 		leaders_upkeep_mult = 0.25 			# -1 points 
 											# Effective trait cost is 1.
-		
-		#planet_pops_consumer_goods_upkeep_mult = 0.15
-		#pop_growth_speed = -0.1
 	}
 	
 	allowed_archetypes = { BIOLOGICAL }

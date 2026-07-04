@@ -20,7 +20,6 @@ drow_tulshar_civ = {
 		name_list="DROW1"
 		trait="trait_organic"
 		trait="trait_drow"
-		trait="trait_talented"
 		trait="trait_quick_learners"
 		trait="trait_natural_sociologists"
 		trait="trait_decadent"
@@ -107,9 +106,9 @@ drow_civ1 = {
 		name_list="DROW3"
 		trait="trait_organic"
 		trait="trait_drow"
-		trait="trait_docile"
-		trait="trait_nomadic"
-		trait="trait_resilient"
+		trait="trait_natural_engineers"
+		trait="trait_adaptive"
+		trait="trait_drow_anorim_curse"
 		trait="trait_slow_breeders"
 	}
 	
@@ -192,9 +191,9 @@ drow_civ1_nomads_dlc = {
 		name_list="DROW3"
 		trait="trait_organic"
 		trait="trait_drow"
-		trait="trait_docile"
-		trait="trait_nomadic"
-		trait="trait_resilient"
+		trait="trait_natural_engineers"
+		trait="trait_photoadaptive"
+		trait="trait_drow_anorim_curse"
 		trait="trait_slow_breeders"
 	}
 	

@@ -6,7 +6,7 @@
 
 ## NOTE: Added BIOLOGICAL archetype since the archetype system is broken as of 2.2.
 trait_drow = {
-	cost = 0
+	cost = 1
 	sorting_priority = 20
 	portrait_override = { drow drow_true drow_lhuren dunmer dunmer_true dunmer_lhuren }
 
@@ -37,7 +37,7 @@ trait_drow = {
 	
 	modifier = {
 		leader_lifespan_mult = 9.0				# Assuming that it costs 4 points, like Venerable.
-		species_leader_exp_gain = 0.1			# +1 points
+		habitability_floor_add = 0.3			# +1 points, like Biohabitability
 		planet_jobs_unity_produces_mult = -0.1  # -1 points
 		species_empire_size_mult = 0.1			# -2 points
 												# Effective trait cost is 2, but what the hell.
@@ -229,15 +229,43 @@ trait_drow_anorim_immortality = {
 	
 	tags = { organic positive species leader special }
 
-	# Since it's added after game-start, keep base age
-	#modifier = {
-	#	leader_starting_age_mult = 10.0
-	#	heir_starting_age_mult = -10.0
-	#}
+	modifier = {
+		logistic_growth_mult = 0.10
+		empire_size_pops_mult = -0.10
+	}
 	
 	allowed_archetypes = { BIOLOGICAL }
 
 	slave_cost = {
 		trade = 500
+	}
+}
+
+trait_drow_anorim_curse = {
+	cost = 0
+	sorting_priority = 20
+
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+
+	randomized = no
+	initial = no
+
+	icon = "gfx/interface/icons/traits/trait_darkelfmetabolism.dds"
+	
+	tags = { organic negative species leader special }
+
+	modifier = {
+		logistic_growth_mult = -0.10
+		empire_size_pops_mult = 0.10
+		leader_lifespan_add = -25
+		leader_starting_age_mult = -0.25
+	}
+	
+	allowed_archetypes = { BIOLOGICAL }
+
+	slave_cost = {
+		trade = 0
 	}
 }

@@ -115,7 +115,7 @@ ILYTHIIRI_tooth_plural:0 "teeth"
 # Traits
 ####################################
 trait_drow:0 "Dark Elven"
-trait_drow_desc:0 "§LAn offshoot of the ancient Eldar. No longer immortal but very long lived.§!\n"
+trait_drow_desc:0 "§LAn offshoot of the ancient Eldar. Their biology evolved to survive in inhospitable conditions.§!\n"
 trait_drow_savage:0 "Dark Elven Savage"
 trait_drow_savage_desc:0 "§LAn offshoot of the ancient Eldar that considers savagery a type of art form.§!\n"
 trait_drow_xenocidal:0 "Xenocidal"
