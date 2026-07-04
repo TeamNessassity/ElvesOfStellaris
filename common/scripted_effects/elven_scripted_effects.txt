@@ -649,7 +649,6 @@ convert_elven_ecumenopolis_deposits = {
 		}
 
 		add_deposit = d_drow_planetary_cp_klepto_fairies
-		add_deposit = d_drow_planetary_cheel_krezust
 	}
 	else_if = {
 		limit = {

@@ -72,19 +72,19 @@ ELVEN_drow1_home_system_name: "Anoriel"
 ### EVENTS ###
 ##############
 
-START_SCREEN_PRISMATIC_REFUGE:0 ""
-START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 ""
+START_SCREEN_PRISMATIC_REFUGE:0 "'Not all who embark on a journey shall greet its final harbor. Not all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H$ELVEN_drow1_arkship_name$§! finally touched down upon the surface of a world bathed in prismatic brillaince; never again to drift from star to star in fear of the encroaching darkness.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and §RSHE§! who rendered us so shall claim us when §GSHE§! who shelters us can do so no longer.\n\nEven at the final harbor, we must not allow this journey to end on another's terms."
+START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall greet its final harbor. Not all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H[Capital.GetName]§! could hide underneath a lighthouse of prismatic brillaince; a spectral cloak the encroaching darkness could not penetrate.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and §RSHE§! who rendered us so shall claim us when §GSHE§! who shelters us can do so no longer.\n\nEven at the final harbor, we must not allow this journey to end on another's terms."
 
 # Event Chain
- elven_anorim_prismatic_refuge_chain_title:0 "Through the Shattered Glass"
+ elven_anorim_prismatic_refuge_chain_title:0 "Fading Light"
  elven_anorim_prismatic_refuge_chain_desc:0 "REPLACE_ME"
 
- elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Reflection"
- elven_anorim_origin_events.101.desc:0 "Not all who embark on a journey are fated to greet its final harbor./n/nSentients across the universe seek, and often find, profound meaning in such musings on mortality."
+ elven_anorim_origin_events.101.name:0 "Fading Light: Glimmer"
+ elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.101.a:0 "REPLACE_ME"
  elven_anorim_origin_events.101.b:0 "REPLACE_ME"
 
- elven_anorim_origin_events.201.name:0 "Through the Shattered Glass: Refraction"
+ elven_anorim_origin_events.201.name:0 "Fading Light: Gloom"
  elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.201.a:0 "REPLACE_ME"
 

@@ -15,3 +15,23 @@ part = {
 		has_origin = origin_elven_celestial_throne
 	}
 }
+
+part = {
+	location = 0
+	localization = "START_SCREEN_PRISMATIC_REFUGE_NOMAD"
+
+	trigger = {
+		has_origin = origin_drow_prismatic_refuge
+		is_nomadic = yes
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_PRISMATIC_REFUGE"
+
+	trigger = {
+		has_origin = origin_drow_prismatic_refuge
+		is_nomadic = no
+	}
+}
