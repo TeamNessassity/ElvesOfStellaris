@@ -1,5 +1,5 @@
 particle={
-	name="elven_prismatic_black_hole_event_horizon"
+	name="elven_prismatic_black_hole_clouds"
 	subsystem={
 		name="dust_smoke"
 		max_amount=45
@@ -20,8 +20,8 @@ particle={
 			shader="ParticleAlphaBlend"
 		}
 		color={
-			x=255.000
-			y=0.000
+			x=0.000
+			y=255.000
 			z=0.000
 			alpha=25.000,flash_fade
 		}
@@ -68,7 +68,7 @@ particle={
 		color={
 			x=255.000
 			y=0.000
-			z=0.000
+			z=255.000
 			alpha=50.000,flash_fade
 		}
 		position={

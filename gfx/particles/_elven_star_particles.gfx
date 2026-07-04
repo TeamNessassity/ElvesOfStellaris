@@ -10,7 +10,14 @@ objectTypes = {
 	## PRISMATIC BLACK HOLE EFFECTS ##
 	pdxparticle = {
 		name = "elven_prismatic_black_hole_particle"
-		type = "elven_prismatic_black_hole_event_horizon"
+		type = "elven_prismatic_black_hole_clouds"
+		scale = 1.0
+	}
+
+	## RED PURPLE BLACK HOLE EFFECTS ##
+	pdxparticle = {
+		name = "elven_red_purple_black_hole_particle"
+		type = "elven_red_purple_black_hole_clouds"
 		scale = 1.0
 	}
 
