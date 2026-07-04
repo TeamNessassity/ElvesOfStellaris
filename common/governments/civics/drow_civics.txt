@@ -12,9 +12,12 @@
 #	can_build_ruler_ship = yes / no				# default: no
 #}
 
+# DEPRECATED: Anorim mechanics are mostly handled by their Oirgin now
+# Pending removal
 civic_drow_eilistraee = {
 	icon = "gfx/interface/icons/drow/civic_drow_eilistraee.dds"
 	potential = { 
+		always = no
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { NOT = { value = auth_corporate } }
 	}	
@@ -36,7 +39,6 @@ civic_drow_eilistraee = {
 		base = 0
 	}
 	
-	# PLACEHOLDER: Change effect to a triggered modifier that changes depending on war state
 	modifier = {
 		envoys_add = 1
 		diplo_weight_naval_mult = 0.15
@@ -48,6 +50,12 @@ civic_drow_eilistraee = {
 	#description = "civic_drow_eilistraee_tooltip_effects"
 }
 
+# REWORK PENDING: Planning to merge Tekartas + Xenocidal and give them more interesting mechanics
+# Xenocidal: Tekartas civic gives the Founder Species leaders the Ambition (name TBD) trait. Leaders with important jobs are more powerful, but high-level leaders become unhappy in low-level positions.
+# Tekartas: A system that tracks the Ambition level of leaders (determined by Skill level + positive traits)
+# If a leader has greater Ambitions than they current station, they might start a scheme to enrich themselves or sabotage another leader
+# When a scheme starts, have a Situation that offers options for manipulating its outcome
+# On failure, leader might die or flee to another empire (if hired, they will try once to replace either a councilor or the ruler, with a low chance of success)
 civic_drow_warriors = {
 	description = "civic_tooltip_drow_warriors_effects"
 	icon = "gfx/interface/icons/drow/civic_drow_warriors.dds"
