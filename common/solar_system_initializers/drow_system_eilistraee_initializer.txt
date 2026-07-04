@@ -41,7 +41,7 @@ drow_system_eilistraee_initializer = {
 	usage = origin
 	
 	planet = {
-		name = "Anoriel"
+		name = "Tindómerel"
 		class = "pc_elven_prismatic_star"
 		orbit_distance = 25
 		size = 30
@@ -55,7 +55,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Tindómerel"
+		name = "Anoriel"
 		entity = "elven_prismatic_black_hole_entity"
 		class = "pc_black_hole"
 		orbit_distance = 0
