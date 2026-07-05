@@ -3,10 +3,9 @@ owner = {
 	has_valid_civic = civic_elven_celestial_grace
 }
 
-exists = background_planet.owner
-exists = background_planet
-background_planet = {
-	is_colony = yes
+exists = background_colony.owner
+exists = background_colony
+background_colony = {
 	owner = {
 		NOT = { is_same_value = root.owner }
 	}

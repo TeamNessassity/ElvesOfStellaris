@@ -84,15 +84,7 @@ country_event = {
 	
 	option = {
 		allow = {
-			OR = {
-				AND = {
-					exists = ruler.background_planet
-					ruler.background_planet = {
-						is_colony = no
-					}
-				}
-				NOT = { exists = ruler.background_planet }
-			}
+			NOT = { exists = ruler.background_colony }
 			resource_stockpile_compare = {
 				resource = influence
 				value >= 400

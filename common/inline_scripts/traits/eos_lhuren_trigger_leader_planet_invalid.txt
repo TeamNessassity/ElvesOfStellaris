@@ -1,12 +1,10 @@
 exists = owner
 owner = {
 	has_valid_civic = civic_elven_celestial_grace
-	# PLACEHOLDER: The background_planet scope seems broken for Arkships, so the penalty is temporarily disabled for Nomads unhtil PDS fixes it 
-	is_nomadic = no
 }
 
 NOT = {
-	exists = background_planet.colony
+	exists = background_colony
 }
 
 #OR = {

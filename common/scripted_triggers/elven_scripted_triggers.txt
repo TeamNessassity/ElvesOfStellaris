@@ -196,10 +196,7 @@ eos_lhu_valid_new_dynasty_ruler = {
 	is_heir = no
 	is_ruler = no
 	NOT = { has_trait = trait_elven_lhuren_taishanghuang }
-	exists = background_planet
-	background_planet = {
-		is_colony = yes
-	}
+	exists = background_colony
 }
 
 # Celestial Throne: Situations

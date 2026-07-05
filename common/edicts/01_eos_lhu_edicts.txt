@@ -34,17 +34,17 @@ eos_lhu_edict_celestial_mandate = {
 		modifier = {
 			weight = 100
 			OR = {
+				NOT = { exists = ruler.background_colony }
 				AND = {
-					exists = ruler.background_planet
-					ruler.background_planet = {
-						is_colony = no
+					exists = ruler.background_colony
+					ruler.background_colony.owner = {
+						NOT = { is_same_value = prev }
 					}
 				}
-				NOT = { exists = ruler.background_planet }
 			}
 			resource_stockpile_compare = {
 				resource = influence
-				value >= 200
+				value >= 400
 			}
 		}
 	}
