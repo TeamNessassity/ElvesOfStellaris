@@ -15,7 +15,7 @@ drow_system_eilistraee_initializer_DESC:0 "§LYour people live under the colorfu
 trait_drow_anorim_immortality:0 "Evergleam"
 trait_drow_anorim_immortality_desc:0 "Into the stars, they fled in fear, and therein found death. But among the stars, they lived in love, and therein death could not reach."
 trait_drow_anorim_curse:0 "Evergloom"
-trait_drow_anorim_curse_desc:0 "§RSHE§! is not done exacting §RHER§! revenge on those who once coveted divinity."
+trait_drow_anorim_curse_desc:0 "§RSHE§! is not done exacting revenge on those who once coveted §RHER§! divinity."
 
 ####################################
 # Origins 

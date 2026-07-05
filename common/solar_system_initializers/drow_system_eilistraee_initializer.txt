@@ -67,6 +67,7 @@ drow_system_eilistraee_initializer = {
 			add_deposit = d_engineering_3
 
 			set_planet_entity = {
+				entity = elven_prismatic_black_hole_entity
                 picture = pc_elven_prismatic_black_hole
             }
 
