@@ -454,6 +454,8 @@ eilistraee_event1_05_initializer = {
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 40
+	
+		flags = { eos_anorim_galtaereth }
 
 		init_effect = {
 			prevent_anomaly = yes

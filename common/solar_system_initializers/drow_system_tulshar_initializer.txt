@@ -2,7 +2,8 @@ drow_system_tulshar_initializer = {
 	name = "Ilithor"
 	class = "sc_drow_tulshar"
 	usage = origin
-	flags = { conduit_excluded }
+
+	flags = { empire_home_system custom_system drow_tulshar_nebula conduit_excluded }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -43,8 +44,6 @@ drow_system_tulshar_initializer = {
 
 		}	
 	}
-
-	flags = { empire_home_system custom_system drow_tulshar_nebula }
 		
 	planet = {
 		class = pc_m_star

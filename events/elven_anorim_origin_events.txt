@@ -24,7 +24,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = { is_same_value = event_target:anorim_star_owner_of_@event_target:anorim_anoriel }
+				NOT = { is_same_value = event_target:anorim_star_owner_of_@event_target:anorim_star }
 			}
 			country_event = {
 				id = elven_anorim_origin_events.0001

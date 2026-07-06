@@ -1,8 +1,10 @@
 elven_system_imperial_initializer = {
 	name = "Anoralas"
-	
 	class = "sc_elven_imperial"
-	flags = { conduit_excluded }
+	usage = origin
+	
+	flags = { empire_home_system custom_system elven_nebula_blue conduit_excluded }
+
 	asteroid_belt = {
 		type = elven_crystal_asteroid_belt_teal
 		radius = 90
@@ -48,9 +50,6 @@ elven_system_imperial_initializer = {
 
 		}
 	}
-	
-	flags = { empire_home_system custom_system elven_nebula_blue }
-	usage = origin
 
 	planet = {
 		name = "Anoreth"

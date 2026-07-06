@@ -1,6 +1,5 @@
 elven_system_imperial_neighbor1_initializer = {
 	name = "Lodorlas"
-	
 	class = "sc_elven_trinary_1"
 
 	flags = { custom_system conduit_excluded }

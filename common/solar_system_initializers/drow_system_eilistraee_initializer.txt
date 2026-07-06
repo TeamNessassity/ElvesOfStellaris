@@ -1,17 +1,17 @@
 #Eilistraee Paradise
 drow_system_eilistraee_initializer = {
 	name = "Anoriel"
-	
 	class = "sc_elven_binary_prismatic_black_hole"
+	usage = origin
 	
-	flags = { conduit_excluded }
+	flags = { empire_home_system eilistraee_system custom_system conduit_excluded }
 
 	init_effect = {
 		if = {
 			limit = {
-				NOT = { exists = event_target:anorim_anoriel }
+				NOT = { exists = event_target:anorim_star }
 			}
-			save_global_event_target_as = anorim_anoriel
+			save_global_event_target_as = anorim_star
 		}
 
 		every_neighbor_system = {
@@ -37,9 +37,6 @@ drow_system_eilistraee_initializer = {
 		}
 	}
 	
-	flags = { empire_home_system eilistraee_system custom_system }
-	usage = origin
-	
 	planet = {
 		name = "Tindómerel"
 		class = "pc_elven_prismatic_star"
@@ -62,7 +59,16 @@ drow_system_eilistraee_initializer = {
 		orbit_angle = 180
 		size = 18
 
+		flags = { eos_anorim_anoriel }
+
 		init_effect = {
+			if = {
+				limit = {
+					NOT = { exists = event_target:anorim_anoriel }
+				}
+				save_global_event_target_as = anorim_anoriel
+			}
+
 			clear_deposits = yes
 			add_deposit = d_engineering_3
 
@@ -70,14 +76,6 @@ drow_system_eilistraee_initializer = {
 				entity = elven_prismatic_black_hole_entity
                 picture = pc_elven_prismatic_black_hole
             }
-
-
-			#random_list = {
-			#	10 = {
-			#		set_planet_entity = { entity = elven_prismatic_black_hole_entity }
-			#	}
-			#	90 = {}
-			#}
 		}
 	}
 	
@@ -222,7 +220,7 @@ drow_system_eilistraee_initializer = {
 			home_planet = yes
 			starting_planet = yes
 			has_ring = yes
-			flags = { eilistraeean_capital special_start_planet }
+			flags = { anorim_capital special_start_planet }
 			
 			init_effect = {
 			}

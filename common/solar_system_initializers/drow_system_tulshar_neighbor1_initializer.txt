@@ -1,5 +1,4 @@
 drow_system_tulshar_neighbor1_initializer = {
-
 	name = "Ze'zhuanth"
 	class = "sc_drow_trinary_2"
 

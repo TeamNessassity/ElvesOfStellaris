@@ -1,5 +1,4 @@
 drow_system_tulshar_neighbor2_initializer = {
-
 	name = "Quarthas"
 	class = "sc_drow_quaternary_1"
 

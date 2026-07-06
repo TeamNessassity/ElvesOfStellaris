@@ -1,8 +1,9 @@
 elven_system_gaul_initializer = {
 	name = "Adarenon"
-	
 	class = "sc_elven_gaul"
-	flags = { conduit_excluded }
+	usage = origin
+	
+	flags = { empire_home_system custom_system elven_nebula_green_purple conduit_excluded }
 	
 	init_effect = {
 
@@ -26,9 +27,6 @@ elven_system_gaul_initializer = {
 			}
 		}
 	}
-	
-	flags = { empire_home_system custom_system elven_nebula_green_purple }
-	usage = origin
 	
 	planet = {
 		name = "Adarenon"

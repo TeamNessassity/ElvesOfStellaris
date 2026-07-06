@@ -308,7 +308,7 @@ generate_elven_capital_deposits_and_blockers = {
 	# If Children of Anoriel start settled, skip the initial event chain and apply nomadic settlement modifier on Sokoya
 	else_if = {
 		limit = {
-			has_carrier_flag = eilistraeean_capital
+			has_carrier_flag = anorim_capital
 			owner = {
 				has_origin = origin_drow_prismatic_refuge
 			}
@@ -327,7 +327,7 @@ generate_elven_capital_deposits_and_blockers = {
 	# If Children of Anoriel start Nomadic, un-barren Sokoya, but don't spawn any infrastructure
 	else_if = {
 		limit = {
-			NOT = { has_carrier_flag = eilistraeean_capital }
+			NOT = { has_carrier_flag = anorim_capital }
 			owner = {
 				has_origin = origin_drow_prismatic_refuge
 			}
@@ -335,7 +335,7 @@ generate_elven_capital_deposits_and_blockers = {
 		solar_system = {
 			random_system_planet = {
 				limit = {
-					has_carrier_flag = eilistraeean_capital
+					has_carrier_flag = anorim_capital
 				}
 				change_pc = pc_gaia
 				eos_eilistraeean_origin_planet_setup = yes
@@ -645,7 +645,7 @@ convert_elven_ecumenopolis_deposits = {
 	}
 	else_if = {
 		limit = {
-			has_carrier_flag = eilistraeean_capital
+			has_carrier_flag = anorim_capital
 		}
 
 		add_deposit = d_drow_planetary_cp_klepto_fairies

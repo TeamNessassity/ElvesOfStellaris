@@ -9,8 +9,9 @@
 elven_system_lhuren_initializer = {
 	name = "Aurlûnor"
 	class = "sc_elven_sexenary_1"
+	usage = origin
 	
-	flags = { conduit_excluded }
+	flags = { empire_home_system custom_system lhuren_capital_system conduit_excluded }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -27,9 +28,6 @@ elven_system_lhuren_initializer = {
 			effect = { nebula_cloaking_effect = yes }
 		}
 	}
-
-	flags = { empire_home_system custom_system lhuren_capital_system }
-	usage = origin
 
 	planet = {
 		class = "pc_f_star"

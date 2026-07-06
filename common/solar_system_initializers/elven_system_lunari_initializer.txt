@@ -7,10 +7,10 @@
 
 elven_system_lunari_initializer = {
 	name = "Sunless Realms"
-	
 	class = "sc_elven_binary_2"
+	usage = origin
 
-	flags = { conduit_excluded }
+	flags = { empire_home_system custom_system spawned_shroud_tunnel conduit_excluded }
 
 	asteroid_belt = {
 		type = elven_crystal_asteroid_belt_white
@@ -25,10 +25,6 @@ elven_system_lunari_initializer = {
 			}
 		}
 	}
-
-	flags = { empire_home_system custom_system spawned_shroud_tunnel }
-	
-	usage = origin
 
 	planet = {
 		name = "Estren'âre"

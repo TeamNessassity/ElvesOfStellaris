@@ -1,5 +1,4 @@
 drow_system_tulshar_neighbor3_initializer = {
-
 	name = "Zertasol"
 	class = "sc_m"
 

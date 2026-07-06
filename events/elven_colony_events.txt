@@ -173,7 +173,7 @@ carrier_event = {
 		is_planet_class = pc_city
 		OR = {
 			has_carrier_flag = lunari_planet_flag
-			has_carrier_flag = eilistraeean_capital
+			has_carrier_flag = anorim_capital
 			has_carrier_flag = lhuren_capital
 			has_carrier_flag = ayleid_capital
 		}
@@ -195,7 +195,7 @@ carrier_event = {
 
 		if = {
 			limit = {
-				has_carrier_flag = eilistraeean_capital
+				has_carrier_flag = anorim_capital
 			}
 	
 			add_deposit = d_drow_planetary_cheel_krezust
