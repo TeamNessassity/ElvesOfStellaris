@@ -275,6 +275,7 @@ situation_event = {
 	immediate = {
 		set_situation_progress = 0
 
+		# Going to Blorg Prime won't save you from an eldritch deity, but good try
 		every_country = {
 			every_owned_colony = {
 				limit = {
@@ -310,6 +311,13 @@ situation_event = {
 							type = name
 							localization = PLANET
 							scope = this
+						}
+					}
+					every_owned_pop_group = {
+						limit = { has_trait = trait_drow_anorim_curse }
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.10
 						}
 					}
 				}
