@@ -791,6 +791,7 @@ carrier_event = {
 	hide_window = yes
 
 	trigger = {
+		exists = event_target:lhuren_lhumar
 		is_same_value = event_target:lhuren_lhumar
 		planet_devastation >= 100
 	}

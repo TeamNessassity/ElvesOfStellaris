@@ -139,10 +139,10 @@ eos_anorim_situation_galtaereth_stage_1: "Stalking"
 eos_anorim_situation_galtaereth_stage_2: "Pursuing"
 eos_anorim_situation_galtaereth_stage_3: "Hunting"
 
-MESSAGE_EOS_ANORIM_GALTAERETH_FOUND_TITLE:0 "PLACEHOLDER was Caught in the Web"
-EOS_ANORIM_GALTAERETH_FOUND_DESC:0 "§RFOUND YOU!§!"
-MESSAGE_EOS_ANORIM_GALTAERETH_EVADED_TITLE:0 "PLACEHOLDER has Evaded the Web"
-EOS_ANORIM_GALTAERETH_FOUND_DESC:0 "§RWHERE ARE YOU?§!"
+MESSAGE_EOS_ANORIM_GALTAERETH_FOUND_TITLE:0 "§RFOUND YOU!§!"
+EOS_ANORIM_GALTAERETH_FOUND_DESC:0 "$PLANET|H$ was caught in $eos_galtaereth_alias_color$'s Web"
+MESSAGE_EOS_ANORIM_GALTAERETH_EVADED_TITLE:0 "§RWHERE ARE YOU?§!"
+EOS_ANORIM_GALTAERETH_EVADED_DESC:0 "$PLANET|H$ slipped through $eos_galtaereth_alias_color$'s Web"
 
 #######################
 ### PLANET FEATURES ###

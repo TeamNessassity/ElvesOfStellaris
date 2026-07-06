@@ -65,7 +65,7 @@ eos_anorim_situation_galtaereth = {
 
 	on_monthly = {
 		events = {
-			#elven_lhuren_origin_events.10600
+			elven_anorim_origin_events.10100
 		}
 	}
 }

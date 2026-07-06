@@ -255,36 +255,69 @@ country_event = {
 	}
 }
 
-###############################
-#        Shroud Stuff         #
-###############################
+##########################
+# Story Situation Events #
+##########################
 
-# Children of Anoriel should get Anoriel's Accord as soon as they're able to access the Shroud
-country_event = {
-	id = elven_anorim_origin_events.901
+# Lhumar has undergone Samsara
+situation_event = {
+	id = elven_anorim_origin_events.10100
+	location = target
+	situation = this
 	hide_window = yes
 
 	is_triggered_only = yes
 
 	trigger = {
-		has_origin = origin_drow_prismatic_refuge
+		situation_progress >= 1000
 	}
-	
+
 	immediate = {
+		set_situation_progress = 0
+
+		every_country = {
+			every_owned_colony = {
+				limit = {
+					any_owned_pop_group = {
+						has_trait = trait_drow_anorim_curse
+					}
+				}
+				if = {
+					limit = {
+						solar_system = {
+							is_same_value = event_target:anorim_star
+						}
+					}
+					create_message = {
+						type = EOS_ANORIM_GALTAERETH_EVADED
+						localization = EOS_ANORIM_GALTAERETH_EVADED_DESC
+						days = 30
+						target = this
+						variable = {
+							type = name
+							localization = PLANET
+							scope = this
+						}
+					}
+				}
+				else = {
+					create_message = {
+						type = EOS_ANORIM_GALTAERETH_FOUND
+						localization = EOS_ANORIM_GALTAERETH_FOUND_DESC
+						days = 30
+						target = this
+						variable = {
+							type = name
+							localization = PLANET
+							scope = this
+						}
+					}
+				}
+			}
+		}
 	}
-}
 
-# Dummy first contact event. It's technically not needed, since other empires cannot randomly meet her, but log will complain if we don't have one.
-country_event = {
-	id = elven_anorim_origin_events.910
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-	}
-	
-	immediate = {
+	after = {
 	}
 }
 

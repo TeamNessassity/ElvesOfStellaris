@@ -122,8 +122,6 @@ on_survey = {
 # FROMFROM = System jumped from
 on_entering_wormhole = {
 	events = {
-		# Prismatic refugees establish contact with a FE.
-		elven_misc_events.2
 	}
 }
 
@@ -205,13 +203,5 @@ on_ruler_created = {
 on_ruler_set = {
 	events = {
 		elven_celestial_grace_events.203
-	}
-}
-
-# Fired by breach_shroud = yes
-# This = Country
-on_shroud_breached = {
-	events = {
-		elven_anorim_origin_events.901
 	}
 }
