@@ -124,12 +124,12 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
 # Situations
 ####################################
 
-# Event Horizon: Ravenous Darkness
-eos_anorim_situation_galtaereth:0 "Event Horizon: Ravenous Darkness"
+# Horizon: Ravenous Darkness
+eos_anorim_situation_galtaereth:0 "Horizon: Ravenous Darkness"
 eos_anorim_situation_galtaereth_desc:0 "As long as $eos_galtaereth_alias_color$'s web stretches across our reality, our souls remain $eos_galtaereth_her_color$ prey.\n\nThe prismatic light of §H[target.GetName]§! offers the only shelter from the §RFeast§!."
 eos_anorim_situation_galtaereth_type:0 "$eos_anorim_situation_galtaereth$"
 
-eos_anorim_situation_galtaereth_outcome:0 "A number of £pop£ pops with the §R$trait_drow_anorim_curse$§! Trait on Colonies outside of §H[target.GetName]§!'s system will be §Rpurged§!."
+eos_anorim_situation_galtaereth_outcome:0 "A number of £pop£ pops with the §R$trait_drow_anorim_curse$§! Trait outside the §H[target.solar_system.GetName]§! system will be §Rpurged§!."
 
 eos_anorim_situation_galtaereth_monthly_change_tooltip:0 "£pop£ Pops cursed with §R$trait_drow_anorim_curse$§! increases Monthly Progress."
 
