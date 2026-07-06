@@ -74,8 +74,8 @@ ELVEN_drow1_home_system_name: "Anoriel"
 ### EVENTS ###
 ##############
 
-START_SCREEN_PRISMATIC_REFUGE:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H$ELVEN_drow1_arkship_name$§! finally touched down upon the surface of a world bathed in prismatic briliance; never again to drift from star to star in fear of the encroaching darkness.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and §RSHE§! who rendered us so shall claim us when §GSHE§! who shelters us can do so no longer.\n\nThis journey must not end on another's terms."
-START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H[Capital.GetName]§! could hide underneath a lighthouse of prismatic briliance; a spectral cloak the encroaching darkness could not penetrate.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and §RSHE§! who rendered us so shall claim us when §GSHE§! who shelters us can do so no longer.\n\nThis journey must not end on another's terms."
+START_SCREEN_PRISMATIC_REFUGE:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H$ELVEN_drow1_arkship_name$§! finally touched down upon the surface of a world bathed in prismatic briliance; never again to drift from star to star in fear of the encroaching darkness.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and $eos_galtaereth_she_color$ who rendered us so shall claim us when $eos_anoriel_she_color$ who shelters us can do so no longer.\n\nThis journey must not end on another's terms."
+START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H[Capital.GetName]§! could hide underneath a lighthouse of prismatic briliance; a spectral cloak the encroaching darkness could not penetrate.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and $eos_galtaereth_she_color$ who rendered us so shall claim us when $eos_anoriel_she_color$ who shelters us can do so no longer.\n\nThis journey must not end on another's terms."
 
 # Event Chain
  elven_anorim_prismatic_refuge_chain_title:0 "Fading Light"
@@ -101,13 +101,48 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
 
 # Shroud
  eos_anoriel: "Coronal Daughter"
+ eos_anoriel_color: "§G$eos_anoriel$§!"
  eos_anoriel_alias: "Anoriel"
- eos_anoriel_article: "the $eos_anoriel$"
- eos_anoriel_article_cap: "The $eos_anoriel$"
- eos_anoriel_color: "§L$eos_anoriel$§!"
- eos_anoriel_color_article: "the §H$eos_anoriel$§!"
- eos_anoriel_color_article_cap: "The §H$eos_anoriel$§!"
+ eos_anoriel_alias_color: "§G$eos_anoriel_alias$§!"
+ eos_anoriel_she: "SHE"
+ eos_anoriel_she_color: "§G$eos_anoriel_she$§!"
+ eos_anoriel_her: "GetHimHer"
+ eos_anoriel_her_color: "§G$eos_anoriel_her$§!"
  eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
+
+ eos_galtaereth: "Abyssal Silkspinner"
+ eos_galtaereth_color: "§R$eos_galtaereth$§!"
+ eos_galtaereth_alias: "Galtaereth"
+ eos_galtaereth_alias_color: "§R$eos_galtaereth_alias$§!"
+ eos_galtaereth_she: "SHE"
+ eos_galtaereth_she_color: "§R$eos_galtaereth_she$§!"
+ eos_galtaereth_her: "HER"
+ eos_galtaereth_her_color: "§R$eos_galtaereth_her$§!"
+ eos_galtaereth_desc: "Silken shadows weave desire across endless oblivion."
+
+####################################
+# Situations
+####################################
+
+# Event Horizon: Ravenous Darkness
+eos_anorim_situation_galtaereth:0 "Event Horizon: Ravenous Darkness"
+eos_anorim_situation_galtaereth_desc:0 "As long as $eos_galtaereth_alias_color$'s web stretches across our reality, our souls remain $eos_galtaereth_her_color$ prey.\n\nThe prismatic light of §H[target.GetName]§! offers the only shelter from the §RFeast§!."
+eos_anorim_situation_galtaereth_type:0 "$eos_anorim_situation_galtaereth$"
+
+eos_anorim_situation_galtaereth_outcome:0 "A number of £pop£ pops with the §R$trait_drow_anorim_curse$§! Trait on Colonies outside of §H[target.GetName]§!'s system will be §Rpurged§!."
+
+eos_anorim_situation_galtaereth_monthly_change_tooltip:0 "£pop£ Pops cursed with §R$trait_drow_anorim_curse$§! increases Monthly Progress."
+
+eos_anorim_situation_galtaereth_progress_pops:0 "Pops with Trait: §R$trait_drow_anorim_curse$§!"
+
+eos_anorim_situation_galtaereth_stage_1: "Stalking"
+eos_anorim_situation_galtaereth_stage_2: "Pursuing"
+eos_anorim_situation_galtaereth_stage_3: "Hunting"
+
+MESSAGE_EOS_ANORIM_GALTAERETH_FOUND_TITLE:0 "PLACEHOLDER was Caught in the Web"
+EOS_ANORIM_GALTAERETH_FOUND_DESC:0 "§RFOUND YOU!§!"
+MESSAGE_EOS_ANORIM_GALTAERETH_EVADED_TITLE:0 "PLACEHOLDER has Evaded the Web"
+EOS_ANORIM_GALTAERETH_FOUND_DESC:0 "§RWHERE ARE YOU?§!"
 
 #######################
 ### PLANET FEATURES ###

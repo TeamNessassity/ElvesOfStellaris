@@ -19,7 +19,7 @@ eilistraee_event1_01_initializer = {
 			clear_deposits = yes
 			add_deposit = d_dark_matter_deposit_2
 
-			# Lathe Debris
+			# Gun Debris
 			create_ambient_object = {
 				type = "eos_evergloom_ruins_dyson_gun"
 				location = this
@@ -458,6 +458,13 @@ eilistraee_event1_05_initializer = {
 		flags = { eos_anorim_galtaereth }
 
 		init_effect = {
+			if = {
+				limit = {
+					NOT = { exists = event_target:anorim_galtaereth }
+				}
+				save_global_event_target_as = anorim_galtaereth
+			}
+
 			prevent_anomaly = yes
 			clear_deposits = yes
 

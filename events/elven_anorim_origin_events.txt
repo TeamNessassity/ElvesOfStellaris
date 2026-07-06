@@ -54,6 +54,23 @@ country_event = {
 	}
 	
 	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					any_situation = {
+						is_situation_type = eos_anorim_situation_galtaereth
+					}
+				}
+			}
+			start_situation = {
+				type = eos_anorim_situation_galtaereth
+				target = event_target:anorim_anoriel
+				effect = {
+					save_event_target_as = eos_anorim_situation_galtaereth
+					add_situation_progress = 300
+				}
+			}
+		}
 	}
 
 	after = {
@@ -67,6 +84,41 @@ country_event = {
 	}
 	option = {
 		name = elven_anorim_origin_events.101.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Stage 2 ()
+# First-time Ravenous Darkness completion. Explain what just happened.
+country_event = {
+	id = elven_anorim_origin_events.102
+	title = "elven_anorim_origin_events.102.name"
+	desc = "elven_anorim_origin_events.102.desc"
+	picture = GFX_evt_cosmic_storms_particle_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_drow_prismatic_refuge
+	}
+	
+	immediate = {
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.102.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.102.b
 		trigger = {
 			is_nomadic = no
 		}
