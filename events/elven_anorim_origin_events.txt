@@ -213,15 +213,15 @@ country_event = {
 			no_scope = {
 				# makes system positions originate from galactic core
 				spawn_system = {
-					min_distance >= 580
-					max_distance <= 590
+					min_distance >= 590
+					max_distance <= 600
 					min_orientation_angle = 137
 					max_orientation_angle = 146
 					initializer = eilistraee_event1_01_initializer
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_01
-						set_star_flag = sealed_system
+						set_star_flag = lcluster
 					}
 				}
 			}
@@ -235,7 +235,7 @@ country_event = {
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_02
-						set_star_flag = sealed_system
+						set_star_flag = lcluster
 					}
 				}
 			}
@@ -249,7 +249,7 @@ country_event = {
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_03
-						set_star_flag = sealed_system
+						set_star_flag = lcluster
 					}
 				}
 			}
@@ -263,7 +263,7 @@ country_event = {
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_04
-						set_star_flag = sealed_system
+						set_star_flag = lcluster
 					}
 				}
 			}
@@ -277,7 +277,7 @@ country_event = {
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_05
-						set_star_flag = sealed_system
+						set_star_flag = lcluster
 					}
 				}
 			}
@@ -316,10 +316,81 @@ country_event = {
 				value = 4
 			}
 		}
+		country_event = {
+			id = elven_anorim_origin_events.202
+		}
 	}
 	
 	option = {
 		name = elven_anorim_origin_events.201.a
+	}
+}
+
+# Part 2 Stage 2 (Fading Light: Penumbra)
+# 
+country_event = {
+	id = elven_anorim_origin_events.202
+	title = "elven_anorim_origin_events.202.name"
+	desc = "elven_anorim_origin_events.202.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_origin = origin_drow_prismatic_refuge
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:anorim_star = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = no
+					orbit_angle = 120
+					init_effect = {
+						save_global_event_target_as = anorim_star_wormhole
+					}
+				}
+			}
+			event_target:anorim_cursed_cluster_01 = {
+				spawn_natural_wormhole = {
+					bypass_type = wormhole
+					random_pos = no
+					orbit_angle = 300
+					init_effect = {
+						save_global_event_target_as = anorim_cursed_cluster_wormhole
+					}
+				}
+				link_wormholes = event_target:anorim_star
+			}
+			set_country_flag = encountered_first_wormhole
+			add_seen_bypass_type = wormhole
+		}
+		add_research_option = tech_wormhole_stabilization
+		create_point_of_interest = {
+			id = elven_anorim_prismatic_refuge_wormhole_poi
+			name = "elven_anorim_prismatic_refuge_wormhole_poi"
+			desc = elven_anorim_prismatic_refuge_wormhole_poi_desc
+			event_chain = elven_anorim_prismatic_refuge_chain
+			location = event_target:anorim_star
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.202.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.202.b
+		trigger = {
+			is_nomadic = no
+		}
 	}
 }
 

@@ -1,0 +1,42 @@
+namespace = elven_debug
+
+######################################
+# QUICK COMMANDS FOR CONTENT TESTING #
+######################################
+
+## ANORIM ##
+
+# Instantly fill up the Ravenous Darkness situation
+# Ongoing mechanic of the Anorim Event Chain
+# Must complete at least once to progress the story
+country_event = {
+	id = elven_debug.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_situation = {
+			limit = {
+				is_situation_type = eos_anorim_situation_galtaereth
+			}
+			add_situation_progress = 1000
+		}
+	}
+}
+
+# Instantly fill up the Psionic Ascension (Breach the Shroud) situation
+# Used to gate Part 2 of the Anorim Event Chain
+country_event = {
+	id = elven_debug.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_situation = {
+			limit = {
+				is_situation_type = situation_breach_shroud
+			}
+			add_situation_progress = 1000
+		}
+	}
+}

@@ -56,7 +56,7 @@ eos_anorim_situation_galtaereth = {
 	}
 
 	monthly_progress = {
-		base = 50	#PLACEHOLDER: Made it super fast for testing reasons. Set to 1 before release.
+		base = 1
 		modifier = {
 			add = owner.value:eos_anorim_val_galtaereth_progress_pops_mult
 			desc = "eos_anorim_situation_galtaereth_progress_pops"

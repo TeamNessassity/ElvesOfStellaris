@@ -83,6 +83,8 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
 
  elven_anorim_prismatic_refuge_survive_poi:0 "Survive Ravenous Darkness"
  elven_anorim_prismatic_refuge_survive_poi_desc:0 "The $eos_galtaereth_color$'s predation comes in tides that we have learned to sense. As the smothering shadow of $eos_galtaereth_her_color$ presence grows imminent, let our people seek shelter within the $eos_anoriel_color$'s prismatic cradle."
+ elven_anorim_prismatic_refuge_wormhole_poi:0 "Enter The Evergloom"
+ elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies only $eos_galtaereth_her_color$ domain; only horrors dwell therein."
 
  EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Complete Psionic Ascension"
  EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud, if we are to survive The Evergloom, we have no choice but to rearm ourselves with the ancient arts."
@@ -101,6 +103,11 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
  elven_anorim_origin_events.201.name:0 "Fading Light: Gloom"
  elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.201.a:0 "REPLACE_ME"
+
+ elven_anorim_origin_events.202.name:0 "Fading Light: Penumbra"
+ elven_anorim_origin_events.202.desc:0 "REPLACE_ME"
+ elven_anorim_origin_events.202.a:0 "REPLACE_ME"
+ elven_anorim_origin_events.202.b:0 "REPLACE_ME"
 
 # Event Systems
  eos_nebula_evergloom:0 "The Evergloom"
