@@ -2,7 +2,7 @@ eilistraee_event1_01_initializer = {
 	name = "Ruinous Release"
 	class = sc_black_hole
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
 	
 	init_effect = {
 	}
@@ -33,7 +33,7 @@ eilistraee_event1_02_initializer = {
 	name = "Sinking Solitude"
 	class = sc_drow_trinary_1
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
 	
 	init_effect = {
 	}
@@ -179,7 +179,7 @@ eilistraee_event1_03_initializer = {
 	name = "Harrowing Hope"
 	class = sc_drow_binary_2
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
 	
 	init_effect = {
 	}
@@ -325,7 +325,7 @@ eilistraee_event1_04_initializer = {
 	name = "Withering Wrath"
 	class = sc_drow_binary_1
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
 	
 	init_effect = {
 	}
@@ -443,7 +443,7 @@ eilistraee_event1_05_initializer = {
 	name = "Torturous Truth"
 	class = sc_black_hole
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
 	
 	init_effect = {
 	}

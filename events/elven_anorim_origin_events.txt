@@ -38,7 +38,7 @@ country_event = {
 	}
 }
 
-# Stage 1 ()
+# Stage 1 (Fading Light: Glimmer)
 # Intro. Introduce and explain the situation.
 country_event = {
 	id = elven_anorim_origin_events.101
@@ -54,6 +54,17 @@ country_event = {
 	}
 	
 	immediate = {
+		begin_event_chain = {
+			event_chain = elven_anorim_prismatic_refuge_chain
+			target = this
+		}
+		create_point_of_interest = {
+			id = elven_anorim_prismatic_refuge_survive_poi
+			name = "elven_anorim_prismatic_refuge_survive_poi"
+			desc = elven_anorim_prismatic_refuge_survive_poi_desc
+			event_chain = elven_anorim_prismatic_refuge_chain
+			location = event_target:anorim_anoriel
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -74,6 +85,12 @@ country_event = {
 	}
 
 	after = {
+		hidden_effect = {
+			create_variable_if_not_exists = {
+				VARIABLE = eos_anorim_story
+				VALUE_IF_CREATED = 0
+			}
+		}
 	}
 	
 	option = {
@@ -90,7 +107,7 @@ country_event = {
 	}
 }
 
-# Stage 2 ()
+# Stage 2 (Fading Light: Flicker)
 # First-time Ravenous Darkness completion. Explain what just happened.
 country_event = {
 	id = elven_anorim_origin_events.102
@@ -109,6 +126,15 @@ country_event = {
 	}
 
 	after = {
+		hidden_effect = {
+			set_variable = {
+				which = eos_anorim_story
+				value = 2
+			}
+		}
+		enable_mission = {
+			name = EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION
+		}
 	}
 	
 	option = {
@@ -125,7 +151,43 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 1 ()
+# Part 2 Gatekeeper
+# Resume the story after country has completed Psionic Ascension
+# By then, the player should be strong enough not to get instantly pancaked by The Evergloom (might still get near-instantly pancaked)
+country_event = {
+	id = elven_anorim_origin_events.103
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+		check_variable = {
+			which = eos_anorim_story
+			value = 2
+		}
+		OR = {
+			has_finished_psionic_tradition = yes
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			which = eos_anorim_story
+			value = 3
+		}
+		add_mission_counter = {
+			mission = EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION
+			counter = EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED
+			amount = 1
+		}
+	}
+
+	after = {
+	}
+}
+
+# Part 2 Stage 1 (Fading Light: Gloom)
 # Begin the second part of the event chain. Create the old home cluster and start spawning the Fated Tithe.
 country_event = {
 	id = elven_anorim_origin_events.201
@@ -222,7 +284,7 @@ country_event = {
 
 			event_target:anorim_cursed_cluster_03 = {
 				create_nebula = {
-					name = "The Evergloom"
+					name = eos_nebula_evergloom
 					radius = 62
 					effect = {
 						create_elven_nebula_red_purple = yes
@@ -233,7 +295,7 @@ country_event = {
 
 			event_target:anorim_cursed_cluster_05 = {
 				create_nebula = {
-					name = "The Evergloom"
+					name = eos_nebula_evergloom
 					radius = 10
 					effect = {
 						create_elven_nebula_red_purple = yes
@@ -248,6 +310,12 @@ country_event = {
 	}
 
 	after = {
+		hidden_effect = {
+			set_variable = {
+				which = eos_anorim_story
+				value = 4
+			}
+		}
 	}
 	
 	option = {
@@ -259,7 +327,7 @@ country_event = {
 # Story Situation Events #
 ##########################
 
-# Lhumar has undergone Samsara
+# Ravenous Darkness: OM NOM NOM
 situation_event = {
 	id = elven_anorim_origin_events.10100
 	location = target
@@ -301,6 +369,31 @@ situation_event = {
 						}
 					}
 				}
+				else_if = {
+					limit = {
+						solar_system = {
+							has_star_flag = eos_anorim_cursed_cluster
+						}
+					}
+					create_message = {
+						type = EOS_ANORIM_GALTAERETH_FOUND
+						localization = EOS_ANORIM_GALTAERETH_FOUND_DESC
+						days = 30
+						target = this
+						variable = {
+							type = name
+							localization = PLANET
+							scope = this
+						}
+					}
+					every_owned_pop_group = {
+						limit = { has_trait = trait_drow_anorim_curse }
+						kill_pop_group = {
+							pop_group = this
+							percentage = 0.20
+						}
+					}
+				}
 				else = {
 					create_message = {
 						type = EOS_ANORIM_GALTAERETH_FOUND
@@ -326,6 +419,28 @@ situation_event = {
 	}
 
 	after = {
+		hidden_effect = {
+			# The first time it happens, progress the main story
+			owner = {
+				if = {
+					limit = {
+						is_variable_set = eos_anorim_story
+						check_variable = {
+							which = eos_anorim_story
+							value < 1
+						}
+					}
+					set_variable = {
+						which = eos_anorim_story
+						value = 1
+					}
+					country_event = {
+						id = elven_anorim_origin_events.102
+						days = 15
+					}
+				}
+			}
+		}
 	}
 }
 

@@ -1,0 +1,25 @@
+EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION = {
+	desc = EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC
+	event_chain = "elven_anorim_prismatic_refuge_chain"
+	picture = GFX_evt_shroud_generic
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+
+	counter = {
+		EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED = {
+			max = 1
+		}
+	}
+
+	on_monthly = {
+		country_event = {
+			id = elven_anorim_origin_events.103
+		}
+	}
+
+	on_success = {
+		country_event = {
+			id = elven_anorim_origin_events.201
+			days = 15
+		}
+	}
+}

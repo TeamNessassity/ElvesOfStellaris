@@ -79,22 +79,33 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
 
 # Event Chain
  elven_anorim_prismatic_refuge_chain_title:0 "Fading Light"
- elven_anorim_prismatic_refuge_chain_desc:0 "REPLACE_ME"
+ elven_anorim_prismatic_refuge_chain_desc:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nWe are all that remains of an ancient empire, built on power and hubris, and brought to ruin by the very same.\nFor millennia, we drifted through the void between stars, pursued by $eos_galtaereth_her_color$ whose divinity our ancestors once tried to usurp, $eos_galtaereth_alias_color$.\nBut at last, we have reached the promised refuge, a star blessed by $eos_anoriel_her_color$ who guides us, $eos_anoriel_alias_color$. It is here that we shall rest, recover, and rebuild. And when the time comes, break free from the chains of an ancient sin we have more than atoned for by now."
+
+ elven_anorim_prismatic_refuge_survive_poi:0 "Survive Ravenous Darkness"
+ elven_anorim_prismatic_refuge_survive_poi_desc:0 "The $eos_galtaereth_color$'s predation comes in tides that we have learned to sense. As the smothering shadow of $eos_galtaereth_her_color$ presence grows imminent, let our people seek shelter within the $eos_anoriel_color$'s prismatic cradle."
+
+ EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Complete Psionic Ascension"
+ EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud, if we are to survive The Evergloom, we have no choice but to rearm ourselves with the ancient arts."
+ EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
 
  elven_anorim_origin_events.101.name:0 "Fading Light: Glimmer"
  elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.101.a:0 "REPLACE_ME"
  elven_anorim_origin_events.101.b:0 "REPLACE_ME"
 
+ elven_anorim_origin_events.102.name:0 "Fading Light: Flicker"
+ elven_anorim_origin_events.102.desc:0 "REPLACE_ME"
+ elven_anorim_origin_events.102.a:0 "REPLACE_ME"
+ elven_anorim_origin_events.102.b:0 "REPLACE_ME"
+
  elven_anorim_origin_events.201.name:0 "Fading Light: Gloom"
  elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.201.a:0 "REPLACE_ME"
 
 # Event Systems
- eos_nebula_evergloom:0 "REPLACE_ME"
+ eos_nebula_evergloom:0 "The Evergloom"
 
 # Error Messages
-
  elven_anorim_origin_events.0001.name:0 "REPLACE_ME"
  elven_anorim_origin_events.0001.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.0001.a:0 "REPLACE_ME"
@@ -106,7 +117,7 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
  eos_anoriel_alias_color: "§G$eos_anoriel_alias$§!"
  eos_anoriel_she: "SHE"
  eos_anoriel_she_color: "§G$eos_anoriel_she$§!"
- eos_anoriel_her: "GetHimHer"
+ eos_anoriel_her: "HER"
  eos_anoriel_her_color: "§G$eos_anoriel_her$§!"
  eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
 
@@ -129,7 +140,7 @@ eos_anorim_situation_galtaereth:0 "Horizon: Ravenous Darkness"
 eos_anorim_situation_galtaereth_desc:0 "As long as $eos_galtaereth_alias_color$'s web stretches across our reality, our souls remain $eos_galtaereth_her_color$ prey.\n\nThe prismatic light of §H[target.GetName]§! offers the only shelter from the §RFeast§!."
 eos_anorim_situation_galtaereth_type:0 "$eos_anorim_situation_galtaereth$"
 
-eos_anorim_situation_galtaereth_outcome:0 "A number of £pop£ pops with the §R$trait_drow_anorim_curse$§! Trait outside the §H[target.solar_system.GetName]§! system will be §Rpurged§!."
+eos_anorim_situation_galtaereth_outcome:0 "Colonies outside the §H[target.solar_system.GetName]§! system will lose §R10%§!-§R20%§! of £pop£ pops with the §R$trait_drow_anorim_curse$§! Trait."
 
 eos_anorim_situation_galtaereth_monthly_change_tooltip:0 "£pop£ Pops cursed with §R$trait_drow_anorim_curse$§! increases Monthly Progress."
 

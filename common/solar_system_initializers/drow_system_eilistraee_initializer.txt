@@ -45,7 +45,7 @@ drow_system_eilistraee_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_energy_5
+			add_deposit = d_elven_physics_1_society_1_engineering_1
 		}
 	}
 	

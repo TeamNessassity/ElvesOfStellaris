@@ -49,14 +49,14 @@ eos_anorim_situation_galtaereth = {
 			end = 1000
 
 			triggered_modifier = {
-				logistic_growth_mult = -0.20
-				ship_speed_mult = 0.20
+				logistic_growth_mult = -0.30
+				ship_speed_mult = 0.30
 			}
 		}
 	}
 
 	monthly_progress = {
-		base = 1
+		base = 50	#PLACEHOLDER: Made it super fast for testing reasons. Set to 1 before release.
 		modifier = {
 			add = owner.value:eos_anorim_val_galtaereth_progress_pops_mult
 			desc = "eos_anorim_situation_galtaereth_progress_pops"
