@@ -151,11 +151,11 @@ country_event = {
 	}
 }
 
-# Part 2 Gatekeeper
+# Part 2 Stage 0 (Gatekeeper Event)
 # Resume the story after country has completed Psionic Ascension
 # By then, the player should be strong enough not to get instantly pancaked by The Evergloom (might still get near-instantly pancaked)
 country_event = {
-	id = elven_anorim_origin_events.103
+	id = elven_anorim_origin_events.200
 	hide_window = yes
 
 	is_triggered_only = yes
