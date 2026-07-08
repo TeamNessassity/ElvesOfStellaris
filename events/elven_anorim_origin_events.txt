@@ -2,9 +2,9 @@
 
 namespace = elven_anorim_origin_events
 
-###########################################
+############################
 # Main Story: Through the Shattered Glass #
-###########################################
+############################
 
 # Story: The Children of Anoriel are the remnants of a civilisation that successfully rebelled against their former god, Galtaereth. Upon severing their Covenant and seeing their patron weakened, their society split in two. Most were emboldened by their triumph and grew hungry for more - to commit opportunistic deicide and seize HER Divine Authority. Those who opposed that ambition were exiled, declared anathema, and forced to flee into the void of space. However, the opportunity turned out to be a cruel trick - a lure which the vengeful goddess used to lead HER treacherous disciples into a trap. It was only thanks to the intervention of another Shroud entity, Anoriel, that the exiles would elude annihilation. Though not even they were spared from the curse that rendered their souls mortal and consigned to eventually be consumed.
 # Objectives: Withstand the curse that periodically culls the founder species' population. Grow strong enough to enter the former home cluster, and seal the Wound to cut off Galtaereth from this reality.
@@ -38,7 +38,7 @@ country_event = {
 	}
 }
 
-# Stage 1 (Fading Light: Glimmer)
+# Stage 1 (Through the Shattered Glass: Glimmer)
 # Intro. Introduce and explain the situation.
 country_event = {
 	id = elven_anorim_origin_events.101
@@ -107,7 +107,7 @@ country_event = {
 	}
 }
 
-# Stage 2 (Fading Light: Flicker)
+# Stage 2 (Through the Shattered Glass: Flicker)
 # First-time Ravenous Darkness completion. Explain what just happened.
 country_event = {
 	id = elven_anorim_origin_events.102
@@ -187,7 +187,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 1 (Fading Light: Gloom)
+# Part 2 Stage 1 (Through the Shattered Glass: Gloom)
 # Begin the second part of the event chain. Create the old home cluster and start spawning the Fated Tithe.
 country_event = {
 	id = elven_anorim_origin_events.201
@@ -326,7 +326,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 2 (Fading Light: Penumbra)
+# Part 2 Stage 2 (Through the Shattered Glass: Penumbra)
 # 
 country_event = {
 	id = elven_anorim_origin_events.202
@@ -347,30 +347,36 @@ country_event = {
 	after = {
 		hidden_effect = {
 			event_target:anorim_star = {
+				set_star_flag = eos_evergleam_wormhole_nexus
 				spawn_natural_wormhole = {
-					bypass_type = wormhole
-					random_pos = no
-					orbit_angle = 120
+					bypass_type = eos_evergleam_wormhole
+					in_place_of = event_target:anorim_anoriel
+					#random_pos = no
+					#orbit_angle = 120
+					graphics_entity_name = eos_evergleam_wormhole_entity
 					init_effect = {
 						save_global_event_target_as = anorim_star_wormhole
 					}
 				}
 			}
 			event_target:anorim_cursed_cluster_01 = {
+				set_star_flag = eos_evergleam_wormhole_node
 				spawn_natural_wormhole = {
-					bypass_type = wormhole
-					random_pos = no
-					orbit_angle = 300
+					bypass_type = eos_evergleam_wormhole
+					in_place_of = star
+					#random_pos = no
+					#orbit_angle = 300
+					graphics_entity_name = eos_evergleam_wormhole_entity
 					init_effect = {
 						save_global_event_target_as = anorim_cursed_cluster_wormhole
 					}
 				}
-				link_wormholes = event_target:anorim_star
+				#link_wormholes = event_target:anorim_star
 			}
 			set_country_flag = encountered_first_wormhole
 			add_seen_bypass_type = wormhole
+			add_seen_bypass_type = eos_evergleam_wormhole
 		}
-		add_research_option = tech_wormhole_stabilization
 		create_point_of_interest = {
 			id = elven_anorim_prismatic_refuge_wormhole_poi
 			name = "elven_anorim_prismatic_refuge_wormhole_poi"

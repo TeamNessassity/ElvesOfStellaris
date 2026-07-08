@@ -78,7 +78,7 @@ START_SCREEN_PRISMATIC_REFUGE:0 "'Not all who embark on a journey shall greet it
 START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H[Capital.GetName]§! could hide underneath a lighthouse of prismatic briliance; a spectral cloak the encroaching darkness could not penetrate.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and $eos_galtaereth_she_color$ who rendered us so shall claim us when $eos_anoriel_she_color$ who shelters us can do so no longer.\n\nThis journey must not end on another's terms."
 
 # Event Chain
- elven_anorim_prismatic_refuge_chain_title:0 "Fading Light"
+ elven_anorim_prismatic_refuge_chain_title:0 "Through the Shattered Glass"
  elven_anorim_prismatic_refuge_chain_desc:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nWe are all that remains of an ancient empire, built on power and hubris, and brought to ruin by the very same.\nFor millennia, we drifted through the void between stars, pursued by $eos_galtaereth_her_color$ whose divinity our ancestors once tried to usurp, $eos_galtaereth_alias_color$.\nBut at last, we have reached the promised refuge, a star blessed by $eos_anoriel_her_color$ who guides us, $eos_anoriel_alias_color$. It is here that we shall rest, recover, and rebuild. And when the time comes, break free from the chains of an ancient sin we have more than atoned for by now."
 
  elven_anorim_prismatic_refuge_survive_poi:0 "Survive Ravenous Darkness"
@@ -90,21 +90,21 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
  EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud, if we are to survive The Evergloom, we have no choice but to rearm ourselves with the ancient arts."
  EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
 
- elven_anorim_origin_events.101.name:0 "Fading Light: Glimmer"
+ elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Glimmer"
  elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.101.a:0 "REPLACE_ME"
  elven_anorim_origin_events.101.b:0 "REPLACE_ME"
 
- elven_anorim_origin_events.102.name:0 "Fading Light: Flicker"
+ elven_anorim_origin_events.102.name:0 "Through the Shattered Glass: Flicker"
  elven_anorim_origin_events.102.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.102.a:0 "REPLACE_ME"
  elven_anorim_origin_events.102.b:0 "REPLACE_ME"
 
- elven_anorim_origin_events.201.name:0 "Fading Light: Gloom"
+ elven_anorim_origin_events.201.name:0 "Through the Shattered Glass: Gloom"
  elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.201.a:0 "REPLACE_ME"
 
- elven_anorim_origin_events.202.name:0 "Fading Light: Penumbra"
+ elven_anorim_origin_events.202.name:0 "Through the Shattered Glass: Penumbra"
  elven_anorim_origin_events.202.desc:0 "REPLACE_ME"
  elven_anorim_origin_events.202.a:0 "REPLACE_ME"
  elven_anorim_origin_events.202.b:0 "REPLACE_ME"
@@ -142,8 +142,8 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
 # Situations
 ####################################
 
-# Horizon: Ravenous Darkness
-eos_anorim_situation_galtaereth:0 "Horizon: Ravenous Darkness"
+# Fragment: Ravenous Darkness
+eos_anorim_situation_galtaereth:0 "Fragment: Ravenous Darkness"
 eos_anorim_situation_galtaereth_desc:0 "As long as $eos_galtaereth_alias_color$'s web stretches across our reality, our souls remain $eos_galtaereth_her_color$ prey.\n\nThe prismatic light of §H[target.GetName]§! offers the only shelter from the §RFeast§!."
 eos_anorim_situation_galtaereth_type:0 "$eos_anorim_situation_galtaereth$"
 
@@ -168,3 +168,18 @@ EOS_ANORIM_GALTAERETH_EVADED_DESC:0 "$PLANET|H$ slipped through $eos_galtaereth_
 
 d_drow_planetary_cheel_krezust:0 "Che'el K'rezust"
 d_drow_planetary_cheel_krezust_desc:0 "The ancient site where the ark ship carrying our people to safety first landed and the our first city. Having been constantly expanded over the eons it is now a sprawling mega-city and is considered to be the capital of both the planet and of our culture.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
+
+################
+### BYPASSES ###
+################
+
+EOS_EVERGLEAM_WORMHOLE: "Mnemonic Mirror"
+EOS_EVERGLEAM_WORMHOLE_GALACTIC: "$EOS_EVERGLEAM_WORMHOLE$"
+EOS_EVERGLEAM_WORMHOLE_DESC: "This system contains a §Y$EOS_EVERGLEAM_WORMHOLE$§!"
+EOS_EVERGLEAM_WORMHOLE_DESC_UNEXPLORED: "This system contains an §Runexplored§! §Y$EOS_EVERGLEAM_WORMHOLE$§!"
+EOS_EVERGLEAM_WORMHOLE_ACCESS_DENIED: "$TRIGGER_FAIL$§RSome outside force is preventing our entrance.§!"
+BYPASS_EOS_EVERGLEAM_WORMHOLE: "$EOS_EVERGLEAM_WORMHOLE$"
+BYPASS_NAME_EOS_EVERGLEAM_WORMHOLE: "$SYSTEM$ Shard"
+BYPASS_DESC_UNKNOWN_EOS_EVERGLEAM_WORMHOLE: "We have never seen this type of formation before"
+ENTRY_BYPASS_EOS_EVERGLEAM_WORMHOLE: "$BYPASS_TYPE$"
+EXIT_BYPASS_EOS_EVERGLEAM_WORMHOLE: "$BYPASS_TYPE$"

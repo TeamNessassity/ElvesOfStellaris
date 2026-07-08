@@ -1,0 +1,10 @@
+# Children of Anoriel Portral
+
+entity = {
+	name = "eos_evergleam_wormhole_entity"
+
+	locator = { name = "root" position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "add" position = { 0 -100 0 } rotation = { 0 0 0 } }
+
+	scale = 1.0
+}
