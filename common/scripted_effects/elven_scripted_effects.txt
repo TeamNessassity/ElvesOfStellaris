@@ -539,6 +539,49 @@ recalculate_unity_to_research_conversion = {
 ## PRISMATIC REFUGE - WORMHOLE GENERATION ##
 ############################################
 
+# Add a node to the Evergleam Mirror network (typically on a black hole, but target restrictions should be handled by the caller)
+# this = planet
+eos_evergleam_create_node = {
+	save_event_target_as = eos_evergleam_wormhole_node_target
+	solar_system = {
+		set_star_flag = eos_evergleam_wormhole_node
+		spawn_natural_wormhole = {
+			bypass_type = eos_evergleam_wormhole
+			in_place_of = event_target:eos_evergleam_wormhole_node_target
+			graphics_entity_name = eos_evergleam_wormhole_entity
+		}
+	}
+	eos_evergleam_update_connections = yes
+}
+
+# Update the variable that tracks connections
+# this = any
+eos_evergleam_update_connections = {
+	if = {
+		limit = {
+			exists = event_target:anorim_anoriel
+		}
+		event_target:anorim_anoriel = {
+			create_variable_if_not_exists = {
+				VARIABLE = eos_evergleam_network
+				VALUE_IF_CREATED = 0
+			}
+			export_trigger_value_to_variable = {
+				variable = eos_evergleam_network
+				trigger = count_system
+				parameters = {
+					limit = {
+						OR = {
+							has_star_flag = eos_evergleam_wormhole_nexus
+							has_star_flag = eos_evergleam_wormhole_node
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 eos_create_prismatic_refuge_wormhole = {
 	optimize_memory
 	

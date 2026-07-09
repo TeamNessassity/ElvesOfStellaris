@@ -3,10 +3,11 @@
 ####################
 
 ## NOT PRESENTLY USED!!
+## The Prismatic Star class is now only used as entity + picture container to be superimposed over a vanilla star
 sc_elven_prismatic = {
 	class = elven_prismatic_star
 	icon = elven_prismatic_star
-	planet = { key = pc_elven_prismatic_star }
+	planet = { key = pc_b_star }
 	spawn_odds = 0
 	num_planets 	= { min = 4 max = 10 }
 
@@ -24,8 +25,8 @@ sc_elven_binary_prismatic_black_hole = {
 	class = elven_prismatic_star
 	icon = elven_prismatic_binary_star
 	planet = { 
-				key = pc_elven_prismatic_star
-				class = elven_prismatic_star
+				key = pc_b_star
+				class = b_star
 	}
 	planet = { 
 				key = pc_black_hole

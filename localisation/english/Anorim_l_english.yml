@@ -25,8 +25,8 @@ origin_drow_prismatic_refuge:0 "Prismatic Refuge"
 origin_drow_prismatic_refuge_desc:0 "Fleeing your home system due to persecution, your primitive colony vessel miraculously happened upon a paradise world. Having now mastered this world your civilization turns its attention to the stars once again."
 origin_tooltip_drow_prismatic_refuge_effects:0 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']$TABBED_NEW_LINE$- Contains a ['concept_eos_dangerous_wormhole']\n$HOMEWORLD$$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_feral_fairies']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_cheel_krezust']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_wormhole_stabilization', £physics_research£ $tech_wormhole_stabilization$]"
 
- origin_tooltip_drow_prismatic_refuge_settled_effects:0 "REPLACE_ME"
- origin_tooltip_drow_prismatic_refuge_nomadic_effects:0 "REPLACE_ME"
+origin_tooltip_drow_prismatic_refuge_settled_effects:0 "REPLACE_ME"
+origin_tooltip_drow_prismatic_refuge_nomadic_effects:0 "REPLACE_ME"
 
 ####################################
 # CIVICS
@@ -78,65 +78,70 @@ START_SCREEN_PRISMATIC_REFUGE:0 "'Not all who embark on a journey shall greet it
 START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nFor generations, these words - a promise and a warning - were being passed from one generation to the next, as they dreamt of the day the §H[Capital.GetName]§! could hide underneath a lighthouse of prismatic briliance; a spectral cloak the encroaching darkness could not penetrate.\n\nThough we have achieved the promise, the warning is not to be forgotten: we remain mortal, and $eos_galtaereth_she_color$ who rendered us so shall claim us when $eos_anoriel_she_color$ who shelters us can do so no longer.\n\nThis journey must not end on another's terms."
 
 # Event Chain
- elven_anorim_prismatic_refuge_chain_title:0 "Through the Shattered Glass"
- elven_anorim_prismatic_refuge_chain_desc:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nWe are all that remains of an ancient empire, built on power and hubris, and brought to ruin by the very same.\nFor millennia, we drifted through the void between stars, pursued by $eos_galtaereth_her_color$ whose divinity our ancestors once tried to usurp, $eos_galtaereth_alias_color$.\nBut at last, we have reached the promised refuge, a star blessed by $eos_anoriel_her_color$ who guides us, $eos_anoriel_alias_color$. It is here that we shall rest, recover, and rebuild. And when the time comes, break free from the chains of an ancient sin we have more than atoned for by now."
+elven_anorim_prismatic_refuge_chain_title:0 "Through the Shattered Glass"
+elven_anorim_prismatic_refuge_chain_desc:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nWe are all that remains of an ancient empire, built on power and hubris, and brought to ruin by the very same.\nFor millennia, we drifted through the void between stars, pursued by $eos_galtaereth_her_color$ whose divinity our ancestors once tried to usurp, $eos_galtaereth_alias_color$.\nBut at last, we have reached the promised refuge, a star blessed by $eos_anoriel_her_color$ who guides us, $eos_anoriel_alias_color$. It is here that we shall rest, recover, and rebuild. And when the time comes, break free from the chains of an ancient sin we have more than atoned for by now."
 
- elven_anorim_prismatic_refuge_survive_poi:0 "Survive Ravenous Darkness"
- elven_anorim_prismatic_refuge_survive_poi_desc:0 "The $eos_galtaereth_color$'s predation comes in tides that we have learned to sense. As the smothering shadow of $eos_galtaereth_her_color$ presence grows imminent, let our people seek shelter within the $eos_anoriel_color$'s prismatic cradle."
- elven_anorim_prismatic_refuge_wormhole_poi:0 "Enter The Evergloom"
- elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies only $eos_galtaereth_her_color$ domain; only horrors dwell therein."
+elven_anorim_prismatic_refuge_survive_poi:0 "Survive Ravenous Darkness"
+elven_anorim_prismatic_refuge_survive_poi_desc:0 "The $eos_galtaereth_color$'s predation comes in tides that we have learned to sense. As the smothering shadow of $eos_galtaereth_her_color$ presence grows imminent, let our people seek shelter within the $eos_anoriel_color$'s prismatic cradle."
+elven_anorim_prismatic_refuge_wormhole_poi:0 "Enter The Evergloom"
+elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies only $eos_galtaereth_her_color$ domain; only horrors dwell therein."
 
- EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Complete Psionic Ascension"
- EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud, if we are to survive The Evergloom, we have no choice but to rearm ourselves with the ancient arts."
- EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
+EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Complete Psionic Ascension"
+EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud, if we are to survive The Evergloom, we have no choice but to rearm ourselves with the ancient arts."
+EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
 
- elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Glimmer"
- elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
- elven_anorim_origin_events.101.a:0 "REPLACE_ME"
- elven_anorim_origin_events.101.b:0 "REPLACE_ME"
+elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Glimmer"
+elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
+elven_anorim_origin_events.101.a:0 "REPLACE_ME"
+elven_anorim_origin_events.101.b:0 "REPLACE_ME"
 
- elven_anorim_origin_events.102.name:0 "Through the Shattered Glass: Flicker"
- elven_anorim_origin_events.102.desc:0 "REPLACE_ME"
- elven_anorim_origin_events.102.a:0 "REPLACE_ME"
- elven_anorim_origin_events.102.b:0 "REPLACE_ME"
+elven_anorim_origin_events.102.name:0 "Through the Shattered Glass: Flicker"
+elven_anorim_origin_events.102.desc:0 "REPLACE_ME"
+elven_anorim_origin_events.102.a:0 "REPLACE_ME"
+elven_anorim_origin_events.102.b:0 "REPLACE_ME"
 
- elven_anorim_origin_events.201.name:0 "Through the Shattered Glass: Gloom"
- elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
- elven_anorim_origin_events.201.a:0 "REPLACE_ME"
+elven_anorim_origin_events.201.name:0 "Through the Shattered Glass: Gloom"
+elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
+elven_anorim_origin_events.201.a:0 "REPLACE_ME"
 
- elven_anorim_origin_events.202.name:0 "Through the Shattered Glass: Penumbra"
- elven_anorim_origin_events.202.desc:0 "REPLACE_ME"
- elven_anorim_origin_events.202.a:0 "REPLACE_ME"
- elven_anorim_origin_events.202.b:0 "REPLACE_ME"
+elven_anorim_origin_events.202.name:0 "Through the Shattered Glass: Penumbra"
+elven_anorim_origin_events.202.desc:0 "REPLACE_ME"
+elven_anorim_origin_events.202.a:0 "REPLACE_ME"
+elven_anorim_origin_events.202.b:0 "REPLACE_ME"
 
 # Event Systems
- eos_nebula_evergloom:0 "The Evergloom"
+eos_nebula_evergloom:0 "The Evergloom"
+
+# Event Ambient Objects
+eos_evergloom_ripples:0 "Evergloom Ripples"
+eos_evergloom_ripples_desc:0 "$eos_nebula_evergloom$'s hyperlanes are mercurial, waxing and waning under the influence of the Shroud. Nobody knows what happens to vessels attempting to traverse subspace during turbulent tides."
+eos_evergloom_ripples_tooltip:0 "$eos_evergloom_ripples_desc$"
 
 # Error Messages
- elven_anorim_origin_events.0001.name:0 "REPLACE_ME"
- elven_anorim_origin_events.0001.desc:0 "REPLACE_ME"
- elven_anorim_origin_events.0001.a:0 "REPLACE_ME"
+elven_anorim_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"
+elven_anorim_origin_events.0001.desc:0 "The §Y$origin_drow_prismatic_refuge$§! Origin could not be set up correctly for this player!\n\nReason: §RGlobal Event Target Mismatch§!\nDetails: §H[capital.solar_system.GetName]§! is NOT same value as §H[anorim_star.GetName]§!\nOR: §H[anorim_star.GetName]§! does NOT exist\n\n§RPlease Note:§! This Origin can only support one player. Duplicate players will not be able to interact with its mechanics.\nPlease start a New Game and make sure that only one Empire with the §Y$origin_drow_prismatic_refuge$§! Origin is allowed to spawn.\nIf the issue persists, please check for Stellaris version mismatch and mod conflicts before reporting it."
+elven_anorim_origin_events.0001.a:0 "Oops!"
 
 # Shroud
- eos_anoriel: "Coronal Daughter"
- eos_anoriel_color: "§G$eos_anoriel$§!"
- eos_anoriel_alias: "Anoriel"
- eos_anoriel_alias_color: "§G$eos_anoriel_alias$§!"
- eos_anoriel_she: "SHE"
- eos_anoriel_she_color: "§G$eos_anoriel_she$§!"
- eos_anoriel_her: "HER"
- eos_anoriel_her_color: "§G$eos_anoriel_her$§!"
- eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
+eos_anoriel: "Coronal Daughter"
+eos_anoriel_color: "§G$eos_anoriel$§!"
+eos_anoriel_alias: "Anoriel"
+eos_anoriel_alias_color: "§G$eos_anoriel_alias$§!"
+eos_anoriel_she: "SHE"
+eos_anoriel_she_color: "§G$eos_anoriel_she$§!"
+eos_anoriel_her: "HER"
+eos_anoriel_her_color: "§G$eos_anoriel_her$§!"
+eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
 
- eos_galtaereth: "Abyssal Silkspinner"
- eos_galtaereth_color: "§R$eos_galtaereth$§!"
- eos_galtaereth_alias: "Galtaereth"
- eos_galtaereth_alias_color: "§R$eos_galtaereth_alias$§!"
- eos_galtaereth_she: "SHE"
- eos_galtaereth_she_color: "§R$eos_galtaereth_she$§!"
- eos_galtaereth_her: "HER"
- eos_galtaereth_her_color: "§R$eos_galtaereth_her$§!"
- eos_galtaereth_desc: "Silken shadows weave desire across endless oblivion."
+eos_galtaereth: "Abyssal Silkspinner"
+eos_galtaereth_color: "§R$eos_galtaereth$§!"
+eos_galtaereth_alias: "Galtaereth"
+eos_galtaereth_alias_color: "§R$eos_galtaereth_alias$§!"
+eos_galtaereth_she: "SHE"
+eos_galtaereth_she_color: "§R$eos_galtaereth_she$§!"
+eos_galtaereth_her: "HER"
+eos_galtaereth_her_color: "§R$eos_galtaereth_her$§!"
+eos_galtaereth_desc: "Silken shadows weave desire across endless oblivion."
 
 ####################################
 # Situations
@@ -169,11 +174,14 @@ EOS_ANORIM_GALTAERETH_EVADED_DESC:0 "$PLANET|H$ slipped through $eos_galtaereth_
 d_drow_planetary_cheel_krezust:0 "Che'el K'rezust"
 d_drow_planetary_cheel_krezust_desc:0 "The ancient site where the ark ship carrying our people to safety first landed and the our first city. Having been constantly expanded over the eons it is now a sprawling mega-city and is considered to be the capital of both the planet and of our culture.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
 
+d_elven_anorim_anoriel:0 "Prism of Recollection"
+d_elven_anorim_anoriel_desc:0 "§RSENSATION§!§GEMOTION§!§BMEMORY§!\n\n§gEVERY§!§vALL§!§WONE§!"
+
 ################
 ### BYPASSES ###
 ################
 
-EOS_EVERGLEAM_WORMHOLE: "Mnemonic Mirror"
+EOS_EVERGLEAM_WORMHOLE: "Evergleam Mirror"
 EOS_EVERGLEAM_WORMHOLE_GALACTIC: "$EOS_EVERGLEAM_WORMHOLE$"
 EOS_EVERGLEAM_WORMHOLE_DESC: "This system contains a §Y$EOS_EVERGLEAM_WORMHOLE$§!"
 EOS_EVERGLEAM_WORMHOLE_DESC_UNEXPLORED: "This system contains an §Runexplored§! §Y$EOS_EVERGLEAM_WORMHOLE$§!"

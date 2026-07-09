@@ -351,8 +351,6 @@ country_event = {
 				spawn_natural_wormhole = {
 					bypass_type = eos_evergleam_wormhole
 					in_place_of = event_target:anorim_anoriel
-					#random_pos = no
-					#orbit_angle = 120
 					graphics_entity_name = eos_evergleam_wormhole_entity
 					init_effect = {
 						save_global_event_target_as = anorim_star_wormhole
@@ -360,18 +358,12 @@ country_event = {
 				}
 			}
 			event_target:anorim_cursed_cluster_01 = {
-				set_star_flag = eos_evergleam_wormhole_node
-				spawn_natural_wormhole = {
-					bypass_type = eos_evergleam_wormhole
-					in_place_of = star
-					#random_pos = no
-					#orbit_angle = 300
-					graphics_entity_name = eos_evergleam_wormhole_entity
-					init_effect = {
-						save_global_event_target_as = anorim_cursed_cluster_wormhole
+				random_system_planet = {
+					limit = {
+						is_planet_class = pc_black_hole
 					}
+					eos_evergleam_create_node = yes
 				}
-				#link_wormholes = event_target:anorim_star
 			}
 			set_country_flag = encountered_first_wormhole
 			add_seen_bypass_type = wormhole
@@ -382,7 +374,7 @@ country_event = {
 			name = "elven_anorim_prismatic_refuge_wormhole_poi"
 			desc = elven_anorim_prismatic_refuge_wormhole_poi_desc
 			event_chain = elven_anorim_prismatic_refuge_chain
-			location = event_target:anorim_star
+			location = event_target:anorim_anoriel
 		}
 	}
 	

@@ -39,13 +39,18 @@ drow_system_eilistraee_initializer = {
 	
 	planet = {
 		name = "Tindómerel"
-		class = "pc_elven_prismatic_star"
+		class = "pc_b_star"
 		orbit_distance = 25
 		size = 30
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_elven_physics_1_society_1_engineering_1
+			add_deposit = d_energy_5
+
+			set_planet_entity = {
+				entity = elven_prismatic_star_entity
+                picture = pc_elven_prismatic_star
+            }
 		}
 	}
 	
@@ -68,7 +73,7 @@ drow_system_eilistraee_initializer = {
 			}
 
 			clear_deposits = yes
-			add_deposit = d_dark_matter_deposit_2
+			add_deposit = d_elven_anorim_anoriel
 
 			set_planet_entity = {
 				entity = elven_prismatic_black_hole_entity
@@ -91,6 +96,7 @@ drow_system_eilistraee_initializer = {
 			}
 			
 			clear_deposits = yes
+			add_deposit = d_alloys_3
 		}
 	}
 	
@@ -125,18 +131,13 @@ drow_system_eilistraee_initializer = {
 	
 	planet = {
 		name = "Mystra"
-		class = "pc_barren_cold"
+		class = "pc_toxic"
 		entity = "drow_01_barren_01_mystra"
 		orbit_distance = 60
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 25 max = 30 }
 
 		init_effect = {
-			add_modifier = {
-				modifier = "ammonia_biosphere"
-				days = -1
-			}
-
 			clear_deposits = yes
 			add_deposit = d_society_2
 		}
@@ -152,7 +153,7 @@ drow_system_eilistraee_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_minerals_3
+			add_deposit = d_rare_crystals_2
 		}
 	}
 
@@ -230,7 +231,7 @@ drow_system_eilistraee_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_energy_2
+			add_deposit = d_engineering_2
 		}
 		
 		moon = {

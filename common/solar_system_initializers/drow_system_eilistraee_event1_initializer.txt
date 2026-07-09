@@ -3,6 +3,7 @@ eilistraee_event1_01_initializer = {
 	class = sc_black_hole
 
 	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
+	prevent_anomalies = yes
 	
 	init_effect = {
 	}
@@ -24,9 +25,21 @@ eilistraee_event1_01_initializer = {
 				type = "eos_evergloom_ruins_dyson_gun"
 				location = this
 			}
+
+			create_ambient_object = {
+				type = eos_evergloom_ripples
+				location = this
+				use_3d_location = yes
+				entity_offset_angle = 200
+				entity_face_object = this
+				entity_offset = 190
+				#entity_offset_height = -20
+				effect = {
+					set_ambient_object_flag = eos_evergloom_ripples_01
+				}
+			}
 		}
 	}
-
 }
 
 eilistraee_event1_02_initializer = {
@@ -34,9 +47,6 @@ eilistraee_event1_02_initializer = {
 	class = sc_drow_trinary_1
 
 	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
-	
-	init_effect = {
-	}
 
 	planet = {
 		class = "pc_f_star"
@@ -46,8 +56,9 @@ eilistraee_event1_02_initializer = {
 		size = 20
 
 		init_effect = {
+			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_energy_2
+			add_deposit = d_energy_3
 		}
 	}
 	
@@ -59,8 +70,9 @@ eilistraee_event1_02_initializer = {
 		size = 30
 
 		init_effect = {
+			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_energy_2
+			add_deposit = d_energy_3
 		}
 	}
 	
@@ -72,6 +84,7 @@ eilistraee_event1_02_initializer = {
 		size = 25
 
 		init_effect = {
+			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_energy_3
 		}
@@ -88,6 +101,12 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 70
 		orbit_angle = 90
 		size = 5
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_2
+		}
 	}
 	
 	planet = {
@@ -96,6 +115,12 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 0
 		orbit_angle = 90
 		size = 12
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_2
+		}
 		
 		moon = {
 			name = "B'vecko"
@@ -103,13 +128,26 @@ eilistraee_event1_02_initializer = {
 			orbit_distance = 25
 			size = 11
 			has_ring = no
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_alloys_5
+
+				create_ambient_object = {
+					type = "ancient_battlefield_02_object"
+					location = this
+					entity_offset_height = -15
+					entity_offset_angle = { min = 0 max = 360 }
+					scale = 1.2
+				}
+			}
 		}
 	}
 	
 	planet = {
 		name = "Sáramorna"
 		class = "pc_molten"
-		#entity = "drow_01_toxic_elgcahlir"
 		orbit_distance = 60
 		orbit_angle = { min = 90 max = 270 }
 		size = 20
@@ -117,8 +155,12 @@ eilistraee_event1_02_initializer = {
 		modifiers = none
 		
 		init_effect = {
+			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_engineering_2
+			add_deposit = d_volatile_motes_3
+			add_deposit = d_alloys_2
+
+			save_event_target_as = ruined_furnace_planet
 		}
 		
 		moon = {
@@ -127,6 +169,12 @@ eilistraee_event1_02_initializer = {
 			orbit_distance = 20
 			size = 12
 			has_ring = no
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_rare_crystals_2
+			}
 		}
 	}
 	
@@ -143,36 +191,253 @@ eilistraee_event1_02_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_society_2
+			add_deposit = d_society_3
 		}
 		
 		moon = {
 			name = "Myrxle"
-			class = random_non_colonizable
+			class = pc_barren
 			orbit_distance = 20
 			orbit_angle = random
 			size = 16
 			has_ring = no
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
 		}
 		
 		moon = {
 			name = "Na'eroth"
-			class = random_non_colonizable
+			class = pc_barren
 			orbit_distance = 15
 			orbit_angle = { min = 90 max = 270 }
 			size = 12
 			has_ring = no
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
 		}
+	}
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 290
 	}
 	
 	planet = {
 		name = "Hiran"
-		class = random_non_colonizable
+		class = pc_asteroid
 		orbit_distance = 70
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 20 max = 40 }
-	}
+		size = 10
 
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_4
+		}
+	}
+	
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		count = 6
+		orbit_angle = { min = 40 max = 50 }
+
+		init_effect = {
+			prevent_anomaly = yes
+
+			random = {
+				chance = 30
+
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+					entity_offset_height = { min = -10 max = -15 }
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 5
+						angle = random
+					}
+				}
+			}
+			random = {
+				chance = 70
+
+				create_ambient_object = {
+					type = "small_debris_object"
+					location = this
+					entity_offset_height = { min = -10 max = -15 }
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 5
+						angle = random
+					}
+				}
+			}
+		}
+	}
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 330
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 340
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 345
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 350
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 355
+	}
+	
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 60
+		orbit_angle = { min = 15 max = 45 }
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_alloys_2
+		}
+	}
+	
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 0
+		count = 12
+		orbit_angle = { min = 20 max = 30 }
+
+		init_effect = {
+			prevent_anomaly = yes
+
+			random = {
+				chance = 30
+
+				create_ambient_object = {
+					type = "small_debris_object"
+					location = this
+					entity_offset_height = { min = -10 max = -15 }
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 5
+						angle = random
+					}
+				}
+			}
+			random = {
+				chance = 50
+
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					location = this
+					entity_offset_height = { min = -10 max = -15 }
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 5
+						angle = random
+					}
+				}
+			}
+		}
+	}
+	
+	init_effect = {
+		if = {
+			limit = {
+				has_grand_archive_dlc = yes
+				cutholoids_enabled = yes
+			}
+			random_system_planet = {
+				limit = {
+					is_planet_class = pc_asteroid
+					has_deposit = no
+				}
+				hide_cutholoid_in_asteroid = yes
+			}
+		}
+
+		if = {
+			limit = {
+				has_machine_age_dlc = yes
+			}
+			spawn_megastructure = {
+				type = "orbital_arc_furnace_destroyed"
+				planet = event_target:ruined_furnace_planet
+
+				init_effect = {
+					create_ambient_object = {
+						type = "large_debris_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = prev
+							distance = 20
+							angle = 20
+						}
+					}
+					create_ambient_object = {
+						type = "large_debris_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = prev
+							distance = 20
+							angle = 150
+						}
+					}
+					create_ambient_object = {
+						type = "medium_debris_01_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = prev
+							distance = 35
+							angle = 90
+						}
+					}
+					create_ambient_object = {
+						type = "medium_debris_02_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = prev
+							distance = 3
+							angle = 270
+						}
+					}
+				}
+			}
+			event_target:ruined_furnace_planet = {
+				set_planet_entity = { entity = invisible_turret_entity }
+			}
+		}
+	}
 }
 
 eilistraee_event1_03_initializer = {
@@ -187,50 +452,111 @@ eilistraee_event1_03_initializer = {
 	planet = {
 		class = "pc_k_star"
 		name = "Hûnnaur-minë"
-		orbit_distance = 14
+		orbit_distance = 0
 		orbit_angle = 0
-		size = 30
+		size = 60
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_energy_5
+			
+			create_ambient_object = {
+				type = eos_evergloom_ripples
+				location = this
+				use_3d_location = yes
+				entity_offset_angle = 125
+				entity_face_object = this
+				entity_offset = 310
+				#entity_offset_height = -20
+				effect = {
+					set_ambient_object_flag = eos_evergloom_ripples_04
+				}
+			}
+			
+			create_ambient_object = {
+				type = eos_evergloom_ripples
+				location = this
+				use_3d_location = yes
+				entity_offset_angle = 315
+				entity_face_object = this
+				entity_offset = 310
+				#entity_offset_height = -20
+				effect = {
+					set_ambient_object_flag = eos_evergloom_ripples_05
+				}
+			}
+		}
 	}
 	
 	planet = {
 		class = "pc_m_star"
 		name = "Hûnnaur-atta"
-		orbit_distance = 0
+		orbit_distance = 49
 		orbit_angle = 180
 		size = 15
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_physics_4
+		}
 	}
 
 	planet = {
 		class = "pc_gas_giant"
 		name = "Quáco"
 		entity = "drow_01_gas_giant_quaco"
-		orbit_distance = 35
-		orbit_angle = random
+		orbit_distance = 0
+		orbit_angle = 180
 		size = 30
 		has_ring = no
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_engineering_3
+		}
 	}
 	
 	planet = {
-		class = random_non_colonizable
+		class = pc_molten
 		name = "Doghiona"
 		orbit_distance = 30
 		orbit_angle = 135
 		size = 25
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_energy_4
+		}
 		
 		moon = {
 			class = "pc_barren"
 			name = "Draversa"
 			orbit_distance = 15
 			size = 16
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+			}
 		}
 	}
 
 	planet = {
-		class = "pc_barren"
+		class = "pc_frozen"
 		name = "Toron"
 		orbit_distance = 35
 		orbit_angle = 135
 		size = 25
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_4
+		}
 	}
 	
 	planet = {
@@ -251,7 +577,7 @@ eilistraee_event1_03_initializer = {
 			}
 			
 			clear_deposits = yes
-			add_deposit = d_society_2
+			add_deposit = d_exotic_gases_3
 		}
 	}
 	
@@ -268,15 +594,21 @@ eilistraee_event1_03_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_exotic_gases_1
+			add_deposit = d_elven_physics_2_society_2
 		}
 		
 		moon = {
-			class = random_non_colonizable
+			class = pc_frozen
 			name = "Drath'inthuul"
 			orbit_distance = 30
 			orbit_angle = random
 			size = 12
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_minerals_3
+			}
 		}
 		
 		moon = {
@@ -285,6 +617,12 @@ eilistraee_event1_03_initializer = {
 			orbit_distance = 0
 			orbit_angle = { min = 90 max = 270 }
 			size = 9
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_minerals_2
+			}
 		}
 	}
 	
@@ -297,21 +635,39 @@ eilistraee_event1_03_initializer = {
 		name = "Menelhelcë Yasi"
 		class = "pc_ice_asteroid"
 		orbit_distance = 60
-		orbit_angle = { min = 90 max = 270 }
+		orbit_angle = { min = 100 max = 120 }
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_exotic_gases_1
+		}
 	}
 	
 	planet = {
 		name = "Menelhelcë Drayda"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
+		orbit_angle = { min = 100 max = 120 }
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_exotic_gases_2
+		}
 	}
 	
 	planet = {
 		name = "Menelhelcë Larou"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
+		orbit_angle = { min = 100 max = 120 }
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_exotic_gases_1
+		}
 	}
 	
 	planet = {
@@ -338,8 +694,22 @@ eilistraee_event1_04_initializer = {
 		size = 40
 
 		init_effect = {
+			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_energy_3
+			add_deposit = d_energy_5
+			
+			create_ambient_object = {
+				type = eos_evergloom_ripples
+				location = this
+				use_3d_location = yes
+				entity_offset_angle = 315
+				entity_face_object = this
+				entity_offset = 265
+				#entity_offset_height = -20
+				effect = {
+					set_ambient_object_flag = eos_evergloom_ripples_06
+				}
+			}
 		}
 	}	
 	
@@ -350,6 +720,12 @@ eilistraee_event1_04_initializer = {
 		orbit_distance = 85
 		orbit_angle = 180
 		size = 40
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_4
+		}
 		
 		moon = {
 			class = pc_shrouded
@@ -371,7 +747,12 @@ eilistraee_event1_04_initializer = {
 			orbit_distance = 8
 			orbit_angle = { min = 90 max = 270 }
 			size = 16
-		
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_society_2
+			}
 		}
 	}
 	
@@ -383,8 +764,9 @@ eilistraee_event1_04_initializer = {
 		size = 10
 
 		init_effect = {
+			prevent_anomaly = yes
 			clear_deposits = yes
-			add_deposit = d_physics_2
+			add_deposit = d_physics_4
 		}
 		
 		planet = {
@@ -393,6 +775,12 @@ eilistraee_event1_04_initializer = {
 			orbit_distance = 30
 			orbit_angle = 90
 			size = 6
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_alloys_3
+			}
 		}
 		
 		planet = {
@@ -401,6 +789,12 @@ eilistraee_event1_04_initializer = {
 			orbit_angle = 180
 			orbit_distance = 15
 			size = 12
+
+			init_effect = {
+				prevent_anomaly = yes
+				clear_deposits = yes
+				add_deposit = d_engineering_3
+			}
 		}			
 	}
 	
@@ -414,6 +808,12 @@ eilistraee_event1_04_initializer = {
 		name = "Menelondo Yica"
 		orbit_distance = 60
 		orbit_angle = 90
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_3
+		}
 	}
 	
 	planet = {
@@ -421,6 +821,12 @@ eilistraee_event1_04_initializer = {
 		name = "Menelondo Drai"
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_2
+		}
 	}
 	
 	planet = {
@@ -428,6 +834,12 @@ eilistraee_event1_04_initializer = {
 		name = "Menelondo Larya"
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_3
+		}
 	}
 	
 	planet = {
@@ -435,6 +847,12 @@ eilistraee_event1_04_initializer = {
 		name = "Menelondo Queni"
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
+
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_minerals_2
+		}
 	}
 
 }
@@ -1055,6 +1473,8 @@ eilistraee_event1_05_initializer = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = d_rare_crystals_1
 		}
 	}
 	

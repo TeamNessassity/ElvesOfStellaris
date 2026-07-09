@@ -343,9 +343,9 @@ ambient_object = {
 	show_name = no
 }
 
-#####################
-## EVERGLOOM RUINS ##
-#####################
+#######################
+## EVERGLOOM OBJECTS ##
+#######################
 
 ambient_object = {
 	name = "eos_evergloom_ruins_dyson_sphere"
@@ -373,4 +373,13 @@ ambient_object = {
 	entity = "orbital_ring_01_destroyed_entity"
 	selectable = no
 	show_name = no
+}
+
+ambient_object = {
+	name = "eos_evergloom_ripples"
+	entity = "astral_scar_entity"
+	#selectable = yes
+	show_name = yes
+	description = eos_evergloom_ripples_desc
+	tooltip = eos_evergloom_ripples_tooltip
 }

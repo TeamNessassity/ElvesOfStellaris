@@ -218,3 +218,21 @@ d_elven_lhuren_mixa = {
 
 	drop_weight = { weight = 0 }
 }
+
+# Anorim Event Deposits
+
+d_elven_anorim_anoriel = {
+	icon = d_surreal_visions
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			physics_research = 1
+			society_research = 1
+			engineering_research = 1
+		}
+	}
+	station = shipclass_research_station
+	is_for_colonizable = no
+
+	drop_weight = { weight = 0 }
+}

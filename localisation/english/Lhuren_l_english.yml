@@ -259,19 +259,6 @@ elven_lhuren_origin_events.1071.desc:0 "Tearful partings and last-minute changes
 elven_lhuren_origin_events.1071.a:0 "§RIt is time to say our final goodbye. With a smile.§!"
 elven_lhuren_origin_events.1071.b:0 "§RThough our paths diverge, purpose unites us.§!"
 
-# Special Projects
-elven_lhuren_origin_project_repurpose:0 "Plan: Anatta"
-elven_lhuren_origin_project_repurpose_TITLE:0 "Eternal Array: Anatta"
-elven_lhuren_origin_project_repurpose_DESC:0 "The Eternal Array can no longer serve the purpose it was built for, but it can still serve a purpose. As we reach for the sky, we shall have to become proficient in building many more celestial structures like this."
-
-elven_lhuren_origin_project_restore:0 "Plan: Parinirvana"
-elven_lhuren_origin_project_restore_TITLE:0 "Eternal Array: Parinirvana"
-elven_lhuren_origin_project_restore_DESC:0 "We were never meant to emerge from the Eternal Array's embrace. It is only due to the universe's fundamental errors that fate had failed to unfold along its intended course. No matter. We shall adapt to the error and, in time, find a way to correct it. Though we care little for the rest of the universe, perhaps its denizens, too, will one day thank us for freeing them from the withering predations of entropy."
-
-# Event Buildings
-sm_lhu_array_eternity_shield_amp:0 "Rhizomator of Imaginary Metaforms"
-sm_lhu_array_eternity_shield_amp_desc:0 "Although the Eternal Array seemingly cannot be replicated outside of its specific environment, Zro-induced anomalous phenomena sometimes resonate with the same technology and can be harnessed on a small scale."
-
 # Event Megastructures
 
 elven_lhuren_eternal_array_ruined:0 "$NAME_LHU_ETERNAL_ARRAY$"
@@ -298,7 +285,7 @@ elven_lhuren_eternal_array_static_MEGASTRUCTURE_DETAILS:0 ""
 
 # Origin Errors
 elven_lhuren_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"
-elven_lhuren_origin_events.0001.desc:0 "The §Y$origin_elven_celestial_throne$§! Origin could not be set up correctly for this player!\n\nReason: §RGlobal Event Target Mismatch§!\nDetails: §H[this.GetName]§! is NOT same value as §H[lhuren_lhumar.owner.GetName]§!\nOR: §H[lhuren_lhumar.GetName]§! does NOT have a valid owner\nOR: §H[lhuren_lhumar.GetName]§! does NOT exist\n\n§RPlease Note:§! This Origin can only support one player. Duplicate players will not be able to interact with its mechanics.\nPlease start a New Game and make sure that only one Empire with the §Y$origin_elven_celestial_throne$§! Origin is allowed to spawn."
+elven_lhuren_origin_events.0001.desc:0 "The §Y$origin_elven_celestial_throne$§! Origin could not be set up correctly for this player!\n\nReason: §RGlobal Event Target Mismatch§!\nDetails: §H[this.GetName]§! is NOT same value as §H[lhuren_lhumar.owner.GetName]§!\nOR: §H[lhuren_lhumar.GetName]§! does NOT have a valid owner\nOR: §H[lhuren_lhumar.GetName]§! does NOT exist\n\n§RPlease Note:§! This Origin can only support one player. Duplicate players will not be able to interact with its mechanics.\nPlease start a New Game and make sure that only one Empire with the §Y$origin_elven_celestial_throne$§! Origin is allowed to spawn.\nIf the issue persists, please check for Stellaris version mismatch and mod conflicts before reporting it."
 elven_lhuren_origin_events.0001.a:0 "Oops!"
 
 # Celestial Grace: Preserve the Celestial Grace
