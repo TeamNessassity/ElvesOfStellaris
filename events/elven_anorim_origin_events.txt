@@ -54,6 +54,16 @@ country_event = {
 	}
 	
 	immediate = {
+		if = {
+			limit = {
+				exists = event_target:anorim_star
+			}
+			event_target:anorim_star = {
+				# A very messy workaround to prevent dyson swarms from being built
+				# Should be... relatively safe to use after galaxy generation
+				set_star_flag = vela_system
+			}
+		}
 		begin_event_chain = {
 			event_chain = elven_anorim_prismatic_refuge_chain
 			target = this
@@ -211,17 +221,20 @@ country_event = {
 			set_spawn_system_batch = begin
 
 			no_scope = {
-				# makes system positions originate from galactic core
+				# Makes system positions originate from galactic core
+				# We want it to be pretty far out so it doesn't intersect with The Chosen, etc.
 				spawn_system = {
-					min_distance >= 590
-					max_distance <= 600
-					min_orientation_angle = 137
-					max_orientation_angle = 146
+					min_distance >= 600
+					max_distance <= 620
+					min_orientation_angle = 135
+					max_orientation_angle = 135
 					initializer = eilistraee_event1_01_initializer
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_01
+						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
+						set_star_flag = vela_system
 					}
 				}
 			}
@@ -229,13 +242,15 @@ country_event = {
 				spawn_system = {
 					min_distance >= 20
 					max_distance <= 30
-					min_orientation_angle = 100
+					min_orientation_angle = 120
 					max_orientation_angle = 120
 					initializer = eilistraee_event1_02_initializer
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_02
+						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
+						set_star_flag = vela_system
 					}
 				}
 			}
@@ -243,13 +258,15 @@ country_event = {
 				spawn_system = {
 					min_distance >= 18
 					max_distance <= 26
-					min_orientation_angle = 50
+					min_orientation_angle = 60
 					max_orientation_angle = 60
 					initializer = eilistraee_event1_03_initializer
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_03
+						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
+						set_star_flag = vela_system
 					}
 				}
 			}
@@ -257,13 +274,15 @@ country_event = {
 				spawn_system = {
 					min_distance >= 15
 					max_distance <= 25
-					min_orientation_angle = 36
-					max_orientation_angle = 42
+					min_orientation_angle = 40
+					max_orientation_angle = 40
 					initializer = eilistraee_event1_04_initializer
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_04
+						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
+						set_star_flag = vela_system
 					}
 				}
 			}
@@ -271,13 +290,15 @@ country_event = {
 				spawn_system = {
 					min_distance >= 60
 					max_distance <= 64
-					min_orientation_angle = 20
+					min_orientation_angle = 30
 					max_orientation_angle = 30
 					initializer = eilistraee_event1_05_initializer
 					hyperlane = no
 					effect = {
 						save_global_event_target_as = anorim_cursed_cluster_05
+						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
+						set_star_flag = vela_system
 					}
 				}
 			}

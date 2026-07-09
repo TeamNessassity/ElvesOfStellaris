@@ -32,8 +32,8 @@ origin_tooltip_drow_prismatic_refuge_nomadic_effects:0 "REPLACE_ME"
 # CIVICS
 ####################################
 
-civic_drow_eilistraee:0 "Peacekeepers"
-civic_drow_eilistraee_desc:0 "Peace and order via persuasion is the goal. If that fails however, force is to be applied for the good of all. Unrestrained chaos must not be allowed to exist."
+civic_drow_eilistraee:0 "Blessed Beauty"
+civic_drow_eilistraee_desc:0 "This society has a deep-rooted bardic tradition. Much of their history is recorded in various forms of art, ranging from elaborate dance performances to profound interactive experiences and everything in between. As it searches for beauty, life finds meaning in a seemingly uncaring universe."
 civic_drow_eilistraee_tooltip_effects:0 ""
 
 ########################

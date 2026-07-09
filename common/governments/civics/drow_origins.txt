@@ -51,7 +51,7 @@ origin_drow_prismatic_refuge = {
 		}
 	}
 
-	traits = {
+	soft_traits = {
 		trait = trait_drow_anorim_curse
 	}
 

@@ -40,3 +40,29 @@ country_event = {
 		}
 	}
 }
+
+# Link up all the Evergloom systems for testing purposes
+country_event = {
+	id = elven_debug.103
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_hyperlane = {
+			from = event_target:anorim_cursed_cluster_01
+			to = event_target:anorim_cursed_cluster_02
+		}
+		add_hyperlane = {
+			from = event_target:anorim_cursed_cluster_02
+			to = event_target:anorim_cursed_cluster_03
+		}
+		add_hyperlane = {
+			from = event_target:anorim_cursed_cluster_03
+			to = event_target:anorim_cursed_cluster_04
+		}
+		add_hyperlane = {
+			from = event_target:anorim_cursed_cluster_04
+			to = event_target:anorim_cursed_cluster_05
+		}
+	}
+}

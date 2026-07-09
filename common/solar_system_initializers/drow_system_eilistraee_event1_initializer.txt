@@ -30,9 +30,9 @@ eilistraee_event1_01_initializer = {
 				type = eos_evergloom_ripples
 				location = this
 				use_3d_location = yes
-				entity_offset_angle = 200
+				entity_offset_angle = 210
 				entity_face_object = this
-				entity_offset = 190
+				entity_offset = 200
 				#entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_01
@@ -73,6 +73,19 @@ eilistraee_event1_02_initializer = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_energy_3
+
+			create_ambient_object = {
+				type = eos_evergloom_ripples
+				location = this
+				use_3d_location = yes
+				entity_offset_angle = 30
+				entity_face_object = this
+				entity_offset = 470
+				#entity_offset_height = -20
+				effect = {
+					set_ambient_object_flag = eos_evergloom_ripples_02
+				}
+			}
 		}
 	}
 	
@@ -87,6 +100,19 @@ eilistraee_event1_02_initializer = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_energy_3
+
+			create_ambient_object = {
+				type = eos_evergloom_ripples
+				location = this
+				use_3d_location = yes
+				entity_offset_angle = 150
+				entity_face_object = this
+				entity_offset = 470
+				#entity_offset_height = -20
+				effect = {
+					set_ambient_object_flag = eos_evergloom_ripples_03
+				}
+			}
 		}
 	}
 	
@@ -380,6 +406,8 @@ eilistraee_event1_02_initializer = {
 
 		if = {
 			limit = {
+				# Disabling for now, because it blocks mega construction and nomads can't repair or dismantle it
+				always = no
 				has_machine_age_dlc = yes
 			}
 			spawn_megastructure = {
@@ -454,7 +482,7 @@ eilistraee_event1_03_initializer = {
 		name = "Hûnnaur-minë"
 		orbit_distance = 0
 		orbit_angle = 0
-		size = 60
+		size = 55
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -465,9 +493,9 @@ eilistraee_event1_03_initializer = {
 				type = eos_evergloom_ripples
 				location = this
 				use_3d_location = yes
-				entity_offset_angle = 125
+				entity_offset_angle = 130
 				entity_face_object = this
-				entity_offset = 310
+				entity_offset = 340
 				#entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_04
@@ -478,9 +506,9 @@ eilistraee_event1_03_initializer = {
 				type = eos_evergloom_ripples
 				location = this
 				use_3d_location = yes
-				entity_offset_angle = 315
+				entity_offset_angle = 330
 				entity_face_object = this
-				entity_offset = 310
+				entity_offset = 340
 				#entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_05
@@ -691,7 +719,7 @@ eilistraee_event1_04_initializer = {
 		name = "Slyndar"
 		orbit_distance = 0
 		orbit_angle = 0
-		size = 40
+		size = 38
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -702,9 +730,9 @@ eilistraee_event1_04_initializer = {
 				type = eos_evergloom_ripples
 				location = this
 				use_3d_location = yes
-				entity_offset_angle = 315
+				entity_offset_angle = 310
 				entity_face_object = this
-				entity_offset = 265
+				entity_offset = 295
 				#entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_06
