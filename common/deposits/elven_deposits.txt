@@ -226,10 +226,15 @@ d_elven_anorim_anoriel = {
 	resources = {
 		category = orbital_research_deposits
 		produces = {
-			physics_research = 1
-			society_research = 1
-			engineering_research = 1
+			physics_research = 3
+			society_research = 3
+			engineering_research = 3
 		}
+	}
+	triggered_planet_modifier = {
+		station_gatherers_produces_mult = 1.0
+		station_researchers_produces_mult = 1.0
+		mult = eos_evergleam_network
 	}
 	station = shipclass_research_station
 	is_for_colonizable = no
