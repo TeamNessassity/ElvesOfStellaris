@@ -168,7 +168,10 @@ EOS_ANORIM_EVERGLOOM_EXPLORATION:0 "Fleets in $eos_nebula_evergloom$ Cluster"
 
 EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT: "Attune Navigation"
 EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT_DESC: "Hyperdrive alone is not enough to navigate $eos_nebula_evergloom$. In order to traverse the treacherous Shroud-steeped nebula, we must observe its currents and wait for favorable tides."
-EOS_LEADER_SCI_OR_COM_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) commanded by a Scientist or Commander in orbit."
+
+EOS_LEADER_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) in orbit commanded by a leader."
+EOS_LEADER_SCI_OR_COM_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) in orbit commanded by a Scientist or Commander."
+EOS_NO_HOSTILES_REQUIREMENT: "No hostile fleets in system."
 
 elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Glimmer"
 elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
@@ -249,6 +252,8 @@ eos_anorim_situation_galtaereth_stage_3: "Hunting"
 
 MESSAGE_EOS_ANORIM_GALTAERETH_FOUND_TITLE:0 "§RFOUND YOU!§!"
 EOS_ANORIM_GALTAERETH_FOUND_DESC:0 "$PLANET|H$ was caught in $eos_galtaereth_alias_color$'s Web"
+MESSAGE_EOS_ANORIM_GALTAERETH_DEFEATED_TITLE:0 "§RAHAHAHAHAHA!§!"
+EOS_ANORIM_GALTAERETH_DEFEATED_DESC:0 "$PLANET|H$ was ravaged in its struggle to escape $eos_nebula_evergloom$"
 MESSAGE_EOS_ANORIM_GALTAERETH_EVADED_TITLE:0 "§RWHERE ARE YOU?§!"
 EOS_ANORIM_GALTAERETH_EVADED_DESC:0 "$PLANET|H$ slipped through $eos_galtaereth_alias_color$'s Web"
 

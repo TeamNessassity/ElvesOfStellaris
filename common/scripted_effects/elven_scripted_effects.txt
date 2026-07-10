@@ -582,6 +582,34 @@ eos_evergleam_update_connections = {
 	}
 }
 
+# Galtaereth kills a percentage of the cursed pops and mocks you
+# this = colony
+# MESSAGE = message loc
+# MESSAGE_DESC = message description loc
+# PERCENTAGE = float (0.0 to 1.0)
+eos_evergloom_tithe = {
+	create_message = {
+		type = $MESSAGE$
+		localization = $MESSAGE_DESC$
+		days = 30
+		target = this.solar_system
+		variable = {
+			type = name
+			localization = PLANET
+			scope = this
+		}
+	}
+	every_owned_pop_group = {
+		limit = { has_trait = trait_drow_anorim_curse }
+		kill_pop_group = {
+			pop_group = this
+			percentage = $PERCENTAGE$
+		}
+	}
+}
+
+# DEPRECATED: The Origin no longer spawns a wormhole during setup
+
 eos_create_prismatic_refuge_wormhole = {
 	optimize_memory
 	

@@ -604,6 +604,57 @@ ship_event = {
 	}
 }
 
+# Special Case: Arkship got disabled inside The Evergloom
+# Kill some pops and send it back to Prismatic Refuge
+# This = disabled arkship (ship scope)
+# From = disabling enemy ship
+ship_event = {
+	id = elven_anorim_origin_events.212
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_arkship_ship = yes
+		solar_system = {
+			has_star_flag = eos_anorim_cursed_cluster
+		}
+	}
+
+	immediate = {
+		colony = {
+			eos_evergloom_tithe = {
+				MESSAGE = EOS_ANORIM_GALTAERETH_DEFEATED
+				MESSAGE_DESC = EOS_ANORIM_GALTAERETH_DEFEATED_DESC
+				PERCENTAGE = 0.30
+			}
+		}
+
+		if = {
+			limit = { exists = event_target:anorim_star }
+			fleet = {
+				set_location = event_target:anorim_star
+			}
+		}
+		else = {
+			random_system = {
+				limit = {
+					NOT = {
+						has_star_flag = hostile_system
+					}
+				}
+				save_event_target_as = anorim_escape_fallback
+			}
+			fleet = {
+				set_location = event_target:anorim_escape_fallback
+			}
+		}
+
+		set_disabled = no
+		remove_ship_flag = disabled_by_gatekeeper_event
+	}
+}
+
 ##########################
 # Story Situation Events #
 ##########################
@@ -624,7 +675,7 @@ situation_event = {
 	immediate = {
 		set_situation_progress = 0
 
-		# Going to Blorg Prime won't save you from an eldritch deity, but good try
+		# Going to Blorg won't save you from an eldritch deity, but good try
 		every_country = {
 			every_owned_colony = {
 				limit = {
@@ -642,7 +693,7 @@ situation_event = {
 						type = EOS_ANORIM_GALTAERETH_EVADED
 						localization = EOS_ANORIM_GALTAERETH_EVADED_DESC
 						days = 30
-						target = this
+						target = this.solar_system
 						variable = {
 							type = name
 							localization = PLANET
@@ -656,43 +707,17 @@ situation_event = {
 							has_star_flag = eos_anorim_cursed_cluster
 						}
 					}
-					create_message = {
-						type = EOS_ANORIM_GALTAERETH_FOUND
-						localization = EOS_ANORIM_GALTAERETH_FOUND_DESC
-						days = 30
-						target = this
-						variable = {
-							type = name
-							localization = PLANET
-							scope = this
-						}
-					}
-					every_owned_pop_group = {
-						limit = { has_trait = trait_drow_anorim_curse }
-						kill_pop_group = {
-							pop_group = this
-							percentage = 0.20
-						}
+					eos_evergloom_tithe = {
+						MESSAGE = EOS_ANORIM_GALTAERETH_FOUND
+						MESSAGE_DESC = EOS_ANORIM_GALTAERETH_FOUND_DESC
+						PERCENTAGE = 0.20
 					}
 				}
 				else = {
-					create_message = {
-						type = EOS_ANORIM_GALTAERETH_FOUND
-						localization = EOS_ANORIM_GALTAERETH_FOUND_DESC
-						days = 30
-						target = this
-						variable = {
-							type = name
-							localization = PLANET
-							scope = this
-						}
-					}
-					every_owned_pop_group = {
-						limit = { has_trait = trait_drow_anorim_curse }
-						kill_pop_group = {
-							pop_group = this
-							percentage = 0.10
-						}
+					eos_evergloom_tithe = {
+						MESSAGE = EOS_ANORIM_GALTAERETH_FOUND
+						MESSAGE_DESC = EOS_ANORIM_GALTAERETH_FOUND_DESC
+						PERCENTAGE = 0.10
 					}
 				}
 			}

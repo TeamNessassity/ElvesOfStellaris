@@ -41,6 +41,17 @@ message_type = {
 }
 
 message_type = {
+	key = "EOS_ANORIM_GALTAERETH_DEFEATED"
+	icon = "GFX_message_restoring_the_balance_sacrifice"
+	icon_frame = 1
+
+	sound = "notification"
+	ping = "ping_notification_red"
+
+	category = planets
+}
+
+message_type = {
 	key = "EOS_ANORIM_GALTAERETH_EVADED"
 	icon = "GFX_message_restoring_the_balance_sacrifice"
 	icon_frame = 1

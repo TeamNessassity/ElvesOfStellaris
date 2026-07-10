@@ -127,6 +127,14 @@ on_entering_system_first_time = {
 	}
 }
 
+# This = Ship
+# From = Disabler Ship
+on_ship_disabled = {
+	events = {
+		elven_anorim_origin_events.212
+	}
+}
+
 # THIS = Fleet
 # FROM = System jumping to
 # FROMFROM = System jumped from

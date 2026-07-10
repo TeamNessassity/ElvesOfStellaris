@@ -15,17 +15,18 @@ special_project = {
 	event_scope = ship_event
 
 	triggered_requirement = {
-		text = EOS_LEADER_SCI_OR_COM_REQUIREMENT
+		text = EOS_LEADER_REQUIREMENT
 		count = 1
 		trigger = {
-		#	OR = {
-		#		is_arkship_fleet = yes
-		#		is_ship_class = shipclass_science_ship
-		#		is_ship_class = shipclass_military
-		#	}
-			OR = {
-				leader? = { leader_class = commander }
-				leader? = { leader_class = scientist }
+			exists = leader
+		}
+	}
+
+	triggered_requirement = {
+		text = EOS_NO_HOSTILES_REQUIREMENT
+		trigger = {
+			solar_system = {
+				has_star_flag = eos_evergloom_cleared
 			}
 		}
 	}
