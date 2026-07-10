@@ -23,3 +23,26 @@ EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION = {
 		}
 	}
 }
+
+EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM = {
+	desc = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM_DESC
+	event_chain = "elven_anorim_prismatic_refuge_chain"
+	picture = GFX_evt_shroud_generic
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+	location = yes
+
+	counter = {
+		EOS_ANORIM_EVERGLOOM_EXPLORATION = {
+			max = 4
+		}
+	}
+
+	on_monthly = {
+	}
+
+	on_success = {
+		#country_event = {
+		#	id = elven_anorim_origin_events.204
+		#}
+	}
+}

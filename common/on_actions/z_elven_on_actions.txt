@@ -117,6 +117,16 @@ on_survey = {
 	}
 }
 
+# Triggers event when each country first sends a ship into the system (once per country)
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system_first_time = {
+	events = {
+		elven_anorim_origin_events.211
+	}
+}
+
 # THIS = Fleet
 # FROM = System jumping to
 # FROMFROM = System jumped from

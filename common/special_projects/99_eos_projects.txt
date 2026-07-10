@@ -6,13 +6,13 @@
 special_project = {
 	key = "EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT"
 	event_chain = "elven_anorim_prismatic_refuge_chain"
-	cost = 10
+	cost = 300
 	days_to_research = 0
 	tech_department = physics_technology
 	picture = GFX_evt_a_rift_in_space
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 
-	event_scope = carrier_event
+	event_scope = ship_event
 
 	triggered_requirement = {
 		text = EOS_LEADER_SCI_OR_COM_REQUIREMENT
@@ -31,6 +31,6 @@ special_project = {
 	}
 
 	on_success = {
-		carrier_event = { id = elven_anorim_origin_events.210 }
+		ship_event = { id = elven_anorim_origin_events.210 }
 	}
 }

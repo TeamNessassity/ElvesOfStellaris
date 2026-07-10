@@ -129,7 +129,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_origin = origin_drow_prismatic_refuge
+		is_variable_set = eos_anorim_story
 	}
 	
 	immediate = {
@@ -176,9 +176,7 @@ country_event = {
 			which = eos_anorim_story
 			value = 2
 		}
-		OR = {
-			has_finished_psionic_tradition = yes
-		}
+		has_finished_psionic_tradition = yes
 	}
 
 	immediate = {
@@ -209,7 +207,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_origin = origin_drow_prismatic_refuge
+		is_variable_set = eos_anorim_story
 	}
 	
 	immediate = {
@@ -359,7 +357,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_origin = origin_drow_prismatic_refuge
+		is_variable_set = eos_anorim_story
 	}
 	
 	immediate = {
@@ -397,17 +395,9 @@ country_event = {
 			event_chain = elven_anorim_prismatic_refuge_chain
 			location = event_target:anorim_anoriel
 		}
-		event_target:anorim_cursed_cluster_01 = {
-			random_ambient_object = {
-				limit = {
-					has_ambient_object_flag = eos_evergloom_ripples_01
-				}
-				enable_special_project = {
-					name = EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT
-					owner = root
-					location = this
-				}
-			}
+		enable_mission = {
+			name = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+			location = event_target:anorim_cursed_cluster_01.star
 		}
 	}
 	
@@ -425,13 +415,86 @@ country_event = {
 	}
 }
 
+# Part 2 Stage 3 (Through the Shattered Glass: Eclipse)
+# Explain how Evergloom Ripples work and issue Special Projects to investigate them
+country_event = {
+	id = elven_anorim_origin_events.203
+	title = "elven_anorim_origin_events.203.name"
+	desc = "elven_anorim_origin_events.203.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		event_target:anorim_cursed_cluster_01 = {
+			random_ambient_object = {
+				limit = {
+					is_ambient_object_type = eos_evergloom_ripples
+					has_ambient_object_flag = eos_evergloom_ripples_01
+				}
+				enable_special_project = {
+					name = EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT
+					owner = root
+					location = this
+				}
+			}
+		}
+		event_target:anorim_cursed_cluster_02 = {
+			random_ambient_object = {
+				limit = {
+					is_ambient_object_type = eos_evergloom_ripples
+					has_ambient_object_flag = eos_evergloom_ripples_03
+				}
+				enable_special_project = {
+					name = EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT
+					owner = root
+					location = this
+				}
+			}
+		}
+		event_target:anorim_cursed_cluster_03 = {
+			random_ambient_object = {
+				limit = {
+					is_ambient_object_type = eos_evergloom_ripples
+					has_ambient_object_flag = eos_evergloom_ripples_05
+				}
+				enable_special_project = {
+					name = EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT
+					owner = root
+					location = this
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.203.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.203.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
 # Part 2 Repeatable Project (Evergloom Ripples)
 # To proceed to the next system, the player has to complete the Special Project to create a hyperlane
 # It should allow us to control story progression pace and prevent the player from prematurely peeking into the next system
-# this = carrier
-# from = ship
+# this = ship
 # fromfrom = location (ambient_object)
-carrier_event = {
+ship_event = {
 	id = elven_anorim_origin_events.210
 	hide_window = yes
 
@@ -460,6 +523,77 @@ carrier_event = {
 					add_hyperlane = {
 						from = event_target:anorim_cursed_cluster_03
 						to = event_target:anorim_cursed_cluster_04
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+	}
+}
+
+# Part 2 Repeatable Check (Gatekeepr Event)
+# Trigger the appropriate exploration events after country has entered each Evergloom system for the first time
+# this = ship
+# from = system
+# fromfrom = country
+ship_event = {
+	id = elven_anorim_origin_events.211
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			has_star_flag = eos_anorim_cursed_cluster
+		}
+		fromfrom = {
+			is_variable_set = eos_anorim_story
+		}
+	}
+
+	immediate = {
+		from = {
+			switch = {
+				trigger = is_same_value
+				event_target:anorim_cursed_cluster_01 = {
+					fromfrom = {
+						add_mission_counter = {
+							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+							amount = 1
+						}
+						country_event = {
+							id = elven_anorim_origin_events.203
+						}
+					}
+				}
+				event_target:anorim_cursed_cluster_02 = {
+					fromfrom = {
+						add_mission_counter = {
+							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+							amount = 1
+						}
+					}
+				}
+				event_target:anorim_cursed_cluster_03 = {
+					fromfrom = {
+						add_mission_counter = {
+							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+							amount = 1
+						}
+					}
+				}
+				event_target:anorim_cursed_cluster_04 = {
+					fromfrom = {
+						add_mission_counter = {
+							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+							amount = 1
+						}
 					}
 				}
 			}

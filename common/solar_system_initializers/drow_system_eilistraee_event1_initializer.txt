@@ -41,7 +41,7 @@ eilistraee_event1_01_initializer = {
 				entity_offset_angle = 210
 				entity_face_object = this
 				entity_offset = 200
-				#entity_offset_height = -20
+				#entity_offset_height = 20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_01
 				}
@@ -89,7 +89,7 @@ eilistraee_event1_02_initializer = {
 				entity_offset_angle = 30
 				entity_face_object = this
 				entity_offset = 470
-				#entity_offset_height = -20
+				#entity_offset_height = 20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_02
 				}
@@ -116,7 +116,7 @@ eilistraee_event1_02_initializer = {
 				entity_offset_angle = 150
 				entity_face_object = this
 				entity_offset = 470
-				#entity_offset_height = -20
+				#entity_offset_height = 20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_03
 				}
@@ -136,6 +136,8 @@ eilistraee_event1_02_initializer = {
 		orbit_angle = 90
 		size = 5
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -150,6 +152,8 @@ eilistraee_event1_02_initializer = {
 		orbit_angle = 90
 		size = 12
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -162,6 +166,8 @@ eilistraee_event1_02_initializer = {
 			orbit_distance = 25
 			size = 11
 			has_ring = no
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -187,6 +193,8 @@ eilistraee_event1_02_initializer = {
 		size = 20
 		has_ring = no
 		modifiers = none
+
+		flags = { suppress_archaeological_sites }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -203,6 +211,8 @@ eilistraee_event1_02_initializer = {
 			orbit_distance = 20
 			size = 12
 			has_ring = no
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -221,6 +231,8 @@ eilistraee_event1_02_initializer = {
 		size = 30
 		has_ring = no
 		modifiers = none
+
+		flags = { suppress_archaeological_sites }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -236,6 +248,8 @@ eilistraee_event1_02_initializer = {
 			size = 16
 			has_ring = no
 
+			flags = { suppress_archaeological_sites }
+
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
@@ -249,6 +263,8 @@ eilistraee_event1_02_initializer = {
 			orbit_angle = { min = 90 max = 270 }
 			size = 12
 			has_ring = no
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -269,6 +285,8 @@ eilistraee_event1_02_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 10
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -281,6 +299,8 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 0
 		count = 6
 		orbit_angle = { min = 40 max = 50 }
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -346,6 +366,8 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 60
 		orbit_angle = { min = 15 max = 45 }
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -358,6 +380,8 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 0
 		count = 12
 		orbit_angle = { min = 20 max = 30 }
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -502,25 +526,12 @@ eilistraee_event1_03_initializer = {
 				type = eos_evergloom_ripples
 				location = this
 				use_3d_location = yes
-				entity_offset_angle = 130
-				entity_face_object = this
-				entity_offset = 340
-				#entity_offset_height = -20
-				effect = {
-					set_ambient_object_flag = eos_evergloom_ripples_04
-				}
-			}
-			
-			create_ambient_object = {
-				type = eos_evergloom_ripples
-				location = this
-				use_3d_location = yes
 				entity_offset_angle = 330
 				entity_face_object = this
 				entity_offset = 340
-				#entity_offset_height = -20
+				#entity_offset_height = 20
 				effect = {
-					set_ambient_object_flag = eos_evergloom_ripples_05
+					set_ambient_object_flag = eos_evergloom_ripples_04
 				}
 			}
 		}
@@ -529,14 +540,27 @@ eilistraee_event1_03_initializer = {
 	planet = {
 		class = "pc_m_star"
 		name = eilistraee_event1_planet_hunnauratta_name
-		orbit_distance = 49
-		orbit_angle = 180
+		orbit_distance = 50
+		orbit_angle = 40
 		size = 15
 
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_physics_4
+			
+			create_ambient_object = {
+				type = eos_evergloom_ripples
+				location = this
+				use_3d_location = yes
+				entity_offset_angle = 130
+				entity_face_object = this
+				entity_offset = 290
+				#entity_offset_height = 20
+				effect = {
+					set_ambient_object_flag = eos_evergloom_ripples_05
+				}
+			}
 		}
 	}
 
@@ -548,6 +572,8 @@ eilistraee_event1_03_initializer = {
 		orbit_angle = 180
 		size = 30
 		has_ring = no
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -562,6 +588,8 @@ eilistraee_event1_03_initializer = {
 		orbit_distance = 30
 		orbit_angle = 135
 		size = 25
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -589,6 +617,8 @@ eilistraee_event1_03_initializer = {
 		orbit_angle = 135
 		size = 25
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -605,6 +635,8 @@ eilistraee_event1_03_initializer = {
 		size = 30
 		has_ring = no
 		modifiers = none
+
+		flags = { suppress_archaeological_sites }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -622,6 +654,8 @@ eilistraee_event1_03_initializer = {
 		size = 40
 		modifiers = none
 		has_ring = no
+
+		flags = { suppress_archaeological_sites }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -636,6 +670,8 @@ eilistraee_event1_03_initializer = {
 			orbit_angle = random
 			size = 12
 
+			flags = { suppress_archaeological_sites }
+
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
@@ -649,6 +685,8 @@ eilistraee_event1_03_initializer = {
 			orbit_distance = 0
 			orbit_angle = { min = 90 max = 270 }
 			size = 9
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -669,6 +707,8 @@ eilistraee_event1_03_initializer = {
 		orbit_distance = 60
 		orbit_angle = { min = 100 max = 120 }
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -682,6 +722,8 @@ eilistraee_event1_03_initializer = {
 		orbit_distance = 0
 		orbit_angle = { min = 100 max = 120 }
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -694,6 +736,8 @@ eilistraee_event1_03_initializer = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 100 max = 120 }
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -737,7 +781,7 @@ eilistraee_event1_04_initializer = {
 				entity_offset_angle = 310
 				entity_face_object = this
 				entity_offset = 295
-				#entity_offset_height = -20
+				#entity_offset_height = 20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_06
 				}
@@ -753,6 +797,8 @@ eilistraee_event1_04_initializer = {
 		orbit_angle = 180
 		size = 40
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -765,6 +811,8 @@ eilistraee_event1_04_initializer = {
 			orbit_distance = 35
 			orbit_angle = random
 			size = 22
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -779,6 +827,8 @@ eilistraee_event1_04_initializer = {
 			orbit_distance = 8
 			orbit_angle = { min = 90 max = 270 }
 			size = 16
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -808,6 +858,8 @@ eilistraee_event1_04_initializer = {
 			orbit_angle = 90
 			size = 6
 
+			flags = { suppress_archaeological_sites }
+
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
@@ -821,6 +873,8 @@ eilistraee_event1_04_initializer = {
 			orbit_angle = 180
 			orbit_distance = 15
 			size = 12
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -841,6 +895,8 @@ eilistraee_event1_04_initializer = {
 		orbit_distance = 60
 		orbit_angle = 90
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -853,6 +909,8 @@ eilistraee_event1_04_initializer = {
 		name = eilistraee_event1_planet_menelondo_drai_name
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -867,6 +925,8 @@ eilistraee_event1_04_initializer = {
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -879,6 +939,8 @@ eilistraee_event1_04_initializer = {
 		name = eilistraee_event1_planet_menelondo_queni_name
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1223,6 +1285,8 @@ eilistraee_event1_05_initializer = {
 		size = 30
 		has_ring = yes
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -1293,6 +1357,8 @@ eilistraee_event1_05_initializer = {
 		size = 18
 		has_ring = no
 
+		flags = { suppress_archaeological_sites }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -1359,6 +1425,8 @@ eilistraee_event1_05_initializer = {
 			orbit_angle = random
 			size = 8
 
+			flags = { suppress_archaeological_sites }
+
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
@@ -1373,6 +1441,8 @@ eilistraee_event1_05_initializer = {
 			orbit_angle = 120
 			size = 10
 
+			flags = { suppress_archaeological_sites }
+
 			init_effect = {
 				prevent_anomaly = yes
 				clear_deposits = yes
@@ -1386,6 +1456,8 @@ eilistraee_event1_05_initializer = {
 			orbit_distance = 0
 			orbit_angle = 120
 			size = 12
+
+			flags = { suppress_archaeological_sites }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -1402,6 +1474,8 @@ eilistraee_event1_05_initializer = {
 		orbit_angle = 120
 		size = 24
 		has_ring = no
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1502,6 +1576,8 @@ eilistraee_event1_05_initializer = {
 		count = 7
 		orbit_distance = 7
 		orbit_angle = { min = 60 max = 120 }
+
+		flags = { suppress_archaeological_sites }
 
 		init_effect = {
 			prevent_anomaly = yes
