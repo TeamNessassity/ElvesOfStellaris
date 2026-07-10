@@ -232,6 +232,9 @@ d_elven_anorim_anoriel = {
 		}
 	}
 	triggered_planet_modifier = {
+		potential = {
+			is_variable_set = eos_evergleam_network
+		}
 		station_gatherers_produces_mult = 1.0
 		station_researchers_produces_mult = 1.0
 		mult = eos_evergleam_network

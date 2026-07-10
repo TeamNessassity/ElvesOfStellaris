@@ -1,0 +1,36 @@
+###########################
+# Anorim Special Projects #
+###########################
+
+# Evergloom Ripples
+special_project = {
+	key = "EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT"
+	event_chain = "elven_anorim_prismatic_refuge_chain"
+	cost = 10
+	days_to_research = 0
+	tech_department = physics_technology
+	picture = GFX_evt_a_rift_in_space
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+
+	event_scope = carrier_event
+
+	triggered_requirement = {
+		text = EOS_LEADER_SCI_OR_COM_REQUIREMENT
+		count = 1
+		trigger = {
+		#	OR = {
+		#		is_arkship_fleet = yes
+		#		is_ship_class = shipclass_science_ship
+		#		is_ship_class = shipclass_military
+		#	}
+			OR = {
+				leader? = { leader_class = commander }
+				leader? = { leader_class = scientist }
+			}
+		}
+	}
+
+	on_success = {
+		carrier_event = { id = elven_anorim_origin_events.210 }
+	}
+}

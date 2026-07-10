@@ -154,17 +154,21 @@ START_SCREEN_PRISMATIC_REFUGE_NOMAD:0 "'Not all who embark on a journey shall gr
 elven_anorim_prismatic_refuge_chain_title:0 "Through the Shattered Glass"
 elven_anorim_prismatic_refuge_chain_desc:0 "'Not all who embark on a journey shall greet its final harbor.\nNot all who reach the final harbor shall see the journey's end.'\n\nWe are all that remains of an ancient empire, built on power and hubris, and brought to ruin by the very same.\nFor millennia, we drifted through the void between stars, pursued by $eos_galtaereth_her_color$ whose divinity our ancestors once tried to usurp, $eos_galtaereth_alias_color$.\nBut at last, we have reached the promised refuge, a star blessed by $eos_anoriel_her_color$ who guides us, $eos_anoriel_alias_color$. It is here that we shall rest, recover, and rebuild. And when the time comes, break free from the chains of an ancient sin we have more than atoned for by now."
 
-elven_anorim_prismatic_refuge_survive_poi:0 "Survive Ravenous Darkness"
+elven_anorim_prismatic_refuge_survive_poi:0 "Survive Dark Tithe"
 elven_anorim_prismatic_refuge_survive_poi_desc:0 "The $eos_galtaereth_color$'s predation comes in tides that we have learned to sense. As the smothering shadow of $eos_galtaereth_her_color$ presence grows imminent, let our people seek shelter within the $eos_anoriel_color$'s prismatic cradle."
 elven_anorim_prismatic_refuge_wormhole_poi:0 "Access the $EOS_EVERGLEAM_WORMHOLE$ Network"
-elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "Within the mirror of recollection, time and space bend around memory, and collapse into a single point. As we recall the paths we have walked, the light years between destinations disappear."
+elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "Within the mirror of recollection, time and space bend around memory, and blend together. As we recall the paths we have walked, the light years between destinations disappear."
 
-EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Complete Psionic Ascension"
-EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud, if we are to survive The Evergloom, we have no choice but to rearm ourselves with the ancient arts."
+EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Master Psionic Traditions"
+EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud where $eos_galtaereth_she_color$ dwells, if we are to survive The Evergloom, we have no choice but to rearm ourselves with arcane knowledge."
 EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
 EOS_ANORIM_PRISMATIC_REFUGE_ENTER_EVERGLOOM:0 "Enter $eos_nebula_evergloom$"
-EOS_ANORIM_PRISMATIC_REFUGE_ENTER_EVERGLOOM_DESC:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies $eos_galtaereth_her_color$ domain; only horrors dwell therein."
+EOS_ANORIM_PRISMATIC_REFUGE_ENTER_EVERGLOOM_DESC:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies $eos_galtaereth_her_color$ domain; only nightmares dwell therein."
 EOS_ANORIM_FLEETS_IN_EVERGLOOM:0 "Fleets in $eos_nebula_evergloom$ Cluster"
+
+EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT: "Attune Navigation"
+EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT_DESC: "Hyperdrive alone is not enough to navigate $eos_nebula_evergloom$. In order to traverse the treacherous Shroud-steeped nebula, we must observe its currents and wait for favorable tides."
+EOS_LEADER_SCI_OR_COM_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) commanded by a Scientist or Commander in orbit."
 
 elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Glimmer"
 elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
@@ -223,12 +227,12 @@ eos_galtaereth_desc: "Silken shadows weave desire across endless oblivion."
 # Situations
 ####################################
 
-# Fragment: Ravenous Darkness
-eos_anorim_situation_galtaereth:0 "Fragment: Ravenous Darkness"
-eos_anorim_situation_galtaereth_desc:0 "As long as $eos_galtaereth_alias_color$'s web stretches across our reality, our souls remain $eos_galtaereth_her_color$ prey.\n\nThe prismatic light of §H[target.GetName]§! offers the only shelter from the §RFeast§!."
+# Fragment: Dark Tithe
+eos_anorim_situation_galtaereth:0 "Fragment: Dark Tithe"
+eos_anorim_situation_galtaereth_desc:0 "As long as $eos_galtaereth_alias_color$'s web stretches across this reality, our souls remain $eos_galtaereth_her_color$ prey.\n\nThe prismatic light of §G[target.GetName]§! offers the only shelter from the §RFeast§!."
 eos_anorim_situation_galtaereth_type:0 "$eos_anorim_situation_galtaereth$"
 
-eos_anorim_situation_galtaereth_outcome:0 "Colonies outside the §H[target.solar_system.GetName]§! system will lose §R10%§!-§R20%§! of £pop£ pops with the §R$trait_drow_anorim_curse$§! Trait."
+eos_anorim_situation_galtaereth_outcome:0 "Colonies outside the §H[target.solar_system.GetName]§! system will lose §R10~20%§! of £pop£ pops cursed with §R$trait_drow_anorim_curse$§!."
 
 eos_anorim_situation_galtaereth_monthly_change_tooltip:0 "£pop£ Pops cursed with §R$trait_drow_anorim_curse$§! increases Monthly Progress."
 

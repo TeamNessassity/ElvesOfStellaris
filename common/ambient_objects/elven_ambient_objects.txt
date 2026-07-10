@@ -376,6 +376,13 @@ ambient_object = {
 }
 
 ambient_object = {
+	name = "eos_evergloom_ruins_arkship"
+	entity = "arkship_destroyed_01_entity"
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
 	name = "eos_evergloom_ripples"
 	entity = "astral_scar_entity"
 	#selectable = yes

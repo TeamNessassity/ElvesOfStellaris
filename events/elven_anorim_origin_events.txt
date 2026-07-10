@@ -118,7 +118,7 @@ country_event = {
 }
 
 # Stage 2 (Through the Shattered Glass: Flicker)
-# First-time Ravenous Darkness completion. Explain what just happened.
+# First-time Dark Tithe completion. Explain what just happened.
 country_event = {
 	id = elven_anorim_origin_events.102
 	title = "elven_anorim_origin_events.102.name"
@@ -198,7 +198,7 @@ country_event = {
 }
 
 # Part 2 Stage 1 (Through the Shattered Glass: Gloom)
-# Begin the second part of the event chain. Create the old home cluster and start spawning the Fated Tithe.
+# Begin the second part of the event chain. Create the old home cluster and increase the intensity of Dark Tithe
 country_event = {
 	id = elven_anorim_origin_events.201
 	title = "elven_anorim_origin_events.201.name"
@@ -348,7 +348,7 @@ country_event = {
 }
 
 # Part 2 Stage 2 (Through the Shattered Glass: Penumbra)
-# 
+# Introduce the Evergleam Mirror network and connect its first node to Ruinous Release
 country_event = {
 	id = elven_anorim_origin_events.202
 	title = "elven_anorim_origin_events.202.name"
@@ -397,6 +397,18 @@ country_event = {
 			event_chain = elven_anorim_prismatic_refuge_chain
 			location = event_target:anorim_anoriel
 		}
+		event_target:anorim_cursed_cluster_01 = {
+			random_ambient_object = {
+				limit = {
+					has_ambient_object_flag = eos_evergloom_ripples_01
+				}
+				enable_special_project = {
+					name = EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT
+					owner = root
+					location = this
+				}
+			}
+		}
 	}
 	
 	option = {
@@ -413,11 +425,56 @@ country_event = {
 	}
 }
 
+# Part 2 Repeatable Project (Evergloom Ripples)
+# To proceed to the next system, the player has to complete the Special Project to create a hyperlane
+# It should allow us to control story progression pace and prevent the player from prematurely peeking into the next system
+# this = carrier
+# from = ship
+# fromfrom = location (ambient_object)
+carrier_event = {
+	id = elven_anorim_origin_events.210
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		fromfrom = {
+			switch = {
+				trigger = has_ambient_object_flag
+				eos_evergloom_ripples_01 = {
+					add_hyperlane = {
+						from = event_target:anorim_cursed_cluster_01
+						to = event_target:anorim_cursed_cluster_02
+					}
+				}
+				eos_evergloom_ripples_03 = {
+					add_hyperlane = {
+						from = event_target:anorim_cursed_cluster_02
+						to = event_target:anorim_cursed_cluster_03
+					}
+				}
+				eos_evergloom_ripples_05 = {
+					add_hyperlane = {
+						from = event_target:anorim_cursed_cluster_03
+						to = event_target:anorim_cursed_cluster_04
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+	}
+}
+
 ##########################
 # Story Situation Events #
 ##########################
 
-# Ravenous Darkness: OM NOM NOM
+# Dark Tithe: OM NOM NOM
 situation_event = {
 	id = elven_anorim_origin_events.10100
 	location = target

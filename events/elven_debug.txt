@@ -6,7 +6,7 @@ namespace = elven_debug
 
 ## ANORIM ##
 
-# Instantly fill up the Ravenous Darkness situation
+# Instantly fill up the Dark Tithe situation
 # Ongoing mechanic of the Anorim Event Chain
 # Must complete at least once to progress the story
 country_event = {

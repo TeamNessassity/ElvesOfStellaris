@@ -2,7 +2,7 @@
 # Prismatic Refuge - Situations #
 #################################
 
-# Ravenous Darkness: periodically om-nom-nom some pops
+# Dark Tithe: periodically om-nom-nom some pops
 eos_anorim_situation_galtaereth = {
 	picture = GFX_evt_cosmic_storms_nexus_storm
 	complete_icon_frame = GFX_situation_outcome_frame_red

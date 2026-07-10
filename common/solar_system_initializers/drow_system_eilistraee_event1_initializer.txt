@@ -26,6 +26,14 @@ eilistraee_event1_01_initializer = {
 				location = this
 			}
 
+			# Arkship Debris
+			create_ambient_object = {
+				type = "eos_evergloom_ruins_arkship"
+				location = this
+				entity_offset_angle = 30
+				entity_offset = 150
+			}
+
 			create_ambient_object = {
 				type = eos_evergloom_ripples
 				location = this
