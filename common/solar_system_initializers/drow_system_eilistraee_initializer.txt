@@ -1,6 +1,6 @@
 #Eilistraee Paradise
 drow_system_eilistraee_initializer = {
-	name = "Anoriel"
+	name = drow_system_eilistraee_initializer_name
 	class = "sc_elven_binary_prismatic_black_hole"
 	usage = origin
 	
@@ -38,14 +38,14 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Tindómerel"
+		name = drow_system_eilistraee_planet_tindomerel_name
 		class = "pc_b_star"
 		orbit_distance = 25
 		size = 30
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_energy_5
+			add_deposit = d_energy_4
 
 			set_planet_entity = {
 				entity = elven_prismatic_star_entity
@@ -55,7 +55,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Anoriel"
+		name = drow_system_eilistraee_planet_anoriel_name
 		entity = "elven_prismatic_black_hole_entity"
 		class = "pc_black_hole"
 		orbit_distance = 0
@@ -83,7 +83,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Gehenna"
+		name = drow_system_eilistraee_planet_gehenna_name
 		class = "pc_molten"
 		orbit_distance = 50
 		orbit_angle = { min = 90 max = 270 }
@@ -106,7 +106,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Ssussun"
+		name = drow_system_eilistraee_planet_ssussun_name
 		class = "pc_asteroid"
 		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
@@ -118,7 +118,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Olath"
+		name = drow_system_eilistraee_planet_olath_name
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 90 max = 270 }
@@ -130,7 +130,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Mystra"
+		name = drow_system_eilistraee_planet_mystra_name
 		class = "pc_toxic"
 		entity = "drow_01_barren_01_mystra"
 		orbit_distance = 60
@@ -144,8 +144,8 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
+		name = drow_system_eilistraee_planet_nirvana_name
 		class = "pc_rare_crystal_asteroid"
-		name = "Nirvana"
 		entity = "asteroid_crystal_large_01_entity"
 		orbit_distance = 8
 		orbit_angle = -5
@@ -163,7 +163,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Araushnee"
+		name = drow_system_eilistraee_planet_araushnee_name
 		class = "pc_gas_giant"
 		entity = "drow_01_gas_giant_araushnee"
 		orbit_distance = 60
@@ -178,7 +178,7 @@ drow_system_eilistraee_initializer = {
 		}
 		
 		moon = {
-			name = "Dalharuk"
+			name = drow_system_eilistraee_planet_dalharuk_name
 			class = random_non_colonizable
 			orbit_distance = 45
 			size = { min = 14 max = 16 }
@@ -189,7 +189,7 @@ drow_system_eilistraee_initializer = {
 		}
 		
 		moon = {
-			name = "Dalharil"
+			name = drow_system_eilistraee_planet_dalharil_name
 			class = pc_gaia #ideal_planet_class
 			orbit_distance = 20
 			size = 14
@@ -206,7 +206,7 @@ drow_system_eilistraee_initializer = {
 		}
 		
 		moon = {
-			name = "Sokoya"
+			name = drow_system_eilistraee_planet_sokoya_name
 			class = pc_gaia #ideal_planet_class
 			orbit_distance = 20
 			size = 20
@@ -221,7 +221,7 @@ drow_system_eilistraee_initializer = {
 	}
 	
 	planet = {
-		name = "Corellon"
+		name = drow_system_eilistraee_planet_corellon_name
 		class = "pc_gas_giant"
 		entity = "drow_01_gas_giant_corellon"
 		orbit_distance = 115
@@ -235,7 +235,7 @@ drow_system_eilistraee_initializer = {
 		}
 		
 		moon = {
-			name = "Faenya"
+			name = drow_system_eilistraee_planet_faenya_name
 			class = "pc_barren_cold"
 			orbit_distance = 45
 			orbit_angle = random
@@ -248,7 +248,7 @@ drow_system_eilistraee_initializer = {
 		}
 		
 		moon = {
-			name = "Celanil"
+			name = drow_system_eilistraee_planet_celanil_name
 			class = "pc_frozen"
 			orbit_distance = 0
 			orbit_angle = { min = 90 max = 270 }
@@ -260,7 +260,7 @@ drow_system_eilistraee_initializer = {
 		}
 		
 		moon = {
-			name = "Sehanine"
+			name = drow_system_eilistraee_planet_sehanine_name
 			class = "pc_barren"
 			orbit_distance = 15
 			orbit_angle = random

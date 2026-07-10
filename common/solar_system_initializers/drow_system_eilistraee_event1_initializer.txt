@@ -1,5 +1,5 @@
 eilistraee_event1_01_initializer = {
-	name = "Ruinous Release"
+	name = eilistraee_event1_01_initializer_name
 	class = sc_black_hole
 
 	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
@@ -10,7 +10,7 @@ eilistraee_event1_01_initializer = {
 
 	planet = {
 		class = pc_black_hole
-		name = "Cil Mawr"
+		name = eilistraee_event1_planet_cil_mawr_name
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 24
@@ -43,14 +43,14 @@ eilistraee_event1_01_initializer = {
 }
 
 eilistraee_event1_02_initializer = {
-	name = "Sinking Solitude"
+	name = eilistraee_event1_02_initializer_name
 	class = sc_drow_trinary_1
 
 	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
 
 	planet = {
 		class = "pc_f_star"
-		name = "Ayercár"
+		name = eilistraee_event1_planet_ayercar_name
 		orbit_distance = 30
 		orbit_angle = 0
 		size = 20
@@ -64,7 +64,7 @@ eilistraee_event1_02_initializer = {
 	
 	planet = {
 		class = "pc_f_star"
-		name = "Ayerhón"
+		name = eilistraee_event1_planet_ayerhon_name
 		orbit_angle = 120
 		orbit_distance = 0
 		size = 30
@@ -91,7 +91,7 @@ eilistraee_event1_02_initializer = {
 	
 	planet = {
 		class = "pc_b_star"
-		name = "Ayermá"
+		name = eilistraee_event1_planet_ayerma_name
 		orbit_distance = 0
 		orbit_angle = 120
 		size = 25
@@ -122,7 +122,7 @@ eilistraee_event1_02_initializer = {
 	}
 	
 	planet = {
-		name = "Menelondo Tol"
+		name = eilistraee_event1_planet_menelondo_tol_name
 		class = "pc_asteroid"
 		orbit_distance = 70
 		orbit_angle = 90
@@ -136,7 +136,7 @@ eilistraee_event1_02_initializer = {
 	}
 	
 	planet = {
-		name = "Menelondo Izanari"
+		name = eilistraee_event1_planet_menelondo_izanari_name
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = 90
@@ -149,7 +149,7 @@ eilistraee_event1_02_initializer = {
 		}
 		
 		moon = {
-			name = "B'vecko"
+			name = eilistraee_event1_planet_bvecko_name
 			class = pc_shattered
 			orbit_distance = 25
 			size = 11
@@ -172,7 +172,7 @@ eilistraee_event1_02_initializer = {
 	}
 	
 	planet = {
-		name = "Sáramorna"
+		name = eilistraee_event1_planet_saramorna_name
 		class = "pc_molten"
 		orbit_distance = 60
 		orbit_angle = { min = 90 max = 270 }
@@ -190,7 +190,7 @@ eilistraee_event1_02_initializer = {
 		}
 		
 		moon = {
-			name = "Lissëninquë"
+			name = eilistraee_event1_planet_lisseninque_name
 			class = "pc_frozen"
 			orbit_distance = 20
 			size = 12
@@ -205,7 +205,7 @@ eilistraee_event1_02_initializer = {
 	}
 	
 	planet = {
-		name = "Elg'cahlir"
+		name = eilistraee_event1_planet_elgcahlir_name
 		class = "pc_toxic"
 		entity = "drow_01_toxic_elgcahlir"
 		orbit_distance = 60
@@ -221,7 +221,7 @@ eilistraee_event1_02_initializer = {
 		}
 		
 		moon = {
-			name = "Myrxle"
+			name = eilistraee_event1_planet_myrxle_name
 			class = pc_barren
 			orbit_distance = 20
 			orbit_angle = random
@@ -235,7 +235,7 @@ eilistraee_event1_02_initializer = {
 		}
 		
 		moon = {
-			name = "Na'eroth"
+			name = eilistraee_event1_planet_naeroth_name
 			class = pc_barren
 			orbit_distance = 15
 			orbit_angle = { min = 90 max = 270 }
@@ -255,7 +255,7 @@ eilistraee_event1_02_initializer = {
 	}
 	
 	planet = {
-		name = "Hiran"
+		name = eilistraee_event1_planet_hiran_name
 		class = pc_asteroid
 		orbit_distance = 70
 		orbit_angle = { min = 90 max = 270 }
@@ -406,7 +406,8 @@ eilistraee_event1_02_initializer = {
 
 		if = {
 			limit = {
-				# Disabling for now, because it blocks mega construction and nomads can't repair or dismantle it
+				# Disabling for now, because it blocks mega construction and nomads can't repair or dismantle it as of 4.4.6
+				# To be enabled if the issue is fixed on the game's end
 				always = no
 				has_machine_age_dlc = yes
 			}
@@ -469,7 +470,7 @@ eilistraee_event1_02_initializer = {
 }
 
 eilistraee_event1_03_initializer = {
-	name = "Harrowing Hope"
+	name = eilistraee_event1_03_initializer_name
 	class = sc_drow_binary_2
 
 	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
@@ -479,7 +480,7 @@ eilistraee_event1_03_initializer = {
 	
 	planet = {
 		class = "pc_k_star"
-		name = "Hûnnaur-minë"
+		name = eilistraee_event1_planet_hunnaurmine_name
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 55
@@ -519,7 +520,7 @@ eilistraee_event1_03_initializer = {
 	
 	planet = {
 		class = "pc_m_star"
-		name = "Hûnnaur-atta"
+		name = eilistraee_event1_planet_hunnauratta_name
 		orbit_distance = 49
 		orbit_angle = 180
 		size = 15
@@ -533,7 +534,7 @@ eilistraee_event1_03_initializer = {
 
 	planet = {
 		class = "pc_gas_giant"
-		name = "Quáco"
+		name = eilistraee_event1_planet_quaco_name
 		entity = "drow_01_gas_giant_quaco"
 		orbit_distance = 0
 		orbit_angle = 180
@@ -549,7 +550,7 @@ eilistraee_event1_03_initializer = {
 	
 	planet = {
 		class = pc_molten
-		name = "Doghiona"
+		name = eilistraee_event1_planet_doghiona_name
 		orbit_distance = 30
 		orbit_angle = 135
 		size = 25
@@ -562,7 +563,7 @@ eilistraee_event1_03_initializer = {
 		
 		moon = {
 			class = "pc_barren"
-			name = "Draversa"
+			name = eilistraee_event1_planet_draversa_name
 			orbit_distance = 15
 			size = 16
 
@@ -575,7 +576,7 @@ eilistraee_event1_03_initializer = {
 
 	planet = {
 		class = "pc_frozen"
-		name = "Toron"
+		name = eilistraee_event1_planet_toron_name
 		orbit_distance = 35
 		orbit_angle = 135
 		size = 25
@@ -589,7 +590,7 @@ eilistraee_event1_03_initializer = {
 	
 	planet = {
 		class = "pc_toxic"
-		name = "Dol'medri"
+		name = eilistraee_event1_planet_dolmedri_name
 		entity = "drow_01_toxic_dolmedri"
 		orbit_distance = 30
 		orbit_angle = 135
@@ -599,11 +600,6 @@ eilistraee_event1_03_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-			add_modifier = {
-				modifier = "ancient_factory"
-				days = -1
-			}
-			
 			clear_deposits = yes
 			add_deposit = d_exotic_gases_3
 		}
@@ -611,7 +607,7 @@ eilistraee_event1_03_initializer = {
 	
 	planet = {
 		class = "pc_gas_giant"
-		name = "Ilharfir"
+		name = eilistraee_event1_planet_ilharfir_name
 		entity = "drow_01_gas_giant_ilharfir"
 		orbit_distance = 45
 		orbit_angle = 135
@@ -627,7 +623,7 @@ eilistraee_event1_03_initializer = {
 		
 		moon = {
 			class = pc_frozen
-			name = "Drath'inthuul"
+			name = eilistraee_event1_planet_drathinthuul_name
 			orbit_distance = 30
 			orbit_angle = random
 			size = 12
@@ -641,7 +637,7 @@ eilistraee_event1_03_initializer = {
 		
 		moon = {
 			class = "pc_frozen"
-			name = "Drath'drejan"
+			name = eilistraee_event1_planet_drathdrejan_name
 			orbit_distance = 0
 			orbit_angle = { min = 90 max = 270 }
 			size = 9
@@ -660,7 +656,7 @@ eilistraee_event1_03_initializer = {
 	}
 	
 	planet = {
-		name = "Menelhelcë Yasi"
+		name = eilistraee_event1_planet_menelhelce_yasi_name
 		class = "pc_ice_asteroid"
 		orbit_distance = 60
 		orbit_angle = { min = 100 max = 120 }
@@ -673,7 +669,7 @@ eilistraee_event1_03_initializer = {
 	}
 	
 	planet = {
-		name = "Menelhelcë Drayda"
+		name = eilistraee_event1_planet_menelhelce_drayda_name
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 100 max = 120 }
@@ -686,7 +682,7 @@ eilistraee_event1_03_initializer = {
 	}
 	
 	planet = {
-		name = "Menelhelcë Larou"
+		name = eilistraee_event1_planet_menelhelce_larou_name
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 100 max = 120 }
@@ -706,7 +702,7 @@ eilistraee_event1_03_initializer = {
 }
 
 eilistraee_event1_04_initializer = {
-	name = "Withering Wrath"
+	name = eilistraee_event1_04_initializer_name
 	class = sc_drow_binary_1
 
 	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
@@ -716,7 +712,7 @@ eilistraee_event1_04_initializer = {
 
 	planet = {
 		class = "pc_a_star"
-		name = "Slyndar"
+		name = eilistraee_event1_planet_slyndar_name
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 38
@@ -743,7 +739,7 @@ eilistraee_event1_04_initializer = {
 	
 	planet = {
 		class = "pc_barren"
-		name = "Drayilar"
+		name = eilistraee_event1_planet_draxilar_name
 		entity = "drow_01_barren_02_draxilar"
 		orbit_distance = 85
 		orbit_angle = 180
@@ -757,7 +753,7 @@ eilistraee_event1_04_initializer = {
 		
 		moon = {
 			class = pc_shrouded
-			name = "Meoiavale"
+			name = eilistraee_event1_planet_meoiavale_name
 			orbit_distance = 35
 			orbit_angle = random
 			size = 22
@@ -771,7 +767,7 @@ eilistraee_event1_04_initializer = {
 		
 		moon = {
 			class = "pc_toxic"
-			name = "Inthurosa"
+			name = eilistraee_event1_planet_inthurosa_name
 			orbit_distance = 8
 			orbit_angle = { min = 90 max = 270 }
 			size = 16
@@ -786,7 +782,7 @@ eilistraee_event1_04_initializer = {
 	
 	planet = {
 		class = "pc_black_hole"
-		name = "Renoriden"
+		name = eilistraee_event1_planet_renoriden_name
 		orbit_distance = 60
 		orbit_angle = 180
 		size = 10
@@ -799,7 +795,7 @@ eilistraee_event1_04_initializer = {
 		
 		planet = {
 			class = "pc_shattered"
-			name = "In'loifrey"
+			name = eilistraee_event1_planet_inloifrey_name
 			orbit_distance = 30
 			orbit_angle = 90
 			size = 6
@@ -813,7 +809,7 @@ eilistraee_event1_04_initializer = {
 		
 		planet = {
 			class = "pc_frozen"
-			name = "Yh'alhar"
+			name = eilistraee_event1_planet_yhalhar_name
 			orbit_angle = 180
 			orbit_distance = 15
 			size = 12
@@ -833,7 +829,7 @@ eilistraee_event1_04_initializer = {
 	
 	planet = {
 		class = "pc_asteroid"
-		name = "Menelondo Yica"
+		name = eilistraee_event1_planet_menelondo_yica_name
 		orbit_distance = 60
 		orbit_angle = 90
 
@@ -846,7 +842,7 @@ eilistraee_event1_04_initializer = {
 	
 	planet = {
 		class = "pc_asteroid"
-		name = "Menelondo Drai"
+		name = eilistraee_event1_planet_menelondo_drai_name
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
 
@@ -859,7 +855,7 @@ eilistraee_event1_04_initializer = {
 	
 	planet = {
 		class = "pc_asteroid"
-		name = "Menelondo Larya"
+		name = eilistraee_event1_planet_menelondo_larya_name
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
 
@@ -872,7 +868,7 @@ eilistraee_event1_04_initializer = {
 	
 	planet = {
 		class = "pc_asteroid"
-		name = "Menelondo Queni"
+		name = eilistraee_event1_planet_menelondo_queni_name
 		orbit_distance = 0
 		orbit_angle = { min = 45 max = 90 }
 
@@ -886,7 +882,7 @@ eilistraee_event1_04_initializer = {
 }
 
 eilistraee_event1_05_initializer = {
-	name = "Torturous Truth"
+	name = eilistraee_event1_05_initializer_name
 	class = sc_black_hole
 
 	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
@@ -896,7 +892,7 @@ eilistraee_event1_05_initializer = {
 
 	planet = {
 		class = pc_black_hole
-		name = "Galtaereth"
+		name = eilistraee_event1_planet_galtaereth_name
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 40
@@ -1213,7 +1209,7 @@ eilistraee_event1_05_initializer = {
 
 	planet = {
 		class = pc_city
-		name = "Zha'lora"
+		name = eilistraee_event1_planet_zhalora_name
 		orbit_distance = 100
 		orbit_angle = 60
 		size = 30
@@ -1283,7 +1279,7 @@ eilistraee_event1_05_initializer = {
 
 	planet = {
 		class = pc_city
-		name = "K'zarrak"
+		name = eilistraee_event1_planet_kzarrak_name
 		orbit_distance = 60
 		orbit_angle = 120
 		size = 18
@@ -1350,7 +1346,7 @@ eilistraee_event1_05_initializer = {
 		
 		moon = {
 			class = pc_shrouded
-			name = "Aerthor"
+			name = eilistraee_event1_planet_aerthor_name
 			orbit_distance = 20
 			orbit_angle = random
 			size = 8
@@ -1364,7 +1360,7 @@ eilistraee_event1_05_initializer = {
 		
 		moon = {
 			class = pc_shrouded
-			name = "Gwedach"
+			name = eilistraee_event1_planet_gwedach_name
 			orbit_distance = 0
 			orbit_angle = 120
 			size = 10
@@ -1378,7 +1374,7 @@ eilistraee_event1_05_initializer = {
 		
 		moon = {
 			class = pc_shrouded
-			name = "Eithauron"
+			name = eilistraee_event1_planet_eithauron_name
 			orbit_distance = 0
 			orbit_angle = 120
 			size = 12
@@ -1393,7 +1389,7 @@ eilistraee_event1_05_initializer = {
 
 	planet = {
 		class = pc_city
-		name = "Xil'dras"
+		name = eilistraee_event1_planet_xildras_name
 		orbit_distance = 60
 		orbit_angle = 120
 		size = 24

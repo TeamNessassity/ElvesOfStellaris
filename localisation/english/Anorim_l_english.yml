@@ -15,14 +15,14 @@ drow_system_eilistraee_initializer_DESC:0 "§LYour people live under the colorfu
 trait_drow_anorim_immortality:0 "Evergleam"
 trait_drow_anorim_immortality_desc:0 "Into the stars, they fled in fear, and therein found death. But among the stars, they lived in love, and therein death could not reach."
 trait_drow_anorim_curse:0 "Evergloom"
-trait_drow_anorim_curse_desc:0 "§RSHE§! is not done exacting revenge on those who once coveted §RHER§! divinity."
+trait_drow_anorim_curse_desc:0 "$eos_galtaereth_she_color$ is not done exacting revenge on those who once coveted $eos_galtaereth_her_color$ divinity."
 
 ####################################
 # Origins 
 ####################################
 
 origin_drow_prismatic_refuge:0 "Prismatic Refuge"
-origin_drow_prismatic_refuge_desc:0 "Fleeing your home system due to persecution, your primitive colony vessel miraculously happened upon a paradise world. Having now mastered this world your civilization turns its attention to the stars once again."
+origin_drow_prismatic_refuge_desc:0 "Fleeing from an §REldritch Evil§!, the ark carrying the remnants of a fallen empire miraculously happened upon a paradise - the only star in the galaxy that offers shelter from $eos_galtaereth_her_color$ pursuit. Having recovered their strength and numbers enough to dream of tomorrow once more, the survivors turn their attention to the stars with hope reignited."
 origin_tooltip_drow_prismatic_refuge_effects:0 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']$TABBED_NEW_LINE$- Contains a ['concept_eos_dangerous_wormhole']\n$HOMEWORLD$$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_feral_fairies']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_cheel_krezust']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_wormhole_stabilization', £physics_research£ $tech_wormhole_stabilization$]"
 
 origin_tooltip_drow_prismatic_refuge_settled_effects:0 "REPLACE_ME"
@@ -33,15 +33,15 @@ origin_tooltip_drow_prismatic_refuge_nomadic_effects:0 "REPLACE_ME"
 ####################################
 
 civic_drow_eilistraee:0 "Blessed Beauty"
-civic_drow_eilistraee_desc:0 "This society has a deep-rooted bardic tradition. Much of their history is recorded in various forms of art, ranging from elaborate dance performances to profound interactive experiences and everything in between. As it searches for beauty, life finds meaning in a seemingly uncaring universe."
+civic_drow_eilistraee_desc:0 "This society has a deep-rooted bardic tradition. Much of their history is recorded solely in various forms of art, encompassing everything from elaborate dance performances to profound interactive experiences. To one who seeks meaning in all things, even tragedy and sorrow are but wellsprings of inspiration."
 civic_drow_eilistraee_tooltip_effects:0 ""
 
 ########################
 ###      COUNCIL      ##
 ########################
 
-elven_councilor_eilistraee:0 "Secretary General"
-elven_councilor_eilistraee_desc:0 "The Secretary General chairs the meetings of the peacekeeping council and acts as the state spokesperson."
+elven_councilor_eilistraee:0 "Minister of Patronage"
+elven_councilor_eilistraee_desc:0 "The $elven_councilor_eilistraee$ nurtures the development of artistic movements, ensuring that beauty may blossom wherever it sprouts, and that it is appropriately funded."
 
 ####################################
 # Diplomacy
@@ -50,13 +50,12 @@ elven_councilor_eilistraee_desc:0 "The Secretary General chairs the meetings of 
 personality_eilistraeean_personality:0 "Orthae d'Aronen"
 personality_eilistraeean_personality_desc:0 "Orthae d'Aronen, Holy Knights in Drowish, believe it is their sacred duty to bring order to the galaxy. Peacefully if possible but by force if necessary. They are known for being extremely loyal once friendship is established."
 
-
 ####################################
 # Nations 
 ####################################
 
 EMPIRE_DESIGN_drow_civ1:0 "Children of Anoriel"
-EMPIRE_DESIGN_drow_civ1_desc:0 "Tales say the Anorim left their original home to flee a "great evil". Guided by their Goddess Anoriel or just by sheer luck, their primitive vessel survived the traversal of a wormhole. On the other side they found a paradise world where they have remained content for many millennia.\n\nRecently their curiosity has been stirred and they are once again looking to the stars. This time to spread a message of peace and hope. By force if necessary.§!\n"
+EMPIRE_DESIGN_drow_civ1_desc:0 "Tales preserved in mournful songs speak of how the Anorim left their original home to flee a "great evil" - the vengeful deity Galtaereth - once wronged by the Anorim's lost forebears, and bent on exacting vengeance ever since.\nThey were saved by another Goddess - Anoriel - a faint light of hope that illuminated their dark path. By their patron's guidance, or just by sheer luck, the ancient vessel survived a generational journey across the void.\nAt last, they managed to find a refuge - one star the relentess foe could not reach. A safe harbor from which the Children of Anoriel might rebuild their civilization; and perhaps in time, even learn to stand up to a divine curse?§!\n"
 ELVEN_drow1_empire_adjective: "Anorim"
 ELVEN_drow1_species_name: "Anorim"
 ELVEN_drow1_species_plural: "Anorim"
@@ -66,9 +65,83 @@ ELVEN_drow1_ruler_title_female: "Ulathtallar"
 ELVEN_drow1_heir_title: "M'thain"
 ELVEN_drow1_heir_title_female: "Yatharil"
 ELVEN_drow1_ruler_name: "Aundae Arwel"
-ELVEN_drow1_homeworld_name: "Sokoya"
+ELVEN_drow1_homeworld_name: "$drow_system_eilistraee_planet_sokoya_name$"
 ELVEN_drow1_arkship_name: "Che'el K'rezust"
-ELVEN_drow1_home_system_name: "Anoriel"
+ELVEN_drow1_home_system_name: "$drow_system_eilistraee_initializer_name$"
+
+####################
+### INITIALIZERS ###
+####################
+
+# Home Systems
+drow_system_eilistraee_initializer_name: "Tindómerel"
+drow_system_eilistraee_planet_tindomerel_name: "Tindómerel"
+drow_system_eilistraee_planet_anoriel_name: "$eos_anoriel_alias$"
+drow_system_eilistraee_planet_gehenna_name: "Gehenna"
+drow_system_eilistraee_planet_ssussun_name: "Ssussun"
+drow_system_eilistraee_planet_olath_name: "Olath"
+drow_system_eilistraee_planet_mystra_name: "Mystra"
+drow_system_eilistraee_planet_nirvana_name: "Nirvana"
+drow_system_eilistraee_planet_araushnee_name: "Araushnee"
+drow_system_eilistraee_planet_dalharuk_name: "Dalharuk"
+drow_system_eilistraee_planet_dalharil_name: "Dalharil"
+drow_system_eilistraee_planet_sokoya_name: "Sokoya"
+drow_system_eilistraee_planet_corellon_name: "Corellon"
+drow_system_eilistraee_planet_faenya_name: "Faenya"
+drow_system_eilistraee_planet_celanil_name: "Celanil"
+drow_system_eilistraee_planet_sehanine_name: "Sehanine"
+
+# Evergloom Systems
+eilistraee_event1_01_initializer_name: "Ruinous Release"
+eilistraee_event1_02_initializer_name: "Sinking Solitude"
+eilistraee_event1_03_initializer_name: "Harrowing Hope"
+eilistraee_event1_04_initializer_name: "Withering Wrath"
+eilistraee_event1_05_initializer_name: "Torturous Truth"
+
+eilistraee_event1_planet_cil_mawr_name: "Cil Mawr"
+eilistraee_event1_planet_ayercar_name: "Ayercár"
+eilistraee_event1_planet_ayerhon_name: "Ayerhón"
+eilistraee_event1_planet_ayerma_name: "Ayermá"
+eilistraee_event1_planet_menelondo_tol_name: "Menelondo Tol"
+eilistraee_event1_planet_menelondo_izanari_name: "Menelondo Izanari"
+eilistraee_event1_planet_bvecko_name: "B'vecko"
+eilistraee_event1_planet_saramorna_name: "Sáramorna"
+eilistraee_event1_planet_lisseninque_name: "Lissëninquë"
+eilistraee_event1_planet_elgcahlir_name: "Elg'cahlir"
+eilistraee_event1_planet_myrxle_name: "Myrxle"
+eilistraee_event1_planet_naeroth_name: "Na'eroth"
+eilistraee_event1_planet_hiran_name: "Hiran"
+eilistraee_event1_planet_hunnaurmine_name: "Hûnnaur-minë"
+eilistraee_event1_planet_hunnauratta_name: "Hûnnaur-atta"
+eilistraee_event1_planet_quaco_name: "Quáco"
+eilistraee_event1_planet_doghiona_name: "Doghiona"
+eilistraee_event1_planet_draversa_name: "Draversa"
+eilistraee_event1_planet_toron_name: "Toron"
+eilistraee_event1_planet_dolmedri_name: "Dol'medri"
+eilistraee_event1_planet_ilharfir_name: "Ilharfir"
+eilistraee_event1_planet_drathinthuul_name: "Drath'inthuul"
+eilistraee_event1_planet_drathdrejan_name: "Drath'drejan"
+eilistraee_event1_planet_menelhelce_yasi_name: "Menelhelcë Yasi"
+eilistraee_event1_planet_menelhelce_drayda_name: "Menelhelcë Drayda"
+eilistraee_event1_planet_menelhelce_larou_name: "Menelhelcë Larou"
+eilistraee_event1_planet_slyndar_name: "Slyndar"
+eilistraee_event1_planet_draxilar_name: "Draxilar"
+eilistraee_event1_planet_meoiavale_name: "Meoiavale"
+eilistraee_event1_planet_inthurosa_name: "Inthurosa"
+eilistraee_event1_planet_renoriden_name: "Renoriden"
+eilistraee_event1_planet_inloifrey_name: "In'loifrey"
+eilistraee_event1_planet_yhalhar_name: "Yh'alhar"
+eilistraee_event1_planet_menelondo_yica_name: "Menelondo Yica"
+eilistraee_event1_planet_menelondo_drai_name: "Menelondo Drai"
+eilistraee_event1_planet_menelondo_larya_name: "Menelondo Larya"
+eilistraee_event1_planet_menelondo_queni_name: "Menelondo Queni"
+eilistraee_event1_planet_galtaereth_name: "$eos_galtaereth_alias$"
+eilistraee_event1_planet_zhalora_name: "Zha'lora"
+eilistraee_event1_planet_kzarrak_name: "K'zarrak"
+eilistraee_event1_planet_aerthor_name: "Aerthor"
+eilistraee_event1_planet_gwedach_name: "Gwedach"
+eilistraee_event1_planet_eithauron_name: "Eithauron"
+eilistraee_event1_planet_xildras_name: "Xil'dras"
 
 ##############
 ### EVENTS ###
@@ -83,12 +156,15 @@ elven_anorim_prismatic_refuge_chain_desc:0 "'Not all who embark on a journey sha
 
 elven_anorim_prismatic_refuge_survive_poi:0 "Survive Ravenous Darkness"
 elven_anorim_prismatic_refuge_survive_poi_desc:0 "The $eos_galtaereth_color$'s predation comes in tides that we have learned to sense. As the smothering shadow of $eos_galtaereth_her_color$ presence grows imminent, let our people seek shelter within the $eos_anoriel_color$'s prismatic cradle."
-elven_anorim_prismatic_refuge_wormhole_poi:0 "Enter The Evergloom"
-elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies only $eos_galtaereth_her_color$ domain; only horrors dwell therein."
+elven_anorim_prismatic_refuge_wormhole_poi:0 "Access the $EOS_EVERGLEAM_WORMHOLE$ Network"
+elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "Within the mirror of recollection, time and space bend around memory, and collapse into a single point. As we recall the paths we have walked, the light years between destinations disappear."
 
 EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Complete Psionic Ascension"
 EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud, if we are to survive The Evergloom, we have no choice but to rearm ourselves with the ancient arts."
 EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
+EOS_ANORIM_PRISMATIC_REFUGE_ENTER_EVERGLOOM:0 "Enter $eos_nebula_evergloom$"
+EOS_ANORIM_PRISMATIC_REFUGE_ENTER_EVERGLOOM_DESC:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies $eos_galtaereth_her_color$ domain; only horrors dwell therein."
+EOS_ANORIM_FLEETS_IN_EVERGLOOM:0 "Fleets in $eos_nebula_evergloom$ Cluster"
 
 elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Glimmer"
 elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
