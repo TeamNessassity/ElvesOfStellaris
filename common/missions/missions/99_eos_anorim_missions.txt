@@ -43,9 +43,9 @@ EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM = {
 	}
 
 	on_success = {
-		#country_event = {
-		#	id = elven_anorim_origin_events.204
-		#}
+		country_event = {
+			id = elven_anorim_origin_events.2010
+		}
 	}
 }
 

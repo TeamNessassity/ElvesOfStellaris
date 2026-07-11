@@ -487,6 +487,11 @@ country_event = {
 				set_star_flag = eos_evergloom_cleared
 			}
 		}
+		add_mission_counter = {
+			mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+			amount = 1
+		}
 	}
 	
 	option = {
@@ -523,7 +528,7 @@ country_event = {
 
 	after = {
 		hidden_effect = {
-			# Create the dummy country that governs all the Evergloom enemies we'll spawn later
+			# Spawn the Sensor Ghost tutorial fleet
 			eos_evergloom_create_country = yes
 			establish_communications_no_message = event_target:eos_evergloom_hostiles_country
 
@@ -534,7 +539,6 @@ country_event = {
 				}
 				effect = {
 					set_owner = event_target:eos_evergloom_hostiles_country
-					save_event_target_as = eos_evergloom_hostiles_fleet
 					set_fleet_flag = eos_evergloom_hostiles_fleet
 
 					while = {
@@ -542,7 +546,7 @@ country_event = {
 						create_ship = {
 							name = random
 							design = "NAME_Revenant"
-							graphical_culture = "extra_dimensional_01"
+							graphical_culture = "extra_dimensional_02"
 						}
 					}
 					while = {
@@ -550,7 +554,7 @@ country_event = {
 						create_ship = {
 							name = random
 							design = "NAME_Phantom"
-							graphical_culture = "extra_dimensional_01"
+							graphical_culture = "extra_dimensional_02"
 						}
 					}
 					while = {
@@ -558,10 +562,10 @@ country_event = {
 						create_ship = {
 							name = random
 							design = "NAME_Wraith"
-							graphical_culture = "extra_dimensional_01"
+							graphical_culture = "extra_dimensional_02"
 						}
 					}
-					
+
 					set_fleet_stance = aggressive
 					set_aggro_range = 500
 					set_aggro_range_measure_from = self
@@ -577,13 +581,13 @@ country_event = {
 	}
 	
 	option = {
-		name = elven_anorim_origin_events.203.a
+		name = elven_anorim_origin_events.204.a
 		trigger = {
 			is_nomadic = yes
 		}
 	}
 	option = {
-		name = elven_anorim_origin_events.203.b
+		name = elven_anorim_origin_events.204.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -609,8 +613,250 @@ country_event = {
 	}
 
 	after = {
-		event_target:anorim_cursed_cluster_02 = {
-			set_star_flag = eos_evergloom_cleared
+		hidden_effect = {
+			event_target:anorim_cursed_cluster_02 = {
+				set_star_flag = eos_evergloom_cleared
+			}
+		}
+		add_mission_counter = {
+			mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+			amount = 1
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.205.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.205.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 2 Stage 6 (Through the Shattered Glass: Faint)
+# Explain the history of the system and spawn the Starflayer
+country_event = {
+	id = elven_anorim_origin_events.206
+	title = "elven_anorim_origin_events.206.name"
+	desc = "elven_anorim_origin_events.206.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			# Spawn the Sensor Ghost tutorial fleet
+			eos_evergloom_create_country = yes
+			establish_communications_no_message = event_target:eos_evergloom_hostiles_country
+
+			create_fleet = {
+				name = "NAME_Revenant"
+				settings = {
+					spawn_debris = no
+				}
+				effect = {
+					set_owner = event_target:eos_evergloom_hostiles_country
+					set_fleet_flag = eos_evergloom_hostiles_fleet
+
+					while = {
+						count = 1
+						create_ship = {
+							name = random
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_02"
+						}
+					}
+
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+
+					set_location = event_target:anorim_cursed_cluster_03.star
+				}
+			}
+		}
+		enable_mission = {
+			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_03
+			location = event_target:anorim_cursed_cluster_03.star
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.206.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.206.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 2 Stage 7 (Through the Shattered Glass: Dim)
+# Explain the Sensor Ghosts and clear the system
+country_event = {
+	id = elven_anorim_origin_events.207
+	title = "elven_anorim_origin_events.207.name"
+	desc = "elven_anorim_origin_events.207.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:anorim_cursed_cluster_03 = {
+				set_star_flag = eos_evergloom_cleared
+			}
+		}
+		add_mission_counter = {
+			mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+			amount = 1
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.207.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.207.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 2 Stage 8 (Through the Shattered Glass: Glint)
+# Explain the history of the system and spawn the Sensor Ghosts
+country_event = {
+	id = elven_anorim_origin_events.208
+	title = "elven_anorim_origin_events.208.name"
+	desc = "elven_anorim_origin_events.208.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			# Spawn the Imperial Guard fleets
+			eos_evergloom_create_country = yes
+			establish_communications_no_message = event_target:eos_evergloom_hostiles_country
+
+			create_fleet = {
+				name = "NAME_Revenant"
+				settings = {
+					spawn_debris = no
+				}
+				effect = {
+					set_owner = event_target:eos_evergloom_hostiles_country
+					set_fleet_flag = eos_evergloom_hostiles_fleet
+
+					while = {
+						count = 1
+						create_ship = {
+							name = random
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_02"
+						}
+					}
+
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+
+					set_location = event_target:anorim_cursed_cluster_04.star
+				}
+			}
+			create_fleet = {
+				name = "NAME_Revenant"
+				settings = {
+					spawn_debris = no
+				}
+				effect = {
+					set_owner = event_target:eos_evergloom_hostiles_country
+					set_fleet_flag = eos_evergloom_hostiles_fleet
+
+					while = {
+						count = 1
+						create_ship = {
+							name = random
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_02"
+						}
+					}
+
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+
+					set_location = event_target:anorim_cursed_cluster_04.star
+				}
+			}
+			create_fleet = {
+				name = "NAME_Revenant"
+				settings = {
+					spawn_debris = no
+				}
+				effect = {
+					set_owner = event_target:eos_evergloom_hostiles_country
+					set_fleet_flag = eos_evergloom_hostiles_fleet
+
+					while = {
+						count = 1
+						create_ship = {
+							name = random
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_02"
+						}
+					}
+
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+
+					set_location = event_target:anorim_cursed_cluster_04.star
+				}
+			}
+		}
+		enable_mission = {
+			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_04
+			location = event_target:anorim_cursed_cluster_04.star
 		}
 	}
 	
@@ -622,6 +868,86 @@ country_event = {
 	}
 	option = {
 		name = elven_anorim_origin_events.203.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 2 Stage 9 (Through the Shattered Glass: Flash)
+# Explain the Sensor Ghosts and clear the system
+country_event = {
+	id = elven_anorim_origin_events.209
+	title = "elven_anorim_origin_events.209.name"
+	desc = "elven_anorim_origin_events.209.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:anorim_cursed_cluster_04 = {
+				set_star_flag = eos_evergloom_cleared
+			}
+		}
+		add_mission_counter = {
+			mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
+			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
+			amount = 1
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.209.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.209.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 2 Stage 10 (Through the Shattered Glass: Spark)
+# Conclude exploration and issue a project to access the final system
+country_event = {
+	id = elven_anorim_origin_events.2010
+	title = "elven_anorim_origin_events.2010.name"
+	desc = "elven_anorim_origin_events.2010.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.2010.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.2010.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -698,11 +1024,6 @@ ship_event = {
 				trigger = is_same_value
 				event_target:anorim_cursed_cluster_01 = {
 					fromfrom = {
-						add_mission_counter = {
-							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
-							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
-							amount = 1
-						}
 						country_event = {
 							id = elven_anorim_origin_events.203
 						}
@@ -710,11 +1031,6 @@ ship_event = {
 				}
 				event_target:anorim_cursed_cluster_02 = {
 					fromfrom = {
-						add_mission_counter = {
-							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
-							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
-							amount = 1
-						}
 						country_event = {
 							id = elven_anorim_origin_events.204
 						}
@@ -722,19 +1038,15 @@ ship_event = {
 				}
 				event_target:anorim_cursed_cluster_03 = {
 					fromfrom = {
-						add_mission_counter = {
-							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
-							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
-							amount = 1
+						country_event = {
+							id = elven_anorim_origin_events.206
 						}
 					}
 				}
 				event_target:anorim_cursed_cluster_04 = {
 					fromfrom = {
-						add_mission_counter = {
-							mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
-							counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
-							amount = 1
+						country_event = {
+							id = elven_anorim_origin_events.208
 						}
 					}
 				}
