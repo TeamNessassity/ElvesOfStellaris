@@ -608,6 +608,42 @@ eos_evergloom_tithe = {
 	}
 }
 
+eos_evergloom_create_country = {
+	# Create the dummy hostile country if one doesn't exist
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:eos_evergloom_hostiles_country
+			}
+		}
+		create_country = {
+			name = "eos_evergloom_hostiles_name"
+			type = eos_evergloom_hostiles
+			name_list = DROW1
+			flag = {
+				icon = {
+					category = "elven"
+					file = "eos_flag_warrioress.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"red"
+					"red"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			save_global_event_target_as = eos_evergloom_hostiles_country
+			set_country_flag = eos_evergloom_hostiles_country
+		}
+	}
+}
+
 # DEPRECATED: The Origin no longer spawns a wormhole during setup
 
 eos_create_prismatic_refuge_wormhole = {

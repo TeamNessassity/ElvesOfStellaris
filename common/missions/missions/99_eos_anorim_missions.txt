@@ -1,3 +1,4 @@
+# Complete all Psionic Traditions
 EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION = {
 	desc = EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC
 	event_chain = "elven_anorim_prismatic_refuge_chain"
@@ -19,11 +20,12 @@ EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION = {
 	on_success = {
 		country_event = {
 			id = elven_anorim_origin_events.201
-			days = 15
+			days = 7
 		}
 	}
 }
 
+# Explore the first 4 Evergloom systems
 EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM = {
 	desc = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM_DESC
 	event_chain = "elven_anorim_prismatic_refuge_chain"
@@ -44,5 +46,80 @@ EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM = {
 		#country_event = {
 		#	id = elven_anorim_origin_events.204
 		#}
+	}
+}
+
+# Clear all enemies in the second Evergloom system
+EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_02 = {
+	desc = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_02_DESC
+	event_chain = "elven_anorim_prismatic_refuge_chain"
+	picture = GFX_evt_shroud_generic
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+	location = yes
+
+	counter = {
+		EOS_ANORIM_CLEAR_SYSTEM = {
+			max = 1
+		}
+	}
+
+	on_monthly = {
+		country_event = {
+			id = elven_anorim_origin_events.212
+		}
+	}
+
+	on_success = {
+		country_event = {
+			id = elven_anorim_origin_events.205
+		}
+	}
+}
+
+# Clear all enemies in the third Evergloom system
+EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_03 = {
+	desc = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_03_DESC
+	event_chain = "elven_anorim_prismatic_refuge_chain"
+	picture = GFX_evt_shroud_generic
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+	location = yes
+
+	counter = {
+		EOS_ANORIM_CLEAR_SYSTEM = {
+			max = 1
+		}
+	}
+
+	on_monthly = {
+		country_event = {
+			id = elven_anorim_origin_events.212
+		}
+	}
+
+	on_success = {
+	}
+}
+
+# Clear all enemies in the fourth Evergloom system
+EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_04 = {
+	desc = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_04_DESC
+	event_chain = "elven_anorim_prismatic_refuge_chain"
+	picture = GFX_evt_shroud_generic
+	icon = "gfx/interface/icons/situation_log/situation_log_extradimensional.dds"
+	location = yes
+
+	counter = {
+		EOS_ANORIM_CLEAR_SYSTEM = {
+			max = 1
+		}
+	}
+
+	on_monthly = {
+		country_event = {
+			id = elven_anorim_origin_events.212
+		}
+	}
+
+	on_success = {
 	}
 }

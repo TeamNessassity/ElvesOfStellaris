@@ -49,9 +49,11 @@ drow_strong_magnetic_field = {
 ############################
 
 eos_nebula_evergloom = {
+	ship_evasion_mult = 0.25
+	ship_weapon_range_mult = -0.25
+	damage_vs_psionic_empires_mult = -0.25
 	ship_speed_reduction = 0.5
 	ship_disengage_opportunities_add = -2
 	ship_windup_mult = 1.0
-	ship_cloaking_strength_add = 3
-	ship_weapon_range_mult = -0.25
+	ship_ftl_jumpdrive_range_mult = -1.0
 }

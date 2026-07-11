@@ -131,7 +131,7 @@ on_entering_system_first_time = {
 # From = Disabler Ship
 on_ship_disabled = {
 	events = {
-		elven_anorim_origin_events.212
+		elven_anorim_origin_events.221
 	}
 }
 

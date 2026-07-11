@@ -157,21 +157,23 @@ elven_anorim_prismatic_refuge_chain_desc:0 "'Not all who embark on a journey sha
 elven_anorim_prismatic_refuge_survive_poi:0 "Survive Dark Tithe"
 elven_anorim_prismatic_refuge_survive_poi_desc:0 "The $eos_galtaereth_color$'s predation comes in tides that we have learned to sense. As the smothering shadow of $eos_galtaereth_her_color$ presence grows imminent, let our people seek shelter within the $eos_anoriel_color$'s prismatic cradle."
 elven_anorim_prismatic_refuge_wormhole_poi:0 "Access the $EOS_EVERGLEAM_WORMHOLE$ Network"
-elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "Within the mirror of recollection, time and space bend around memory, and blend together. As we recall the paths we have walked, the lightyears between destinations disappear."
+elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "Within the mirror of recollection, time and space bend around memory, blending together. As we recall the paths we have walked, the lightyears between destinations disappear."
 
 EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Master Psionic Traditions"
 EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud where $eos_galtaereth_she_color$ dwells, if we are to survive The Evergloom, we have no choice but to rearm ourselves with arcane knowledge."
 EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
 EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM:0 "Explore $eos_nebula_evergloom$ Systems"
 EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM_DESC:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies $eos_galtaereth_her_color$ domain; only nightmares dwell therein.\nNonetheless, brave it we must if we are to end the nightmares once and for all."
-EOS_ANORIM_EVERGLOOM_EXPLORATION:0 "Fleets in $eos_nebula_evergloom$ Cluster"
+EOS_ANORIM_EVERGLOOM_EXPLORATION:0 "Systems Explored"
+EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_02:0 "Confront Hostile Ships"
+EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_02_DESC:0 "The hostiles in the system are interfering with our sensors. We cannot proceed until they are dealt with."
+EOS_ANORIM_CLEAR_SYSTEM:0 "System Secured"
 
 EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT: "Attune Navigation"
 EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_RIPPLES_PROJECT_DESC: "Hyperdrive alone is not enough to navigate $eos_nebula_evergloom$. In order to traverse the treacherous Shroud-steeped nebula, we must observe its currents and wait for favorable tides."
 
-EOS_LEADER_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) in orbit commanded by a leader."
-EOS_LEADER_SCI_OR_COM_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) in orbit commanded by a Scientist or Commander."
-EOS_NO_HOSTILES_REQUIREMENT: "No hostile fleets in system."
+EOS_LEADER_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) in orbit commanded by any leader."
+EOS_NO_HOSTILES_REQUIREMENT: "No imminent danger in system."
 
 elven_anorim_origin_events.101.name:0 "Through the Shattered Glass: Glimmer"
 elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
@@ -199,6 +201,10 @@ elven_anorim_origin_events.203.b:0 "REPLACE_ME"
 
 # Event Systems
 eos_nebula_evergloom:0 "The Evergloom"
+
+# Event Countries
+eos_evergloom_hostiles:0 "Nightmares"
+eos_evergloom_hostiles_name:0 "Evergloom Nightmares"
 
 # Event Ambient Objects
 eos_evergloom_ripples:0 "Evergloom Ripples"
