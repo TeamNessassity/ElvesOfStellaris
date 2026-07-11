@@ -524,9 +524,6 @@ country_event = {
 	}
 	
 	immediate = {
-	}
-
-	after = {
 		hidden_effect = {
 			# Spawn the Sensor Ghost tutorial fleet
 			eos_evergloom_create_country = yes
@@ -574,6 +571,9 @@ country_event = {
 				}
 			}
 		}
+	}
+
+	after = {
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_02
 			location = event_target:anorim_cursed_cluster_02.star
@@ -655,9 +655,6 @@ country_event = {
 	}
 	
 	immediate = {
-	}
-
-	after = {
 		hidden_effect = {
 			# Spawn the Sensor Ghost tutorial fleet
 			eos_evergloom_create_country = yes
@@ -689,6 +686,9 @@ country_event = {
 				}
 			}
 		}
+	}
+
+	after = {
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_03
 			location = event_target:anorim_cursed_cluster_03.star
@@ -770,9 +770,6 @@ country_event = {
 	}
 	
 	immediate = {
-	}
-
-	after = {
 		hidden_effect = {
 			# Spawn the Imperial Guard fleets
 			eos_evergloom_create_country = yes
@@ -854,6 +851,9 @@ country_event = {
 				}
 			}
 		}
+	}
+
+	after = {
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_04
 			location = event_target:anorim_cursed_cluster_04.star
@@ -935,6 +935,12 @@ country_event = {
 	}
 	
 	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = eos_anorim_story
+				value = 10
+			}
+		}
 	}
 
 	after = {
@@ -1011,7 +1017,7 @@ ship_event = {
 
 	trigger = {
 		from = {
-			has_star_flag = eos_anorim_cursed_cluster
+			has_star_flag = eos_evergloom_cluster
 		}
 		fromfrom = {
 			is_variable_set = eos_anorim_story
@@ -1152,7 +1158,7 @@ ship_event = {
 	trigger = {
 		is_arkship_ship = yes
 		solar_system = {
-			has_star_flag = eos_anorim_cursed_cluster
+			has_star_flag = eos_evergloom_cluster
 		}
 	}
 
@@ -1187,6 +1193,24 @@ ship_event = {
 
 		set_disabled = no
 		remove_ship_flag = disabled_by_gatekeeper_event
+	}
+}
+
+# Part 3 Stage 0 (Gatekeeper Event)
+# Link up systems 04 and 05 to the Evergleam Mirror network and set up Part 3
+country_event = {
+	id = elven_anorim_origin_events.300
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	after = {
 	}
 }
 
@@ -1239,7 +1263,7 @@ situation_event = {
 				else_if = {
 					limit = {
 						solar_system = {
-							has_star_flag = eos_anorim_cursed_cluster
+							has_star_flag = eos_evergloom_cluster
 						}
 					}
 					eos_evergloom_tithe = {

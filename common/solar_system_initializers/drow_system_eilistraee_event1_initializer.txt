@@ -2,7 +2,7 @@ eilistraee_event1_01_initializer = {
 	name = eilistraee_event1_01_initializer_name
 	class = sc_black_hole
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_evergloom_cluster }
 	prevent_anomalies = yes
 	
 	init_effect = {
@@ -34,16 +34,24 @@ eilistraee_event1_01_initializer = {
 				entity_offset = 150
 			}
 
+			# Evergloom Ripples
 			create_ambient_object = {
 				type = eos_evergloom_ripples
 				location = this
-				use_3d_location = yes
-				entity_offset_angle = 210
+				#use_3d_location = yes
+				#entity_offset_angle = 210
 				entity_face_object = this
-				entity_offset = 200
-				#entity_offset_height = 20
+				#entity_offset = 200
+				entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_01
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					angle = 120
+					distance = 200
 				}
 			}
 		}
@@ -54,7 +62,7 @@ eilistraee_event1_02_initializer = {
 	name = eilistraee_event1_02_initializer_name
 	class = sc_drow_trinary_1
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_evergloom_cluster }
 
 	planet = {
 		class = "pc_f_star"
@@ -82,16 +90,24 @@ eilistraee_event1_02_initializer = {
 			clear_deposits = yes
 			add_deposit = d_energy_3
 
+			# Evergloom Ripples
 			create_ambient_object = {
 				type = eos_evergloom_ripples
 				location = this
-				use_3d_location = yes
-				entity_offset_angle = 30
+				#use_3d_location = yes
+				#entity_offset_angle = 30
 				entity_face_object = this
-				entity_offset = 470
-				#entity_offset_height = 20
+				#entity_offset = 470
+				entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_02
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					angle = 300
+					distance = 470
 				}
 			}
 		}
@@ -109,16 +125,24 @@ eilistraee_event1_02_initializer = {
 			clear_deposits = yes
 			add_deposit = d_energy_3
 
+			# Evergloom Ripples
 			create_ambient_object = {
 				type = eos_evergloom_ripples
 				location = this
-				use_3d_location = yes
-				entity_offset_angle = 150
+				#use_3d_location = yes
+				#entity_offset_angle = 150
 				entity_face_object = this
-				entity_offset = 470
-				#entity_offset_height = 20
+				#entity_offset = 470
+				entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_03
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					angle = 60
+					distance = 470
 				}
 			}
 		}
@@ -505,7 +529,7 @@ eilistraee_event1_03_initializer = {
 	name = eilistraee_event1_03_initializer_name
 	class = sc_drow_binary_2
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_evergloom_cluster }
 	
 	init_effect = {
 	}
@@ -521,17 +545,25 @@ eilistraee_event1_03_initializer = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_energy_5
-			
+
+			# Evergloom Ripples
 			create_ambient_object = {
 				type = eos_evergloom_ripples
 				location = this
-				use_3d_location = yes
-				entity_offset_angle = 330
+				#use_3d_location = yes
+				#entity_offset_angle = 330
 				entity_face_object = this
-				entity_offset = 340
-				#entity_offset_height = 20
+				#entity_offset = 340
+				entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_04
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					angle = 240
+					distance = 340
 				}
 			}
 		}
@@ -548,17 +580,25 @@ eilistraee_event1_03_initializer = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_physics_4
-			
+
+			# Evergloom Ripples
 			create_ambient_object = {
 				type = eos_evergloom_ripples
 				location = this
-				use_3d_location = yes
-				entity_offset_angle = 130
+				#use_3d_location = yes
+				#entity_offset_angle = 130
 				entity_face_object = this
-				entity_offset = 290
-				#entity_offset_height = 20
+				#entity_offset = 290
+				entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_05
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					angle = 40
+					distance = 290
 				}
 			}
 		}
@@ -757,7 +797,7 @@ eilistraee_event1_04_initializer = {
 	name = eilistraee_event1_04_initializer_name
 	class = sc_drow_binary_1
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_evergloom_cluster }
 	
 	init_effect = {
 	}
@@ -773,17 +813,25 @@ eilistraee_event1_04_initializer = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_energy_5
-			
+
+			# Evergloom Ripples
 			create_ambient_object = {
 				type = eos_evergloom_ripples
 				location = this
-				use_3d_location = yes
-				entity_offset_angle = 310
+				#use_3d_location = yes
+				#entity_offset_angle = 310
 				entity_face_object = this
-				entity_offset = 295
-				#entity_offset_height = 20
+				#entity_offset = 295
+				entity_offset_height = -20
 				effect = {
 					set_ambient_object_flag = eos_evergloom_ripples_06
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					angle = 220
+					distance = 295
 				}
 			}
 		}
@@ -955,7 +1003,7 @@ eilistraee_event1_05_initializer = {
 	name = eilistraee_event1_05_initializer_name
 	class = sc_black_hole
 
-	flags = { custom_system conduit_excluded eos_anorim_event_system eos_anorim_cursed_cluster }
+	flags = { custom_system conduit_excluded eos_anorim_event_system eos_evergloom_cluster }
 	
 	init_effect = {
 	}
