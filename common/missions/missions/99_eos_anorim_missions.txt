@@ -97,6 +97,9 @@ EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_03 = {
 	}
 
 	on_success = {
+		country_event = {
+			id = elven_anorim_origin_events.207
+		}
 	}
 }
 
@@ -121,5 +124,8 @@ EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_04 = {
 	}
 
 	on_success = {
+		country_event = {
+			id = elven_anorim_origin_events.209
+		}
 	}
 }

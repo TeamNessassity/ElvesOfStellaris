@@ -594,7 +594,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 5 (Through the Shattered Glass: Empty)
+# Part 2 Stage 5 (Through the Shattered Glass: Devoid)
 # Explain the Sensor Ghosts and clear the system
 country_event = {
 	id = elven_anorim_origin_events.205
@@ -639,7 +639,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 6 (Through the Shattered Glass: Faint)
+# Part 2 Stage 6 (Through the Shattered Glass: Dim)
 # Explain the history of the system and spawn the Starflayer
 country_event = {
 	id = elven_anorim_origin_events.206
@@ -709,8 +709,8 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 7 (Through the Shattered Glass: Dim)
-# Explain the Sensor Ghosts and clear the system
+# Part 2 Stage 7 (Through the Shattered Glass: Faint)
+# Explain the Starflayer and clear the system
 country_event = {
 	id = elven_anorim_origin_events.207
 	title = "elven_anorim_origin_events.207.name"
@@ -755,7 +755,7 @@ country_event = {
 }
 
 # Part 2 Stage 8 (Through the Shattered Glass: Glint)
-# Explain the history of the system and spawn the Sensor Ghosts
+# Explain the history of the system and spawn the Imperial Guard
 country_event = {
 	id = elven_anorim_origin_events.208
 	title = "elven_anorim_origin_events.208.name"
@@ -875,7 +875,7 @@ country_event = {
 }
 
 # Part 2 Stage 9 (Through the Shattered Glass: Flash)
-# Explain the Sensor Ghosts and clear the system
+# Explain the Imperial Guard and clear the system
 country_event = {
 	id = elven_anorim_origin_events.209
 	title = "elven_anorim_origin_events.209.name"
