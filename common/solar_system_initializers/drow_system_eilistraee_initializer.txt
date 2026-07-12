@@ -139,7 +139,7 @@ drow_system_eilistraee_initializer = {
 
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_society_2
+			add_deposit = d_minerals_2
 		}
 	}
 	
@@ -231,7 +231,7 @@ drow_system_eilistraee_initializer = {
 		
 		init_effect = {
 			clear_deposits = yes
-			add_deposit = d_engineering_2
+			add_deposit = d_energy_3
 		}
 		
 		moon = {

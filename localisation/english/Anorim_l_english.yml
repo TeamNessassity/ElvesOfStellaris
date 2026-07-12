@@ -186,18 +186,24 @@ EOS_LEADER_REQUIREMENT: "Has $COUNT$/$REQUIRED$ fleet(s) in orbit commanded by a
 EOS_NO_HOSTILES_REQUIREMENT: "No imminent danger."
 
 elven_anorim_origin_events.101.name:0 "Shattered Glass: Flickering Glimmer"
-elven_anorim_origin_events.101.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.101.a:0 "REPLACE_ME"
-elven_anorim_origin_events.101.b:0 "REPLACE_ME"
+elven_anorim_origin_events.101.desc:0 "For generations, we have drifted through the §Rall-encompassing darkness§! in search of a §Gdistant shimmer§!.\n\nWhen the journey began, no one knew whether the vibrant brilliance we kept dreaming of truly existed, let alone when or where beyond the tenebrous horizon, stretching out across infinity, it would be found.\n\nEven so, we were far too familiar with the death that lurked in the shadows. No matter how daunting the seemingly aimless search was, the pursuer on our heels was a far worse trial to confront.\nWith certain doom standing as the sole alternative, eventually faith became all we needed to push onwards.\n\nBut though none alive remember the mythical beginning of this odyssey, our refusal to forget its destination may have rewarded us at long last. Many are still too shaken to trust their eyes, yet... their hearts cannot deny the reignited spark of hope.\nWe have found the promised land, and with it, a monumental test of faith... For as the impending storm grows closer, we have chosen to stand our ground and face whatever comes.\n\nHere, all illusions shall shatter and lay the truth bare: is this but §Ran alluring flame for a flock of doomed moths§!, or..."
+elven_anorim_origin_events.101.a:0 "§G...a safe harbor that we can always return to?§!"
+elven_anorim_origin_events.101.b:0 "§G...an oasis that will nurture us henceforth?§!"
 
 elven_anorim_origin_events.102.name:0 "Shattered Glass: Fading Sheen"
-elven_anorim_origin_events.102.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.102.a:0 "REPLACE_ME"
-elven_anorim_origin_events.102.b:0 "REPLACE_ME"
+elven_anorim_origin_events.102.desc:0 "The screams have subsided and silence reigns...\n\nAs every other time, the $eos_galtaereth_color$ descended from $eos_galtaereth_her_color$ Enshrouded domain and raked stygian claws across the silken web, harvesting all the prey entrapped within...\n\nYet... grim silver lining though it may be, the harvest stopped abruptly this time; as if something distracted or perhaps repelled $eos_galtaereth_her_color$?\n\nEven many of those who found themselves outside of [anorim_star.GetName]'s immediate protection largely escaped alive, though not unscathed. Still... as the surviving [root.GetName] let out a collective sigh of relief that broke the lingering silence, the ember of hope we had carried for so long has at last sparked a flame!\n\nThe $eos_anoriel_color$'s promise was no mere bedtime story spun by our ancestors to stave off despair. We have beheld $eos_anoriel_her_color$ beauty and found salvation in its blinding radiance.\n\nAnd perhaps... that should be enough.\nPerhaps after millennia of holding onto a single thread of fate, we have already found all the salvation we could possibly have hoped for.\nAnd perhaps to ask for more would be no different from the greed that paved our forebears' path unto downfall...\m\mPerhaps... But these are questions best pondered with better clarity. For now, we shall allow our people to celebrate and mourn as they see fit."
+elven_anorim_origin_events.102.a:0 "The future is yet to come, but the present cannot wait."
+elven_anorim_origin_events.102.b:0 "The future is yet to come, but the present cannot wait."
+
+elven_anorim_origin_events.103.name:0 "Shattered Glass: Clouded Reflection"
+elven_anorim_origin_events.103.desc:0 "$eos_anoriel_she_color$ spoke to us.\n\nNot in words or even visions. Unlike the constant smothering menace of $eos_galtaereth_alias_color$, $eos_anoriel_alias_color$'s presence remains a faint, but reassuring, warmth which we can only experience in a reverie.\nNevertheless, for the first time since escaping our forsaken motherland, that sensation has... expressed something new; more intense, more profound than before.\n\nAlas, it it not for the lack of means that we cannot decipher the meaning of those dreams, but for... fear.\n\nMournful songs passed down to us, lament the many graces our once-proud kind has lost. Two among them, eternal life and the ease with which we once bent the Shroud to our will, are the ones we miss most dearly. One was ripped away from us by $eos_galtaereth_her_color$ hand, and the other... we shed of our own accord.\nCutting ourselves off from the Shroud allowed us to escape $eos_galtaereth_color$'s notice for long enough to slip out of her domain. But at the same time, we lost the ability to commune with $eos_anoriel_color$ as well...\n\nThe fact that $eos_anoriel_she_color$ speaks to us once more, but we remain deaf, is beginning to feel more painful than $eos_galtaereth_alias_color$'s curse of mortality.\nThough it may be a disquieting question to ask ourselves, ask it we must: can §Glonging for warmth§! overcome §Rfear of the cold§!?"
+elven_anorim_origin_events.103.a:0 "Is incompleteness truly preferable to nihility?"
+elven_anorim_origin_events.103.a:0 "Is incompleteness truly preferable to nihility?"
 
 elven_anorim_origin_events.201.name:0 "Shattered Glass: Creeping Gloom"
 elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
 elven_anorim_origin_events.201.a:0 "REPLACE_ME"
+elven_anorim_origin_events.201.b:0 "REPLACE_ME"
 
 elven_anorim_origin_events.202.name:0 "Shattered Glass: Deepening Penumbra"
 elven_anorim_origin_events.202.desc:0 "REPLACE_ME"

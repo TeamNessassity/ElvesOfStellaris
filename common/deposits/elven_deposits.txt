@@ -242,9 +242,9 @@ d_elven_anorim_anoriel = {
 	resources = {
 		category = orbital_research_deposits
 		produces = {
-			physics_research = 3
-			society_research = 3
-			engineering_research = 3
+			physics_research = 5
+			society_research = 5
+			engineering_research = 5
 		}
 	}
 	triggered_planet_modifier = {

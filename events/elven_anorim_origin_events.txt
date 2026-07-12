@@ -38,7 +38,7 @@ country_event = {
 	}
 }
 
-# Stage 1 (Flickering Glimmer)
+# Part 1 Stage 1 (Flickering Glimmer)
 # Intro. Introduce and explain the situation.
 country_event = {
 	id = elven_anorim_origin_events.101
@@ -88,7 +88,7 @@ country_event = {
 				target = event_target:anorim_anoriel
 				effect = {
 					save_event_target_as = eos_anorim_situation_galtaereth
-					add_situation_progress = 300
+					add_situation_progress = 600
 				}
 			}
 		}
@@ -117,7 +117,7 @@ country_event = {
 	}
 }
 
-# Stage 2 (Fading Sheen)
+# Part 1 Stage 2 (Fading Sheen)
 # First-time Dark Tithe completion. Explain what just happened.
 country_event = {
 	id = elven_anorim_origin_events.102
@@ -142,8 +142,9 @@ country_event = {
 				value = 2
 			}
 		}
-		enable_mission = {
-			name = EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION
+		country_event = {
+			id = elven_anorim_origin_events.103
+			days = 30
 		}
 	}
 	
@@ -155,6 +156,44 @@ country_event = {
 	}
 	option = {
 		name = elven_anorim_origin_events.102.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 1 Stage 3 (Clouded Reflection)
+# First-time Dark Tithe completion. Explain what just happened.
+country_event = {
+	id = elven_anorim_origin_events.103
+	title = "elven_anorim_origin_events.103.name"
+	desc = "elven_anorim_origin_events.103.desc"
+	picture = GFX_evt_cosmic_storms_particle_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		enable_mission = {
+			name = EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.103.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.103.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -1650,7 +1689,7 @@ planet_event = {
 							}
 						}
 						while = {
-							count = 6
+							count = 8
 							create_ship = {
 								name = random
 								design = "NAME_Wraith"

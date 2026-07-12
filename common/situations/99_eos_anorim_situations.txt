@@ -31,6 +31,11 @@ eos_anorim_situation_galtaereth = {
 			end = 500
 
 			triggered_modifier = {
+				logistic_growth_mult = -0.10
+				leader_lifespan_add = -10
+				ship_speed_mult = 0.10
+				council_agenda_progress_speed = 0.10
+				council_agenda_early_activation_cost_mult = -0.10
 			}
 		}
 		eos_anorim_situation_galtaereth_stage_2 = {
@@ -39,8 +44,11 @@ eos_anorim_situation_galtaereth = {
 			end = 800
 
 			triggered_modifier = {
-				logistic_growth_mult = -0.10
-				ship_speed_mult = 0.10
+				logistic_growth_mult = -0.20
+				leader_lifespan_add = -20
+				ship_speed_mult = 0.20
+				council_agenda_progress_speed = 0.20
+				council_agenda_early_activation_cost_mult = -0.20
 			}
 		}
 		eos_anorim_situation_galtaereth_stage_3 = {
@@ -50,7 +58,10 @@ eos_anorim_situation_galtaereth = {
 
 			triggered_modifier = {
 				logistic_growth_mult = -0.30
+				leader_lifespan_add = -30
 				ship_speed_mult = 0.30
+				council_agenda_progress_speed = 0.30
+				council_agenda_early_activation_cost_mult = -0.30
 			}
 		}
 	}
