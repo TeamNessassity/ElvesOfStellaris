@@ -188,10 +188,11 @@ eilistraee_event1_02_initializer = {
 			name = eilistraee_event1_planet_bvecko_name
 			class = pc_shattered
 			orbit_distance = 25
+			orbit_angle = 160
 			size = 11
 			has_ring = no
 
-			flags = { suppress_archaeological_sites }
+			flags = { suppress_archaeological_sites eos_evergloom_02_spawn_A }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -541,6 +542,8 @@ eilistraee_event1_03_initializer = {
 		orbit_angle = 0
 		size = 55
 
+		flags = { eos_evergloom_03_spawn_A }
+
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
@@ -860,7 +863,7 @@ eilistraee_event1_04_initializer = {
 			orbit_angle = random
 			size = 22
 
-			flags = { suppress_archaeological_sites }
+			flags = { suppress_archaeological_sites eos_evergloom_04_spawn_A }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -873,7 +876,7 @@ eilistraee_event1_04_initializer = {
 			class = "pc_toxic"
 			name = eilistraee_event1_planet_inthurosa_name
 			orbit_distance = 8
-			orbit_angle = { min = 90 max = 270 }
+			orbit_angle = 120
 			size = 16
 
 			flags = { suppress_archaeological_sites }
@@ -894,6 +897,13 @@ eilistraee_event1_04_initializer = {
 		size = 10
 
 		init_effect = {
+			if = {
+				limit = {
+					NOT = { exists = event_target:anorim_renoriden }
+				}
+				save_global_event_target_as = anorim_renoriden
+			}
+
 			prevent_anomaly = yes
 			clear_deposits = yes
 			add_deposit = d_physics_4
@@ -906,7 +916,7 @@ eilistraee_event1_04_initializer = {
 			orbit_angle = 90
 			size = 6
 
-			flags = { suppress_archaeological_sites }
+			flags = { suppress_archaeological_sites eos_evergloom_04_spawn_B }
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -956,7 +966,7 @@ eilistraee_event1_04_initializer = {
 		class = "pc_asteroid"
 		name = eilistraee_event1_planet_menelondo_drai_name
 		orbit_distance = 0
-		orbit_angle = { min = 45 max = 90 }
+		orbit_angle = 80
 
 		flags = { suppress_archaeological_sites }
 
@@ -971,9 +981,9 @@ eilistraee_event1_04_initializer = {
 		class = "pc_asteroid"
 		name = eilistraee_event1_planet_menelondo_larya_name
 		orbit_distance = 0
-		orbit_angle = { min = 45 max = 90 }
+		orbit_angle = 60
 
-		flags = { suppress_archaeological_sites }
+		flags = { suppress_archaeological_sites eos_evergloom_04_spawn_C }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -986,7 +996,7 @@ eilistraee_event1_04_initializer = {
 		class = "pc_asteroid"
 		name = eilistraee_event1_planet_menelondo_queni_name
 		orbit_distance = 0
-		orbit_angle = { min = 45 max = 90 }
+		orbit_angle = 120
 
 		flags = { suppress_archaeological_sites }
 
@@ -1027,11 +1037,34 @@ eilistraee_event1_05_initializer = {
 
 			prevent_anomaly = yes
 			clear_deposits = yes
+			add_deposit = d_elven_anorim_galtaereth
 
 			set_planet_entity = {
 				entity = elven_red_purple_black_hole_entity
                 picture = pc_elven_red_purple_black_hole
             }
+
+			# Abyssal Tear
+			create_ambient_object = {
+				type = "eos_evergloom_tear"
+				location = this
+				scale = 4.0
+				#entity_offset_height = { min = -0 max = -20 }
+				entity_face_object = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 60
+					angle = 60
+				}
+				if = {
+					limit = {
+						NOT = { exists = event_target:anorim_tear }
+					}
+					save_global_event_target_as = anorim_tear
+				}
+			}
 
 			# Dyson Sphere Debris
 			create_ambient_object = {
@@ -1333,7 +1366,7 @@ eilistraee_event1_05_initializer = {
 		size = 30
 		has_ring = yes
 
-		flags = { suppress_archaeological_sites }
+		flags = { suppress_archaeological_sites eos_evergloom_05_spawn_A }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1405,7 +1438,7 @@ eilistraee_event1_05_initializer = {
 		size = 18
 		has_ring = no
 
-		flags = { suppress_archaeological_sites }
+		flags = { suppress_archaeological_sites eos_evergloom_05_spawn_B }
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -1523,7 +1556,7 @@ eilistraee_event1_05_initializer = {
 		size = 24
 		has_ring = no
 
-		flags = { suppress_archaeological_sites }
+		flags = { suppress_archaeological_sites eos_evergloom_05_spawn_C }
 
 		init_effect = {
 			prevent_anomaly = yes

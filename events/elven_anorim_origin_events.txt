@@ -38,7 +38,7 @@ country_event = {
 	}
 }
 
-# Stage 1 (Through the Shattered Glass: Glimmer)
+# Stage 1 (Flickering Glimmer)
 # Intro. Introduce and explain the situation.
 country_event = {
 	id = elven_anorim_origin_events.101
@@ -117,7 +117,7 @@ country_event = {
 	}
 }
 
-# Stage 2 (Through the Shattered Glass: Flicker)
+# Stage 2 (Fading Sheen)
 # First-time Dark Tithe completion. Explain what just happened.
 country_event = {
 	id = elven_anorim_origin_events.102
@@ -195,7 +195,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 1 (Through the Shattered Glass: Gloom)
+# Part 2 Stage 1 (Creeping Gloom)
 # Begin the second part of the event chain. Create the old home cluster and increase the intensity of Dark Tithe
 country_event = {
 	id = elven_anorim_origin_events.201
@@ -214,7 +214,7 @@ country_event = {
 		if = {
 			limit = {
 				# Only one Cursed Cluster per galaxy!	
-				NOT = { exists = event_target:anorim_cursed_cluster_01 }
+				NOT = { exists = event_target:anorim_evergloom_cluster_01 }
 			}
 
 			# Spawn the Evergloom systems
@@ -232,7 +232,7 @@ country_event = {
 					initializer = eilistraee_event1_01_initializer
 					hyperlane = no
 					effect = {
-						save_global_event_target_as = anorim_cursed_cluster_01
+						save_global_event_target_as = anorim_evergloom_cluster_01
 						add_modifier = { modifier = eos_nebula_evergloom }
 						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
@@ -240,7 +240,7 @@ country_event = {
 					}
 				}
 			}
-			event_target:anorim_cursed_cluster_01 = {
+			event_target:anorim_evergloom_cluster_01 = {
 				spawn_system = {
 					min_distance >= 20
 					max_distance <= 30
@@ -249,7 +249,7 @@ country_event = {
 					initializer = eilistraee_event1_02_initializer
 					hyperlane = no
 					effect = {
-						save_global_event_target_as = anorim_cursed_cluster_02
+						save_global_event_target_as = anorim_evergloom_cluster_02
 						add_modifier = { modifier = eos_nebula_evergloom }
 						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
@@ -257,7 +257,7 @@ country_event = {
 					}
 				}
 			}
-			event_target:anorim_cursed_cluster_02 = {
+			event_target:anorim_evergloom_cluster_02 = {
 				spawn_system = {
 					min_distance >= 18
 					max_distance <= 26
@@ -266,7 +266,7 @@ country_event = {
 					initializer = eilistraee_event1_03_initializer
 					hyperlane = no
 					effect = {
-						save_global_event_target_as = anorim_cursed_cluster_03
+						save_global_event_target_as = anorim_evergloom_cluster_03
 						add_modifier = { modifier = eos_nebula_evergloom }
 						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
@@ -274,7 +274,7 @@ country_event = {
 					}
 				}
 			}
-			event_target:anorim_cursed_cluster_03 = {
+			event_target:anorim_evergloom_cluster_03 = {
 				spawn_system = {
 					min_distance >= 15
 					max_distance <= 25
@@ -283,7 +283,7 @@ country_event = {
 					initializer = eilistraee_event1_04_initializer
 					hyperlane = no
 					effect = {
-						save_global_event_target_as = anorim_cursed_cluster_04
+						save_global_event_target_as = anorim_evergloom_cluster_04
 						add_modifier = { modifier = eos_nebula_evergloom }
 						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
@@ -291,7 +291,7 @@ country_event = {
 					}
 				}
 			}
-			event_target:anorim_cursed_cluster_04 = {
+			event_target:anorim_evergloom_cluster_04 = {
 				spawn_system = {
 					min_distance >= 60
 					max_distance <= 64
@@ -300,7 +300,7 @@ country_event = {
 					initializer = eilistraee_event1_05_initializer
 					hyperlane = no
 					effect = {
-						save_global_event_target_as = anorim_cursed_cluster_05
+						save_global_event_target_as = anorim_evergloom_cluster_05
 						add_modifier = { modifier = eos_nebula_evergloom }
 						# Hacky workarounds to prevent exploits
 						set_star_flag = lcluster
@@ -309,7 +309,7 @@ country_event = {
 				}
 			}
 
-			event_target:anorim_cursed_cluster_03 = {
+			event_target:anorim_evergloom_cluster_03 = {
 				create_nebula = {
 					name = eos_nebula_evergloom
 					radius = 62
@@ -320,7 +320,7 @@ country_event = {
 				}
 			}
 
-			event_target:anorim_cursed_cluster_05 = {
+			event_target:anorim_evergloom_cluster_05 = {
 				create_nebula = {
 					name = eos_nebula_evergloom
 					radius = 10
@@ -352,8 +352,8 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 2 (Through the Shattered Glass: Penumbra)
-# Introduce the Evergleam Mirror network and connect its first node to Ruinous Release
+# Part 2 Stage 2 (Deepening Penumbra)
+# Introduce the Evergleam Prism network and connect its first node to Ruinous Release
 country_event = {
 	id = elven_anorim_origin_events.202
 	title = "elven_anorim_origin_events.202.name"
@@ -383,7 +383,7 @@ country_event = {
 					}
 				}
 			}
-			event_target:anorim_cursed_cluster_01 = {
+			event_target:anorim_evergloom_cluster_01 = {
 				random_system_planet = {
 					limit = {
 						is_planet_class = pc_black_hole
@@ -391,9 +391,10 @@ country_event = {
 					eos_evergleam_create_node = yes
 				}
 			}
+			add_seen_bypass_type = eos_evergleam_wormhole
+
 			set_country_flag = encountered_first_wormhole
 			add_seen_bypass_type = wormhole
-			add_seen_bypass_type = eos_evergleam_wormhole
 		}
 		create_point_of_interest = {
 			id = elven_anorim_prismatic_refuge_wormhole_poi
@@ -404,7 +405,7 @@ country_event = {
 		}
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
-			location = event_target:anorim_cursed_cluster_01.star
+			location = event_target:anorim_evergloom_cluster_01.star
 		}
 	}
 	
@@ -422,7 +423,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 3 (Through the Shattered Glass: Eclipse)
+# Part 2 Stage 3 (Encroaching Shade)
 # Explain how Evergloom Ripples work and issue Special Projects to investigate them
 country_event = {
 	id = elven_anorim_origin_events.203
@@ -441,7 +442,7 @@ country_event = {
 	}
 
 	after = {
-		event_target:anorim_cursed_cluster_01 = {
+		event_target:anorim_evergloom_cluster_01 = {
 			random_ambient_object = {
 				limit = {
 					is_ambient_object_type = eos_evergloom_ripples
@@ -454,7 +455,7 @@ country_event = {
 				}
 			}
 		}
-		event_target:anorim_cursed_cluster_02 = {
+		event_target:anorim_evergloom_cluster_02 = {
 			random_ambient_object = {
 				limit = {
 					is_ambient_object_type = eos_evergloom_ripples
@@ -467,7 +468,7 @@ country_event = {
 				}
 			}
 		}
-		event_target:anorim_cursed_cluster_03 = {
+		event_target:anorim_evergloom_cluster_03 = {
 			random_ambient_object = {
 				limit = {
 					is_ambient_object_type = eos_evergloom_ripples
@@ -483,7 +484,7 @@ country_event = {
 
 		# No threats in the first system, so ripples can be investigated immediately
 		hidden_effect = {
-			event_target:anorim_cursed_cluster_01 = {
+			event_target:anorim_evergloom_cluster_01 = {
 				set_star_flag = eos_evergloom_cleared
 			}
 		}
@@ -508,7 +509,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 4 (Through the Shattered Glass: Lightless)
+# Part 2 Stage 4 (Swelling Eclipse)
 # Explain the history of the system and spawn the Sensor Ghosts
 country_event = {
 	id = elven_anorim_origin_events.204
@@ -525,50 +526,14 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			# Spawn the Sensor Ghost tutorial fleet
-			eos_evergloom_create_country = yes
-			establish_communications_no_message = event_target:eos_evergloom_hostiles_country
-
-			create_fleet = {
-				name = "NAME_Wraith"
-				settings = {
-					spawn_debris = no
+			#Spawn fleets where appropriate
+			event_target:anorim_evergloom_cluster_02 = {
+				every_system_planet = {
+					planet_event = {
+						id = elven_anorim_origin_events.230
+					}
 				}
-				effect = {
-					set_owner = event_target:eos_evergloom_hostiles_country
-					set_fleet_flag = eos_evergloom_hostiles_fleet
-
-					while = {
-						count = 1
-						create_ship = {
-							name = random
-							design = "NAME_Revenant"
-							graphical_culture = "extra_dimensional_02"
-						}
-					}
-					while = {
-						count = 2
-						create_ship = {
-							name = random
-							design = "NAME_Phantom"
-							graphical_culture = "extra_dimensional_02"
-						}
-					}
-					while = {
-						count = 3
-						create_ship = {
-							name = random
-							design = "NAME_Wraith"
-							graphical_culture = "extra_dimensional_02"
-						}
-					}
-
-					set_fleet_stance = aggressive
-					set_aggro_range = 500
-					set_aggro_range_measure_from = self
-
-					set_location = event_target:anorim_cursed_cluster_02.star
-				}
+				set_star_flag = eos_evergloom_objectives_spawned
 			}
 		}
 	}
@@ -576,7 +541,7 @@ country_event = {
 	after = {
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_02
-			location = event_target:anorim_cursed_cluster_02.star
+			location = event_target:anorim_evergloom_cluster_02.star
 		}
 	}
 	
@@ -594,7 +559,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 5 (Through the Shattered Glass: Devoid)
+# Part 2 Stage 5 (Tenebrous Void)
 # Explain the Sensor Ghosts and clear the system
 country_event = {
 	id = elven_anorim_origin_events.205
@@ -614,7 +579,7 @@ country_event = {
 
 	after = {
 		hidden_effect = {
-			event_target:anorim_cursed_cluster_02 = {
+			event_target:anorim_evergloom_cluster_02 = {
 				set_star_flag = eos_evergloom_cleared
 			}
 		}
@@ -639,7 +604,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 6 (Through the Shattered Glass: Dim)
+# Part 2 Stage 6 (Distant Twinkle)
 # Explain the history of the system and spawn the Starflayer
 country_event = {
 	id = elven_anorim_origin_events.206
@@ -656,34 +621,14 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			# Spawn the Sensor Ghost tutorial fleet
-			eos_evergloom_create_country = yes
-			establish_communications_no_message = event_target:eos_evergloom_hostiles_country
-
-			create_fleet = {
-				name = "NAME_Revenant"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = event_target:eos_evergloom_hostiles_country
-					set_fleet_flag = eos_evergloom_hostiles_fleet
-
-					while = {
-						count = 1
-						create_ship = {
-							name = random
-							design = "NAME_Revenant"
-							graphical_culture = "extra_dimensional_02"
-						}
+			#Spawn fleets where appropriate
+			event_target:anorim_evergloom_cluster_03 = {
+				every_system_planet = {
+					planet_event = {
+						id = elven_anorim_origin_events.230
 					}
-
-					set_fleet_stance = aggressive
-					set_aggro_range = 500
-					set_aggro_range_measure_from = self
-
-					set_location = event_target:anorim_cursed_cluster_03.star
 				}
+				set_star_flag = eos_evergloom_objectives_spawned
 			}
 		}
 	}
@@ -691,7 +636,7 @@ country_event = {
 	after = {
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_03
-			location = event_target:anorim_cursed_cluster_03.star
+			location = event_target:anorim_evergloom_cluster_03.star
 		}
 	}
 	
@@ -709,7 +654,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 7 (Through the Shattered Glass: Faint)
+# Part 2 Stage 7 (Faint Shimmer)
 # Explain the Starflayer and clear the system
 country_event = {
 	id = elven_anorim_origin_events.207
@@ -729,7 +674,7 @@ country_event = {
 
 	after = {
 		hidden_effect = {
-			event_target:anorim_cursed_cluster_03 = {
+			event_target:anorim_evergloom_cluster_03 = {
 				set_star_flag = eos_evergloom_cleared
 			}
 		}
@@ -754,7 +699,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 8 (Through the Shattered Glass: Glint)
+# Part 2 Stage 8 (Dim Glint)
 # Explain the history of the system and spawn the Imperial Guard
 country_event = {
 	id = elven_anorim_origin_events.208
@@ -771,84 +716,14 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			# Spawn the Imperial Guard fleets
-			eos_evergloom_create_country = yes
-			establish_communications_no_message = event_target:eos_evergloom_hostiles_country
-
-			create_fleet = {
-				name = "NAME_Revenant"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = event_target:eos_evergloom_hostiles_country
-					set_fleet_flag = eos_evergloom_hostiles_fleet
-
-					while = {
-						count = 1
-						create_ship = {
-							name = random
-							design = "NAME_Revenant"
-							graphical_culture = "extra_dimensional_02"
-						}
+			#Spawn fleets where appropriate
+			event_target:anorim_evergloom_cluster_04 = {
+				every_system_planet = {
+					planet_event = {
+						id = elven_anorim_origin_events.230
 					}
-
-					set_fleet_stance = aggressive
-					set_aggro_range = 500
-					set_aggro_range_measure_from = self
-
-					set_location = event_target:anorim_cursed_cluster_04.star
 				}
-			}
-			create_fleet = {
-				name = "NAME_Revenant"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = event_target:eos_evergloom_hostiles_country
-					set_fleet_flag = eos_evergloom_hostiles_fleet
-
-					while = {
-						count = 1
-						create_ship = {
-							name = random
-							design = "NAME_Revenant"
-							graphical_culture = "extra_dimensional_02"
-						}
-					}
-
-					set_fleet_stance = aggressive
-					set_aggro_range = 500
-					set_aggro_range_measure_from = self
-
-					set_location = event_target:anorim_cursed_cluster_04.star
-				}
-			}
-			create_fleet = {
-				name = "NAME_Revenant"
-				settings = {
-					spawn_debris = no
-				}
-				effect = {
-					set_owner = event_target:eos_evergloom_hostiles_country
-					set_fleet_flag = eos_evergloom_hostiles_fleet
-
-					while = {
-						count = 1
-						create_ship = {
-							name = random
-							design = "NAME_Revenant"
-							graphical_culture = "extra_dimensional_02"
-						}
-					}
-
-					set_fleet_stance = aggressive
-					set_aggro_range = 500
-					set_aggro_range_measure_from = self
-
-					set_location = event_target:anorim_cursed_cluster_04.star
-				}
+				set_star_flag = eos_evergloom_objectives_spawned
 			}
 		}
 	}
@@ -856,7 +731,7 @@ country_event = {
 	after = {
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_04
-			location = event_target:anorim_cursed_cluster_04.star
+			location = event_target:anorim_evergloom_cluster_04.star
 		}
 	}
 	
@@ -874,7 +749,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 9 (Through the Shattered Glass: Flash)
+# Part 2 Stage 9 (Fleeting Shimmer)
 # Explain the Imperial Guard and clear the system
 country_event = {
 	id = elven_anorim_origin_events.209
@@ -894,7 +769,7 @@ country_event = {
 
 	after = {
 		hidden_effect = {
-			event_target:anorim_cursed_cluster_04 = {
+			event_target:anorim_evergloom_cluster_04 = {
 				set_star_flag = eos_evergloom_cleared
 			}
 		}
@@ -919,7 +794,7 @@ country_event = {
 	}
 }
 
-# Part 2 Stage 10 (Through the Shattered Glass: Spark)
+# Part 2 Stage 10 (Evanescent Flash)
 # Conclude exploration and issue a project to access the final system
 country_event = {
 	id = elven_anorim_origin_events.2010
@@ -944,6 +819,13 @@ country_event = {
 	}
 
 	after = {
+		event_target:anorim_renoriden = {
+			enable_special_project = {
+				name = EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_04_GATE_PROJECT
+				owner = root
+				location = this
+			}
+		}
 	}
 	
 	option = {
@@ -980,20 +862,20 @@ ship_event = {
 				trigger = has_ambient_object_flag
 				eos_evergloom_ripples_01 = {
 					add_hyperlane = {
-						from = event_target:anorim_cursed_cluster_01
-						to = event_target:anorim_cursed_cluster_02
+						from = event_target:anorim_evergloom_cluster_01
+						to = event_target:anorim_evergloom_cluster_02
 					}
 				}
 				eos_evergloom_ripples_03 = {
 					add_hyperlane = {
-						from = event_target:anorim_cursed_cluster_02
-						to = event_target:anorim_cursed_cluster_03
+						from = event_target:anorim_evergloom_cluster_02
+						to = event_target:anorim_evergloom_cluster_03
 					}
 				}
 				eos_evergloom_ripples_05 = {
 					add_hyperlane = {
-						from = event_target:anorim_cursed_cluster_03
-						to = event_target:anorim_cursed_cluster_04
+						from = event_target:anorim_evergloom_cluster_03
+						to = event_target:anorim_evergloom_cluster_04
 					}
 				}
 			}
@@ -1028,31 +910,38 @@ ship_event = {
 		from = {
 			switch = {
 				trigger = is_same_value
-				event_target:anorim_cursed_cluster_01 = {
+				event_target:anorim_evergloom_cluster_01 = {
 					fromfrom = {
 						country_event = {
 							id = elven_anorim_origin_events.203
 						}
 					}
 				}
-				event_target:anorim_cursed_cluster_02 = {
+				event_target:anorim_evergloom_cluster_02 = {
 					fromfrom = {
 						country_event = {
 							id = elven_anorim_origin_events.204
 						}
 					}
 				}
-				event_target:anorim_cursed_cluster_03 = {
+				event_target:anorim_evergloom_cluster_03 = {
 					fromfrom = {
 						country_event = {
 							id = elven_anorim_origin_events.206
 						}
 					}
 				}
-				event_target:anorim_cursed_cluster_04 = {
+				event_target:anorim_evergloom_cluster_04 = {
 					fromfrom = {
 						country_event = {
 							id = elven_anorim_origin_events.208
+						}
+					}
+				}
+				event_target:anorim_evergloom_cluster_05 = {
+					fromfrom = {
+						country_event = {
+							id = elven_anorim_origin_events.302
 						}
 					}
 				}
@@ -1082,7 +971,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					event_target:anorim_cursed_cluster_02 = {
+					event_target:anorim_evergloom_cluster_02 = {
+						has_star_flag = eos_evergloom_objectives_spawned
 						count_fleet_in_system = {
 							limit = {
 								has_fleet_flag = eos_evergloom_hostiles_fleet
@@ -1103,7 +993,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					event_target:anorim_cursed_cluster_03 = {
+					event_target:anorim_evergloom_cluster_03 = {
+						has_star_flag = eos_evergloom_objectives_spawned
 						count_fleet_in_system = {
 							limit = {
 								has_fleet_flag = eos_evergloom_hostiles_fleet
@@ -1124,7 +1015,30 @@ country_event = {
 			}
 			if = {
 				limit = {
-					event_target:anorim_cursed_cluster_04 = {
+					event_target:anorim_evergloom_cluster_04 = {
+						has_star_flag = eos_evergloom_objectives_spawned
+						count_fleet_in_system = {
+							limit = {
+								has_fleet_flag = eos_evergloom_hostiles_fleet
+							}
+							count = 0
+						}
+					}
+				}
+				add_mission_counter = {
+					counter = EOS_ANORIM_CLEAR_SYSTEM
+					amount = 1
+				}
+			}
+		}
+		every_owned_mission = {
+			limit = {
+				is_mission_type = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_05
+			}
+			if = {
+				limit = {
+					event_target:anorim_evergloom_cluster_05 = {
+						has_star_flag = eos_evergloom_objectives_spawned
 						count_fleet_in_system = {
 							limit = {
 								has_fleet_flag = eos_evergloom_hostiles_fleet
@@ -1190,14 +1104,194 @@ ship_event = {
 				set_location = event_target:anorim_escape_fallback
 			}
 		}
+	}
 
+	after = {
 		set_disabled = no
 		remove_ship_flag = disabled_by_gatekeeper_event
 	}
 }
 
+# Part 2 Enemy Spawns
+# Spawn the hostile fleets at their appropriate locations
+planet_event = {
+	id = elven_anorim_origin_events.230
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		eos_evergloom_create_country = yes
+
+		switch = {
+			trigger = has_planet_flag
+			eos_evergloom_02_spawn_A = {
+				# Spawn the Sensor Ghosts
+				create_fleet = {
+					name = "NAME_Wraith"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 12
+							create_ship = {
+								name = random
+								design = "NAME_Wraith"
+								graphical_culture = "extra_dimensional_02"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_03_spawn_A = {
+				# Spawn the Starflayer
+				create_fleet = {
+					name = "NAME_Stellar_Devourer"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 1
+							create_ship = {
+								name = "NAME_Stellar_Devourer"
+								design = "NAME_Stellarite"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_04_spawn_A = {
+				# Spawn the Escorts and Sensor Ghosts
+				create_fleet = {
+					name = "NAME_Glory"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 4
+							create_ship = {
+								name = random
+								design = "NAME_Glory"
+								graphical_culture = "fallen_empire_04"
+							}
+						}
+						while = {
+							count = 8
+							create_ship = {
+								name = random
+								design = "NAME_Wraith"
+								graphical_culture = "extra_dimensional_02"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_04_spawn_B = {
+				# Spawn the Titan
+				create_fleet = {
+					name = "NAME_Imperium"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 1
+							create_ship = {
+								name = random
+								design = "NAME_Imperium"
+								graphical_culture = "fallen_empire_04"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_04_spawn_C = {
+				# Spawn the Battlecruisers and Sensor Ghosts
+				create_fleet = {
+					name = "NAME_Supremacy"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 2
+							create_ship = {
+								name = random
+								design = "NAME_Supremacy"
+								graphical_culture = "fallen_empire_04"
+							}
+						}
+						while = {
+							count = 4
+							create_ship = {
+								name = random
+								design = "NAME_Wraith"
+								graphical_culture = "extra_dimensional_02"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+	}
+}
+
 # Part 3 Stage 0 (Gatekeeper Event)
-# Link up systems 04 and 05 to the Evergleam Mirror network and set up Part 3
+# Link up systems 04 and 05 to the Evergleam Prism network and set up Part 3
 country_event = {
 	id = elven_anorim_origin_events.300
 	hide_window = yes
@@ -1208,9 +1302,402 @@ country_event = {
 	}
 	
 	immediate = {
+		event_target:anorim_renoriden = {
+			eos_evergleam_create_node = yes
+		}
+		event_target:anorim_galtaereth = {
+			eos_evergleam_create_node = yes
+		}
 	}
 
 	after = {
+		country_event = {
+			id = elven_anorim_origin_events.301
+		}
+	}
+}
+
+# Part 3 Stage 1 (Lustrous Glare)
+# Issue special project to close the Abyssal Tear
+country_event = {
+	id = elven_anorim_origin_events.301
+	title = "elven_anorim_origin_events.301.name"
+	desc = "elven_anorim_origin_events.301.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		event_target:anorim_tear = {
+			enable_special_project = {
+				name = EOS_ANORIM_PRISMATIC_REFUGE_EVERGLOOM_TEAR_PROJECT
+				owner = root
+				location = this
+			}
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.301.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.301.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 3 Stage 2 (Fluttering Sparkle)
+# Introduce the system and start spawning Silkweaver enemies after a delay
+country_event = {
+	id = elven_anorim_origin_events.302
+	title = "elven_anorim_origin_events.302.name"
+	desc = "elven_anorim_origin_events.302.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+		hidden_effect = {
+			event_target:anorim_evergloom_cluster_05 = {
+				random_system_planet = {
+					limit = { has_planet_flag = eos_evergloom_05_spawn_A }
+					planet_event = {
+						id = elven_anorim_origin_events.331
+						days = 10
+					}
+				}
+				random_system_planet = {
+					limit = { has_planet_flag = eos_evergloom_05_spawn_B }
+					planet_event = {
+						id = elven_anorim_origin_events.331
+						days = 40
+					}
+				}
+				random_system_planet = {
+					limit = { has_planet_flag = eos_evergloom_05_spawn_C }
+					planet_event = {
+						id = elven_anorim_origin_events.331
+						days = 70
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+		enable_mission = {
+			name = EOS_ANORIM_PRISMATIC_REFUGE_CLEAR_EVERGLOOM_05
+			location = event_target:anorim_evergloom_cluster_05.star
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.303.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.303.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 3 Stage 3 (Shining Brilliance)
+# Silkweavers defeated, clear the system, intensify the Dark Tithe
+country_event = {
+	id = elven_anorim_origin_events.303
+	title = "elven_anorim_origin_events.303.name"
+	desc = "elven_anorim_origin_events.303.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:anorim_evergloom_cluster_05 = {
+				set_star_flag = eos_evergloom_cleared
+			}
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.303.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.303.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 3 Stage 4 (Scintillating Evergleam)
+# Finish the story, end the Dark Tithe, and grant ending rewards
+# Enable Evergleam Prism expansion and explain how it works
+country_event = {
+	id = elven_anorim_origin_events.304
+	title = "elven_anorim_origin_events.304.name"
+	desc = "elven_anorim_origin_events.304.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+		event_target:anorim_tear = {
+			destroy_ambient_object = this
+		}
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.304.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.304.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 3 Final Boss Fight
+# Spawn the Silkweavers and destroy their locations in a BIG BOOM
+# Because the spawns are staggered, only flag the system on the last one
+planet_event = {
+	id = elven_anorim_origin_events.330
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		eos_evergloom_create_country = yes
+
+		switch = {
+			trigger = has_planet_flag
+			eos_evergloom_05_spawn_A = {
+				# Spawn the first Silkweaver
+				create_fleet = {
+					name = "NAME_Dimensional_Horror"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 1
+							create_ship = {
+								name = "NAME_Dimensional_Horror"
+								design = "NAME_Dimensional_Horror"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_05_spawn_B = {
+				# Spawn the second Silkweaver
+				create_fleet = {
+					name = "NAME_Dimensional_Horror"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 1
+							create_ship = {
+								name = "NAME_Dimensional_Horror"
+								design = "NAME_Dimensional_Horror"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+				create_fleet = {
+					name = "NAME_Glory"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 4
+							create_ship = {
+								name = random
+								design = "NAME_Glory"
+								graphical_culture = "fallen_empire_04"
+							}
+						}
+						while = {
+							count = 6
+							create_ship = {
+								name = random
+								design = "NAME_Wraith"
+								graphical_culture = "extra_dimensional_02"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_05_spawn_C = {
+				# Spawn the final Silkweaver
+				create_fleet = {
+					name = "NAME_Dimensional_Horror"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 1
+							create_ship = {
+								name = "NAME_Dimensional_Horror"
+								design = "NAME_Dimensional_Horror"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+				create_fleet = {
+					name = "NAME_Supremacy"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 2
+							create_ship = {
+								name = random
+								design = "NAME_Supremacy"
+								graphical_culture = "fallen_empire_04"
+							}
+						}
+						while = {
+							count = 6
+							create_ship = {
+								name = random
+								design = "NAME_Wraith"
+								graphical_culture = "extra_dimensional_02"
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+
+				#Confirm all objectives spawned
+				event_target:anorim_evergloom_cluster_05 = {
+					set_star_flag = eos_evergloom_objectives_spawned
+				}
+			}
+		}
+	}
+
+	after = {
+	}
+}
+
+# Destory each planet first, and spawn the enemies a few days later
+planet_event = {
+	id = elven_anorim_origin_events.331
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		change_pc = pc_shattered
+		add_deposit = d_elven_alloys_10
+	}
+
+	after = {
+		planet_event = {
+			id = elven_anorim_origin_events.330
+			days = 10
+		}
 	}
 }
 

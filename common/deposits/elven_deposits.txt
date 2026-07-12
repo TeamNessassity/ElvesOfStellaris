@@ -141,6 +141,22 @@ d_elven_unity_1 = {
 	drop_weight = { weight = 0 }
 }
 
+d_elven_alloys_10 = {
+	icon = "unused/d_ruined_system"
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 10
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+	
+	drop_weight = { weight = 0 }
+}
+
+# Lunari Event Deposits
+
 d_elven_lunari_moon = {
 	resources = {
 		category = orbital_mining_deposits
@@ -238,6 +254,21 @@ d_elven_anorim_anoriel = {
 		station_gatherers_produces_mult = 1.0
 		station_researchers_produces_mult = 1.0
 		mult = eos_evergleam_network
+	}
+	station = shipclass_research_station
+	is_for_colonizable = no
+
+	drop_weight = { weight = 0 }
+}
+
+d_elven_anorim_galtaereth = {
+	icon = d_surreal_visions
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			sr_zro = 5
+			astral_threads = 5
+		}
 	}
 	station = shipclass_research_station
 	is_for_colonizable = no

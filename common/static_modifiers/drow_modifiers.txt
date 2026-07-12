@@ -20,28 +20,16 @@ drow_decimated_infrastructure = {
 	icon_frame = 3
 }
 
-drow_glowing_waters = {
-	#planet_migration_same_pull = 0.25
-	#tile_resource_society_research_mult = 0.05
-	#tile_resource_physics_research_mult = 0.05
-	#tile_resource_food_mult = -0.1
-	icon = "gfx/interface/icons/planet_modifiers/pm_drow_glowing_waters.dds"
-	icon_frame = 2
-}
-
 drow_trait_xenocidal_terror = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
 	icon_frame = 2
 	pop_ethic_xenophobe_attraction_mult = 0.50
 }
 
-# Eilistraeean duplicate for capital system planet.
-drow_strong_magnetic_field = {
-	#tile_resource_energy_mult = 0.05
-	#tile_resource_physics_research_mult = 0.05
-	
-	icon = "gfx/interface/icons/planet_modifiers/pm_strong_magnetic_field.dds"
-	icon_frame = 1
+# Evergleam Prism Buff
+eos_evergleam_shard = {
+	station_gatherers_produces_mult = 1.0
+	station_researchers_produces_mult = 1.0
 }
 
 ############################
@@ -50,7 +38,6 @@ drow_strong_magnetic_field = {
 
 eos_nebula_evergloom = {
 	ship_evasion_mult = 0.25
-	ship_weapon_range_mult = -0.25
 	damage_vs_psionic_empires_mult = -0.25
 	ship_speed_reduction = 0.5
 	ship_disengage_opportunities_add = -2

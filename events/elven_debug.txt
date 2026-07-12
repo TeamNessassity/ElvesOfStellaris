@@ -49,20 +49,20 @@ country_event = {
 
 	immediate = {
 		add_hyperlane = {
-			from = event_target:anorim_cursed_cluster_01
-			to = event_target:anorim_cursed_cluster_02
+			from = event_target:anorim_evergloom_cluster_01
+			to = event_target:anorim_evergloom_cluster_02
 		}
 		add_hyperlane = {
-			from = event_target:anorim_cursed_cluster_02
-			to = event_target:anorim_cursed_cluster_03
+			from = event_target:anorim_evergloom_cluster_02
+			to = event_target:anorim_evergloom_cluster_03
 		}
 		add_hyperlane = {
-			from = event_target:anorim_cursed_cluster_03
-			to = event_target:anorim_cursed_cluster_04
+			from = event_target:anorim_evergloom_cluster_03
+			to = event_target:anorim_evergloom_cluster_04
 		}
 		add_hyperlane = {
-			from = event_target:anorim_cursed_cluster_04
-			to = event_target:anorim_cursed_cluster_05
+			from = event_target:anorim_evergloom_cluster_04
+			to = event_target:anorim_evergloom_cluster_05
 		}
 	}
 }

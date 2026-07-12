@@ -432,6 +432,9 @@ d_elven_physics_4_society_4_desc:0 "$d_elven_physics_4_society_4$"
 d_elven_unity_1:0 "£unity£ +1\n"
 d_elven_unity_1_desc:0 "$d_elven_unity_1$"
 
+d_elven_alloys_10:0 "£alloys£ +10\n"
+d_elven_alloys_10_desc:0 "$d_elven_alloys_10$"
+
 d_elven_lunari_moon:0 "£energy£ +10"
 d_elven_lunari_moon_desc:0 "$d_elven_lunari_moon$"
 

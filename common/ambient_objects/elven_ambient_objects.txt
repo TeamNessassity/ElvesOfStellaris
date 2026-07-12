@@ -390,3 +390,12 @@ ambient_object = {
 	description = eos_evergloom_ripples_desc
 	tooltip = eos_evergloom_ripples_tooltip
 }
+
+ambient_object = {
+	name = "eos_evergloom_tear"
+	entity = "astral_scar_entity"
+	#selectable = yes
+	show_name = yes
+	description = eos_evergloom_tear_desc
+	tooltip = eos_evergloom_tear_tooltip
+}
