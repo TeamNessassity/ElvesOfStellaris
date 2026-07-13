@@ -160,7 +160,7 @@ elven_anorim_prismatic_refuge_wormhole_poi:0 "Access the $EOS_EVERGLEAM_WORMHOLE
 elven_anorim_prismatic_refuge_wormhole_poi_desc:0 "Within the mirror of recollection, time and space bend around memory, and all three converge. As we recall the paths we have walked, the lightyears between destinations disappear."
 
 EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION:0 "Master Psionic Traditions"
-EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud where $eos_galtaereth_she_color$ dwells, if we are to survive The Evergloom, we have no choice but to rearm ourselves with arcane knowledge."
+EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION_DESC:0 "Though many centuries have gone by since our kind has dared to peer into the Shroud where $eos_galtaereth_she_color$ dwells, if we are to have any hope of standing up to $eos_galtaereth_her_color$, we have no choice but to re-arm ourselves with arcane knowledge."
 EOS_ANORIM_PSIONIC_TRADITIONS_FINISHED:0 "Has all Psionic Traditions"
 EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM:0 "Explore $eos_nebula_evergloom$ Systems"
 EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM_DESC:0 "With our ancient arts restored, we were able to retrace the path of our exile and find §H$eos_nebula_evergloom$§! once more. Be that as it may, however, it is not home that we are returning to; far from it. Beyond this point lies $eos_galtaereth_her_color$ domain, and only nightmares dwell therein.\n\nNonetheless, brave it we must if we are to end the nightmares once and for all."
@@ -201,14 +201,14 @@ elven_anorim_origin_events.103.a:0 "Is incompleteness truly preferable to nihili
 elven_anorim_origin_events.103.a:0 "Is incompleteness truly preferable to nihility?"
 
 elven_anorim_origin_events.201.name:0 "Shattered Glass: Creeping Gloom"
-elven_anorim_origin_events.201.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.201.a:0 "REPLACE_ME"
-elven_anorim_origin_events.201.b:0 "REPLACE_ME"
+elven_anorim_origin_events.201.desc:0 "As expected, ever since we started the process of retracing our path to the Shroud, $eos_galtaereth_alias_color$'s shadow has grown deeper and heavier upon our souls.\n\nThis time, however, [root.GetSpeciesNamePlural] do not wade into the turbulent depths unprepared, alone or afraid. $eos_anoriel_she_color$ has sensed our longing and responded with warmth. For the first time in generations, we need not guess at $eos_anoriel_her_color$ intent, need not wonder at $eos_anoriel_her_color$ actions, need not question $eos_anoriel_her_color$ love.\n\nBecause now we understand. Because now we remember.\n\nThough the memories were not made by us, they belong to us, and as we peer deeply into the prism of rememberance, the truth becomes clear as crystal: §Ghope§! is not §Rgreed§!, §Glove§! is not §Rhunger§!, and §Ggrief§! is not §Remptiness§!.\n\nWe have been anchored by fear for long enough, always fleeing, yet stuck in place. Through the long exile, we survived. By finding shelter, we found the strength to rebuild. There is no question as to the next horizon ahead: the path to our freedom lies in taking it back from where we lost it. Where the original sin was conceived, divine blood was spilled, and where the open wound continues to fester to this day, bleeding malice over the stars.\n\n$eos_nebula_evergloom$."
+elven_anorim_origin_events.201.a:0 "Concealing scars will not undo the wounds underneath."
+elven_anorim_origin_events.201.b:0 "Concealing scars will not undo the wounds underneath."
 
 elven_anorim_origin_events.202.name:0 "Shattered Glass: Deepening Penumbra"
-elven_anorim_origin_events.202.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.202.a:0 "REPLACE_ME"
-elven_anorim_origin_events.202.b:0 "REPLACE_ME"
+elven_anorim_origin_events.202.desc:0 "It had taken us many centuries to reach the safe harbor of [anorim_star]; a path of twisted turns, gruelling challenges and countless dangers that had brought us to the brink of extinction time and time again. Every step of that soujourn was recorded in the databanks of our ancient arkship, maintained meticulously by generations of lost wanderers.\n\nBut retracing that route is not how we shall return to where it started. Besides coordinates and star charts, [root.GetName]'s path of exile lives on in our memory through tales, in songs, across canvas; the perfect record of a struggle that defied mortal fate. With the $eos_anoriel_color$'s guidance, we will gaze into the Prism and simply... remember all that we have never seen before. And as we remember, see it we shall for the first time."
+elven_anorim_origin_events.202.a:0 "In memories, years and lightyears alike mean naught."
+elven_anorim_origin_events.202.b:0 "In memories, years and lightyears alike mean naught."
 
 elven_anorim_origin_events.203.name:0 "Shattered Glass: Encroaching Shade"
 elven_anorim_origin_events.203.desc:0 "REPLACE_ME"
