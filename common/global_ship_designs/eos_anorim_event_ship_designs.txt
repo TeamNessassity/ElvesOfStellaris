@@ -13,6 +13,8 @@ ship_design = {
 	ship_size = large_ship_ed
 	is_event_design = yes
 
+	graphical_culture = "extra_dimensional_02"
+
 	section = {
 		template = "ed_large_warship_key"
 		slot = "mid"
@@ -93,6 +95,8 @@ ship_design = {
 	ship_size = medium_ship_ed
 	is_event_design = yes
 
+	graphical_culture = "extra_dimensional_02"
+
 	section = {
 		template = "ed_medium_warship_key"
 		slot = "mid"
@@ -157,6 +161,8 @@ ship_design = {
 	ship_size = small_ship_ed
 	is_event_design = yes
 
+	graphical_culture = "extra_dimensional_02"
+
 	section = {
 		template = "ed_warship_small_key"
 		slot = "mid"
@@ -207,6 +213,7 @@ ship_design = {
 ship_design = {
 	name = "eos_ship_design_evergloom_starflayer"
 	ship_size = stellarite
+	is_event_design = yes
 
 	section = {
 		template = "stellarite_key"
@@ -302,6 +309,7 @@ ship_design = {
 ship_design = {
 	name = "eos_ship_design_evergloom_silkweaver"
 	ship_size = dimensional_horror
+	is_event_design = yes
 
 	section = {
 		template = "DIMENSIONAL_HORROR_KEY"
@@ -388,6 +396,10 @@ ship_design = {
 ship_design = {
 	name = "eos_ship_design_evergloom_guard_titan"
 	ship_size = massive_ship_fallen_empire
+	is_event_design = yes
+
+	graphical_culture = "fallen_empire_04"
+
 	section = {
 		template = "fallen_empire_massive_warship_key"
 		slot = "mid"
@@ -566,16 +578,16 @@ ship_design = {
 	required_component="COMBAT_COMPUTER_ARTILLERY_ADVANCED"
 	required_component="TITAN_DARK_MATTER_REACTOR"
 	required_component="TITAN_SHIP_THRUSTER_5"
-
-	# For special buildable
-	is_special_buildable = yes
-	allow_buildable_trigger = is_fallen_empire_xenophobe
 }
 
 # FE Battlecruiser
 ship_design = {
 	name = "eos_ship_design_evergloom_guard_battlecruiser"
 	ship_size = large_ship_fallen_empire
+	is_event_design = yes
+	
+	graphical_culture = "fallen_empire_04"
+
 	section = {
 		template = "fallen_empire_large_warship_key"
 		slot = "mid"
@@ -671,16 +683,16 @@ ship_design = {
 	required_component="COMBAT_COMPUTER_LINE_ADVANCED"
 	required_component="BATTLESHIP_DARK_MATTER_REACTOR"
 	required_component="BATTLESHIP_SHIP_THRUSTER_5"
-
-	# For special buildable
-	is_special_buildable = yes
-	allow_buildable_trigger = is_fallen_empire_xenophobe
 }
 
 # FE Escort
 ship_design = {
 	name = "eos_ship_design_evergloom_guard_escort"
 	ship_size = small_ship_fallen_empire
+	is_event_design = yes
+	
+	graphical_culture = "fallen_empire_04"
+
 	section = {
 		template = "fallen_empire_warship_small_key"
 		slot = "mid"
@@ -762,8 +774,4 @@ ship_design = {
 	required_component="JUMP_DRIVE_1"
 	required_component="COMBAT_COMPUTER_PICKET_ADVANCED"
 	required_component="SHIP_THRUSTER_5"
-
-	# For special buildable
-	is_special_buildable = yes
-	allow_buildable_trigger = is_fallen_empire_xenophobe
 }

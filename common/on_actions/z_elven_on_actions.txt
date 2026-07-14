@@ -135,32 +135,11 @@ on_ship_disabled = {
 	}
 }
 
-# THIS = Fleet
-# FROM = System jumping to
-# FROMFROM = System jumped from
-on_entering_wormhole = {
+# This = damaged ship
+# From = attacker ship
+on_damage_taken = {
 	events = {
-	}
-}
-
-# A Megastructure has been built
-# Root = Country
-# From = Megastructure
-# FromFrom = System
-# FromFromFrom = Fleet
-on_megastructure_built = {
-	events = {
-		#elven_lhuren_origin_events.501
-	}
-}
-
-# A Megastructure has been upgraded
-# Root = Country
-# From = Megastructure
-# FromFrom = System
-on_megastructure_upgraded = {
-	events = {
-		#elven_lhuren_origin_events.501
+		elven_anorim_origin_events.332
 	}
 }
 

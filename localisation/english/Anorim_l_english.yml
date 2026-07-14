@@ -269,9 +269,9 @@ elven_anorim_origin_events.204.a:0 "Be on guard! Something is not addding up..."
 elven_anorim_origin_events.204.b:0 "Be on guard! Something is not addding up..."
 
 elven_anorim_origin_events.205.name:0 "Shattered Glass: Tenebrous Void"
-elven_anorim_origin_events.205.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.205.a:0 "REPLACE_ME"
-elven_anorim_origin_events.205.b:0 "REPLACE_ME"
+elven_anorim_origin_events.205.desc:0 "It was nothing.\n\nQuite literally, we were shooting at sensor hallucinations; phantom contacts with no discernible source or verifiable substance...\n\nThe anomalies seem to have subsided of their own accord for now, and neither our computers, nor scientists, nor the experiences of our ancestors can offer any explanations as to what might caused those errors.\n\nThough §H[anorim_evergloom_cluster_01.GetName]§! appears to be safe after all, perhaps as we proceed, we should be less trusting of our perception..."
+elven_anorim_origin_events.205.a:0 "Where we are going, we need more than eyes to see."
+elven_anorim_origin_events.205.b:0 "Where we are going, we need more than eyes to see."
 
 elven_anorim_origin_events.206.name:0 "Shattered Glass: Distant Twinkle"
 elven_anorim_origin_events.206.desc:0 "REPLACE_ME"
@@ -347,6 +347,14 @@ eos_ship_design_evergloom_guard_escort: "$eos_evergloom_empire_escort$"
 eos_evergloom_hostiles_fleet_unknown: "???"
 eos_evergloom_hostiles_fleet_ghosts: "Sensor Ghosts"
 eos_evergloom_hostiles_fleet_guard: "$eos_evergloom_empire_guard$"
+eos_evergloom_hostiles_fleet_starflayer_young: "Juvenile Starflayers"
+
+# Event Modifiers
+eos_evergloom_hostiles_mod_ghosts:0 "Nightmares"
+eos_evergloom_hostiles_mod_guard:0 "Nightmares"
+eos_evergloom_hostiles_mod_starflayer:0 "Nightmares"
+eos_evergloom_hostiles_mod_starflayer_young:0 "Nightmares"
+eos_evergloom_hostiles_mod_silkweaver:0 "Nightmares"
 
 # Event Ship Components
 
