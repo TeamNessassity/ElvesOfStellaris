@@ -1379,7 +1379,7 @@ planet_event = {
 			eos_evergloom_03_spawn_A = {
 				# Spawn the Starflayer
 				create_fleet = {
-					name = "eos_ship_design_evergloom_starflayer"
+					name = "eos_ship_design_evergloom_starflayer_elder"
 					settings = {
 						spawn_debris = no
 						is_boss = yes
@@ -1391,10 +1391,10 @@ planet_event = {
 						while = {
 							count = 1
 							create_ship = {
-								name = "eos_ship_design_evergloom_starflayer"
-								design = "eos_ship_design_evergloom_starflayer"
+								name = "eos_ship_design_evergloom_starflayer_elder"
+								design = "eos_ship_design_evergloom_starflayer_elder"
 								effect = {
-									add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer }
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer_elder }
 								}
 							}
 						}
@@ -1544,8 +1544,8 @@ ship_event = {
 			has_star_flag = eos_evergloom_cluster
 			any_ship_in_system = {
 				OR = {
+					has_modifier = eos_evergloom_hostiles_mod_starflayer_elder
 					has_modifier = eos_evergloom_hostiles_mod_starflayer
-					has_modifier = eos_evergloom_hostiles_mod_starflayer_young
 				}
 			}
 		}
@@ -2175,7 +2175,7 @@ ship_event = {
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
-						name = "eos_evergloom_hostiles_fleet_starflayer_young"
+						name = "eos_evergloom_hostiles_fleet_starflayer"
 						settings = {
 							spawn_debris = no
 						}
@@ -2186,10 +2186,10 @@ ship_event = {
 							while = {
 								count = 1
 								create_ship = {
-									name = "eos_evergloom_hostiles_fleet_starflayer_young"
+									name = "eos_evergloom_hostiles_fleet_starflayer"
 									design = "eos_ship_design_evergloom_starflayer"
 									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer_young }
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer }
 									}
 								}
 							}
@@ -2217,7 +2217,7 @@ ship_event = {
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
 					}
 					create_fleet = {
-						name = "eos_evergloom_hostiles_fleet_starflayer_young"
+						name = "eos_evergloom_hostiles_fleet_starflayer"
 						settings = {
 							spawn_debris = no
 						}
@@ -2228,10 +2228,10 @@ ship_event = {
 							while = {
 								count = 2
 								create_ship = {
-									name = "eos_evergloom_hostiles_fleet_starflayer_young"
+									name = "eos_evergloom_hostiles_fleet_starflayer"
 									design = "eos_ship_design_evergloom_starflayer"
 									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer_young }
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer }
 									}
 								}
 							}

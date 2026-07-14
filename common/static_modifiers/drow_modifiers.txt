@@ -63,15 +63,15 @@ eos_evergloom_hostiles_mod_guard = {
 eos_evergloom_hostiles_mod_guard_titan = {
 	ship_shield_reduction = 0.50
 }
-eos_evergloom_hostiles_mod_starflayer = {
+eos_evergloom_hostiles_mod_starflayer_elder = {
 	ship_shield_add = 100000
-	ship_hull_add = -100000
+	ship_hull_add = 20000
+	ship_fire_rate_mult = 1.0
 	ship_cloaking_detection_add = 10
 }
-eos_evergloom_hostiles_mod_starflayer_young = {
-	ship_shield_add = 60000
-	ship_hull_add = -140000
-	ship_weapon_damage = -0.30
+eos_evergloom_hostiles_mod_starflayer = {
+	ship_shield_add = 40000
+	ship_fire_rate_mult = 0.5
 	ship_cloaking_detection_add = 10
 }
 eos_evergloom_hostiles_mod_silkweaver = {
