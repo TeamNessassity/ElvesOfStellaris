@@ -39,8 +39,8 @@ eos_evergleam_shard = {
 ############################
 
 eos_nebula_evergloom = {
-	ship_evasion_mult = 0.25
-	damage_vs_psionic_empires_mult = -0.25
+	ship_evasion_mult = 0.20
+	ship_damage_reduction_mult = -0.10
 	ship_speed_reduction = 0.5
 	ship_disengage_opportunities_add = -2
 	ship_windup_mult = 1.0
@@ -53,28 +53,26 @@ eos_nebula_evergloom = {
 
 eos_evergloom_hostiles_mod_ghosts = {
 	ship_speed_reduction = -1.0
-	ship_speed_mult = 0.50
+	ship_speed_mult = 1.00
 	ship_engagement_range_mult = 1.0
 }
 eos_evergloom_hostiles_mod_guard = {
-	ship_hull_mult = -0.30
-	ship_armor_mult = -0.30
-	ship_shield_mult = -0.30
+	ship_armor_reduction = 0.50
+	ship_shield_reduction = 0.50
+}
+eos_evergloom_hostiles_mod_guard_titan = {
+	ship_shield_reduction = 0.50
 }
 eos_evergloom_hostiles_mod_starflayer = {
-	shipclass_military_damage_mult = -0.20
-	ship_hull_mult = -0.20
-	ship_armor_mult = -0.20
-	ship_shield_mult = -0.20
+	ship_hull_mult = -0.30
+	ship_weapon_damage = -0.30
 }
 eos_evergloom_hostiles_mod_starflayer_young = {
-	shipclass_military_damage_mult = -0.40
-	ship_hull_mult = -0.40
-	ship_armor_mult = -0.40
-	ship_shield_mult = -0.40
+	ship_hull_mult = -0.50
+	ship_weapon_damage = -0.50
 }
 eos_evergloom_hostiles_mod_silkweaver = {
-	shipclass_military_damage_mult = -0.50
+	ship_weapon_damage = -0.50
 	ship_weapon_range_mult = 1.0
 	ship_engagement_range_mult = 1.0
 }

@@ -393,8 +393,7 @@ ambient_object = {
 
 ambient_object = {
 	name = "eos_evergloom_tear"
-	#entity = "astral_scar_entity"
-	entity = "extra_dimensional_02_dimensional_portal_core_entity"
+	entity = "astral_scar_entity"
 	#selectable = yes
 	show_name = yes
 	description = eos_evergloom_tear_desc

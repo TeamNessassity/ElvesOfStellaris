@@ -775,13 +775,13 @@ country_event = {
 	}
 	
 	option = {
-		name = elven_anorim_origin_events.203.a
+		name = elven_anorim_origin_events.208.a
 		trigger = {
 			is_nomadic = yes
 		}
 	}
 	option = {
-		name = elven_anorim_origin_events.203.b
+		name = elven_anorim_origin_events.208.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -1304,10 +1304,10 @@ planet_event = {
 						while = {
 							count = 1
 							create_ship = {
-								name = random
+								name = "eos_ship_design_evergloom_guard_titan"
 								design = "eos_ship_design_evergloom_guard_titan"
 								effect = {
-									add_modifier = { modifier = eos_evergloom_hostiles_mod_guard }
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_guard_titan }
 								}
 							}
 						}
@@ -1623,7 +1623,10 @@ planet_event = {
 						set_aggro_range = 500
 						set_aggro_range_measure_from = self
 
-						set_location = prev
+						set_location = {
+							target = prev
+							direction = in_system
+						}
 					}
 				}
 			}
@@ -1654,7 +1657,10 @@ planet_event = {
 						set_aggro_range = 500
 						set_aggro_range_measure_from = self
 
-						set_location = prev
+						set_location = {
+							target = prev
+							direction = in_system
+						}
 					}
 				}
 			}
@@ -1685,7 +1691,10 @@ planet_event = {
 						set_aggro_range = 500
 						set_aggro_range_measure_from = self
 
-						set_location = prev
+						set_location = {
+							target = prev
+							direction = in_system
+						}
 					}
 				}
 
@@ -1724,7 +1733,7 @@ planet_event = {
 	}
 }
 
-# Silkweavers spawn adds as their HP depletes
+# Silkweavers summon adds as their HP depletes
 # Each boss has its own spawns
 # This = damaged ship
 # From = attacker ship
@@ -1751,7 +1760,7 @@ ship_event = {
 			eos_evergloom_silkweaver_A = {
 				if = {
 					limit = {
-						has_hp_percentage < 67
+						has_hp_percentage < 0.67
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
@@ -1764,7 +1773,7 @@ ship_event = {
 							set_fleet_flag = eos_evergloom_hostiles_fleet
 
 							while = {
-								count = 4
+								count = 6
 								create_ship = {
 									name = random
 									design = "eos_ship_design_evergloom_guard_escort"
@@ -1778,14 +1787,17 @@ ship_event = {
 							set_aggro_range = 500
 							set_aggro_range_measure_from = self
 
-							set_location = prev
+							set_location = {
+								target = prev
+								distance = 5
+							}
 						}
 					}
 					set_ship_flag = eos_evergloom_silkweaver_wave_1
 				}
 				if = {
 					limit = {
-						has_hp_percentage < 34
+						has_hp_percentage < 0.34
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
 					}
 					create_fleet = {
@@ -1798,7 +1810,7 @@ ship_event = {
 							set_fleet_flag = eos_evergloom_hostiles_fleet
 
 							while = {
-								count = 4
+								count = 6
 								create_ship = {
 									name = random
 									design = "eos_ship_design_evergloom_guard_escort"
@@ -1809,7 +1821,7 @@ ship_event = {
 							}
 
 							while = {
-								count = 2
+								count = 3
 								create_ship = {
 									name = random
 									design = "eos_ship_design_evergloom_guard_battlecruiser"
@@ -1823,7 +1835,10 @@ ship_event = {
 							set_aggro_range = 500
 							set_aggro_range_measure_from = self
 
-							set_location = prev
+							set_location = {
+								target = prev
+								distance = 5
+							}
 						}
 					}
 					set_ship_flag = eos_evergloom_silkweaver_wave_2
@@ -1832,7 +1847,7 @@ ship_event = {
 			eos_evergloom_silkweaver_B = {
 				if = {
 					limit = {
-						has_hp_percentage < 67
+						has_hp_percentage < 0.67
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
@@ -1870,14 +1885,17 @@ ship_event = {
 							set_aggro_range = 500
 							set_aggro_range_measure_from = self
 
-							set_location = prev
+							set_location = {
+								target = prev
+								distance = 5
+							}
 						}
 					}
 					set_ship_flag = eos_evergloom_silkweaver_wave_1
 				}
 				if = {
 					limit = {
-						has_hp_percentage < 34
+						has_hp_percentage < 0.34
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
 					}
 					create_fleet = {
@@ -1926,7 +1944,10 @@ ship_event = {
 							set_aggro_range = 500
 							set_aggro_range_measure_from = self
 
-							set_location = prev
+							set_location = {
+								target = prev
+								distance = 5
+							}
 						}
 					}
 					set_ship_flag = eos_evergloom_silkweaver_wave_2
@@ -1935,7 +1956,7 @@ ship_event = {
 			eos_evergloom_silkweaver_C = {
 				if = {
 					limit = {
-						has_hp_percentage < 67
+						has_hp_percentage < 0.67
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
@@ -1950,7 +1971,7 @@ ship_event = {
 							while = {
 								count = 1
 								create_ship = {
-									name = random
+									name = "eos_evergloom_hostiles_fleet_starflayer_young"
 									design = "eos_ship_design_evergloom_starflayer"
 									effect = {
 										add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer_young }
@@ -1962,14 +1983,17 @@ ship_event = {
 							set_aggro_range = 500
 							set_aggro_range_measure_from = self
 
-							set_location = prev
+							set_location = {
+								target = prev
+								distance = 5
+							}
 						}
 					}
 					set_ship_flag = eos_evergloom_silkweaver_wave_1
 				}
 				if = {
 					limit = {
-						has_hp_percentage < 34
+						has_hp_percentage < 0.34
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
 					}
 					create_fleet = {
@@ -1984,7 +2008,7 @@ ship_event = {
 							while = {
 								count = 2
 								create_ship = {
-									name = random
+									name = "eos_evergloom_hostiles_fleet_starflayer_young"
 									design = "eos_ship_design_evergloom_starflayer"
 									effect = {
 										add_modifier = { modifier = eos_evergloom_hostiles_mod_starflayer_young }
@@ -1996,7 +2020,10 @@ ship_event = {
 							set_aggro_range = 500
 							set_aggro_range_measure_from = self
 
-							set_location = prev
+							set_location = {
+								target = prev
+								distance = 5
+							}
 						}
 					}
 					set_ship_flag = eos_evergloom_silkweaver_wave_2
