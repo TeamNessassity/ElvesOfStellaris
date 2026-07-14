@@ -1220,12 +1220,169 @@ planet_event = {
 					}
 				}
 			}
+			eos_evergloom_02_spawn_B = {
+				# Spawn the Sensor Ghosts
+				create_fleet = {
+					name = "eos_evergloom_hostiles_fleet_unknown"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 3
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_large"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						while = {
+							count = 9
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_medium"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						while = {
+							count = 9
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_small"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_02_spawn_C = {
+				# Spawn the Sensor Ghosts
+				create_fleet = {
+					name = "eos_evergloom_hostiles_fleet_unknown"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 1
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_large"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						while = {
+							count = 2
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_medium"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						while = {
+							count = 20
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_small"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
+			eos_evergloom_02_spawn_D = {
+				# Spawn the Sensor Ghosts
+				create_fleet = {
+					name = "eos_evergloom_hostiles_fleet_unknown"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = event_target:eos_evergloom_hostiles_country
+						set_fleet_flag = eos_evergloom_hostiles_fleet
+
+						while = {
+							count = 4
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_large"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						while = {
+							count = 8
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_medium"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						while = {
+							count = 16
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_small"
+								effect = {
+									add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+								}
+							}
+						}
+
+						set_fleet_stance = aggressive
+						set_aggro_range = 500
+						set_aggro_range_measure_from = self
+
+						set_location = prev
+					}
+				}
+			}
 			eos_evergloom_03_spawn_A = {
 				# Spawn the Starflayer
 				create_fleet = {
 					name = "eos_ship_design_evergloom_starflayer"
 					settings = {
 						spawn_debris = no
+						is_boss = yes
 					}
 					effect = {
 						set_owner = event_target:eos_evergloom_hostiles_country
@@ -1272,7 +1429,7 @@ planet_event = {
 							}
 						}
 						while = {
-							count = 8
+							count = 16
 							create_ship = {
 								name = random
 								design = "eos_ship_design_evergloom_ghost_small"
@@ -1296,6 +1453,7 @@ planet_event = {
 					name = "eos_evergloom_hostiles_fleet_guard"
 					settings = {
 						spawn_debris = no
+						is_boss = yes
 					}
 					effect = {
 						set_owner = event_target:eos_evergloom_hostiles_country
@@ -1342,7 +1500,7 @@ planet_event = {
 							}
 						}
 						while = {
-							count = 4
+							count = 10
 							create_ship = {
 								name = random
 								design = "eos_ship_design_evergloom_ghost_medium"
@@ -1602,6 +1760,7 @@ planet_event = {
 					name = "eos_ship_design_evergloom_silkweaver"
 					settings = {
 						spawn_debris = no
+						is_boss = yes
 					}
 					effect = {
 						set_owner = event_target:eos_evergloom_hostiles_country
@@ -1625,6 +1784,7 @@ planet_event = {
 
 						set_location = {
 							target = prev
+							distance = 10
 							direction = in_system
 						}
 					}
@@ -1636,6 +1796,7 @@ planet_event = {
 					name = "eos_ship_design_evergloom_silkweaver"
 					settings = {
 						spawn_debris = no
+						is_boss = yes
 					}
 					effect = {
 						set_owner = event_target:eos_evergloom_hostiles_country
@@ -1659,6 +1820,7 @@ planet_event = {
 
 						set_location = {
 							target = prev
+							distance = 10
 							direction = in_system
 						}
 					}
@@ -1670,6 +1832,7 @@ planet_event = {
 					name = "eos_ship_design_evergloom_silkweaver"
 					settings = {
 						spawn_debris = no
+						is_boss = yes
 					}
 					effect = {
 						set_owner = event_target:eos_evergloom_hostiles_country
@@ -1693,6 +1856,7 @@ planet_event = {
 
 						set_location = {
 							target = prev
+							distance = 10
 							direction = in_system
 						}
 					}
@@ -1760,7 +1924,7 @@ ship_event = {
 			eos_evergloom_silkweaver_A = {
 				if = {
 					limit = {
-						has_hp_percentage < 0.67
+						has_hp_percentage < 0.90
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
@@ -1789,7 +1953,8 @@ ship_event = {
 
 							set_location = {
 								target = prev
-								distance = 5
+								distance = 10
+								direction = in_system
 							}
 						}
 					}
@@ -1797,7 +1962,7 @@ ship_event = {
 				}
 				if = {
 					limit = {
-						has_hp_percentage < 0.34
+						has_hp_percentage < 0.30
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
 					}
 					create_fleet = {
@@ -1810,7 +1975,7 @@ ship_event = {
 							set_fleet_flag = eos_evergloom_hostiles_fleet
 
 							while = {
-								count = 6
+								count = 5
 								create_ship = {
 									name = random
 									design = "eos_ship_design_evergloom_guard_escort"
@@ -1837,7 +2002,8 @@ ship_event = {
 
 							set_location = {
 								target = prev
-								distance = 5
+								distance = 10
+								direction = in_system
 							}
 						}
 					}
@@ -1847,7 +2013,7 @@ ship_event = {
 			eos_evergloom_silkweaver_B = {
 				if = {
 					limit = {
-						has_hp_percentage < 0.67
+						has_hp_percentage < 0.90
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
@@ -1860,66 +2026,18 @@ ship_event = {
 							set_fleet_flag = eos_evergloom_hostiles_fleet
 
 							while = {
+								count = 12
+								create_ship = {
+									name = random
+									design = "eos_ship_design_evergloom_ghost_small"
+									effect = {
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+									}
+								}
+							}
+
+							while = {
 								count = 6
-								create_ship = {
-									name = random
-									design = "eos_ship_design_evergloom_ghost_small"
-									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
-									}
-								}
-							}
-
-							while = {
-								count = 3
-								create_ship = {
-									name = random
-									design = "eos_ship_design_evergloom_ghost_medium"
-									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
-									}
-								}
-							}
-
-							set_fleet_stance = aggressive
-							set_aggro_range = 500
-							set_aggro_range_measure_from = self
-
-							set_location = {
-								target = prev
-								distance = 5
-							}
-						}
-					}
-					set_ship_flag = eos_evergloom_silkweaver_wave_1
-				}
-				if = {
-					limit = {
-						has_hp_percentage < 0.34
-						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
-					}
-					create_fleet = {
-						name = "eos_evergloom_hostiles_fleet_ghosts"
-						settings = {
-							spawn_debris = no
-						}
-						effect = {
-							set_owner = prev.owner
-							set_fleet_flag = eos_evergloom_hostiles_fleet
-
-							while = {
-								count = 18
-								create_ship = {
-									name = random
-									design = "eos_ship_design_evergloom_ghost_small"
-									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
-									}
-								}
-							}
-
-							while = {
-								count = 9
 								create_ship = {
 									name = random
 									design = "eos_ship_design_evergloom_ghost_medium"
@@ -1946,7 +2064,68 @@ ship_event = {
 
 							set_location = {
 								target = prev
-								distance = 5
+								distance = 10
+								direction = in_system
+							}
+						}
+					}
+					set_ship_flag = eos_evergloom_silkweaver_wave_1
+				}
+				if = {
+					limit = {
+						has_hp_percentage < 0.30
+						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
+					}
+					create_fleet = {
+						name = "eos_evergloom_hostiles_fleet_ghosts"
+						settings = {
+							spawn_debris = no
+						}
+						effect = {
+							set_owner = prev.owner
+							set_fleet_flag = eos_evergloom_hostiles_fleet
+
+							while = {
+								count = 24
+								create_ship = {
+									name = random
+									design = "eos_ship_design_evergloom_ghost_small"
+									effect = {
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+									}
+								}
+							}
+
+							while = {
+								count = 12
+								create_ship = {
+									name = random
+									design = "eos_ship_design_evergloom_ghost_medium"
+									effect = {
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+									}
+								}
+							}
+
+							while = {
+								count = 6
+								create_ship = {
+									name = random
+									design = "eos_ship_design_evergloom_ghost_large"
+									effect = {
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_ghosts }
+									}
+								}
+							}
+
+							set_fleet_stance = aggressive
+							set_aggro_range = 500
+							set_aggro_range_measure_from = self
+
+							set_location = {
+								target = prev
+								distance = 10
+								direction = in_system
 							}
 						}
 					}
@@ -1956,7 +2135,7 @@ ship_event = {
 			eos_evergloom_silkweaver_C = {
 				if = {
 					limit = {
-						has_hp_percentage < 0.67
+						has_hp_percentage < 0.90
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
@@ -1985,7 +2164,8 @@ ship_event = {
 
 							set_location = {
 								target = prev
-								distance = 5
+								distance = 10
+								direction = in_system
 							}
 						}
 					}
@@ -1993,7 +2173,7 @@ ship_event = {
 				}
 				if = {
 					limit = {
-						has_hp_percentage < 0.34
+						has_hp_percentage < 0.30
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
 					}
 					create_fleet = {
@@ -2022,7 +2202,8 @@ ship_event = {
 
 							set_location = {
 								target = prev
-								distance = 5
+								distance = 10
+								direction = in_system
 							}
 						}
 					}

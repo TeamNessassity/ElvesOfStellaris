@@ -1,0 +1,176 @@
+####################################
+## Evergloom Nightmare Components ##
+####################################
+
+weapon_component_template = {
+	key = "EOS_WEAPON_EVERGLOOM_GHOST_S_01"
+
+	size = small
+	entity = "small_kinetic_gun_entity"
+	type = instant
+	icon = "GFX_ship_part_extradimensional_weapon_1"
+	icon_frame = 1
+	projectile_gfx = "space_whale_weapon"
+	tags = { weapon_type_energy debuffer_role }
+	ai_tags = { debuffer_role debuffer_role_stealth }
+
+	hidden = yes
+	hide_damage_values_from_tooltip = yes
+
+	power = 0
+	damage = { min = 0 max = 0 }
+	windup = { min = 0 max = 0 }
+	total_fire_time = 15
+	range = 30
+	accuracy = 1.0
+	tracking = 0.5
+
+	target_type = target_enemies
+	target_focus = spread
+	injected_modifier = {
+		modifier = {
+			modifier = bio_anti_fire_rate_5
+			days = 10
+		}
+		stack_info = {			#A ship can only be affected by one injected modifier of a certain id. If multiple modifiers have the same ID the one with the highest priority will be applied.
+			id = bio_anti_fire_rate
+			priority = 5
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
+
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	type = instant
+	icon = "GFX_ship_part_extradimensional_weapon_1"
+	icon_frame = 1
+	projectile_gfx = "space_whale_weapon"
+	tags = { weapon_type_energy debuffer_role }
+	ai_tags = { debuffer_role debuffer_role_stealth }
+
+	hidden = yes
+	hide_damage_values_from_tooltip = yes
+
+	power = 0
+	damage = { min = 0 max = 0 }
+	windup = { min = 0 max = 0 }
+	total_fire_time = 15
+	range = 30
+	accuracy = 1.0
+	tracking = 0.5
+
+	target_type = target_enemies
+	target_focus = spread
+	injected_modifier = {
+		modifier = {
+			modifier = bio_anti_evasion_5
+			days = 10
+		}
+		stack_info = {			#A ship can only be affected by one injected modifier of a certain id. If multiple modifiers have the same ID the one with the highest priority will be applied.
+			id = bio_anti_evasion
+			priority = 5
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "EOS_WEAPON_EVERGLOOM_GHOST_L_01"
+
+	size = large
+	entity = "large_kinetic_gun_entity"
+	type = instant
+	icon = "GFX_ship_part_extradimensional_weapon_1"
+	icon_frame = 1
+	projectile_gfx = "space_whale_weapon"
+	tags = { weapon_type_energy debuffer_role }
+	ai_tags = { debuffer_role debuffer_role_stealth }
+
+	hidden = yes
+	hide_damage_values_from_tooltip = yes
+
+	power = 0
+	damage = { min = 0 max = 0 }
+	windup = { min = 10 max = 10 }
+	total_fire_time = 10
+	range = 30
+	accuracy = 1.0
+	tracking = 0.5
+
+	target_type = target_enemies
+	target_focus = spread
+	on_hit = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = this
+					is_civilian = no
+					NOT = {
+						is_ship_class = shipclass_starbase
+					}
+				}
+				random = {
+					chance = value:weaver_confuser_chance|TIER|5|
+					set_confused = yes
+					set_ship_flag = is_confused
+					ship_event = {
+						id = bioship.1
+						days = 5
+						random = 5
+					}
+				}
+			}
+		}
+		custom_tooltip = "bio_confuser_$TIER$_tt"
+	}
+}
+
+weapon_component_template = {
+	key = "EOS_WEAPON_EVERGLOOM_GHOST_PD_01"
+
+	size = point_defence
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_part_extradimensional_defense_1"
+	icon_frame = 1
+	projectile_gfx = "arc_emitter"
+	tags = { weapon_type_energy debuffer_role }
+	ai_tags = { debuffer_role debuffer_role_stealth }
+
+	hidden = yes
+	hide_damage_values_from_tooltip = yes
+
+	power = 0
+	damage = { min = 0 max = 0 }
+	windup = { min = 15 max = 15 }
+	total_fire_time = 30
+	range = 30
+	accuracy = 1.0
+	tracking = 0.5
+
+	target_type = target_enemies
+	target_focus = spread
+	on_hit = {
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = this
+					is_civilian = no
+					NOT = { is_ship_class = shipclass_starbase }
+				}
+				random = {
+					chance = value:ship_terrify_chance
+					set_terrified_by = root.from
+					set_ship_flag = is_terrified
+					ship_event = {
+						id = shroud.5
+						days = value:ship_terrify_duration
+					}
+				}
+			}
+		}
+		custom_tooltip = "ship_terrify_tt"
+	}
+}

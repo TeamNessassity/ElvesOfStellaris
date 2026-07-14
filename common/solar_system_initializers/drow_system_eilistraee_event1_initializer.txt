@@ -219,7 +219,7 @@ eilistraee_event1_02_initializer = {
 		has_ring = no
 		modifiers = none
 
-		flags = { suppress_archaeological_sites }
+		flags = { suppress_archaeological_sites eos_evergloom_02_spawn_B }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -257,7 +257,7 @@ eilistraee_event1_02_initializer = {
 		has_ring = no
 		modifiers = none
 
-		flags = { suppress_archaeological_sites }
+		flags = { suppress_archaeological_sites eos_evergloom_02_spawn_C }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -310,7 +310,7 @@ eilistraee_event1_02_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 10
 
-		flags = { suppress_archaeological_sites }
+		flags = { suppress_archaeological_sites eos_evergloom_02_spawn_D }
 
 		init_effect = {
 			prevent_anomaly = yes

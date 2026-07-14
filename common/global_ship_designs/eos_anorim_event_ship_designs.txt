@@ -21,47 +21,47 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_L_01"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_L_01"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_L_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_04"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_S_01"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_S_01"
 		}
 		component = {
 			slot = "PD_01"
-			template = "ED_POINT_DEFENCE"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_PD_01"
 		}
 		component = {
 			slot = "PD_02"
-			template = "ED_POINT_DEFENCE"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_PD_01"
 		}
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -103,31 +103,31 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_L_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_S_01"
 		}
 		component = {
 			slot = "SMALL_GUN_02"
-			template = "SMALL_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_S_01"
 		}
 		component = {
 			slot = "PD_01"
-			template = "ED_POINT_DEFENCE"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_PD_01"
 		}
 		component = {
 			slot = "MEDIUM_UTILITY_1"
@@ -169,15 +169,15 @@ ship_design = {
 
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_ED_WEAPON"
+			template = "EOS_WEAPON_EVERGLOOM_GHOST_M_01"
 		}
 		component = {
 			slot = "SMALL_UTILITY_1"
@@ -225,35 +225,35 @@ ship_design = {
 		}
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "STELLARITE_MISSILE"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "STELLARITE_MISSILE"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "STELLARITE_MISSILE"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "STELLARITE_MISSILE"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "STELLARITE_PLASMA"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "LARGE_GUN_06"
-			template = "STELLARITE_PLASMA"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "LARGE_GUN_07"
-			template = "STELLARITE_PLASMA"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "LARGE_GUN_08"
-			template = "STELLARITE_PLASMA"
+			template = "PSIONIC_LIGHTNING"
 		}
 		component = {
 			slot = "PD_01"
