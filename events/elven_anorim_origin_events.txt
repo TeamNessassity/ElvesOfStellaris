@@ -946,6 +946,7 @@ ship_event = {
 	}
 
 	immediate = {
+		save_event_target_as = eos_evergloom_exploration_ship
 		from = {
 			switch = {
 				trigger = is_same_value
@@ -1170,7 +1171,7 @@ planet_event = {
 			eos_evergloom_02_spawn_A = {
 				# Spawn the Sensor Ghosts
 				create_fleet = {
-					name = "NAME_Wraith"
+					name = "eos_evergloom_hostiles_fleet_unknown"
 					settings = {
 						spawn_debris = no
 					}
@@ -1179,10 +1180,28 @@ planet_event = {
 						set_fleet_flag = eos_evergloom_hostiles_fleet
 
 						while = {
+							count = 2
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_large"
+								graphical_culture = "extra_dimensional_02"
+							}
+						}
+
+						while = {
+							count = 6
+							create_ship = {
+								name = random
+								design = "eos_ship_design_evergloom_ghost_medium"
+								graphical_culture = "extra_dimensional_02"
+							}
+						}
+
+						while = {
 							count = 12
 							create_ship = {
 								name = random
-								design = "NAME_Wraith"
+								design = "eos_ship_design_evergloom_ghost_small"
 								graphical_culture = "extra_dimensional_02"
 							}
 						}
@@ -1198,7 +1217,7 @@ planet_event = {
 			eos_evergloom_03_spawn_A = {
 				# Spawn the Starflayer
 				create_fleet = {
-					name = "NAME_Stellar_Devourer"
+					name = "eos_ship_design_evergloom_starflayer"
 					settings = {
 						spawn_debris = no
 					}
@@ -1209,8 +1228,8 @@ planet_event = {
 						while = {
 							count = 1
 							create_ship = {
-								name = "NAME_Stellar_Devourer"
-								design = "NAME_Stellarite"
+								name = "eos_ship_design_evergloom_starflayer"
+								design = "eos_ship_design_evergloom_starflayer"
 							}
 						}
 
@@ -1225,7 +1244,7 @@ planet_event = {
 			eos_evergloom_04_spawn_A = {
 				# Spawn the Escorts and Sensor Ghosts
 				create_fleet = {
-					name = "NAME_Glory"
+					name = "eos_evergloom_hostiles_fleet_guard"
 					settings = {
 						spawn_debris = no
 					}
@@ -1237,7 +1256,7 @@ planet_event = {
 							count = 4
 							create_ship = {
 								name = random
-								design = "NAME_Glory"
+								design = "eos_ship_design_evergloom_guard_escort"
 								graphical_culture = "fallen_empire_04"
 							}
 						}
@@ -1245,7 +1264,7 @@ planet_event = {
 							count = 8
 							create_ship = {
 								name = random
-								design = "NAME_Wraith"
+								design = "eos_ship_design_evergloom_ghost_small"
 								graphical_culture = "extra_dimensional_02"
 							}
 						}
@@ -1261,7 +1280,7 @@ planet_event = {
 			eos_evergloom_04_spawn_B = {
 				# Spawn the Titan
 				create_fleet = {
-					name = "NAME_Imperium"
+					name = "eos_evergloom_hostiles_fleet_guard"
 					settings = {
 						spawn_debris = no
 					}
@@ -1273,7 +1292,7 @@ planet_event = {
 							count = 1
 							create_ship = {
 								name = random
-								design = "NAME_Imperium"
+								design = "eos_ship_design_evergloom_guard_titan"
 								graphical_culture = "fallen_empire_04"
 							}
 						}
@@ -1289,7 +1308,7 @@ planet_event = {
 			eos_evergloom_04_spawn_C = {
 				# Spawn the Battlecruisers and Sensor Ghosts
 				create_fleet = {
-					name = "NAME_Supremacy"
+					name = "eos_evergloom_hostiles_fleet_guard"
 					settings = {
 						spawn_debris = no
 					}
@@ -1301,7 +1320,7 @@ planet_event = {
 							count = 2
 							create_ship = {
 								name = random
-								design = "NAME_Supremacy"
+								design = "eos_ship_design_evergloom_guard_battlecruiser"
 								graphical_culture = "fallen_empire_04"
 							}
 						}
@@ -1309,7 +1328,7 @@ planet_event = {
 							count = 4
 							create_ship = {
 								name = random
-								design = "NAME_Wraith"
+								design = "eos_ship_design_evergloom_ghost_medium"
 								graphical_culture = "extra_dimensional_02"
 							}
 						}
@@ -1561,7 +1580,7 @@ planet_event = {
 			eos_evergloom_05_spawn_A = {
 				# Spawn the first Silkweaver
 				create_fleet = {
-					name = "NAME_Dimensional_Horror"
+					name = "eos_ship_design_evergloom_silkweaver"
 					settings = {
 						spawn_debris = no
 					}
@@ -1572,8 +1591,11 @@ planet_event = {
 						while = {
 							count = 1
 							create_ship = {
-								name = "NAME_Dimensional_Horror"
-								design = "NAME_Dimensional_Horror"
+								name = "eos_ship_design_evergloom_silkweaver"
+								design = "eos_ship_design_evergloom_silkweaver"
+								effect = {
+									set_ship_flag = eos_evergloom_silkweaver_A
+								}
 							}
 						}
 
@@ -1588,7 +1610,7 @@ planet_event = {
 			eos_evergloom_05_spawn_B = {
 				# Spawn the second Silkweaver
 				create_fleet = {
-					name = "NAME_Dimensional_Horror"
+					name = "eos_ship_design_evergloom_silkweaver"
 					settings = {
 						spawn_debris = no
 					}
@@ -1599,41 +1621,11 @@ planet_event = {
 						while = {
 							count = 1
 							create_ship = {
-								name = "NAME_Dimensional_Horror"
-								design = "NAME_Dimensional_Horror"
-							}
-						}
-
-						set_fleet_stance = aggressive
-						set_aggro_range = 500
-						set_aggro_range_measure_from = self
-
-						set_location = prev
-					}
-				}
-				create_fleet = {
-					name = "NAME_Glory"
-					settings = {
-						spawn_debris = no
-					}
-					effect = {
-						set_owner = event_target:eos_evergloom_hostiles_country
-						set_fleet_flag = eos_evergloom_hostiles_fleet
-
-						while = {
-							count = 4
-							create_ship = {
-								name = random
-								design = "NAME_Glory"
-								graphical_culture = "fallen_empire_04"
-							}
-						}
-						while = {
-							count = 6
-							create_ship = {
-								name = random
-								design = "NAME_Wraith"
-								graphical_culture = "extra_dimensional_02"
+								name = "eos_ship_design_evergloom_silkweaver"
+								design = "eos_ship_design_evergloom_silkweaver"
+								effect = {
+									set_ship_flag = eos_evergloom_silkweaver_B
+								}
 							}
 						}
 
@@ -1648,7 +1640,7 @@ planet_event = {
 			eos_evergloom_05_spawn_C = {
 				# Spawn the final Silkweaver
 				create_fleet = {
-					name = "NAME_Dimensional_Horror"
+					name = "eos_ship_design_evergloom_silkweaver"
 					settings = {
 						spawn_debris = no
 					}
@@ -1659,41 +1651,11 @@ planet_event = {
 						while = {
 							count = 1
 							create_ship = {
-								name = "NAME_Dimensional_Horror"
-								design = "NAME_Dimensional_Horror"
-							}
-						}
-
-						set_fleet_stance = aggressive
-						set_aggro_range = 500
-						set_aggro_range_measure_from = self
-
-						set_location = prev
-					}
-				}
-				create_fleet = {
-					name = "NAME_Supremacy"
-					settings = {
-						spawn_debris = no
-					}
-					effect = {
-						set_owner = event_target:eos_evergloom_hostiles_country
-						set_fleet_flag = eos_evergloom_hostiles_fleet
-
-						while = {
-							count = 2
-							create_ship = {
-								name = random
-								design = "NAME_Supremacy"
-								graphical_culture = "fallen_empire_04"
-							}
-						}
-						while = {
-							count = 8
-							create_ship = {
-								name = random
-								design = "NAME_Wraith"
-								graphical_culture = "extra_dimensional_02"
+								name = "eos_ship_design_evergloom_silkweaver"
+								design = "eos_ship_design_evergloom_silkweaver"
+								effect = {
+									set_ship_flag = eos_evergloom_silkweaver_C
+								}
 							}
 						}
 

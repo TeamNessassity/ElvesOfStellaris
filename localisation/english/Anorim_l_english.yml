@@ -143,6 +143,54 @@ eilistraee_event1_planet_gwedach_name: "Gwedach"
 eilistraee_event1_planet_eithauron_name: "Eithauron"
 eilistraee_event1_planet_xildras_name: "Xil'dras"
 
+####################################
+# Event Lore Lexicon
+####################################
+
+# Anoriel
+eos_anoriel: "Coronal Daughter"
+eos_anoriel_color: "§G$eos_anoriel$§!"
+eos_anoriel_alias: "Anoriel"
+eos_anoriel_alias_color: "§G$eos_anoriel_alias$§!"
+eos_anoriel_she: "SHE"
+eos_anoriel_she_color: "§G$eos_anoriel_she$§!"
+eos_anoriel_her: "HER"
+eos_anoriel_her_color: "§G$eos_anoriel_her$§!"
+eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
+
+# Galtaereth
+eos_galtaereth: "Abyssal Silkspinner"
+eos_galtaereth_color: "§R$eos_galtaereth$§!"
+eos_galtaereth_alias: "Galtaereth"
+eos_galtaereth_alias_color: "§R$eos_galtaereth_alias$§!"
+eos_galtaereth_she: "SHE"
+eos_galtaereth_she_color: "§R$eos_galtaereth_she$§!"
+eos_galtaereth_her: "HER"
+eos_galtaereth_her_color: "§R$eos_galtaereth_her$§!"
+eos_galtaereth_desc: "Silken shadows weave desire across endless oblivion."
+
+# Aspects
+eos_evergloom: "Evergloom"
+eos_evergleam: "Evergleam"
+
+# The Old Empire
+eos_evergloom_empire: "Vel'zhaun Drath'xorl" # Hidden, Ancient, Dominion, Stars
+eos_evergloom_empire_alias: "The Eternal Dominion"
+
+eos_evergloom_ruler: "Valsharess"
+eos_evergloom_ruler_alias: "The Supreme Matriarch"
+
+# The Old Empire's Imperial Guard
+eos_evergloom_empire_guard: "Kar'thal Ryn'rae" # Guardian, Shield, Heart, Throne
+eos_evergloom_empire_guard_alias: "The Throne's Aegis"
+
+eos_evergloom_empire_titan: "Vhur'zhaun" # Unknowable, Ancient
+eos_evergloom_empire_titan_alias: "The Unknowable Ancient"
+eos_evergloom_empire_battlecruiser: "Thal'drath" # Shield, Dominion
+eos_evergloom_empire_battlecruiser_alias: "The Imperious Bastion"
+eos_evergloom_empire_escort: "Ssin'vel" # Hunter, Hidden
+eos_evergloom_empire_escort: "The Hidden Fang"
+
 ##############
 ### EVENTS ###
 ##############
@@ -201,24 +249,24 @@ elven_anorim_origin_events.103.a:0 "Is incompleteness truly preferable to nihili
 elven_anorim_origin_events.103.a:0 "Is incompleteness truly preferable to nihility?"
 
 elven_anorim_origin_events.201.name:0 "Shattered Glass: Creeping Gloom"
-elven_anorim_origin_events.201.desc:0 "As expected, ever since we started the process of retracing our path to the Shroud, $eos_galtaereth_alias_color$'s shadow has grown deeper and heavier upon our souls.\n\nThis time, however, [root.GetSpeciesNamePlural] do not wade into the turbulent depths unprepared, alone or afraid. $eos_anoriel_she_color$ has sensed our longing and responded with warmth. For the first time in generations, we need not guess at $eos_anoriel_her_color$ intent, need not wonder at $eos_anoriel_her_color$ actions, need not question $eos_anoriel_her_color$ love.\n\nBecause now we understand. Because now we remember.\n\nThough the memories were not made by us, they belong to us, and as we peer deeply into the prism of rememberance, the truth becomes clear as crystal: §Ghope§! is not §Rgreed§!, §Glove§! is not §Rhunger§!, and §Ggrief§! is not §Remptiness§!.\n\nWe have been anchored by fear for long enough, always fleeing, yet stuck in place. Through the long exile, we survived. By finding shelter, we found the strength to rebuild. There is no question as to the next horizon ahead: the path to our freedom lies in taking it back from where we lost it. Where the original sin was conceived, divine blood was spilled, and where the open wound continues to fester to this day, bleeding malice over the stars.\n\n$eos_nebula_evergloom$."
+elven_anorim_origin_events.201.desc:0 "As expected, ever since we started the process of retracing our path to the Shroud, $eos_galtaereth_alias_color$'s shadow has grown deeper and heavier upon our souls.\n\nThis time, however, [root.GetSpeciesNamePlural] do not wade into the turbulent depths unprepared, alone or afraid. $eos_anoriel_alias_color$ has sensed our longing and responded with warmth. For the first time in generations, we need not guess at $eos_anoriel_her_color$ intent, need not wonder at $eos_anoriel_her_color$ actions, need not question $eos_anoriel_her_color$ love.\n\nBecause now we understand. Because now we remember.\n\nThough the memories were not made by us, they belong to us, and as we peer deeply into the prism of rememberance, the truth becomes clear as crystal: §Ghope§! is not §Rgreed§!, §Glove§! is not §Rhunger§!, and §Ggrief§! is not §Remptiness§!.\n\nWe have been anchored by fear for long enough; ever fleeing, yet never moving forward.\nThrough the long exile, we survived. By reaching shelter, we found the strength to rebuild. And now, we have crossed the point of no return, leaving no question as to the next horizon ahead: the path to our freedom leads back to where we lost it. Where the original sin was conceived, divine blood was spilled, and where the open wound continues to fester to this day, bleeding malice over the stars.\n\n$eos_nebula_evergloom$."
 elven_anorim_origin_events.201.a:0 "Concealing scars will not undo the wounds underneath."
 elven_anorim_origin_events.201.b:0 "Concealing scars will not undo the wounds underneath."
 
 elven_anorim_origin_events.202.name:0 "Shattered Glass: Deepening Penumbra"
-elven_anorim_origin_events.202.desc:0 "It had taken us many centuries to reach the safe harbor of [anorim_star]; a path of twisted turns, gruelling challenges and countless dangers that had brought us to the brink of extinction time and time again. Every step of that soujourn was recorded in the databanks of our ancient arkship, maintained meticulously by generations of lost wanderers.\n\nBut retracing that route is not how we shall return to where it started. Besides coordinates and star charts, [root.GetName]'s path of exile lives on in our memory through tales, in songs, across canvas; the perfect record of a struggle that defied mortal fate. With the $eos_anoriel_color$'s guidance, we will gaze into the Prism and simply... remember all that we have never seen before. And as we remember, see it we shall for the first time."
+elven_anorim_origin_events.202.desc:0 "It had taken us many centuries to reach the safe harbor of [anorim_star.GetName]; a path of twisted turns, gruelling challenges and countless dangers that had brought us to the brink of extinction time and time again. Every step of that soujourn was recorded in the databanks of our ancient arkship, maintained meticulously by generations of lost wanderers.\n\nBut retracing that millennia-long route is not how we shall return to where it started. Besides coordinates and star charts, [root.GetName]'s path of exile lives on through tales, carried by songs, dancing across screens, etched upon canvas; the perfect record of the struggle that defied mortal fate.\n\nWith the $eos_anoriel_color$'s guidance, we will gaze into the Prism and... remember all that we have never seen before. And as we remember, see it we shall for the first time."
 elven_anorim_origin_events.202.a:0 "In memories, years and lightyears alike mean naught."
 elven_anorim_origin_events.202.b:0 "In memories, years and lightyears alike mean naught."
 
 elven_anorim_origin_events.203.name:0 "Shattered Glass: Encroaching Shade"
-elven_anorim_origin_events.203.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.203.a:0 "REPLACE_ME"
-elven_anorim_origin_events.203.b:0 "REPLACE_ME"
+elven_anorim_origin_events.203.desc:0 "The moment the crew of [eos_evergloom_exploration_ship.GetName] awoke from the reverie of the Evergleam Prism, the sight that greeted them was one of desolation steeped in solace. It was perhaps inevitable that we should begin our retrospection here.\n\nPoets have prominently enshrined this star in legends as §H[anorim_evergloom_cluster_01.GetName]§!. Tradition has it that this was where our ancestors shed their connection to the Shroud in a desperate gambit to evade $eos_galtaereth_alias_color$'s attention for but one moment; painfully brief, yet long enough to break free from $eos_galtaereth_her_color$ cocoon.\nSo began their grand voyage amidst a boundless void with no end in sight.\n\nThough seeing it with our own eyes brings a sense of nostalgia that we wish we could share with those who had been here before, we must not forget $eos_nebula_evergloom$ is not a place to carefreely sight-see. From what we know, even before becoming $eos_galtaereth_her_color$ playground, it was akin to a raging sea, where even islands offered little more than the illusion of solid ground.\n\nBefore we proceed deeper into this space, we must first learn to navigate it as the old empire once did. To that end, let us breach the Shroud here and observe the patterns of the waves ripping throughout. Only when the tides are low, and our destination is clear in sight, shall we wade into subspace.\n\nUntil then, not even for a moment can we let our guard down. Whatever nightmares now prowl this realm may be even worse than those that predated the Motherland's fall."
+elven_anorim_origin_events.203.a:0 "$eos_galtaereth_her_color$ presence here is smothering."
+elven_anorim_origin_events.203.b:0 "$eos_galtaereth_her_color$ presence here is smothering."
 
 elven_anorim_origin_events.204.name:0 "Shattered Glass: Swelling Eclipse"
-elven_anorim_origin_events.204.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.204.a:0 "REPLACE_ME"
-elven_anorim_origin_events.204.b:0 "REPLACE_ME"
+elven_anorim_origin_events.204.desc:0 "Relief washed over the crew of [eos_evergloom_exploration_ship.GetName] upon arriving safely on the shores of §H[anorim_evergloom_cluster_01.GetName]§!. Though the first exiles may not longer be with us, the wisdom they had left behind has once again guided and protected us on this perilous journey.\n\nAnd it is fitting that we should recall their legacy now, for we have arrived at a place many of them may have once called home. The old empire's frontier is remembered to have been a deadly and inhospitable place, yet abundant beyond measure and dotted with countless space stations and trade outposts, through which sweat, blood and tears flowed one way, and riches returned the other.\nIt should perhaps be no surprise that many [root.GetSpeciesNamePlural] can trace their lineage back to the outcasts, slaves and disillusioned idealists escaping the Motherland's core systems to live a harsher yet somehow less cruel life here.\n\nWe were ready to see only silent ruins upon return, yet even so, nothing could have prepared us for the sheer devastation on display.\nAncient scrap floats about scarred asteroid, necropoleis of decaying metal husks rest upon the surface of every world, and not a single colony seems alight with civilization's signature glow.\n\nSo then... why is a raging tsunami of incoherent hails and broadcasts flooding our comms?"
+elven_anorim_origin_events.204.a:0 "Be on guard! Something is not addding up..."
+elven_anorim_origin_events.204.b:0 "Be on guard! Something is not addding up..."
 
 elven_anorim_origin_events.205.name:0 "Shattered Glass: Tenebrous Void"
 elven_anorim_origin_events.205.desc:0 "REPLACE_ME"
@@ -285,31 +333,27 @@ eos_evergloom_tear:0 "Abyssal Tear"
 eos_evergloom_tear_desc:0 "The barrier between this universe and the Shroud was shattered here. Reflected in shards stained with divine blood is only impenetrable darkness that yearns to consume all light."
 eos_evergloom_tear_tooltip:0 "$eos_evergloom_tear_desc$"
 
+# Event Ship Designs
+eos_ship_design_evergloom_ghost_large: "Banshee's Wail"
+eos_ship_design_evergloom_ghost_medium: "Spectre's Echo"
+eos_ship_design_evergloom_ghost_small: "Phantom's Whisper"
+eos_ship_design_evergloom_starflayer: "Starflayer"
+eos_ship_design_evergloom_silkweaver: "Silkweaver"
+eos_ship_design_evergloom_guard_titan: "$eos_evergloom_empire_titan$"
+eos_ship_design_evergloom_guard_battlecruiser: "$eos_evergloom_empire_battlecruiser$"
+eos_ship_design_evergloom_guard_escort: "$eos_evergloom_empire_escort$"
+
+# Event Fleets
+eos_evergloom_hostiles_fleet_unknown: "???"
+eos_evergloom_hostiles_fleet_ghosts: "Sensor Ghosts"
+eos_evergloom_hostiles_fleet_guard: "$eos_evergloom_empire_guard$"
+
+# Event Ship Components
+
 # Error Messages
 elven_anorim_origin_events.0001.name:0 "§RUNIQUE ORIGIN ERROR!§!"
 elven_anorim_origin_events.0001.desc:0 "The §Y$origin_drow_prismatic_refuge$§! Origin could not be set up correctly for this player!\n\nReason: §RGlobal Event Target Mismatch§!\nDetails: §H[capital.solar_system.GetName]§! is NOT same value as §H[anorim_star.GetName]§!\nOR: §H[anorim_star.GetName]§! does NOT exist\n\n§RPlease Note:§! This Origin can only support one player. Duplicate players will not be able to interact with its mechanics.\nPlease start a New Game and make sure that only one Empire with the §Y$origin_drow_prismatic_refuge$§! Origin is allowed to spawn.\nIf the issue persists, please check for Stellaris version mismatch and mod conflicts before reporting it."
 elven_anorim_origin_events.0001.a:0 "Oops!"
-
-# Shroud
-eos_anoriel: "Coronal Daughter"
-eos_anoriel_color: "§G$eos_anoriel$§!"
-eos_anoriel_alias: "Anoriel"
-eos_anoriel_alias_color: "§G$eos_anoriel_alias$§!"
-eos_anoriel_she: "SHE"
-eos_anoriel_she_color: "§G$eos_anoriel_she$§!"
-eos_anoriel_her: "HER"
-eos_anoriel_her_color: "§G$eos_anoriel_her$§!"
-eos_anoriel_desc: "Fall into the burning gaze and be cradled by loving darkness."
-
-eos_galtaereth: "Abyssal Silkspinner"
-eos_galtaereth_color: "§R$eos_galtaereth$§!"
-eos_galtaereth_alias: "Galtaereth"
-eos_galtaereth_alias_color: "§R$eos_galtaereth_alias$§!"
-eos_galtaereth_she: "SHE"
-eos_galtaereth_she_color: "§R$eos_galtaereth_she$§!"
-eos_galtaereth_her: "HER"
-eos_galtaereth_her_color: "§R$eos_galtaereth_her$§!"
-eos_galtaereth_desc: "Silken shadows weave desire across endless oblivion."
 
 ####################################
 # Situations
