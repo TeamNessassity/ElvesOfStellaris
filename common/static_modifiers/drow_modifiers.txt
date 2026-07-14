@@ -44,7 +44,7 @@ eos_nebula_evergloom = {
 	ship_speed_reduction = 0.5
 	ship_disengage_opportunities_add = -2
 	ship_windup_mult = 1.0
-	ship_ftl_jumpdrive_range_mult = -1.0
+	ship_ftl_jumpdrive_range_mult = -2.0
 }
 
 ################################
@@ -64,12 +64,15 @@ eos_evergloom_hostiles_mod_guard_titan = {
 	ship_shield_reduction = 0.50
 }
 eos_evergloom_hostiles_mod_starflayer = {
-	ship_hull_mult = -0.30
-	ship_weapon_damage = -0.30
+	ship_shield_add = 100000
+	ship_hull_add = -100000
+	ship_cloaking_detection_add = 10
 }
 eos_evergloom_hostiles_mod_starflayer_young = {
-	ship_hull_mult = -0.50
-	ship_weapon_damage = -0.50
+	ship_shield_add = 60000
+	ship_hull_add = -140000
+	ship_weapon_damage = -0.30
+	ship_cloaking_detection_add = 10
 }
 eos_evergloom_hostiles_mod_silkweaver = {
 	ship_weapon_damage = -0.50

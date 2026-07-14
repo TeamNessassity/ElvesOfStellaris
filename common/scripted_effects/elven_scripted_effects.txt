@@ -611,8 +611,8 @@ eos_evergloom_tithe = {
 	}
 }
 
+# Create the dummy hostile country for Evergloom creatures if one doesn't exist
 eos_evergloom_create_country = {
-	# Create the dummy hostile country if one doesn't exist
 	if = {
 		limit = {
 			NOT = {
@@ -648,6 +648,14 @@ eos_evergloom_create_country = {
 			limit = { is_variable_set = eos_anorim_story }
 			establish_communications_no_message = event_target:eos_evergloom_hostiles_country
 		}
+	}
+}
+
+# Starflayer decloaks all fleets when it spawns, and whenever a fleet enters the same system
+eos_evergloom_decloak = {
+	every_fleet_in_system = {
+		limit = { is_cloaked = yes }
+		set_cloaking_active = no
 	}
 }
 

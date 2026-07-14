@@ -4,8 +4,6 @@
 
 ## Sensor Ghosts
 # These ships deal no damage; they just carry debuffing weapons to mess with player fleets and make them vulnerable to other enemies.
-# Larger variants additionally have high Cloaking Detection to make it harder, though not impossible, to sneak past.
-# Weapon: L (confusion), M (defensive debuffs), S (offensive debuffs)
 
 # Large ED
 ship_design = {
@@ -206,8 +204,7 @@ ship_design = {
 }
 
 ## Starflayer
-# A miniboss whose gimmick is a short-ranged terrify debuff, incapacitating any ships it latches onto. But it is slow and easily kited.
-# Weapons: PD (terrify)
+# A miniboss whose gimmick is long-range terrify debuff and cloaking detection, incapacitating any ships it latches onto. But it is slow and easily kited.
 
 # Stellarite
 ship_design = {
@@ -299,7 +296,7 @@ ship_design = {
 	required_component="GUARDIAN_DRIVE"
 	required_component="STELLARITE_COMBAT_COMPUTER"
 	required_component="SHIP_THRUSTER_3"
-	required_component="SENSOR_3"
+	required_component="SENSOR_4"
 }
 
 ## Silkweaver

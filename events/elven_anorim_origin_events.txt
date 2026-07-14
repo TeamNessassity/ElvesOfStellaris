@@ -1404,6 +1404,10 @@ planet_event = {
 						set_aggro_range_measure_from = self
 
 						set_location = prev
+
+						solar_system = {
+							eos_evergloom_decloak = yes
+						}
 					}
 				}
 			}
@@ -1518,6 +1522,38 @@ planet_event = {
 					}
 				}
 			}
+		}
+	}
+
+	after = {
+	}
+}
+
+# If a Starflayer is present when the fleet enters the system, force decloak
+# this = ship
+# from = system
+# fromfrom = country
+ship_event = {
+	id = elven_anorim_origin_events.231
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			has_star_flag = eos_evergloom_cluster
+			any_ship_in_system = {
+				OR = {
+					has_modifier = eos_evergloom_hostiles_mod_starflayer
+					has_modifier = eos_evergloom_hostiles_mod_starflayer_young
+				}
+			}
+		}
+	}
+
+	immediate = {
+		solar_system = {
+			eos_evergloom_decloak = yes
 		}
 	}
 
@@ -2167,6 +2203,10 @@ ship_event = {
 								distance = 10
 								direction = in_system
 							}
+
+							solar_system = {
+								eos_evergloom_decloak = yes
+							}
 						}
 					}
 					set_ship_flag = eos_evergloom_silkweaver_wave_1
@@ -2204,6 +2244,10 @@ ship_event = {
 								target = prev
 								distance = 10
 								direction = in_system
+							}
+
+							solar_system = {
+								eos_evergloom_decloak = yes
 							}
 						}
 					}

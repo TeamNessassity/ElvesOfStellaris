@@ -14,6 +14,7 @@ eilistraee_event1_01_initializer = {
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 24
+		modifiers = none
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -70,6 +71,7 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 30
 		orbit_angle = 0
 		size = 20
+		modifiers = none
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -84,6 +86,7 @@ eilistraee_event1_02_initializer = {
 		orbit_angle = 120
 		orbit_distance = 0
 		size = 30
+		modifiers = none
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -119,6 +122,7 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 0
 		orbit_angle = 120
 		size = 25
+		modifiers = none
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -159,6 +163,7 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 70
 		orbit_angle = 90
 		size = 5
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -175,6 +180,7 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 0
 		orbit_angle = 90
 		size = 12
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -191,6 +197,7 @@ eilistraee_event1_02_initializer = {
 			orbit_angle = 160
 			size = 11
 			has_ring = no
+			modifiers = none
 
 			flags = { suppress_archaeological_sites eos_evergloom_02_spawn_A }
 
@@ -236,6 +243,7 @@ eilistraee_event1_02_initializer = {
 			orbit_distance = 20
 			size = 12
 			has_ring = no
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -272,6 +280,7 @@ eilistraee_event1_02_initializer = {
 			orbit_angle = random
 			size = 16
 			has_ring = no
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -288,6 +297,7 @@ eilistraee_event1_02_initializer = {
 			orbit_angle = { min = 90 max = 270 }
 			size = 12
 			has_ring = no
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -309,6 +319,7 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 70
 		orbit_angle = { min = 90 max = 270 }
 		size = 10
+		modifiers = none
 
 		flags = { suppress_archaeological_sites eos_evergloom_02_spawn_D }
 
@@ -324,6 +335,7 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 0
 		count = 6
 		orbit_angle = { min = 40 max = 50 }
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -390,6 +402,7 @@ eilistraee_event1_02_initializer = {
 		class = pc_asteroid
 		orbit_distance = 60
 		orbit_angle = { min = 15 max = 45 }
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -405,6 +418,7 @@ eilistraee_event1_02_initializer = {
 		orbit_distance = 0
 		count = 12
 		orbit_angle = { min = 20 max = 30 }
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -541,6 +555,7 @@ eilistraee_event1_03_initializer = {
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 55
+		modifiers = none
 
 		flags = { eos_evergloom_03_spawn_A }
 
@@ -578,6 +593,7 @@ eilistraee_event1_03_initializer = {
 		orbit_distance = 50
 		orbit_angle = 40
 		size = 15
+		modifiers = none
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -615,6 +631,7 @@ eilistraee_event1_03_initializer = {
 		orbit_angle = 180
 		size = 30
 		has_ring = no
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -631,6 +648,7 @@ eilistraee_event1_03_initializer = {
 		orbit_distance = 30
 		orbit_angle = 135
 		size = 25
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -645,6 +663,7 @@ eilistraee_event1_03_initializer = {
 			name = eilistraee_event1_planet_draversa_name
 			orbit_distance = 15
 			size = 16
+			modifiers = none
 
 			init_effect = {
 				prevent_anomaly = yes
@@ -659,6 +678,8 @@ eilistraee_event1_03_initializer = {
 		orbit_distance = 35
 		orbit_angle = 135
 		size = 25
+		has_ring = yes
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -712,6 +733,7 @@ eilistraee_event1_03_initializer = {
 			orbit_distance = 30
 			orbit_angle = random
 			size = 12
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -728,6 +750,7 @@ eilistraee_event1_03_initializer = {
 			orbit_distance = 0
 			orbit_angle = { min = 90 max = 270 }
 			size = 9
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -749,6 +772,7 @@ eilistraee_event1_03_initializer = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 60
 		orbit_angle = { min = 100 max = 120 }
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -764,6 +788,7 @@ eilistraee_event1_03_initializer = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 100 max = 120 }
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -779,6 +804,7 @@ eilistraee_event1_03_initializer = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 100 max = 120 }
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -811,6 +837,7 @@ eilistraee_event1_04_initializer = {
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 38
+		modifiers = none
 
 		init_effect = {
 			prevent_anomaly = yes
@@ -847,6 +874,7 @@ eilistraee_event1_04_initializer = {
 		orbit_distance = 85
 		orbit_angle = 180
 		size = 40
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -862,6 +890,7 @@ eilistraee_event1_04_initializer = {
 			orbit_distance = 35
 			orbit_angle = random
 			size = 22
+			modifiers = none
 
 			flags = { suppress_archaeological_sites eos_evergloom_04_spawn_A }
 
@@ -878,6 +907,7 @@ eilistraee_event1_04_initializer = {
 			orbit_distance = 8
 			orbit_angle = 120
 			size = 16
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -895,6 +925,7 @@ eilistraee_event1_04_initializer = {
 		orbit_distance = 60
 		orbit_angle = 180
 		size = 10
+		modifiers = none
 
 		init_effect = {
 			if = {
@@ -915,6 +946,7 @@ eilistraee_event1_04_initializer = {
 			orbit_distance = 30
 			orbit_angle = 90
 			size = 6
+			modifiers = none
 
 			flags = { suppress_archaeological_sites eos_evergloom_04_spawn_B }
 
@@ -931,6 +963,7 @@ eilistraee_event1_04_initializer = {
 			orbit_angle = 180
 			orbit_distance = 15
 			size = 12
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -952,6 +985,7 @@ eilistraee_event1_04_initializer = {
 		name = eilistraee_event1_planet_menelondo_yica_name
 		orbit_distance = 60
 		orbit_angle = 90
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -967,6 +1001,7 @@ eilistraee_event1_04_initializer = {
 		name = eilistraee_event1_planet_menelondo_drai_name
 		orbit_distance = 0
 		orbit_angle = 80
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -982,6 +1017,7 @@ eilistraee_event1_04_initializer = {
 		name = eilistraee_event1_planet_menelondo_larya_name
 		orbit_distance = 0
 		orbit_angle = 60
+		modifiers = none
 
 		flags = { suppress_archaeological_sites eos_evergloom_04_spawn_C }
 
@@ -997,6 +1033,7 @@ eilistraee_event1_04_initializer = {
 		name = eilistraee_event1_planet_menelondo_queni_name
 		orbit_distance = 0
 		orbit_angle = 120
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 
@@ -1024,6 +1061,7 @@ eilistraee_event1_05_initializer = {
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 40
+		modifiers = none
 	
 		flags = { eos_anorim_galtaereth }
 
@@ -1365,6 +1403,7 @@ eilistraee_event1_05_initializer = {
 		orbit_angle = 60
 		size = 30
 		has_ring = yes
+		modifiers = none
 
 		flags = { suppress_archaeological_sites eos_evergloom_05_spawn_A }
 
@@ -1437,6 +1476,7 @@ eilistraee_event1_05_initializer = {
 		orbit_angle = 120
 		size = 18
 		has_ring = no
+		modifiers = none
 
 		flags = { suppress_archaeological_sites eos_evergloom_05_spawn_B }
 
@@ -1505,6 +1545,7 @@ eilistraee_event1_05_initializer = {
 			orbit_distance = 20
 			orbit_angle = random
 			size = 8
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -1521,6 +1562,7 @@ eilistraee_event1_05_initializer = {
 			orbit_distance = 0
 			orbit_angle = 120
 			size = 10
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -1537,6 +1579,7 @@ eilistraee_event1_05_initializer = {
 			orbit_distance = 0
 			orbit_angle = 120
 			size = 12
+			modifiers = none
 
 			flags = { suppress_archaeological_sites }
 
@@ -1555,6 +1598,7 @@ eilistraee_event1_05_initializer = {
 		orbit_angle = 120
 		size = 24
 		has_ring = no
+		modifiers = none
 
 		flags = { suppress_archaeological_sites eos_evergloom_05_spawn_C }
 
@@ -1657,6 +1701,7 @@ eilistraee_event1_05_initializer = {
 		count = 7
 		orbit_distance = 7
 		orbit_angle = { min = 60 max = 120 }
+		modifiers = none
 
 		flags = { suppress_archaeological_sites }
 

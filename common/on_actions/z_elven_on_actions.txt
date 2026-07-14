@@ -127,6 +127,16 @@ on_entering_system_first_time = {
 	}
 }
 
+# Triggers event when ship enters a system. It's usually better to use on_entering_system_first_time or on_entering_system_fleet
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system = {
+	events = {
+		elven_anorim_origin_events.231
+	}
+}
+
 # This = Ship
 # From = Disabler Ship
 on_ship_disabled = {
