@@ -881,6 +881,86 @@ country_event = {
 	}
 }
 
+# Part 2 Stage 11 (Evanescent Flash)
+# Multi-part Lore Dump
+country_event = {
+	id = elven_anorim_origin_events.2011
+	title = "elven_anorim_origin_events.2011.name"
+	desc = "elven_anorim_origin_events.2011.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = elven_anorim_origin_events.2012
+			}
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.2010.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.2010.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
+# Part 2 Stage 12 (Evanescent Flash)
+# Multi-part Lore Dump
+country_event = {
+	id = elven_anorim_origin_events.2012
+	title = "elven_anorim_origin_events.2012.name"
+	desc = "elven_anorim_origin_events.2012.desc"
+	picture = GFX_evt_cosmic_storms_nexus_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = eos_anorim_story
+	}
+	
+	immediate = {
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = elven_anorim_origin_events.300
+			}
+		}
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.2010.a
+		trigger = {
+			is_nomadic = yes
+		}
+	}
+	option = {
+		name = elven_anorim_origin_events.2010.b
+		trigger = {
+			is_nomadic = no
+		}
+	}
+}
+
 # Part 2 Repeatable Project (Evergloom Ripples)
 # To proceed to the next system, the player has to complete the Special Project to create a hyperlane
 # It should allow us to control story progression pace and prevent the player from prematurely peeking into the next system

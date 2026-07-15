@@ -545,5 +545,6 @@ eos_anorim_val_galtaereth_progress_pops_mult = {
 		mode = add
 	}
 	mult = 0.001
-	max = 50
+	# Let's cap it so it doesn't get completely out of hand
+	max = 40
 }

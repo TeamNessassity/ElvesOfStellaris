@@ -646,7 +646,7 @@ eos_lhuren_situation_nirvana = {
 				potential = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
-				planet_politicians_trade_produces_add = 1.0
+				engineering_tech_cost_mult = -0.2
 				pop_environment_tolerance = 0.30
 				logistic_growth_mult = 0.30
 			}
@@ -677,7 +677,8 @@ eos_lhuren_situation_nirvana = {
 				potential = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
-				planet_politicians_trade_produces_add = 0.5
+				society_tech_cost_mult = -0.1
+				engineering_tech_cost_mult = -0.1
 				pop_environment_tolerance = 0.10
 				logistic_growth_mult = 0.10
 			}
@@ -708,8 +709,7 @@ eos_lhuren_situation_nirvana = {
 				potential = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
-				planet_politicians_unity_produces_add = 0.50
-				planet_politicians_trade_produces_add = 0.25
+				society_tech_cost_mult = -0.2
 			}
 
 			triggered_modifier = {
@@ -731,7 +731,8 @@ eos_lhuren_situation_nirvana = {
 				potential = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
-				planet_politicians_unity_produces_add = 1.0
+				society_tech_cost_mult = -0.1
+				physics_tech_cost_mult = -0.1
 				leader_skill_add = 1
 				leader_trait_selection_options_add = 1
 				species_leader_exp_gain = 0.10
@@ -763,7 +764,7 @@ eos_lhuren_situation_nirvana = {
 				potential = {
 					eos_lhu_valid_situation_nirvana = yes
 				}
-				planet_politicians_unity_produces_add = 2.0
+				physics_tech_cost_mult = -0.2
 				leader_skill_add = 3
 				leader_trait_selection_options_add = 3
 				species_leader_exp_gain = 0.30
