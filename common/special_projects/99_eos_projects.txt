@@ -42,7 +42,7 @@ special_project = {
 	event_chain = "elven_anorim_prismatic_refuge_chain"
 	cost = 1000
 	days_to_research = 0
-	tech_department = physics_technology
+	tech_department = society_technology
 	picture = GFX_evt_a_rift_in_space
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 
@@ -69,7 +69,7 @@ special_project = {
 	event_chain = "elven_anorim_prismatic_refuge_chain"
 	cost = 3000
 	days_to_research = 0
-	tech_department = society_technology
+	tech_department = physics_technology
 	picture = GFX_evt_a_rift_in_space
 	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
 
