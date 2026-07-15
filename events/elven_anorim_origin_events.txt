@@ -852,7 +852,7 @@ country_event = {
 		hidden_effect = {
 			set_variable = {
 				which = eos_anorim_story
-				value = 10
+				value = 5
 			}
 		}
 	}

@@ -72,6 +72,10 @@ eos_anorim_situation_galtaereth = {
 			add = owner.value:eos_anorim_val_galtaereth_progress_pops_mult
 			desc = "eos_anorim_situation_galtaereth_progress_pops"
 		}
+		modifier = {
+			add = owner.eos_anorim_story
+			desc = "eos_anorim_situation_galtaereth_progress_story"
+		}
 	}
 
 	on_monthly = {
