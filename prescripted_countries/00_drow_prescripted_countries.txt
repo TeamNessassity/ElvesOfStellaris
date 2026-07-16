@@ -91,6 +91,8 @@ drow_civ1 = {
 	name="EMPIRE_DESIGN_drow_civ1"
 	adjective="ELVEN_drow1_empire_adjective"
 
+	playable = elven_no_nomads_dlc
+
 	spawn_enabled=no
 	spawn_as_fallen=no
 	ignore_portrait_duplication=yes

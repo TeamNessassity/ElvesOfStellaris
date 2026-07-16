@@ -61,7 +61,9 @@ eos_evergloom_hostiles_mod_guard = {
 	ship_shield_reduction = 0.50
 }
 eos_evergloom_hostiles_mod_guard_titan = {
-	ship_shield_reduction = 0.50
+	ship_hull_add = 40000
+	ship_speed_mult = -0.20
+	ship_evasion_mult = -0.20
 }
 eos_evergloom_hostiles_mod_starflayer_elder = {
 	ship_shield_add = 100000
@@ -70,7 +72,8 @@ eos_evergloom_hostiles_mod_starflayer_elder = {
 	ship_cloaking_detection_add = 10
 }
 eos_evergloom_hostiles_mod_starflayer = {
-	ship_shield_add = 40000
+	ship_shield_add = 30000
+	ship_hull_add = -20000
 	ship_fire_rate_mult = 0.5
 	ship_cloaking_detection_add = 10
 }
@@ -78,4 +81,18 @@ eos_evergloom_hostiles_mod_silkweaver = {
 	ship_weapon_damage = -0.50
 	ship_weapon_range_mult = 1.0
 	ship_engagement_range_mult = 1.0
+}
+
+#########################
+## DROW ORIGIN EFFECTS ##
+#########################
+
+eos_anorim_origin_ending_A_modifier = {
+	ship_speed_mult = 0.20
+	council_agenda_progress_speed = 0.20
+	council_agenda_early_activation_cost_mult = -0.20
+
+	icon = "gfx/interface/icons/modifiers/mod_black_hole.dds"
+	show_only_custom_tooltip = no
+	custom_tooltip = eos_anorim_origin_ending_A_modifier_tooltip
 }

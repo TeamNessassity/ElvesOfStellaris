@@ -18,7 +18,7 @@ name_list_ELVEN7:0 "Elves: Wild"
 ####################################
 elven_01_shipset_desc:0 "Recognised for their signature sleek contours and distinctive silhouettes, Elven vessels embody effortless elegance. Functional - Powerful - Beautiful."
 
-elven_02_shipset_desc:0 "Recognised for their signature sleek contours and distinctive silhouettes, Elven vessels embody effortless elegance. Functional - Powerful - Beautiful."
+elven_02_shipset_desc:0 "$elven_01_shipset_desc$"
 
 ####################################
 # System Initializers
@@ -38,7 +38,7 @@ origin_tooltip_elven_foundations_effects:3 "- Custom Star Cluster\n- $HOME_SYSTE
 
 origin_elven_arcadian_symbiosis:0 "Arcadian Symbiosis"
 origin_elven_arcadian_symbiosis_desc:0 "Your civilization arose as a grouping of sparsely populated natural habitats coexisting with sentient plantlife."
-origin_tooltip_elven_arcadian_symbiosis_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_eos_pc_continental']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_elven_natural_beauty_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_oceans']$TABBED_NEW_LINE$$t$- ['concept_elven_healing_spring']\n- ['concept_guaranteed_colonies']: §RNot of your preferable type!§!\n- §Y8§! £pop£ Pops are ['concept_eos_treants']\n- ['concept_concept_phytovitalization_mod'] modifier on planets inhabited by ['concept_eos_treants']"
+origin_tooltip_elven_arcadian_symbiosis_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_eos_pc_continental']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_elven_natural_beauty_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_oceans']$TABBED_NEW_LINE$$t$- ['concept_elven_healing_spring']\n- ['concept_guaranteed_colonies']: §RNot of your preferable type!§!\n- §Y8§! £pop£ Pops are ['concept_eos_treants']\n- ['concept_concept_phytovitalization_mod'] modifier on planets inhabited by ['concept_eos_treants']"
 
 ####################################
 # Species Classes
@@ -147,6 +147,13 @@ civic_elven_tooltip_not_materialistic:0 "Is not §YMaterialistic§!"
 
 agenda_elven_isolationism:0 "Focus Inward"
 
+########################
+###      COUNCIL      ##
+########################
+
+elven_councilor_arcane_minded:0 "Archmagister"
+elven_councilor_arcane_minded_desc:0 "The Archmagister is resposible for the research of everything that is arcane and bridging the differences between scientific and religious circles."
+
 ####################################
 # Policies 
 ####################################
@@ -154,27 +161,27 @@ agenda_elven_isolationism:0 "Focus Inward"
 policy_elven_gender_policy:0 "Gender Policy"
 policy_elven_gender_policy_desc:0 "These policies affect which genders are allowed for certain leadership positions.\n\n§RNote: policy changes have no affect on current leaders or heirs!§!\n"
 
-elven_gender_default_name:0 "Equality"
 elven_gender_default:0 "Equality"
+elven_gender_default_name:0 "$elven_gender_default$"
 elven_gender_default_desc:0 "Males and females can both fulfill the same leadership positions. Which makes things terribly boring. And unfashionable."
 
-elven_gender_matriarchy_full_name:0 "Absolute Matriarchy"
 elven_gender_matriarchy_full:0 "Absolute Matriarchy"
+elven_gender_matriarchy_full_name:0 "$elven_gender_matriarchy_full$"
 elven_gender_matriarchy_full_desc:0 "This policy pretends that males do not exist and tries to hide them from outsiders for fear that their limited fashion sense may be discovered."
 #"Males are prone to emotionality and clouded judgement. It therefore follows that only females should be leaders at all levels of society."
 
-elven_gender_matriarchy_governor_name: "Matrilinear Leadership"
 elven_gender_matriarchy_governor:0 "Matrilinear Leadership"
+elven_gender_matriarchy_governor_name: "$elven_gender_matriarchy_governor$"
 elven_gender_matriarchy_governor_desc:0 "Men look good in a suit. But not so much in a gown. Hence, women fulfill all leadership positions where gowns are absolutely required."
 #"Females are more suited for ruling and top tier management. All rulers and governors are female."
 
-elven_gender_patriarchy_military_name:0 "Chivalry"
 elven_gender_patriarchy_military:0 "Chivalry"
+elven_gender_patriarchy_military_name:0 "$elven_gender_patriarchy_military$"
 elven_gender_patriarchy_military_desc:0 "Everyone knows males look better when involved in hurting things. Therefore males fill all military leadership roles."
 #"It is the sacred duty of males to defend the weak and defensless. As such, only males are involved in combat oriented positions."
 
-elven_gender_patriarchy_full_name:0 "Absolute Patriarchy"
 elven_gender_patriarchy_full:0 "Absolute Patriarchy"
+elven_gender_patriarchy_full_name:0 "$elven_gender_patriarchy_full$"
 elven_gender_patriarchy_full_desc:0 "Why should females have to bother with boring leadership positions? Males should fulfill those roles so females have more time to manage new fashion.... and plot murders."
 
 ####################################
@@ -269,12 +276,6 @@ elven_natural_beauty_desc:0 "The scenery on this planet is simply beautiful, any
 
 elven_irradiated_planet:0 "Irradiated"
 elven_irradiated_planet_desc:0 "Some long-ago calamity rendered this planet rather heavily irradiated."
-
-elven_storm_world_modifier:0 "Psionic Storm"
-elven_storm_world_modifier_desc:0 "The surface of this world is an amorphous metal with strange properties. Mountains, valleys and other typical geological features exist, yet probes landing on these features sink as if touching down in an ocean. Repeated scans show that entire mountain ranges have vanished while others have appeared from nowhere. Even light on this world reacts strangely. Surfaces that should be lit by the nearby star remain dark, while areas on the far side are as bright as day. Whatever phenomena, be it natural or otherwise, that has created this world is thoroughly beyond our understanding."
-
-elven_great_firewall_modifier:0 "Great Firewall"
-elven_great_firewall_modifier_desc:0 "The culmination of thousands of years of engineering, the Great Firewall protects this world both from extraterrestrial and terrestrial dissidents."
 
 elven_treant_harmony:0 "Phytovitalization"
 elven_treant_harmony_desc:0 "Each §YTreant§! increases habitability and amenities of this planet by §G1%§!"
@@ -378,6 +379,9 @@ d_elven_planetary_aerostat_plantations_desc:0 "A great Sidh farmer, who's name h
 d_elven_healing_spring:0 "Spring of Fertility"
 d_elven_healing_spring_desc:0 "Existing well before written history, this wellspring has been proven to provide a boost to fertility with a small sip. It is now customary for couples the world over to make a ritual pilgrimage to taste the waters."
 
+d_elven_planetary_glowing_forests:0 "$d_drow_planetary_glowing_forests$"
+d_elven_planetary_glowing_forests_desc:0 "$d_drow_planetary_glowing_forests_desc$"
+
 # ARCHEOLOGY RELATED #
 
 d_elven_planetary_elenyas_gate:0 "Elenya's Gate"
@@ -428,6 +432,9 @@ d_elven_physics_4_society_4_desc:0 "$d_elven_physics_4_society_4$"
 d_elven_unity_1:0 "£unity£ +1\n"
 d_elven_unity_1_desc:0 "$d_elven_unity_1$"
 
+d_elven_alloys_10:0 "£alloys£ +10\n"
+d_elven_alloys_10_desc:0 "$d_elven_alloys_10$"
+
 d_elven_lunari_moon:0 "£energy£ +10"
 d_elven_lunari_moon_desc:0 "$d_elven_lunari_moon$"
 
@@ -446,16 +453,3 @@ mod_country_base_society_research_produces_add:0 "£society£ Monthly Society Re
 mod_country_base_engineering_research_produces_add:0 "£engineering£ Monthly Engineering Research"
 
 mod_planet_building_planetary_shield_generator_build_speed_mult:0 "Planetary Shield Generator Build Speed"
-
-########################
-###      COUNCIL      ##
-########################
-
-elven_councilor_arcane_minded:0 "Archmagister"
-elven_councilor_arcane_minded_desc:0 "The Archmagister is resposible for the research of everything that is arcane and bridging the differences between scientific and religious circles."
-
-elven_councilor_eilistraee:0 "Secretary General"
-elven_councilor_eilistraee_desc:0 "The Secretary General chairs the meetings of the peacekeeping council and acts as the state spokesperson."
-
-elven_councilor_drow_warriors:0 "Spymaster"
-elven_councilor_drow_warriors_desc:0 "The Spymaster is in charge of both foreign and domestic espionage networks."

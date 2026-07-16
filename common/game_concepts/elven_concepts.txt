@@ -171,3 +171,16 @@ concept_eos_elven_dragon_strategist = {
 concept_eos_elven_lhuren_eternal_array_chain = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_elven_great_firewall.dds"
 }
+
+concept_eos_dark_tithe = {
+}
+
+concept_eos_ap_mind_over_matter = {
+}
+
+concept_eos_anorim_trait_curse = {
+	icon = "gfx/interface/icons/traits/trait_darkelfmetabolism.dds"
+}
+
+concept_eos_anorim_prismatic_refuge_chain = {
+}

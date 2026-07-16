@@ -158,7 +158,7 @@ eos_lhuren_immortality_remove = {
 				# Perfectly balanced, as all things should be
 				kill_pop_group = {
 					pop_group = this
-					amount = 50%
+					percentage = 0.5
 				}
 			}
 		}

@@ -276,6 +276,13 @@ elven_no_astral_planes_no_first_contact_dlc = {
 	elven_no_first_contact_dlc = yes
 }
 
+elven_no_nomads_dlc = {
+	has_nomads_dlc = no
+}
+
+elven_nomads_dlc = {
+	has_nomads_dlc = yes
+}
 
 
 # nebula_cloaking_effect = {

@@ -58,41 +58,16 @@ origin_drow_prismatic_refuge = {
 	modifier = {
 		add_attunement_the_eater_of_worlds = 50
 		add_attunement_the_composer_of_strands = 50
+		army_disengage_chance_mult = 0.2
+		ship_disengage_opportunities_add = 1
+		category_propulsion_research_speed_mult = 0.1
+		category_propulsion_draw_chance_mult = 0.2
+		category_voidcraft_research_speed_mult = 0.1
+		category_voidcraft_draw_chance_mult = 0.2
 	}
 
 	description = "origin_tooltip_drow_prismatic_refuge_effects"
-
-	swap_type = {
-		description = "origin_tooltip_drow_prismatic_refuge_settled_effects"
-
-		trigger = {
-			is_nomadic = no
-		}
-
-		modifier = {
-			# PLACEHOLDER: Will change it to something more thematic later
-			ship_speed_mult = 0.2
-			army_disengage_chance_mult = 0.1
-			ship_disengage_opportunities_add = 1
-			planet_non_artificial_max_districts_add = 1
-		}
-	}
-
-	swap_type = {
-		description = "origin_tooltip_drow_prismatic_refuge_nomadic_effects"
-
-		trigger = {
-			is_nomadic = yes
-		}
-
-		modifier = {
-			# PLACEHOLDER: Will change it to something more thematic later
-			ship_speed_mult = 0.2
-			army_disengage_chance_mult = 0.1
-			ship_disengage_opportunities_add = 1
-			arkship_action_speed = 0.2
-		}
-	}
+	negative_description = "origin_tooltip_drow_prismatic_refuge_negative_effects"
 
 	flags = { custom_start_screen }
 

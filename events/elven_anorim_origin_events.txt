@@ -163,7 +163,7 @@ country_event = {
 }
 
 # Part 1 Stage 3 (Clouded Reflection)
-# First-time Dark Tithe completion. Explain what just happened.
+# Issue the psionic ascension gatekeeper mission
 country_event = {
 	id = elven_anorim_origin_events.103
 	title = "elven_anorim_origin_events.103.name"
@@ -183,6 +183,11 @@ country_event = {
 	after = {
 		enable_mission = {
 			name = EOS_ANORIM_PRISMATIC_REFUGE_ASCENSION
+		}
+		add_tech_option_or_research_effect = {
+			TECH = tech_psionic_theory
+			PROGRESS = 0.25
+			CATEGORY = society_research
 		}
 	}
 	
@@ -532,6 +537,11 @@ country_event = {
 			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
 			amount = 1
 		}
+		add_tech_option_or_research_effect = {
+			TECH = tech_wormhole_stabilization
+			PROGRESS = 0.25
+			CATEGORY = physics_research
+		}
 	}
 	
 	option = {
@@ -626,6 +636,11 @@ country_event = {
 			mission = EOS_ANORIM_PRISMATIC_REFUGE_EXPLORE_EVERGLOOM
 			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
 			amount = 1
+		}
+		add_tech_option_or_research_effect = {
+			TECH = tech_precognition_interface
+			PROGRESS = 0.25
+			CATEGORY = society_research
 		}
 	}
 	
@@ -722,6 +737,11 @@ country_event = {
 			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
 			amount = 1
 		}
+		add_tech_option_or_research_effect = {
+			TECH = tech_psionic_lightning
+			PROGRESS = 0.25
+			CATEGORY = society_research
+		}
 	}
 	
 	option = {
@@ -817,6 +837,11 @@ country_event = {
 			counter = EOS_ANORIM_EVERGLOOM_EXPLORATION
 			amount = 1
 		}
+		add_tech_option_or_research_effect = {
+			TECH = tech_ship_armor_5
+			PROGRESS = 0.25
+			CATEGORY = engineering_research
+		}
 	}
 	
 	option = {
@@ -908,13 +933,13 @@ country_event = {
 	}
 	
 	option = {
-		name = elven_anorim_origin_events.2010.a
+		name = elven_anorim_origin_events.2011.a
 		trigger = {
 			is_nomadic = yes
 		}
 	}
 	option = {
-		name = elven_anorim_origin_events.2010.b
+		name = elven_anorim_origin_events.2011.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -948,13 +973,13 @@ country_event = {
 	}
 	
 	option = {
-		name = elven_anorim_origin_events.2010.a
+		name = elven_anorim_origin_events.2012.a
 		trigger = {
 			is_nomadic = yes
 		}
 	}
 	option = {
-		name = elven_anorim_origin_events.2010.b
+		name = elven_anorim_origin_events.2012.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -1293,7 +1318,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1345,7 +1370,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1397,7 +1422,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1449,7 +1474,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1480,7 +1505,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1524,7 +1549,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1555,7 +1580,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1595,7 +1620,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = prev
@@ -1739,14 +1764,14 @@ country_event = {
 					limit = { has_planet_flag = eos_evergloom_05_spawn_B }
 					planet_event = {
 						id = elven_anorim_origin_events.331
-						days = 40
+						days = 60
 					}
 				}
 				random_system_planet = {
 					limit = { has_planet_flag = eos_evergloom_05_spawn_C }
 					planet_event = {
 						id = elven_anorim_origin_events.331
-						days = 70
+						days = 120
 					}
 				}
 			}
@@ -1761,13 +1786,13 @@ country_event = {
 	}
 	
 	option = {
-		name = elven_anorim_origin_events.303.a
+		name = elven_anorim_origin_events.302.a
 		trigger = {
 			is_nomadic = yes
 		}
 	}
 	option = {
-		name = elven_anorim_origin_events.303.b
+		name = elven_anorim_origin_events.302.b
 		trigger = {
 			is_nomadic = no
 		}
@@ -1790,6 +1815,12 @@ country_event = {
 	}
 	
 	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = eos_anorim_story
+				value = 10
+			}
+		}
 	}
 
 	after = {
@@ -1797,6 +1828,11 @@ country_event = {
 			event_target:anorim_evergloom_cluster_05 = {
 				set_star_flag = eos_evergloom_cleared
 			}
+		}
+		add_tech_option_or_research_effect = {
+			TECH = tech_ascension_theory
+			PROGRESS = 0.25
+			CATEGORY = society_research
 		}
 	}
 	
@@ -1821,7 +1857,7 @@ country_event = {
 	id = elven_anorim_origin_events.304
 	title = "elven_anorim_origin_events.304.name"
 	desc = "elven_anorim_origin_events.304.desc"
-	picture = GFX_evt_cosmic_storms_nexus_storm
+	picture = GFX_evt_cosmic_storms_particle_storm
 	show_sound = event_mystic_reveal
 
 	is_triggered_only = yes
@@ -1834,9 +1870,42 @@ country_event = {
 		event_target:anorim_tear = {
 			destroy_ambient_object = this
 		}
+		every_situation = {
+			limit = {
+				is_situation_type = eos_anorim_situation_galtaereth
+			}
+			destroy_situation = this
+		}
+		remove_point_of_interest = elven_anorim_prismatic_refuge_survive_poi
 	}
 
 	after = {
+		add_modifier = {
+			modifier = eos_anorim_origin_ending_A_modifier
+		}
+		modify_species = {
+			species = this
+			base = this
+			remove_trait = trait_drow_anorim_curse
+			add_trait = trait_drow_anorim_immortality
+			effect = {
+				hidden_effect = {
+					save_event_target_as = eos_new_species
+				}
+			}
+		}
+		every_galaxy_species = {
+			limit = {
+				has_trait = trait_drow_anorim_curse
+			}
+			change_species_characteristics = {
+				remove_trait = trait_drow_anorim_curse
+				add_trait = trait_drow_anorim_immortality
+			}
+		}
+		hidden_effect = {
+			set_country_flag = eos_anorim_origin_ending_A
+		}
 	}
 	
 	option = {
@@ -1895,7 +1964,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = {
@@ -1931,7 +2000,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = {
@@ -1967,7 +2036,7 @@ planet_event = {
 						}
 
 						set_fleet_stance = aggressive
-						set_aggro_range = 500
+						set_aggro_range = 1000
 						set_aggro_range_measure_from = self
 
 						set_location = {
@@ -2044,95 +2113,6 @@ ship_event = {
 						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
 					}
 					create_fleet = {
-						name = "eos_evergloom_hostiles_fleet_guard"
-						settings = {
-							spawn_debris = no
-						}
-						effect = {
-							set_owner = prev.owner
-							set_fleet_flag = eos_evergloom_hostiles_fleet
-
-							while = {
-								count = 6
-								create_ship = {
-									name = random
-									design = "eos_ship_design_evergloom_guard_escort"
-									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_guard }
-									}
-								}
-							}
-
-							set_fleet_stance = aggressive
-							set_aggro_range = 500
-							set_aggro_range_measure_from = self
-
-							set_location = {
-								target = prev
-								distance = 10
-								direction = in_system
-							}
-						}
-					}
-					set_ship_flag = eos_evergloom_silkweaver_wave_1
-				}
-				if = {
-					limit = {
-						has_hp_percentage < 0.30
-						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
-					}
-					create_fleet = {
-						name = "eos_evergloom_hostiles_fleet_guard"
-						settings = {
-							spawn_debris = no
-						}
-						effect = {
-							set_owner = prev.owner
-							set_fleet_flag = eos_evergloom_hostiles_fleet
-
-							while = {
-								count = 5
-								create_ship = {
-									name = random
-									design = "eos_ship_design_evergloom_guard_escort"
-									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_guard }
-									}
-								}
-							}
-
-							while = {
-								count = 3
-								create_ship = {
-									name = random
-									design = "eos_ship_design_evergloom_guard_battlecruiser"
-									effect = {
-										add_modifier = { modifier = eos_evergloom_hostiles_mod_guard }
-									}
-								}
-							}
-
-							set_fleet_stance = aggressive
-							set_aggro_range = 500
-							set_aggro_range_measure_from = self
-
-							set_location = {
-								target = prev
-								distance = 10
-								direction = in_system
-							}
-						}
-					}
-					set_ship_flag = eos_evergloom_silkweaver_wave_2
-				}
-			}
-			eos_evergloom_silkweaver_B = {
-				if = {
-					limit = {
-						has_hp_percentage < 0.90
-						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
-					}
-					create_fleet = {
 						name = "eos_evergloom_hostiles_fleet_ghosts"
 						settings = {
 							spawn_debris = no
@@ -2175,7 +2155,7 @@ ship_event = {
 							}
 
 							set_fleet_stance = aggressive
-							set_aggro_range = 500
+							set_aggro_range = 1000
 							set_aggro_range_measure_from = self
 
 							set_location = {
@@ -2235,7 +2215,7 @@ ship_event = {
 							}
 
 							set_fleet_stance = aggressive
-							set_aggro_range = 500
+							set_aggro_range = 1000
 							set_aggro_range_measure_from = self
 
 							set_location = {
@@ -2248,7 +2228,7 @@ ship_event = {
 					set_ship_flag = eos_evergloom_silkweaver_wave_2
 				}
 			}
-			eos_evergloom_silkweaver_C = {
+			eos_evergloom_silkweaver_B = {
 				if = {
 					limit = {
 						has_hp_percentage < 0.90
@@ -2275,7 +2255,7 @@ ship_event = {
 							}
 
 							set_fleet_stance = aggressive
-							set_aggro_range = 500
+							set_aggro_range = 1000
 							set_aggro_range_measure_from = self
 
 							set_location = {
@@ -2317,7 +2297,7 @@ ship_event = {
 							}
 
 							set_fleet_stance = aggressive
-							set_aggro_range = 500
+							set_aggro_range = 1000
 							set_aggro_range_measure_from = self
 
 							set_location = {
@@ -2328,6 +2308,95 @@ ship_event = {
 
 							solar_system = {
 								eos_evergloom_decloak = yes
+							}
+						}
+					}
+					set_ship_flag = eos_evergloom_silkweaver_wave_2
+				}
+			}
+			eos_evergloom_silkweaver_C = {
+				if = {
+					limit = {
+						has_hp_percentage < 0.90
+						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_1 }
+					}
+					create_fleet = {
+						name = "eos_evergloom_hostiles_fleet_guard"
+						settings = {
+							spawn_debris = no
+						}
+						effect = {
+							set_owner = prev.owner
+							set_fleet_flag = eos_evergloom_hostiles_fleet
+
+							while = {
+								count = 6
+								create_ship = {
+									name = random
+									design = "eos_ship_design_evergloom_guard_escort"
+									effect = {
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_guard }
+									}
+								}
+							}
+
+							set_fleet_stance = aggressive
+							set_aggro_range = 1000
+							set_aggro_range_measure_from = self
+
+							set_location = {
+								target = prev
+								distance = 10
+								direction = in_system
+							}
+						}
+					}
+					set_ship_flag = eos_evergloom_silkweaver_wave_1
+				}
+				if = {
+					limit = {
+						has_hp_percentage < 0.30
+						NOT = { has_ship_flag = eos_evergloom_silkweaver_wave_2 }
+					}
+					create_fleet = {
+						name = "eos_evergloom_hostiles_fleet_guard"
+						settings = {
+							spawn_debris = no
+						}
+						effect = {
+							set_owner = prev.owner
+							set_fleet_flag = eos_evergloom_hostiles_fleet
+
+							while = {
+								count = 5
+								create_ship = {
+									name = random
+									design = "eos_ship_design_evergloom_guard_escort"
+									effect = {
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_guard }
+									}
+								}
+							}
+
+							while = {
+								count = 3
+								create_ship = {
+									name = random
+									design = "eos_ship_design_evergloom_guard_battlecruiser"
+									effect = {
+										add_modifier = { modifier = eos_evergloom_hostiles_mod_guard }
+									}
+								}
+							}
+
+							set_fleet_stance = aggressive
+							set_aggro_range = 1000
+							set_aggro_range_measure_from = self
+
+							set_location = {
+								target = prev
+								distance = 10
+								direction = in_system
 							}
 						}
 					}
@@ -2361,7 +2430,7 @@ situation_event = {
 	immediate = {
 		set_situation_progress = 0
 
-		# Going to Blorg won't save you from an eldritch deity, but good try
+		# Going to Blorg won't save you from an eldritch deity, but nice try
 		every_country = {
 			every_owned_colony = {
 				limit = {
@@ -2433,6 +2502,55 @@ situation_event = {
 				}
 			}
 		}
+	}
+}
+
+#######################
+# Story Action Events #
+#######################
+
+# New Evergleam Prism Node created
+#From = Planet/Starbase/Megastructure/Astral Rift scope
+#This = Fleet scope
+fleet_event = {
+	id = elven_anorim_origin_events.20100
+	title = "elven_anorim_origin_events.20100.name"
+	desc = "elven_anorim_origin_events.20100.desc"
+	picture = GFX_evt_cosmic_storms_particle_storm
+	show_sound = event_mystic_reveal
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			OR = {
+				has_modifier = eos_anorim_origin_ending_A_modifier
+				has_country_flag = eos_anorim_origin_ending_A
+			}
+		}
+		exists = leader
+		from = {
+			is_planet_class = pc_black_hole
+		}
+		solar_system = {
+			NOR = {
+				has_star_flag = eos_evergleam_wormhole_node
+				has_star_flag = eos_evergleam_wormhole_nexus
+			}
+		}
+	}
+	
+	immediate = {
+		from = {
+			eos_evergleam_create_node = yes
+		}
+	}
+
+	after = {
+	}
+	
+	option = {
+		name = elven_anorim_origin_events.20100.a
 	}
 }
 

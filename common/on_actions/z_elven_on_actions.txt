@@ -137,6 +137,14 @@ on_entering_system = {
 	}
 }
 
+#From = Planet/Starbase/Megastructure/Astral Rift scope
+#This = Fleet scope
+on_fleet_enter_orbit = {
+	events = {
+		elven_anorim_origin_events.20100
+	}
+}
+
 # This = Ship
 # From = Disabler Ship
 on_ship_disabled = {

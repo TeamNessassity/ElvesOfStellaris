@@ -22,7 +22,7 @@ tech_lunari_shield_power_relays_desc:0 "Several types of exotic particles emitte
 # Planets
 ####################################
 
-pc_lunari_shielded:0 "Unidentifiable stellar object"
+pc_lunari_shielded:0 "Unidentifiable Stellar Object"
 pc_lunari_shielded_desc:0 "This moon is the only significant source of light in the system, emitting electromagnetic radiation while repulsing all incoming physical matter. All scans have proven unsuccessful as outgoing particles are reflected back and dispersed before they reach the surface, if one exists.\n\nSome consider this odd stellar object to be an instance of a white hole or a one-way portal exit from another universe. Others believe that the moon is sentient and possesses an ability to telepathically influence its surroundings."
 
 pc_lunari_arctic:0 "Permafrost World"
@@ -133,7 +133,7 @@ ELVEN_lunari_home_system_name: "Sunless Realms"
 
 origin_elven_sunless_realms:0 "Sunless Realms"
 origin_elven_sunless_realms_desc:0 "Miraculously blossoming in a system with binary black holes, your civilization's only light has been that of the divine Moon."
-origin_tooltip_elven_sunless_realms_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_lunari_arctic']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_lunari_auroras_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_lunari_planetary_ice_blossoms']\n- ['concept_guaranteed_colonies']: Two smaller ['concept_pc_lunari_arctic', Permafrost Worlds] will spawn as satellites of your homeworld planet\n- $SPECIES_TRAITS$ ['concept_lunari_arctic_preference']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_hydroponics', £society_research£ $tech_hydroponics$]"
+origin_tooltip_elven_sunless_realms_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_black_hole']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_lunari_arctic']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_lunari_auroras_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_lunari_planetary_ice_blossoms']$TABBED_NEW_LINE$- ['concept_farming_district', £district£$district_farming_plural$]: §R-1§!$TABBED_NEW_LINE$- Start with £building£ ['building:building_hydroponics_farm']\n- ['concept_guaranteed_colonies']: Two smaller ['concept_pc_lunari_arctic', Permafrost Worlds] will spawn as satellites of your homeworld planet\n- $SPECIES_TRAITS$ ['concept_lunari_arctic_preference']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_eos_hydroponics', £society_research£ $tech_hydroponics$]"
 
 
 ################

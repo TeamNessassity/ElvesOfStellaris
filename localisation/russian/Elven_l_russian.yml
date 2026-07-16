@@ -1,314 +1,319 @@
 ﻿l_russian:
 
-FLAG_CATEGORY_elven:0 "Эльфийские"
+FLAG_CATEGORY_elven:0 "Elven"
 
 ####################################
 # Name Lists
 ####################################
-name_list_ELVEN1:0 "Эльфы: Айлейды"
-name_list_ELVEN2:0 "Эльфы: Эльдари" #потому что могу
+name_list_ELVEN1:0 "Elves: Ayleid"
+name_list_ELVEN2:0 "Elves: Eldali" ## Chinese-ish-Quenya
 ## ELVEN3 == LUNARI
-name_list_ELVEN4:0 "Elves: Энари"
-name_list_ELVEN5:0 "Elves: Альтмеры"
-name_list_ELVEN6:0 "Elves: Скрытные"
-name_list_ELVEN7:0 "Elves: Дикие"
+name_list_ELVEN4:0 "Elves: Aenarí" ## Pseudo-Gaulish
+name_list_ELVEN5:0 "Elves: Altmer"
+name_list_ELVEN6:0 "Elves: Hidden"
+name_list_ELVEN7:0 "Elves: Wild"
 
 ####################################
 # SHIPS 
 ####################################
-elven_01_shipset_desc:0 "Признанные за свои фирменные плавные очертания и характерные силуэты, суда Elven воплощают в себе непринужденную элегантность. Функциональные - мощные - красивые."
+elven_01_shipset_desc:0 "Recognised for their signature sleek contours and distinctive silhouettes, Elven vessels embody effortless elegance. Functional - Powerful - Beautiful."
 
-elven_02_shipset_desc:0 "Признанные за свои фирменные плавные очертания и характерные силуэты, суда Elven воплощают в себе непринужденную элегантность. Функциональные - мощные - красивые."
+elven_02_shipset_desc:0 "$elven_01_shipset_desc$"
 
 ####################################
 # System Initializers
 ####################################
-elven_system_imperial_initializer_NAME:0 "Происхождение эльфов"
-elven_system_imperial_initializer_DESC:0 "§LВаш народ живет на планете Авари, изначальном доме Эльдар.§!\n\n$system_initializer_DESC$"
-elven_system_gaul_initializer_NAME:0 "Двойной карлик"
-elven_system_gaul_initializer_DESC:0 "§LБинарная система, состоящая из звезды класса F в паре с коричневым карликом.§!\n\n$system_initializer_DESC$"
+elven_system_imperial_initializer_NAME:0 "Elven Origins"
+elven_system_imperial_initializer_DESC:0 "§LYour people reside on an Avari world, the original home of the Eldar.§!\n\n$system_initializer_DESC$"
+elven_system_gaul_initializer_NAME:0 "Dwarf Binary"
+elven_system_gaul_initializer_DESC:0 "§LA binary system consisting of an F class star paired with a brown dwarf.§!\n\n$system_initializer_DESC$"
 
 ####################################
-# Origins
+# Origins 
 ####################################
 
-origin_elven_foundations:0 "Эльфийский фундамент"
-origin_elven_foundations_desc:0 "Ваш народ развивался в мире, наполненном многими чудесами древней империи Эльдар."
-origin_tooltip_elven_foundations_effects:3 "§YСтартовая локация§!:\n Начало в §Yособом звёздном кластере§!\n §RБлижайшие обитаемые миры§!\n §Rне гарантированно будут пригодны для вас!§!\n\n§YРодной мир§!:\n Имеет §Y3§! §Eуникальные§! особенности\n Начало с §YКольцом Авари§!, которое:\n   Даёт небольшое количество £housing£ §Yжилья§!\n   Увеличивает производство ресурсов от £job£ §Yвидов деятельности§!\n   Увеличивает £resource_time£ §Yскорость строительства§!\n   Уменьшает £ship_stats_build_cost£ §Yзатраты на строительство§!"
+origin_elven_foundations:0 "Elven Foundations"
+origin_elven_foundations_desc:0 "Your people came of age on a world populated with the many wonders of an ancient Eldar empire."
+origin_tooltip_elven_foundations_effects:3 "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_pulsar']\n- $HOMEWORLD$$TABBED_NEW_LINE$- Has a ['concept_eos_ruined_orbital_ring']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_tir_aranad']$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_frensca_tol_blocker']"
 
-origin_elven_arcadian_symbiosis:0 "Аркадийский симбиоз"
-origin_elven_arcadian_symbiosis_desc:0 "Ваша цивилизация выросла из групп малонаселенных естественных мест обитания, сосуществующих с разумной растительной жизнью."
-origin_tooltip_elven_arcadian_symbiosis_effects:3 "§YСтартовая локация§!:\n Начало в §Yособом звёздном кластере§!\n §RБлижайшие обитаемые миры§!\n §Rне гарантированно будут пригодны для вас!§!\n\n§YРодной мир§!:\n £discovery_planet£ §Y$pc_continental$§!\n Имеет модификатор §GЕстественная красота§!\n Имеет §Y3§! §Eуникальные§! особенности\n §Y8§! £pop£ поселений §Yплантоидных энтов§! с чертами:\n   §GУслужливые§!\n   §GОчень сильные§!\n   §GВыносливые§!\n   §RНеплодовитые§!\n   §RОсёдлые§!\n §YЭнты§! предоставлют планетарные бонусы:\n   Увеличивают £planet£ §Yприспособленность§!\n   Увеличивают £amenities£ §Yблага§!\n\n"
+origin_elven_arcadian_symbiosis:0 "Arcadian Symbiosis"
+origin_elven_arcadian_symbiosis_desc:0 "Your civilization arose as a grouping of sparsely populated natural habitats coexisting with sentient plantlife."
+origin_tooltip_elven_arcadian_symbiosis_effects: "- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']\n- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_eos_pc_continental']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_elven_natural_beauty_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_glowing_forests']$TABBED_NEW_LINE$$t$- ['concept_drow_planetary_glowing_oceans']$TABBED_NEW_LINE$$t$- ['concept_elven_healing_spring']\n- ['concept_guaranteed_colonies']: §RNot of your preferable type!§!\n- §Y8§! £pop£ Pops are ['concept_eos_treants']\n- ['concept_concept_phytovitalization_mod'] modifier on planets inhabited by ['concept_eos_treants']"
 
 ####################################
 # Species Classes
 ####################################
-ELVEN:0 "Эльфы"
-ELVEN_desc:1 "Подвид не влияет на вашу империю, но другие эльфы могут считать своих собратьев менее чуждыми, чем другие подвиды."
-ELVEN_plural:0 "Эльфы"
-ELVEN_insult_01:0 "зверь"
-ELVEN_insult_plural_01:0 "звери"
-ELVEN_insult_02:0 "остроухий хобгоблин"
-ELVEN_insult_plural_02:0 "остроухие хобгоблины"
-ELVEN_insult_03:0 "фея-переросток"
-ELVEN_insult_plural_03:0 "феи-переростки"
-ELVEN_insult_04:0 "скачущий мешок с водой"
-ELVEN_insult_plural_04:0 "скачущие мешки с водой"
-ELVEN_compliment_01:0 "ангел"
-ELVEN_compliment_plural_01:0 "ангелы"
-ELVEN_spawn:0 "дева"
-ELVEN_spawn_plural:0 "девы"
-ELVEN_sound_01:0 "ворчание"
-ELVEN_sound_02:0 "хрюканье"
-ELVEN_sound_03:0 "тявканье"
-ELVEN_sound_04:0 "вой"
-ELVEN_sound_05:0 "хныканье"
-ELVEN_organ:0 "желудок"
-ELVEN_organ_plural:0 "желудки"
-ELVEN_mouth:0 "рот"
-ELVEN_ear:0 "ухо"
-ELVEN_ear_plural:0 "уши"
-ELVEN_hand:0 "рука"
-ELVEN_hand_plural:0 "руки"
-ELVEN_tooth:0 "зуб"
-ELVEN_tooth_plural:0 "зубы"
-ELVEN_fossil:0 "остатки"
-ELVEN_fossil_plural:0 "остатки"
-ELVEN_remnant:0 "скелет"
-ELVEN_remnant_plural:0 "скелеты"
+ELVEN:0 "Elven"
+ELVEN_desc:1 "Species Class has no effect on your Empire, but Elven species may consider other Elves to be less alien than other Species Classes."
+ELVEN_plural:0 "Elves"
+ELVEN_insult_01:0 "beast"
+ELVEN_insult_plural_01:0 "beasts"
+ELVEN_insult_02:0 "pointy eared hobgoblin"
+ELVEN_insult_plural_02:0 "pointy eared hobgoblins"
+ELVEN_insult_03:0 "overgrown faery"
+ELVEN_insult_plural_03:0 "overgrown faeries"
+ELVEN_insult_04:0 "prancing bag of water"
+ELVEN_insult_plural_04:0 "prancing bags of water"
+ELVEN_compliment_01:0 "angel"
+ELVEN_compliment_plural_01:0 "angels"
+ELVEN_spawn:0 "maiden"
+ELVEN_spawn_plural:0 "maidens"
+ELVEN_sound_01:0 "growling"
+ELVEN_sound_02:0 "grunting"
+ELVEN_sound_03:0 "yapping"
+ELVEN_sound_04:0 "yowling"
+ELVEN_sound_05:0 "mewling"
+ELVEN_organ:0 "stomach"
+ELVEN_organ_plural:0 "stomachs"
+ELVEN_mouth:0 "mouth"
+ELVEN_ear:0 "ear"
+ELVEN_ear_plural:0 "ears"
+ELVEN_hand:0 "hand"
+ELVEN_hand_plural:0 "hands"
+ELVEN_tooth:0 "tooth"
+ELVEN_tooth_plural:0 "teeth"
+ELVEN_fossil:0 "fossil"
+ELVEN_fossil_plural:0 "fossils"
+ELVEN_remnant:0 "skeleton"
+ELVEN_remnant_plural:0 "skeletons"
 
 
-RT_DRUID:0 "Друид"
+RT_DRUID:0 "Druid"
 
 ####################################
 # MEGASTRUCTURES
 ####################################
 
-elven_avari_ring_MEGASTRUCTURE_DETAILS:1 "Искусственное кольцо, которое может менять климатические условия на планете для удовлетвоерия любых пожеланий."
-elven_avari_ring_CONSTRUCTION_INFO_DELAYED:2 "§YКольцо Авари§! создаёт псионические поля, которые изменяют климат планеты на комфортный для любых разумных существ, в настоящее время живущих на ней."
-elven_avari_ring:0 "Кольцо Авари"
-elven_avari_ring_DESC:0 "Искусственное орбитальное кольцо, которое одновременнно изменяет климат в зависимости от жителей и предоставляет простой способ транспортировки на орбиту."
+elven_avari_ring_MEGASTRUCTURE_DETAILS:1 "An artificial ring that can alter the climate conditions on a planet to conform to the whatever desired."
+elven_avari_ring_CONSTRUCTION_INFO_DELAYED:2 "§YAvari Rings§! create psionic fields that alter climates of a world to conform to the needs of any sentient beings presently living there."
+elven_avari_ring:0 "Avari Ring"
+elven_avari_ring_DESC:0 "An artificial orbital ring that both alters the climate based on whomever resides as well as providing easy transport to orbit."
 
-elven_avari_shield_MEGASTRUCTURE_DETAILS:1 "Оборонительная структура, защищающая от бомбардировок и успокаивающая своим наличием граждан."
-elven_avari_shield_CONSTRUCTION_INFO_DELAYED:2 "§YЩит Авари§! окутывает всю планету. Он защищает от атак и успокаивает население."
-elven_avari_shield:0 "Щит Авари"
-elven_avari_shield_DESC:0 "Окутывающий планету щит, защищающий от атак и успокаивающий население."
+elven_avari_shield_MEGASTRUCTURE_DETAILS:1 "A defensive structure that protects against bombardment and calms the populace."
+elven_avari_shield_CONSTRUCTION_INFO_DELAYED:2 "§YAvari Shields§! encompass the entire planet. Both protecting against attacks as well as calming the populace on the surface."
+elven_avari_shield:0 "Avari Shield"
+elven_avari_shield_DESC:0 "A planet encompassing shield that protects from attacks and calms the populace on the surface."
 
 ## AINATELE AKA SANCTUARY! ##
-pc_elven_sanctuary:0 "Айнетелэ"
-pc_elven_sanctuary_adj:0 "искусственный"
-pc_elven_sanctuary_desc:0 "Огромное искусственное сооружение, предназначенное для размещения большинства известных форм жизни."
-mod_pc_elven_sanctuary_habitability:0 "Приспособленность к Айнетелэ"
-trait_pc_elven_sanctuary_preference:0 "Предпочтение - Айнетелэ"
-trait_pc_elven_sanctuary_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+pc_elven_sanctuary:0 "Ainatele"
+pc_elven_sanctuary_adj:0 "artificial"
+pc_elven_sanctuary_desc:0 "A mammoth artificial structure designed to accomodate most known forms of life."
+mod_pc_elven_sanctuary_habitability:0 "Ainatele Habitability"
+trait_pc_elven_sanctuary_preference:0 "Ainatele Preference"
+trait_pc_elven_sanctuary_preference_desc:0 "§LClimate preference is determined at the genetic level, by Creation or skillful manipulation.§!"
 
 ####################################
 # Traits
 ####################################
 
-trait_elven_true:0 "Эльфы"
-trait_elven_true_desc:0 "§LЭта цивилизация произошла от таинственных Эльдар и потому её представители являются чрезвычайно долгоживущими.§!\n"
-trait_elven_savage:0 "Эльфийские дикари"
-trait_elven_savage_desc:0 "§LОтветвление от таинственных Эльдар, которых обуяла дикость.§!\n"
+trait_elven_true:0 "Elven"
+trait_elven_true_desc:0 "§LThis civilization descends from the mysterious Eldar and as such have enormous lifespans.§!\n"
+trait_elven_savage:0 "Elven Savage"
+trait_elven_savage_desc:0 "§LAn offshoot of the mysterious Eldar that seems to have embraced savagery.§!\n"
 
 # Immortality Traits
-trait_elven_lunari_immortality:0 "Лунный свет"
-trait_elven_lunari_immortality_desc:0 "Омываемые холодным светом Серебряной Луны, блаженные влачат свое невозможное существование."
-trait_elven_ayleid_immortality:0 "Асцендент"
-trait_elven_ayleid_immortality_desc:0 "Божественная искра вечной жизни - это лишь первое из многих прав на рождение, которые необходимо отвоевать."
-trait_elven_sidh_immortality:0 "Эверблум"
-trait_elven_sidh_immortality_desc:0 "Пока сохраняется равновесие природы, ее хранители должны пользоваться ее щедростью."
+trait_elven_lunari_immortality:0 "Moonlit"
+trait_elven_lunari_immortality_desc:0 "Bathed in the frigid light of the Silver Moon, the blessed nourish their impossible existence."
+trait_elven_ayleid_immortality:0 "Ascendant"
+trait_elven_ayleid_immortality_desc:0 "The divine spark of everlasting life is only the first of many birthrights that must be reclaimed."
+trait_elven_sidh_immortality:0 "Everbloom"
+trait_elven_sidh_immortality_desc:0 "For as long as the balance of nature is preserved, the caretakers shall partake of its bounty."
+
+trait_elven_true_portrait_override_tt: "Requires elven species"
 
 ####################################
 # OPINION MODIFIERS
 ####################################
 
-elven_triggered_opinion_elf_and_elf:0 "Родство"
-elven_triggered_opinion_elf_and_drow:0 "Родство"
-elven_triggered_opinion_drow_and_elf:0 "Родство"
+ elven_triggered_opinion_elf_and_elf:0 "Eldar Affinity"
+ elven_triggered_opinion_elf_and_drow:0 "Eldar Affinity"
+ elven_triggered_opinion_drow_and_elf:0 "Eldar Affinity"
 
 ####################################
 # CIVICS
 ####################################
 
-civic_elven_arcane_minded:0 "Сообщества мистиков"
-civic_elven_arcane_minded_desc:0 "Изучения метафизики является любимым делом всей нации. Причуды транцендентного обычно обсуждаются во всех слоях общества. Эта богатая почва будоражит воображение ученых."
-civic_tooltip_arcane_minded_effects:0 "Slightly increased chance of discovering an §Yarchaeological site§!\n§Y20%§! of £unity£ income is converted to £physics£ £society£ £engineering£ at §Y50%§! efficiency"
-#civic_tooltip_arcane_minded_effects:0 "Немного увеличивает шанс нахождения §Yместа археологических раскопок§!\n"
+civic_elven_arcane_minded:0 "Arcane Societies"
+civic_elven_arcane_minded_desc:0 "Studying the metaphysical is a national pastime. The vagaries of the arcane are commonly discussed at all levels of society. This rich environment of ideas spurs the imagination of researchers."
+civic_tooltip_arcane_minded_effects:0 "§Y20%§! of £unity£ income is converted to £physics£ £society£ £engineering£ at §Y50%§! efficiency\nSlightly increased chance of discovering an §Yarchaeological site§!"
+#civic_tooltip_arcane_minded_effects:0 "$mod_category_psionics_research_speed_mult$: §G+15%§!\n$MOD_SHIP_ANOMALY_GENERATION_CHANCE$: §G+15%§!\nSlightly increased chance of discovering an §Yarchaeological site§!\n"
 
-civic_elven_craft:0 "Элегантный артистизм"
-civic_elven_craft_desc:0 "Цель - совершенство и красота во всех начинаниях. От архитектуры до космических кораблей: все должно быть столь же красиво, сколь и функционально. Данная общественная цель делает жителей счастливее, а корабли и фортификации крепче."
-civic_elven_tooltip_craft_effects:0 "Счастье поселения: §G+10%§!\nПрочность корпуса: §G+5%§!\nБонус защитных фортификаций: §G+10%§!"
+civic_elven_craft:0 "Elegant Artistry"
+civic_elven_craft_desc:0 "Perfection and beauty in all endeavors is the goal. From architecture to spacecraft all things must be as beautiful as they are functional."
+civic_elven_tooltip_craft_effects:0 "Citizen Pop Happiness: §G+10%§!\nHull Strength: §G+5%§!\nFortification Defensive Bonus: §G+10%§!"
 
 # New restriction text not in vanilla
-civic_elven_tooltip_not_materialistic:0 "Не §YМатериалисты§!"
+civic_elven_tooltip_not_materialistic:0 "Is not §YMaterialistic§!"
 
-agenda_elven_isolationism:0 "Экономическая уверенность"
+agenda_elven_isolationism:0 "Focus Inward"
+
+########################
+###      COUNCIL      ##
+########################
+
+elven_councilor_arcane_minded:0 "Archmagister"
+elven_councilor_arcane_minded_desc:0 "The Archmagister is resposible for the research of everything that is arcane and bridging the differences between scientific and religious circles."
 
 ####################################
-# Policies
+# Policies 
 ####################################
 
-policy_elven_gender_policy:0 "Политика в отношении полов"
-policy_elven_gender_policy_desc:0 "Данная политика влияет на то, представители какого пола могут занимать те или иные позиции лидеров.\n\n§RПримечание: изменение политики не оказывает влияния на текущих лидеров и наследников!§!\n"
+policy_elven_gender_policy:0 "Gender Policy"
+policy_elven_gender_policy_desc:0 "These policies affect which genders are allowed for certain leadership positions.\n\n§RNote: policy changes have no affect on current leaders or heirs!§!\n"
 
-elven_gender_default_name:0 "Равенство"
-elven_gender_default:0 "Равенство"
-elven_gender_default_desc:0 "Мужчины и женщины могут становиться любыми лидерами. Что ужасно скучно. И немодно."
+elven_gender_default:0 "Equality"
+elven_gender_default_name:0 "$elven_gender_default$"
+elven_gender_default_desc:0 "Males and females can both fulfill the same leadership positions. Which makes things terribly boring. And unfashionable."
 
-elven_gender_matriarchy_full_name:0 "Абсолютный матриархат"
-elven_gender_matriarchy_full:0 "Абсолютный матриархат"
-elven_gender_matriarchy_full_desc:0 "При данной политике делают вид, что мужчин не существует, их стараются спрятать от чужаков из страха, что может быть замечено их ограниченное чувство моды."
-#"Мужчины склонны к эмоциональности и суровым суждениям. Из этого следует, что только женщины должны быть лидерами во всех слоях общества."
+elven_gender_matriarchy_full:0 "Absolute Matriarchy"
+elven_gender_matriarchy_full_name:0 "$elven_gender_matriarchy_full$"
+elven_gender_matriarchy_full_desc:0 "This policy pretends that males do not exist and tries to hide them from outsiders for fear that their limited fashion sense may be discovered."
+#"Males are prone to emotionality and clouded judgement. It therefore follows that only females should be leaders at all levels of society."
 
-elven_gender_matriarchy_governor_name: "Матрилинейное лидерство"
-elven_gender_matriarchy_governor:0 "Матрилинейное лидерство"
-elven_gender_matriarchy_governor_desc:0 "Мужчины хорошо смотрятся в костюмах. Но не очень хорошо в мантиях. Следовательно, женщины занимают те позиции лидеров, для которых мантии абсолютно необходимы."
-#"Женщины лучше приспособлены для правления и топ-менеджмента. Все правители и губернаторы - женщины."
+elven_gender_matriarchy_governor:0 "Matrilinear Leadership"
+elven_gender_matriarchy_governor_name: "$elven_gender_matriarchy_governor$"
+elven_gender_matriarchy_governor_desc:0 "Men look good in a suit. But not so much in a gown. Hence, women fulfill all leadership positions where gowns are absolutely required."
+#"Females are more suited for ruling and top tier management. All rulers and governors are female."
 
-elven_gender_patriarchy_military_name:0 "Рыцарство"
-elven_gender_patriarchy_military:0 "Рыцарство"
-elven_gender_patriarchy_military_desc:0 "Все знают, что мужчины лучше всего смотрятся, когда участвуют в опасных делах. Поэтому мужчины становятся всеми военными лидерами."
-#"Священная обязанность мужчин - защищать слабых и беззащитных. Поэтому только мужчины допущены к ролям, связанным со сражениями."
+elven_gender_patriarchy_military:0 "Chivalry"
+elven_gender_patriarchy_military_name:0 "$elven_gender_patriarchy_military$"
+elven_gender_patriarchy_military_desc:0 "Everyone knows males look better when involved in hurting things. Therefore males fill all military leadership roles."
+#"It is the sacred duty of males to defend the weak and defensless. As such, only males are involved in combat oriented positions."
 
-elven_gender_patriarchy_full_name:0 "Абсолютный патриархат"
-elven_gender_patriarchy_full:0 "Абсолютный патриархат"
-elven_gender_patriarchy_full_desc:0 "Почему женщины должны иметь деле со скучными обязанностями лидеров? Мужчины должны выполнять эти обязанности, чтобы женщинам хватало времени на создание новых модных тенденций... и убийственных заговоров."
+elven_gender_patriarchy_full:0 "Absolute Patriarchy"
+elven_gender_patriarchy_full_name:0 "$elven_gender_patriarchy_full$"
+elven_gender_patriarchy_full_desc:0 "Why should females have to bother with boring leadership positions? Males should fulfill those roles so females have more time to manage new fashion.... and plot murders."
 
 ####################################
 # Diplomacy
 ####################################
 
-personality_ayleid_personality:0 "Айлейдские империалисты"
-personality_ayleid_personality_desc:0 "Айлейдские империалисты верят, что они - полноправные правители всех эльфоподобных рас. Они экспансионисты, но их мало интересуют прочие расы, пока те не представляют угрозы."
+personality_ayleid_personality:0 "Ayleid Imperialists"
+personality_ayleid_personality_desc:0 "Ayleid Imperialists believe they are the rightful rulers of all Elven-kind. They are expansionist but have little interest in other races unless they are perceived as a threat."
 
-personality_sidh_personality:0 "Эдельские миротворцы"
-personality_sidh_personality_desc:0 "Эдельские миротворцы стараются достичь гармонии и взаимопонимания где только возможно. Как напрямую, так и через миграцию к другим цивилизациям ради провозглашения мира."
+personality_sidh_personality:0 "Edhel Peacemakers"
+personality_sidh_personality_desc:0 "Edhel Peacemakers seek to create harmony and understanding wherever possible. Either directly or by migrating to other civilizations to promote peace."
 
-personality_gaul_personality:0 "Бдительные ремесленники"
-personality_gaul_personality_desc:0 "Бдительные ремесленники, как правило, занимаются своими делами и предпочитают быть изолированными от проблем галактики. Однако, если им угрожает какая-то внешняя сила, они быстро объединяются с единой общей целью - уничтожение угрозы."
+personality_gaul_personality:0 "Vigilant Artisans"
+personality_gaul_personality_desc:0 "Vigilant Artisans tend to keep to their own affairs and prefer to be isolated from greater concerns. If threatened by some external force however, they rapidly band together in a unified common purpose: that of destroying the threat."
 
-gov_elven_druid_circle:0 "Круг друидов"
-gov_elven_druid_circle_desc:0 "Это правительство - спиритическая форма олигархии, где круг мудрых друидов контролирует государство. Не существует разделения между государством и кругом."
+gov_elven_druid_circle:0 "Druid Circle"
+gov_elven_druid_circle_desc:0 "This government is a spiritualistic form of oligarchy, where the circle of wise druids controls the state. No division exists between the state and the circle."
 
 ####################################
-# Nations
+# Nations 
 ####################################
 
-EMPIRE_DESIGN_elven_civ1:0 "Безмятежное королевство Сенелата"
-EMPIRE_DESIGN_elven_civ1_desc:0 "Ксеноисторики нехотя признают, что Айлейды, кажется, всегда существовали на своём родном мире. Основная гипотеза, независимо от того, принимают её Айлейды или нет, состоит в том, что они были частью крупной межзвездной империи задолго до первых исторических записей. Давно утеряны знания о том, как она называлась или как широко простиралась.\n\nНезависимо от происхождения, они теперь стремятся играть более активную роль за пределами своей системы. Их спокойствие и бескорыстность не следует недооценивать, поскольку, как известно, они становились смертельно опасными, когда их провоцировали на насилие.\n"
-EMPIRE_DESIGN_elven_civ1_both_dlc_desc:0 "Ксеноисторики нехотя признают, что Айлейды, кажется, всегда существовали на своём родном мире. Основная гипотеза, независимо от того, принимают её Айлейды или нет, состоит в том, что они были частью крупной межзвездной империи задолго до первых исторических записей. Давно утеряны знания о том, как она называлась или как широко простиралась.\n\nНезависимо от происхождения, они теперь стремятся играть более активную роль за пределами своей системы. Их спокойствие и бескорыстность не следует недооценивать, поскольку, как известно, они становились смертельно опасными, когда их провоцировали на насилие.\n"
-EMPIRE_DESIGN_elven_civ1_utopia_astral_planes_desc:0 "Ксеноисторики нехотя признают, что Айлейды, кажется, всегда существовали на своём родном мире. Основная гипотеза, независимо от того, принимают её Айлейды или нет, состоит в том, что они были частью крупной межзвездной империи задолго до первых исторических записей. Давно утеряны знания о том, как она называлась или как широко простиралась.\n\nНезависимо от происхождения, они теперь стремятся играть более активную роль за пределами своей системы. Их спокойствие и бескорыстность не следует недооценивать, поскольку, как известно, они становились смертельно опасными, когда их провоцировали на насилие.\n"
-EMPIRE_DESIGN_elven_civ1_galactic_paragons_dlc_desc:0 "Ксеноисторики нехотя признают, что Айлейды, кажется, всегда существовали на своём родном мире. Основная гипотеза, независимо от того, принимают её Айлейды или нет, состоит в том, что они были частью крупной межзвездной империи задолго до первых исторических записей. Давно утеряны знания о том, как она называлась или как широко простиралась.\n\nНезависимо от происхождения, они теперь стремятся играть более активную роль за пределами своей системы. Их спокойствие и бескорыстность не следует недооценивать, поскольку, как известно, они становились смертельно опасными, когда их провоцировали на насилие.\n"
+EMPIRE_DESIGN_elven_civ1:0 "Serene Kingdom of Senalata"
+EMPIRE_DESIGN_elven_civ1_desc:0 "Xeno historians grudgingly admit the Ayleids appear to have always existed on their world. The prevailing hypothesis, whether encouraged by Ayleids or not, is that they were part of a massive interstellar empire at some distant point in pre-history. What it was called or how far it extended have long since been lost.\n\nRegardless of origins, they now seek to have a more active role outside their system. Their calm and disinterested demeanor is best not underestimated however as they have been known to be quite lethal when provoked to violence.§!\n"
+EMPIRE_DESIGN_elven_civ1_both_dlc_desc:0 "$EMPIRE_DESIGN_elven_civ1_desc$"
+EMPIRE_DESIGN_elven_civ1_utopia_astral_planes_desc:0 "$EMPIRE_DESIGN_elven_civ1_desc$"
+EMPIRE_DESIGN_elven_civ1_galactic_paragons_dlc_desc:0 "$EMPIRE_DESIGN_elven_civ1_desc$"
 
-ELVEN_civ1_empire_adjective: "Айлейд"
-ELVEN_civ1_species_name: "Айлейд"
-ELVEN_civ1_species_plural: "Айлейды"
-ELVEN_civ1_species_adjective: "Айлейд"
-ELVEN_civ1_ruler_title: "Великий король"
-ELVEN_civ1_ruler_title_female: "Великая королева"
-ELVEN_civ1_heir_title: "Принц"
-ELVEN_civ1_heir_title_female: "Принцесса"
-ELVEN_civ1_ruler_name: "Эления Аллория"
-ELVEN_civ1_homeworld_name: "Сенелата"
-ELVEN_civ1_home_system_name: "Аноралас"
+ELVEN_civ1_empire_adjective: "Ayleian"
+ELVEN_civ1_species_name: "Ayleid"
+ELVEN_civ1_species_plural: "Ayleids"
+ELVEN_civ1_species_adjective: "Ayleian"
+ELVEN_civ1_ruler_title: "Grand King"
+ELVEN_civ1_ruler_title_female: "Grand Queen"
+ELVEN_civ1_heir_title: "Prince"
+ELVEN_civ1_heir_title_female: "Princess"
+ELVEN_civ1_ruler_name: "Elenya Alloria"
+ELVEN_civ1_homeworld_name: "Senalata"
+ELVEN_civ1_home_system_name: "Anoralas"
 
-EMPIRE_DESIGN_elven_civ2:0 "Айнарский круг"
-EMPIRE_DESIGN_elven_civ2_desc:0 "Древние Айнари состояли из различных племен, часто борющихся за территорию или ресурсы. Одним из таких ресурсов являются сильные, но медленные энты. Очень мощные, но невероятно раболепные, они были и остаются в основном рабочими.\n\nЖизнь продолжалась как обычно, пока не появилась серьезная угроза. Специфика была утеряна во времени, но это была угроза исчезновения. Племена объединились и победили.\n\nС тех пор Айнари постепенно расширились вместе со своими покорными слугами, чтобы захватить весь их мир. Они сохранили свою племенную природу, но отказались от мелкой борьбы своих предков.\n\nПоследние технологические достижения позволили Айнари увидеть жизнь за пределами их родного мира. Несмотря на то, что в целом они дружелюбны, следует отметить, что они не потеряли своей тенденции объединяться в борьбе с угрозами.§!\n"
-EMPIRE_DESIGN_elven_civ2_dlc_desc:0 "Древние Айнари состояли из различных племен, часто борющихся за территорию или ресурсы. Одним из таких ресурсов являются сильные, но медленные энты. Очень мощные, но невероятно раболепные, они были и остаются в основном рабочими.\n\nЖизнь продолжалась как обычно, пока не появилась серьезная угроза. Специфика была утеряна во времени, но это была угроза исчезновения. Племена объединились и победили.\n\nС тех пор Айнари постепенно расширились вместе со своими покорными слугами, чтобы захватить весь их мир. Они сохранили свою племенную природу, но отказались от мелкой борьбы своих предков.\n\nПоследние технологические достижения позволили Айнари увидеть жизнь за пределами их родного мира. Несмотря на то, что в целом они дружелюбны, следует отметить, что они не потеряли своей тенденции объединяться в борьбе с угрозами.§!\n"
+EMPIRE_DESIGN_elven_civ2:0 "Aenarí Circle"
+EMPIRE_DESIGN_elven_civ2_desc:0 "The ancient Aenarí were comprised of distinct tribes often fighting for territory or resources. One of those resources being the strong but slow Treants. Very powerful but incredibly subservient, they were and still are used mostly as laborers.\n\nLife went on as usual until a major threat appeared. The specifics have been lost to time but it was an extinction level threat. The tribes united and were victorious.\n\nSince that time the Aenarí have gradually expanded along with their dutiful servants to claim their entire world. They kept their tribal nature but have forgone the petty infighting of their ancestors.\n\nRecent technological advancements have allowed the Aenarí the ability to consider life beyond their homeworld. While generally friendly, it should be noted they have not lost their tendency to unite as one against threats.§!\n"
+EMPIRE_DESIGN_elven_civ2_both_dlc_desc:0 "$EMPIRE_DESIGN_elven_civ2_desc$"
+EMPIRE_DESIGN_elven_civ2_no_astral_planes_desc:0 "$EMPIRE_DESIGN_elven_civ2_desc$"
+EMPIRE_DESIGN_elven_civ2_no_first_contact_desc:0 "$EMPIRE_DESIGN_elven_civ2_desc$"
 
-ELVEN_civ2_empire_adjective: "Айнар"
-ELVEN_civ2_species_name: "Айнар"
-ELVEN_civ2_species_plural: "Айнари"
-ELVEN_civ2_species_adjective: "Айнар"
-ELVEN_civ2_ruler_title: "Старший друид"
-ELVEN_civ2_ruler_title_female: "Старший друид"
-ELVEN_civ2_ruler_name: "Ланда Адеканем"
-ELVEN_civ2_homeworld_name: "Селлика"
-ELVEN_civ2_home_system_name: "Адаренон"
+ELVEN_civ2_empire_adjective: "Aenarí"
+ELVEN_civ2_species_name: "Aenari"
+ELVEN_civ2_species_plural: "Aenarii"
+ELVEN_civ2_species_adjective: "Aenarí"
+ELVEN_civ2_ruler_title: "Elder Druid"
+ELVEN_civ2_ruler_title_female: "Elder Druid"
+ELVEN_civ2_ruler_name: "Landa Adecanem"
+ELVEN_civ2_homeworld_name: "Cellica"
+ELVEN_civ2_home_system_name: "Adarenon"
 
 #############
 ### STARS ###
 #############
 
-pc_elven_prismatic_star:0 "Призматическая звезда"
-pc_elven_prismatic_star_desc:0 "Редкая звезда, которую нельзя классифицировать. Она излучает свет на разных длинах волн, которые, похоже, изменяются каким-то неведомым образом, который ускользал от самых блестящих ученых многих цивилизаций. Регулярные выбросы массы, любопытно доброкачественные для большинства форм жизни, создают эффектные проявления цвета. Большинство жизненных форм получают ощутимый положительный эффект по причинам, которые до сих пор остаются загадкой."
+pc_elven_prismatic_star:0 "Prismatic Star"
+pc_elven_prismatic_star_desc:0 "A rare star that cannot be classified. It emits light on different wavelengths that seem to change by some mechanism that has eluded the most brilliant scientists from many civilizations. Regular mass ejections, curiously benign to most life forms, create spectacular displays of color. Most lifeforms display a measurable positive effect for reasons that so far remain a mystery."
 
 #################
 ### BUILDINGS ###
 #################
 
-elven_building_army_primitive:0 "Барад Эленат"
-elven_building_army_primitive_desc:0 "Древний орден защитников, оберегающий мир от внешних угроз."
+elven_building_army_primitive:0 "Barad Elenath"
+elven_building_army_primitive_desc:0 "An ancient, mystical order of protectors that defend the world from all external threats."
 
 ##############
 ### ARMIES ###
 ##############
 
-elven_primitive_army:0 "Маэторен Эленат"
+elven_primitive_army:0 "Maethoren Elenath"
 
 ########################
 ### PLANET MODIFIERS ###
 ########################
 
-elven_avari_ring_modifier:0 "Кольцо Авари"
-elven_avari_ring_modifier_desc:0 "Искусственное орбитальным кольцом, которое как изменяет ландшафт, кто бы как ни пожелал, так и предоставляет быструю транспортировку до орбиты."
+elven_avari_ring_modifier:0 "Avari Ring"
+elven_avari_ring_modifier_desc:0 "An artificial orbital ring that both alters the climate based on whomever resides as well as providing easy transport to orbit."
 
-elven_avari_shield_modifier:0 "Щит Авари"
-elven_avari_shield_modifier_desc:0 "Этот мир окружает огромный щит, который защищает от нападений и дает спокойствие населению на поверхности."
+elven_avari_shield_modifier:0 "Avari Shield"
+elven_avari_shield_modifier_desc:0 "This world is encased by an immense shield that protects from attacks and calms the populace on the surface."
 
-elven_mineral_poor:1 "Минералы низкого качества"
-elven_mineral_poor_desc:1 "Неизвестно, просто ли данная планета сформировалась такой, или же неизвестная раса однажды лишила ее наиболее ценных ресурсов. Однако мы знаем, что минералы, встречающиеся на данной планете, необычайно плохого качества."
+elven_mineral_poor:1 "Poor Quality Minerals"
+elven_mineral_poor_desc:1 "It is unknown if this planet simply formed this way, or if some unknown race once stripped it of its more valuable resources. However, we do know that the minerals present on this planet are of unusally poor quality."
 
-elven_natural_beauty:0 "Естественная красота"
-elven_natural_beauty_desc:0 "Пейзаж на этой планете просто прекрасен, каждый, кто живет здесь, будет постоянно находить новые чудеса для созерцания."
+elven_natural_beauty:0 "Natural Beauty"
+elven_natural_beauty_desc:0 "The scenery on this planet is simply beautiful, anyone living on this planet will be constantly finding new wonders to behold."
 
-elven_irradiated_planet:0 "Облучение"
-elven_irradiated_planet_desc:0 "Какое-то давнее бедствие сделало эту планету довольно сильно облученной."
+elven_irradiated_planet:0 "Irradiated"
+elven_irradiated_planet_desc:0 "Some long-ago calamity rendered this planet rather heavily irradiated."
 
-elven_storm_world_modifier:0 "Псионический шторм"
-elven_storm_world_modifier_desc:0 "Поверхность этого мира состоит из аморфного металла со странными свойствами. Горы, долины и другие геологические образования присутствуют, но зонды, приземляющиеся на эти образования, тонут словно в океане. Повторные осмотры показали, что некоторые горные хребты исчезли, а другие появились из ниоткуда. Даже свет в этом мире ведёт себя странно. Участки, которые должны быть освещены здешней звездой, остаются тёмными, а в областях на дальней стороне светло словно днем. Естественные эти явления или нет, мы не понимаем до сих пор."
-
-elven_great_firewall_modifier:0 "Великий Фаерволл"
-elven_great_firewall_modifier_desc:0 "Великий Фаерволл - кульминация тысячелетних инженерных изысканий. Он защищает этот мир как от внешних, так и внутренних диссидентов."
-
-elven_treant_harmony:0 "Фитовитализация"
-elven_treant_harmony_desc:0 "Каждый §Yэнт§! увеличивает приспособленность и блага планеты на §G1%§!"
+elven_treant_harmony:0 "Phytovitalization"
+elven_treant_harmony_desc:0 "Each §YTreant§! increases habitability and amenities of this planet by §G1%§!"
 
 ##############
 ### EVENTS ###
 ##############
 
-elven_leader_events.33.name:0 "Злоупотребление веществами"
-elven_leader_events.33.desc:0 "Нездоровый образ жизни §R[deceased_leader.GetName]§! привел к логическому концу. После долгих отсутствий сообщений с держурства, [deceased_leader.GetSheHe] найден мертвым. Причиной смерти стала передозировка незаконного вещества."
+elven_leader_events.33.name:0 "Substance Abuser"
+elven_leader_events.33.desc:0 "§R[deceased_leader.GetName]§!'s unhealthy lifestyle has come to its logical conclusion. After prolonged failure to report for duty, [deceased_leader.GetSheHe] was found dead. Investigation has determined overdose of an illicit substance to be the cause of death."
 
-decision_elven_remove_tir_aranad:0 "Уничтожить Тир Аранад"
-decision_elven_remove_tir_aranad_desc:0 "Найдите способ навсегда избавиться от странной инопланетной башни!"
-decision_elven_remove_sentient_dragons:0 "Истребить разумных драконов"
-decision_elven_remove_sentient_dragons_desc:0 "Найдите способ навсегда изгнать драконов из нашей реальности."
-decision_elven_remove_gardens_of_heaven:0 "Снести райские сады"
-decision_elven_remove_gardens_of_heaven_desc:0 "Освободите больше места, уничтожив бесполезные и буржуазные Райские сады."
-decision_elven_remove_malevolent_groves:0 "Сжечь зловещие рощи"
-decision_elven_remove_malevolent_groves_desc:0 "Используйте «зажигательные» методы расчистки Зловещих рощь."
-decision_elven_remove_ice_spires:0 "Удалить ледяные шпили"
-decision_elven_remove_ice_spires_desc:0 "Используя тщательно расставленные взрывные устройства, уберите Ледяные шпили."
-decision_elven_remove_ice_blossoms:0 "Прополка от ледяных цветов"
-decision_elven_remove_ice_blossoms_desc:0 "Уничтожьте бесполезные поля Ледяных цветов."
-decision_elven_remove_murrpau_sanguine:0 "Истребить вампиров-Муррпау"
-decision_elven_remove_murrpau_sanguine_desc:0 "Начните программу по ликвидации бедствия с Муррпау навсегда."
-decision_elven_remove_feral_fairies:0 "Истребить плотоядных фей"
-decision_elven_remove_feral_fairies_desc:0 "Уничтожьте плотоядных фей любыми возможными способами."
-decision_elven_remove_klepto_fairies:0 "Истребить фей-клептоманов"
-decision_elven_remove_klepto_fairies_desc:0 "Изгоните фей с каждого насеста, из каждого уголка и из каждой щели!"
-decision_elven_remove_glowing_forests:0 "Сжечь биолюминесцентные леса"
-decision_elven_remove_glowing_forests_desc:0 "Сжечь биолюминесцентные леса."
+decision_elven_remove_tir_aranad:0 "Raze Tir Aranad"
+decision_elven_remove_tir_aranad_desc:0 "Find a way to get rid of the oddly alien tower for good!"
+decision_elven_remove_sentient_dragons:0 "Exterminate Sentient Dragons"
+decision_elven_remove_sentient_dragons_desc:0 "Find a way to banish the dragons from our reality for good."
+decision_elven_remove_gardens_of_heaven:0 "Raze Gardens of Heaven"
+decision_elven_remove_gardens_of_heaven_desc:0 "Make more space by razing the useless and bourgeois Gardens of Heaven."
+decision_elven_remove_malevolent_groves:0 "Burn Malevolent Groves"
+decision_elven_remove_malevolent_groves_desc:0 "Use incendiary methods to clear out the Malevolent Groves."
+decision_elven_remove_ice_spires:0 "Remove Ice Spires"
+decision_elven_remove_ice_spires_desc:0 "Using carefully places explosives, clear out the Ice Spires."
+decision_elven_remove_ice_blossoms:0 "Weed Out Ice Blossoms"
+decision_elven_remove_ice_blossoms_desc:0 "Exterminate the useless fields of Ice Blossoms."
+decision_elven_remove_murrpau_sanguine:0 "Exterminate Murrpau Sanguine"
+decision_elven_remove_murrpau_sanguine_desc:0 "Start a program to eliminate the Murrpau scourge forever."
+decision_elven_remove_feral_fairies:0 "Exterminate Omophagous Faeries"
+decision_elven_remove_feral_fairies_desc:0 "Eliminate the Omophagous Faeries by any means possible."
+decision_elven_remove_klepto_fairies:0 "Exterminate Kleptomanic Faeries"
+decision_elven_remove_klepto_fairies_desc:0 "Purge the faeries from every perch, nook, and cranny!"
+decision_elven_remove_glowing_forests:0 "Burn Glowing Forests"
+decision_elven_remove_glowing_forests_desc:0 "Burn away the Glowing Forests."
 
 ####################
 ### STAR CLASSES ###
 ####################
 
-sc_elven_prismatic:1 "Призматическая звезда"
-sc_elven_prismatic_black_hole:1 "Призматическая черная дыра"
+sc_elven_prismatic:1 "Prismatic Star"
+sc_elven_prismatic_black_hole:1 "Prismatic Black Hole"
 sc_elven_binary_1:1 "$sc_binary_1$"
 sc_elven_binary_2:1 "$sc_binary_1$"
 sc_elven_binary_3:1 "$sc_binary_1$"
@@ -318,65 +323,68 @@ sc_elven_binary_6:1 "$sc_binary_1$"
 sc_elven_binary_prismatic_black_hole:1 "$sc_binary_1$"
 sc_elven_trinary_1:1 "$sc_trinary_1$"
 sc_elven_trinary_2:1 "$sc_trinary_1$"
-sc_elven_sexenary_1:1 "Шестирные звезды"
-sc_elven_septenary_1:1 "Семирные звезды"
-sc_elven_septenary_2:1 "Семирные звезды"
-sc_elven_super_1:1 "Пятнадцать звёзд"
+sc_elven_sexenary_1:1 "Sexenary Stars"
+sc_elven_septenary_1:1 "Septenary Stars"
+sc_elven_septenary_2:1 "Septenary Stars"
+sc_elven_super_1:1 "Quindenary Stars"
 sc_elven_gaul:1 "$sc_binary_1$"
 sc_elven_imperial:1 "$sc_pulsar$"
-sc_elven_polydora:1 "Звезда класса А"
+sc_elven_polydora:1 "Class F Star"
 
 ############
 ### JOBS ###
 ############
 
-job_elven_archaeologist:0 "Археолог"
-job_elven_archaeologist_plural:0 "Археологи"
-job_elven_archaeologist_desc:0 "Величайшая тайна мира - его понятность."
-job_elven_archaeologist_effect_desc:0 "£job_elven_archaeologist£ $job_elven_archaeologist_plural$ превращает £consumer_goods£ §Y$consumer_goods$§! в £society£ и £engineering£ §Yочки исследований§! для новых технологий"
-mod_job_elven_archaeologist_add:0 "$job_elven_archaeologist$"
-mod_job_elven_archaeologist_per_pop:0 "§G+1§! $job_elven_archaeologist$ за $VALUE$ поселений"
-mod_job_elven_archaeologist_per_pop_short:0 "\n§G+1§! £mod_elven_archaeologist_add£ за $VALUE$ £pop£"
+job_elven_archaeologist:0 "Archaeologist"
+job_elven_archaeologist_plural:0 "Archaeologists"
+job_elven_archaeologist_desc:0 "The eternal mystery of the world is its comprehensibility."
+job_elven_archaeologist_effect_desc:0 "£job_elven_archaeologist£ $job_elven_archaeologist_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £society£ and £engineering£ §YResearch Points§! for new technologies"
+mod_job_elven_archaeologist_add:0 "$job_elven_archaeologist$ Jobs"
+mod_job_elven_archaeologist_per_pop:0 "§G+1§! $job_elven_archaeologist$ Job per $VALUE$ Pops"
+mod_job_elven_archaeologist_per_pop_short:0 "\n§G+1§! £mod_elven_archaeologist_add£ per $VALUE$ £pop£"
 
 #######################
 ### PLANET FEATURES ###
 #######################
 
 # GENERIC #
-d_elven_start_ruins:0 "Древние руины"
-d_elven_start_ruins_desc:0 "Малонаселенные древние жилища, которые не использовались в течение тысячелетий. Не представляют особой ценности сегодня, но могут быть расчищены для современной инфраструктуры."
+d_elven_start_ruins:0 "Ancient Ruins"
+d_elven_start_ruins_desc:0 "Sparsely populated ancient dwellings that haven't been in wide use for millennia. Of little value today, but could be cleared for modern infrastructure."
 
 # AYLEID #
 
-d_elven_planetary_tir_aranad:0 "Тир Аранад"
-d_elven_planetary_tir_aranad_desc:0 "Этот огромный шпиль, обычно называемый Вечной Башней, настолько высок, что требует повышенного давления на самом верхнем уровне. Построенный в какой-то момент в прошлом, он всегда был центром власти. Башня вылеплена из камня, но кажется непроницаемой даже для современного оружия. Соответственно, теории относительно того, как это возможно, сильно разнятся. Помимо места жительства для правителей на протяжении всей истории, башня также была домом для многих исследователей, отчаянно пытающихся понять истинную природу структуры.\n§GБудет перенесено при терраформировании в Экуменополис!§!"
+d_elven_planetary_tir_aranad:0 "Tir Aranad"
+d_elven_planetary_tir_aranad_desc:0 "Commonly referred to as the Eternal Tower, this immense spire is so tall it requires pressurization at its highest levels. Built at some point in pre-history, it has always been the seat of the reigning power. The tower is fashioned of stone yet appears to be impervious to even modern weaponry. Accordingly, theories as to how this can be vary wildly. Aside from housing rulers over all of history, the tower has also been the home of a number of researchers desperately trying to divine the true nature of the structure.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
 
-d_elven_planetary_frensca_tol_blocker:0 "£blocker£ Френска Тол"
-d_elven_planetary_frensca_tol_blocker_desc:0 "Огромный плавающий континент, который на первый взгляд кажется не поддающимся физике. При ближайшем рассмотрении раскрывается развитая сеть древних устройств, которые держат континент на плаву в небе. Истоки этого континента - горячо обсуждаемая тема среди ученых. Есть записи о его существовании на протяжении тысячелетий, но никто не знает точно, кто создал это чудо науки. В настоящее время поверхность совершенно дикая и требует инвестиций в инфраструктуру, чтобы сделать ее пригодной для жизни.\n§GБудет перенесено при терраформировании в Экуменополис!§!"
+d_elven_planetary_frensca_tol_blocker:0 "£blocker£ Frensca Tol"
+d_elven_planetary_frensca_tol_blocker_desc:0 "An immense floating continent that at first glance seems to defy physics. A closer look reveals an advanced network of ancient devices that keep the continent afloat in the sky. The origins of this continent are a hotly argued topic among academics. There are records of its existence going back millennia, but no one is clear exactly who created this wonder of science. Presently the surface is entirely wild and would require an investment in infrastructure to make it liveable.\n§GWill be converted when terraforming into an Ecumenopolis!§!"
 
-d_elven_planetary_frensca_tol:0 "Френска Тол"
-d_elven_planetary_frensca_tol_desc:0 "Огромный плавающий континент, который на первый взгляд кажется не поддающимся физике. При ближайшем рассмотрении раскрывается развитая сеть древних устройств, которые держат континент на плаву в небе. Истоки этого континента - горячо обсуждаемая тема среди ученых. Есть записи о его существовании на протяжении тысячелетий, но никто не знает точно, кто создал это чудо науки. Разрастание было управляемым, и теперь была добавлена современная инфраструктура, позволяющая заселить континент, возможно, впервые за несколько тысячелетий.\n§GБудет перенесено при терраформировании в Экуменополис!§!"
+d_elven_planetary_frensca_tol:0 "Frensca Tol"
+d_elven_planetary_frensca_tol_desc:0 "An immense floating continent that at first glance seems to defy physics. A closer look reveals an advanced network of ancient devices that keep the continent afloat in the sky. The origins of this continent are a hotly argued topic among academics. There are records of its existence going back millennia, but no one is clear exactly who created this wonder of science. The overgrowth has been managed and modern infrastructure has now been added allowing the continent to be settled for perhaps the first time in several millennia.\n§GWill be converted when terraforming to an Ecumenopolis!§!"
 
 # SIDH #
 
-d_elven_planetary_light_of_altanis:0 "Свет Алтаниса"
-d_elven_planetary_light_of_altanis_desc:0 "Гигантский пульсирующий маяк света отправляется в просторы космоса. Концепция, созданная разумом философа Алтанис (во время одного из её знаменитых праздников жизни и кутежа). Маяк аскетично посылает послание мира и радости самой вселенной. Вопрос о том, заботится вселенная или нет, все еще обсуждается."
+d_elven_planetary_light_of_altanis:0 "Light of Altanis"
+d_elven_planetary_light_of_altanis_desc:0 "A giant pulsing beacon of light sent out into the vastness of space. A concept borne of the mind of the philosopher Altanis (during one of her famous carousing celebrations). The beacon austensibly sends a message of peace and joy to the universe itself. Whether or not the universe cares is a question still debated."
 
-d_elven_planetary_daerlas_mina_blocker:0 "£blocker£ Даэрлас Мина"
-d_elven_planetary_daerlas_mina_blocker_desc:0 "Легенды древних сидхов утверждают, что лорд Мина, уставший от постоянной праздной атмосферы среди своих подданных, решил построить город с единственной целью - веселье. Независимо от того, была ли эта история правдой, уже не имеет значения, поскольку сегодня город - это вечеринка без остановок с одного конца до другого."
+d_elven_planetary_daerlas_mina_blocker:0 "£blocker£ Daerlas Mina"
+d_elven_planetary_daerlas_mina_blocker_desc:0 "Ancient Sidh legends claim that Lord Mina, tired of the constant celebratory atmosphere in his subjects, decided to construct a city for the sole purpose of merryment. Whether or not this story was true no longer matters as today the city is a non-stop party from one end to the other."
 
-d_elven_planetary_daerlas_mina:0 "Даэрлас Мина"
-d_elven_planetary_daerlas_mina_desc:0 "Легенды древних сидхов утверждают, что лорд Мина, уставший от постоянной праздной атмосферы среди своих подданных, решил построить город с единственной целью - веселье. Независимо от того, была ли эта история правдой, уже не имеет значения, поскольку сегодня город - это вечеринка без остановок с одного конца до другого."
+d_elven_planetary_daerlas_mina:0 "Daerlas Mina"
+d_elven_planetary_daerlas_mina_desc:0 "$d_elven_planetary_daerlas_mina_blocker_desc$"
 
-d_elven_planetary_aerostat_plantations:0 "Аэростатные плантации"
-d_elven_planetary_aerostat_plantations_desc:0 "Великий фермер-сидх, имя которого потеряно для истории, однажды сказал, что зерновые культуры предпочитают мир и покой. Что-то, что трудно найти в любом жилище сидха. Чтобы исправить эту неудачную ситуацию, а также отправить как можно более неприглядные зерновые культуры подальше, были разработаны большие аэростатные платформы, способные нести огромные поля растительности. Теперь сидхи могут наслаждаться природной красотой в своих домах, а также не голодать."
+d_elven_planetary_aerostat_plantations:0 "Aerostat Plantations"
+d_elven_planetary_aerostat_plantations_desc:0 "A great Sidh farmer, who's name has been lost to history, once said that crops prefer peace and quiet. Something one is hard pressed to find in any Sidh dwelling. To remedy this unfortunate situation, as well as to get unsightly crops as far away as possible, large aerostat platforms were devised which were capable of carrying vast fields of plantlife. Now the Sidh can enjoy natural beauty around their homes and also not starve."
 
-d_elven_healing_spring:0 "Источник плодовитости"
-d_elven_healing_spring_desc:0 "Существовавщий задолго до начала учёта истории, этот источник способствует повышению плодовитости с небольшого глотка. В настоящее время для пар во всем мире принято совершать ритуальное паломничество для дегустации воды."
+d_elven_healing_spring:0 "Spring of Fertility"
+d_elven_healing_spring_desc:0 "Existing well before written history, this wellspring has been proven to provide a boost to fertility with a small sip. It is now customary for couples the world over to make a ritual pilgrimage to taste the waters."
+
+d_elven_planetary_glowing_forests:0 "$d_drow_planetary_glowing_forests$"
+d_elven_planetary_glowing_forests_desc:0 "$d_drow_planetary_glowing_forests_desc$"
 
 # ARCHEOLOGY RELATED #
 
-d_elven_planetary_elenyas_gate:0 "Врата Елены"
+d_elven_planetary_elenyas_gate:0 "Elenya's Gate"
 d_elven_planetary_elenyas_gate_desc:0 "<UNUSED: former Sidh feature, probably needs cleanup>"
 
 #######################
@@ -424,6 +432,9 @@ d_elven_physics_4_society_4_desc:0 "$d_elven_physics_4_society_4$"
 d_elven_unity_1:0 "£unity£ +1\n"
 d_elven_unity_1_desc:0 "$d_elven_unity_1$"
 
+d_elven_alloys_10:0 "£alloys£ +10\n"
+d_elven_alloys_10_desc:0 "$d_elven_alloys_10$"
+
 d_elven_lunari_moon:0 "£energy£ +10"
 d_elven_lunari_moon_desc:0 "$d_elven_lunari_moon$"
 
@@ -431,27 +442,14 @@ d_elven_lunari_moon_desc:0 "$d_elven_lunari_moon$"
 ###      Custom stuff      ##
 #############################
 
-elven_unity_to_research_conversion:0 "Сообщества Аркана"
+elven_unity_to_research_conversion:0 "Arcane Societies"
 elven_unity_to_research_conversion_desc:0 ""
 
-elven_unity_to_research_conversion_research:0 "Сообщества Аркана"
+elven_unity_to_research_conversion_research:0 "Arcane Societies"
 elven_unity_to_research_conversion_research_desc:0 ""
 
-mod_country_base_physics_research_produces_add:0 "£Физика£ Ежемесячные физические исследования"
-mod_country_base_society_research_produces_add:0 "£Общество£ Ежемесячные социологические исследования"
-mod_country_base_engineering_research_produces_add:0 "£Инженерия£ Ежемесячные инженерные исследования"
+mod_country_base_physics_research_produces_add:0 "£physics£ Monthly Physics Research"
+mod_country_base_society_research_produces_add:0 "£society£ Monthly Society Research"
+mod_country_base_engineering_research_produces_add:0 "£engineering£ Monthly Engineering Research"
 
 mod_planet_building_planetary_shield_generator_build_speed_mult:0 "Planetary Shield Generator Build Speed"
-
-########################
-###      COUNCIL      ##
-########################
-
-elven_councilor_arcane_minded:0 "Архимагистр"
-elven_councilor_arcane_minded_desc:0 "Рахимагистр ответственнен за исследования всего, что связано с Арканом, тем самым устраняя противоречия между научными и религиозными кругами."
-
-elven_councilor_eilistraee:0 "Генеральный секретарь"
-elven_councilor_eilistraee_desc:0 "Генеральный секретарь председательствует на заседаниях миротворческого совета и выступает в качестве представителя государства."
-
-elven_councilor_drow_warriors:0 "Куратор шпионской сети"
-elven_councilor_drow_warriors_desc:0 "Куратор шпионской сети отвечает как за зарубежную, так и за внутреннюю шпионскую сеть."

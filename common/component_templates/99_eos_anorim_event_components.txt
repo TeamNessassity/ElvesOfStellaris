@@ -123,7 +123,6 @@ weapon_component_template = {
 				}
 			}
 		}
-		custom_tooltip = "bio_confuser_$TIER$_tt"
 	}
 }
 
@@ -171,6 +170,5 @@ weapon_component_template = {
 				}
 			}
 		}
-		custom_tooltip = "ship_terrify_tt"
 	}
 }
