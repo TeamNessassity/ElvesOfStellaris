@@ -120,7 +120,7 @@ drow_civ1 = {
 	
 	civics={
 		"civic_philosopher_king"
-		"civic_free_haven"
+		"civic_drow_eilistraee"
 	}
 	
 	government="gov_elective_monarchy"
@@ -206,7 +206,7 @@ drow_civ1_nomads_dlc = {
 	
 	civics={
 		"civic_philosopher_king"
-		"civic_free_haven"
+		"civic_drow_eilistraee"
 	}
 	
 	government="gov_elective_monarchy"

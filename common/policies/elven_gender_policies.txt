@@ -64,6 +64,7 @@ elven_gender_policy = {
 				factor = 10
 				OR = { 
 					has_civic = civic_drow_warriors
+					has_civic = civic_drow_eilistraee
 					has_country_flag = tulshar_personality_flag
 					has_country_flag = lunari_personality_flag
 					has_country_flag = drow_fe_flag

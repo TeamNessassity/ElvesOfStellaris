@@ -37,19 +37,18 @@ elven_councilor_celestial_grace = {
 }
 
 elven_councilor_eilistraee = {
-	leader_class = { official commander }
+	leader_class = { official }
 	is_leader_possible = {
 		OR = {
 			leader_class = official
-			leader_class = commander
 		}
 	}
 	
 	civic = civic_drow_eilistraee
 
 	modifier = {
-		country_naval_cap_mult = 0.005
-		country_trust_cap_add = 2
+		pop_entertainer_bonus_workforce_mult = 0.03
+		pop_amenities_usage_mult = -0.01
 	}
 }
 
