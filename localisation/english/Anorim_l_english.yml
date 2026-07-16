@@ -314,19 +314,19 @@ elven_anorim_origin_events.301.a:0 "...freedom at last."
 elven_anorim_origin_events.301.b:0 "...freedom at last."
 
 elven_anorim_origin_events.302.name:0 "Shattered Glass: Fluttering Sparkle"
-elven_anorim_origin_events.302.desc:0 "As soon as [eos_evergloom_exploration_ship.GetName] emerged from the event horizon of the dead star that once sustained a grand civilization's beating heart, $eos_galtaereth_she_color$ who shares its name extended $eos_galtaereth_her_color$ dark tendrils towards us; with hatered and disdain, more ravenously than ever before.\n\nUnmistakably, this system soaked in blood, divine and earhtly alike, is §H[anorim_evergloom_cluster_05.GetName]§!, and $eos_galtaereth_she_color$ has made it $eos_galtaereth_her_color$ lair. Though we have gotten used to the sight of ruins by now, the kind of devastation the $eos_galtaereth_color$ visited upon the old empire's motherland seems... different. The sense of intentionality is palatable, but it only resembles artistry on the surface at most; underneath is nothing more than an elaborate expression of hollow, ever insatiable, cruelty.\n\nThough stillness still pervades this lifeless space, $eos_galtaereth_her_color$ abyssal web stirs violently. It is only a matter of time until whatever we have awoken breaks through the paper-thin veil separating this place from the Shroud."
+elven_anorim_origin_events.302.desc:0 "As soon as [eos_evergloom_exploration_ship.GetName] emerged from the event horizon of the dead star that once sustained a grand civilization's beating heart, $eos_galtaereth_she_color$ who shares its name extended $eos_galtaereth_her_color$ dark tendrils towards us; with hatered and disdain, more ravenously than ever before.\n\nUnmistakably, this system soaked in blood, divine and earhtly alike, is §H[anorim_evergloom_cluster_05.GetName]§!, and $eos_galtaereth_she_color$ has made it $eos_galtaereth_her_color$ lair.\nThough we have gotten used to the sight of ruins by now, the kind of devastation the $eos_galtaereth_color$ visited upon the old empire's motherland seems... different. The sense of intentionality is palatable, but it only resembles artistry on the surface at most; underneath is nothing more than an elaborate expression of hollow, ever insatiable, cruelty.\n\nThough stillness still pervades this lifeless space, $eos_galtaereth_her_color$ abyssal web stirs violently. It is only a matter of time until whatever we have awoken breaks through the paper-thin veil separating this place from the Shroud."
 elven_anorim_origin_events.302.a:0 "Squash whatever crawls out, and tear down that accursed web."
 elven_anorim_origin_events.302.b:0 "Squash whatever crawls out, and tear down that accursed web."
 
 elven_anorim_origin_events.303.name:0 "Shattered Glass: Shining Brilliance"
-elven_anorim_origin_events.303.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.303.a:0 "REPLACE_ME"
-elven_anorim_origin_events.303.b:0 "REPLACE_ME"
+elven_anorim_origin_events.303.desc:0 "The stillness returns, but not peace. $eos_galtaereth_her_color$ shadowy tendrils are reaching out to us with unprecedented voracity. And perhaps for the first time in memory... desperation?/nHowever, it is nothing more than a futile struggle to delay the inevitable.\n\n$eos_galtaereth_alias_color$ had overstayed $eos_galtaereth_her_color$ welcome in this universe long ago, and the time has come to revoke our hospitality. The ritual of banishing is merely a formality that we were born to observe; its exact process etched in the shared memory of our people right alongside the reflex to draw breath.\n\nOut of hunger for divine power, sins of the ancients became the invitation to a god's twisted banquet. As we now answer it for the last time, it is not to feast or be devoured, but only to spoil the meal."
+elven_anorim_origin_events.303.a:0 "Have your wretched fill. It will be your last."
+elven_anorim_origin_events.303.b:0 "Have your wretched fill. It will be your last."
 
 elven_anorim_origin_events.304.name:0 "Shattered Glass: Scintillating Evergleam"
-elven_anorim_origin_events.304.desc:0 "REPLACE_ME"
-elven_anorim_origin_events.304.a:0 "REPLACE_ME"
-elven_anorim_origin_events.304.b:0 "REPLACE_ME"
+elven_anorim_origin_events.304.desc:0 "Vengeance was never our goal, so the sight of a glutton raking claws across empty air evokes only pity.\nBut there is no joy greater joy than the relief that washed over [root.GetName] when $eos_galtaereth_her_color$ tendrils relaxed their grip on our souls and recoiled from the burning light of uncountable stars that would no longer allow themselves to be wrapped in shadowy threads.\n\nFor the first time since anyone alive was born, we understand what it means to be alive. To look towards tomorrow without having to glance over our shoulders. Old habits... might not die overnight. And perhaps it would be for the best to hold onto some of them after all; lest we allow overconfidence to repeat the mistakes of the past. But at least we shall never be prey again. Refusing to fight is not always a display of weakness, and we have shown today how we bite back when cornered.\n\nAs we close the final chapter of this far-too-long a story on this hopeful note, the memories we have made shall never against haunt us in nightmares. They will become the light that illuminates our path ahead and reminds us that no struggle is meaningless."
+elven_anorim_origin_events.304.a:0 "One night, we burned all our memories, and our dreams became transparent."
+elven_anorim_origin_events.304.b:0 "One night, we burned all our memories, and our dreams became transparent."
 
 # Event Systems
 eos_nebula_evergloom:0 "The Evergloom"
@@ -422,7 +422,7 @@ d_elven_anorim_galtaereth_desc:0 "§PHUNGER§!§rOBSESSION§!§MOBLIVION§!\n\n�
 
 # Modifiers
 eos_evergleam_shard:0 "Shard of Remembrance"
-eos_evergleam_shard_desc:0 "One night, I burned all my memories, and my dreams became transparent."
+eos_evergleam_shard_desc:0 "One night, we burned all our memories, and our dreams became transparent."
 
 ################
 ### BYPASSES ###
