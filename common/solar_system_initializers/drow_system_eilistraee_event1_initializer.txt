@@ -1411,6 +1411,11 @@ eilistraee_event1_05_initializer = {
 			prevent_anomaly = yes
 			clear_deposits = yes
 
+			set_planet_entity = {
+				entity = "city_planet_entity"
+				graphical_culture = drow_01
+			}
+
 			# Lathe Debris
 			create_ambient_object = {
 				type = "eos_evergloom_ruins_neural_calculator"
@@ -1483,6 +1488,11 @@ eilistraee_event1_05_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
+
+			set_planet_entity = {
+				entity = "city_planet_entity"
+				graphical_culture = drow_01
+			}
 
 			# Generic Debris
 			create_ambient_object = {
@@ -1605,6 +1615,11 @@ eilistraee_event1_05_initializer = {
 		init_effect = {
 			prevent_anomaly = yes
 			clear_deposits = yes
+
+			set_planet_entity = {
+				entity = "city_planet_entity"
+				graphical_culture = drow_01
+			}
 
 			# Orbital Ring Debris
 			create_ambient_object = {
