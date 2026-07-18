@@ -258,8 +258,8 @@ trait_drow_anorim_curse = {
 
 	modifier = {
 		logistic_growth_mult = -0.10
-		leader_lifespan_add = -30
-		leader_starting_age_mult = -0.30
+		leader_lifespan_add = -20
+		leader_starting_age_mult = -0.40
 	}
 	
 	allowed_archetypes = { BIOLOGICAL }
