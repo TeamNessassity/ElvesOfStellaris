@@ -34,9 +34,9 @@ create_drow_fe_servant_species = {
 ## Basically the same as vanilla except all -extra- chances are automatic 100%
 
 create_drow_fallen_empire_starting_navy = {
-	create_fallen_empire_fleet = yes
-	create_fallen_empire_fleet = yes
-	create_fallen_empire_fleet = yes
+	create_fallen_empire_starting_battle_fleet = yes
+	create_fallen_empire_starting_battle_fleet = yes
+	create_fallen_empire_starting_battle_fleet = yes
 	if = {
 		limit = { 
 			host_has_dlc = "Apocalypse"
@@ -48,10 +48,21 @@ create_drow_fallen_empire_starting_navy = {
 				set_location = {
 					target = prev
 					distance = 30
-					angle = random 
-				}					
+					angle = random
+				}
 			}
-		}		
+		}
+		create_fleet = {
+			effect = {
+				set_owner = prev.owner
+				create_fallen_empire_colossus = yes
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+		}
 	}
 	create_fallen_empire_titan_fleet = yes
 	create_fleet = {
