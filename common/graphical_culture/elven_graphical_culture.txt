@@ -93,9 +93,9 @@ elven_02 = {
 	}
 }
 
-## GOLDEN ELVEN ##
+## BLACK ELVEN ##
 
-elven_02 = {
+elven_03 = {
 	
 	#selectable = { always = no }
 
@@ -136,5 +136,7 @@ elven_02 = {
 		rim_stop_far = 0.99
 		ambient_near = 0.5
 		ambient_far = 20.0
+
+
 	}
 }
