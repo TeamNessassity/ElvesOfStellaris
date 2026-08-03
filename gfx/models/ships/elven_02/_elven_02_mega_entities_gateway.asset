@@ -24,7 +24,7 @@ entity = {
 	scale = 1.0
 	
 	meshsettings = {
-		name = "ElfGateway"
+		name = "ElfGatewayShape"
 		index = 0
 		texture_diffuse = "elven_02_generic_metal_diffuse.dds"
 	}

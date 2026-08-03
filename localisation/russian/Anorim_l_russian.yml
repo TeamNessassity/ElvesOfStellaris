@@ -4,7 +4,7 @@
 # System Initializers
 ####################################
 
-drow_system_eilistraee_initializer_NAME:0 "Prismatic Provenance"
+drow_system_eilistraee_initializer_NAME:0 "Призматическое убежище"
 drow_system_eilistraee_initializer_DESC:0 "§LYour people live under the colorful skies of a prismatic star and its black hole companion.§!\n\n$system_initializer_DESC$"
 
 ####################################
@@ -12,8 +12,8 @@ drow_system_eilistraee_initializer_DESC:0 "§LYour people live under the colorfu
 ####################################
 
 # Anorim immortality trait
-trait_drow_anorim_immortality:0 "Evergleam"
-trait_drow_anorim_immortality_desc:0 "Into the stars, they fled in fear, and therein found death. But among the stars, they lived in love, and therein death could not reach."
+trait_drow_anorim_immortality:0 "Вечный"
+trait_drow_anorim_immortality_desc:0 "В страхе они бежали к звездам, там же и нашли они смерть. Но среди звезд они жили в любви, а смерть не могла их там настигнуть."
 trait_drow_anorim_curse:0 "Evergloom"
 trait_drow_anorim_curse_desc:0 "$eos_galtaereth_she_color$ is not done exacting revenge on those who once coveted $eos_galtaereth_her_color$ divinity."
 

@@ -4,19 +4,19 @@
 # System Initializers
 ####################################
 
-elven_system_lhuren_initializer_NAME:0 "Aurlûnor Cluster"
-elven_system_lhuren_initializer_DESC:0 "§LYour homeworld is hidden within an eldritch nebula at the crossroads of realities.§!\n\n$system_initializer_DESC$"
+elven_system_lhuren_initializer_NAME:0 "Скопление Аурлунор"
+elven_system_lhuren_initializer_DESC:0 "§LВаш родной мир скрыт в таинственной туманности на перекрестке разных реальностей.§!\n\n$system_initializer_DESC$"
 
-NAME_LHU_ETERNAL_ARRAY:0 "The Eternal Array"
-NAME_LHU_ETERNAL_FOUNDRY:0 "The Eternal Foundry"
+NAME_LHU_ETERNAL_ARRAY:0 "Массив Вечности"
+NAME_LHU_ETERNAL_FOUNDRY:0 "Литейная Вечности"
 
 ####################################
 # Traits
 ####################################
 
 # Lhuren immortality trait
-trait_elven_lhuren_immortality:0 "Timeless"
-trait_elven_lhuren_immortality_desc:0 "The members of this species are partially subject to laws borrowed from a reality of pure Form, over which entropy as we know it holds no sway."
+trait_elven_lhuren_immortality: "Вечный"
+trait_elven_lhuren_immortality_desc: "Представители этого вида частично подчиняются законам, заимствованным из реальности чистой Формы, над которой энтропия, какой мы её знаем, не имеет власти."
 
 # Celestial Favor
 trait_elven_lhuren_celestial_grace:0 "[triggered_trait_elven_lhuren_celestial_grace]"
@@ -59,7 +59,7 @@ elven_lhuren_origin_events_tooltip.301.a:0 "We return into the comfortless embra
 # Origins 
 ####################################
 
-origin_elven_celestial_throne:0 "Celestial Throne"
+origin_elven_celestial_throne:0 "Трон Вечности"
 origin_elven_celestial_throne_desc:0 "Many millennia have passed since this civilisation found everlasting peace and eternal life at the end of a long journey, and the start of an even longer exile.\nLong enough to forget that no dream truly lasts forever."
 origin_tooltip_elven_celestial_throne_effects: "- Story Event Chain: ['concept_eos_elven_lhuren_eternal_array_chain']\n- Custom Star Cluster\n- $HOME_SYSTEM$$TABBED_NEW_LINE$- Located inside a ['concept_eos_planetary_nebula']$TABBED_NEW_LINE$- Contains an ['concept_eos_hazard_storm_half']\n- $HOMEWORLD$$TABBED_NEW_LINE$- Has ['concept_eos_elven_lhuren_eternal_array_ruined']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_gardens_of_heaven']$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_forbidden_arcology']$TABBED_NEW_LINE$$t$- ['concept_elven_planetary_sentient_dragons']\n- §RNo§! ['concept_guaranteed_colonies'] §Rnearby§!\n- Start with ['concept_eos_flaming_pearl'] relic\n"
 
@@ -67,7 +67,7 @@ origin_tooltip_elven_celestial_throne_effects: "- Story Event Chain: ['concept_e
 # CIVICS
 ####################################
 
-civic_elven_celestial_grace:0 "Celestial Grace"
+civic_elven_celestial_grace:0 "Небесная Милость"
 civic_elven_celestial_grace_desc:0 "In this society, the concept of filial piety is held in the highest regard. Service to family, clan and homeland is inextricable from individual identity. Those who shame themselves bring disfavor upon their kin, and those who achieve greatness are expected to repay all who have guided them along the way."
 civic_tooltip_celestial_grace_effects:0 "['concept_council'] members create §YCelestial Offices§! on their §YHome Planets§!, whose §YJob Efficiency§! scales with the host's effective §YSkill Level§!:$TABBED_NEW_LINE$- ['concept_commanders'] provide ['concept_eos_elven_dragon_strategists']$TABBED_NEW_LINE$- ['concept_scientists'] provide ['concept_eos_elven_dragon_researchers']$TABBED_NEW_LINE$- ['concept_officials'] provide ['concept_eos_elven_dragon_priests']$TABBED_NEW_LINE$- ['concept_council'] members from foreign worlds provide ['concept_envoys'] and ['concept_diplomatic_weight'] instead$TABBED_NEW_LINE$- ['concept_council'] members without a valid §YHome Planet§! cause §R-10%§! ['concept_stability']$TABBED_NEW_LINE$- Unsuitable Rulers may choose to §YAbdicate§! via the §Y$edict_eos_lhu_edict_celestial_mandate$§! Edict$TABBED_NEW_LINE$- §YPlanetary Capital§! and ['concept_planetary_ascension'] Tiers dramatically increase the resource output of §YCelestial Offices§!\n"
 
@@ -75,26 +75,26 @@ civic_tooltip_celestial_grace_effects:0 "['concept_council'] members create §YC
 ###      COUNCIL      ##
 ########################
 
-elven_councilor_celestial_grace:0 "Commandant of Heavenly Affairs"
-elven_councilor_celestial_grace_desc:0 "The duty of the Commandant of Heavenly Affairs is to appoint, reward and discipline high officials according to their merits and missteps."
+elven_councilor_celestial_grace: "Комендант Вечности"
+elven_councilor_celestial_grace_desc: "В обязанности Коменданта Вечности входит назначение, вознаграждение и наказание высших должностных лиц в соответствии их заслугам либо ошибкам."
 
 ####################################
 # Nations 
 ####################################
 
-EMPIRE_DESIGN_elven_civ3:0 "Aurlûnor Velande"
-EMPIRE_DESIGN_elven_civ3_desc:0 "Hidden away amongst the dense stars of the Dragon Cluster, the Aurlûnor believed that they would live in idyllic isolation for all eternity, cradled by a shell that could outlast all the stars in the cosmos.\n\nOn the day the beautiful bubble burst, no language could encapsulate the new depths of dread and wonder experienced by billions of ancient souls.\n\nAs they beheld the galaxy they had long forgotten, so did the galaxy that had long forgotten them stare back.§!\n"
-ELVEN_civ3_empire_adjective: "Aurlûnoren"
-ELVEN_civ3_species_name: "Lhûren"
-ELVEN_civ3_species_plural: "Lhûren"
-ELVEN_civ3_species_adjective: "Lhûren"
-ELVEN_civ3_ruler_title: "Velaran"
-ELVEN_civ3_ruler_title_female: "Velereth"
-ELVEN_civ3_heir_title: "Aranon"
-ELVEN_civ3_heir_title_female: "Aranel"
-ELVEN_civ3_ruler_name: "Sareariel Lelya-Earcala"
-ELVEN_civ3_homeworld_name: "Lhûmar"
-ELVEN_civ3_home_system_name: "Aurlûnor"
+EMPIRE_DESIGN_elven_civ3: "Аурлунор Вэландэ"
+EMPIRE_DESIGN_elven_civ3_desc: "Спрятавшись среди плотного массива звезд Скопления Дракона, Аурлунор верили, что будут жить в идиллической изоляции целую вечность, укрытые оболочкой, которая была способна пережить все звезды галактики.\n\nИ в тот день, когда прекрасный пузырь внезапно лопнул, ни один язык не смог бы описать те глубины страха и удивления, испытанные миллиардами древних душ.\n\nКогда они наконец узрели галактику, которую давным-давно позабыли, точно так же и галактика, которая давно позабыла их, уставилась на них своими пустыми глазницами.§!\n"
+ELVEN_civ3_empire_adjective: "Аурлунорен"
+ELVEN_civ3_species_name: "Л'хурен"
+ELVEN_civ3_species_plural: "Л'хурен"
+ELVEN_civ3_species_adjective: "Л'хуренск"
+ELVEN_civ3_ruler_title: "Вэларан"
+ELVEN_civ3_ruler_title_female: "Вэлеретх"
+ELVEN_civ3_heir_title: "Аранон"
+ELVEN_civ3_heir_title_female: "Аранэль"
+ELVEN_civ3_ruler_name: "Сареариэль Лейа-Эаркала"
+ELVEN_civ3_homeworld_name: "Л'хумар"
+ELVEN_civ3_home_system_name: "Аурлунор"
 
 ####################################
 # Governments
@@ -532,9 +532,9 @@ elven_relic_flaming_pearl_guardian:0 "Flaming Pearl: Celestial Guardian"
 ###      War Goals      ##
 ##########################
 
-war_goal_wg_elven_imperial_tributary:0 "Secure Border"
-war_goal_wg_elven_imperial_tributary_desc:0 "Peacekeeping efforts are made in order to ensure that our borders are being respected and no threat is festering beyond them. A token Tribute shall suffice as proof of our neighbor's friendly intent.\n\nIn the event of a Status Quo peace, systems we occupy will be released as a new Tributary if they include at least one planet."
-cb_elven_celestial_tribute:0 "Heavenly Authority"
-casus_belli_cb_elven_celestial_tribute:0 "Heavenly Authority"
-elven_celestial_tribute_favor_fail:0 "£trigger_no£ We must have 5 §YCelestial Favor§!"
-elven_celestial_tribute_favor:0 "£trigger_yes£ We must have 5 §YCelestial Favor§!"
+war_goal_wg_elven_imperial_tributary: "Безопасность Границ"
+war_goal_wg_elven_imperial_tributary_desc: "Усилия по достижению мира предпринимаются для того, чтобы гарантировать, что наши границы уважают и за их пределами не назревает никакая угроза. Символическая дань будет достаточным доказательством дружественных намерений нашего соседа.\n\nВ случае заключения перемирия статусом-кво, системы, которые мы занимаем, будут освобождены в качестве нового данника, если они включают в себя хотя бы одну населённую планету."
+cb_elven_celestial_tribute: "$elven_relic_events.0109.name$"
+casus_belli_cb_elven_celestial_tribute: "$elven_relic_events.0109.name$"
+elven_celestial_tribute_favor_fail: "£trigger_no£ У нас должно быть как минимум §Y5§! единиц §YНебесной Милости§!"
+elven_celestial_tribute_favor: "£trigger_yes£ У нас должно быть как минимум §Y5§! единиц §YНебесной Милости§!"

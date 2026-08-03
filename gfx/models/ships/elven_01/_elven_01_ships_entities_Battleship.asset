@@ -1,6 +1,5 @@
-@battleship_scale = 14.0
-@Battlecruiser_scale = 8.0
-@carrier_scale = 10.0
+@battleship_scale = 16.0
+@battleship_ship_scale = 0.65
 
 ##########################################################################
 ##################         	 BATTLESHIP           ########################
@@ -33,23 +32,6 @@ entity = {
 	game_data = {
 		size = @battleship_scale
 	}
-}
-
-### FORCEFIELD FOR BATTLESHIP1 ###
-entity = {
-	name = "elven_01_battleship1_forcefield_entity"
-	pdxmesh = "elven_01_battleship1_forcefield_mesh"
-	
-	game_data = {
-		uv_animation_speed 		= 0.05
-		uv_animation_direction 	= { 0.0 1.0 }
-	}
-}
-
-### DOME FOR BATTLESHIP1 ###
-entity = {
-	name = "elven_01_battleship1_dome_entity"
-	pdxmesh = "elven_01_battleship1_dome_mesh"
 }
 
 ################
@@ -104,40 +86,42 @@ entity = {
 
 entity = {
 	name = "elven_01_battleship_mid_L1M4_entity"
-	pdxmesh = "elven_01_battlecruiser_mesh"
+	pdxmesh = "elven_01_battleship2_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle" state_time = 5
+	state = { name = "idle" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		#start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }
 	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+	state = { name = "moving" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death"
-		event = { time = 1.00 node = "explosion_locator_01" particle = "large_ship_explosion_particle" }
-		event = { time = 1.00 node = "explosion_locator_01" particle = "ship_burn_particle" }
-		event = { time = 3.3 node = "explosion_locator_02" particle = "large_ship_explosion_particle" }
-		event = { time = 3.3 node = "explosion_locator_02" particle = "ship_burn_particle" }
-		event = { time = 4.6 node = "explosion_locator_03" particle = "large_ship_explosion_particle" }
-		event = { time = 4.6 node = "explosion_locator_03" particle = "ship_burn_particle" }
-		event = { time = 6.9 node = "explosion_locator_04" particle = "large_ship_explosion_particle" }
-		event = { time = 6.9 node = "explosion_locator_04" particle = "ship_burn_particle" }
-		event = { time = 8.2 node = "explosion_locator_05" particle = "large_ship_explosion_particle" }
-		event = { time = 8.2 node = "explosion_locator_05" particle = "ship_burn_particle" }		
-		event = { time = 10.2 node = "explosion_locator_06" particle = "large_ship_explosion_particle" }
-		event = { time = 10.2 node = "explosion_locator_06" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "large_ship_explosion_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "large_ship_explosion_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "large_ship_explosion_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
 	}
 	
+	scale = @battleship_ship_scale
+
 	game_data = {
 		size = @battleship_scale
 	}
@@ -145,40 +129,42 @@ entity = {
 
 entity = {
 	name = "elven_01_battleship_mid_L2M2_entity"
-	pdxmesh = "elven_01_battlecruiser_mesh"
+	pdxmesh = "elven_01_battleship2_mesh"
 	
 	default_state = "idle"
-	state = { name = "idle" state_time = 5
+	state = { name = "idle" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		#start_event = { trigger_once = yes sound = { soundeffect = "amb_fallen_empire_warship_01" } }
 	}
-	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_medium_01" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_02" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_medium_03" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_01" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_small_02" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+	state = { name = "moving" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death"
-		event = { time = 1.00 node = "explosion_locator_01" particle = "large_ship_explosion_particle" }
-		event = { time = 1.00 node = "explosion_locator_01" particle = "ship_burn_particle" }
-		event = { time = 3.3 node = "explosion_locator_02" particle = "large_ship_explosion_particle" }
-		event = { time = 3.3 node = "explosion_locator_02" particle = "ship_burn_particle" }
-		event = { time = 4.6 node = "explosion_locator_03" particle = "large_ship_explosion_particle" }
-		event = { time = 4.6 node = "explosion_locator_03" particle = "ship_burn_particle" }
-		event = { time = 6.9 node = "explosion_locator_04" particle = "large_ship_explosion_particle" }
-		event = { time = 6.9 node = "explosion_locator_04" particle = "ship_burn_particle" }
-		event = { time = 8.2 node = "explosion_locator_05" particle = "large_ship_explosion_particle" }
-		event = { time = 8.2 node = "explosion_locator_05" particle = "ship_burn_particle" }		
-		event = { time = 10.2 node = "explosion_locator_06" particle = "large_ship_explosion_particle" }
-		event = { time = 10.2 node = "explosion_locator_06" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "large_ship_explosion_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "large_ship_explosion_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "large_ship_explosion_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
 	}
 	
+	scale = @battleship_ship_scale
+
 	game_data = {
 		size = @battleship_scale
 	}
@@ -195,18 +181,16 @@ entity = {
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_04" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "light_locator_04" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }	
-		event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_01" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_02" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_small_01" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_small_02" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 	}
 	
 	state = { name = "death"
@@ -224,33 +208,31 @@ entity = {
 		event = { time = 11.0 node = "explosion_locator_06" particle = "ship_burn_particle" }
 	}
 	
+	scale = @battleship_ship_scale
+
 	game_data = {
 		size = @battleship_scale
 	}
-	
-	# ADDS FORCEFIELD
-	attach = { root = "elven_01_battleship1_forcefield_entity" }
-	
-	# ADDS DOME
-	attach = { root = "elven_01_battleship1_dome_entity" }
 }
 
 entity = {
 	name = "elven_01_battleship_mid_M4SHB_entity"
-	pdxmesh = "elven_01_supercarrier_mesh"
+	pdxmesh = "elven_01_battleship2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
@@ -265,33 +247,38 @@ entity = {
 		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
 		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
 		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
 	}
 
-	scale = 0.65
+	scale = @battleship_ship_scale
 	
 	game_data = {
-		size = @carrier_scale
+		size = @battleship_scale
 	}
 }
 
 entity = {
 	name = "elven_01_battleship_mid_S4LHB_entity"
-	pdxmesh = "elven_01_supercarrier_mesh"
+	pdxmesh = "elven_01_battleship3_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 	}
 	state = { name = "moving" 	state_time = 5	
 		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "engine_large_02" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 	}
 	state = { name = "death"
 		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
@@ -304,12 +291,14 @@ entity = {
 		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
 		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
 		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
 	}
 
-	scale = 0.65
+	scale = @battleship_ship_scale
 	
 	game_data = {
-		size = @carrier_scale
+		size = @battleship_scale
 	}
 }
 
