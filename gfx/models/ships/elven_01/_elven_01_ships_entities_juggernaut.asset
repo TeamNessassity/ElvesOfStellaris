@@ -92,6 +92,11 @@ entity = {
 		event = { time = 7.4 node = "explosion_locator_09" particle = "juggernaut_hull_explosion_effect" keep_particle = yes trigger_once = no }
 		event = { time = 8.0 node = "explosion_locator_010" particle = "juggernaut_hull_explosion_effect" keep_particle = yes trigger_once = no }
 	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
+	}
 }
 
 

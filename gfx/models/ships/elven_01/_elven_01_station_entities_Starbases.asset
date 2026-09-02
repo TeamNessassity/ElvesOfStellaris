@@ -39,6 +39,11 @@ entity = {
 	}
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # CONSTRUCTION #
@@ -86,6 +91,11 @@ entity = {
 	}
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # CONSTRUCTION #
@@ -119,6 +129,8 @@ entity = {
 	
 	game_data = {
 		size = @starbase_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 
@@ -136,6 +148,11 @@ entity = {
 	}
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # TIER2 LEAVES #
@@ -144,6 +161,11 @@ entity = {
 	pdxmesh = "elven_01_starbase_tier2_leaves_mesh"
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # CONSTRUCTION #
@@ -156,6 +178,7 @@ entity = {
 		}
 
 	scale = @starbase_scale
+
 }
 
 ##################
@@ -178,6 +201,8 @@ entity = {
 	
 	game_data = {
 		size = @starbase_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 
@@ -196,6 +221,11 @@ entity = {
 	}
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # TIER3 LEAVES #
@@ -204,6 +234,11 @@ entity = {
 	pdxmesh = "elven_01_starbase_tier3_leaves_mesh"
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # CONSTRUCTION #
@@ -240,6 +275,8 @@ entity = {
 	
 	game_data = {
 		size = @starbase_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 
@@ -259,6 +296,11 @@ entity = {
 	}
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # TIER4 LEAVES #
@@ -267,6 +309,11 @@ entity = {
 	pdxmesh = "elven_01_starbase_tier4_leaves_mesh"
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # TIER4 SPIRE #
@@ -277,10 +324,15 @@ entity = {
 	default_state = "idle"
 	state = { 
 				name = "idle" state_time = 5
-				event = { time = 0.0 node = "central_emitter" particle = "cloud_entity_center_particle" keep_particle = yes trigger_once = yes }
+				event = { time = 0.0 node = "central_emitter" particle = "elven_01_citadel_center_particle" keep_particle = yes trigger_once = yes }
 	}
 	
 	scale = @starbase_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # CONSTRUCTION #

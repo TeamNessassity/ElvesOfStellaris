@@ -11,12 +11,6 @@
 entity = {
 	name = "elven_02_orbital_ring_section_entity"
 	pdxmesh = "elven_01_orbital_ring_section_mesh"
-
-	meshsettings = {
-		name = "FinishedSectionShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_main_diffuse.dds"
-	}
 }
 
 entity = {
@@ -24,9 +18,15 @@ entity = {
 	pdxmesh = "elven_01_orbital_ring_hub_mesh"
 
 	meshsettings = {
-		name = "AyleidGrandHubShape"
+		name = "HubVinesShape"
 		index = 0
-		texture_diffuse = "elven_02_pr_main_diffuse.dds"
+		texture_diffuse = "elven_02_pr_main_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 
@@ -43,9 +43,15 @@ entity = {
 	}
 
 	meshsettings = {
-		name = "AyleidHubGrandShape"
+		name = "HubVinesShape"
 		index = 0
-		texture_diffuse = "elven_02_pr_main_diffuse.dds"
+		texture_diffuse = "elven_02_pr_main_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 
@@ -157,12 +163,6 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
-
-	meshsettings = {
-		name = "ModuleBackShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_module_back_diffuse.dds"
-	}
 }
 
 ## LUNARI HABITAT ##
@@ -173,12 +173,6 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
-
-	meshsettings = {
-		name = "ModuleBackShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_module_back_diffuse.dds"
-	}
 }
 
 ## SHIPYARD ##
@@ -189,18 +183,6 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
-
-	meshsettings = {
-		name = "ModuleBackShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_module_back_diffuse.dds"
-	}
-	
-	meshsettings = {
-		name = "ShipyardModuleShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_modules_diffuse.dds"
-	}
 }
 
 ## ANCHORAGE ##
@@ -211,18 +193,6 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
-
-	meshsettings = {
-		name = "ModuleBackShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_module_back_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "AnchorageModuleShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_modules_diffuse.dds"
-	}
 }
 
 ## HANGAR BAYS ##
@@ -233,18 +203,6 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
-
-	meshsettings = {
-		name = "ModuleBackShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_module_back_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "FighterModuleShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_modules_diffuse.dds"
-	}
 }
 
 ## MISSILE ##
@@ -257,18 +215,6 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5 animation = "idle" animation_speed = 0.15 }
-
-	meshsettings = {
-		name = "ModuleBackShape"
-		index = 0
-		texture_diffuse = "elven_02_pr_module_back_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "GunMissileModule"
-		index = 0
-		texture_diffuse = "elven_02_pr_modules_diffuse.dds"
-	}
 }
 
 ## GUNS ##

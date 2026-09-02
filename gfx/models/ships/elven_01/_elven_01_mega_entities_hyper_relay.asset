@@ -27,11 +27,12 @@ entity = {
 	pdxmesh = "elven_01_hyper_relay_01_portal_mesh"
 
 	scale = 1.15
-		game_data = {
+		
+	game_data = {
 		bloom_factor			= 1.5
 		uv_animation_speed 		= -0.5
 		uv_animation_direction 	= { 0.7 -0.8 }
-		}
+	}
 }
 
 entity = {
@@ -39,9 +40,10 @@ entity = {
 	pdxmesh = "elven_01_hyper_relay_01_portal_spin_mesh"
 
 	scale = 1
-		game_data = {
+	
+	game_data = {
 		bloom_factor			= 1
 		uv_animation_speed 		= -.5
 		uv_animation_direction 	= { 0.2 0.7 }
-		}
+	}
 }

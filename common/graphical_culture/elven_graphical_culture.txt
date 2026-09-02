@@ -48,7 +48,7 @@ elven_01 = {
 	}
 }
 
-## GOLDEN ELVEN ##
+## RAINBOW ELVEN ##
 
 elven_02 = {
 	
@@ -76,41 +76,10 @@ elven_02 = {
 	ship_color = yes
 	fallback = avian_01
 	ship_lighting = {
-		# cam_light_1_dir = { 0.4 -0.3 0.0 }
-		# cam_light_2_dir = { -0.6 -0.3 0.0 }
-		# cam_light_3_dir = { 0.0 0.0 1.0 }
+		cam_light_1_dir = { 0.4 -0.3 0.0 }
+		cam_light_2_dir = { -0.6 -0.3 0.0 }
+		cam_light_3_dir = { 0.0 0.0 1.0 }
 		
-		# intensity_near = 1.0
-		# intensity_far = 1.0
-		# near_value = 700
-		# far_value = 4000
-		# rim_start_near = 0.5
-		# rim_stop_near = 0.99
-		# rim_start_far = 0.3
-		# rim_stop_far = 0.99
-		# ambient_near = 0.5
-		# ambient_far = 20.0
-
-
-		# cam_light_1_dir = { 1.2 0.0 0.0 }
-		# cam_light_2_dir = { -0.4 0.0 0.0 }
-		# cam_light_3_dir = { 0.4 -0.1 0.8 }
-
-		# intensity_near = 0.7
-		# intensity_far = 0.5
-		# near_value = 100
-		# far_value = 4000
-		# rim_start_near = 0.5
-		# rim_stop_near = 0.99
-		# rim_start_far = 0.3
-		# rim_stop_far = 0.99
-		# ambient_near = 0.1
-		# ambient_far = 0.0
-
-		cam_light_1_dir = { 0.8	0.0 0.2 }
-		cam_light_2_dir = { -0.8 0.0 0.0 }
-		cam_light_3_dir = { 0.4 -1.0 0.0 }
-
 		intensity_near = 1.0
 		intensity_far = 1.0
 		near_value = 700
@@ -121,8 +90,6 @@ elven_02 = {
 		rim_stop_far = 0.99
 		ambient_near = 0.5
 		ambient_far = 20.0
-
-
 	}
 }
 

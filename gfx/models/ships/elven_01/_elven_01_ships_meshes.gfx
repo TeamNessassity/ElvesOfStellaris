@@ -151,6 +151,22 @@ objectTypes = {
 		file = "gfx/models/ships/elven_01/elven_01_cruiser2_weapons.mesh"				
 		scale = 0.70
 	}
+
+	#############################
+	# LIGHT CARRIER - CRUISER 3 #
+	#############################
+	
+	pdxmesh = {
+		name = "elven_01_lightcarrier_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_lightcarrier.mesh"				
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "elven_01_lightcarrier_weapons_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_lightcarrier_weapons.mesh"				
+		scale = 1.0
+	}
 	
 	##############
 	# BATTLESHIP #
@@ -208,89 +224,39 @@ objectTypes = {
 		scale = 1.0
 	}
 	
-	#################
-	# LIGHT CARRIER #
-	#################
+	###########
+	# TITAN 1 #
+	###########
 	
 	pdxmesh = {
-		name = "elven_01_lightcarrier_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_lightcarrier.mesh"				
-		scale = 1.0
+		name = "elven_01_titan1_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_titan1.mesh"				
+		scale = 0.7
 	}
 	
 	pdxmesh = {
-		name = "elven_01_lightcarrier_weapons_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_lightcarrier_weapons.mesh"				
-		scale = 1.0
+		name = "elven_01_titan1_weapons_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_titan1_weapons.mesh"				
+		scale = 0.7
 	}
-	
-	#################
-	# SUPER CARRIER #
-	#################
-	
-	## NOTE: Was updated but no longer used. NSC Patch might make use of this!
 
+	###########
+	# TITAN 2 #
+	###########
+	# NOTE: EXTRA SHIP! Not presently used in the main mod!
+	# REMEMBER: If replacing this with titan 1, remember to use the weapon mesh as well!
 	pdxmesh = {
-		name = "elven_01_supercarrier_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercarrier.mesh"				
-		scale = 1.0
-	}
-	
-	pdxmesh = {
-		name = "elven_01_supercarrier_weapons_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercarrier_weapons.mesh"				
-		scale = 1.0
-	}
-	
-	###################
-	# SUPER CAPITAL 1 #
-	###################
-	
-	pdxmesh = {
-		name = "elven_01_supercapital1_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercapital1.mesh"				
-		scale = 0.6
-	}
-	
-	pdxmesh = {
-		name = "elven_01_supercapital1_weapons_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercapital1_weapons.mesh"				
-		scale = 0.6
-	}
-	
-	###################
-	# SUPER CAPITAL 2 #
-	###################
-	
-	pdxmesh = {
-		name = "elven_01_supercapital2_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercapital2.mesh"				
-		scale = 0.7
-	}
-	
-	pdxmesh = {
-		name = "elven_01_supercapital2_weapons_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercapital2_weapons.mesh"				
-		scale = 0.7
-	}
-	
-	###################
-	# SUPER CAPITAL 3 #
-	###################
-	
-	pdxmesh = {
-		name = "elven_01_supercapital3_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercapital3.mesh"				
+		name = "elven_01_titan2_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_titan2.mesh"				
 		scale = 0.5
 	}
 	
 	pdxmesh = {
-		name = "elven_01_supercapital3_weapons_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_supercapital3_weapons.mesh"				
+		name = "elven_01_titan2_weapons_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_titan2_weapons.mesh"				
 		scale = 0.5
 	}
-	
-	
+
 	###############################
 	####### CIVILIAN SHIPS  #######
 	###############################
@@ -431,4 +397,43 @@ objectTypes = {
 		scale = 0.765
 	}
 	
+	#####################
+	# OTHER EXTRA SHIPS #
+	#####################
+
+	#################
+	# SUPER CARRIER #
+	#################
+	
+	## NOTE: Was updated but no longer used. NSC Patch might make use of this!
+
+	pdxmesh = {
+		name = "elven_01_supercarrier_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_supercarrier.mesh"				
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "elven_01_supercarrier_weapons_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_supercarrier_weapons.mesh"				
+		scale = 1.0
+	}
+	
+	###################
+	# SUPER CAPITAL 1 #
+	###################
+	
+	pdxmesh = {
+		name = "elven_01_supercapital1_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_supercapital1.mesh"				
+		scale = 0.6
+	}
+	
+	pdxmesh = {
+		name = "elven_01_supercapital1_weapons_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_supercapital1_weapons.mesh"				
+		scale = 0.6
+	}
+
+
 }

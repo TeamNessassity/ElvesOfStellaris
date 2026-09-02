@@ -1,0 +1,29 @@
+###################################
+#### ELVEN JUGGERNAUT EMITTERS ####
+###################################
+
+objectTypes = {
+
+	##############################
+	#### ELVEN MOVING EMITTER ####
+	##############################
+
+	pdxparticle = {        
+		name = "elven_juggernaut_moving_effect"
+		type = "elven_juggernaut_exhaust_main_moving_file"
+		scale = 4         
+	}
+
+
+	##############################
+	#### CITADEL SPIRE EFFECT ####
+	##############################
+
+	pdxparticle = {
+		name = "elven_01_citadel_center_particle"
+		type = "elven_01_citadel_center_effect"
+		
+		scale = 0.25
+	}
+
+}

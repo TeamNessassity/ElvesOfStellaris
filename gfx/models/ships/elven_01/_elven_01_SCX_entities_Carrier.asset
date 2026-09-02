@@ -8,6 +8,8 @@
 ### FRAME ###
 #############
 
+# NOTE: Used to be the carrier in the main mod. Now updated but unused!
+
 entity = {
 	name = "elven_01_SCX_Carrier_entity"
 	pdxmesh = "elven_01_capital_frame_mesh"

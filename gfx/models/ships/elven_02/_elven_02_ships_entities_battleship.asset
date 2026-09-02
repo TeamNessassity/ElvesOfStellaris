@@ -1,0 +1,372 @@
+@battleship_scale = 16.0
+@battleship_ship_scale = 0.65
+
+##########################################################################
+##################         	 BATTLESHIP           ########################
+##########################################################################
+
+# BATTLESHIP FRAME
+entity = {
+	name = "elven_02_battleship_entity"
+	pdxmesh = "elven_01_capital_frame_mesh"
+	
+	#locator = { name = "part1"	position = { 0 0 0 } }
+	#locator = { name = "part2"	position = { 0 0 0 } }
+	#locator = { name = "part3"	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle"	animation = "idle" animation_blend_time = 4.0 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_battleship_bass" } }
+	}
+	state = { name = "moving"	animation = "idle" animation_blend_time = 4.0 
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_battleship" } }
+	}
+	state = { name = "death" animation = "death" animation_blend_time = 0.0 looping = no
+		
+		event = { time = 15.75 node = "ship_main" particle = "elven_01_capital_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	
+	scale = 1.0
+		
+	game_data = {
+		size = @battleship_scale
+	}
+}
+
+################
+# BOW SECTIONS #
+################
+
+entity = {
+	name = "elven_02_battleship_bow_L1M1S2_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_bow_L1S4_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_bow_L2_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_bow_M1S2SHB_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_bow_M2S4_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_bow_M3S2_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_bow_XL1_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+	# XL weapon windup locator names: xl_windup_1-8
+}
+
+################
+# MID SECTIONS #
+################
+
+entity = {
+	name = "elven_02_battleship_mid_L2S4_entity"
+	pdxmesh = "elven_01_empty_mesh"	
+	############## NOTE: SEEMS TO BE UNUSED NOW
+}
+
+entity = {
+	name = "elven_02_battleship_mid_L1M4_entity"
+	pdxmesh = "elven_01_battleship2_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death"
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "large_ship_explosion_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "large_ship_explosion_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "large_ship_explosion_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
+	}
+	
+	scale = @battleship_ship_scale
+
+	game_data = {
+		size = @battleship_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_battleship_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+entity = {
+	name = "elven_02_battleship_mid_L2M2_entity"
+	pdxmesh = "elven_01_battleship2_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death"
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "large_ship_explosion_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "large_ship_explosion_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "large_ship_explosion_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
+	}
+	
+	scale = @battleship_ship_scale
+
+	game_data = {
+		size = @battleship_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_battleship_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+entity = {
+	name = "elven_02_battleship_mid_L3_entity"
+	pdxmesh = "elven_01_battleship1_mesh"
+	
+	locator = { name = "root" }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_medium_01" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "elven_01_1_0_ship_exhaust_oblong_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "death"
+		event = { time = 0.00 node = "explosion_locator_01" particle = "large_ship_explosion_particle" }
+		event = { time = 0.00 node = "explosion_locator_01" particle = "ship_burn_particle" }
+		event = { time = 2.3 node = "explosion_locator_02" particle = "large_ship_explosion_particle" }
+		event = { time = 2.3 node = "explosion_locator_02" particle = "ship_burn_particle" }
+		event = { time = 3.6 node = "explosion_locator_03" particle = "large_ship_explosion_particle" }
+		event = { time = 3.6 node = "explosion_locator_03" particle = "ship_burn_particle" }
+		event = { time = 5.9 node = "explosion_locator_04" particle = "large_ship_explosion_particle" }
+		event = { time = 5.9 node = "explosion_locator_04" particle = "ship_burn_particle" }
+		event = { time = 10.5 node = "explosion_locator_05" particle = "large_ship_explosion_particle" }
+		event = { time = 10.5 node = "explosion_locator_05" particle = "ship_burn_particle" }		
+		event = { time = 11.0 node = "explosion_locator_06" particle = "large_ship_explosion_particle" }
+		event = { time = 11.0 node = "explosion_locator_06" particle = "ship_burn_particle" }
+	}
+	
+	scale = @battleship_ship_scale
+
+	game_data = {
+		size = @battleship_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_battleship_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+entity = {
+	name = "elven_02_battleship_mid_M4SHB_entity"
+	pdxmesh = "elven_01_battleship2_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		# event = { time = 0 node = "engine_large_01" particle = "elven_01_5_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death"
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "large_ship_explosion_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "large_ship_explosion_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "large_ship_explosion_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
+	}
+
+	scale = @battleship_ship_scale
+	
+	game_data = {
+		size = @battleship_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_battleship_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+entity = {
+	name = "elven_02_battleship_mid_S4LHB_entity"
+	pdxmesh = "elven_01_battleship3_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" 	state_time = 5	
+		event = { time = 0 node = "light_locator_01" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "elven_01_3_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_01" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_03" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_04" particle = "elven_01_2_0_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death"
+		event = { time = 1.00 node = "explosion_locator1" particle = "ship_burn_particle" }
+		event = { time = 1.00 node = "explosion_locator1" particle = "large_ship_explosion_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "ship_burn_particle" }
+		event = { time = 3.3 node = "explosion_locator2" particle = "large_ship_explosion_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "ship_burn_particle" }
+		event = { time = 4.9 node = "explosion_locator3" particle = "large_ship_explosion_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "ship_burn_particle" }
+		event = { time = 7.5 node = "explosion_locator4" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator5" particle = "large_ship_explosion_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "ship_burn_particle" }
+		event = { time = 8.9 node = "explosion_locator6" particle = "large_ship_explosion_particle" }
+	}
+
+	scale = @battleship_ship_scale
+	
+	game_data = {
+		size = @battleship_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_battleship_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+# STERN
+
+entity = {
+	name = "elven_02_battleship_stern_L1_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_stern_M1S2_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+	############## NOTE: SEEMS TO BE UNUSED NOW
+}
+
+entity = {
+	name = "elven_02_battleship_stern_M2_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+}
+
+entity = {
+	name = "elven_02_battleship_stern_S4_entity"
+	pdxmesh = "elven_01_battleship1_weapons_mesh"
+	############## NOTE: SEEMS TO BE UNUSED NOW
+}

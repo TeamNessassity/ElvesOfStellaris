@@ -67,6 +67,11 @@ entity = {
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }	
 	}
 	state = { name = "death" state_time = 5 }
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # INTERCEPTOR
@@ -87,6 +92,11 @@ entity = {
 
 	}
 	state = { name = "death" state_time = 5 }
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 # NOTE: This one is the old interceptor, doesn't seem to be used.
@@ -105,4 +115,9 @@ entity = {
 		event = { time = 0 node = "light_locator_02" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }	
 	}
 	state = { name = "death" state_time = 5 }
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }

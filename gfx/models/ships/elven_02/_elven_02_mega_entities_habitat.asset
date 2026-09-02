@@ -24,9 +24,15 @@ entity = {
 	}
 
 	meshsettings = {
-		name = "UpdatedSpireShape"
+		name = "SpireVinesShape"
 		index = 0
-		texture_diffuse = "elven_02_habitat_diffuse.dds"
+		texture_diffuse = "elven_02_habitat_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 
@@ -45,9 +51,15 @@ entity = {
 	}
 
 	meshsettings = {
-		name = "MidSweptShape"
+		name = "TopVinesShape"
 		index = 0
-		texture_diffuse = "elven_02_habitat_diffuse.dds"
+		texture_diffuse = "elven_02_habitat_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 
@@ -66,9 +78,15 @@ entity = {
 	}
 
 	meshsettings = {
-		name = "HabitatMiddleShape"
+		name = "HabitatVinesShape"
 		index = 0
-		texture_diffuse = "elven_02_habitat_diffuse.dds"
+		texture_diffuse = "elven_02_habitat_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 
@@ -87,9 +105,23 @@ entity = {
 	}
 
 	meshsettings = {
-		name = "HabitatBottomShape"
+		name = "VineDomeGlassShape"
 		index = 0
-		texture_diffuse = "elven_02_habitat_diffuse.dds"
+		texture_diffuse = "elven_02_habitat_vine_colored_dome_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "HabitatVinesShape"
+		index = 0
+		texture_diffuse = "elven_02_habitat_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		size = 1.0
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 
@@ -109,9 +141,29 @@ entity = {
 	}
 
 	meshsettings = {
-		name = "SmallStationShape"
+		name = "SmallGlowShape"
 		index = 0
-		texture_diffuse = "elven_02_habitat_orbitals_diffuse.dds"
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "SmallOrbitalGlassShape"
+		index = 0
+		texture_diffuse = "elven_02_habitat_orbitals_small_glass_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_habitat_orbital_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 
@@ -131,9 +183,29 @@ entity = {
 	}
 
 	meshsettings = {
-		name = "LargeOrbitalShape"
+		name = "LargeGlowShape"
 		index = 0
-		texture_diffuse = "elven_02_habitat_orbitals_diffuse.dds"
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "LargeGlassShape"
+		index = 0
+		texture_diffuse = "elven_02_habitat_orbitals_large_glass_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "LargeVinesShape"
+		index = 0
+		texture_diffuse = "elven_02_habitat_orbital_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 }
 

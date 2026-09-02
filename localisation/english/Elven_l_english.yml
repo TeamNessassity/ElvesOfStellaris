@@ -20,6 +20,8 @@ elven_01_shipset_desc:0 "Recognised for their signature sleek contours and disti
 
 elven_02_shipset_desc:0 "$elven_01_shipset_desc$"
 
+elven_03_shipset_desc:0 "$elven_01_shipset_desc$"
+ 
 ####################################
 # System Initializers
 ####################################

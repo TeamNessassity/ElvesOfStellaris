@@ -137,6 +137,8 @@ entity = {
 
 	game_data = {
 		size = @lightcarrier_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 
@@ -168,6 +170,8 @@ entity = {
 
 	game_data = {
 		size = @cruiser_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 
@@ -199,6 +203,8 @@ entity = {
 
 	game_data = {
 		size = @cruiser_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 
@@ -233,6 +239,8 @@ entity = {
 
 	game_data = {
 		size = @cruiser_scale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 1.0 0.0 }
 	}
 
 }
