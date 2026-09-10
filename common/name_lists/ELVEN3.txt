@@ -1,4 +1,4 @@
-﻿### Moon elf name list in pseudo-Lunari language.
+### Moon elf name list in pseudo-Lunari language.
 ### Acute accents indicate stressed syllables.
 ### Circumflexes replace acute accents and indicate long vowels inside stressed syllables.
 ELVEN3 = {
