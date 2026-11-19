@@ -60,8 +60,11 @@ elven_civ1_galactic_paragons_dlc = {
 			"dark_teal"
 			"black"
 			"null"
+			"white"
+			"null"
 			"null"
 		}
+		use_ship_color=yes
 	}
 	
 	ruler={
@@ -143,8 +146,11 @@ elven_civ1 = {
 			"dark_teal"
 			"black"
 			"null"
+			"white"
+			"null"
 			"null"
 		}
+		use_ship_color=yes
 	}
 	
 	ruler={
@@ -305,12 +311,16 @@ elven_civ2_no_astral_planes = {
 			category="backgrounds"
 			file="gaul_pattern1.dds"
 		}
-		colors={
-			"dark_green"
+		colors=
+		{
+			"black"
 			"yellow"
+			"null"
+			"dark_brown"
 			"null"
 			"null"
 		}
+		use_ship_color=yes
 	}
 	ruler={
 		gender=female
@@ -553,8 +563,11 @@ elven_civ3 ={
 			"black"
 			"yellow"
 			"null"
+			"dark_brown"
+			"null"
 			"null"
 		}
+		use_ship_color=yes
 	}
 	
 	ruler={

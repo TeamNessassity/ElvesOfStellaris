@@ -22,6 +22,11 @@ entity = {
 	state = { name = "idle" 
 		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_dome" } }
 	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 #############
@@ -36,6 +41,11 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_spire" } }
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 
@@ -52,12 +62,22 @@ entity = {
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_antennas" } }
 	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 entity = {
 	name = "elven_01_sensor_station_phase3_bottom_entity"
 	pdxmesh = "elven_01_sensor_station_phase3_bottom_mesh"
 	scale = @sensor_scale
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }
 
 #############
@@ -72,6 +92,11 @@ entity = {
 	default_state = "idle"
 	state = { name = "idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_ring" } }
+	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
 

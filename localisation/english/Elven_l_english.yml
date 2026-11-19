@@ -46,6 +46,7 @@ origin_tooltip_elven_arcadian_symbiosis_effects: "- Custom Star Cluster\n- $HOME
 # Species Classes
 ####################################
 ELVEN:0 "Elven"
+ELVEN_PRISMATIC:0 "Prismatic Elven"
 ELVEN_desc:1 "Species Class has no effect on your Empire, but Elven species may consider other Elves to be less alien than other Species Classes."
 ELVEN_plural:0 "Elves"
 ELVEN_insult_01:0 "beast"

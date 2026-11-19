@@ -73,8 +73,8 @@ elven_02 = {
 		}
 	}
 
-	ship_color = yes
-	fallback = avian_01
+	ship_color = no
+	fallback = elven_01
 	ship_lighting = {
 		cam_light_1_dir = { 0.4 -0.3 0.0 }
 		cam_light_2_dir = { -0.6 -0.3 0.0 }

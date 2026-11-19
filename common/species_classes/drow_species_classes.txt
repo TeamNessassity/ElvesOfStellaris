@@ -37,13 +37,13 @@ DROW = {
 	#added_planet_types = {pc_drow_speleoterrestrial}
 }
 
-ILYTHIIRI = {
+# ILYTHIIRI = {
 
-	#playable = no
-	randomized = { always = no }
-	graphical_culture = ilythiiri_01
-	resources = {}
-}
+# 	#playable = no
+# 	randomized = { always = no }
+# 	graphical_culture = ilythiiri_01
+# 	resources = {}
+# }
 
 
 

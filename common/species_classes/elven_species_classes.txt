@@ -29,3 +29,10 @@ ELVEN = {
 	## NOTE: Turns out we'd still need to alter the GUI to use the below. So for now just changing prescripteds to vanilla planets.
 	#added_planet_types = {pc_lunari_arctic}
 }
+
+ELVEN_PRISMATIC = {
+
+	graphical_culture = elven_02
+	randomized = { always = no }
+	resources = {}
+}

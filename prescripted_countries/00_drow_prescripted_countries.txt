@@ -136,7 +136,7 @@ drow_civ1 = {
 	system_name="ELVEN_drow1_home_system_name"
 	
 	graphical_culture="elven_01"
-	city_graphical_culture="ilythiiri_01"
+	city_graphical_culture="elven_02"
 	advisor_voice_type="l_spiritualist"
 
 	flag = elven_empire_eilistraeean
@@ -154,8 +154,11 @@ drow_civ1 = {
 			"purple"
 			"black"
 			"null"
+			"shadow_blue"
+			"null"
 			"null"
 		}
+		use_ship_color=yes
 	}
 	
 	ruler={
@@ -223,7 +226,7 @@ drow_civ1_nomads_dlc = {
 	system_name="ELVEN_drow1_home_system_name"
 	
 	graphical_culture="elven_01"
-	city_graphical_culture="ilythiiri_01"
+	city_graphical_culture="elven_02"
 	advisor_voice_type="l_spiritualist"
 
 	flag = elven_empire_eilistraeean
@@ -241,8 +244,11 @@ drow_civ1_nomads_dlc = {
 			"purple"
 			"black"
 			"null"
+			"shadow_blue"
+			"null"
 			"null"
 		}
+		use_ship_color=yes
 	}
 	
 	ruler={

@@ -267,25 +267,32 @@ objectTypes = {
 	pdxmesh = {
 		name = "elven_01_science_mesh"
 		file = "gfx/models/ships/elven_01/elven_01_science.mesh"
-		scale = 1.1
-	}
-	
-	###########################
-	## ADVANCED SCIENCE SHIP ##
-	###########################
-	pdxmesh = {
-		name = "elven_01_science2_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_science2.mesh"
-		scale = 1.1
+		scale = 1.0
+
+		animation = { id = "idle"	type = "elven_01_science_ship_idle_animation" }
+		animation = { id = "death"	type = "elven_01_science_ship_death_animation" }
 	}
 	
 	#################
 	## COLONY SHIP ##
 	#################
+
 	pdxmesh = {
-		name = "elven_01_colony_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_colony.mesh"
-		scale = 1.35
+		name = "elven_01_colony_01_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_colony_01.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "elven_01_colony_02_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_colony_02.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "elven_01_colony_03_mesh"
+		file = "gfx/models/ships/elven_01/elven_01_colony_03.mesh"
+		scale = 1.0
 	}
 	
 	####################
@@ -294,7 +301,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "elven_01_transport_mesh"
 		file = "gfx/models/ships/elven_01/elven_01_transport.mesh"
-		scale = 0.8
+		scale = 1.0
 	}
 	
 	#######################
@@ -308,37 +315,8 @@ objectTypes = {
 		animation = { id = "working"					type = "elven_01_construction_working_animation" }
 		animation = { id = "working_looping"			type = "elven_01_construction_working_looping_animation" }
 		
-		scale = 1.1
-	}
-	
-	pdxmesh = {
-		name = "elven_01_old_construction_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_old_construction.mesh"
-		
-		animation = { id = "idle"						type = "elven_01_construction_idle_animation" }
-		animation = { id = "working"					type = "elven_01_construction_working_animation" }
-		animation = { id = "working_looping"			type = "elven_01_construction_working_looping_animation" }
-		
 		scale = 1.0
-		
-		meshsettings = {
-			texture_diffuse = "elven_01_old_construction_diffuse.dds"
-			texture_normal = "elven_01_old_construction_normal.dds"
-			texture_specular = "elven_01_old_construction_specular.dds"
-			#shader = "PdxMeshShip"
-		}
 	}
-	
-	## FORCFIELD FOR OLD AVIAN SHIP; Not needed but kept for reference.
-	#pdxmesh = {
-	#	name = "elven_01_construction_forcefield_mesh"
-	#	file = "gfx/models/ships/elven_01/elven_01_construction_forcefield.mesh"
-	#	scale = 1.0
-	#	meshsettings = {
-	#					texture_diffuse = "elven_01_forcefield.dds"
-	#					texture_normal = "elven_01_forcefield_normal.dds"
-	#	}
-	#}
 	
 	############################
 	####### SMALL SHIPS  #######

@@ -1,0 +1,62 @@
+#######################
+## ELVEN HYPER RELAY ##
+#######################
+
+entity = {
+	name = "elven_02_hyper_relay_entity"
+	pdxmesh = "elven_01_hyper_relay_01_mesh"
+
+	default_state = "idle"
+	state = { 
+		name = "idle" animation = "idle" animation_speed = 0.1 
+		event = { time = 0 node = "root" particle = "elven_01_hyper_relay_portal_effect" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_hyper_relay_01_idle" } }
+	}
+
+	state = { name = "death" animation = "death" looping = no}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "GenericGlowShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+	
+	attach = { "root" = "elven_02_hyper_relay_01_portal_entity" }
+	attach = { "root" = "elven_02_hyper_relay_01_portal_spin_entity" }
+}
+
+#########################
+## ELVEN PORTAL COLORS ##
+#########################
+
+entity = {
+	name = "elven_02_hyper_relay_01_portal_entity"
+	pdxmesh = "elven_01_hyper_relay_01_portal_mesh"
+
+	scale = 1.15
+		
+	game_data = {
+		bloom_factor			= 1.5
+		uv_animation_speed 		= -0.5
+		uv_animation_direction 	= { 0.7 -0.8 }
+	}
+}
+
+entity = {
+	name = "elven_02_hyper_relay_01_portal_spin_entity"
+	pdxmesh = "elven_01_hyper_relay_01_portal_spin_mesh"
+
+	scale = 1
+	
+	game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= -.5
+		uv_animation_direction 	= { 0.2 0.7 }
+	}
+}

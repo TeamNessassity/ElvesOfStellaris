@@ -1,0 +1,580 @@
+@research_station_scale = 1.0
+@research_station_gamescale = 13.0
+
+@observation_station_scale = 1.0
+@observation_station_gamescale = 13.0
+
+@mining_station_scale = 1.0
+@mining_station_beam_scale = 150.0
+@mining_station_gamescale = 13.0
+
+## DEPRECATED STATIONS ##
+
+@terraforming_station_scale = 1.0
+@terraforming_station_gamescale = 13
+
+@frontier_station_scale = 1.0
+@frontier_station_gamescale = 13.0
+
+####################################################
+####											####
+####               ELVEN STATIONS               ####
+####											####
+####################################################
+
+######################
+## RESEARCH STATION ##
+######################
+
+## PRIMARY ENTITY ##
+
+## NOTE: This setup was originally to stop two stations being drawn on top of each other. Vanilla now appears to use a similar setup, so we will as well! :-) 
+## NOTE: The section_entity appears to be attached to the station_entity without having to attach it directly in the entity declaration! 
+entity = {
+	name = "elven_02_research_station_entity"
+	pdxmesh = "elven_01_empty_mesh"
+
+	locator = { name = "part1" 		position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" }
+	state = {
+				name = "death" state_time = 3 looping = no
+				event = { time = 2.9 particle = "small_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+
+	}
+	#medium_station_explosion_particle
+	#attach = { "part1" = "e" }
+}
+
+## MAIN SCIENCE STATION ##
+
+entity = {
+	name = "elven_02_research_station_section_entity"
+	pdxmesh = "elven_01_science_station_mesh"
+	
+	default_state = "idle"
+	state = { 
+				name = "idle" animation = "idle" animation_speed = 0.06
+				
+				start_event = { trigger_once = yes sound = { soundeffect = "amb_research_station_signals" } }
+				
+				event = { time = 0.8 node = "light_locator1" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 3 node = "light_locator2" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 2 node = "light_locator3" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 1 node = "light_locator4" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 2.6 node = "light_locator5" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 3.4 node = "light_locator6" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { 
+				name = "death" animation = "death" animation_blend_time = 1.0 animation_speed = 1.0 looping = no
+				
+				event = { time = 0.0 node = "explosion_locator1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				event = { time = 0.5 node = "explosion_locator2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				event = { time = 1.5 node = "explosion_locator3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				
+	}
+	
+	scale = @research_station_scale
+	
+	game_data = {
+		size = @research_station_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesTopShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "VinesBottomShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "GenericGlowBottomShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "GenericGlowTopShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+## RESEARCH CONSTRUCTION ##
+
+entity = {
+	name = "elven_02_research_station_construction_entity"
+	pdxmesh = "elven_01_science_construction_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = @research_station_scale
+}
+
+#########################
+## OBSERVATION STATION ##
+#########################
+
+entity = {
+	name = "elven_02_observation_station_entity"
+	pdxmesh = "elven_01_observation_station_mesh"
+	
+	default_state = "idle"
+	state = { 
+		name = "idle" animation = "idle" animation_speed = 0.06
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_research_station_signals" } }
+		
+		event = { time = 0.8 node = "light_locator1" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 3 node = "light_locator2" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 2 node = "light_locator3" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { 
+		name = "death" animation = "death" looping = no
+		
+		event = { time = 0.0 node = "explosion_locator1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 0.5 node = "explosion_locator2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 1.5 node = "explosion_locator3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 2.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	scale = @observation_station_scale
+	
+	game_data = {
+		size = @observation_station_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "GenericGlowShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+## OBSERVATION CONSTRUCTION ##
+
+entity = {
+	name = "elven_02_observation_station_construction_entity"
+	pdxmesh = "elven_01_observation_station_construction_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	scale = @observation_station_scale
+}
+
+####################
+## MINING STATION ##
+####################
+
+## PRIMARY ENTITY ##
+
+## NOTE: This setup was originally to stop two stations being drawn on top of each other. Vanilla now appears to use a similar setup, so we will as well! :-) 
+## NOTE: The section_entity appears to be attached to the station_entity without having to attach it directly in the entity declaration! 
+entity = {
+	name = "elven_02_mining_station_entity"
+	pdxmesh = "elven_01_empty_mesh"
+
+	locator = { name = "part1" 		position = { 0 0 0 } }
+
+	default_state = "idle"
+	state = { name = "idle" }
+	state = {
+				name = "death" state_time = 3 looping = no
+
+				event = { time = 2.9 particle = "small_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+
+	#attach = { "part1" = "elven_01_mining_station_section_entity" }
+}
+
+## MAIN STATION ENTITY ##
+
+entity = {
+	name = "elven_02_mining_station_section_entity"
+	pdxmesh = "elven_01_mining_station_mesh"
+	
+	attach = { "beamnode" = "elven_01_mining_beam_main_entity" }
+	
+	default_state = "idle"
+	
+	state = { 	
+				name = "idle" animation = "idle" animation_speed = 0.06 
+				start_event = { trigger_once = yes sound = { soundeffect = "amb_mining_station_signals" } }
+	}
+
+	state = { 	
+				name = "death" animation = "death" animation_blend_time = 0.0 animation_speed = 1.0 looping = no
+				
+				event = { time = 0.0 node = "explosion_locator1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				event = { time = 0.5 node = "explosion_locator2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				event = { time = 1.5 node = "explosion_locator3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				
+	}
+	scale = @mining_station_scale
+	
+	game_data = 
+	{
+		size = @mining_station_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "BottomVinesShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "TopGenericGlowShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "BottomGenericGlowShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+## MINING BEAM ##
+
+# NEW SUCK ZONE EFFECT #
+entity = {
+	name = "elven_02_mining_beam_main_entity"
+	pdxmesh = "elven_01_empty_mesh"
+	
+	locator = { name = "center" position = { 0 0 0 } rotation = { 0 90 0 } }
+	
+	default_state = "idle"
+	state = { 
+				name = "idle" state_time = 5
+				event = { time = 0.0 node = "center" particle = "elven_01_new_mining_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	scale = 1.0
+}
+
+## MINING CONTRUCTION ##
+
+entity = {
+	name = "elven_02_mining_station_construction_entity"
+	pdxmesh = "elven_01_mining_station_construction_mesh"
+		default_state = "idle"
+		state = { 
+					name = "idle" state_time = 5
+					event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+		
+	scale = @mining_station_scale
+}
+
+#############################
+####					 ####
+#### DEPRECATED STATIONS ####
+####					 ####
+#############################
+
+#NOTE: None of these are used anymore. Kept here mainly due to custom models existing for them.
+
+######################
+## FRONTIER OUTPOST ##
+######################
+
+## EMPTY ENTITY ##
+
+## IMPORTANT NOTE: From an era long before now. FULLY UPDATED and can be used for event stations or patches that need more stations.
+
+# entity = {
+	# name = "elven_01_outpost_station_entity"
+	
+	# locator = { name = "part1" 		position = { 0 0 0 } }
+
+	# scale = 1.0
+# }
+
+entity = {
+	name = "elven_02_outpost_station_section_entity"
+	pdxmesh = "elven_01_empty_mesh"
+
+	locator = { name = "part1" 		position = { 0 0 0 } }
+	
+	attach = { "part1" = "elven_01_outpost_station_main_entity" }
+}
+
+## MAIN FRONTIER ENTITY ##
+
+entity = {
+	name = "elven_02_outpost_station_main_entity"
+	pdxmesh = "elven_01_frontier_station_mesh"
+	
+	default_state = "idle"
+	state = { 
+		name = "idle" animation = "idle" animation_speed = 0.06
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_outpost_station_idle" } }
+	}
+	
+	state = { 
+		name = "death" animation = "idle" looping = no
+		
+		event = { time = 0.0 node = "explosion_locator1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 0.5 node = "explosion_locator2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 1.5 node = "explosion_locator3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 2.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	scale = @frontier_station_scale
+
+	game_data = 
+	{
+		size = @frontier_station_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "TopGenericGlowShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "BottomGenericGlowShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+## FRONTIER CONSTRUCTION ##
+
+entity = {
+	name = "elven_02_outpost_station_construction_entity"
+	pdxmesh = "elven_01_frontier_station_construction_mesh"	
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	
+	scale = @frontier_station_scale
+}
+
+
+######################
+## WORMHOLE STATION ##
+######################
+
+entity = {
+	name = "elven_02_wormhole_station_entity"
+	pdxmesh = "elven_01_observation_station_mesh"
+	
+	default_state = "idle"
+	state = { 
+		name = "idle" animation = "idle" animation_speed = 0.06
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_research_station_signals" } }
+		
+		event = { time = 0.8 node = "light_locator1" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 3 node = "light_locator2" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 2 node = "light_locator3" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { 
+		name = "death" animation = "death" looping = no
+		
+		event = { time = 0.0 node = "explosion_locator1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 0.5 node = "explosion_locator2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 1.5 node = "explosion_locator3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 2.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	scale = @observation_station_scale
+	
+	game_data = {
+		size = @observation_station_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "GenericGlowShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+## WORMHOLE CONSTRUCTION ##
+
+entity = {
+	name = "elven_02_wormhole_station_construction_entity"
+	pdxmesh = "elven_01_observation_station_construction_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+
+	scale = @observation_station_scale
+}
+
+
+##########################
+## TERRAFORMING STATION ##
+##########################
+
+entity = {
+	name = "elven_02_terraform_station_entity"
+	pdxmesh = "elven_01_science_station_mesh"
+	
+	default_state = "idle"
+	state = { 
+				name = "idle" animation = "idle" animation_speed = 0.06
+				
+				start_event = { trigger_once = yes sound = { soundeffect = "amb_research_station_signals" } }
+				
+				event = { time = 0.8 node = "light_locator1" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 3 node = "light_locator2" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 2 node = "light_locator3" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 1 node = "light_locator4" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 2.6 node = "light_locator5" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+				
+				event = { time = 3.4 node = "light_locator6" particle = "elven_ship_light_viola_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { 
+				name = "death" animation = "death" animation_blend_time = 1.0 animation_speed = 1.0 looping = no
+				
+				event = { time = 0.0 node = "explosion_locator1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				event = { time = 0.5 node = "explosion_locator2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				event = { time = 1.5 node = "explosion_locator3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+				
+				
+	}
+	
+	scale = @terraforming_station_scale
+	
+	game_data = {
+		size = @research_station_gamescale
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
+
+	meshsettings = {
+		name = "VinesTopShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "VinesBottomShape"
+		index = 0
+		texture_diffuse = "elven_02_general_station_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "GenericGlowBottomShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+
+	meshsettings = {
+		name = "GenericGlowTopShape"
+		index = 0
+		texture_diffuse = "elven_02_generic_vines_diffuse.dds"
+		shader = "PdxMeshAlphaAdditiveAnimateUV"
+	}
+}
+
+## TERRAFORMING CONSTRUCTION ##
+
+entity = {
+	name = "elven_02_terraform_station_construction_entity"
+	pdxmesh = "elven_01_science_construction_mesh"
+		default_state = "idle"
+		state = { name = "idle" state_time = 5
+			event = { trigger_once = yes sound = { soundeffect = "place_construction" } }
+		}
+	
+	scale = @terraforming_station_scale
+}
+

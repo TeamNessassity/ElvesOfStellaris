@@ -196,86 +196,7 @@ objectTypes = {
 	####    DEPRECIATED STATIONS    ####
 	####							####
 	####################################
-	
-	##############
-	## SHIPYARD ##
-	##############
-	
-	# SHIPYARD FRAME #
-	pdxmesh = {
-		name = "elven_01_shipyard_frame_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_shipyard_frame.mesh"
-		scale = 2.0
 		
-		animation = { id = "idle" type = "elven_01_shipyard_frame_idle_animation" }
-		animation = { id = "construction" type = "elven_01_shipyard_frame_construction_animation" }
-	}
-	
-	# SHIPYARD TOP #
-	pdxmesh = {
-		name = "elven_01_shipyard_top_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_shipyard_top.mesh"
-		scale = 2.5
-	}
-	
-	# SHIPYARD BOTTOM #
-	pdxmesh = {
-		name = "elven_01_shipyard_bottom_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_shipyard_bottom.mesh"
-		scale = 2.5
-	}
-	
-	# MODULE 1 #
-	pdxmesh = {
-		name = "elven_01_shipyard_assemblyyard_section_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_shipyard_assemblyyard_section.mesh"
-		scale = 2.5
-	}	
-	
-	# MODULE 2 #
-	pdxmesh = {
-		name = "elven_01_shipyard_hangarbay_section_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_shipyard_hangarbay_section.mesh"
-		scale = 2.5
-	}	
-	
-	# MODULE 3 #
-	pdxmesh = {
-		name = "elven_01_shipyard_refinery_section_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_shipyard_refinery_section.mesh"
-		#animation = { id = "rotate"			type = "elven_01_orbital_station_refinery_section_rotate_animation" }
-		
-		scale = 2.5
-	}	
-	
-	# MODULE 4 #
-	pdxmesh = {
-		name = "elven_01_shipyard_science_section_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_shipyard_science_section.mesh"
-		scale = 2.5
-	}
-	
-	
-	##########################
-	## TERRAFORMING STATION ##
-	##########################	
-	
-	pdxmesh = {
-		name = "elven_01_terraforming_station_mesh"
-		file = "gfx/models/ships/elven_01/elven_01_terraforming_station.mesh"
-		animation = { id = "rotate"			type = "elven_01_terraforming_station_rotate_animation" }
-		animation = { id = "death"			type = "elven_01_terraforming_station_death_animation" }
-		
-		scale = 1.0
-		meshsettings = {
-						texture_diffuse = "elven_01_stations_diffuse.dds"
-						texture_normal = "elven_01_stations_normal.dds"
-						texture_specular = "elven_01_stations_specular.dds"
-		}
-		
-	}
-	
-	
 	######################
 	## FRONTIER OUTPOST ##
 	######################
@@ -286,10 +207,6 @@ objectTypes = {
 		scale = 2.8
 		
 		animation = { id = "idle" type = "elven_01_frontier_station_idle_animation" }
-		
-		# meshsettings = {
-						# texture_normal = "elven_01_frontier_station_normal.tga"
-		# }
 	}
 	
 	# CONSTRUCTION MESH WITH NO ANIMS #
@@ -297,25 +214,5 @@ objectTypes = {
 		name = "elven_01_frontier_station_construction_mesh"
 		file = "gfx/models/ships/elven_01/elven_01_frontier_station_static.mesh"
 		scale = 2.8
-		
-		meshsettings = {
-						texture_normal = "elven_01_frontier_station_normal.tga"
-		}
 	}
-	
-	
-	########################
-	## ELVEN CITY PLANETS ##
-	########################
-
-	## CITY PLANETS ##
-	# pdxmesh = {
-	# 	name = "elven_01_city_planet_mesh"
-
-	# 	file = "gfx/models/ships/elven_01/elven_01_city_planet.mesh"
-	# 	animation = { id = "idle"	type = "planet_clouded_idle" }
-		
-	# 	scale = 1 # increases size of planet in the center
-	# 	cull_distance = 99999999.0f
-	# }
 }

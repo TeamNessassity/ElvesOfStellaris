@@ -7,12 +7,18 @@ entity = {
 	pdxmesh = "elven_01_hyper_relay_01_mesh"
 
 	default_state = "idle"
-	state = { name = "idle" animation = "idle" animation_speed = 0.1 
-			event = { time = 0 node = "root" particle = "elven_01_hyper_relay_portal_effect" keep_particle = yes trigger_once = yes }
-			event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_hyper_relay_01_idle" } }
+	state = { 
+		name = "idle" animation = "idle" animation_speed = 0.1 
+		event = { time = 0 node = "root" particle = "elven_01_hyper_relay_portal_effect" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "amb_megastructure_hyper_relay_01_idle" } }
+	}
 
-}
 	state = { name = "death" animation = "death" looping = no}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 	
 	attach = { "root" = "elven_01_hyper_relay_01_portal_entity" }
 	attach = { "root" = "elven_01_hyper_relay_01_portal_spin_entity" }

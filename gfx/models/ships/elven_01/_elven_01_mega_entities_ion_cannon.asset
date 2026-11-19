@@ -19,4 +19,9 @@ entity = {
 	state = { name = "idle" state_time = 5 
 		start_event = { node = "xl_gun_01" particle = "elven_01_ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 	}
+
+	game_data = {
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { -1.0 0.0 }
+	}
 }

@@ -216,18 +216,15 @@ entity = {
 
 entity = {
 	name = "elven_02_bomber_entity"	
-	pdxmesh = "elven_01_bomber_mesh"
-	scale = 1.1
+	clone = "elven_01_bomber_entity"
 }
 
 entity = {
 	name = "elven_02_fighter_entity"	
-	pdxmesh = "elven_01_fighter_mesh"
-	scale = 1.4
+	clone = "elven_01_fighter_entity"
 }
 
 entity = {
 	name = "elven_02_droppod_entity"	
-	pdxmesh = "elven_01_droppod_mesh"
-	scale = 1.8
+	clone = "elven_01_droppod_entity"
 }

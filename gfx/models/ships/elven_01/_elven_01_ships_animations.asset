@@ -138,21 +138,16 @@ animation = {
 	file = "elven_01_construction_working_start.anim"
 }
 
-##################
-## OLD OUTDATED ##
-##################
+#############
+## SCIENCE ##
+#############
+
 animation = {
-	name = "elven_01_terraforming_station_rotate_animation"
-	file = "elven_01_terraforming_station_rotate.anim"
+	name = "elven_01_science_ship_idle_animation"
+	file = "elven_01_science_idle.anim"
 }
 
 animation = {
-	name = "elven_01_terraforming_station_death_animation"
-	file = "elven_01_terraforming_station_death.anim"
+	name = "elven_01_science_ship_death_animation"
+	file = "elven_01_science_death.anim"
 }
-
-
-
-
-
-
