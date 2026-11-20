@@ -1,4 +1,4 @@
-name="Elves of Stellaris"
+name="Elves of Stellaris [ASSETS]"
 tags={
 	"Spaceships"
 	"Species"
