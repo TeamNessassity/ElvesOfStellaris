@@ -149,10 +149,7 @@ sidh_male_clothes_01 = {
 		## GENERIC SLAVE ##
 		random = {
 			trigger = {
-							OR = {
-								is_pop_category = slave
-								is_enslaved = yes
-							}
+							is_enslaved = yes
 			}
 			list = {
 						"gfx/models/portraits/shared_clothing/male/elven_male_slave_lab_rags_1.dds"
