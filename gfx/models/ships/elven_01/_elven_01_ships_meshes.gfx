@@ -272,6 +272,19 @@ objectTypes = {
 		animation = { id = "idle"	type = "elven_01_science_ship_idle_animation" }
 		animation = { id = "death"	type = "elven_01_science_ship_death_animation" }
 	}
+
+	pdxmesh = {
+		name = "elven_01_science_ship_core_mesh"
+		file = "gfx/models/ships/aquatic_01/aquatic_01_science_ship_core.mesh"
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "elven_01_science_ship_core.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
 	
 	#################
 	## COLONY SHIP ##

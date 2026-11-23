@@ -396,8 +396,8 @@ entity = {
 		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_science_ship_hum" } }
-		event = { time = 0.0 node = "RingCenter" particle = "aquatic_01_science_ship_core_effect" keep_particle = yes trigger_once = yes  }
-		event = { time = 0.0 node = "RingEffect" entity = "aquatic_01_science_ship_core_entity" trigger_once = yes }	
+		event = { time = 0.0 node = "RingCenter" particle = "elven_01_science_ship_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0.0 node = "RingEffect" entity = "elven_01_science_ship_core_entity" trigger_once = yes }	
 	}
 	state = { name = "moving" animation = "idle" 
 		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -410,8 +410,8 @@ entity = {
 		event = { time = 0 node = "engine_medium_03" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "engine_medium_04" particle = "elven_01_2_7_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
 		event = { time = 0 node = "mega_exhaust_01" particle = "elven_juggernaut_moving_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0.0 node = "RingCenter" particle = "aquatic_01_science_ship_core_effect" keep_particle = yes trigger_once = yes  }
-		event = { time = 0.0 node = "RingEffect" entity = "aquatic_01_science_ship_core_entity" trigger_once = yes }
+		event = { time = 0.0 node = "RingCenter" particle = "elven_01_science_ship_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0.0 node = "RingEffect" entity = "elven_01_science_ship_core_entity" trigger_once = yes }
 	}
 	state = { name = "death" animation = "death" looping = no
 		event = { time = 0.0 node = "explosion_locator1" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
@@ -432,6 +432,19 @@ entity = {
 		uv_animation_direction 	= { -1.0 0.0 }
 	}
 }
+
+entity = {
+	name = "elven_01_science_ship_core_entity"
+	pdxmesh = "elven_01_science_ship_core_mesh"
+	scale = 0.5
+
+		game_data = {
+		bloom_factor			= 1
+		uv_animation_speed 		= 0.35
+		uv_animation_direction 	= { -0.1 -0.55 }
+		}
+}
+
 ####################
 ## TRANSPORT SHIP ##
 ####################

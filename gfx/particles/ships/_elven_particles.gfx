@@ -1,19 +1,14 @@
-###################################
-#### ELVEN JUGGERNAUT EMITTERS ####
-###################################
-
 objectTypes = {
 
-	##############################
-	#### ELVEN MOVING EMITTER ####
-	##############################
+	###################################
+	#### ELVEN JUGGERNAUT EMITTERS ####
+	###################################
 
 	pdxparticle = {        
 		name = "elven_juggernaut_moving_effect"
 		type = "elven_juggernaut_exhaust_main_moving_file"
 		scale = 4         
 	}
-
 
 	##############################
 	#### CITADEL SPIRE EFFECT ####
@@ -24,6 +19,24 @@ objectTypes = {
 		type = "elven_01_citadel_center_effect"
 		
 		scale = 0.25
+	}
+
+	###############################
+	#### SCIENCE SHIP EMITTERS ####
+	###############################
+
+	pdxparticle = {
+		name = "elven_01_science_ship_core_effect"
+		type = "elven_01_science_ship_core_file"
+	
+		scale = 0.3
+	}
+
+	pdxparticle = {
+		name = "elven_02_science_ship_core_effect"
+		type = "elven_02_science_ship_core_file"
+	
+		scale = 0.3
 	}
 
 }
